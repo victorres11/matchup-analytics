@@ -15,12 +15,28 @@ class MatchupRouter {
             console.log('Current matchup route:', this.currentRoute);
             this.handleRoute(this.currentRoute);
         }
+        
+        // Listen for popstate events (back/forward buttons)
+        window.addEventListener('popstate', (event) => {
+            if (event.state && event.state.route) {
+                this.currentRoute = event.state.route;
+                this.handleRoute(this.currentRoute);
+            }
+        });
     }
 
     getRouteFromUrl() {
         const path = window.location.pathname;
-        if (path.startsWith('/weekly-matchups/')) {
-            return path.replace('/weekly-matchups/', '');
+        // Remove the base path for GitHub Pages
+        const basePath = '/matchup-analytics';
+        let cleanPath = path;
+        
+        if (path.startsWith(basePath)) {
+            cleanPath = path.substring(basePath.length);
+        }
+        
+        if (cleanPath.startsWith('/weekly-matchups/')) {
+            return cleanPath.replace('/weekly-matchups/', '');
         }
         return null;
     }
@@ -56,7 +72,8 @@ class MatchupRouter {
     // Navigate to a specific matchup
     navigateToMatchup(team, week) {
         const route = `${team}-${week}`;
-        const url = `/weekly-matchups/${route}`;
+        const basePath = '/matchup-analytics';
+        const url = `${basePath}/weekly-matchups/${route}`;
         
         // Update the URL
         window.history.pushState({ route }, '', url);
@@ -92,7 +109,8 @@ class MatchupRouter {
     // Create a navigation link
     createMatchupLink(team, week, text = null) {
         const route = `${team}-${week}`;
-        const url = `/weekly-matchups/${route}`;
+        const basePath = '/matchup-analytics';
+        const url = `${basePath}/weekly-matchups/${route}`;
         const linkText = text || `${team} Week ${week}`;
         
         return `<a href="${url}" onclick="window.matchupRouter.navigateToMatchup('${team}', '${week}'); return false;">${linkText}</a>`;

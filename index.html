@@ -18,11 +18,16 @@
     <script>
       // Client-side routing for GitHub Pages
       (function() {
+        console.log('Initializing routing system...');
+        
         // Check if we have a stored route from 404.html redirect
         const storedRoute = localStorage.getItem('matchupRoute');
         const storedFullPath = localStorage.getItem('fullPath');
         
         if (storedRoute) {
+          console.log('Found stored route:', storedRoute);
+          console.log('Stored full path:', storedFullPath);
+          
           // Clear the stored route
           localStorage.removeItem('matchupRoute');
           localStorage.removeItem('fullPath');
@@ -33,28 +38,46 @@
           
           // Update the URL without page reload
           if (storedFullPath && storedFullPath !== window.location.pathname) {
-            window.history.replaceState(null, '', storedFullPath);
+            console.log('Updating URL to:', storedFullPath);
+            window.history.replaceState({ route: storedRoute }, '', storedFullPath);
           }
           
           console.log('Restored matchup route:', storedRoute);
         } else {
           // Check current URL for direct navigation
           const path = window.location.pathname;
-          const isMatchupRoute = path.startsWith('/weekly-matchups/');
+          console.log('Current path:', path);
+          
+          const isMatchupRoute = path.includes('/weekly-matchups/');
           
           if (isMatchupRoute) {
-            const matchupPath = path.replace('/weekly-matchups/', '');
-            window.matchupRoute = matchupPath;
-            console.log('Direct matchup route:', matchupPath);
+            // Extract the matchup path
+            const basePath = '/matchup-analytics';
+            let cleanPath = path;
+            
+            if (path.startsWith(basePath)) {
+              cleanPath = path.substring(basePath.length);
+            }
+            
+            if (cleanPath.startsWith('/weekly-matchups/')) {
+              const matchupPath = cleanPath.replace('/weekly-matchups/', '');
+              window.matchupRoute = matchupPath;
+              console.log('Direct matchup route detected:', matchupPath);
+            }
           }
         }
         
         // Wait for the routing helper to be ready
         window.addEventListener('DOMContentLoaded', function() {
+          console.log('DOM loaded, checking routing helper...');
+          
           if (window.matchupRouter && window.matchupRoute) {
+            console.log('Initializing router with route:', window.matchupRoute);
             // Initialize the router with the current route
             window.matchupRouter.currentRoute = window.matchupRoute;
             window.matchupRouter.handleRoute(window.matchupRoute);
+          } else {
+            console.log('No matchup route found or router not ready');
           }
         });
       })();
