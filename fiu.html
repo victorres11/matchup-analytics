@@ -176,6 +176,28 @@
             margin-bottom: 40px;
         }
 
+        .position-group-row {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .position-group.half-width {
+            flex: 1;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .position-group-row {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .position-group.half-width {
+                margin-bottom: 40px;
+            }
+        }
+
         .position-title {
             color: #1e3a8a;
             font-size: 1.5rem;
@@ -410,23 +432,25 @@
                     </div>
                 </div>
 
-                <div class="position-group">
-                    <h3 class="position-title">Tight Ends</h3>
-                    <div class="chart-container">
-                        <div class="chart-wrapper">
-                            <canvas id="te-chart" class="chart-canvas"></canvas>
+                <div class="position-group-row">
+                    <div class="position-group half-width">
+                        <h3 class="position-title">Tight Ends</h3>
+                        <div class="chart-container">
+                            <div class="chart-wrapper">
+                                <canvas id="te-chart" class="chart-canvas"></canvas>
+                            </div>
+                            <div class="player-details" id="te-details"></div>
                         </div>
-                        <div class="player-details" id="te-details"></div>
                     </div>
-                </div>
 
-                <div class="position-group">
-                    <h3 class="position-title">Running Backs</h3>
-                    <div class="chart-container">
-                        <div class="chart-wrapper">
-                            <canvas id="rb-chart" class="chart-canvas"></canvas>
+                    <div class="position-group half-width">
+                        <h3 class="position-title">Running Backs</h3>
+                        <div class="chart-container">
+                            <div class="chart-wrapper">
+                                <canvas id="rb-chart" class="chart-canvas"></canvas>
+                            </div>
+                            <div class="player-details" id="rb-details"></div>
                         </div>
-                        <div class="player-details" id="rb-details"></div>
                     </div>
                 </div>
 
