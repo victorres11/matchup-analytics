@@ -135,6 +135,14 @@
             font-weight: 300;
         }
 
+        .timestamp {
+            color: #9ca3af;
+            font-size: 0.8em;
+            font-weight: 300;
+            margin-top: 10px;
+            opacity: 0.8;
+        }
+
         .tabs {
             background: white;
             border-radius: 15px;
@@ -393,6 +401,7 @@
             </div>
             <h1>Penn State Nittany Lions</h1>
             <p class="subtitle">Snap Count Analytics</p>
+            <p class="timestamp" id="last-updated">Updated at <span id="update-time"></span></p>
         </div>
 
         <!-- Stats Summary -->
@@ -653,8 +662,24 @@
             document.getElementById('defensive-players').textContent = defensivePlayers;
         }
 
+        // Update timestamp
+        function updateTimestamp() {
+            const now = new Date();
+            const timeString = now.toLocaleString('en-US', {
+                month: 'short',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                hour12: true
+            });
+            document.getElementById('update-time').textContent = timeString;
+        }
+
         // Load data when page loads
-        document.addEventListener('DOMContentLoaded', loadData);
+        document.addEventListener('DOMContentLoaded', function() {
+            updateTimestamp();
+            loadData();
+        });
     </script>
 </body>
 </html>
