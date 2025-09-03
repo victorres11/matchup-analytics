@@ -23,7 +23,7 @@
         
         /* Style 1: Penn State Team Colors (Current) */
         .bar {
-            background: linear-gradient(180deg, #ffffff 0%, #60a5fa 50%, #1e3a8a 100%) !important;
+            background: linear-gradient(180deg, #1e3a8a 0%, #60a5fa 50%, #ffffff 100%) !important;
             border-radius: 4px 4px 0 0;
             position: relative;
             transition: all 0.3s ease;
@@ -230,7 +230,7 @@
             justify-content: center;
             gap: 0;
             height: 300px;
-            padding: 20px 0 80px 0;
+            padding: 20px 0 100px 0;
             margin-bottom: 20px;
         }
 
@@ -238,7 +238,7 @@
 
         .bar-label {
             position: absolute;
-            bottom: -50px;
+            bottom: -60px;
             left: 50%;
             transform: translateX(-50%);
             font-size: 0.7em;
@@ -249,6 +249,7 @@
             width: 120px;
             overflow: hidden;
             text-overflow: ellipsis;
+            z-index: 10;
         }
 
         .bar-value {
@@ -572,7 +573,7 @@
                 bar.style.height = `${height}%`;
                 bar.style.minHeight = '20px';
                 bar.style.width = `${barWidth}px`;
-                bar.style.margin = '0 4px';
+                bar.style.margin = '0 8px';
                 
                 // Create label with last name and jersey number
                 const label = document.createElement('div');
