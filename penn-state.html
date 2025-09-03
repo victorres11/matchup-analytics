@@ -19,6 +19,56 @@
             min-height: 100vh;
         }
 
+        /* Alternative bar chart styles - uncomment the one you prefer */
+        
+        /* Style 1: Modern Gradient (Current) */
+        .bar {
+            background: linear-gradient(135deg, #041e42 0%, #1e3a8a 50%, #3b82f6 100%);
+            border-radius: 8px 8px 0 0;
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border: 2px solid rgba(255,255,255,0.1);
+        }
+
+        /* Style 2: Flat Modern (Alternative) */
+        /*
+        .bar {
+            background: #3b82f6;
+            border-radius: 4px 4px 0 0;
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(59,130,246,0.3);
+        }
+        */
+
+        /* Style 3: Rounded Pills (Alternative) */
+        /*
+        .bar {
+            background: linear-gradient(to top, #1e40af, #3b82f6);
+            border-radius: 20px 20px 0 0;
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(30,64,175,0.4);
+        }
+        */
+
+        /* Style 4: Minimalist (Alternative) */
+        /*
+        .bar {
+            background: #1e3a8a;
+            border-radius: 0;
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            border-left: 3px solid #3b82f6;
+        }
+        */
+
         .container {
             max-width: 1400px;
             margin: 0 auto;
@@ -154,17 +204,19 @@
         }
 
         .bar {
-            background: linear-gradient(to top, #041e42, #1e3a8a);
-            border-radius: 6px 6px 0 0;
+            background: linear-gradient(135deg, #041e42 0%, #1e3a8a 50%, #3b82f6 100%);
+            border-radius: 8px 8px 0 0;
             position: relative;
             transition: all 0.3s ease;
             cursor: pointer;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border: 2px solid rgba(255,255,255,0.1);
         }
 
         .bar:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);
         }
 
         .bar-label {
