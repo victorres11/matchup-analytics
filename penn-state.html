@@ -252,6 +252,10 @@
             z-index: 10;
         }
 
+        .bar-label.alternate {
+            bottom: -100px;
+        }
+
         .bar-value {
             position: absolute;
             top: -25px;
@@ -565,7 +569,7 @@
             const barWidth = Math.max(25, maxBarWidth);
             
             // Create bars
-            sortedPlayers.forEach(player => {
+            sortedPlayers.forEach((player, index) => {
                 const bar = document.createElement('div');
                 const height = (player.snaps / maxSnaps) * 100;
                 
@@ -578,6 +582,12 @@
                 // Create label with last name and jersey number
                 const label = document.createElement('div');
                 label.className = 'bar-label';
+                
+                // Apply alternating pattern: even indices get alternate class
+                if (index % 2 === 1) {
+                    label.classList.add('alternate');
+                }
+                
                 const nameParts = player.name.split(' ');
                 let lastName = nameParts[nameParts.length - 1];
                 
