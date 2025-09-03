@@ -175,12 +175,12 @@
             bottom: -50px;
             left: 50%;
             transform: translateX(-50%);
-            font-size: 0.75em;
+            font-size: 0.7em;
             color: #666;
             text-align: center;
             white-space: nowrap;
             font-weight: 500;
-            width: 100%;
+            width: 120px;
             overflow: hidden;
             text-overflow: ellipsis;
         }
@@ -377,13 +377,7 @@
                     </div>
                 </div>
 
-                <div class="position-group">
-                    <h3 class="position-title">Quarterbacks</h3>
-                    <div class="chart-container">
-                        <div class="bar-chart" id="qb-chart"></div>
-                        <div class="player-details" id="qb-details"></div>
-                    </div>
-                </div>
+
 
                 <div class="position-group">
                     <h3 class="position-title">Running Backs</h3>
@@ -468,7 +462,6 @@
         function displayOffensiveData(data) {
             createBarChart('wr-chart', data.wide_receivers, 'wr-details');
             createBarChart('te-chart', data.tight_ends, 'te-details');
-            createBarChart('qb-chart', data.quarterbacks, 'qb-details');
             createBarChart('rb-chart', data.running_backs, 'rb-details');
             createBarChart('ol-chart', data.offensive_line, 'ol-details');
         }
@@ -504,10 +497,11 @@
                 bar.style.height = `${height}%`;
                 bar.style.minHeight = '20px';
                 
-                // Create label with jersey number
+                // Create label with last name and jersey number
                 const label = document.createElement('div');
                 label.className = 'bar-label';
-                label.textContent = `#${player.jersey}`;
+                const lastName = player.name.split(' ').pop();
+                label.textContent = `${lastName} #${player.jersey}`;
                 
                 // Create value
                 const value = document.createElement('div');
