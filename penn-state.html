@@ -21,15 +21,14 @@
 
         /* Alternative bar chart styles - uncomment the one you prefer */
         
-        /* Style 1: Modern Gradient (Current) */
+        /* Style 1: Clean Modern (Current) */
         .bar {
-            background: linear-gradient(135deg, #041e42 0%, #1e3a8a 50%, #3b82f6 100%);
-            border-radius: 8px 8px 0 0;
+            background: #1e3a8a;
+            border-radius: 4px 4px 0 0;
             position: relative;
             transition: all 0.3s ease;
             cursor: pointer;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            border: 2px solid rgba(255,255,255,0.1);
+            box-shadow: 0 2px 8px rgba(30,58,138,0.2);
         }
 
         /* Style 2: Flat Modern (Alternative) */
@@ -199,7 +198,7 @@
             justify-content: center;
             gap: 0;
             height: 300px;
-            padding: 20px 0 60px 0;
+            padding: 20px 0 80px 0;
             margin-bottom: 20px;
         }
 
@@ -214,9 +213,9 @@
         }
 
         .bar:hover {
-            transform: translateY(-8px) scale(1.05);
-            box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #60a5fa 100%);
+            transform: translateY(-4px);
+            box-shadow: 0 6px 20px rgba(30,58,138,0.3);
+            background: #3b82f6;
         }
 
         .bar-label {
@@ -350,17 +349,18 @@
             
             .bar-chart {
                 height: 200px;
-                padding: 20px 0 50px 0;
+                padding: 20px 0 70px 0;
             }
             
             .bar {
-                max-width: 40px;
-                margin: 0 1px;
+                max-width: 35px;
+                margin: 0 2px;
             }
             
             .bar-label {
-                font-size: 0.7em;
-                bottom: -45px;
+                font-size: 0.65em;
+                bottom: -55px;
+                width: 100px;
             }
         }
     </style>
@@ -537,11 +537,12 @@
             // Find max snaps for scaling
             const maxSnaps = Math.max(...sortedPlayers.map(p => p.snaps));
             
-            // Calculate optimal spacing based on number of players
+            // Calculate optimal spacing based on number of players and label width
             const totalBars = sortedPlayers.length;
-            const maxBarWidth = 60;
-            const minBarWidth = 40;
-            const barWidth = Math.min(maxBarWidth, Math.max(minBarWidth, (chart.offsetWidth - 100) / totalBars));
+            const labelWidth = 120; // Width of each label
+            const availableWidth = chart.offsetWidth - 40; // Account for padding
+            const maxBarWidth = Math.min(60, (availableWidth - (labelWidth * totalBars)) / totalBars);
+            const barWidth = Math.max(30, maxBarWidth);
             
             // Create bars
             sortedPlayers.forEach(player => {
@@ -552,12 +553,19 @@
                 bar.style.height = `${height}%`;
                 bar.style.minHeight = '20px';
                 bar.style.width = `${barWidth}px`;
-                bar.style.margin = '0 8px';
+                bar.style.margin = '0 4px';
                 
                 // Create label with last name and jersey number
                 const label = document.createElement('div');
                 label.className = 'bar-label';
-                const lastName = player.name.split(' ').pop();
+                const nameParts = player.name.split(' ');
+                let lastName = nameParts[nameParts.length - 1];
+                
+                // Handle "JR" names properly
+                if (lastName === 'JR' && nameParts.length > 1) {
+                    lastName = nameParts[nameParts.length - 2] + ' JR';
+                }
+                
                 label.textContent = `${lastName} #${player.jersey}`;
                 
                 // Create value
