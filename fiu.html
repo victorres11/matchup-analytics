@@ -269,6 +269,55 @@
             font-size: 0.8rem;
         }
 
+        .footer {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+            padding: 40px 20px;
+            margin-top: 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(30,58,138,0.3);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .footer-section h3 {
+            color: #fbbf24;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .footer-section p {
+            color: #e5e7eb;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .footer-section a {
+            color: #fbbf24;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(251,191,36,0.3);
+            color: #fbbf24;
+            font-style: italic;
+        }
+
         @media (max-width: 768px) {
             .container {
                 padding: 15px;
@@ -289,6 +338,15 @@
             
             .stats-summary {
                 grid-template-columns: 1fr;
+            }
+
+            .footer {
+                padding: 30px 15px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
             }
         }
     </style>
@@ -405,6 +463,32 @@
                         <div class="player-details" id="dl-details"></div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>📊 Data Sources</h3>
+                    <p>Snap count data is sourced from official team statistics and game film analysis. All player participation data reflects actual game time and is updated following each contest.</p>
+                    <p>Data accuracy is maintained through comprehensive review of official game records and statistical databases.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>🏈 Analytics</h3>
+                    <p>This dashboard provides comprehensive snap count analysis for college football teams, breaking down player participation by position groups and game situations.</p>
+                    <p>Charts powered by Chart.js for professional-grade data visualization and interactive analytics.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>⚡ Technology</h3>
+                    <p>Built with modern web technologies including HTML5, CSS3, JavaScript, and Chart.js for responsive, professional analytics dashboards.</p>
+                    <p>Deployed on GitHub Pages for reliable, fast-loading performance worldwide.</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                Made with love from Richmond, VA by Vic Torres
             </div>
         </div>
     </div>
