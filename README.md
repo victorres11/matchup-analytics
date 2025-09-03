@@ -30,7 +30,7 @@ This project is deployed to GitHub Pages using **branch deployment**:
    - Go to Settings → Pages
    - Source: Select "Deploy from a branch"
    - Branch: Select "main"
-   - Folder: Select "/ (root)"
+   - Folder: Select "/ (root)" (since all files are now in the root directory)
    - Click "Save"
 
 2. **Automatic deployment**: Every time you push to the main branch, GitHub Pages automatically deploys your site
@@ -43,8 +43,8 @@ To run this project locally:
 
 1. Clone the repository
 2. Navigate to the project directory
-3. Open `dist/index.html` in your web browser
-4. Test routing by navigating to `dist/weekly-matchups/penn-state-week-2.html`
+3. Open `index.html` in your web browser
+4. Test routing by navigating to `weekly-matchups/penn-state-week-2.html`
 
 ## Routing System
 
@@ -87,19 +87,18 @@ window.matchupRouter.navigateToMatchup('penn-state', 'week-2');
 
 ```
 weekly-matchup-analytics/
-├── dist/                           # Built application files
-│   ├── assets/                     # CSS and JavaScript bundles
-│   ├── weekly-matchups/            # Individual matchup pages
-│   │   ├── penn-state-week-2.html # Penn State Week 2
-│   │   └── michigan-week-1.html   # Michigan Week 1
-│   ├── index.html                  # Main HTML file
-│   ├── 404.html                    # 404 handler for routing
-│   ├── demo-routes.html            # Routing demonstration page
-│   ├── routing-helper.js           # Routing utility
-│   ├── favicon.ico                 # Site favicon
-│   └── *.svg                      # Logo and icon files
-├── .github/workflows/              # GitHub Actions workflows
-└── README.md                       # This file
+├── assets/                          # CSS and JavaScript bundles
+├── weekly-matchups/                 # Individual matchup pages
+│   ├── penn-state-week-2.html      # Penn State Week 2
+│   └── michigan-week-1.html        # Michigan Week 1
+├── index.html                       # Main HTML file
+├── 404.html                         # 404 handler for routing
+├── demo-routes.html                 # Routing demonstration page
+├── routing-helper.js                # Routing utility
+├── favicon.ico                      # Site favicon
+├── *.svg                           # Logo and icon files
+├── .github/workflows/               # GitHub Actions workflows
+└── README.md                        # This file
 ```
 
 ## Testing the Routing
