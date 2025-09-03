@@ -4,19 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penn State Week 2 Matchup - Weekly Matchup Analytics</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="stylesheet" crossorigin href="/assets/index-BJ2FUM-C.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="stylesheet" crossorigin href="../assets/index-BJ2FUM-C.css">
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 40px; 
+            background: #f5f5f5;
+            text-align: center;
+        }
+        .redirect-info { 
+            background: white; 
+            padding: 30px; 
+            margin: 40px auto; 
+            border-radius: 8px; 
+            max-width: 600px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #007bff;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .countdown {
+            font-size: 18px;
+            color: #666;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-    <div id="root"></div>
+    <div class="redirect-info">
+        <h1>Penn State Week 2 Matchup</h1>
+        <p>Redirecting to the main application...</p>
+        
+        <div class="spinner"></div>
+        
+        <div class="countdown" id="countdown">Redirecting in 3 seconds...</div>
+        
+        <p>If you're not redirected automatically, <a href="../" id="manual-link">click here</a>.</p>
+    </div>
     
     <script>
-        // This page will redirect to the main app with the matchup route
-        localStorage.setItem('matchupRoute', 'penn-state-week-2');
-        localStorage.setItem('fullPath', '/weekly-matchups/penn-state-week-2');
-        window.location.href = '/';
+        // This page handles the Penn State Week 2 matchup route
+        console.log('Penn State Week 2 matchup page loaded');
+        
+        // Store the route information
+        const matchupRoute = 'penn-state-week-2';
+        const fullPath = '/matchup-analytics/weekly-matchups/penn-state-week-2';
+        
+        console.log('Storing matchup route:', matchupRoute);
+        console.log('Full path:', fullPath);
+        
+        // Store in localStorage for the main app to pick up
+        localStorage.setItem('matchupRoute', matchupRoute);
+        localStorage.setItem('fullPath', fullPath);
+        localStorage.setItem('routingTimestamp', Date.now());
+        localStorage.setItem('routeSource', 'direct-file');
+        
+        // Countdown timer
+        let countdown = 3;
+        const countdownElement = document.getElementById('countdown');
+        
+        const timer = setInterval(function() {
+            countdown--;
+            if (countdown > 0) {
+                countdownElement.textContent = `Redirecting in ${countdown} seconds...`;
+            } else {
+                countdownElement.textContent = 'Redirecting now...';
+                clearInterval(timer);
+                
+                // Redirect to main app
+                setTimeout(function() {
+                    console.log('Redirecting to main app...');
+                    window.location.href = '../';
+                }, 500);
+            }
+        }, 1000);
+        
+        // Fallback redirect after 5 seconds
+        setTimeout(function() {
+            if (window.location.pathname.includes('penn-state-week-2')) {
+                console.log('Fallback redirect triggered');
+                window.location.href = '../';
+            }
+        }, 5000);
     </script>
     
-    <script type="module" crossorigin src="/assets/index-CMUMgFUB.js"></script>
+    <script type="module" crossorigin src="../assets/index-CMUMgFUB.js"></script>
 </body>
 </html>
