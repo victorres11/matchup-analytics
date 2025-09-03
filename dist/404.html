@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Matchup Analytics</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" crossorigin href="/assets/index-BJ2FUM-C.css">
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script>
+        // GitHub Pages 404.html routing for SPA
+        // This handles all routes and redirects them to the main app
+        
+        (function() {
+            const path = window.location.pathname;
+            const search = window.location.search;
+            const hash = window.location.hash;
+            
+            // Check if this is a matchup route
+            if (path.startsWith('/weekly-matchups/')) {
+                // Extract the matchup path
+                const matchupPath = path.replace('/weekly-matchups/', '');
+                
+                // Store the route information
+                localStorage.setItem('matchupRoute', matchupPath);
+                localStorage.setItem('fullPath', path + search + hash);
+                
+                // Redirect to the main page
+                window.location.href = '/';
+            } else {
+                // For other routes, just redirect to main page
+                window.location.href = '/';
+            }
+        })();
+    </script>
+    
+    <script type="module" crossorigin src="/assets/index-CMUMgFUB.js"></script>
+</body>
+</html>

@@ -4,11 +4,60 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Penn State Snap Count Dashboard</title>
+    <title>Weekly Matchup Analytics</title>
+    <base href="/" />
     <script type="module" crossorigin src="/assets/index-CMUMgFUB.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-BJ2FUM-C.css">
   </head>
   <body>
     <div id="root"></div>
+    
+    <!-- Routing Helper Script -->
+    <script src="/routing-helper.js"></script>
+    
+    <script>
+      // Client-side routing for GitHub Pages
+      (function() {
+        // Check if we have a stored route from 404.html redirect
+        const storedRoute = localStorage.getItem('matchupRoute');
+        const storedFullPath = localStorage.getItem('fullPath');
+        
+        if (storedRoute) {
+          // Clear the stored route
+          localStorage.removeItem('matchupRoute');
+          localStorage.removeItem('fullPath');
+          
+          // Set the route information for the app
+          window.matchupRoute = storedRoute;
+          window.fullPath = storedFullPath;
+          
+          // Update the URL without page reload
+          if (storedFullPath && storedFullPath !== window.location.pathname) {
+            window.history.replaceState(null, '', storedFullPath);
+          }
+          
+          console.log('Restored matchup route:', storedRoute);
+        } else {
+          // Check current URL for direct navigation
+          const path = window.location.pathname;
+          const isMatchupRoute = path.startsWith('/weekly-matchups/');
+          
+          if (isMatchupRoute) {
+            const matchupPath = path.replace('/weekly-matchups/', '');
+            window.matchupRoute = matchupPath;
+            console.log('Direct matchup route:', matchupPath);
+          }
+        }
+        
+        // Wait for the routing helper to be ready
+        window.addEventListener('DOMContentLoaded', function() {
+          if (window.matchupRouter && window.matchupRoute) {
+            // Initialize the router with the current route
+            window.matchupRouter.currentRoute = window.matchupRoute;
+            window.matchupRouter.handleRoute(window.matchupRoute);
+          }
+        });
+      })();
+    </script>
   </body>
 </html>
