@@ -23,7 +23,7 @@
         
         /* Style 1: Penn State Team Colors (Current) */
         .bar {
-            background: linear-gradient(180deg, #1e3a8a 0%, #60a5fa 50%, #f8fafc 100%) !important;
+            background: linear-gradient(180deg, #1e3a8a 0%, #60a5fa 50%, #e2e8f0 100%) !important;
             border-radius: 4px 4px 0 0;
             position: relative;
             transition: all 0.3s ease;
@@ -34,7 +34,7 @@
 
         .bar:hover {
             transform: translateY(-4px);
-            background: linear-gradient(180deg, #f1f5f9 0%, #dbeafe 20%, #3b82f6 100%) !important;
+            background: linear-gradient(180deg, #cbd5e1 0%, #dbeafe 20%, #3b82f6 100%) !important;
             box-shadow: 0 6px 20px rgba(30,58,138,0.3);
             border-color: #3b82f6;
         }
@@ -222,6 +222,69 @@
             border-radius: 12px;
             padding: 25px;
             border: 1px solid #e9ecef;
+            position: relative;
+        }
+
+        .chart-axes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .y-axis {
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 40px;
+            border-right: 1px solid #d1d5db;
+        }
+
+        .y-tick {
+            position: absolute;
+            right: 0;
+            width: 8px;
+            height: 1px;
+            background: #d1d5db;
+        }
+
+        .y-label {
+            position: absolute;
+            right: 15px;
+            font-size: 0.7em;
+            color: #6b7280;
+            font-weight: 500;
+        }
+
+        .x-axis {
+            position: absolute;
+            left: 40px;
+            right: 0;
+            bottom: 100px;
+            height: 1px;
+            background: #d1d5db;
+        }
+
+        .x-tick {
+            position: absolute;
+            top: 0;
+            width: 1px;
+            height: 8px;
+            background: #d1d5db;
+        }
+
+        .x-label {
+            position: absolute;
+            top: 15px;
+            font-size: 0.7em;
+            color: #6b7280;
+            font-weight: 500;
+            text-align: center;
+            transform: translateX(-50%);
         }
 
         .bar-chart {
@@ -230,7 +293,7 @@
             justify-content: center;
             gap: 0;
             height: 300px;
-            padding: 20px 0 120px 0;
+            padding: 20px 40px 120px 0;
             margin-bottom: 20px;
         }
 
@@ -437,6 +500,23 @@
                 <div class="position-group">
                     <h3 class="position-title">Wide Receivers</h3>
                     <div class="chart-container">
+                        <div class="chart-axes">
+                            <div class="y-axis">
+                                <div class="y-tick" style="top: 0%"></div>
+                                <div class="y-label" style="top: 0%">100%</div>
+                                <div class="y-tick" style="top: 25%"></div>
+                                <div class="y-label" style="top: 25%">75%</div>
+                                <div class="y-tick" style="top: 50%"></div>
+                                <div class="y-label" style="top: 50%">50%</div>
+                                <div class="y-tick" style="top: 75%"></div>
+                                <div class="y-label" style="top: 75%">25%</div>
+                                <div class="y-tick" style="top: 100%"></div>
+                                <div class="y-label" style="top: 100%">0%</div>
+                            </div>
+                            <div class="x-axis">
+                                <div class="x-label" style="left: 0%">Snap Count</div>
+                            </div>
+                        </div>
                         <div class="bar-chart" id="wr-chart"></div>
                         <div class="player-details" id="wr-details"></div>
                     </div>
@@ -445,16 +525,48 @@
                 <div class="position-group">
                     <h3 class="position-title">Tight Ends</h3>
                     <div class="chart-container">
+                        <div class="chart-axes">
+                            <div class="y-axis">
+                                <div class="y-tick" style="top: 0%"></div>
+                                <div class="y-label" style="top: 0%">100%</div>
+                                <div class="y-tick" style="top: 25%"></div>
+                                <div class="y-label" style="top: 25%">75%</div>
+                                <div class="y-tick" style="top: 50%"></div>
+                                <div class="y-label" style="top: 50%">50%</div>
+                                <div class="y-tick" style="top: 75%"></div>
+                                <div class="y-label" style="top: 75%">25%</div>
+                                <div class="y-tick" style="top: 100%"></div>
+                                <div class="y-label" style="top: 100%">0%</div>
+                            </div>
+                            <div class="x-axis">
+                                <div class="x-label" style="left: 0%">Snap Count</div>
+                            </div>
+                        </div>
                         <div class="bar-chart" id="te-chart"></div>
                         <div class="player-details" id="te-details"></div>
                     </div>
                 </div>
 
-
-
                 <div class="position-group">
                     <h3 class="position-title">Running Backs</h3>
                     <div class="chart-container">
+                        <div class="chart-axes">
+                            <div class="y-axis">
+                                <div class="y-tick" style="top: 0%"></div>
+                                <div class="y-label" style="top: 0%">100%</div>
+                                <div class="y-tick" style="top: 25%"></div>
+                                <div class="y-label" style="top: 25%">75%</div>
+                                <div class="y-tick" style="top: 50%"></div>
+                                <div class="y-label" style="top: 50%">50%</div>
+                                <div class="y-tick" style="top: 75%"></div>
+                                <div class="y-label" style="top: 75%">25%</div>
+                                <div class="y-tick" style="top: 100%"></div>
+                                <div class="y-label" style="top: 100%">0%</div>
+                            </div>
+                            <div class="x-axis">
+                                <div class="x-label" style="left: 0%">Snap Count</div>
+                            </div>
+                        </div>
                         <div class="bar-chart" id="rb-chart"></div>
                         <div class="player-details" id="rb-details"></div>
                     </div>
@@ -463,6 +575,23 @@
                 <div class="position-group">
                     <h3 class="position-title">Offensive Line</h3>
                     <div class="chart-container">
+                        <div class="chart-axes">
+                            <div class="y-axis">
+                                <div class="y-tick" style="top: 0%"></div>
+                                <div class="y-label" style="top: 0%">100%</div>
+                                <div class="y-tick" style="top: 25%"></div>
+                                <div class="y-label" style="top: 25%">75%</div>
+                                <div class="y-tick" style="top: 50%"></div>
+                                <div class="y-label" style="top: 50%">50%</div>
+                                <div class="y-tick" style="top: 75%"></div>
+                                <div class="y-label" style="top: 75%">25%</div>
+                                <div class="y-tick" style="top: 100%"></div>
+                                <div class="y-label" style="top: 100%">0%</div>
+                            </div>
+                            <div class="x-axis">
+                                <div class="x-label" style="left: 0%">Snap Count</div>
+                            </div>
+                        </div>
                         <div class="bar-chart" id="ol-chart"></div>
                         <div class="player-details" id="ol-details"></div>
                     </div>
@@ -474,6 +603,23 @@
                 <div class="position-group">
                     <h3 class="position-title">Defensive Backs</h3>
                     <div class="chart-container">
+                        <div class="chart-axes">
+                            <div class="y-axis">
+                                <div class="y-tick" style="top: 0%"></div>
+                                <div class="y-label" style="top: 0%">100%</div>
+                                <div class="y-tick" style="top: 25%"></div>
+                                <div class="y-label" style="top: 25%">75%</div>
+                                <div class="y-tick" style="top: 50%"></div>
+                                <div class="y-label" style="top: 50%">50%</div>
+                                <div class="y-tick" style="top: 75%"></div>
+                                <div class="y-label" style="top: 75%">25%</div>
+                                <div class="y-tick" style="top: 100%"></div>
+                                <div class="y-label" style="top: 100%">0%</div>
+                            </div>
+                            <div class="x-axis">
+                                <div class="x-label" style="left: 0%">Snap Count</div>
+                            </div>
+                        </div>
                         <div class="bar-chart" id="db-chart"></div>
                         <div class="player-details" id="db-details"></div>
                     </div>
@@ -482,6 +628,23 @@
                 <div class="position-group">
                     <h3 class="position-title">Linebackers</h3>
                     <div class="chart-container">
+                        <div class="chart-axes">
+                            <div class="y-axis">
+                                <div class="y-tick" style="top: 0%"></div>
+                                <div class="y-label" style="top: 0%">100%</div>
+                                <div class="y-tick" style="top: 25%"></div>
+                                <div class="y-label" style="top: 25%">75%</div>
+                                <div class="y-tick" style="top: 50%"></div>
+                                <div class="y-label" style="top: 50%">50%</div>
+                                <div class="y-tick" style="top: 75%"></div>
+                                <div class="y-label" style="top: 75%">25%</div>
+                                <div class="y-tick" style="top: 100%"></div>
+                                <div class="y-label" style="top: 100%">0%</div>
+                            </div>
+                            <div class="x-axis">
+                                <div class="x-label" style="left: 0%">Snap Count</div>
+                            </div>
+                        </div>
                         <div class="bar-chart" id="lb-chart"></div>
                         <div class="player-details" id="lb-details"></div>
                     </div>
@@ -490,6 +653,23 @@
                 <div class="position-group">
                     <h3 class="position-title">Defensive Line</h3>
                     <div class="chart-container">
+                        <div class="chart-axes">
+                            <div class="y-axis">
+                                <div class="y-tick" style="top: 0%"></div>
+                                <div class="y-label" style="top: 0%">100%</div>
+                                <div class="y-tick" style="top: 25%"></div>
+                                <div class="y-label" style="top: 25%">75%</div>
+                                <div class="y-tick" style="top: 50%"></div>
+                                <div class="y-label" style="top: 50%">50%</div>
+                                <div class="y-tick" style="top: 75%"></div>
+                                <div class="y-label" style="top: 75%">25%</div>
+                                <div class="y-tick" style="top: 100%"></div>
+                                <div class="y-label" style="top: 100%">0%</div>
+                            </div>
+                            <div class="x-axis">
+                                <div class="x-label" style="left: 0%">Snap Count</div>
+                            </div>
+                        </div>
                         <div class="bar-chart" id="dl-chart"></div>
                         <div class="player-details" id="dl-details"></div>
                     </div>
