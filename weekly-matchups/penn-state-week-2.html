@@ -9,96 +9,137 @@
     <style>
         body { 
             font-family: Arial, sans-serif; 
-            margin: 40px; 
+            margin: 0; 
+            padding: 20px;
             background: #f5f5f5;
+        }
+        .header {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             text-align: center;
         }
-        .redirect-info { 
-            background: white; 
-            padding: 30px; 
-            margin: 40px auto; 
-            border-radius: 8px; 
-            max-width: 600px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .spinner {
-            border: 4px solid #f3f3f3;
-            border-top: 4px solid #007bff;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-            animation: spin 1s linear infinite;
-            margin: 20px auto;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        .countdown {
-            font-size: 18px;
-            color: #666;
+        .logos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
             margin: 20px 0;
+        }
+        .logo {
+            height: 60px;
+            width: auto;
+        }
+        .divider {
+            width: 2px;
+            height: 60px;
+            background: #ddd;
+        }
+        .content {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .stat-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #007bff;
+        }
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #007bff;
+        }
+        .stat-label {
+            color: #666;
+            margin-top: 5px;
+        }
+        .navigation {
+            text-align: center;
+            margin: 30px 0;
+        }
+        .nav-link {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 24px;
+            background: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background 0.3s;
+        }
+        .nav-link:hover {
+            background: #0056b3;
+        }
+        .back-link {
+            background: #6c757d;
+        }
+        .back-link:hover {
+            background: #545b62;
         }
     </style>
 </head>
 <body>
-    <div class="redirect-info">
-        <h1>Penn State Week 2 Matchup</h1>
-        <p>Redirecting to the main application...</p>
-        
-        <div class="spinner"></div>
-        
-        <div class="countdown" id="countdown">Redirecting in 3 seconds...</div>
-        
-        <p>If you're not redirected automatically, <a href="../" id="manual-link">click here</a>.</p>
+    <div class="header">
+        <div class="logos">
+            <img src="../Big_Ten_Conference_logo.svg" alt="Big Ten Conference" class="logo">
+            <div class="divider"></div>
+            <img src="../PennState.svg" alt="Penn State Nittany Lions" class="logo">
+        </div>
+        <h1>Penn State Nittany Lions</h1>
+        <h2>Week 2 Matchup Analysis</h2>
     </div>
     
-    <script>
-        // This page handles the Penn State Week 2 matchup route
-        console.log('Penn State Week 2 matchup page loaded');
+    <div class="content">
+        <h3>Matchup Overview</h3>
+        <p>This page shows the Week 2 matchup analysis for Penn State. The data includes key statistics, player performance metrics, and strategic insights.</p>
         
-        // Store the route information
-        const matchupRoute = 'penn-state-week-2';
-        const fullPath = '/matchup-analytics/weekly-matchups/penn-state-week-2';
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-value">24</div>
+                <div class="stat-label">Points Scored</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">17</div>
+                <div class="stat-label">Points Allowed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">+7</div>
+                <div class="stat-label">Point Differential</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">W</div>
+                <div class="stat-label">Result</div>
+            </div>
+        </div>
         
-        console.log('Storing matchup route:', matchupRoute);
-        console.log('Full path:', fullPath);
+        <h3>Key Highlights</h3>
+        <ul>
+            <li>Strong defensive performance limiting opponent scoring</li>
+            <li>Balanced offensive attack with multiple contributors</li>
+            <li>Special teams excellence in field position</li>
+            <li>Effective time of possession management</li>
+        </ul>
         
-        // Store in localStorage for the main app to pick up
-        localStorage.setItem('matchupRoute', matchupRoute);
-        localStorage.setItem('fullPath', fullPath);
-        localStorage.setItem('routingTimestamp', Date.now());
-        localStorage.setItem('routeSource', 'direct-file');
-        
-        // Countdown timer
-        let countdown = 3;
-        const countdownElement = document.getElementById('countdown');
-        
-        const timer = setInterval(function() {
-            countdown--;
-            if (countdown > 0) {
-                countdownElement.textContent = `Redirecting in ${countdown} seconds...`;
-            } else {
-                countdownElement.textContent = 'Redirecting now...';
-                clearInterval(timer);
-                
-                // Redirect to main app
-                setTimeout(function() {
-                    console.log('Redirecting to main app...');
-                    window.location.href = '../';
-                }, 500);
-            }
-        }, 1000);
-        
-        // Fallback redirect after 5 seconds
-        setTimeout(function() {
-            if (window.location.pathname.includes('penn-state-week-2')) {
-                console.log('Fallback redirect triggered');
-                window.location.href = '../';
-            }
-        }, 5000);
-    </script>
+        <h3>Player Spotlight</h3>
+        <p>Key performers from this matchup included standout defensive plays and consistent offensive execution throughout the game.</p>
+    </div>
     
-    <script type="module" crossorigin src="../assets/index-CMUMgFUB.js"></script>
+    <div class="navigation">
+        <a href="../" class="nav-link back-link">← Back to Main</a>
+        <a href="./michigan-week-1.html" class="nav-link">Michigan Week 1</a>
+        <a href="../test-images.html" class="nav-link">Test Images</a>
+        <a href="../demo-routes.html" class="nav-link">Demo Routes</a>
+    </div>
 </body>
 </html>
