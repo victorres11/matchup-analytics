@@ -540,7 +540,9 @@
                         displayColors: false,
                         callbacks: {
                             label: function(context) {
-                                return `Snaps: ${context.parsed.y}`;
+                                const totalSnaps = context.dataset.data.reduce((sum, val) => sum + val, 0);
+                                const percentage = ((context.parsed.y / totalSnaps) * 100).toFixed(1);
+                                return `Snaps: ${context.parsed.y} (${percentage}%)`;
                             }
                         }
                     }
@@ -621,6 +623,9 @@
             // Sort players by snaps (descending)
             const sortedPlayers = [...players].sort((a, b) => b.snaps - a.snaps);
             
+            // Calculate total snaps for percentage calculation
+            const totalSnaps = sortedPlayers.reduce((sum, player) => sum + player.snaps, 0);
+            
             // Prepare data for Chart.js
             const labels = sortedPlayers.map(player => {
                 const nameParts = player.name.split(' ');
@@ -635,7 +640,8 @@
                     lastName = nameParts[nameParts.length - 2] + ' JR';
                 }
                 
-                return `${lastName} #${player.jersey}`;
+                const percentage = ((player.snaps / totalSnaps) * 100).toFixed(1);
+                return `${lastName} #${player.jersey} (${percentage}%)`;
             });
             
             const data = sortedPlayers.map(player => player.snaps);
