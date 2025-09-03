@@ -591,8 +591,12 @@
                 const nameParts = player.name.split(' ');
                 let lastName = nameParts[nameParts.length - 1];
                 
-                // Handle "JR" names properly
-                if (lastName === 'JR' && nameParts.length > 1) {
+                // Handle "Jr." names properly (with period)
+                if (lastName === 'Jr.' && nameParts.length > 1) {
+                    lastName = nameParts[nameParts.length - 2] + ' Jr.';
+                }
+                // Handle "JR" names properly (without period)
+                else if (lastName === 'JR' && nameParts.length > 1) {
                     lastName = nameParts[nameParts.length - 2] + ' JR';
                 }
                 
