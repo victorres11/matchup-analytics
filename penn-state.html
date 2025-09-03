@@ -21,41 +21,53 @@
 
         /* Alternative bar chart styles - uncomment the one you prefer */
         
-        /* Style 1: Clean Modern (Current) */
+        /* Style 1: Minimalist Flat (Current) */
         .bar {
-            background: #1e3a8a;
-            border-radius: 4px 4px 0 0;
+            background: #374151;
+            border-radius: 0;
             position: relative;
             transition: all 0.3s ease;
             cursor: pointer;
-            box-shadow: 0 2px 8px rgba(30,58,138,0.2);
+            box-shadow: none;
+            border-left: 3px solid #1e3a8a;
         }
 
-        /* Style 2: Flat Modern (Alternative) */
+        /* Style 2: Modern Card (Alternative) */
         /*
         .bar {
-            background: #3b82f6;
-            border-radius: 4px 4px 0 0;
+            background: white;
+            border-radius: 6px 6px 0 0;
             position: relative;
             transition: all 0.3s ease;
             cursor: pointer;
-            box-shadow: 0 2px 8px rgba(59,130,246,0.3);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border: 1px solid #e5e7eb;
+        }
+        .bar:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            border-color: #1e3a8a;
         }
         */
 
-        /* Style 3: Rounded Pills (Alternative) */
+        /* Style 3: Subtle Depth (Alternative) */
         /*
         .bar {
-            background: linear-gradient(to top, #1e40af, #3b82f6);
-            border-radius: 20px 20px 0 0;
+            background: #f3f4f6;
+            border-radius: 0;
             position: relative;
             transition: all 0.3s ease;
             cursor: pointer;
-            box-shadow: 0 4px 15px rgba(30,64,175,0.4);
+            box-shadow: inset 0 -2px 0 #1e3a8a;
+        }
+        .bar:hover {
+            transform: translateY(-1px);
+            background: #e5e7eb;
+            box-shadow: inset 0 -3px 0 #1e3a8a;
         }
         */
 
-        /* Style 4: Minimalist (Alternative) */
+        /* Style 4: Clean Lines (Alternative) */
         /*
         .bar {
             background: #1e3a8a;
@@ -63,8 +75,13 @@
             position: relative;
             transition: all 0.3s ease;
             cursor: pointer;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-            border-left: 3px solid #3b82f6;
+            box-shadow: none;
+            border-bottom: 2px solid #374151;
+        }
+        .bar:hover {
+            transform: translateY(-2px);
+            background: #3b82f6;
+            border-bottom-color: #1e3a8a;
         }
         */
 
@@ -213,9 +230,9 @@
         }
 
         .bar:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 6px 20px rgba(30,58,138,0.3);
-            background: #3b82f6;
+            transform: translateY(-2px);
+            background: #1e3a8a;
+            box-shadow: 0 4px 12px rgba(30,58,138,0.15);
         }
 
         .bar-label {
