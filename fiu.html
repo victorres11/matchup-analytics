@@ -540,7 +540,14 @@
                         displayColors: false,
                         callbacks: {
                             label: function(context) {
-                                const totalSnaps = context.dataset.data.reduce((sum, val) => sum + val, 0);
+                                // Determine if this is offensive or defensive chart based on context
+                                let totalSnaps;
+                                const chartId = context.chart.canvas.id;
+                                if (chartId.includes('wr') || chartId.includes('te') || chartId.includes('rb') || chartId.includes('ol')) {
+                                    totalSnaps = 76; // FIU Offensive Total
+                                } else {
+                                    totalSnaps = 70; // FIU Defensive Total
+                                }
                                 const percentage = ((context.parsed.y / totalSnaps) * 100).toFixed(1);
                                 return `Snaps: ${context.parsed.y} (${percentage}%)`;
                             }
@@ -623,8 +630,13 @@
             // Sort players by snaps (descending)
             const sortedPlayers = [...players].sort((a, b) => b.snaps - a.snaps);
             
-            // Calculate total snaps for percentage calculation
-            const totalSnaps = sortedPlayers.reduce((sum, player) => sum + player.snaps, 0);
+            // Use correct team totals for percentage calculation
+            let totalSnaps;
+            if (canvasId.includes('wr') || canvasId.includes('te') || canvasId.includes('rb') || canvasId.includes('ol')) {
+                totalSnaps = 76; // FIU Offensive Total
+            } else {
+                totalSnaps = 70; // FIU Defensive Total
+            }
             
             // Prepare data for Chart.js
             const labels = sortedPlayers.map(player => {
@@ -709,13 +721,15 @@
         }
 
         function updateStats(offenseData, defenseData) {
-            // Calculate offensive stats
-            const offensiveSnaps = Object.values(offenseData).flat().reduce((sum, player) => sum + player.snaps, 0);
-            const offensiveAvg = Math.round(offensiveSnaps / Object.values(offenseData).flat().length);
-
-            // Calculate defensive stats
-            const defensiveSnaps = Object.values(defenseData).flat().reduce((sum, player) => sum + player.snaps, 0);
-            const defensiveAvg = Math.round(defensiveSnaps / Object.values(defenseData).flat().length);
+            // Use actual team totals
+            const offensiveSnaps = 76; // FIU Offensive Snap Total
+            const defensiveSnaps = 70; // FIU Defensive Snap Total
+            
+            // Calculate averages based on actual totals
+            const offensivePlayers = Object.values(offenseData).flat().length;
+            const defensivePlayers = Object.values(defenseData).flat().length;
+            const offensiveAvg = Math.round(offensiveSnaps / offensivePlayers);
+            const defensiveAvg = Math.round(defensiveSnaps / defensivePlayers);
 
             // Update display
             document.getElementById('total-offense').textContent = offensiveSnaps;
