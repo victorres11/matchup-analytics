@@ -230,7 +230,7 @@
             justify-content: center;
             gap: 0;
             height: 300px;
-            padding: 20px 0 100px 0;
+            padding: 20px 0 120px 0;
             margin-bottom: 20px;
         }
 
@@ -238,7 +238,7 @@
 
         .bar-label {
             position: absolute;
-            bottom: -60px;
+            bottom: -80px;
             left: 50%;
             transform: translateX(-50%);
             font-size: 0.7em;
@@ -246,7 +246,7 @@
             text-align: center;
             white-space: nowrap;
             font-weight: 500;
-            width: 120px;
+            width: 100px;
             overflow: hidden;
             text-overflow: ellipsis;
             z-index: 10;
@@ -559,10 +559,10 @@
             
             // Calculate optimal spacing based on number of players and label width
             const totalBars = sortedPlayers.length;
-            const labelWidth = 120; // Width of each label
+            const labelWidth = 100; // Width of each label
             const availableWidth = chart.offsetWidth - 40; // Account for padding
-            const maxBarWidth = Math.min(60, (availableWidth - (labelWidth * totalBars)) / totalBars);
-            const barWidth = Math.max(30, maxBarWidth);
+            const maxBarWidth = Math.min(50, (availableWidth - (labelWidth * totalBars)) / totalBars);
+            const barWidth = Math.max(25, maxBarWidth);
             
             // Create bars
             sortedPlayers.forEach(player => {
@@ -573,7 +573,7 @@
                 bar.style.height = `${height}%`;
                 bar.style.minHeight = '20px';
                 bar.style.width = `${barWidth}px`;
-                bar.style.margin = '0 8px';
+                bar.style.margin = '0 12px';
                 
                 // Create label with last name and jersey number
                 const label = document.createElement('div');
