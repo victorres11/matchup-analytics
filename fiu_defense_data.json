@@ -1,0 +1,205 @@
+{
+  "metadata": {
+    "team": "FIU Panthers",
+    "conference": "Conference USA",
+    "date": "2025-09-02",
+    "source": "PFF Premium Stats"
+  },
+  "defense": {
+    "defensive_line": [
+      {
+        "rank": 2,
+        "name": "Xion Chapman",
+        "jersey": "D90",
+        "position": "DE",
+        "snaps": 32
+      },
+      {
+        "rank": 6,
+        "name": "Quaylen Hill",
+        "jersey": "D95",
+        "position": "DE",
+        "snaps": 28
+      },
+      {
+        "rank": 16,
+        "name": "Olasunkonmi Agunloye",
+        "jersey": "D19",
+        "position": "DT",
+        "snaps": 18
+      },
+      {
+        "rank": 19,
+        "name": "Josiah Taylor",
+        "jersey": "D35",
+        "position": "DT",
+        "snaps": 15
+      },
+      {
+        "rank": 20,
+        "name": "Germaine Carter",
+        "jersey": "D99",
+        "position": "DE",
+        "snaps": 14
+      },
+      {
+        "rank": 23,
+        "name": "Anthony Smith",
+        "jersey": "D68",
+        "position": "DT",
+        "snaps": 11
+      }
+    ],
+    "linebackers": [
+      {
+        "rank": 1,
+        "name": "Johnny Chaney Jr.",
+        "jersey": "D00",
+        "position": "WLB",
+        "snaps": 34
+      },
+      {
+        "rank": 9,
+        "name": "Keegan Davis",
+        "jersey": "D44",
+        "position": "LB",
+        "snaps": 25
+      },
+      {
+        "rank": 15,
+        "name": "Preston Thompson",
+        "jersey": "D29",
+        "position": "LB",
+        "snaps": 19
+      },
+      {
+        "rank": 17,
+        "name": "Antonio Patterson",
+        "jersey": "D09",
+        "position": "LB",
+        "snaps": 17
+      },
+      {
+        "rank": 24,
+        "name": "Bobby Salla Jr.",
+        "jersey": "D32",
+        "position": "LB",
+        "snaps": 10
+      },
+      {
+        "rank": 27,
+        "name": "Dante Anderson",
+        "jersey": "D13",
+        "position": "LB",
+        "snaps": 7
+      }
+    ],
+    "defensive_backs": [
+      {
+        "rank": 3,
+        "name": "Demetrius Hill",
+        "jersey": "D03",
+        "position": "CB",
+        "snaps": 31
+      },
+      {
+        "rank": 4,
+        "name": "Dwight Nunoo",
+        "jersey": "D18",
+        "position": "S",
+        "snaps": 30
+      },
+      {
+        "rank": 5,
+        "name": "Toddrick Brewton",
+        "jersey": "D33",
+        "position": "CB",
+        "snaps": 29
+      },
+      {
+        "rank": 7,
+        "name": "Victor Evans III",
+        "jersey": "D04",
+        "position": "CB",
+        "snaps": 27
+      },
+      {
+        "rank": 8,
+        "name": "Jessiah McGrew",
+        "jersey": "D23",
+        "position": "S",
+        "snaps": 26
+      },
+      {
+        "rank": 10,
+        "name": "Jai-Ayviauynn Celestine",
+        "jersey": "D07",
+        "position": "CB",
+        "snaps": 24
+      },
+      {
+        "rank": 11,
+        "name": "Websley Etienne",
+        "jersey": "D12",
+        "position": "S",
+        "snaps": 23
+      },
+      {
+        "rank": 12,
+        "name": "Percy Courtney Jr.",
+        "jersey": "D11",
+        "position": "CB",
+        "snaps": 22
+      },
+      {
+        "rank": 13,
+        "name": "Brian Blades II",
+        "jersey": "D02",
+        "position": "S",
+        "snaps": 21
+      },
+      {
+        "rank": 14,
+        "name": "Ashton Levells",
+        "jersey": "D01",
+        "position": "CB",
+        "snaps": 20
+      },
+      {
+        "rank": 18,
+        "name": "Steven Shannon",
+        "jersey": "D05",
+        "position": "CB",
+        "snaps": 16
+      },
+      {
+        "rank": 21,
+        "name": "Sadonnie Gay",
+        "jersey": "D30",
+        "position": "S",
+        "snaps": 13
+      },
+      {
+        "rank": 22,
+        "name": "Kenton Simmons",
+        "jersey": "D25",
+        "position": "CB",
+        "snaps": 12
+      },
+      {
+        "rank": 25,
+        "name": "Mister Clark",
+        "jersey": "D27",
+        "position": "S",
+        "snaps": 9
+      },
+      {
+        "rank": 26,
+        "name": "Shamir Sterlin",
+        "jersey": "D22",
+        "position": "CB",
+        "snaps": 8
+      }
+    ]
+  }
+}

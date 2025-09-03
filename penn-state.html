@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penn State Nittany Lions - Snap Count Analytics</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #041e42 0%, #1e3a8a 100%);
+            color: #333;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .logos {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+        }
+
+        .logo {
+            height: 80px;
+            width: auto;
+            filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+        }
+
+        .divider {
+            width: 3px;
+            height: 80px;
+            background: linear-gradient(to bottom, #041e42, #1e3a8a);
+            border-radius: 2px;
+        }
+
+        h1 {
+            color: #041e42;
+            font-size: 2.5em;
+            font-weight: 700;
+            margin: 20px 0;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+            font-weight: 300;
+        }
+
+        .tabs {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .tab-buttons {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 20px;
+        }
+
+        .tab-btn {
+            padding: 15px 30px;
+            border: none;
+            background: #f8f9fa;
+            color: #666;
+            border-radius: 10px 10px 0 0;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+        }
+
+        .tab-btn.active {
+            background: #041e42;
+            color: white;
+            border-bottom-color: #041e42;
+        }
+
+        .tab-btn:hover:not(.active) {
+            background: #e9ecef;
+            color: #495057;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .position-group {
+            margin-bottom: 40px;
+        }
+
+        .position-title {
+            color: #041e42;
+            font-size: 1.8em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .chart-container {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid #e9ecef;
+        }
+
+        .bar-chart {
+            display: flex;
+            align-items: end;
+            gap: 8px;
+            height: 300px;
+            padding: 20px 0;
+            overflow-x: auto;
+        }
+
+        .bar {
+            background: linear-gradient(to top, #041e42, #1e3a8a);
+            border-radius: 6px 6px 0 0;
+            min-width: 40px;
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .bar:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+
+        .bar-label {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8em;
+            color: #666;
+            text-align: center;
+            white-space: nowrap;
+            font-weight: 500;
+        }
+
+        .bar-value {
+            position: absolute;
+            top: -25px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #041e42;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: 600;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .bar:hover .bar-value {
+            opacity: 1;
+        }
+
+        .player-details {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: none;
+        }
+
+        .player-details.active {
+            display: block;
+            animation: slideDown 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .player-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .player-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #041e42;
+        }
+
+        .player-name {
+            font-weight: 600;
+            color: #041e42;
+            margin-bottom: 5px;
+        }
+
+        .player-info {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .stats-summary {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 10px;
+            border: 1px solid #dee2e6;
+        }
+
+        .stat-value {
+            font-size: 2em;
+            font-weight: 700;
+            color: #041e42;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: #666;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .tabs {
+                padding: 20px;
+            }
+            
+            .tab-buttons {
+                flex-direction: column;
+            }
+            
+            .bar-chart {
+                height: 200px;
+            }
+            
+            .bar {
+                min-width: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="logos">
+                <img src="./Big_Ten_Conference_logo.svg" alt="Big Ten Conference" class="logo">
+                <div class="divider"></div>
+                <img src="./PennState.svg" alt="Penn State Nittany Lions" class="logo">
+            </div>
+            <h1>Penn State Nittany Lions</h1>
+            <p class="subtitle">Snap Count Analytics</p>
+        </div>
+
+        <!-- Stats Summary -->
+        <div class="stats-summary">
+            <h2 style="color: #041e42; margin-bottom: 20px; text-align: center;">Team Overview</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-value" id="total-offensive-snaps">-</div>
+                    <div class="stat-label">Total Offensive Snaps</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="total-defensive-snaps">-</div>
+                    <div class="stat-label">Total Defensive Snaps</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="offensive-players">-</div>
+                    <div class="stat-label">Offensive Players</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="defensive-players">-</div>
+                    <div class="stat-label">Defensive Players</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <div class="tab-buttons">
+                <button class="tab-btn active" onclick="showTab('offense')">OFFENSIVE</button>
+                <button class="tab-btn" onclick="showTab('defense')">DEFENSIVE</button>
+            </div>
+
+            <!-- Offensive Tab -->
+            <div id="offense" class="tab-content active">
+                <div class="position-group">
+                    <h3 class="position-title">Wide Receivers</h3>
+                    <div class="chart-container">
+                        <div class="bar-chart" id="wr-chart"></div>
+                        <div class="player-details" id="wr-details"></div>
+                    </div>
+                </div>
+
+                <div class="position-group">
+                    <h3 class="position-title">Tight Ends</h3>
+                    <div class="chart-container">
+                        <div class="bar-chart" id="te-chart"></div>
+                        <div class="player-details" id="te-details"></div>
+                    </div>
+                </div>
+
+                <div class="position-group">
+                    <h3 class="position-title">Quarterbacks</h3>
+                    <div class="chart-container">
+                        <div class="bar-chart" id="qb-chart"></div>
+                        <div class="player-details" id="qb-details"></div>
+                    </div>
+                </div>
+
+                <div class="position-group">
+                    <h3 class="position-title">Running Backs</h3>
+                    <div class="chart-container">
+                        <div class="bar-chart" id="rb-chart"></div>
+                        <div class="player-details" id="rb-details"></div>
+                    </div>
+                </div>
+
+                <div class="position-group">
+                    <h3 class="position-title">Offensive Line</h3>
+                    <div class="chart-container">
+                        <div class="bar-chart" id="ol-chart"></div>
+                        <div class="player-details" id="ol-details"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Defensive Tab -->
+            <div id="defense" class="tab-content">
+                <div class="position-group">
+                    <h3 class="position-title">Defensive Backs</h3>
+                    <div class="chart-container">
+                        <div class="bar-chart" id="db-chart"></div>
+                        <div class="player-details" id="db-details"></div>
+                    </div>
+                </div>
+
+                <div class="position-group">
+                    <h3 class="position-title">Linebackers</h3>
+                    <div class="chart-container">
+                        <div class="bar-chart" id="lb-chart"></div>
+                        <div class="player-details" id="lb-details"></div>
+                    </div>
+                </div>
+
+                <div class="position-group">
+                    <h3 class="position-title">Defensive Line</h3>
+                    <div class="chart-container">
+                        <div class="bar-chart" id="dl-chart"></div>
+                        <div class="player-details" id="dl-details"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Tab switching functionality
+        function showTab(tabName) {
+            // Hide all tab contents
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all buttons
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            tabButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Show selected tab content
+            document.getElementById(tabName).classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
+
+        // Load and display data
+        async function loadData() {
+            try {
+                const [offenseData, defenseData] = await Promise.all([
+                    fetch('./penn_state_offense.json').then(res => res.json()),
+                    fetch('./penn_state_defense_data.json').then(res => res.json())
+                ]);
+
+                displayOffensiveData(offenseData.penn_state_offense);
+                displayDefensiveData(defenseData.penn_state_defense);
+                updateStats(offenseData.penn_state_offense, defenseData.penn_state_defense);
+            } catch (error) {
+                console.error('Error loading data:', error);
+            }
+        }
+
+        function displayOffensiveData(data) {
+            createBarChart('wr-chart', data.wide_receivers, 'wr-details');
+            createBarChart('te-chart', data.tight_ends, 'te-details');
+            createBarChart('qb-chart', data.quarterbacks, 'qb-details');
+            createBarChart('rb-chart', data.running_backs, 'rb-details');
+            createBarChart('ol-chart', data.offensive_line, 'ol-details');
+        }
+
+        function displayDefensiveData(data) {
+            createBarChart('db-chart', data.defensive_backs, 'db-details');
+            createBarChart('lb-chart', data.linebackers, 'lb-details');
+            createBarChart('dl-chart', data.defensive_line, 'dl-details');
+        }
+
+        function createBarChart(chartId, players, detailsId) {
+            if (!players || players.length === 0) return;
+
+            const chart = document.getElementById(chartId);
+            const details = document.getElementById(detailsId);
+            
+            // Clear existing content
+            chart.innerHTML = '';
+            details.innerHTML = '';
+
+            // Sort players by snaps (descending)
+            const sortedPlayers = [...players].sort((a, b) => b.snaps - a.snaps);
+            
+            // Find max snaps for scaling
+            const maxSnaps = Math.max(...sortedPlayers.map(p => p.snaps));
+            
+            // Create bars
+            sortedPlayers.forEach(player => {
+                const bar = document.createElement('div');
+                const height = (player.snaps / maxSnaps) * 100;
+                
+                bar.className = 'bar';
+                bar.style.height = `${height}%`;
+                bar.style.minHeight = '20px';
+                
+                // Create label
+                const label = document.createElement('div');
+                label.className = 'bar-label';
+                label.textContent = player.name.split(' ').pop(); // Last name only
+                
+                // Create value
+                const value = document.createElement('div');
+                value.className = 'bar-value';
+                value.textContent = player.snaps;
+                
+                bar.appendChild(label);
+                bar.appendChild(value);
+                
+                // Add click event to show details
+                bar.addEventListener('click', () => showPlayerDetails(player, details));
+                
+                chart.appendChild(bar);
+            });
+
+            // Create player details section
+            createPlayerDetailsSection(sortedPlayers, details);
+        }
+
+        function createPlayerDetailsSection(players, detailsElement) {
+            const title = document.createElement('h4');
+            title.textContent = 'Player Details';
+            title.style.color = '#041e42';
+            title.style.marginBottom = '15px';
+            detailsElement.appendChild(title);
+
+            const grid = document.createElement('div');
+            grid.className = 'player-grid';
+
+            players.forEach(player => {
+                const card = document.createElement('div');
+                card.className = 'player-card';
+                
+                card.innerHTML = `
+                    <div class="player-name">${player.name}</div>
+                    <div class="player-info">#${player.jersey} • ${player.position}</div>
+                    <div class="player-info"><strong>${player.snaps} snaps</strong></div>
+                `;
+                
+                grid.appendChild(card);
+            });
+
+            detailsElement.appendChild(grid);
+        }
+
+        function showPlayerDetails(player, detailsElement) {
+            // Hide all other details
+            document.querySelectorAll('.player-details').forEach(detail => {
+                detail.classList.remove('active');
+            });
+            
+            // Show clicked details
+            detailsElement.classList.add('active');
+        }
+
+        function updateStats(offenseData, defenseData) {
+            // Calculate totals
+            const offensiveSnaps = Object.values(offenseData).flat().reduce((sum, player) => sum + player.snaps, 0);
+            const defensiveSnaps = Object.values(defenseData).flat().reduce((sum, player) => sum + player.snaps, 0);
+            const offensivePlayers = Object.values(offenseData).flat().length;
+            const defensivePlayers = Object.values(defenseData).flat().length;
+
+            // Update display
+            document.getElementById('total-offensive-snaps').textContent = offensiveSnaps;
+            document.getElementById('total-defensive-snaps').textContent = defensiveSnaps;
+            document.getElementById('offensive-players').textContent = offensivePlayers;
+            document.getElementById('defensive-players').textContent = defensivePlayers;
+        }
+
+        // Load data when page loads
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>

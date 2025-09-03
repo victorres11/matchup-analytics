@@ -1,0 +1,226 @@
+{
+  "penn_state_defense": {
+    "defensive_line": [
+      {
+        "jersey": "33",
+        "name": "Dani Dennis-Sutton",
+        "position": "DRE",
+        "snaps": 25
+      },
+      {
+        "jersey": "45",
+        "name": "Enai White",
+        "position": "DRT",
+        "snaps": 24
+      },
+      {
+        "jersey": "54",
+        "name": "Xavier Gilliam",
+        "position": "DLT",
+        "snaps": 18
+      },
+      {
+        "jersey": "34",
+        "name": "Owen Wafle",
+        "position": "DLT",
+        "snaps": 11
+      },
+      {
+        "jersey": "20",
+        "name": "Mylachi Williams",
+        "position": "DLE",
+        "snaps": 14
+      },
+      {
+        "jersey": "52",
+        "name": "Randy Adirika",
+        "position": "DLT",
+        "snaps": 7
+      },
+      {
+        "jersey": "28",
+        "name": "Zane Durant",
+        "position": "DLT",
+        "snaps": 26
+      },
+      {
+        "jersey": "39",
+        "name": "Ty Blanding",
+        "position": "DLE",
+        "snaps": 8
+      },
+      {
+        "jersey": "50",
+        "name": "Alonzo Ford Jr.",
+        "position": "DRT",
+        "snaps": 6
+      },
+      {
+        "jersey": "94",
+        "name": "De'Andre Cook",
+        "position": "DRE",
+        "snaps": 4
+      },
+      {
+        "jersey": "90",
+        "name": "Liam Andrews",
+        "position": "DRT",
+        "snaps": 3
+      },
+      {
+        "jersey": "93",
+        "name": "Bobby Mears",
+        "position": "DLE",
+        "snaps": 1
+      },
+      {
+        "jersey": "44",
+        "name": "Jaylen Harvey",
+        "position": "DRT",
+        "snaps": 1
+      }
+    ],
+    "linebackers": [
+      {
+        "jersey": "13",
+        "name": "Tony Rojas",
+        "position": "WLB",
+        "snaps": 23
+      },
+      {
+        "jersey": "32",
+        "name": "Keon Wylie",
+        "position": "WLB",
+        "snaps": 23
+      },
+      {
+        "jersey": "40",
+        "name": "Anthony Speca",
+        "position": "WLB",
+        "snaps": 13
+      },
+      {
+        "jersey": "99",
+        "name": "Yvan Kemajou",
+        "position": "ROLB",
+        "snaps": 19
+      },
+      {
+        "jersey": "24",
+        "name": "Amare Campbell",
+        "position": "WLB",
+        "snaps": 25
+      },
+      {
+        "jersey": "08",
+        "name": "DaKaari Nelson",
+        "position": "WLB",
+        "snaps": 1
+      },
+      {
+        "jersey": "27",
+        "name": "Lamont Payne Jr.",
+        "position": "ROLB",
+        "snaps": 1
+      }
+    ],
+    "defensive_backs": [
+      {
+        "jersey": "02",
+        "name": "Audavion Collins",
+        "position": "RCB",
+        "snaps": 15
+      },
+      {
+        "jersey": "10",
+        "name": "Dejuan Lane",
+        "position": "FS",
+        "snaps": 18
+      },
+      {
+        "jersey": "16",
+        "name": "King Mack",
+        "position": "FS",
+        "snaps": 11
+      },
+      {
+        "jersey": "23",
+        "name": "Jahmir Joseph",
+        "position": "SS",
+        "snaps": 23
+      },
+      {
+        "jersey": "05",
+        "name": "Daryus Dixson",
+        "position": "RCB",
+        "snaps": 21
+      },
+      {
+        "jersey": "17",
+        "name": "Kenny Woseley Jr.",
+        "position": "SS",
+        "snaps": 34
+      },
+      {
+        "jersey": "35",
+        "name": "Tyler Armstead",
+        "position": "LCB",
+        "snaps": 10
+      },
+      {
+        "jersey": "09",
+        "name": "Elliot Washington II",
+        "position": "LCB",
+        "snaps": 16
+      },
+      {
+        "jersey": "21",
+        "name": "Vaboue Toure",
+        "position": "FS",
+        "snaps": 20
+      },
+      {
+        "jersey": "06",
+        "name": "Zakee Wheatley",
+        "position": "FS",
+        "snaps": 20
+      },
+      {
+        "jersey": "03",
+        "name": "Antoine Belgrave-Shorter",
+        "position": "LCB",
+        "snaps": 2
+      },
+      {
+        "jersey": "04",
+        "name": "A.J. Harris",
+        "position": "SS",
+        "snaps": 1
+      },
+      {
+        "jersey": "19",
+        "name": "Chaz Coleman",
+        "position": "RCB",
+        "snaps": 1
+      },
+      {
+        "jersey": "31",
+        "name": "Kolin Dinkins",
+        "position": "FS",
+        "snaps": 1
+      },
+      {
+        "jersey": "00",
+        "name": "Dominic DeLuca",
+        "position": "LCB",
+        "snaps": 1
+      }
+    ]
+  },
+  "metadata": {
+    "total_defensive_plays": 73,
+    "game": "Penn State vs Nevada",
+    "date": "2025-09-02",
+    "source": "PFF Premium Stats"
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "metadata": {
+    "team": "FIU Panthers",
+    "conference": "Conference USA",
+    "date": "2025-09-02",
+    "source": "PFF Premium Stats"
+  },
+  "offense": {
+    "offensive_line": [
+      {
+        "rank": 8,
+        "name": "Jaleel Davis",
+        "jersey": "78",
+        "position": "LT",
+        "snaps": 62
+      },
+      {
+        "rank": 14,
+        "name": "Jaheim Buchanon",
+        "jersey": "59",
+        "position": "LG",
+        "snaps": 62
+      },
+      {
+        "rank": 28,
+        "name": "Julius Pierce",
+        "jersey": "65",
+        "position": "C",
+        "snaps": 62
+      },
+      {
+        "rank": 27,
+        "name": "Miguel Cedeno",
+        "jersey": "75",
+        "position": "RT",
+        "snaps": 39
+      },
+      {
+        "rank": 31,
+        "name": "Antonio Tripp Jr.",
+        "jersey": "71",
+        "position": "RG",
+        "snaps": 38
+      },
+      {
+        "rank": 12,
+        "name": "Daniel Michel",
+        "jersey": "55",
+        "position": "RT",
+        "snaps": 33
+      },
+      {
+        "rank": 6,
+        "name": "Zaire Flournoy",
+        "jersey": "51",
+        "position": "RG",
+        "snaps": 24
+      },
+      {
+        "rank": 5,
+        "name": "Chad Staley",
+        "jersey": "54",
+        "position": "C",
+        "snaps": 10
+      },
+      {
+        "rank": 15,
+        "name": "Mykeal Rabess",
+        "jersey": "70",
+        "position": "LT",
+        "snaps": 10
+      },
+      {
+        "rank": 20,
+        "name": "Akeem Neal",
+        "jersey": "52",
+        "position": "LG",
+        "snaps": 10
+      },
+      {
+        "rank": 23,
+        "name": "Viliami Makahununiu",
+        "jersey": "77",
+        "position": "RG",
+        "snaps": 10
+      },
+      {
+        "rank": 13,
+        "name": "Jackson Schultze",
+        "jersey": "72",
+        "position": "LG",
+        "snaps": 6
+      },
+      {
+        "rank": 9,
+        "name": "Jeremy Smith",
+        "jersey": "58",
+        "position": "LT",
+        "snaps": 4
+      },
+      {
+        "rank": 22,
+        "name": "Noah Fernandez",
+        "jersey": "60",
+        "position": "RT",
+        "snaps": 4
+      },
+      {
+        "rank": 24,
+        "name": "Jon Rodriguez",
+        "jersey": "67",
+        "position": "C",
+        "snaps": 4
+      },
+      {
+        "rank": 25,
+        "name": "Knajee Saffold",
+        "jersey": "57",
+        "position": "RG",
+        "snaps": 4
+      }
+    ],
+    "tight_ends": [
+      {
+        "rank": 29,
+        "name": "Dallas Payne",
+        "jersey": "00",
+        "position": "TE-R",
+        "snaps": 30
+      },
+      {
+        "rank": 19,
+        "name": "Jackson Verdugo",
+        "jersey": "88",
+        "position": "TE-R",
+        "snaps": 25
+      },
+      {
+        "rank": 10,
+        "name": "Braiden Staten",
+        "jersey": "87",
+        "position": "TE-R",
+        "snaps": 22
+      },
+      {
+        "rank": 35,
+        "name": "Justin Cayenne",
+        "jersey": "86",
+        "position": "TE-L",
+        "snaps": 21
+      },
+      {
+        "rank": 11,
+        "name": "Sean Burke",
+        "jersey": "89",
+        "position": "TE-R",
+        "snaps": 4
+      }
+    ],
+    "wide_receivers": [
+      {
+        "rank": 30,
+        "name": "Alex Perry",
+        "jersey": "04",
+        "position": "LWR",
+        "snaps": 51
+      },
+      {
+        "rank": 16,
+        "name": "Kyle McNeal",
+        "jersey": "07",
+        "position": "LWR",
+        "snaps": 35
+      },
+      {
+        "rank": 2,
+        "name": "Eric Nelson",
+        "jersey": "11",
+        "position": "RWR",
+        "snaps": 28
+      },
+      {
+        "rank": 7,
+        "name": "Semaj Demps",
+        "jersey": "21",
+        "position": "SLWR",
+        "snaps": 24
+      },
+      {
+        "rank": 32,
+        "name": "Jojo Stone",
+        "jersey": "18",
+        "position": "SRWR",
+        "snaps": 22
+      },
+      {
+        "rank": 17,
+        "name": "Maguire Anderson",
+        "jersey": "84",
+        "position": "RWR",
+        "snaps": 21
+      },
+      {
+        "rank": 34,
+        "name": "Tyson Carter",
+        "jersey": "13",
+        "position": "RWR",
+        "snaps": 8
+      },
+      {
+        "rank": 36,
+        "name": "Tar'varish Dawson",
+        "jersey": "02",
+        "position": "RWR",
+        "snaps": 7
+      },
+      {
+        "rank": 18,
+        "name": "Andre Brown",
+        "jersey": "80",
+        "position": "SLWR",
+        "snaps": 4
+      }
+    ],
+    "running_backs": [
+      {
+        "rank": 1,
+        "name": "Kejon Owens",
+        "jersey": "05",
+        "position": "HB",
+        "snaps": 28
+      },
+      {
+        "rank": 3,
+        "name": "Anthony Carrie",
+        "jersey": "06",
+        "position": "HB",
+        "snaps": 25
+      },
+      {
+        "rank": 4,
+        "name": "Devonte Lyons",
+        "jersey": "20",
+        "position": "HB",
+        "snaps": 19
+      },
+      {
+        "rank": 21,
+        "name": "Jordan Clemons",
+        "jersey": "30",
+        "position": "HB",
+        "snaps": 4
+      }
+    ]
+  }
+}

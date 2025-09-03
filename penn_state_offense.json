@@ -1,0 +1,198 @@
+{
+  "penn_state_offense": {
+    "offensive_line": [
+      {
+        "jersey": "68",
+        "name": "Anthony Donkoh",
+        "position": "RG",
+        "snaps": 50
+      },
+      {
+        "jersey": "66",
+        "name": "Drew Shelton",
+        "position": "LT",
+        "snaps": 50
+      },
+      {
+        "jersey": "53",
+        "name": "Nick Dawkins",
+        "position": "C",
+        "snaps": 50
+      },
+      {
+        "jersey": "71",
+        "name": "Olaivavega Ioane",
+        "position": "LG",
+        "snaps": 41
+      },
+      {
+        "jersey": "72",
+        "name": "Nolan Rucci",
+        "position": "RT",
+        "snaps": 41
+      },
+      {
+        "jersey": "50",
+        "name": "Cooper Cousins",
+        "position": "RG",
+        "snaps": 35
+      },
+      {
+        "jersey": "54",
+        "name": "TJ Shanahan Jr.",
+        "position": "RG",
+        "snaps": 34
+      },
+      {
+        "jersey": "70",
+        "name": "Garrett Sexton",
+        "position": "RT",
+        "snaps": 23
+      },
+      {
+        "jersey": "52",
+        "name": "Dominic Rulli",
+        "position": "C",
+        "snaps": 23
+      },
+      {
+        "jersey": "77",
+        "name": "Owen Aliciene",
+        "position": "LT",
+        "snaps": 22
+      },
+      {
+        "jersey": "55",
+        "name": "Chimdy Onoh",
+        "position": "LG",
+        "snaps": 2
+      },
+      {
+        "jersey": "63",
+        "name": "Alex Birchmeier",
+        "position": "LG",
+        "snaps": 2
+      },
+      {
+        "jersey": "74",
+        "name": "J'ven Williams",
+        "position": "RT",
+        "snaps": 1
+      },
+      {
+        "jersey": "O54",
+        "name": "Ian Harvie",
+        "position": "LG",
+        "snaps": 1
+      }
+    ],
+    "tight_ends": [
+      {
+        "jersey": "16",
+        "name": "Khalil Dinkins",
+        "position": "TE-R",
+        "snaps": 36
+      },
+      {
+        "jersey": "85",
+        "name": "Luke Reynolds",
+        "position": "TE-L",
+        "snaps": 30
+      },
+      {
+        "jersey": "87",
+        "name": "Andrew Rappleyea",
+        "position": "TE-R",
+        "snaps": 20
+      },
+      {
+        "jersey": "89",
+        "name": "Finn Furmanek",
+        "position": "TE-L",
+        "snaps": 8
+      },
+      {
+        "jersey": "18",
+        "name": "Joey Schlaffer",
+        "position": "TE-L",
+        "snaps": 2
+      }
+    ],
+    "wide_receivers": [
+      {
+        "jersey": "01",
+        "name": "Kyron Hudson",
+        "position": "LWR",
+        "snaps": 43
+      },
+      {
+        "jersey": "08",
+        "name": "Trebor Pena",
+        "position": "SLWR",
+        "snaps": 41
+      },
+      {
+        "jersey": "02",
+        "name": "Liam Clifford",
+        "position": "RWR",
+        "snaps": 32
+      },
+      {
+        "jersey": "03",
+        "name": "Koby Howard",
+        "position": "RWR",
+        "snaps": 22
+      },
+      {
+        "jersey": "05",
+        "name": "Devonte Ross",
+        "position": "RWR",
+        "snaps": 18
+      },
+      {
+        "jersey": "04",
+        "name": "Tyseer Denmark",
+        "position": "SLWR",
+        "snaps": 17
+      },
+      {
+        "jersey": "86",
+        "name": "Aaron Enterline",
+        "position": "RWR",
+        "snaps": 6
+      }
+    ],
+    "running_backs": [
+      {
+        "jersey": "10",
+        "name": "Nicholas Singleton",
+        "position": "HB",
+        "snaps": 28
+      },
+      {
+        "jersey": "13",
+        "name": "Kaytron Allen",
+        "position": "HB",
+        "snaps": 28
+      },
+      {
+        "jersey": "24",
+        "name": "Corey Smith",
+        "position": "HB",
+        "snaps": 11
+      },
+      {
+        "jersey": "26",
+        "name": "Cam Wallace",
+        "position": "HB",
+        "snaps": 11
+      }
+    ]
+  },
+  "metadata": {
+    "total_offensive_plays": 73,
+    "game": "Penn State vs Nevada",
+    "date": "2025-09-02",
+    "source": "PFF Premium Stats"
+  }
+}
