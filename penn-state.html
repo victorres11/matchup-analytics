@@ -21,15 +21,39 @@
 
         /* Alternative bar chart styles - uncomment the one you prefer */
         
-        /* Style 1: Minimalist Flat (Current) */
+        /* Style 1: Modern Analytics (Current) */
         .bar {
-            background: #374151;
-            border-radius: 0;
+            background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+            border-radius: 8px 8px 0 0;
             position: relative;
-            transition: all 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             cursor: pointer;
-            box-shadow: none;
-            border-left: 3px solid #1e3a8a;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border: 1px solid #e2e8f0;
+            overflow: hidden;
+        }
+
+        .bar::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background: linear-gradient(180deg, #3b82f6 0%, #1d4ed8 100%);
+            transform: scaleY(0);
+            transform-origin: bottom;
+            transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .bar:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 24px rgba(59,130,246,0.25);
+            border-color: #3b82f6;
+        }
+
+        .bar:hover::before {
+            transform: scaleY(1);
         }
 
         /* Style 2: Modern Card (Alternative) */
