@@ -24,11 +24,18 @@ The application supports URLs in the format:
 
 ## Deployment
 
-This project is automatically deployed to GitHub Pages using GitHub Actions. The deployment workflow:
+This project is deployed to GitHub Pages using **branch deployment**:
 
-1. Triggers on pushes to the main branch
-2. Builds and deploys the application from the `dist/` folder
-3. Makes the site available at: https://victorres11.github.io/matchup-analytics/
+1. **Configure GitHub Pages** in your repository settings:
+   - Go to Settings → Pages
+   - Source: Select "Deploy from a branch"
+   - Branch: Select "main"
+   - Folder: Select "/ (root)"
+   - Click "Save"
+
+2. **Automatic deployment**: Every time you push to the main branch, GitHub Pages automatically deploys your site
+
+3. **Site URL**: Your site will be available at: https://victorres11.github.io/matchup-analytics/
 
 ## Local Development
 
@@ -58,7 +65,7 @@ window.addEventListener('matchupRouteChange', function(event) {
     // Update your app UI here
 });
 
-// Get current matchup
+// Get current matchup info
 const current = window.matchupRouter.getCurrentMatchup();
 if (current) {
     console.log(`Current: ${current.team} Week ${current.week}`);
