@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Debug - Weekly Matchup Analytics</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 40px; 
+            background: #f5f5f5;
+        }
+        .debug-section { 
+            background: white; 
+            padding: 20px; 
+            margin: 20px 0; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .status { 
+            padding: 10px; 
+            margin: 10px 0; 
+            border-radius: 4px; 
+            font-weight: bold;
+        }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+        .info { background: #e7f3ff; color: #0c5460; }
+        .test-link { 
+            display: inline-block; 
+            margin: 10px; 
+            padding: 15px 20px; 
+            background: #007bff; 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 4px; 
+        }
+        .test-link:hover { background: #0056b3; }
+        pre { background: #f8f9fa; padding: 15px; border-radius: 4px; overflow-x: auto; }
+    </style>
+</head>
+<body>
+    <h1>Route Debug - Weekly Matchup Analytics</h1>
+    
+    <div class="debug-section">
+        <h2>Current Route Information</h2>
+        <div id="current-route">No route detected</div>
+        <div id="localStorage-info">Loading...</div>
+    </div>
+    
+    <div class="debug-section">
+        <h2>Test Routing</h2>
+        <p>Click these links to test the routing system:</p>
+        
+        <a href="./weekly-matchups/penn-state-week-2" class="test-link">Penn State Week 2</a>
+        <a href="./weekly-matchups/michigan-week-1" class="test-link">Michigan Week 1</a>
+        
+        <p><strong>Expected:</strong> You should see the matchup page, then be redirected to main app with route info.</p>
+    </div>
+    
+    <div class="debug-section">
+        <h2>Manual Route Testing</h2>
+        <p>Test setting routes manually:</p>
+        <button onclick="setTestRoute('penn-state-week-2')">Set Penn State Week 2</button>
+        <button onclick="setTestRoute('michigan-week-1')">Set Michigan Week 1</button>
+        <button onclick="clearRoute()">Clear Route</button>
+        <button onclick="refreshInfo()">Refresh Info</button>
+    </div>
+    
+    <div class="debug-section">
+        <h2>Console Logs</h2>
+        <p>Check your browser console (F12) for detailed routing logs.</p>
+        <div id="console-info">Console logs will appear here...</div>
+    </div>
+    
+    <div class="debug-section">
+        <h2>Navigation</h2>
+        <a href="./" class="test-link">Main App</a>
+        <a href="./test-images.html" class="test-link">Test Images</a>
+        <a href="./demo-routes.html" class="test-link">Demo Routes</a>
+    </div>
+    
+    <script>
+        // Route debugging functions
+        function setTestRoute(route) {
+            const fullPath = `/matchup-analytics/weekly-matchups/${route}`;
+            localStorage.setItem('matchupRoute', route);
+            localStorage.setItem('fullPath', fullPath);
+            localStorage.setItem('routingTimestamp', Date.now());
+            localStorage.setItem('routeSource', 'manual-test');
+            
+            console.log(`Manual route set: ${route}`);
+            console.log(`Full path: ${fullPath}`);
+            
+            refreshInfo();
+        }
+        
+        function clearRoute() {
+            localStorage.removeItem('matchupRoute');
+            localStorage.removeItem('fullPath');
+            localStorage.removeItem('routingTimestamp');
+            localStorage.removeItem('routeSource');
+            
+            console.log('Route cleared');
+            refreshInfo();
+        }
+        
+        function refreshInfo() {
+            const currentRoute = localStorage.getItem('matchupRoute');
+            const fullPath = localStorage.getItem('fullPath');
+            const timestamp = localStorage.getItem('routingTimestamp');
+            const source = localStorage.getItem('routeSource');
+            
+            // Update current route display
+            const routeDiv = document.getElementById('current-route');
+            if (currentRoute) {
+                routeDiv.innerHTML = `
+                    <div class="status success">
+                        <strong>Route Active:</strong> ${currentRoute}<br>
+                        <strong>Full Path:</strong> ${fullPath}<br>
+                        <strong>Set At:</strong> ${new Date(parseInt(timestamp)).toLocaleString()}<br>
+                        <strong>Source:</strong> ${source}
+                    </div>
+                `;
+            } else {
+                routeDiv.innerHTML = '<div class="status info">No route detected</div>';
+            }
+            
+            // Update localStorage info
+            const storageDiv = document.getElementById('localStorage-info');
+            const allStorage = {};
+            for (let i = 0; i < localStorage.length; i++) {
+                const key = localStorage.key(i);
+                allStorage[key] = localStorage.getItem(key);
+            }
+            
+            storageDiv.innerHTML = `
+                <h3>All localStorage:</h3>
+                <pre>${JSON.stringify(allStorage, null, 2)}</pre>
+            `;
+        }
+        
+        // Check for route on page load
+        function checkForRoute() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const routeParam = urlParams.get('route');
+            
+            if (routeParam) {
+                console.log('Route parameter detected:', routeParam);
+                setTestRoute(routeParam);
+            }
+            
+            refreshInfo();
+        }
+        
+        // Listen for storage changes
+        window.addEventListener('storage', function(e) {
+            console.log('localStorage changed:', e.key, e.newValue);
+            refreshInfo();
+        });
+        
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Route debug page loaded');
+            checkForRoute();
+            
+            // Check for route every few seconds
+            setInterval(refreshInfo, 2000);
+        });
+        
+        // Override console.log to capture logs
+        const originalLog = console.log;
+        console.log = function(...args) {
+            originalLog.apply(console, args);
+            
+            const consoleDiv = document.getElementById('console-info');
+            const timestamp = new Date().toLocaleTimeString();
+            const message = args.map(arg => 
+                typeof arg === 'object' ? JSON.stringify(arg) : String(arg)
+            ).join(' ');
+            
+            consoleDiv.innerHTML += `<div>[${timestamp}] ${message}</div>`;
+            consoleDiv.scrollTop = consoleDiv.scrollHeight;
+        };
+    </script>
+</body>
+</html>
