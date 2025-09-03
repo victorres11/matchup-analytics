@@ -15,7 +15,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #fbbf24 100%);
             color: #333;
             line-height: 1.6;
         }
@@ -29,10 +29,11 @@
         .header {
             text-align: center;
             margin-bottom: 40px;
-            background: white;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 20px rgba(30,58,138,0.3);
+            color: white;
         }
 
         .logos {
@@ -51,34 +52,36 @@
         .divider {
             width: 2px;
             height: 40px;
-            background: #d1d5db;
+            background: #fbbf24;
         }
 
         h1 {
-            color: #1a1a1a;
+            color: white;
             font-size: 2.5rem;
             margin-bottom: 10px;
             font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
         .subtitle {
-            color: #6b7280;
+            color: #fbbf24;
             font-size: 1.1rem;
             margin-bottom: 20px;
+            font-weight: 500;
         }
 
         .timestamp {
-            color: #9ca3af;
+            color: #e5e7eb;
             font-size: 0.9rem;
             font-style: italic;
         }
 
         .stats-summary {
-            background: white;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
             padding: 25px;
             border-radius: 12px;
             margin-bottom: 30px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 20px rgba(30,58,138,0.3);
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
@@ -87,20 +90,22 @@
         .stat-card {
             text-align: center;
             padding: 20px;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background: rgba(255,255,255,0.1);
             border-radius: 10px;
-            border: 1px solid #e5e7eb;
+            border: 1px solid rgba(251,191,36,0.3);
+            backdrop-filter: blur(10px);
         }
 
         .stat-number {
             font-size: 2rem;
             font-weight: 700;
-            color: #1a1a1a;
+            color: #fbbf24;
             margin-bottom: 5px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
         }
 
         .stat-label {
-            color: #6b7280;
+            color: white;
             font-size: 0.9rem;
             font-weight: 500;
         }
@@ -109,13 +114,13 @@
             background: white;
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 20px rgba(30,58,138,0.2);
         }
 
         .tab-buttons {
             display: flex;
-            background: #f8f9fa;
-            border-bottom: 1px solid #e5e7eb;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            border-bottom: 1px solid #fbbf24;
         }
 
         .tab-btn {
@@ -125,7 +130,7 @@
             border: none;
             font-size: 1.1rem;
             font-weight: 600;
-            color: #6b7280;
+            color: #e5e7eb;
             cursor: pointer;
             transition: all 0.3s ease;
             text-transform: uppercase;
@@ -133,13 +138,14 @@
         }
 
         .tab-btn:hover {
-            background: #e9ecef;
-            color: #1a1a1a;
+            background: rgba(251,191,36,0.2);
+            color: #fbbf24;
         }
 
         .tab-btn.active {
-            background: #1a1a1a;
-            color: white;
+            background: #fbbf24;
+            color: #1e3a8a;
+            font-weight: 700;
         }
 
         .tab-content {
@@ -162,20 +168,20 @@
         }
 
         .position-title {
-            color: #1a1a1a;
+            color: #1e3a8a;
             font-size: 1.5rem;
             margin-bottom: 20px;
             padding-bottom: 10px;
-            border-bottom: 2px solid #1a1a1a;
+            border-bottom: 2px solid #fbbf24;
             font-weight: 600;
         }
 
         .chart-container {
-            background: white;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
             border-radius: 12px;
             padding: 25px;
-            border: 1px solid #e9ecef;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid #fbbf24;
+            box-shadow: 0 4px 15px rgba(30,58,138,0.1);
         }
 
         .chart-wrapper {
@@ -548,12 +554,12 @@
                     labels: labels,
                     datasets: [{
                         data: data,
-                        backgroundColor: 'rgba(26, 26, 26, 0.8)',
-                        borderColor: 'rgba(26, 26, 26, 1)',
+                        backgroundColor: 'rgba(30, 58, 138, 0.8)',
+                        borderColor: 'rgba(30, 58, 138, 1)',
                         borderWidth: 1,
                         borderRadius: 4,
-                        hoverBackgroundColor: 'rgba(108, 117, 125, 0.9)',
-                        hoverBorderColor: 'rgba(108, 117, 125, 1)'
+                        hoverBackgroundColor: 'rgba(251, 191, 36, 0.9)',
+                        hoverBorderColor: 'rgba(251, 191, 36, 1)'
                     }]
                 }
             });
