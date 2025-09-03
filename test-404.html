@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Routing Test - Weekly Matchup Analytics</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background: #f5f5f5; }
+        .test-section { background: white; padding: 20px; margin: 20px 0; border-radius: 8px; }
+        .test-link { display: inline-block; margin: 10px; padding: 15px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 4px; }
+        .test-link:hover { background: #0056b3; }
+        .info { background: #e7f3ff; padding: 15px; border-radius: 4px; border-left: 4px solid #007bff; }
+    </style>
+</head>
+<body>
+    <h1>404 Routing Test - Weekly Matchup Analytics</h1>
+    
+    <div class="test-section">
+        <h2>Testing 404.html Routing</h2>
+        <p>This page tests if the 404.html file is working correctly for routing.</p>
+        
+        <div class="info">
+            <strong>How it works:</strong> When you click a test link below, GitHub Pages should serve the 404.html file, which will then redirect you to the main app with the route information.
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h3>Test Routes (These should trigger 404.html)</h3>
+        <p>Click these links to test the routing system:</p>
+        
+        <a href="./weekly-matchups/penn-state-week-2" class="test-link">Penn State Week 2</a>
+        <a href="./weekly-matchups/michigan-week-1" class="test-link">Michigan Week 1</a>
+        <a href="./weekly-matchups/ohio-state-week-3" class="test-link">Ohio State Week 3</a>
+        <a href="./weekly-matchups/wisconsin-week-4" class="test-link">Wisconsin Week 4</a>
+    </div>
+    
+    <div class="test-section">
+        <h3>Expected Behavior</h3>
+        <ol>
+            <li>Click a test route above</li>
+            <li>You should briefly see the 404.html page with debug info</li>
+            <li>It should automatically redirect to the main app</li>
+            <li>The main app should show the matchup information</li>
+        </ol>
+        
+        <div class="info">
+            <strong>Note:</strong> If you see a plain GitHub 404 page instead of our custom 404.html, there's a configuration issue.
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h3>Debugging</h3>
+        <p>If routing isn't working:</p>
+        <ul>
+            <li>Check the browser console for error messages</li>
+            <li>Verify that 404.html is in your repository root</li>
+            <li>Make sure GitHub Pages is configured to deploy from the main branch</li>
+            <li>Wait for GitHub Pages to redeploy after changes</li>
+        </ul>
+    </div>
+    
+    <div class="test-section">
+        <h3>Working Links</h3>
+        <p>These should work normally:</p>
+        <a href="./" class="test-link">Main Page</a>
+        <a href="./test-images.html" class="test-link">Test Images</a>
+        <a href="./demo-routes.html" class="test-link">Demo Routes</a>
+    </div>
+</body>
+</html>
