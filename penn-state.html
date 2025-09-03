@@ -601,8 +601,13 @@
                                 } else {
                                     totalSnaps = 54; // Penn State Defensive Total
                                 }
+                                
+                                // Get player position from stored player data
+                                const player = context.dataset.players[context.dataIndex];
+                                const playerPosition = player ? ` • ${player.position}` : '';
+                                
                                 const percentage = ((context.parsed.y / totalSnaps) * 100).toFixed(1);
-                                return `Snaps: ${context.parsed.y} (${percentage}%)`;
+                                return `Snaps: ${context.parsed.y} (${percentage}%)${playerPosition}`;
                             }
                         }
                     }
@@ -723,7 +728,8 @@
                         borderWidth: 1,
                         borderRadius: 4,
                         hoverBackgroundColor: 'rgba(59, 130, 246, 0.9)',
-                        hoverBorderColor: 'rgba(59, 130, 246, 1)'
+                        hoverBorderColor: 'rgba(59, 130, 246, 1)',
+                        players: sortedPlayers // Store player data for tooltip access
                     }]
                 }
             });

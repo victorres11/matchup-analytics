@@ -548,8 +548,13 @@
                                 } else {
                                     totalSnaps = 70; // FIU Defensive Total
                                 }
+                                
+                                // Get player position from stored player data
+                                const player = context.dataset.players[context.dataIndex];
+                                const playerPosition = player ? ` • ${player.position}` : '';
+                                
                                 const percentage = ((context.parsed.y / totalSnaps) * 100).toFixed(1);
-                                return `Snaps: ${context.parsed.y} (${percentage}%)`;
+                                return `Snaps: ${context.parsed.y} (${percentage}%)${playerPosition}`;
                             }
                         }
                     }
@@ -670,7 +675,8 @@
                         borderWidth: 1,
                         borderRadius: 4,
                         hoverBackgroundColor: 'rgba(251, 191, 36, 0.9)',
-                        hoverBorderColor: 'rgba(251, 191, 36, 1)'
+                        hoverBorderColor: 'rgba(251, 191, 36, 1)',
+                        players: sortedPlayers // Store player data for tooltip access
                     }]
                 }
             });
