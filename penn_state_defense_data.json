@@ -11,7 +11,7 @@
         "jersey": "45",
         "name": "Enai White",
         "position": "DRT",
-        "snaps": 24
+        "snaps": 10
       },
       {
         "jersey": "54",
@@ -46,8 +46,8 @@
       {
         "jersey": "39",
         "name": "Ty Blanding",
-        "position": "DLE",
-        "snaps": 8
+        "position": "DRT",
+        "snaps": 14
       },
       {
         "jersey": "50",
@@ -188,37 +188,37 @@
       {
         "jersey": "03",
         "name": "Antoine Belgrave-Shorter",
-        "position": "LCB",
-        "snaps": 2
+        "position": "FS",
+        "snaps": 34
       },
       {
         "jersey": "04",
         "name": "A.J. Harris",
-        "position": "SS",
-        "snaps": 1
+        "position": "RCB",
+        "snaps": 23
       },
       {
         "jersey": "19",
         "name": "Chaz Coleman",
-        "position": "RCB",
-        "snaps": 1
+        "position": "LOLB",
+        "snaps": 22
       },
       {
         "jersey": "31",
         "name": "Kolin Dinkins",
-        "position": "FS",
-        "snaps": 1
+        "position": "SCB",
+        "snaps": 18
       },
       {
         "jersey": "00",
         "name": "Dominic DeLuca",
-        "position": "LCB",
-        "snaps": 1
+        "position": "WLB",
+        "snaps": 25
       }
     ]
   },
   "metadata": {
-    "total_defensive_plays": 73,
+    "total_defensive_plays": 54,
     "game": "Penn State vs Nevada",
     "date": "2025-09-02",
     "source": "PFF Premium Stats"
