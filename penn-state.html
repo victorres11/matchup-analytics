@@ -733,6 +733,10 @@
                 else if (lastName === 'JR' && nameParts.length > 1) {
                     lastName = nameParts[nameParts.length - 2] + ' JR';
                 }
+                // Handle "II" names properly
+                else if (lastName === 'II' && nameParts.length > 1) {
+                    lastName = nameParts[nameParts.length - 2] + ' II';
+                }
                 
                 const percentage = ((player.snaps / totalSnaps) * 100).toFixed(1);
                 return `${lastName} #${player.jersey} (${percentage}%)`;
