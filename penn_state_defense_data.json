@@ -122,6 +122,12 @@
         "name": "Lamont Payne Jr.",
         "position": "ROLB",
         "snaps": 1
+      },
+      {
+        "jersey": "00",
+        "name": "Dominic DeLuca",
+        "position": "WLB",
+        "snaps": 25
       }
     ],
     "defensive_backs": [
@@ -208,12 +214,6 @@
         "name": "Kolin Dinkins",
         "position": "SCB",
         "snaps": 18
-      },
-      {
-        "jersey": "00",
-        "name": "Dominic DeLuca",
-        "position": "WLB",
-        "snaps": 25
       }
     ]
   },
