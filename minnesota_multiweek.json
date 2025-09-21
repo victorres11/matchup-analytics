@@ -929,6 +929,15 @@
             "started": false,
             "week": 2,
             "opponent": "NWSTATE"
+          },
+          {
+            "name": "Donielle Hayes",
+            "jersey": "18",
+            "position": "LWR",
+            "snaps": 2,
+            "started": false,
+            "week": 2,
+            "opponent": "NWSTATE"
           }
         ],
         "tight_ends": [
