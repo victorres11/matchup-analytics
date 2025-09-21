@@ -971,8 +971,13 @@
                 }
             });
 
+            // Destroy existing chart if it exists
+            if (window.stChart) {
+                window.stChart.destroy();
+            }
+
             // Create Chart.js chart
-            new Chart(ctx, {
+            window.stChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
                     labels: labels,
@@ -1048,12 +1053,6 @@
                 }
             });
 
-            // Add event listeners for filter checkboxes
-            document.querySelectorAll('.unit-filters input[type="checkbox"]').forEach(checkbox => {
-                checkbox.addEventListener('change', function() {
-                    createSpecialTeamsChart(canvasId, positionGroup, side);
-                });
-            });
         }
 
         // Setup event listeners
@@ -1072,6 +1071,12 @@
                 });
             });
 
+            // Special teams filter checkboxes
+            document.querySelectorAll('.unit-filters input[type="checkbox"]').forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    createSpecialTeamsChart('st-chart', 'special_teams', 'special_teams');
+                });
+            });
         }
 
         // Initialize on page load
