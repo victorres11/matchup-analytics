@@ -1,0 +1,1230 @@
+{
+  "metadata": {
+    "team": "Rutgers",
+    "conference": "Big Ten",
+    "weeks": 3,
+    "source": "PFF Premium Stats"
+  },
+  "offense": {
+    "wide_receivers": [],
+    "tight_ends": [],
+    "quarterbacks": [],
+    "running_backs": [],
+    "offensive_line": []
+  },
+  "defense": {
+    "defensive_line": [],
+    "linebackers": [],
+    "defensive_backs": []
+  },
+  "weeks": [
+    {
+      "week": 1,
+      "offense": {
+        "wide_receivers": [
+          {
+            "name": "Ian Strong",
+            "jersey": "9",
+            "position": "LWR",
+            "snaps": 60,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "KJ Duff",
+            "jersey": "8",
+            "position": "RWR",
+            "snaps": 61,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "DT Sheffield",
+            "jersey": "0",
+            "position": "SRWR",
+            "snaps": 49,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "Ben Black",
+            "jersey": "17",
+            "position": "RWR",
+            "snaps": 1,
+            "week": 1,
+            "opponent": "Ohio"
+          }
+        ],
+        "tight_ends": [
+          {
+            "name": "Kenny Fletcher Jr.",
+            "jersey": "12",
+            "position": "TER",
+            "snaps": 39,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "Colin Weber",
+            "jersey": "18",
+            "position": "TEL",
+            "snaps": 40,
+            "week": 1,
+            "opponent": "Ohio"
+          }
+        ],
+        "quarterbacks": [
+          {
+            "name": "Athan Kaliakmanis",
+            "jersey": "16",
+            "position": "QB",
+            "snaps": 61,
+            "week": 1,
+            "opponent": "Ohio"
+          }
+        ],
+        "running_backs": [
+          {
+            "name": "Antwan Raymond",
+            "jersey": "3",
+            "position": "HB",
+            "snaps": 32,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "CJ Campbell Jr.",
+            "jersey": "5",
+            "position": "HB",
+            "snaps": 19,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "Ja'shon Benjamin",
+            "jersey": "20",
+            "position": "HB",
+            "snaps": 10,
+            "week": 1,
+            "opponent": "Ohio"
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Gus Zilinskas",
+            "jersey": "59",
+            "position": "C",
+            "snaps": 61,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "Kwabena Asamoah",
+            "jersey": "69",
+            "position": "RG",
+            "snaps": 61,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "Dantae Chin",
+            "jersey": "76",
+            "position": "LT",
+            "snaps": 54,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "Taj White",
+            "jersey": "54",
+            "position": "RT",
+            "snaps": 61,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "Bryan Felter",
+            "jersey": "65",
+            "position": "LG",
+            "snaps": 61,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "Tyler Needham",
+            "jersey": "56",
+            "position": "LT",
+            "snaps": 7,
+            "week": 1,
+            "opponent": "Ohio"
+          }
+        ]
+      },
+      "defense": {
+        "defensive_line": [
+          {
+            "name": "Zaire Angoy",
+            "jersey": "D55",
+            "position": "DLT",
+            "snaps": 32,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "Darold DeNgohe",
+            "jersey": "D92",
+            "position": "NT",
+            "snaps": 8,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "Keshon Griffin",
+            "jersey": "D96",
+            "position": "NT",
+            "snaps": 38,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "Henry Hughes Jr.",
+            "jersey": "D95",
+            "position": "NT",
+            "snaps": 7,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "Oliver Billotte",
+            "jersey": "D97",
+            "position": "DLT",
+            "snaps": 22,
+            "week": 1,
+            "opponent": "Ohio"
+          }
+        ],
+        "linebackers": [
+          {
+            "name": "Moses Walker",
+            "jersey": "D02",
+            "position": "WLB",
+            "snaps": 51,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "Dariel Djabome",
+            "jersey": "D08",
+            "position": "MLB",
+            "snaps": 62,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "Jordan Thompson",
+            "jersey": "D14",
+            "position": "LOLB",
+            "snaps": 32,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "Jordan Walker",
+            "jersey": "D01",
+            "position": "ROLB",
+            "snaps": 40,
+            "week": 1,
+            "opponent": "Ohio"
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Jacobie Henderson",
+            "jersey": "D10",
+            "position": "LCB",
+            "snaps": 43,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "Al-Shadee Salaam",
+            "jersey": "D21",
+            "position": "RCB",
+            "snaps": 41,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "Chris Joines",
+            "jersey": "D20",
+            "position": "SS",
+            "snaps": 2,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "Bo Mascoe",
+            "jersey": "D03",
+            "position": "LCB",
+            "snaps": 41,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "Jett Elad",
+            "jersey": "D09",
+            "position": "SS",
+            "snaps": 62,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "Cam Miller",
+            "jersey": "D07",
+            "position": "SCB",
+            "snaps": 62,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "Kaj Sanders",
+            "jersey": "D05",
+            "position": "SS",
+            "snaps": 60,
+            "week": 1,
+            "opponent": "Ohio"
+          }
+        ]
+      },
+      "summary": {
+        "opponent": "Ohio",
+        "date": "Thu Aug 28th",
+        "finalScore": "34-31",
+        "homeAway": "Home",
+        "offensiveSnaps": 61,
+        "defensiveSnaps": 62,
+        "specialTeamsSnaps": 0
+      }
+    },
+    {
+      "week": 2,
+      "offense": {
+        "wide_receivers": [
+          {
+            "name": "Ian Strong",
+            "jersey": "9",
+            "position": "LWR",
+            "snaps": 75,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "KJ Duff",
+            "jersey": "8",
+            "position": "RWR",
+            "snaps": 78,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "DT Sheffield",
+            "jersey": "0",
+            "position": "SRWR",
+            "snaps": 74,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Ben Black",
+            "jersey": "17",
+            "position": "RWR",
+            "snaps": 10,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Dane Pardridge",
+            "jersey": "89",
+            "position": "SRWR",
+            "snaps": 2,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Dino Kaliakmanis",
+            "jersey": "83",
+            "position": "LWR",
+            "snaps": 3,
+            "week": 2,
+            "opponent": "Miami OH"
+          }
+        ],
+        "tight_ends": [
+          {
+            "name": "Kenny Fletcher Jr.",
+            "jersey": "12",
+            "position": "TER",
+            "snaps": 43,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Colin Weber",
+            "jersey": "18",
+            "position": "TEL",
+            "snaps": 43,
+            "week": 2,
+            "opponent": "Miami OH"
+          }
+        ],
+        "quarterbacks": [
+          {
+            "name": "Athan Kaliakmanis",
+            "jersey": "16",
+            "position": "QB",
+            "snaps": 82,
+            "week": 2,
+            "opponent": "Miami OH"
+          }
+        ],
+        "running_backs": [
+          {
+            "name": "Antwan Raymond",
+            "jersey": "3",
+            "position": "HB",
+            "snaps": 34,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Ja'shon Benjamin",
+            "jersey": "20",
+            "position": "HB",
+            "snaps": 20,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "CJ Campbell Jr.",
+            "jersey": "5",
+            "position": "HB",
+            "snaps": 28,
+            "week": 2,
+            "opponent": "Miami OH"
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Gus Zilinskas",
+            "jersey": "59",
+            "position": "C",
+            "snaps": 82,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Kwabena Asamoah",
+            "jersey": "69",
+            "position": "RG",
+            "snaps": 82,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Taj White",
+            "jersey": "54",
+            "position": "RT",
+            "snaps": 65,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Bryan Felter",
+            "jersey": "65",
+            "position": "LG",
+            "snaps": 82,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Tyler Needham",
+            "jersey": "56",
+            "position": "LT",
+            "snaps": 55,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Dantae Chin",
+            "jersey": "76",
+            "position": "LT",
+            "snaps": 44,
+            "week": 2,
+            "opponent": "Miami OH"
+          }
+        ]
+      },
+      "defense": {
+        "defensive_line": [
+          {
+            "name": "Oliver Billotte",
+            "jersey": "D97",
+            "position": "DLT",
+            "snaps": 17,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Zaire Angoy",
+            "jersey": "D55",
+            "position": "DRT",
+            "snaps": 14,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Darold DeNgohe",
+            "jersey": "D92",
+            "position": "DLT",
+            "snaps": 9,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Keshon Griffin",
+            "jersey": "D96",
+            "position": "NT",
+            "snaps": 26,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Henry Hughes Jr.",
+            "jersey": "D95",
+            "position": "DRT",
+            "snaps": 7,
+            "week": 2,
+            "opponent": "Miami OH"
+          }
+        ],
+        "linebackers": [
+          {
+            "name": "Abram Wright",
+            "jersey": "D06",
+            "position": "WLB",
+            "snaps": 16,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Dariel Djabome",
+            "jersey": "D08",
+            "position": "MLB",
+            "snaps": 44,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Jordan Walker",
+            "jersey": "D01",
+            "position": "ROLB",
+            "snaps": 29,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Jordan Thompson",
+            "jersey": "D14",
+            "position": "ROLB",
+            "snaps": 23,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Austin Dean",
+            "jersey": "D47",
+            "position": "MLB",
+            "snaps": 5,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Zilan Williams",
+            "jersey": "D15",
+            "position": "LOLB",
+            "snaps": 4,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Sam Robinson",
+            "jersey": "D04",
+            "position": "WLB",
+            "snaps": 4,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Moses Walker",
+            "jersey": "D02",
+            "position": "WLB",
+            "snaps": 26,
+            "week": 2,
+            "opponent": "Miami OH"
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Bo Mascoe",
+            "jersey": "D03",
+            "position": "LCB",
+            "snaps": 33,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Chris Joines",
+            "jersey": "D20",
+            "position": "SS",
+            "snaps": 4,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Cam Miller",
+            "jersey": "D07",
+            "position": "SCB",
+            "snaps": 42,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Sebastian Jusma",
+            "jersey": "D29",
+            "position": "SCB",
+            "snaps": 4,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Timmy Ward",
+            "jersey": "D38",
+            "position": "SS",
+            "snaps": 4,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Kevin Levy",
+            "jersey": "D24",
+            "position": "RCB",
+            "snaps": 4,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Kaj Sanders",
+            "jersey": "D05",
+            "position": "FS",
+            "snaps": 44,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Al-Shadee Salaam",
+            "jersey": "D21",
+            "position": "RCB",
+            "snaps": 22,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Jacobie Henderson",
+            "jersey": "D10",
+            "position": "RCB",
+            "snaps": 36,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Jett Elad",
+            "jersey": "D09",
+            "position": "FS",
+            "snaps": 44,
+            "week": 2,
+            "opponent": "Miami OH"
+          }
+        ]
+      },
+      "summary": {
+        "opponent": "Miami OH",
+        "date": "Sat Sep 6th",
+        "finalScore": "45-17",
+        "homeAway": "Home",
+        "offensiveSnaps": 82,
+        "defensiveSnaps": 48,
+        "specialTeamsSnaps": 0
+      }
+    },
+    {
+      "week": 3,
+      "offense": {
+        "wide_receivers": [
+          {
+            "name": "KJ Duff",
+            "jersey": "8",
+            "position": "LWR",
+            "snaps": 62,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Michael Thomas III",
+            "jersey": "80",
+            "position": "LWR",
+            "snaps": 12,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Vernon Allen III",
+            "jersey": "13",
+            "position": "RWR",
+            "snaps": 8,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "DT Sheffield",
+            "jersey": "0",
+            "position": "SLWR",
+            "snaps": 56,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Ben Black",
+            "jersey": "17",
+            "position": "RWR",
+            "snaps": 62,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Dino Kaliakmanis",
+            "jersey": "83",
+            "position": "LWR",
+            "snaps": 12,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Trent Osborn",
+            "jersey": "25",
+            "position": "RWR",
+            "snaps": 3,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Dane Pardridge",
+            "jersey": "89",
+            "position": "SLWR",
+            "snaps": 4,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Dylan Braithwaite",
+            "jersey": "7",
+            "position": "SLWR",
+            "snaps": 20,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Sah'nye Degraffenreidt",
+            "jersey": "14",
+            "position": "LWR",
+            "snaps": 11,
+            "week": 3,
+            "opponent": "Norfolk State"
+          }
+        ],
+        "tight_ends": [
+          {
+            "name": "Jackson Gister",
+            "jersey": "82",
+            "position": "TE-L",
+            "snaps": 3,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Colin Weber",
+            "jersey": "18",
+            "position": "TE-L",
+            "snaps": 32,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Kenny Fletcher Jr.",
+            "jersey": "12",
+            "position": "TE-L",
+            "snaps": 35,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Logan Blake",
+            "jersey": "11",
+            "position": "TE-R",
+            "snaps": 18,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Mike Higgins",
+            "jersey": "88",
+            "position": "TE-L",
+            "snaps": 2,
+            "week": 3,
+            "opponent": "Norfolk State"
+          }
+        ],
+        "quarterbacks": [
+          {
+            "name": "Athan Kaliakmanis",
+            "jersey": "16",
+            "position": "QB",
+            "snaps": 62,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "AJ Surace",
+            "jersey": "10",
+            "position": "QB",
+            "snaps": 18,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Sean Ashenfelder",
+            "jersey": "6",
+            "position": "QB",
+            "snaps": 5,
+            "week": 3,
+            "opponent": "Norfolk State"
+          }
+        ],
+        "running_backs": [
+          {
+            "name": "Antwan Raymond",
+            "jersey": "3",
+            "position": "HB",
+            "snaps": 35,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Ja'shon Benjamin",
+            "jersey": "20",
+            "position": "HB",
+            "snaps": 26,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Terrell Mitchell",
+            "jersey": "26",
+            "position": "HB",
+            "snaps": 8,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Edd Guerrier",
+            "jersey": "23",
+            "position": "HB",
+            "snaps": 15,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "CJ Campbell Jr.",
+            "jersey": "5",
+            "position": "HB",
+            "snaps": 1,
+            "week": 3,
+            "opponent": "Norfolk State"
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Moshood Giwa",
+            "jersey": "74",
+            "position": "LT",
+            "snaps": 23,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "John Stone",
+            "jersey": "71",
+            "position": "LG",
+            "snaps": 23,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Chris Vigna",
+            "jersey": "67",
+            "position": "RG",
+            "snaps": 23,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Terrence Salami",
+            "jersey": "73",
+            "position": "C",
+            "snaps": 23,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Tyler Needham",
+            "jersey": "56",
+            "position": "LT",
+            "snaps": 51,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Taj White",
+            "jersey": "54",
+            "position": "RT",
+            "snaps": 62,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Gus Zilinskas",
+            "jersey": "59",
+            "position": "C",
+            "snaps": 62,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Kwabena Asamoah",
+            "jersey": "69",
+            "position": "RG",
+            "snaps": 62,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Justin Cesaire",
+            "jersey": "79",
+            "position": "RT",
+            "snaps": 23,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Bryan Felter",
+            "jersey": "65",
+            "position": "LG",
+            "snaps": 62,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Kenny Jones",
+            "jersey": "77",
+            "position": "LT",
+            "snaps": 11,
+            "week": 3,
+            "opponent": "Norfolk State"
+          }
+        ]
+      },
+      "defense": {
+        "defensive_line": [
+          {
+            "name": "Zaire Angoy",
+            "jersey": "D55",
+            "position": "DRT",
+            "snaps": 16,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Farell Gnago",
+            "jersey": "D90",
+            "position": "DLT",
+            "snaps": 8,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Oliver Billotte",
+            "jersey": "D97",
+            "position": "DLT",
+            "snaps": 18,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Darold DeNgohe",
+            "jersey": "D92",
+            "position": "NT",
+            "snaps": 15,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Henry Hughes Jr.",
+            "jersey": "D95",
+            "position": "DRT",
+            "snaps": 9,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Keshon Griffin",
+            "jersey": "D96",
+            "position": "NT",
+            "snaps": 21,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Jyon Simon",
+            "jersey": "D88",
+            "position": "NT",
+            "snaps": 3,
+            "week": 3,
+            "opponent": "Norfolk State"
+          }
+        ],
+        "linebackers": [
+          {
+            "name": "DJ McClary",
+            "jersey": "D13",
+            "position": "MLB",
+            "snaps": 4,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Sam Robinson",
+            "jersey": "D04",
+            "position": "WLB",
+            "snaps": 6,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Jordan Walker",
+            "jersey": "D01",
+            "position": "ROLB",
+            "snaps": 29,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Moses Walker",
+            "jersey": "D02",
+            "position": "WLB",
+            "snaps": 26,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Kamar Archie",
+            "jersey": "D36",
+            "position": "MLB",
+            "snaps": 3,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Zilan Williams",
+            "jersey": "D15",
+            "position": "WLB",
+            "snaps": 3,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "RJ Johnson Jr.",
+            "jersey": "D32",
+            "position": "LOLB",
+            "snaps": 7,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Jordan Thompson",
+            "jersey": "D14",
+            "position": "ROLB",
+            "snaps": 19,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Abram Wright",
+            "jersey": "D06",
+            "position": "WLB",
+            "snaps": 22,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Austin Dean",
+            "jersey": "D47",
+            "position": "WLB",
+            "snaps": 7,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Dariel Djabome",
+            "jersey": "D08",
+            "position": "WLB",
+            "snaps": 35,
+            "week": 3,
+            "opponent": "Norfolk State"
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Jett Elad",
+            "jersey": "D09",
+            "position": "SS",
+            "snaps": 42,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Jacobie Henderson",
+            "jersey": "D10",
+            "position": "RCB",
+            "snaps": 36,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Chris Joines",
+            "jersey": "D20",
+            "position": "SS",
+            "snaps": 22,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Jesse Ofurie",
+            "jersey": "D16",
+            "position": "FS",
+            "snaps": 7,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Bo Mascoe",
+            "jersey": "D03",
+            "position": "LCB",
+            "snaps": 23,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Cam Miller",
+            "jersey": "D07",
+            "position": "SCB",
+            "snaps": 42,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Al-Shadee Salaam",
+            "jersey": "D21",
+            "position": "RCB",
+            "snaps": 26,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Kevin Levy",
+            "jersey": "D24",
+            "position": "RCB",
+            "snaps": 9,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Sebastian Jusma",
+            "jersey": "D29",
+            "position": "SCB",
+            "snaps": 10,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Timmy Ward",
+            "jersey": "D38",
+            "position": "SS",
+            "snaps": 3,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Isaiah Crumpler",
+            "jersey": "D26",
+            "position": "SS",
+            "snaps": 3,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Renick Dorilas",
+            "jersey": "D12",
+            "position": "FS",
+            "snaps": 1,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Sage Clawges",
+            "jersey": "D27",
+            "position": "LCB",
+            "snaps": 7,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Kaj Sanders",
+            "jersey": "D05",
+            "position": "SS",
+            "snaps": 27,
+            "week": 3,
+            "opponent": "Norfolk State"
+          }
+        ]
+      },
+      "summary": {
+        "opponent": "Norfolk State",
+        "date": "Sat Sep 13th",
+        "finalScore": "60-10",
+        "homeAway": "Away",
+        "offensiveSnaps": 62,
+        "defensiveSnaps": 52,
+        "specialTeamsSnaps": 0
+      }
+    }
+  ]
+}
