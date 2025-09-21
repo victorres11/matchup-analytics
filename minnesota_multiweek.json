@@ -956,6 +956,33 @@
             "started": false,
             "week": 2,
             "opponent": "NWSTATE"
+          },
+          {
+            "name": "Malachi Coleman",
+            "jersey": "16",
+            "position": "RWR",
+            "snaps": 33,
+            "started": false,
+            "week": 2,
+            "opponent": "NWSTATE"
+          },
+          {
+            "name": "Quentin Redding",
+            "jersey": "81",
+            "position": "SRWR",
+            "snaps": 6,
+            "started": false,
+            "week": 2,
+            "opponent": "NWSTATE"
+          },
+          {
+            "name": "Logan Loya",
+            "jersey": "17",
+            "position": "SRWR",
+            "snaps": 14,
+            "started": true,
+            "week": 2,
+            "opponent": "NWSTATE"
           }
         ],
         "tight_ends": [
