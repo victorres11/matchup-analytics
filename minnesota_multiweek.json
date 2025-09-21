@@ -938,6 +938,15 @@
             "started": false,
             "week": 2,
             "opponent": "NWSTATE"
+          },
+          {
+            "name": "Le'Meke Brockington",
+            "jersey": "00",
+            "position": "RWR",
+            "snaps": 19,
+            "started": true,
+            "week": 2,
+            "opponent": "NWSTATE"
           }
         ],
         "tight_ends": [
