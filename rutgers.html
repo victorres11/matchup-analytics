@@ -326,6 +326,72 @@
             color: #CC0000;
         }
 
+        /* Special Teams Filter Controls */
+        .unit-filters {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .unit-filters h4 {
+            color: #CC0000;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .filter-checkboxes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+
+        .filter-checkbox {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 0.9em;
+            color: #333;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .filter-checkbox:hover {
+            background: rgba(255, 255, 255, 0.9);
+            transform: translateY(-1px);
+        }
+
+        .filter-checkbox input[type="checkbox"] {
+            display: none;
+        }
+
+        .checkmark {
+            width: 16px;
+            height: 16px;
+            border-radius: 3px;
+            margin-right: 8px;
+            border: 2px solid #ddd;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .filter-checkbox input[type="checkbox"]:checked + .checkmark {
+            border-color: #CC0000;
+        }
+
+        .filter-checkbox input[type="checkbox"]:checked + .checkmark::after {
+            content: '✓';
+            position: absolute;
+            top: -2px;
+            left: 2px;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
         .footer {
             background: linear-gradient(135deg, rgba(204, 0, 0, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%);
             backdrop-filter: blur(10px);
@@ -500,6 +566,44 @@
         <div class="tab-content" id="special-teams">
             <div class="position-group">
                 <h3 class="position-title">Special Teams Units</h3>
+                
+                <!-- Unit Filter Controls -->
+                <div class="unit-filters">
+                    <h4>Filter by Special Teams Unit:</h4>
+                    <div class="filter-checkboxes">
+                        <label class="filter-checkbox">
+                            <input type="checkbox" data-unit="kret" checked>
+                            <span class="checkmark" style="background-color: #FF6B6B;"></span>
+                            Kick Return
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" data-unit="kcov" checked>
+                            <span class="checkmark" style="background-color: #4ECDC4;"></span>
+                            Kick Coverage
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" data-unit="pret" checked>
+                            <span class="checkmark" style="background-color: #45B7D1;"></span>
+                            Punt Return
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" data-unit="pcov" checked>
+                            <span class="checkmark" style="background-color: #96CEB4;"></span>
+                            Punt Coverage
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" data-unit="fgblk" checked>
+                            <span class="checkmark" style="background-color: #FFEAA7;"></span>
+                            Field Goal Block
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" data-unit="fgk" checked>
+                            <span class="checkmark" style="background-color: #DDA0DD;"></span>
+                            Field Goal Kick
+                        </label>
+                    </div>
+                </div>
+                
                 <div class="chart-container">
                     <div class="chart-wrapper">
                         <canvas id="st-chart" class="chart-canvas"></canvas>
@@ -778,6 +882,12 @@
 
             const ctx = canvas.getContext('2d');
             
+            // Get active filter units
+            const getActiveUnits = () => {
+                const checkboxes = document.querySelectorAll('.unit-filters input[type="checkbox"]:checked');
+                return Array.from(checkboxes).map(cb => cb.dataset.unit);
+            };
+            
             // Get all special teams players across all weeks
             const allPlayers = [];
             const playerMap = new Map();
@@ -808,16 +918,25 @@
                 }
             });
 
-            // Convert to array and sort by total snaps
+            // Convert to array and filter by active units
+            const activeUnits = getActiveUnits();
             allPlayers.push(...Array.from(playerMap.values()));
-            allPlayers.sort((a, b) => {
+            
+            // Filter players who have snaps in active units
+            const filteredPlayers = allPlayers.filter(player => {
+                return activeUnits.some(unit => {
+                    return Object.values(player.weeks).some(week => week[unit] > 0);
+                });
+            });
+            
+            filteredPlayers.sort((a, b) => {
                 const aTotal = Object.values(a.weeks).reduce((sum, week) => sum + week.totalSnaps, 0);
                 const bTotal = Object.values(b.weeks).reduce((sum, week) => sum + week.totalSnaps, 0);
                 return bTotal - aTotal;
             });
 
             // Prepare data for Chart.js
-            const labels = allPlayers.map(player => {
+            const labels = filteredPlayers.map(player => {
                 const nameParts = player.name.split(' ');
                 let lastName = nameParts[nameParts.length - 1];
                 
@@ -833,69 +952,31 @@
                 return `${lastName} #${player.jersey}`;
             });
 
-            // Create datasets for each special teams unit
-            const datasets = [
-                {
-                    label: 'Kick Return',
-                    data: allPlayers.map(player => {
-                        return Object.values(player.weeks).reduce((sum, week) => sum + week.kret, 0);
-                    }),
-                    backgroundColor: '#FF6B6B',
-                    borderColor: '#FF6B6B',
-                    borderWidth: 1,
-                    borderRadius: 4
-                },
-                {
-                    label: 'Kick Coverage',
-                    data: allPlayers.map(player => {
-                        return Object.values(player.weeks).reduce((sum, week) => sum + week.kcov, 0);
-                    }),
-                    backgroundColor: '#4ECDC4',
-                    borderColor: '#4ECDC4',
-                    borderWidth: 1,
-                    borderRadius: 4
-                },
-                {
-                    label: 'Punt Return',
-                    data: allPlayers.map(player => {
-                        return Object.values(player.weeks).reduce((sum, week) => sum + week.pret, 0);
-                    }),
-                    backgroundColor: '#45B7D1',
-                    borderColor: '#45B7D1',
-                    borderWidth: 1,
-                    borderRadius: 4
-                },
-                {
-                    label: 'Punt Coverage',
-                    data: allPlayers.map(player => {
-                        return Object.values(player.weeks).reduce((sum, week) => sum + week.pcov, 0);
-                    }),
-                    backgroundColor: '#96CEB4',
-                    borderColor: '#96CEB4',
-                    borderWidth: 1,
-                    borderRadius: 4
-                },
-                {
-                    label: 'Field Goal Block',
-                    data: allPlayers.map(player => {
-                        return Object.values(player.weeks).reduce((sum, week) => sum + week.fgblk, 0);
-                    }),
-                    backgroundColor: '#FFEAA7',
-                    borderColor: '#FFEAA7',
-                    borderWidth: 1,
-                    borderRadius: 4
-                },
-                {
-                    label: 'Field Goal Kick',
-                    data: allPlayers.map(player => {
-                        return Object.values(player.weeks).reduce((sum, week) => sum + week.fgk, 0);
-                    }),
-                    backgroundColor: '#DDA0DD',
-                    borderColor: '#DDA0DD',
-                    borderWidth: 1,
-                    borderRadius: 4
-                }
+            // Create datasets for each special teams unit (only active ones)
+            const datasets = [];
+            const unitConfigs = [
+                { key: 'kret', label: 'Kick Return', color: '#FF6B6B' },
+                { key: 'kcov', label: 'Kick Coverage', color: '#4ECDC4' },
+                { key: 'pret', label: 'Punt Return', color: '#45B7D1' },
+                { key: 'pcov', label: 'Punt Coverage', color: '#96CEB4' },
+                { key: 'fgblk', label: 'Field Goal Block', color: '#FFEAA7' },
+                { key: 'fgk', label: 'Field Goal Kick', color: '#DDA0DD' }
             ];
+
+            unitConfigs.forEach(unit => {
+                if (activeUnits.includes(unit.key)) {
+                    datasets.push({
+                        label: unit.label,
+                        data: filteredPlayers.map(player => {
+                            return Object.values(player.weeks).reduce((sum, week) => sum + week[unit.key], 0);
+                        }),
+                        backgroundColor: unit.color,
+                        borderColor: unit.color,
+                        borderWidth: 1,
+                        borderRadius: 4
+                    });
+                }
+            });
 
             // Create Chart.js chart
             new Chart(ctx, {
@@ -931,7 +1012,7 @@
                             displayColors: true,
                             callbacks: {
                                 label: function(context) {
-                                    const player = allPlayers[context.dataIndex];
+                                    const player = filteredPlayers[context.dataIndex];
                                     const totalSnaps = Object.values(player.weeks).reduce((sum, week) => sum + week.totalSnaps, 0);
                                     const unitSnaps = context.parsed.y;
                                     const percentage = totalSnaps > 0 ? ((unitSnaps / totalSnaps) * 100).toFixed(1) : 0;
@@ -972,6 +1053,13 @@
                         mode: 'index'
                     }
                 }
+            });
+
+            // Add event listeners for filter checkboxes
+            document.querySelectorAll('.unit-filters input[type="checkbox"]').forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    createSpecialTeamsChart(canvasId, positionGroup, side);
+                });
             });
         }
 
