@@ -415,6 +415,7 @@
         <div class="tabs">
             <button class="tab active" data-tab="offense">OFFENSIVE</button>
             <button class="tab" data-tab="defense">DEFENSIVE</button>
+            <button class="tab" data-tab="special-teams">SPECIAL TEAMS</button>
         </div>
 
         <!-- Offense Tab -->
@@ -491,6 +492,19 @@
                         <canvas id="db-chart" class="chart-canvas"></canvas>
                     </div>
                     <div class="player-details" id="db-details"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Teams Tab -->
+        <div class="tab-content" id="special-teams">
+            <div class="position-group">
+                <h3 class="position-title">Special Teams Units</h3>
+                <div class="chart-container">
+                    <div class="chart-wrapper">
+                        <canvas id="st-chart" class="chart-canvas"></canvas>
+                    </div>
+                    <div class="player-details" id="st-details"></div>
                 </div>
             </div>
         </div>
@@ -586,6 +600,9 @@
             createStackedChart('dl-chart', 'defensive_line', 'defense');
             createStackedChart('lb-chart', 'linebackers', 'defense');
             createStackedChart('db-chart', 'defensive_backs', 'defense');
+
+            // Special Teams chart
+            createSpecialTeamsChart('st-chart', 'special_teams', 'special_teams');
         }
 
         // Create stacked bar chart
@@ -708,6 +725,210 @@
                                     const totalSnaps = context.dataset.data.reduce((sum, val) => sum + val, 0);
                                     const percentage = totalSnaps > 0 ? ((context.parsed.y / totalSnaps) * 100).toFixed(1) : 0;
                                     return `Week ${week}: ${context.parsed.y} snaps (${percentage}%) • ${player.position}`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            stacked: true,
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                color: '#666',
+                                font: {
+                                    size: 11
+                                }
+                            }
+                        },
+                        y: {
+                            stacked: true,
+                            beginAtZero: true,
+                            grid: {
+                                color: 'rgba(0,0,0,0.1)'
+                            },
+                            ticks: {
+                                color: '#666',
+                                font: {
+                                    size: 11
+                                }
+                            }
+                        }
+                    },
+                    interaction: {
+                        intersect: false,
+                        mode: 'index'
+                    }
+                }
+            });
+        }
+
+        // Create special teams chart
+        function createSpecialTeamsChart(canvasId, positionGroup, side) {
+            const canvas = document.getElementById(canvasId);
+            if (!canvas) return;
+
+            const ctx = canvas.getContext('2d');
+            
+            // Get all special teams players across all weeks
+            const allPlayers = [];
+            const playerMap = new Map();
+
+            teamData.weeks.forEach(week => {
+                if (week[side] && week[side][positionGroup]) {
+                    week[side][positionGroup].forEach(player => {
+                        const key = `${player.name}_${player.jersey}`;
+                        if (!playerMap.has(key)) {
+                            playerMap.set(key, {
+                                name: player.name,
+                                jersey: player.jersey,
+                                position: player.position,
+                                weeks: {}
+                            });
+                        }
+                        playerMap.get(key).weeks[week.week] = {
+                            totalSnaps: player.totalSnaps,
+                            kret: player.kret,
+                            kcov: player.kcov,
+                            pret: player.pret,
+                            pcov: player.pcov,
+                            fgblk: player.fgblk,
+                            fgk: player.fgk,
+                            opponent: player.opponent
+                        };
+                    });
+                }
+            });
+
+            // Convert to array and sort by total snaps
+            allPlayers.push(...Array.from(playerMap.values()));
+            allPlayers.sort((a, b) => {
+                const aTotal = Object.values(a.weeks).reduce((sum, week) => sum + week.totalSnaps, 0);
+                const bTotal = Object.values(b.weeks).reduce((sum, week) => sum + week.totalSnaps, 0);
+                return bTotal - aTotal;
+            });
+
+            // Prepare data for Chart.js
+            const labels = allPlayers.map(player => {
+                const nameParts = player.name.split(' ');
+                let lastName = nameParts[nameParts.length - 1];
+                
+                // Handle name suffixes
+                if (lastName === 'Jr.' && nameParts.length > 1) {
+                    lastName = nameParts[nameParts.length - 2] + ' Jr.';
+                } else if (lastName === 'JR' && nameParts.length > 1) {
+                    lastName = nameParts[nameParts.length - 2] + ' JR';
+                } else if (lastName === 'II' && nameParts.length > 1) {
+                    lastName = nameParts[nameParts.length - 2] + ' II';
+                }
+                
+                return `${lastName} #${player.jersey}`;
+            });
+
+            // Create datasets for each special teams unit
+            const datasets = [
+                {
+                    label: 'Kick Return',
+                    data: allPlayers.map(player => {
+                        return Object.values(player.weeks).reduce((sum, week) => sum + week.kret, 0);
+                    }),
+                    backgroundColor: '#FF6B6B',
+                    borderColor: '#FF6B6B',
+                    borderWidth: 1,
+                    borderRadius: 4
+                },
+                {
+                    label: 'Kick Coverage',
+                    data: allPlayers.map(player => {
+                        return Object.values(player.weeks).reduce((sum, week) => sum + week.kcov, 0);
+                    }),
+                    backgroundColor: '#4ECDC4',
+                    borderColor: '#4ECDC4',
+                    borderWidth: 1,
+                    borderRadius: 4
+                },
+                {
+                    label: 'Punt Return',
+                    data: allPlayers.map(player => {
+                        return Object.values(player.weeks).reduce((sum, week) => sum + week.pret, 0);
+                    }),
+                    backgroundColor: '#45B7D1',
+                    borderColor: '#45B7D1',
+                    borderWidth: 1,
+                    borderRadius: 4
+                },
+                {
+                    label: 'Punt Coverage',
+                    data: allPlayers.map(player => {
+                        return Object.values(player.weeks).reduce((sum, week) => sum + week.pcov, 0);
+                    }),
+                    backgroundColor: '#96CEB4',
+                    borderColor: '#96CEB4',
+                    borderWidth: 1,
+                    borderRadius: 4
+                },
+                {
+                    label: 'Field Goal Block',
+                    data: allPlayers.map(player => {
+                        return Object.values(player.weeks).reduce((sum, week) => sum + week.fgblk, 0);
+                    }),
+                    backgroundColor: '#FFEAA7',
+                    borderColor: '#FFEAA7',
+                    borderWidth: 1,
+                    borderRadius: 4
+                },
+                {
+                    label: 'Field Goal Kick',
+                    data: allPlayers.map(player => {
+                        return Object.values(player.weeks).reduce((sum, week) => sum + week.fgk, 0);
+                    }),
+                    backgroundColor: '#DDA0DD',
+                    borderColor: '#DDA0DD',
+                    borderWidth: 1,
+                    borderRadius: 4
+                }
+            ];
+
+            // Create Chart.js chart
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: false
+                        },
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                color: '#333',
+                                font: {
+                                    size: 12
+                                }
+                            }
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(0,0,0,0.8)',
+                            titleColor: 'white',
+                            bodyColor: 'white',
+                            borderColor: '#7B0000',
+                            borderWidth: 1,
+                            cornerRadius: 8,
+                            displayColors: true,
+                            callbacks: {
+                                label: function(context) {
+                                    const player = allPlayers[context.dataIndex];
+                                    const totalSnaps = Object.values(player.weeks).reduce((sum, week) => sum + week.totalSnaps, 0);
+                                    const unitSnaps = context.parsed.y;
+                                    const percentage = totalSnaps > 0 ? ((unitSnaps / totalSnaps) * 100).toFixed(1) : 0;
+                                    return `${context.dataset.label}: ${unitSnaps} snaps (${percentage}%)`;
                                 }
                             }
                         }

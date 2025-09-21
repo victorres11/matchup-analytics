@@ -77,6 +77,9 @@ function processTeamData(teamName) {
       linebackers: [],
       defensive_backs: []
     },
+    special_teams: {
+      special_teams: []
+    },
     weeks: []
   };
   
@@ -86,6 +89,7 @@ function processTeamData(teamName) {
       week: week,
       offense: { wide_receivers: [], tight_ends: [], quarterbacks: [], running_backs: [], offensive_line: [] },
       defense: { defensive_line: [], linebackers: [], defensive_backs: [] },
+      special_teams: { special_teams: [] },
       summary: {}
     };
     
@@ -145,6 +149,30 @@ function processTeamData(teamName) {
         if (weekData.defense[positionGroup]) {
           weekData.defense[positionGroup].push(playerData);
         }
+      });
+      
+      // Read special teams data
+      const specialTeamsFile = path.join(teamDir, `week${week}_special_teams.csv`);
+      const specialTeamsContent = fs.readFileSync(specialTeamsFile, 'utf8');
+      const specialTeamsData = parseCSV(specialTeamsContent);
+      
+      specialTeamsData.forEach(player => {
+        const playerData = {
+          name: player.Player,
+          jersey: player['#'],
+          position: player.POS,
+          totalSnaps: parseInt(player.TOT),
+          kret: parseInt(player.KRET) || 0,
+          kcov: parseInt(player.KCOV) || 0,
+          pret: parseInt(player.PRET) || 0,
+          pcov: parseInt(player.PCOV) || 0,
+          fgblk: parseInt(player.FGBLK) || 0,
+          fgk: parseInt(player.FGK) || 0,
+          week: week,
+          opponent: summaryData.Opponent
+        };
+        
+        weekData.special_teams.special_teams.push(playerData);
       });
       
     } catch (error) {
