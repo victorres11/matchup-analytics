@@ -1213,6 +1213,15 @@
       "defense": {
         "defensive_line": [
           {
+            "name": "Nate Becker",
+            "jersey": "D89",
+            "position": "NT",
+            "snaps": 13,
+            "started": false,
+            "week": 2,
+            "opponent": "NWSTATE"
+          },
+          {
             "name": "Riley Sunram",
             "jersey": "D93",
             "position": "NT",
