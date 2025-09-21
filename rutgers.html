@@ -473,11 +473,18 @@
     </div>
 
     <script>
-        // Color mapping for opposing teams
+        // Color mapping for opposing teams - each week gets a distinct color
         const opposingTeamColors = {
             'Ohio': { primary: '#006633', secondary: '#FFFFFF', accent: '#FFD700' },
             'Miami OH': { primary: '#C8102E', secondary: '#FFD700', accent: '#FFFFFF' },
-            'Norfolk State': { primary: '#006633', secondary: '#8B4513', accent: '#FFD700' }
+            'Norfolk State': { primary: '#8B4513', secondary: '#FFD700', accent: '#FFFFFF' }
+        };
+
+        // Week-specific colors for stacked bars
+        const weekColors = {
+            1: '#006633', // Green for Week 1 vs Ohio
+            2: '#C8102E', // Red for Week 2 vs Miami OH  
+            3: '#8B4513'  // Brown for Week 3 vs Norfolk State
         };
 
         let teamData = null;
@@ -601,13 +608,13 @@
 
                 const weekInfo = teamData.weeks.find(w => w.week === weekNum);
                 const opponent = weekInfo ? weekInfo.summary.opponent : 'Unknown';
-                const colors = opposingTeamColors[opponent] || { primary: '#666666', secondary: '#999999', accent: '#CCCCCC' };
+                const color = weekColors[weekNum] || '#666666';
 
                 datasets.push({
                     label: `Week ${weekNum} vs ${opponent}`,
                     data: weekData,
-                    backgroundColor: weekNum === 1 ? colors.primary : weekNum === 2 ? colors.secondary : colors.accent,
-                    borderColor: weekNum === 1 ? colors.primary : weekNum === 2 ? colors.secondary : colors.accent,
+                    backgroundColor: color,
+                    borderColor: color,
                     borderWidth: 1,
                     borderRadius: 4,
                     players: allPlayers
