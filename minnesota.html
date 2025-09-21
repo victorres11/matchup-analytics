@@ -265,46 +265,6 @@
             font-size: 0.9em;
         }
 
-        .week-filter {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            padding: 15px;
-            margin-bottom: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .week-filter h3 {
-            color: white;
-            margin-bottom: 10px;
-            font-size: 1.2rem;
-        }
-
-        .week-buttons {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        .week-btn {
-            padding: 8px 16px;
-            background: rgba(255, 255, 255, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            border-radius: 20px;
-            color: white;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-size: 0.9rem;
-        }
-
-        .week-btn.active {
-            background: linear-gradient(135deg, #7B0000 0%, #FFD700 100%);
-            border-color: #7B0000;
-        }
-
-        .week-btn:hover:not(.active) {
-            background: rgba(255, 255, 255, 0.3);
-        }
 
         .footer {
             background: linear-gradient(135deg, rgba(123, 0, 0, 0.95) 0%, rgba(255, 215, 0, 0.95) 100%);
@@ -368,16 +328,6 @@
             </div>
         </div>
 
-        <!-- Week Filter -->
-        <div class="week-filter">
-            <h3>Filter by Week</h3>
-            <div class="week-buttons">
-                <button class="week-btn active" data-week="all">All Weeks</button>
-                <button class="week-btn" data-week="1">Week 1 vs Buffalo</button>
-                <button class="week-btn" data-week="2">Week 2 vs NWSTATE</button>
-                <button class="week-btn" data-week="3">Week 3 vs Cal</button>
-            </div>
-        </div>
 
         <!-- Tabs -->
         <div class="tabs">
@@ -708,19 +658,6 @@
                 });
             });
 
-            // Week filtering
-            document.querySelectorAll('.week-btn').forEach(btn => {
-                btn.addEventListener('click', function() {
-                    const week = this.getAttribute('data-week');
-                    
-                    // Update button states
-                    document.querySelectorAll('.week-btn').forEach(b => b.classList.remove('active'));
-                    this.classList.add('active');
-                    
-                    currentWeek = week;
-                    // TODO: Implement week filtering logic
-                });
-            });
         }
 
         // Initialize on page load
