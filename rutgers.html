@@ -837,7 +837,12 @@
                                     const player = context.dataset.players[context.dataIndex];
                                     const week = context.dataset.label.split(' ')[1];
                                     const weekData = player.weeks[parseInt(week)];
-                                    const totalSnaps = context.dataset.data.reduce((sum, val) => sum + val, 0);
+                                    
+                                    // Get total snaps for this specific week
+                                    const weekInfo = teamData.weeks.find(w => w.week === parseInt(week));
+                                    const isOffensiveChart = canvasId.includes('wr') || canvasId.includes('te') || canvasId.includes('rb') || canvasId.includes('ol') || canvasId.includes('qb');
+                                    const totalSnaps = weekInfo ? (isOffensiveChart ? weekInfo.summary.offensiveSnaps : weekInfo.summary.defensiveSnaps) : 0;
+                                    
                                     const percentage = totalSnaps > 0 ? ((context.parsed.y / totalSnaps) * 100).toFixed(1) : 0;
                                     const started = weekData && weekData.started ? ' *' : '';
                                     return `Week ${week}: ${context.parsed.y} snaps (${percentage}%) • ${player.position}${started}`;
