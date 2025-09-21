@@ -947,6 +947,15 @@
             "started": true,
             "week": 2,
             "opponent": "NWSTATE"
+          },
+          {
+            "name": "Jalen Smith",
+            "jersey": "08",
+            "position": "LWR",
+            "snaps": 15,
+            "started": false,
+            "week": 2,
+            "opponent": "NWSTATE"
           }
         ],
         "tight_ends": [
