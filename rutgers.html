@@ -771,6 +771,14 @@
                     lastName = nameParts[nameParts.length - 2] + ' JR';
                 } else if (lastName === 'II' && nameParts.length > 1) {
                     lastName = nameParts[nameParts.length - 2] + ' II';
+                } else if (lastName === 'III' && nameParts.length > 1) {
+                    lastName = nameParts[nameParts.length - 2] + ' III';
+                } else if (lastName === 'Sr.' && nameParts.length > 1) {
+                    lastName = nameParts[nameParts.length - 2] + ' Sr.';
+                } else if (lastName === 'SR' && nameParts.length > 1) {
+                    lastName = nameParts[nameParts.length - 2] + ' SR';
+                } else if (lastName === 'I' && nameParts.length > 1) {
+                    lastName = nameParts[nameParts.length - 2] + ' I';
                 }
                 
                 return `${lastName} #${player.jersey}`;
@@ -957,6 +965,14 @@
                     lastName = nameParts[nameParts.length - 2] + ' JR';
                 } else if (lastName === 'II' && nameParts.length > 1) {
                     lastName = nameParts[nameParts.length - 2] + ' II';
+                } else if (lastName === 'III' && nameParts.length > 1) {
+                    lastName = nameParts[nameParts.length - 2] + ' III';
+                } else if (lastName === 'Sr.' && nameParts.length > 1) {
+                    lastName = nameParts[nameParts.length - 2] + ' Sr.';
+                } else if (lastName === 'SR' && nameParts.length > 1) {
+                    lastName = nameParts[nameParts.length - 2] + ' SR';
+                } else if (lastName === 'I' && nameParts.length > 1) {
+                    lastName = nameParts[nameParts.length - 2] + ' I';
                 }
                 
                 return `${lastName} #${player.jersey}`;
