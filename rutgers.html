@@ -265,6 +265,66 @@
             font-size: 0.9em;
         }
 
+        .weekly-summary {
+            background: linear-gradient(135deg, rgba(204, 0, 0, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%);
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            margin-bottom: 30px;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .weekly-summary h2 {
+            color: white;
+            margin: 0 0 20px 0;
+            font-size: 1.8em;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .summary-table-container {
+            overflow-x: auto;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+        }
+
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .summary-table th {
+            background: linear-gradient(135deg, #CC0000 0%, #FFFFFF 100%);
+            color: #CC0000;
+            padding: 15px 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .summary-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e5e7eb;
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        .summary-table tr:hover {
+            background: rgba(204, 0, 0, 0.05);
+        }
+
+        .summary-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .snap-count {
+            font-weight: 600;
+            color: #CC0000;
+        }
 
         .footer {
             background: linear-gradient(135deg, rgba(204, 0, 0, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%);
@@ -328,6 +388,28 @@
             </div>
         </div>
 
+        <!-- Weekly Summary Table -->
+        <div class="weekly-summary">
+            <h2>Weekly Snap Count Summary</h2>
+            <div class="summary-table-container">
+                <table class="summary-table">
+                    <thead>
+                        <tr>
+                            <th>Week</th>
+                            <th>Opponent</th>
+                            <th>Date</th>
+                            <th>Final Score</th>
+                            <th>Home/Away</th>
+                            <th>Offensive Snaps</th>
+                            <th>Defensive Snaps</th>
+                        </tr>
+                    </thead>
+                    <tbody id="weekly-summary-data">
+                        <!-- Data will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
         <!-- Tabs -->
         <div class="tabs">
@@ -445,6 +527,7 @@
                 const response = await fetch('./rutgers_multiweek.json');
                 teamData = await response.json();
                 updateStats();
+                populateWeeklySummary();
                 initializeCharts();
                 setupEventListeners();
             } catch (error) {
@@ -472,6 +555,28 @@
 
             // Update timestamp
             document.getElementById('update-time').textContent = new Date().toLocaleString();
+        }
+
+        // Populate weekly summary table
+        function populateWeeklySummary() {
+            if (!teamData) return;
+
+            const tbody = document.getElementById('weekly-summary-data');
+            tbody.innerHTML = '';
+
+            teamData.weeks.forEach(week => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>Week ${week.week}</td>
+                    <td>${week.summary.opponent}</td>
+                    <td>${week.summary.date}</td>
+                    <td>${week.summary.finalScore}</td>
+                    <td>${week.summary.homeAway}</td>
+                    <td class="snap-count">${week.summary.offensiveSnaps}</td>
+                    <td class="snap-count">${week.summary.defensiveSnaps}</td>
+                `;
+                tbody.appendChild(row);
+            });
         }
 
         // Initialize all charts
