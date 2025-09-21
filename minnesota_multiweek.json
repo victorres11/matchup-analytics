@@ -1222,6 +1222,15 @@
             "opponent": "NWSTATE"
           },
           {
+            "name": "Jaylin Hicks",
+            "jersey": "D55",
+            "position": "DLT",
+            "snaps": 18,
+            "started": false,
+            "week": 2,
+            "opponent": "NWSTATE"
+          },
+          {
             "name": "Riley Sunram",
             "jersey": "D93",
             "position": "NT",
