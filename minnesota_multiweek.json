@@ -1128,11 +1128,11 @@
             "opponent": "NWSTATE"
           },
           {
-            "name": "Aluma Nkele",
-            "jersey": "70",
+            "name": "Dylan Ray",
+            "jersey": "73",
             "position": "RT",
-            "snaps": 33,
-            "started": false,
+            "snaps": 31,
+            "started": true,
             "week": 2,
             "opponent": "NWSTATE"
           },
