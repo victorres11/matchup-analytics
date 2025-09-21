@@ -457,6 +457,9 @@
         <!-- Weekly Summary Table -->
         <div class="weekly-summary">
             <h2>Weekly Snap Count Summary</h2>
+            <p style="color: #7B0000; font-size: 0.9em; margin-bottom: 15px;">
+                <strong>Note:</strong> * indicates player started that week
+            </p>
             <div class="summary-table-container">
                 <table class="summary-table">
                     <thead>
@@ -828,7 +831,8 @@
                                     const weekData = player.weeks[parseInt(week)];
                                     const totalSnaps = context.dataset.data.reduce((sum, val) => sum + val, 0);
                                     const percentage = totalSnaps > 0 ? ((context.parsed.y / totalSnaps) * 100).toFixed(1) : 0;
-                                    return `Week ${week}: ${context.parsed.y} snaps (${percentage}%) • ${player.position}`;
+                                    const started = weekData && weekData.started ? ' *' : '';
+                                    return `Week ${week}: ${context.parsed.y} snaps (${percentage}%) • ${player.position}${started}`;
                                 }
                             }
                         }

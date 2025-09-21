@@ -120,6 +120,7 @@ function processTeamData(teamName) {
           jersey: player['#'],
           position: player.POS,
           snaps: parseInt(player.TOT),
+          started: player.S === '*',
           week: week,
           opponent: summaryData.Opponent
         };
@@ -141,6 +142,7 @@ function processTeamData(teamName) {
           jersey: player['#'],
           position: player.POS,
           snaps: parseInt(player.TOT),
+          started: player.S === '*',
           week: week,
           opponent: summaryData.Opponent
         };

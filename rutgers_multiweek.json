@@ -30,6 +30,7 @@
             "jersey": "9",
             "position": "LWR",
             "snaps": 60,
+            "started": true,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -38,6 +39,7 @@
             "jersey": "8",
             "position": "RWR",
             "snaps": 61,
+            "started": true,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -46,6 +48,7 @@
             "jersey": "0",
             "position": "SRWR",
             "snaps": 49,
+            "started": true,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -54,6 +57,7 @@
             "jersey": "17",
             "position": "RWR",
             "snaps": 1,
+            "started": false,
             "week": 1,
             "opponent": "Ohio"
           }
@@ -64,6 +68,7 @@
             "jersey": "12",
             "position": "TER",
             "snaps": 39,
+            "started": true,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -72,6 +77,7 @@
             "jersey": "18",
             "position": "TEL",
             "snaps": 40,
+            "started": false,
             "week": 1,
             "opponent": "Ohio"
           }
@@ -82,6 +88,7 @@
             "jersey": "16",
             "position": "QB",
             "snaps": 61,
+            "started": true,
             "week": 1,
             "opponent": "Ohio"
           }
@@ -92,6 +99,7 @@
             "jersey": "3",
             "position": "HB",
             "snaps": 32,
+            "started": true,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -100,6 +108,7 @@
             "jersey": "5",
             "position": "HB",
             "snaps": 19,
+            "started": false,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -108,6 +117,7 @@
             "jersey": "20",
             "position": "HB",
             "snaps": 10,
+            "started": false,
             "week": 1,
             "opponent": "Ohio"
           }
@@ -118,6 +128,7 @@
             "jersey": "59",
             "position": "C",
             "snaps": 61,
+            "started": true,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -126,6 +137,7 @@
             "jersey": "69",
             "position": "RG",
             "snaps": 61,
+            "started": true,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -134,6 +146,7 @@
             "jersey": "76",
             "position": "LT",
             "snaps": 54,
+            "started": true,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -142,6 +155,7 @@
             "jersey": "54",
             "position": "RT",
             "snaps": 61,
+            "started": true,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -150,6 +164,7 @@
             "jersey": "65",
             "position": "LG",
             "snaps": 61,
+            "started": true,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -158,6 +173,7 @@
             "jersey": "56",
             "position": "LT",
             "snaps": 7,
+            "started": false,
             "week": 1,
             "opponent": "Ohio"
           }
@@ -170,6 +186,7 @@
             "jersey": "D55",
             "position": "DLT",
             "snaps": 32,
+            "started": true,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -178,6 +195,7 @@
             "jersey": "D92",
             "position": "NT",
             "snaps": 8,
+            "started": false,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -186,6 +204,7 @@
             "jersey": "D96",
             "position": "NT",
             "snaps": 38,
+            "started": true,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -194,6 +213,7 @@
             "jersey": "D95",
             "position": "NT",
             "snaps": 7,
+            "started": false,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -202,6 +222,7 @@
             "jersey": "D97",
             "position": "DLT",
             "snaps": 22,
+            "started": false,
             "week": 1,
             "opponent": "Ohio"
           }
@@ -212,6 +233,7 @@
             "jersey": "D02",
             "position": "WLB",
             "snaps": 51,
+            "started": true,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -220,6 +242,7 @@
             "jersey": "D08",
             "position": "MLB",
             "snaps": 62,
+            "started": true,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -228,6 +251,7 @@
             "jersey": "D14",
             "position": "LOLB",
             "snaps": 32,
+            "started": false,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -236,6 +260,7 @@
             "jersey": "D01",
             "position": "ROLB",
             "snaps": 40,
+            "started": true,
             "week": 1,
             "opponent": "Ohio"
           }
@@ -246,6 +271,7 @@
             "jersey": "D10",
             "position": "LCB",
             "snaps": 43,
+            "started": true,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -254,6 +280,7 @@
             "jersey": "D21",
             "position": "RCB",
             "snaps": 41,
+            "started": false,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -262,6 +289,7 @@
             "jersey": "D20",
             "position": "SS",
             "snaps": 2,
+            "started": false,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -270,6 +298,7 @@
             "jersey": "D03",
             "position": "LCB",
             "snaps": 41,
+            "started": true,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -278,6 +307,7 @@
             "jersey": "D09",
             "position": "SS",
             "snaps": 62,
+            "started": true,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -286,6 +316,7 @@
             "jersey": "D07",
             "position": "SCB",
             "snaps": 62,
+            "started": true,
             "week": 1,
             "opponent": "Ohio"
           },
@@ -294,6 +325,7 @@
             "jersey": "D05",
             "position": "SS",
             "snaps": 60,
+            "started": true,
             "week": 1,
             "opponent": "Ohio"
           }
@@ -952,6 +984,7 @@
             "jersey": "9",
             "position": "LWR",
             "snaps": 75,
+            "started": true,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -960,6 +993,7 @@
             "jersey": "8",
             "position": "RWR",
             "snaps": 78,
+            "started": true,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -968,6 +1002,7 @@
             "jersey": "0",
             "position": "SRWR",
             "snaps": 74,
+            "started": true,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -976,6 +1011,7 @@
             "jersey": "17",
             "position": "RWR",
             "snaps": 10,
+            "started": false,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -984,6 +1020,7 @@
             "jersey": "89",
             "position": "SRWR",
             "snaps": 2,
+            "started": false,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -992,6 +1029,7 @@
             "jersey": "83",
             "position": "LWR",
             "snaps": 3,
+            "started": false,
             "week": 2,
             "opponent": "Miami OH"
           }
@@ -1002,6 +1040,7 @@
             "jersey": "12",
             "position": "TER",
             "snaps": 43,
+            "started": true,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1010,6 +1049,7 @@
             "jersey": "18",
             "position": "TEL",
             "snaps": 43,
+            "started": false,
             "week": 2,
             "opponent": "Miami OH"
           }
@@ -1020,6 +1060,7 @@
             "jersey": "16",
             "position": "QB",
             "snaps": 82,
+            "started": true,
             "week": 2,
             "opponent": "Miami OH"
           }
@@ -1030,6 +1071,7 @@
             "jersey": "3",
             "position": "HB",
             "snaps": 34,
+            "started": true,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1038,6 +1080,7 @@
             "jersey": "20",
             "position": "HB",
             "snaps": 20,
+            "started": false,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1046,6 +1089,7 @@
             "jersey": "5",
             "position": "HB",
             "snaps": 28,
+            "started": false,
             "week": 2,
             "opponent": "Miami OH"
           }
@@ -1056,6 +1100,7 @@
             "jersey": "59",
             "position": "C",
             "snaps": 82,
+            "started": true,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1064,6 +1109,7 @@
             "jersey": "69",
             "position": "RG",
             "snaps": 82,
+            "started": true,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1072,6 +1118,7 @@
             "jersey": "54",
             "position": "RT",
             "snaps": 65,
+            "started": true,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1080,6 +1127,7 @@
             "jersey": "65",
             "position": "LG",
             "snaps": 82,
+            "started": true,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1088,6 +1136,7 @@
             "jersey": "56",
             "position": "LT",
             "snaps": 55,
+            "started": false,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1096,6 +1145,7 @@
             "jersey": "76",
             "position": "LT",
             "snaps": 44,
+            "started": true,
             "week": 2,
             "opponent": "Miami OH"
           }
@@ -1108,6 +1158,7 @@
             "jersey": "D97",
             "position": "DLT",
             "snaps": 17,
+            "started": false,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1116,6 +1167,7 @@
             "jersey": "D55",
             "position": "DRT",
             "snaps": 14,
+            "started": true,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1124,6 +1176,7 @@
             "jersey": "D92",
             "position": "DLT",
             "snaps": 9,
+            "started": false,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1132,6 +1185,7 @@
             "jersey": "D96",
             "position": "NT",
             "snaps": 26,
+            "started": true,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1140,6 +1194,7 @@
             "jersey": "D95",
             "position": "DRT",
             "snaps": 7,
+            "started": false,
             "week": 2,
             "opponent": "Miami OH"
           }
@@ -1150,6 +1205,7 @@
             "jersey": "D06",
             "position": "WLB",
             "snaps": 16,
+            "started": false,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1158,6 +1214,7 @@
             "jersey": "D08",
             "position": "MLB",
             "snaps": 44,
+            "started": true,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1166,6 +1223,7 @@
             "jersey": "D01",
             "position": "ROLB",
             "snaps": 29,
+            "started": true,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1174,6 +1232,7 @@
             "jersey": "D14",
             "position": "ROLB",
             "snaps": 23,
+            "started": false,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1182,6 +1241,7 @@
             "jersey": "D47",
             "position": "MLB",
             "snaps": 5,
+            "started": false,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1190,6 +1250,7 @@
             "jersey": "D15",
             "position": "LOLB",
             "snaps": 4,
+            "started": false,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1198,6 +1259,7 @@
             "jersey": "D04",
             "position": "WLB",
             "snaps": 4,
+            "started": false,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1206,6 +1268,7 @@
             "jersey": "D02",
             "position": "WLB",
             "snaps": 26,
+            "started": true,
             "week": 2,
             "opponent": "Miami OH"
           }
@@ -1216,6 +1279,7 @@
             "jersey": "D03",
             "position": "LCB",
             "snaps": 33,
+            "started": true,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1224,6 +1288,7 @@
             "jersey": "D20",
             "position": "SS",
             "snaps": 4,
+            "started": false,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1232,6 +1297,7 @@
             "jersey": "D07",
             "position": "SCB",
             "snaps": 42,
+            "started": true,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1240,6 +1306,7 @@
             "jersey": "D29",
             "position": "SCB",
             "snaps": 4,
+            "started": false,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1248,6 +1315,7 @@
             "jersey": "D38",
             "position": "SS",
             "snaps": 4,
+            "started": false,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1256,6 +1324,7 @@
             "jersey": "D24",
             "position": "RCB",
             "snaps": 4,
+            "started": false,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1264,6 +1333,7 @@
             "jersey": "D05",
             "position": "FS",
             "snaps": 44,
+            "started": true,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1272,6 +1342,7 @@
             "jersey": "D21",
             "position": "RCB",
             "snaps": 22,
+            "started": false,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1280,6 +1351,7 @@
             "jersey": "D10",
             "position": "RCB",
             "snaps": 36,
+            "started": true,
             "week": 2,
             "opponent": "Miami OH"
           },
@@ -1288,6 +1360,7 @@
             "jersey": "D09",
             "position": "FS",
             "snaps": 44,
+            "started": true,
             "week": 2,
             "opponent": "Miami OH"
           }
@@ -1960,6 +2033,7 @@
             "jersey": "8",
             "position": "LWR",
             "snaps": 62,
+            "started": true,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -1968,6 +2042,7 @@
             "jersey": "80",
             "position": "LWR",
             "snaps": 12,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -1976,6 +2051,7 @@
             "jersey": "13",
             "position": "RWR",
             "snaps": 8,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -1984,6 +2060,7 @@
             "jersey": "0",
             "position": "SLWR",
             "snaps": 56,
+            "started": true,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -1992,6 +2069,7 @@
             "jersey": "17",
             "position": "RWR",
             "snaps": 62,
+            "started": true,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2000,6 +2078,7 @@
             "jersey": "83",
             "position": "LWR",
             "snaps": 12,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2008,6 +2087,7 @@
             "jersey": "25",
             "position": "RWR",
             "snaps": 3,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2016,6 +2096,7 @@
             "jersey": "89",
             "position": "SLWR",
             "snaps": 4,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2024,6 +2105,7 @@
             "jersey": "7",
             "position": "SLWR",
             "snaps": 20,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2032,6 +2114,7 @@
             "jersey": "14",
             "position": "LWR",
             "snaps": 11,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           }
@@ -2042,6 +2125,7 @@
             "jersey": "82",
             "position": "TE-L",
             "snaps": 3,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2050,6 +2134,7 @@
             "jersey": "18",
             "position": "TE-L",
             "snaps": 32,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2058,6 +2143,7 @@
             "jersey": "12",
             "position": "TE-L",
             "snaps": 35,
+            "started": true,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2066,6 +2152,7 @@
             "jersey": "11",
             "position": "TE-R",
             "snaps": 18,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2074,6 +2161,7 @@
             "jersey": "88",
             "position": "TE-L",
             "snaps": 2,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           }
@@ -2084,6 +2172,7 @@
             "jersey": "16",
             "position": "QB",
             "snaps": 62,
+            "started": true,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2092,6 +2181,7 @@
             "jersey": "10",
             "position": "QB",
             "snaps": 18,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2100,6 +2190,7 @@
             "jersey": "6",
             "position": "QB",
             "snaps": 5,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           }
@@ -2110,6 +2201,7 @@
             "jersey": "3",
             "position": "HB",
             "snaps": 35,
+            "started": true,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2118,6 +2210,7 @@
             "jersey": "20",
             "position": "HB",
             "snaps": 26,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2126,6 +2219,7 @@
             "jersey": "26",
             "position": "HB",
             "snaps": 8,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2134,6 +2228,7 @@
             "jersey": "23",
             "position": "HB",
             "snaps": 15,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2142,6 +2237,7 @@
             "jersey": "5",
             "position": "HB",
             "snaps": 1,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           }
@@ -2152,6 +2248,7 @@
             "jersey": "74",
             "position": "LT",
             "snaps": 23,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2160,6 +2257,7 @@
             "jersey": "71",
             "position": "LG",
             "snaps": 23,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2168,6 +2266,7 @@
             "jersey": "67",
             "position": "RG",
             "snaps": 23,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2176,6 +2275,7 @@
             "jersey": "73",
             "position": "C",
             "snaps": 23,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2184,6 +2284,7 @@
             "jersey": "56",
             "position": "LT",
             "snaps": 51,
+            "started": true,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2192,6 +2293,7 @@
             "jersey": "54",
             "position": "RT",
             "snaps": 62,
+            "started": true,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2200,6 +2302,7 @@
             "jersey": "59",
             "position": "C",
             "snaps": 62,
+            "started": true,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2208,6 +2311,7 @@
             "jersey": "69",
             "position": "RG",
             "snaps": 62,
+            "started": true,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2216,6 +2320,7 @@
             "jersey": "79",
             "position": "RT",
             "snaps": 23,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2224,6 +2329,7 @@
             "jersey": "65",
             "position": "LG",
             "snaps": 62,
+            "started": true,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2232,6 +2338,7 @@
             "jersey": "77",
             "position": "LT",
             "snaps": 11,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           }
@@ -2244,6 +2351,7 @@
             "jersey": "D55",
             "position": "DRT",
             "snaps": 16,
+            "started": true,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2252,6 +2360,7 @@
             "jersey": "D90",
             "position": "DLT",
             "snaps": 8,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2260,6 +2369,7 @@
             "jersey": "D97",
             "position": "DLT",
             "snaps": 18,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2268,6 +2378,7 @@
             "jersey": "D92",
             "position": "NT",
             "snaps": 15,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2276,6 +2387,7 @@
             "jersey": "D95",
             "position": "DRT",
             "snaps": 9,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2284,6 +2396,7 @@
             "jersey": "D96",
             "position": "NT",
             "snaps": 21,
+            "started": true,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2292,6 +2405,7 @@
             "jersey": "D88",
             "position": "NT",
             "snaps": 3,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           }
@@ -2302,6 +2416,7 @@
             "jersey": "D13",
             "position": "MLB",
             "snaps": 4,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2310,6 +2425,7 @@
             "jersey": "D04",
             "position": "WLB",
             "snaps": 6,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2318,6 +2434,7 @@
             "jersey": "D01",
             "position": "ROLB",
             "snaps": 29,
+            "started": true,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2326,6 +2443,7 @@
             "jersey": "D02",
             "position": "WLB",
             "snaps": 26,
+            "started": true,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2334,6 +2452,7 @@
             "jersey": "D36",
             "position": "MLB",
             "snaps": 3,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2342,6 +2461,7 @@
             "jersey": "D15",
             "position": "WLB",
             "snaps": 3,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2350,6 +2470,7 @@
             "jersey": "D32",
             "position": "LOLB",
             "snaps": 7,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2358,6 +2479,7 @@
             "jersey": "D14",
             "position": "ROLB",
             "snaps": 19,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2366,6 +2488,7 @@
             "jersey": "D06",
             "position": "WLB",
             "snaps": 22,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2374,6 +2497,7 @@
             "jersey": "D47",
             "position": "WLB",
             "snaps": 7,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2382,6 +2506,7 @@
             "jersey": "D08",
             "position": "WLB",
             "snaps": 35,
+            "started": true,
             "week": 3,
             "opponent": "Norfolk State"
           }
@@ -2392,6 +2517,7 @@
             "jersey": "D09",
             "position": "SS",
             "snaps": 42,
+            "started": true,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2400,6 +2526,7 @@
             "jersey": "D10",
             "position": "RCB",
             "snaps": 36,
+            "started": true,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2408,6 +2535,7 @@
             "jersey": "D20",
             "position": "SS",
             "snaps": 22,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2416,6 +2544,7 @@
             "jersey": "D16",
             "position": "FS",
             "snaps": 7,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2424,6 +2553,7 @@
             "jersey": "D03",
             "position": "LCB",
             "snaps": 23,
+            "started": true,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2432,6 +2562,7 @@
             "jersey": "D07",
             "position": "SCB",
             "snaps": 42,
+            "started": true,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2440,6 +2571,7 @@
             "jersey": "D21",
             "position": "RCB",
             "snaps": 26,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2448,6 +2580,7 @@
             "jersey": "D24",
             "position": "RCB",
             "snaps": 9,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2456,6 +2589,7 @@
             "jersey": "D29",
             "position": "SCB",
             "snaps": 10,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2464,6 +2598,7 @@
             "jersey": "D38",
             "position": "SS",
             "snaps": 3,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2472,6 +2607,7 @@
             "jersey": "D26",
             "position": "SS",
             "snaps": 3,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2480,6 +2616,7 @@
             "jersey": "D12",
             "position": "FS",
             "snaps": 1,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2488,6 +2625,7 @@
             "jersey": "D27",
             "position": "LCB",
             "snaps": 7,
+            "started": false,
             "week": 3,
             "opponent": "Norfolk State"
           },
@@ -2496,6 +2634,7 @@
             "jersey": "D05",
             "position": "SS",
             "snaps": 27,
+            "started": true,
             "week": 3,
             "opponent": "Norfolk State"
           }

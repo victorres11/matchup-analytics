@@ -30,6 +30,7 @@
             "jersey": "11",
             "position": "LWR",
             "snaps": 37,
+            "started": false,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -38,6 +39,7 @@
             "jersey": "D03",
             "position": "RWR",
             "snaps": 7,
+            "started": false,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -46,6 +48,7 @@
             "jersey": "0",
             "position": "RWR",
             "snaps": 53,
+            "started": true,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -54,6 +57,7 @@
             "jersey": "17",
             "position": "SLWR",
             "snaps": 25,
+            "started": false,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -62,6 +66,7 @@
             "jersey": "8",
             "position": "RWR",
             "snaps": 31,
+            "started": true,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -70,6 +75,7 @@
             "jersey": "15",
             "position": "LWR",
             "snaps": 28,
+            "started": false,
             "week": 1,
             "opponent": "Buffalo"
           }
@@ -80,6 +86,7 @@
             "jersey": "44",
             "position": "TE-L",
             "snaps": 17,
+            "started": true,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -88,6 +95,7 @@
             "jersey": "86",
             "position": "TE-L",
             "snaps": 60,
+            "started": true,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -96,6 +104,7 @@
             "jersey": "19",
             "position": "TE-L",
             "snaps": 29,
+            "started": false,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -104,6 +113,7 @@
             "jersey": "87",
             "position": "TE-R",
             "snaps": 33,
+            "started": false,
             "week": 1,
             "opponent": "Buffalo"
           }
@@ -114,6 +124,7 @@
             "jersey": "5",
             "position": "QB",
             "snaps": 80,
+            "started": true,
             "week": 1,
             "opponent": "Buffalo"
           }
@@ -124,6 +135,7 @@
             "jersey": "1",
             "position": "HB",
             "snaps": 63,
+            "started": true,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -132,6 +144,7 @@
             "jersey": "2",
             "position": "HB",
             "snaps": 7,
+            "started": false,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -140,6 +153,7 @@
             "jersey": "23",
             "position": "HB",
             "snaps": 10,
+            "started": false,
             "week": 1,
             "opponent": "Buffalo"
           }
@@ -150,6 +164,7 @@
             "jersey": "73",
             "position": "RT",
             "snaps": 80,
+            "started": true,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -158,6 +173,7 @@
             "jersey": "65",
             "position": "LG",
             "snaps": 80,
+            "started": true,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -166,6 +182,7 @@
             "jersey": "78",
             "position": "C",
             "snaps": 80,
+            "started": true,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -174,6 +191,7 @@
             "jersey": "50",
             "position": "LT",
             "snaps": 80,
+            "started": true,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -182,6 +200,7 @@
             "jersey": "74",
             "position": "RG",
             "snaps": 80,
+            "started": true,
             "week": 1,
             "opponent": "Buffalo"
           }
@@ -194,6 +213,7 @@
             "jersey": "D97",
             "position": "DRT",
             "snaps": 31,
+            "started": true,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -202,6 +222,7 @@
             "jersey": "D89",
             "position": "NT",
             "snaps": 10,
+            "started": false,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -210,6 +231,7 @@
             "jersey": "D91",
             "position": "NT",
             "snaps": 34,
+            "started": true,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -218,6 +240,7 @@
             "jersey": "D16",
             "position": "DLT",
             "snaps": 13,
+            "started": false,
             "week": 1,
             "opponent": "Buffalo"
           }
@@ -228,6 +251,7 @@
             "jersey": "D06",
             "position": "MLB",
             "snaps": 39,
+            "started": true,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -236,6 +260,7 @@
             "jersey": "D09",
             "position": "MLB",
             "snaps": 37,
+            "started": true,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -244,6 +269,7 @@
             "jersey": "D01",
             "position": "ROLB",
             "snaps": 24,
+            "started": true,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -252,6 +278,7 @@
             "jersey": "D19",
             "position": "WLB",
             "snaps": 4,
+            "started": false,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -260,6 +287,7 @@
             "jersey": "D02",
             "position": "ROLB",
             "snaps": 9,
+            "started": false,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -268,6 +296,7 @@
             "jersey": "D11",
             "position": "LOLB",
             "snaps": 11,
+            "started": false,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -276,6 +305,7 @@
             "jersey": "D49",
             "position": "WLB",
             "snaps": 9,
+            "started": false,
             "week": 1,
             "opponent": "Buffalo"
           }
@@ -286,6 +316,7 @@
             "jersey": "D23",
             "position": "SS",
             "snaps": 4,
+            "started": false,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -294,6 +325,7 @@
             "jersey": "D04",
             "position": "RCB",
             "snaps": 44,
+            "started": true,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -302,6 +334,7 @@
             "jersey": "D07",
             "position": "SS",
             "snaps": 40,
+            "started": true,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -310,6 +343,7 @@
             "jersey": "D03",
             "position": "SS",
             "snaps": 44,
+            "started": true,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -318,6 +352,7 @@
             "jersey": "D17",
             "position": "LCB",
             "snaps": 44,
+            "started": true,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -326,6 +361,7 @@
             "jersey": "D14",
             "position": "SS",
             "snaps": 43,
+            "started": true,
             "week": 1,
             "opponent": "Buffalo"
           }
@@ -872,6 +908,7 @@
             "jersey": "11",
             "position": "LWR",
             "snaps": 17,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -880,6 +917,7 @@
             "jersey": "D03",
             "position": "RWR",
             "snaps": 4,
+            "started": true,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -888,6 +926,7 @@
             "jersey": "15",
             "position": "LWR",
             "snaps": 39,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           }
@@ -898,6 +937,7 @@
             "jersey": "19",
             "position": "TE-R",
             "snaps": 16,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -906,6 +946,7 @@
             "jersey": "82",
             "position": "TE-R",
             "snaps": 28,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -914,6 +955,7 @@
             "jersey": "86",
             "position": "TE-R",
             "snaps": 17,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -922,6 +964,7 @@
             "jersey": "87",
             "position": "TE-R",
             "snaps": 8,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -930,6 +973,7 @@
             "jersey": "44",
             "position": "TE-L",
             "snaps": 8,
+            "started": true,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -938,6 +982,7 @@
             "jersey": "88",
             "position": "TE-R",
             "snaps": 29,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           }
@@ -948,6 +993,7 @@
             "jersey": "5",
             "position": "QB",
             "snaps": 26,
+            "started": true,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -956,6 +1002,7 @@
             "jersey": "6",
             "position": "QB",
             "snaps": 25,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           }
@@ -966,6 +1013,7 @@
             "jersey": "2",
             "position": "HB",
             "snaps": 10,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -974,6 +1022,7 @@
             "jersey": "7",
             "position": "HB",
             "snaps": 12,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -982,6 +1031,7 @@
             "jersey": "21",
             "position": "HB",
             "snaps": 27,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -990,6 +1040,7 @@
             "jersey": "23",
             "position": "HB",
             "snaps": 7,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -998,6 +1049,7 @@
             "jersey": "31",
             "position": "HB",
             "snaps": 4,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1006,6 +1058,7 @@
             "jersey": "1",
             "position": "HB",
             "snaps": 4,
+            "started": true,
             "week": 2,
             "opponent": "NWSTATE"
           }
@@ -1016,6 +1069,7 @@
             "jersey": "50",
             "position": "LT",
             "snaps": 31,
+            "started": true,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1024,6 +1078,7 @@
             "jersey": "65",
             "position": "LG",
             "snaps": 26,
+            "started": true,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1032,6 +1087,7 @@
             "jersey": "56",
             "position": "C",
             "snaps": 38,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1040,6 +1096,7 @@
             "jersey": "71",
             "position": "LT",
             "snaps": 33,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1048,6 +1105,7 @@
             "jersey": "59",
             "position": "LG",
             "snaps": 38,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1056,6 +1114,7 @@
             "jersey": "78",
             "position": "C",
             "snaps": 26,
+            "started": true,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1064,6 +1123,7 @@
             "jersey": "58",
             "position": "RG",
             "snaps": 33,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1072,6 +1132,7 @@
             "jersey": "70",
             "position": "RT",
             "snaps": 33,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1080,6 +1141,7 @@
             "jersey": "74",
             "position": "RG",
             "snaps": 22,
+            "started": true,
             "week": 2,
             "opponent": "NWSTATE"
           }
@@ -1092,6 +1154,7 @@
             "jersey": "D93",
             "position": "NT",
             "snaps": 15,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1100,6 +1163,7 @@
             "jersey": "D91",
             "position": "NT",
             "snaps": 5,
+            "started": true,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1108,6 +1172,7 @@
             "jersey": "D16",
             "position": "DLT",
             "snaps": 14,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1116,6 +1181,7 @@
             "jersey": "D97",
             "position": "DLT",
             "snaps": 9,
+            "started": true,
             "week": 2,
             "opponent": "NWSTATE"
           }
@@ -1126,6 +1192,7 @@
             "jersey": "D06",
             "position": "MLB",
             "snaps": 9,
+            "started": true,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1134,6 +1201,7 @@
             "jersey": "D49",
             "position": "MLB",
             "snaps": 22,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1142,6 +1210,7 @@
             "jersey": "D02",
             "position": "LOLB",
             "snaps": 6,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1150,6 +1219,7 @@
             "jersey": "D19",
             "position": "ROLB",
             "snaps": 17,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1158,6 +1228,7 @@
             "jersey": "D01",
             "position": "LOLB",
             "snaps": 14,
+            "started": true,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1166,6 +1237,7 @@
             "jersey": "D20",
             "position": "MLB",
             "snaps": 17,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1174,6 +1246,7 @@
             "jersey": "D09",
             "position": "MLB",
             "snaps": 14,
+            "started": true,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1182,6 +1255,7 @@
             "jersey": "D11",
             "position": "ROLB",
             "snaps": 12,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1190,6 +1264,7 @@
             "jersey": "D48",
             "position": "MLB",
             "snaps": 7,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           }
@@ -1200,6 +1275,7 @@
             "jersey": "D17",
             "position": "LCB",
             "snaps": 19,
+            "started": true,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1208,6 +1284,7 @@
             "jersey": "D23",
             "position": "SS",
             "snaps": 20,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1216,6 +1293,7 @@
             "jersey": "D05",
             "position": "RCB",
             "snaps": 15,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1224,6 +1302,7 @@
             "jersey": "D03",
             "position": "FS",
             "snaps": 19,
+            "started": true,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1232,6 +1311,7 @@
             "jersey": "D24",
             "position": "SCB",
             "snaps": 14,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1240,6 +1320,7 @@
             "jersey": "D14",
             "position": "SS",
             "snaps": 13,
+            "started": true,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1248,6 +1329,7 @@
             "jersey": "D04",
             "position": "RCB",
             "snaps": 16,
+            "started": true,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1256,6 +1338,7 @@
             "jersey": "D12",
             "position": "SS",
             "snaps": 21,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           },
@@ -1264,6 +1347,7 @@
             "jersey": "D07",
             "position": "FS",
             "snaps": 14,
+            "started": true,
             "week": 2,
             "opponent": "NWSTATE"
           }
@@ -1866,6 +1950,7 @@
             "jersey": "0",
             "position": "RWR",
             "snaps": 53,
+            "started": true,
             "week": 3,
             "opponent": "Cal"
           },
@@ -1874,6 +1959,7 @@
             "jersey": "D03",
             "position": "LWR",
             "snaps": 3,
+            "started": false,
             "week": 3,
             "opponent": "Cal"
           },
@@ -1882,6 +1968,7 @@
             "jersey": "11",
             "position": "RWR",
             "snaps": 45,
+            "started": true,
             "week": 3,
             "opponent": "Cal"
           },
@@ -1890,6 +1977,7 @@
             "jersey": "15",
             "position": "RWR",
             "snaps": 7,
+            "started": false,
             "week": 3,
             "opponent": "Cal"
           },
@@ -1898,6 +1986,7 @@
             "jersey": "17",
             "position": "SLWR",
             "snaps": 22,
+            "started": false,
             "week": 3,
             "opponent": "Cal"
           },
@@ -1906,6 +1995,7 @@
             "jersey": "8",
             "position": "LWR",
             "snaps": 35,
+            "started": true,
             "week": 3,
             "opponent": "Cal"
           }
@@ -1916,6 +2006,7 @@
             "jersey": "86",
             "position": "TE-R",
             "snaps": 51,
+            "started": true,
             "week": 3,
             "opponent": "Cal"
           },
@@ -1924,6 +2015,7 @@
             "jersey": "87",
             "position": "TE-L",
             "snaps": 29,
+            "started": false,
             "week": 3,
             "opponent": "Cal"
           },
@@ -1932,6 +2024,7 @@
             "jersey": "44",
             "position": "TE-R",
             "snaps": 18,
+            "started": true,
             "week": 3,
             "opponent": "Cal"
           },
@@ -1940,6 +2033,7 @@
             "jersey": "19",
             "position": "TE-L",
             "snaps": 26,
+            "started": false,
             "week": 3,
             "opponent": "Cal"
           }
@@ -1950,6 +2044,7 @@
             "jersey": "5",
             "position": "QB",
             "snaps": 73,
+            "started": true,
             "week": 3,
             "opponent": "Cal"
           }
@@ -1960,6 +2055,7 @@
             "jersey": "7",
             "position": "HB",
             "snaps": 26,
+            "started": false,
             "week": 3,
             "opponent": "Cal"
           },
@@ -1968,6 +2064,7 @@
             "jersey": "2",
             "position": "HB",
             "snaps": 5,
+            "started": true,
             "week": 3,
             "opponent": "Cal"
           },
@@ -1976,6 +2073,7 @@
             "jersey": "23",
             "position": "HB",
             "snaps": 43,
+            "started": false,
             "week": 3,
             "opponent": "Cal"
           }
@@ -1986,6 +2084,7 @@
             "jersey": "73",
             "position": "RT",
             "snaps": 73,
+            "started": true,
             "week": 3,
             "opponent": "Cal"
           },
@@ -1994,6 +2093,7 @@
             "jersey": "50",
             "position": "LT",
             "snaps": 71,
+            "started": true,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2002,6 +2102,7 @@
             "jersey": "78",
             "position": "C",
             "snaps": 73,
+            "started": true,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2010,6 +2111,7 @@
             "jersey": "71",
             "position": "LT",
             "snaps": 2,
+            "started": false,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2018,6 +2120,7 @@
             "jersey": "59",
             "position": "LG",
             "snaps": 2,
+            "started": false,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2026,6 +2129,7 @@
             "jersey": "65",
             "position": "LG",
             "snaps": 73,
+            "started": true,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2034,6 +2138,7 @@
             "jersey": "74",
             "position": "RG",
             "snaps": 73,
+            "started": true,
             "week": 3,
             "opponent": "Cal"
           }
@@ -2046,6 +2151,7 @@
             "jersey": "D89",
             "position": "DLT",
             "snaps": 16,
+            "started": false,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2054,6 +2160,7 @@
             "jersey": "D16",
             "position": "DLT",
             "snaps": 42,
+            "started": false,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2062,6 +2169,7 @@
             "jersey": "D91",
             "position": "NT",
             "snaps": 40,
+            "started": true,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2070,6 +2178,7 @@
             "jersey": "D97",
             "position": "DLT",
             "snaps": 24,
+            "started": true,
             "week": 3,
             "opponent": "Cal"
           }
@@ -2080,6 +2189,7 @@
             "jersey": "D09",
             "position": "MLB",
             "snaps": 59,
+            "started": true,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2088,6 +2198,7 @@
             "jersey": "D49",
             "position": "WLB",
             "snaps": 23,
+            "started": false,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2096,6 +2207,7 @@
             "jersey": "D02",
             "position": "MLB",
             "snaps": 17,
+            "started": false,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2104,6 +2216,7 @@
             "jersey": "D11",
             "position": "ROLB",
             "snaps": 20,
+            "started": false,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2112,6 +2225,7 @@
             "jersey": "D20",
             "position": "MLB",
             "snaps": 1,
+            "started": false,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2120,6 +2234,7 @@
             "jersey": "D01",
             "position": "LOLB",
             "snaps": 42,
+            "started": true,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2128,6 +2243,7 @@
             "jersey": "D19",
             "position": "ROLB",
             "snaps": 2,
+            "started": false,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2136,6 +2252,7 @@
             "jersey": "D06",
             "position": "MLB",
             "snaps": 55,
+            "started": true,
             "week": 3,
             "opponent": "Cal"
           }
@@ -2146,6 +2263,7 @@
             "jersey": "D17",
             "position": "LCB",
             "snaps": 60,
+            "started": true,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2154,6 +2272,7 @@
             "jersey": "D12",
             "position": "SCB",
             "snaps": 28,
+            "started": false,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2162,6 +2281,7 @@
             "jersey": "D04",
             "position": "RCB",
             "snaps": 55,
+            "started": true,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2170,6 +2290,7 @@
             "jersey": "D23",
             "position": "SS",
             "snaps": 10,
+            "started": false,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2178,6 +2299,7 @@
             "jersey": "D24",
             "position": "SCB",
             "snaps": 11,
+            "started": false,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2186,6 +2308,7 @@
             "jersey": "D03",
             "position": "SS",
             "snaps": 67,
+            "started": true,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2194,6 +2317,7 @@
             "jersey": "D07",
             "position": "FS",
             "snaps": 65,
+            "started": true,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2202,6 +2326,7 @@
             "jersey": "D13",
             "position": "RCB",
             "snaps": 17,
+            "started": false,
             "week": 3,
             "opponent": "Cal"
           },
@@ -2210,6 +2335,7 @@
             "jersey": "D14",
             "position": "SCB",
             "snaps": 15,
+            "started": true,
             "week": 3,
             "opponent": "Cal"
           }
