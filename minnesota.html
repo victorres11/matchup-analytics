@@ -385,11 +385,54 @@
         .filter-checkbox input[type="checkbox"]:checked + .checkmark::after {
             content: '✓';
             position: absolute;
-            top: -2px;
-            left: 2px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             color: white;
             font-size: 12px;
             font-weight: bold;
+        }
+
+        .only-buttons {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .only-buttons h4 {
+            color: #7B0000;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .only-button-group {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 10px;
+        }
+
+        .only-btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 0.9em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .only-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            opacity: 0.9;
+        }
+
+        .only-btn:active {
+            transform: translateY(0);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .footer {
@@ -604,6 +647,19 @@
                             <span class="checkmark" style="background-color: #DDA0DD;"></span>
                             Field Goal Kick
                         </label>
+                    </div>
+                    
+                    <!-- Only Buttons -->
+                    <div class="only-buttons">
+                        <h4>Show Only:</h4>
+                        <div class="only-button-group">
+                            <button class="only-btn" data-unit="kret" style="background-color: #FF6B6B;">Only Kick Return</button>
+                            <button class="only-btn" data-unit="kcov" style="background-color: #4ECDC4;">Only Kick Coverage</button>
+                            <button class="only-btn" data-unit="pret" style="background-color: #45B7D1;">Only Punt Return</button>
+                            <button class="only-btn" data-unit="pcov" style="background-color: #96CEB4;">Only Punt Coverage</button>
+                            <button class="only-btn" data-unit="fgblk" style="background-color: #FFEAA7;">Only Field Goal Block</button>
+                            <button class="only-btn" data-unit="fgk" style="background-color: #DDA0DD;">Only Field Goal Kick</button>
+                        </div>
                     </div>
                 </div>
                 
@@ -1106,6 +1162,27 @@
             // Special teams filter checkboxes
             document.querySelectorAll('.unit-filters input[type="checkbox"]').forEach(checkbox => {
                 checkbox.addEventListener('change', function() {
+                    createSpecialTeamsChart('st-chart', 'special_teams', 'special_teams');
+                });
+            });
+
+            // Special teams Only buttons
+            document.querySelectorAll('.only-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetUnit = this.dataset.unit;
+                    
+                    // Uncheck all checkboxes first
+                    document.querySelectorAll('.unit-filters input[type="checkbox"]').forEach(checkbox => {
+                        checkbox.checked = false;
+                    });
+                    
+                    // Check only the target unit checkbox
+                    const targetCheckbox = document.querySelector(`input[data-unit="${targetUnit}"]`);
+                    if (targetCheckbox) {
+                        targetCheckbox.checked = true;
+                    }
+                    
+                    // Refresh the chart
                     createSpecialTeamsChart('st-chart', 'special_teams', 'special_teams');
                 });
             });
