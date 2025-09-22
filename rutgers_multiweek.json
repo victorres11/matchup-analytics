@@ -26,15 +26,6 @@
       "offense": {
         "wide_receivers": [
           {
-            "name": "Sheffield",
-            "jersey": "00",
-            "position": "SRWR",
-            "snaps": 43,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
             "name": "Ian Strong",
             "jersey": "9",
             "position": "LWR",
@@ -988,15 +979,6 @@
       "week": 2,
       "offense": {
         "wide_receivers": [
-          {
-            "name": "Sheffield",
-            "jersey": "00",
-            "position": "SRWR",
-            "snaps": 74,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
           {
             "name": "Ian Strong",
             "jersey": "9",
@@ -2046,15 +2028,6 @@
       "week": 3,
       "offense": {
         "wide_receivers": [
-          {
-            "name": "Sheffield",
-            "jersey": "00",
-            "position": "SLWR",
-            "snaps": 56,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
           {
             "name": "KJ Duff",
             "jersey": "8",
