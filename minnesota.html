@@ -391,6 +391,7 @@
             color: white;
             font-size: 12px;
             font-weight: bold;
+            font-family: Arial, sans-serif;
         }
 
         .only-buttons {
@@ -675,7 +676,7 @@
         <!-- Footer -->
         <div class="footer">
             <p><strong>Data Sources:</strong> PFF Data</p>
-            <p>Made with ❤️ - from Richmond, VA by Vic Torres</p>
+            <p>Made with <span style="color: #ff6b6b;">♥</span> - from Richmond, VA by Vic Torres</p>
             <p><strong>Built with AI</strong> • If you notice any data issues or bugs, please report them to <a href="mailto:victorres11@gmail.com">victorres11@gmail.com</a></p>
             <p><a href="./index.html">← Back to Team Selection</a></p>
         </div>
@@ -690,13 +691,59 @@
         };
 
         let teamData = null;
+        let returnerData = null;
         let currentWeek = 'all';
+
+        // Load returner data
+        async function loadReturnerData() {
+            try {
+                const response = await fetch('./team_data/minnesota/minn_st_returns.csv');
+                const csvText = await response.text();
+                const lines = csvText.split('\n');
+                const headers = lines[0].split(',');
+                
+                returnerData = new Map();
+                
+                for (let i = 1; i < lines.length; i++) {
+                    if (lines[i].trim()) {
+                        const values = lines[i].split(',');
+                        const jersey = values[0];
+                        const player = values[1];
+                        const puntReturns = parseInt(values[2]) || 0;
+                        const puntReturnYards = parseInt(values[3]) || 0;
+                        const puntReturnYPA = parseFloat(values[4]) || 0;
+                        const kickReturns = parseInt(values[5]) || 0;
+                        const kickReturnYards = parseInt(values[6]) || 0;
+                        const kickReturnYPA = parseFloat(values[7]) || 0;
+                        
+                        if (jersey && player) {
+                            returnerData.set(jersey, {
+                                name: player,
+                                jersey: jersey,
+                                puntReturns: puntReturns,
+                                puntReturnYards: puntReturnYards,
+                                puntReturnYPA: puntReturnYPA,
+                                kickReturns: kickReturns,
+                                kickReturnYards: kickReturnYards,
+                                kickReturnYPA: kickReturnYPA,
+                                isPRReturner: puntReturns > 0,
+                                isKRReturner: kickReturns > 0
+                            });
+                        }
+                    }
+                }
+            } catch (error) {
+                console.error('Error loading returner data:', error);
+                returnerData = new Map();
+            }
+        }
 
         // Load team data
         async function loadTeamData() {
             try {
                 const response = await fetch('./minnesota_multiweek.json');
                 teamData = await response.json();
+                await loadReturnerData();
                 updateStats();
                 populateWeeklySummary();
                 initializeCharts();
@@ -995,6 +1042,14 @@
             const activeUnits = getActiveUnits();
             allPlayers.push(...Array.from(playerMap.values()));
             
+            // Add returner data to players
+            allPlayers.forEach(player => {
+                const returnerInfo = returnerData ? returnerData.get(player.jersey) : null;
+                if (returnerInfo) {
+                    player.returnerInfo = returnerInfo;
+                }
+            });
+            
             // Filter players who have snaps in active units
             const filteredPlayers = allPlayers.filter(player => {
                 return activeUnits.some(unit => {
@@ -1030,7 +1085,23 @@
                     lastName = nameParts[nameParts.length - 2] + ' I';
                 }
                 
-                return `${lastName} #${player.jersey}`;
+                let label = `${lastName} #${player.jersey}`;
+                
+                // Add returner badges based on active units
+                if (player.returnerInfo) {
+                    const badges = [];
+                    if (activeUnits.includes('pret') && player.returnerInfo.isPRReturner) {
+                        badges.push('PR');
+                    }
+                    if (activeUnits.includes('kret') && player.returnerInfo.isKRReturner) {
+                        badges.push('KR');
+                    }
+                    if (badges.length > 0) {
+                        label += ` [${badges.join(', ')}]`;
+                    }
+                }
+                
+                return label;
             });
 
             // Create datasets for each special teams unit (only active ones)
@@ -1051,9 +1122,36 @@
                         data: filteredPlayers.map(player => {
                             return Object.values(player.weeks).reduce((sum, week) => sum + week[unit.key], 0);
                         }),
-                        backgroundColor: unit.color,
-                        borderColor: unit.color,
-                        borderWidth: 1,
+                        backgroundColor: filteredPlayers.map(player => {
+                            // Make returner bars stand out with different styling
+                            if (player.returnerInfo) {
+                                if ((unit.key === 'pret' && player.returnerInfo.isPRReturner) || 
+                                    (unit.key === 'kret' && player.returnerInfo.isKRReturner)) {
+                                    return unit.color; // Keep original color but we'll add border
+                                }
+                            }
+                            return unit.color;
+                        }),
+                        borderColor: filteredPlayers.map(player => {
+                            // Add distinctive border for returners
+                            if (player.returnerInfo) {
+                                if ((unit.key === 'pret' && player.returnerInfo.isPRReturner) || 
+                                    (unit.key === 'kret' && player.returnerInfo.isKRReturner)) {
+                                    return '#FFD700'; // Gold border for returners
+                                }
+                            }
+                            return unit.color;
+                        }),
+                        borderWidth: filteredPlayers.map(player => {
+                            // Thicker border for returners
+                            if (player.returnerInfo) {
+                                if ((unit.key === 'pret' && player.returnerInfo.isPRReturner) || 
+                                    (unit.key === 'kret' && player.returnerInfo.isKRReturner)) {
+                                    return 3; // Thick gold border
+                                }
+                            }
+                            return 1;
+                        }),
                         borderRadius: 4
                     });
                 }
@@ -1097,12 +1195,45 @@
                             cornerRadius: 8,
                             displayColors: true,
                             callbacks: {
+                                title: function(context) {
+                                    const player = filteredPlayers[context[0].dataIndex];
+                                    let title = `${player.name} #${player.jersey}`;
+                                    
+                                    // Add returner badges to title
+                                    if (player.returnerInfo) {
+                                        const badges = [];
+                                        if (player.returnerInfo.isPRReturner) {
+                                            badges.push('PR');
+                                        }
+                                        if (player.returnerInfo.isKRReturner) {
+                                            badges.push('KR');
+                                        }
+                                        if (badges.length > 0) {
+                                            title += ` [${badges.join(', ')}]`;
+                                        }
+                                    }
+                                    
+                                    return title;
+                                },
                                 label: function(context) {
                                     const player = filteredPlayers[context.dataIndex];
                                     const totalSnaps = Object.values(player.weeks).reduce((sum, week) => sum + week.totalSnaps, 0);
                                     const unitSnaps = context.parsed.y;
                                     const percentage = totalSnaps > 0 ? ((unitSnaps / totalSnaps) * 100).toFixed(1) : 0;
-                                    return `${context.dataset.label}: ${unitSnaps} snaps (${percentage}%)`;
+                                    
+                                    let label = `${context.dataset.label}: ${unitSnaps} snaps (${percentage}%)`;
+                                    
+                                    // Add return statistics if player is a returner for this unit
+                                    if (player.returnerInfo) {
+                                        const unit = context.dataset.label.toLowerCase();
+                                        if (unit.includes('punt return') && player.returnerInfo.isPRReturner) {
+                                            label += `\nPunt Returns: ${player.returnerInfo.puntReturns} (${player.returnerInfo.puntReturnYards} yards, ${player.returnerInfo.puntReturnYPA} YPA)`;
+                                        } else if (unit.includes('kick return') && player.returnerInfo.isKRReturner) {
+                                            label += `\nKick Returns: ${player.returnerInfo.kickReturns} (${player.returnerInfo.kickReturnYards} yards, ${player.returnerInfo.kickReturnYPA} YPA)`;
+                                        }
+                                    }
+                                    
+                                    return label;
                                 }
                             }
                         }
