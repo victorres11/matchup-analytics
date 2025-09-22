@@ -2,7 +2,7 @@
   "metadata": {
     "team": "Minnesota",
     "conference": "Big Ten",
-    "weeks": 3,
+    "weeks": 4,
     "source": "PFF Premium Stats"
   },
   "offense": {
@@ -2995,6 +2995,25 @@
         "defensiveSnaps": 67,
         "specialTeamsSnaps": 0
       }
+    },
+    {
+      "week": 4,
+      "offense": {
+        "wide_receivers": [],
+        "tight_ends": [],
+        "quarterbacks": [],
+        "running_backs": [],
+        "offensive_line": []
+      },
+      "defense": {
+        "defensive_line": [],
+        "linebackers": [],
+        "defensive_backs": []
+      },
+      "special_teams": {
+        "special_teams": []
+      },
+      "summary": {}
     }
   ]
 }

@@ -2,7 +2,7 @@
   "metadata": {
     "team": "Rutgers",
     "conference": "Big Ten",
-    "weeks": 3,
+    "weeks": 4,
     "source": "PFF Premium Stats"
   },
   "offense": {
@@ -3575,6 +3575,365 @@
         "offensiveSnaps": 62,
         "defensiveSnaps": 52,
         "specialTeamsSnaps": 0
+      }
+    },
+    {
+      "week": 4,
+      "offense": {
+        "wide_receivers": [
+          {
+            "name": "Ian Strong",
+            "jersey": "9",
+            "position": "LWR",
+            "snaps": 69,
+            "started": true,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "KJ Duff",
+            "jersey": "8",
+            "position": "LWR",
+            "snaps": 66,
+            "started": true,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "DT Sheffield",
+            "jersey": "0",
+            "position": "SLWR",
+            "snaps": 63,
+            "started": true,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Ben Black",
+            "jersey": "17",
+            "position": "RWR",
+            "snaps": 5,
+            "started": false,
+            "week": 4,
+            "opponent": "Iowa"
+          }
+        ],
+        "tight_ends": [
+          {
+            "name": "Kenny Fletcher Jr.",
+            "jersey": "12",
+            "position": "TE-L",
+            "snaps": 55,
+            "started": true,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Logan Blake",
+            "jersey": "11",
+            "position": "TE-R",
+            "snaps": 2,
+            "started": false,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Colin Weber",
+            "jersey": "18",
+            "position": "TE-L",
+            "snaps": 22,
+            "started": false,
+            "week": 4,
+            "opponent": "Iowa"
+          }
+        ],
+        "quarterbacks": [
+          {
+            "name": "Athan Kaliakmanis",
+            "jersey": "16",
+            "position": "QB",
+            "snaps": 72,
+            "started": true,
+            "week": 4,
+            "opponent": "Iowa"
+          }
+        ],
+        "running_backs": [
+          {
+            "name": "Antwan Raymond",
+            "jersey": "3",
+            "position": "HB",
+            "snaps": 63,
+            "started": true,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Ja'shon Benjamin",
+            "jersey": "20",
+            "position": "HB",
+            "snaps": 9,
+            "started": false,
+            "week": 4,
+            "opponent": "Iowa"
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Bryan Felter",
+            "jersey": "65",
+            "position": "LG",
+            "snaps": 72,
+            "started": true,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Tyler Needham",
+            "jersey": "56",
+            "position": "LT",
+            "snaps": 71,
+            "started": true,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Kwabena Asamoah",
+            "jersey": "69",
+            "position": "RG",
+            "snaps": 72,
+            "started": true,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Moshood Giwa",
+            "jersey": "74",
+            "position": "LT",
+            "snaps": 1,
+            "started": false,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "John Stone",
+            "jersey": "71",
+            "position": "LG",
+            "snaps": 3,
+            "started": false,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Terrence Salami",
+            "jersey": "73",
+            "position": "C",
+            "snaps": 3,
+            "started": false,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Gus Zilinskas",
+            "jersey": "59",
+            "position": "C",
+            "snaps": 72,
+            "started": true,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Taj White",
+            "jersey": "54",
+            "position": "RT",
+            "snaps": 72,
+            "started": true,
+            "week": 4,
+            "opponent": "Iowa"
+          }
+        ]
+      },
+      "defense": {
+        "defensive_line": [
+          {
+            "name": "Henry Hughes Jr.",
+            "jersey": "D95",
+            "position": "DRT",
+            "snaps": 1,
+            "started": false,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Darold DeNgohe",
+            "jersey": "D92",
+            "position": "NT",
+            "snaps": 17,
+            "started": false,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Zaire Angoy",
+            "jersey": "D55",
+            "position": "DRT",
+            "snaps": 40,
+            "started": true,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Oliver Billotte",
+            "jersey": "D97",
+            "position": "DLT",
+            "snaps": 15,
+            "started": false,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Keshon Griffin",
+            "jersey": "D96",
+            "position": "NT",
+            "snaps": 37,
+            "started": true,
+            "week": 4,
+            "opponent": "Iowa"
+          }
+        ],
+        "linebackers": [
+          {
+            "name": "Dariel Djabome",
+            "jersey": "D08",
+            "position": "MLB",
+            "snaps": 57,
+            "started": true,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Austin Dean",
+            "jersey": "D47",
+            "position": "WLB",
+            "snaps": 3,
+            "started": false,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Moses Walker",
+            "jersey": "D02",
+            "position": "WLB",
+            "snaps": 24,
+            "started": true,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Abram Wright",
+            "jersey": "D06",
+            "position": "WLB",
+            "snaps": 36,
+            "started": false,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Jordan Walker",
+            "jersey": "D01",
+            "position": "ROLB",
+            "snaps": 31,
+            "started": true,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Jordan Thompson",
+            "jersey": "D14",
+            "position": "ROLB",
+            "snaps": 31,
+            "started": false,
+            "week": 4,
+            "opponent": "Iowa"
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Kaj Sanders",
+            "jersey": "D05",
+            "position": "SS",
+            "snaps": 51,
+            "started": true,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Bo Mascoe",
+            "jersey": "D03",
+            "position": "LCB",
+            "snaps": 49,
+            "started": true,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Jett Elad",
+            "jersey": "D09",
+            "position": "SS",
+            "snaps": 58,
+            "started": true,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Cam Miller",
+            "jersey": "D07",
+            "position": "SCB",
+            "snaps": 55,
+            "started": true,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Jacobie Henderson",
+            "jersey": "D10",
+            "position": "RCB",
+            "snaps": 53,
+            "started": true,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Chris Joines",
+            "jersey": "D20",
+            "position": "SS",
+            "snaps": 9,
+            "started": false,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Al-Shadee Salaam",
+            "jersey": "D21",
+            "position": "RCB",
+            "snaps": 18,
+            "started": false,
+            "week": 4,
+            "opponent": "Iowa"
+          }
+        ]
+      },
+      "special_teams": {
+        "special_teams": []
+      },
+      "summary": {
+        "opponent": "Iowa",
+        "date": "Fri Sep 19th",
+        "finalScore": "28-38",
+        "homeAway": "Away",
+        "offensiveSnaps": 72,
+        "defensiveSnaps": 59,
+        "specialTeamsSnaps": null
       }
     }
   ]

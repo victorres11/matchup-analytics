@@ -11,7 +11,8 @@ const opposingTeamColors = {
   'Cal': { primary: '#003262', secondary: '#FDB515', accent: '#C4820E' },
   'Ohio': { primary: '#006633', secondary: '#FFFFFF', accent: '#FFD700' },
   'Miami OH': { primary: '#C8102E', secondary: '#FFFFFF', accent: '#FFD700' },
-  'Norfolk State': { primary: '#006633', secondary: '#FFD700', accent: '#FFFFFF' }
+  'Norfolk State': { primary: '#006633', secondary: '#FFD700', accent: '#FFFFFF' },
+  'Iowa': { primary: '#000000', secondary: '#FFD700', accent: '#FFFFFF' }
 };
 
 // Position grouping logic
@@ -62,7 +63,7 @@ function processTeamData(teamName) {
     metadata: {
       team: teamName,
       conference: 'Big Ten',
-      weeks: 3,
+      weeks: 4,
       source: 'PFF Premium Stats'
     },
     offense: {
@@ -84,7 +85,7 @@ function processTeamData(teamName) {
   };
   
   // Process each week
-  for (let week = 1; week <= 3; week++) {
+  for (let week = 1; week <= 4; week++) {
     const weekData = {
       week: week,
       offense: { wide_receivers: [], tight_ends: [], quarterbacks: [], running_backs: [], offensive_line: [] },
