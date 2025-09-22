@@ -1230,11 +1230,9 @@
                                 },
                                 label: function(context) {
                                     const player = filteredPlayers[context.dataIndex];
-                                    const totalSnaps = Object.values(player.weeks).reduce((sum, week) => sum + week.totalSnaps, 0);
                                     const unitSnaps = context.parsed.y;
-                                    const percentage = totalSnaps > 0 ? ((unitSnaps / totalSnaps) * 100).toFixed(1) : 0;
                                     
-                                    let label = `${context.dataset.label}: ${unitSnaps} snaps (${percentage}%)`;
+                                    let label = `${context.dataset.label}: ${unitSnaps} snaps`;
                                     
                                     // Add return statistics if player is a returner for this unit
                                     if (player.returnerInfo) {
