@@ -656,11 +656,14 @@
 
             let totalOffensiveSnaps = 0;
             let totalDefensiveSnaps = 0;
-            let weekCount = teamData.weeks.length;
+            let weekCount = 0;
 
             teamData.weeks.forEach(week => {
-                totalOffensiveSnaps += week.summary.offensiveSnaps;
-                totalDefensiveSnaps += week.summary.defensiveSnaps;
+                if (week.summary && week.summary.offensiveSnaps !== undefined && week.summary.defensiveSnaps !== undefined) {
+                    totalOffensiveSnaps += week.summary.offensiveSnaps;
+                    totalDefensiveSnaps += week.summary.defensiveSnaps;
+                    weekCount++;
+                }
             });
 
             document.getElementById('total-offensive-snaps').textContent = totalOffensiveSnaps;
@@ -680,17 +683,19 @@
             tbody.innerHTML = '';
 
             teamData.weeks.forEach(week => {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td>Week ${week.week}</td>
-                    <td>${week.summary.opponent}</td>
-                    <td>${week.summary.date}</td>
-                    <td>${week.summary.finalScore}</td>
-                    <td>${week.summary.homeAway}</td>
-                    <td class="snap-count">${week.summary.offensiveSnaps}</td>
-                    <td class="snap-count">${week.summary.defensiveSnaps}</td>
-                `;
-                tbody.appendChild(row);
+                if (week.summary && week.summary.opponent) {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>Week ${week.week}</td>
+                        <td>${week.summary.opponent}</td>
+                        <td>${week.summary.date}</td>
+                        <td>${week.summary.finalScore}</td>
+                        <td>${week.summary.homeAway}</td>
+                        <td class="snap-count">${week.summary.offensiveSnaps}</td>
+                        <td class="snap-count">${week.summary.defensiveSnaps}</td>
+                    `;
+                    tbody.appendChild(row);
+                }
             });
         }
 
