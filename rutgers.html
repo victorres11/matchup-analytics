@@ -706,8 +706,10 @@
         // Load returner data
         async function loadReturnerData() {
             try {
+                console.log('Loading Rutgers returner data...');
                 const response = await fetch('./team_data/rutgers/rutgers_pr_kr_up_to_week_4.csv');
                 const csvText = await response.text();
+                console.log('CSV data loaded:', csvText);
                 const lines = csvText.split('\n');
                 const headers = lines[0].split(',');
                 
@@ -738,6 +740,7 @@
                                 isPRReturner: puntReturns > 0,
                                 isKRReturner: kickReturns > 0
                             });
+                            console.log(`Added returner: ${player} #${jersey} - PR: ${puntReturns}, KR: ${kickReturns}`);
                         }
                     }
                 }
@@ -1051,6 +1054,7 @@
                 const returnerInfo = returnerData ? returnerData.get(player.jersey) : null;
                 if (returnerInfo) {
                     player.returnerInfo = returnerInfo;
+                    console.log(`Player ${player.name} #${player.jersey} is a returner:`, returnerInfo);
                 }
             });
             
