@@ -1065,9 +1065,14 @@
                 });
             });
             
+            // Sort by total snaps for the active units (most to least)
             filteredPlayers.sort((a, b) => {
-                const aTotal = Object.values(a.weeks).reduce((sum, week) => sum + week.totalSnaps, 0);
-                const bTotal = Object.values(b.weeks).reduce((sum, week) => sum + week.totalSnaps, 0);
+                const aTotal = activeUnits.reduce((sum, unit) => {
+                    return sum + Object.values(a.weeks).reduce((weekSum, week) => weekSum + week[unit], 0);
+                }, 0);
+                const bTotal = activeUnits.reduce((sum, unit) => {
+                    return sum + Object.values(b.weeks).reduce((weekSum, week) => weekSum + week[unit], 0);
+                }, 0);
                 return bTotal - aTotal;
             });
 
