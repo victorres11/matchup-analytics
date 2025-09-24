@@ -953,20 +953,23 @@
                             callbacks: {
                                 title: function(context) {
                                     console.log('Title callback - full context:', context);
-                                    console.log('Title callback - context.dataIndex:', context.dataIndex);
-                                    console.log('Title callback - context.dataset:', context.dataset);
+                                    console.log('Title callback - context[0]:', context[0]);
                                     
-                                    // Safe access to avoid errors
-                                    if (!context || !context.dataset) {
-                                        console.log('Title callback - context or dataset is undefined');
+                                    // Title callback receives an array, need to access first item
+                                    if (!context || !context[0]) {
+                                        console.log('Title callback - context or context[0] is undefined');
                                         return 'Player #Unknown';
                                     }
                                     
-                                    // Try different ways to access the player data
+                                    const firstContext = context[0];
+                                    console.log('Title callback - firstContext.dataIndex:', firstContext.dataIndex);
+                                    console.log('Title callback - firstContext.dataset:', firstContext.dataset);
+                                    
+                                    // Access player data from the first context item
                                     let player = null;
-                                    if (context.dataset.players) {
-                                        player = context.dataset.players[context.dataIndex];
-                                        console.log('Title callback - player from dataset.players:', player);
+                                    if (firstContext.dataset && firstContext.dataset.players) {
+                                        player = firstContext.dataset.players[firstContext.dataIndex];
+                                        console.log('Title callback - player found:', player);
                                     }
                                     
                                     if (player) {
