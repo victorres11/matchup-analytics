@@ -951,6 +951,10 @@
                             cornerRadius: 8,
                             displayColors: true,
                             callbacks: {
+                                title: function(context) {
+                                    const player = context.dataset.players[context[0].dataIndex];
+                                    return `${player.name} #${player.jersey}`;
+                                },
                                 label: function(context) {
                                     const player = context.dataset.players[context.dataIndex];
                                     const week = context.dataset.label.split(' ')[1];
