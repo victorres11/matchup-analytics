@@ -1012,6 +1012,191 @@
             }
         }
 
+        // Populate aggregate tables on page load
+        function populateAggregateTables() {
+            if (!teamData) return;
+            
+            populateOffenseAggregateTable();
+            populateDefenseAggregateTable();
+        }
+        
+        function populateOffenseAggregateTable() {
+            const tableBody = document.getElementById('offense-aggregate-body');
+            if (!tableBody) return;
+            
+            tableBody.innerHTML = '';
+            
+            const allPlayers = [];
+            const playerMap = new Map();
+            
+            // Collect all offense players
+            const offenseGroups = ['wide_receivers', 'tight_ends', 'running_backs', 'offensive_line'];
+            
+            teamData.weeks.forEach(week => {
+                offenseGroups.forEach(group => {
+                    if (week.offense && week.offense[group]) {
+                        week.offense[group].forEach(player => {
+                            const key = `${player.name}_${player.jersey}`;
+                            if (!playerMap.has(key)) {
+                                playerMap.set(key, {
+                                    name: player.name,
+                                    jersey: player.jersey,
+                                    position: player.position,
+                                    positionGroup: group,
+                                    weeks: {}
+                                });
+                            }
+                            
+                            const weekData = playerMap.get(key);
+                            weekData.weeks[week.week] = {
+                                snaps: player.snaps,
+                                started: player.started
+                            };
+                        });
+                    }
+                });
+            });
+            
+            // Convert to array and sort by position group, then by total snaps
+            allPlayers.push(...playerMap.values());
+            allPlayers.sort((a, b) => {
+                // First sort by position group
+                const groupOrder = ['wide_receivers', 'tight_ends', 'running_backs', 'offensive_line'];
+                const aGroupIndex = groupOrder.indexOf(a.positionGroup);
+                const bGroupIndex = groupOrder.indexOf(b.positionGroup);
+                
+                if (aGroupIndex !== bGroupIndex) {
+                    return aGroupIndex - bGroupIndex;
+                }
+                
+                // Then sort by total snaps within group
+                const aTotal = Object.values(a.weeks).reduce((sum, week) => sum + week.snaps, 0);
+                const bTotal = Object.values(b.weeks).reduce((sum, week) => sum + week.snaps, 0);
+                return bTotal - aTotal;
+            });
+            
+            // Populate table rows
+            allPlayers.forEach(player => {
+                const row = document.createElement('tr');
+                
+                const week1Snaps = player.weeks[1]?.snaps || 0;
+                const week2Snaps = player.weeks[2]?.snaps || 0;
+                const week3Snaps = player.weeks[3]?.snaps || 0;
+                const week4Snaps = player.weeks[4]?.snaps || 0;
+                const totalSnaps = week1Snaps + week2Snaps + week3Snaps + week4Snaps;
+                
+                // Add position group class for styling
+                let groupClass = '';
+                if (player.positionGroup === 'wide_receivers') groupClass = 'position-group-wr';
+                else if (player.positionGroup === 'tight_ends') groupClass = 'position-group-te';
+                else if (player.positionGroup === 'running_backs') groupClass = 'position-group-rb';
+                else if (player.positionGroup === 'offensive_line') groupClass = 'position-group-ol';
+                
+                row.className = groupClass;
+                
+                row.innerHTML = `
+                    <td class="jersey">#${player.jersey}</td>
+                    <td class="player-name">${player.name}</td>
+                    <td class="position">${player.position}</td>
+                    <td class="snap-count">${week1Snaps}</td>
+                    <td class="snap-count">${week2Snaps}</td>
+                    <td class="snap-count">${week3Snaps}</td>
+                    <td class="snap-count">${week4Snaps}</td>
+                    <td class="total">${totalSnaps}</td>
+                `;
+                
+                tableBody.appendChild(row);
+            });
+        }
+        
+        function populateDefenseAggregateTable() {
+            const tableBody = document.getElementById('defense-aggregate-body');
+            if (!tableBody) return;
+            
+            tableBody.innerHTML = '';
+            
+            const allPlayers = [];
+            const playerMap = new Map();
+            
+            // Collect all defense players
+            const defenseGroups = ['defensive_line', 'linebackers', 'defensive_backs'];
+            
+            teamData.weeks.forEach(week => {
+                defenseGroups.forEach(group => {
+                    if (week.defense && week.defense[group]) {
+                        week.defense[group].forEach(player => {
+                            const key = `${player.name}_${player.jersey}`;
+                            if (!playerMap.has(key)) {
+                                playerMap.set(key, {
+                                    name: player.name,
+                                    jersey: player.jersey,
+                                    position: player.position,
+                                    positionGroup: group,
+                                    weeks: {}
+                                });
+                            }
+                            
+                            const weekData = playerMap.get(key);
+                            weekData.weeks[week.week] = {
+                                snaps: player.snaps,
+                                started: player.started
+                            };
+                        });
+                    }
+                });
+            });
+            
+            // Convert to array and sort by position group, then by total snaps
+            allPlayers.push(...playerMap.values());
+            allPlayers.sort((a, b) => {
+                // First sort by position group
+                const groupOrder = ['defensive_line', 'linebackers', 'defensive_backs'];
+                const aGroupIndex = groupOrder.indexOf(a.positionGroup);
+                const bGroupIndex = groupOrder.indexOf(b.positionGroup);
+                
+                if (aGroupIndex !== bGroupIndex) {
+                    return aGroupIndex - bGroupIndex;
+                }
+                
+                // Then sort by total snaps within group
+                const aTotal = Object.values(a.weeks).reduce((sum, week) => sum + week.snaps, 0);
+                const bTotal = Object.values(b.weeks).reduce((sum, week) => sum + week.snaps, 0);
+                return bTotal - aTotal;
+            });
+            
+            // Populate table rows
+            allPlayers.forEach(player => {
+                const row = document.createElement('tr');
+                
+                const week1Snaps = player.weeks[1]?.snaps || 0;
+                const week2Snaps = player.weeks[2]?.snaps || 0;
+                const week3Snaps = player.weeks[3]?.snaps || 0;
+                const week4Snaps = player.weeks[4]?.snaps || 0;
+                const totalSnaps = week1Snaps + week2Snaps + week3Snaps + week4Snaps;
+                
+                // Add position group class for styling
+                let groupClass = '';
+                if (player.positionGroup === 'defensive_line') groupClass = 'position-group-dl';
+                else if (player.positionGroup === 'linebackers') groupClass = 'position-group-lb';
+                else if (player.positionGroup === 'defensive_backs') groupClass = 'position-group-db';
+                
+                row.className = groupClass;
+                
+                row.innerHTML = `
+                    <td class="jersey">#${player.jersey}</td>
+                    <td class="player-name">${player.name}</td>
+                    <td class="position">${player.position}</td>
+                    <td class="snap-count">${week1Snaps}</td>
+                    <td class="snap-count">${week2Snaps}</td>
+                    <td class="snap-count">${week3Snaps}</td>
+                    <td class="snap-count">${week4Snaps}</td>
+                    <td class="total">${totalSnaps}</td>
+                `;
+                
+                tableBody.appendChild(row);
+            });
+        }
+
         // Load team data
         async function loadTeamData() {
             try {
@@ -1623,190 +1808,6 @@
             });
         }
 
-        // Populate aggregate tables on page load
-        function populateAggregateTables() {
-            if (!teamData) return;
-            
-            populateOffenseAggregateTable();
-            populateDefenseAggregateTable();
-        }
-        
-        function populateOffenseAggregateTable() {
-            const tableBody = document.getElementById('offense-aggregate-body');
-            if (!tableBody) return;
-            
-            tableBody.innerHTML = '';
-            
-            const allPlayers = [];
-            const playerMap = new Map();
-            
-            // Collect all offense players
-            const offenseGroups = ['wide_receivers', 'tight_ends', 'running_backs', 'offensive_line'];
-            
-            teamData.weeks.forEach(week => {
-                offenseGroups.forEach(group => {
-                    if (week.offense && week.offense[group]) {
-                        week.offense[group].forEach(player => {
-                            const key = `${player.name}_${player.jersey}`;
-                            if (!playerMap.has(key)) {
-                                playerMap.set(key, {
-                                    name: player.name,
-                                    jersey: player.jersey,
-                                    position: player.position,
-                                    positionGroup: group,
-                                    weeks: {}
-                                });
-                            }
-                            
-                            const weekData = playerMap.get(key);
-                            weekData.weeks[week.week] = {
-                                snaps: player.snaps,
-                                started: player.started
-                            };
-                        });
-                    }
-                });
-            });
-            
-            // Convert to array and sort by position group, then by total snaps
-            allPlayers.push(...playerMap.values());
-            allPlayers.sort((a, b) => {
-                // First sort by position group
-                const groupOrder = ['wide_receivers', 'tight_ends', 'running_backs', 'offensive_line'];
-                const aGroupIndex = groupOrder.indexOf(a.positionGroup);
-                const bGroupIndex = groupOrder.indexOf(b.positionGroup);
-                
-                if (aGroupIndex !== bGroupIndex) {
-                    return aGroupIndex - bGroupIndex;
-                }
-                
-                // Then sort by total snaps within group
-                const aTotal = Object.values(a.weeks).reduce((sum, week) => sum + week.snaps, 0);
-                const bTotal = Object.values(b.weeks).reduce((sum, week) => sum + week.snaps, 0);
-                return bTotal - aTotal;
-            });
-            
-            // Populate table rows
-            allPlayers.forEach(player => {
-                const row = document.createElement('tr');
-                
-                const week1Snaps = player.weeks[1]?.snaps || 0;
-                const week2Snaps = player.weeks[2]?.snaps || 0;
-                const week3Snaps = player.weeks[3]?.snaps || 0;
-                const week4Snaps = player.weeks[4]?.snaps || 0;
-                const totalSnaps = week1Snaps + week2Snaps + week3Snaps + week4Snaps;
-                
-                // Add position group class for styling
-                let groupClass = '';
-                if (player.positionGroup === 'wide_receivers') groupClass = 'position-group-wr';
-                else if (player.positionGroup === 'tight_ends') groupClass = 'position-group-te';
-                else if (player.positionGroup === 'running_backs') groupClass = 'position-group-rb';
-                else if (player.positionGroup === 'offensive_line') groupClass = 'position-group-ol';
-                
-                row.className = groupClass;
-                
-                row.innerHTML = `
-                    <td class="jersey">#${player.jersey}</td>
-                    <td class="player-name">${player.name}</td>
-                    <td class="position">${player.position}</td>
-                    <td class="snap-count">${week1Snaps}</td>
-                    <td class="snap-count">${week2Snaps}</td>
-                    <td class="snap-count">${week3Snaps}</td>
-                    <td class="snap-count">${week4Snaps}</td>
-                    <td class="total">${totalSnaps}</td>
-                `;
-                
-                tableBody.appendChild(row);
-            });
-        }
-        
-        function populateDefenseAggregateTable() {
-            const tableBody = document.getElementById('defense-aggregate-body');
-            if (!tableBody) return;
-            
-            tableBody.innerHTML = '';
-            
-            const allPlayers = [];
-            const playerMap = new Map();
-            
-            // Collect all defense players
-            const defenseGroups = ['defensive_line', 'linebackers', 'defensive_backs'];
-            
-            teamData.weeks.forEach(week => {
-                defenseGroups.forEach(group => {
-                    if (week.defense && week.defense[group]) {
-                        week.defense[group].forEach(player => {
-                            const key = `${player.name}_${player.jersey}`;
-                            if (!playerMap.has(key)) {
-                                playerMap.set(key, {
-                                    name: player.name,
-                                    jersey: player.jersey,
-                                    position: player.position,
-                                    positionGroup: group,
-                                    weeks: {}
-                                });
-                            }
-                            
-                            const weekData = playerMap.get(key);
-                            weekData.weeks[week.week] = {
-                                snaps: player.snaps,
-                                started: player.started
-                            };
-                        });
-                    }
-                });
-            });
-            
-            // Convert to array and sort by position group, then by total snaps
-            allPlayers.push(...playerMap.values());
-            allPlayers.sort((a, b) => {
-                // First sort by position group
-                const groupOrder = ['defensive_line', 'linebackers', 'defensive_backs'];
-                const aGroupIndex = groupOrder.indexOf(a.positionGroup);
-                const bGroupIndex = groupOrder.indexOf(b.positionGroup);
-                
-                if (aGroupIndex !== bGroupIndex) {
-                    return aGroupIndex - bGroupIndex;
-                }
-                
-                // Then sort by total snaps within group
-                const aTotal = Object.values(a.weeks).reduce((sum, week) => sum + week.snaps, 0);
-                const bTotal = Object.values(b.weeks).reduce((sum, week) => sum + week.snaps, 0);
-                return bTotal - aTotal;
-            });
-            
-            // Populate table rows
-            allPlayers.forEach(player => {
-                const row = document.createElement('tr');
-                
-                const week1Snaps = player.weeks[1]?.snaps || 0;
-                const week2Snaps = player.weeks[2]?.snaps || 0;
-                const week3Snaps = player.weeks[3]?.snaps || 0;
-                const week4Snaps = player.weeks[4]?.snaps || 0;
-                const totalSnaps = week1Snaps + week2Snaps + week3Snaps + week4Snaps;
-                
-                // Add position group class for styling
-                let groupClass = '';
-                if (player.positionGroup === 'defensive_line') groupClass = 'position-group-dl';
-                else if (player.positionGroup === 'linebackers') groupClass = 'position-group-lb';
-                else if (player.positionGroup === 'defensive_backs') groupClass = 'position-group-db';
-                
-                row.className = groupClass;
-                
-                row.innerHTML = `
-                    <td class="jersey">#${player.jersey}</td>
-                    <td class="player-name">${player.name}</td>
-                    <td class="position">${player.position}</td>
-                    <td class="snap-count">${week1Snaps}</td>
-                    <td class="snap-count">${week2Snaps}</td>
-                    <td class="snap-count">${week3Snaps}</td>
-                    <td class="snap-count">${week4Snaps}</td>
-                    <td class="total">${totalSnaps}</td>
-                `;
-                
-                tableBody.appendChild(row);
-            });
-        }
         
         // Populate data table for a specific section
         function populateDataTable(section) {
