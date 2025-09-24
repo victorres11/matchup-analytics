@@ -1214,15 +1214,19 @@
         // Load team data
         async function loadTeamData() {
             try {
+                console.log('Starting loadTeamData...');
                 const response = await fetch('./rutgers_multiweek.json');
                 teamData = await response.json();
+                console.log('Team data loaded:', teamData);
                 await loadReturnerData();
                 updateStats();
                 populateWeeklySummary();
+                console.log('About to initialize charts...');
                 initializeCharts();
                 setupEventListeners();
                 console.log('About to call populateAggregateTables, function exists:', typeof populateAggregateTables);
                 populateAggregateTables(); // Populate aggregate tables
+                console.log('loadTeamData completed successfully');
             } catch (error) {
                 console.error('Error loading team data:', error);
             }
@@ -1274,8 +1278,13 @@
 
         // Initialize all charts
         function initializeCharts() {
-            if (!teamData) return;
+            console.log('initializeCharts called, teamData exists:', !!teamData);
+            if (!teamData) {
+                console.log('No teamData, returning early');
+                return;
+            }
 
+            console.log('Creating offense charts...');
             // Offense charts
             createStackedChart('wr-chart', 'wide_receivers', 'offense');
             createStackedChart('te-chart', 'tight_ends', 'offense');
