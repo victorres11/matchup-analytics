@@ -416,7 +416,7 @@
         .aggregate-table {
             width: 100%;
             border-collapse: collapse;
-            background: rgba(255, 255, 255, 0.05);
+            background: white;
             border-radius: 8px;
             overflow: hidden;
         }
@@ -436,7 +436,6 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             color: #333;
             font-size: 0.9rem;
-            background: rgba(255, 255, 255, 0.9);
         }
 
         .aggregate-table tr:hover {
@@ -449,31 +448,31 @@
 
         /* Position Group Styling - Alternating Background Colors */
         .position-group-wr {
-            background: rgba(255, 107, 107, 0.08) !important;
+            background: rgba(255, 107, 107, 0.3) !important;
         }
 
         .position-group-te {
-            background: rgba(78, 205, 196, 0.04) !important;
+            background: rgba(78, 205, 196, 0.2) !important;
         }
 
         .position-group-rb {
-            background: rgba(69, 183, 209, 0.08) !important;
+            background: rgba(69, 183, 209, 0.3) !important;
         }
 
         .position-group-ol {
-            background: rgba(150, 206, 180, 0.04) !important;
+            background: rgba(150, 206, 180, 0.2) !important;
         }
 
         .position-group-dl {
-            background: rgba(255, 234, 167, 0.08) !important;
+            background: rgba(255, 234, 167, 0.3) !important;
         }
 
         .position-group-lb {
-            background: rgba(221, 160, 221, 0.04) !important;
+            background: rgba(221, 160, 221, 0.2) !important;
         }
 
         .position-group-db {
-            background: rgba(255, 182, 193, 0.08) !important;
+            background: rgba(255, 182, 193, 0.3) !important;
         }
 
         .aggregate-table .jersey {
@@ -951,9 +950,9 @@
         <!-- Footer -->
         <div class="footer">
             <p><strong>Data Sources:</strong> PFF Data</p>
-            <p>Made with <span style="color: #ff6b6b;">♥</span> - from Richmond, VA by Vic Torres</p>
-            <p><strong>Built with AI</strong> • If you notice any data issues or bugs, please report them to <a href="mailto:victorres11@gmail.com">victorres11@gmail.com</a></p>
-            <p><a href="./index.html">← Back to Team Selection</a></p>
+            <p>Made with <span style="color: #ff6b6b;">&hearts;</span> - from Richmond, VA by Vic Torres</p>
+            <p><strong>Built with AI</strong> &bull; If you notice any data issues or bugs, please report them to <a href="mailto:victorres11@gmail.com">victorres11@gmail.com</a></p>
+            <p><a href="./index.html">&larr; Back to Team Selection</a></p>
         </div>
     </div>
 
@@ -981,10 +980,8 @@
         // Load returner data
         async function loadReturnerData() {
             try {
-                console.log('Loading Rutgers returner data...');
                 const response = await fetch('./team_data/rutgers/rutgers_pr_kr_up_to_week_4.csv');
                 const csvText = await response.text();
-                console.log('CSV data loaded:', csvText);
                 const lines = csvText.split('\n');
                 const headers = lines[0].split(',');
                 
@@ -1015,7 +1012,6 @@
                                 isPRReturner: puntReturns > 0,
                                 isKRReturner: kickReturns > 0
                             });
-                            console.log(`Added returner: ${player} #${jersey} - PR: ${puntReturns}, KR: ${kickReturns}`);
                         }
                     }
                 }
@@ -1026,7 +1022,6 @@
         }
 
         // Populate aggregate tables on page load
-        console.log('Defining populateAggregateTables function');
         function populateAggregateTables() {
             if (!teamData) return;
             
@@ -1214,19 +1209,14 @@
         // Load team data
         async function loadTeamData() {
             try {
-                console.log('Starting loadTeamData...');
                 const response = await fetch('./rutgers_multiweek.json');
                 teamData = await response.json();
-                console.log('Team data loaded:', teamData);
                 await loadReturnerData();
                 updateStats();
                 populateWeeklySummary();
-                console.log('About to initialize charts...');
                 initializeCharts();
                 setupEventListeners();
-                console.log('About to call populateAggregateTables, function exists:', typeof populateAggregateTables);
                 populateAggregateTables(); // Populate aggregate tables
-                console.log('loadTeamData completed successfully');
             } catch (error) {
                 console.error('Error loading team data:', error);
             }
@@ -1278,13 +1268,9 @@
 
         // Initialize all charts
         function initializeCharts() {
-            console.log('initializeCharts called, teamData exists:', !!teamData);
             if (!teamData) {
-                console.log('No teamData, returning early');
                 return;
             }
-
-            console.log('Creating offense charts...');
             // Offense charts
             createStackedChart('wr-chart', 'wide_receivers', 'offense');
             createStackedChart('te-chart', 'tight_ends', 'offense');
@@ -1552,7 +1538,6 @@
                 const returnerInfo = returnerData ? returnerData.get(player.jersey) : null;
                 if (returnerInfo) {
                     player.returnerInfo = returnerInfo;
-                    console.log(`Player ${player.name} #${player.jersey} is a returner:`, returnerInfo);
                 }
             });
             
@@ -1838,15 +1823,12 @@
         }
         // Populate data table for a specific section
         function populateDataTable(section) {
-            console.log('Populating data table for section:', section);
             if (!teamData) {
-                console.log('No team data available');
                 return;
             }
-            
+
             const tableBody = document.getElementById(`${section}-table-body`);
             if (!tableBody) {
-                console.log('Table body not found for section:', section);
                 return;
             }
             
@@ -1876,16 +1858,11 @@
                 else positionGroup = section.replace(/^(off|def)-/, '');
             }
             
-            console.log('Looking for data in:', side, positionGroup);
-            console.log('Available weeks:', teamData.weeks.map(w => w.week));
-            
             const allPlayers = [];
             const playerMap = new Map();
             
             teamData.weeks.forEach(week => {
-                console.log('Processing week:', week.week);
                 if (week[side] && week[side][positionGroup]) {
-                    console.log('Found data for week', week.week, ':', week[side][positionGroup].length, 'players');
                     week[side][positionGroup].forEach(player => {
                         const key = `${player.name}_${player.jersey}`;
                         if (!playerMap.has(key)) {
@@ -1913,12 +1890,8 @@
                             };
                         }
                     });
-                } else {
-                    console.log('No data found for week', week.week, 'in', side, positionGroup);
                 }
             });
-            
-            console.log('Total players found:', playerMap.size);
             
             // Convert to array and sort by total snaps
             allPlayers.push(...playerMap.values());
@@ -1927,8 +1900,6 @@
                 const bTotal = Object.values(b.weeks).reduce((sum, week) => sum + week.snaps, 0);
                 return bTotal - aTotal;
             });
-            
-            console.log('Players to display:', allPlayers.length);
             
             // Populate table rows
             allPlayers.forEach(player => {
@@ -1953,8 +1924,6 @@
                 
                 tableBody.appendChild(row);
             });
-            
-            console.log('Table populated with', allPlayers.length, 'rows');
         }
 
         // Initialize on page load
