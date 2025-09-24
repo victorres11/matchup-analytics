@@ -673,9 +673,37 @@
             <div class="position-group-row">
                 <div class="position-group half-width">
                     <h3 class="position-title">Tight Ends</h3>
+                    
+                    <!-- Chart/Data Tabs -->
+                    <div class="view-tabs">
+                        <button class="view-tab active" data-view="chart" data-section="te">Chart View</button>
+                        <button class="view-tab" data-view="table" data-section="te">Data Table</button>
+                    </div>
+                    
                     <div class="chart-container">
-                        <div class="chart-wrapper">
+                        <div class="chart-wrapper" id="te-chart-container">
                             <canvas id="te-chart" class="chart-canvas"></canvas>
+                        </div>
+                        <div class="data-table-wrapper" id="te-table-container" style="display: none;">
+                            <div class="data-table-container">
+                                <table class="data-table" id="te-data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Player</th>
+                                            <th>Jersey</th>
+                                            <th>Position</th>
+                                            <th>Week 1</th>
+                                            <th>Week 2</th>
+                                            <th>Week 3</th>
+                                            <th>Week 4</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="te-table-body">
+                                        <!-- Data will be populated by JavaScript -->
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         <div class="player-details" id="te-details"></div>
                     </div>
@@ -683,9 +711,37 @@
 
                 <div class="position-group half-width">
                     <h3 class="position-title">Running Backs</h3>
+                    
+                    <!-- Chart/Data Tabs -->
+                    <div class="view-tabs">
+                        <button class="view-tab active" data-view="chart" data-section="rb">Chart View</button>
+                        <button class="view-tab" data-view="table" data-section="rb">Data Table</button>
+                    </div>
+                    
                     <div class="chart-container">
-                        <div class="chart-wrapper">
+                        <div class="chart-wrapper" id="rb-chart-container">
                             <canvas id="rb-chart" class="chart-canvas"></canvas>
+                        </div>
+                        <div class="data-table-wrapper" id="rb-table-container" style="display: none;">
+                            <div class="data-table-container">
+                                <table class="data-table" id="rb-data-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Player</th>
+                                            <th>Jersey</th>
+                                            <th>Position</th>
+                                            <th>Week 1</th>
+                                            <th>Week 2</th>
+                                            <th>Week 3</th>
+                                            <th>Week 4</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="rb-table-body">
+                                        <!-- Data will be populated by JavaScript -->
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         <div class="player-details" id="rb-details"></div>
                     </div>
@@ -694,9 +750,37 @@
 
             <div class="position-group">
                 <h3 class="position-title">Offensive Line</h3>
+                
+                <!-- Chart/Data Tabs -->
+                <div class="view-tabs">
+                    <button class="view-tab active" data-view="chart" data-section="ol">Chart View</button>
+                    <button class="view-tab" data-view="table" data-section="ol">Data Table</button>
+                </div>
+                
                 <div class="chart-container">
-                    <div class="chart-wrapper">
+                    <div class="chart-wrapper" id="ol-chart-container">
                         <canvas id="ol-chart" class="chart-canvas"></canvas>
+                    </div>
+                    <div class="data-table-wrapper" id="ol-table-container" style="display: none;">
+                        <div class="data-table-container">
+                            <table class="data-table" id="ol-data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Player</th>
+                                        <th>Jersey</th>
+                                        <th>Position</th>
+                                        <th>Week 1</th>
+                                        <th>Week 2</th>
+                                        <th>Week 3</th>
+                                        <th>Week 4</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="ol-table-body">
+                                    <!-- Data will be populated by JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <div class="player-details" id="ol-details"></div>
                 </div>
@@ -707,9 +791,37 @@
         <div class="tab-content" id="defense">
             <div class="position-group">
                 <h3 class="position-title">Defensive Line</h3>
+                
+                <!-- Chart/Data Tabs -->
+                <div class="view-tabs">
+                    <button class="view-tab active" data-view="chart" data-section="dl">Chart View</button>
+                    <button class="view-tab" data-view="table" data-section="dl">Data Table</button>
+                </div>
+                
                 <div class="chart-container">
-                    <div class="chart-wrapper">
+                    <div class="chart-wrapper" id="dl-chart-container">
                         <canvas id="dl-chart" class="chart-canvas"></canvas>
+                    </div>
+                    <div class="data-table-wrapper" id="dl-table-container" style="display: none;">
+                        <div class="data-table-container">
+                            <table class="data-table" id="dl-data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Player</th>
+                                        <th>Jersey</th>
+                                        <th>Position</th>
+                                        <th>Week 1</th>
+                                        <th>Week 2</th>
+                                        <th>Week 3</th>
+                                        <th>Week 4</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="dl-table-body">
+                                    <!-- Data will be populated by JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <div class="player-details" id="dl-details"></div>
                 </div>
@@ -717,9 +829,37 @@
 
             <div class="position-group">
                 <h3 class="position-title">Linebackers</h3>
+                
+                <!-- Chart/Data Tabs -->
+                <div class="view-tabs">
+                    <button class="view-tab active" data-view="chart" data-section="lb">Chart View</button>
+                    <button class="view-tab" data-view="table" data-section="lb">Data Table</button>
+                </div>
+                
                 <div class="chart-container">
-                    <div class="chart-wrapper">
+                    <div class="chart-wrapper" id="lb-chart-container">
                         <canvas id="lb-chart" class="chart-canvas"></canvas>
+                    </div>
+                    <div class="data-table-wrapper" id="lb-table-container" style="display: none;">
+                        <div class="data-table-container">
+                            <table class="data-table" id="lb-data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Player</th>
+                                        <th>Jersey</th>
+                                        <th>Position</th>
+                                        <th>Week 1</th>
+                                        <th>Week 2</th>
+                                        <th>Week 3</th>
+                                        <th>Week 4</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="lb-table-body">
+                                    <!-- Data will be populated by JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <div class="player-details" id="lb-details"></div>
                 </div>
@@ -727,9 +867,37 @@
 
             <div class="position-group">
                 <h3 class="position-title">Defensive Backs</h3>
+                
+                <!-- Chart/Data Tabs -->
+                <div class="view-tabs">
+                    <button class="view-tab active" data-view="chart" data-section="db">Chart View</button>
+                    <button class="view-tab" data-view="table" data-section="db">Data Table</button>
+                </div>
+                
                 <div class="chart-container">
-                    <div class="chart-wrapper">
+                    <div class="chart-wrapper" id="db-chart-container">
                         <canvas id="db-chart" class="chart-canvas"></canvas>
+                    </div>
+                    <div class="data-table-wrapper" id="db-table-container" style="display: none;">
+                        <div class="data-table-container">
+                            <table class="data-table" id="db-data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Player</th>
+                                        <th>Jersey</th>
+                                        <th>Position</th>
+                                        <th>Week 1</th>
+                                        <th>Week 2</th>
+                                        <th>Week 3</th>
+                                        <th>Week 4</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="db-table-body">
+                                    <!-- Data will be populated by JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <div class="player-details" id="db-details"></div>
                 </div>
@@ -791,9 +959,36 @@
                     </div>
                 </div>
                 
+                <!-- Chart/Data Tabs -->
+                <div class="view-tabs">
+                    <button class="view-tab active" data-view="chart" data-section="st">Chart View</button>
+                    <button class="view-tab" data-view="table" data-section="st">Data Table</button>
+                </div>
+                
                 <div class="chart-container">
-                    <div class="chart-wrapper">
+                    <div class="chart-wrapper" id="st-chart-container">
                         <canvas id="st-chart" class="chart-canvas"></canvas>
+                    </div>
+                    <div class="data-table-wrapper" id="st-table-container" style="display: none;">
+                        <div class="data-table-container">
+                            <table class="data-table" id="st-data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Player</th>
+                                        <th>Jersey</th>
+                                        <th>Position</th>
+                                        <th>Week 1</th>
+                                        <th>Week 2</th>
+                                        <th>Week 3</th>
+                                        <th>Week 4</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="st-table-body">
+                                    <!-- Data will be populated by JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <div class="player-details" id="st-details"></div>
                 </div>
@@ -1536,19 +1731,27 @@
             tableBody.innerHTML = '';
             
             // Get players for this section
-            const side = section.includes('wr') || section.includes('te') || section.includes('rb') || section.includes('ol') || section.includes('qb') ? 'offense' : 'defense';
+            let side, positionGroup;
             
-            // Map section names to actual data structure keys
-            let positionGroup;
-            if (section === 'wr') positionGroup = 'wide_receivers';
-            else if (section === 'te') positionGroup = 'tight_ends';
-            else if (section === 'rb') positionGroup = 'running_backs';
-            else if (section === 'ol') positionGroup = 'offensive_line';
-            else if (section === 'qb') positionGroup = 'quarterbacks';
-            else if (section === 'dl') positionGroup = 'defensive_line';
-            else if (section === 'lb') positionGroup = 'linebackers';
-            else if (section === 'db') positionGroup = 'defensive_backs';
-            else positionGroup = section.replace(/^(off|def)-/, '');
+            if (section === 'st') {
+                // Special teams data
+                side = 'special_teams';
+                positionGroup = 'special_teams';
+            } else {
+                // Offense/Defense data
+                side = section.includes('wr') || section.includes('te') || section.includes('rb') || section.includes('ol') || section.includes('qb') ? 'offense' : 'defense';
+                
+                // Map section names to actual data structure keys
+                if (section === 'wr') positionGroup = 'wide_receivers';
+                else if (section === 'te') positionGroup = 'tight_ends';
+                else if (section === 'rb') positionGroup = 'running_backs';
+                else if (section === 'ol') positionGroup = 'offensive_line';
+                else if (section === 'qb') positionGroup = 'quarterbacks';
+                else if (section === 'dl') positionGroup = 'defensive_line';
+                else if (section === 'lb') positionGroup = 'linebackers';
+                else if (section === 'db') positionGroup = 'defensive_backs';
+                else positionGroup = section.replace(/^(off|def)-/, '');
+            }
             
             console.log('Looking for data in:', side, positionGroup);
             console.log('Available weeks:', teamData.weeks.map(w => w.week));
@@ -1572,10 +1775,20 @@
                         }
                         
                         const weekData = playerMap.get(key);
-                        weekData.weeks[week.week] = {
-                            snaps: player.snaps,
-                            started: player.started
-                        };
+                        if (section === 'st') {
+                            // Special teams data - sum all unit snaps
+                            const totalSnaps = (player.kret || 0) + (player.kcov || 0) + (player.pret || 0) + (player.pcov || 0) + (player.fgblk || 0) + (player.fgk || 0);
+                            weekData.weeks[week.week] = {
+                                snaps: totalSnaps,
+                                started: false // Special teams doesn't have "started" concept
+                            };
+                        } else {
+                            // Regular offense/defense data
+                            weekData.weeks[week.week] = {
+                                snaps: player.snaps,
+                                started: player.started
+                            };
+                        }
                     });
                 } else {
                     console.log('No data found for week', week.week, 'in', side, positionGroup);
