@@ -952,12 +952,16 @@
                             displayColors: true,
                             callbacks: {
                                 title: function(context) {
+                                    console.log('Title callback - full context:', context);
                                     console.log('Title callback - context.dataIndex:', context.dataIndex);
-                                    console.log('Title callback - players array length:', context.dataset.players?.length);
-                                    console.log('Title callback - players array:', context.dataset.players);
+                                    console.log('Title callback - context.dataset:', context.dataset);
                                     
-                                    const player = context.dataset.players[context.dataIndex];
-                                    console.log('Title callback - player found:', player);
+                                    // Try different ways to access the player data
+                                    let player = null;
+                                    if (context.dataset && context.dataset.players) {
+                                        player = context.dataset.players[context.dataIndex];
+                                        console.log('Title callback - player from dataset.players:', player);
+                                    }
                                     
                                     if (player) {
                                         return `${player.name} #${player.jersey}`;
