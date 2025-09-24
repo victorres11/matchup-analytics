@@ -952,11 +952,11 @@
                             displayColors: true,
                             callbacks: {
                                 title: function(context) {
-                                    const player = context.dataset.players[context.dataIndex];
+                                    const player = allPlayers[context.dataIndex];
                                     return `${player.name} #${player.jersey}`;
                                 },
                                 label: function(context) {
-                                    const player = context.dataset.players[context.dataIndex];
+                                    const player = allPlayers[context.dataIndex];
                                     const week = context.dataset.label.split(' ')[1];
                                     const weekData = player.weeks[parseInt(week)];
                                     
