@@ -1026,6 +1026,7 @@
         }
 
         // Populate aggregate tables on page load
+        console.log('Defining populateAggregateTables function');
         function populateAggregateTables() {
             if (!teamData) return;
             
@@ -1220,6 +1221,7 @@
                 populateWeeklySummary();
                 initializeCharts();
                 setupEventListeners();
+                console.log('About to call populateAggregateTables, function exists:', typeof populateAggregateTables);
                 populateAggregateTables(); // Populate aggregate tables
             } catch (error) {
                 console.error('Error loading team data:', error);
