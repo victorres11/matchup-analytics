@@ -505,6 +505,12 @@
             background: rgba(204, 0, 0, 0.1);
         }
 
+        .aggregate-table .zero-snap {
+            font-weight: 700;
+            color: #dc2626;
+            background: rgba(220, 38, 38, 0.1);
+        }
+
         .summary-table td {
             padding: 12px;
             border-bottom: 1px solid #e5e7eb;
@@ -1107,10 +1113,10 @@
                     <td class="jersey">#${player.jersey}</td>
                     <td class="player-name">${player.name}</td>
                     <td class="position">${player.position}</td>
-                    <td class="snap-count">${week1Snaps}</td>
-                    <td class="snap-count">${week2Snaps}</td>
-                    <td class="snap-count">${week3Snaps}</td>
-                    <td class="snap-count">${week4Snaps}</td>
+                    <td class="snap-count ${week1Snaps === 0 ? 'zero-snap' : ''}">${week1Snaps}</td>
+                    <td class="snap-count ${week2Snaps === 0 ? 'zero-snap' : ''}">${week2Snaps}</td>
+                    <td class="snap-count ${week3Snaps === 0 ? 'zero-snap' : ''}">${week3Snaps}</td>
+                    <td class="snap-count ${week4Snaps === 0 ? 'zero-snap' : ''}">${week4Snaps}</td>
                     <td class="total">${totalSnaps}</td>
                 `;
                 
@@ -1195,10 +1201,10 @@
                     <td class="jersey">#${player.jersey}</td>
                     <td class="player-name">${player.name}</td>
                     <td class="position">${player.position}</td>
-                    <td class="snap-count">${week1Snaps}</td>
-                    <td class="snap-count">${week2Snaps}</td>
-                    <td class="snap-count">${week3Snaps}</td>
-                    <td class="snap-count">${week4Snaps}</td>
+                    <td class="snap-count ${week1Snaps === 0 ? 'zero-snap' : ''}">${week1Snaps}</td>
+                    <td class="snap-count ${week2Snaps === 0 ? 'zero-snap' : ''}">${week2Snaps}</td>
+                    <td class="snap-count ${week3Snaps === 0 ? 'zero-snap' : ''}">${week3Snaps}</td>
+                    <td class="snap-count ${week4Snaps === 0 ? 'zero-snap' : ''}">${week4Snaps}</td>
                     <td class="total">${totalSnaps}</td>
                 `;
                 
@@ -1286,6 +1292,36 @@
             createSpecialTeamsChart('st-chart', 'special_teams', 'special_teams');
         }
 
+        // Create diagonal stripe pattern for missing games
+        function createDiagonalPattern(color = 'red') {
+            const patternCanvas = document.createElement('canvas');
+            patternCanvas.width = 12;
+            patternCanvas.height = 12;
+            const patternCtx = patternCanvas.getContext('2d');
+            
+            // Fill background with solid color
+            patternCtx.fillStyle = color;
+            patternCtx.fillRect(0, 0, 12, 12);
+            
+            // Draw diagonal stripes in a contrasting color
+            patternCtx.strokeStyle = 'rgba(255, 255, 255, 0.8)'; // White stripes for contrast
+            patternCtx.lineWidth = 2;
+            patternCtx.beginPath();
+            patternCtx.moveTo(0, 0);
+            patternCtx.lineTo(12, 12);
+            patternCtx.stroke();
+            patternCtx.beginPath();
+            patternCtx.moveTo(6, 0);
+            patternCtx.lineTo(12, 6);
+            patternCtx.stroke();
+            patternCtx.beginPath();
+            patternCtx.moveTo(0, 6);
+            patternCtx.lineTo(6, 12);
+            patternCtx.stroke();
+            
+            return patternCtx.createPattern(patternCanvas, 'repeat');
+        }
+
         // Create stacked bar chart
         function createStackedChart(canvasId, positionGroup, side) {
             const canvas = document.getElementById(canvasId);
@@ -1357,17 +1393,42 @@
             
             weekOrder.forEach(weekNum => {
                 const weekData = allPlayers.map(player => {
-                    return player.weeks[weekNum] ? player.weeks[weekNum].snaps : 0;
+                    const currentWeek = player.weeks[weekNum];
+                    const previousWeek = player.weeks[weekNum - 1];
+                    
+                    // Check if this is a missing game - show a small bar for visibility
+                    if (previousWeek && previousWeek.snaps >= 4 && 
+                        (!currentWeek || currentWeek.snaps === 0)) {
+                        return 5; // Small bar height for missing games
+                    }
+                    
+                    return currentWeek ? currentWeek.snaps : 0;
                 });
 
                 const weekInfo = teamData.weeks.find(w => w.week === weekNum);
                 const opponent = weekInfo ? weekInfo.summary.opponent : 'Unknown';
                 const color = weekColors[weekNum] || '#666666';
 
+                // Create individual background colors for each bar
+                const backgroundColors = allPlayers.map(player => {
+                    const currentWeek = player.weeks[weekNum];
+                    const previousWeek = player.weeks[weekNum - 1];
+                    
+                    // Check if this is a missing game
+                    if (previousWeek && previousWeek.snaps >= 4 && 
+                        (!currentWeek || currentWeek.snaps === 0)) {
+                        // Use diagonal stripe pattern for missing games
+                        return createDiagonalPattern(color);
+                    } else {
+                        // Normal color
+                        return color;
+                    }
+                });
+
                 datasets.push({
                     label: `Week ${weekNum} vs ${opponent}`,
                     data: weekData,
-                    backgroundColor: color,
+                    backgroundColor: backgroundColors,
                     borderColor: color,
                     borderWidth: 1,
                     borderRadius: 4,
@@ -1375,36 +1436,6 @@
                 });
             });
 
-            // Add missing game indicators
-            weekOrder.forEach(weekNum => {
-                const missingData = allPlayers.map(player => {
-                    const currentWeek = player.weeks[weekNum];
-                    const previousWeek = player.weeks[weekNum - 1];
-                    
-                    // Check if player has 0 snaps this week but had ≥10 snaps last week
-                    if (currentWeek && currentWeek.snaps === 0 && 
-                        previousWeek && previousWeek.snaps >= 4) {
-                        return 5; // Fixed height for missing game indicator
-                    }
-                    return 0;
-                });
-
-                // Only add missing game dataset if there are missing games
-                if (missingData.some(val => val > 0)) {
-                    const weekInfo = teamData.weeks.find(w => w.week === weekNum);
-                    const opponent = weekInfo ? weekInfo.summary.opponent : 'Unknown';
-                    
-                    datasets.push({
-                        label: `Missing Game - Week ${weekNum} vs ${opponent}`,
-                        data: missingData,
-                        backgroundColor: 'rgba(220, 20, 60, 0.8)', // Dark red with transparency
-                        borderColor: '#DC143C',
-                        borderWidth: 2,
-                        borderRadius: 0,
-                        players: allPlayers
-                    });
-                }
-            });
 
             // Create Chart.js chart
             new Chart(ctx, {
@@ -1473,9 +1504,11 @@
                                         const isOffensiveChart = canvasId.includes('wr') || canvasId.includes('te') || canvasId.includes('rb') || canvasId.includes('ol') || canvasId.includes('qb');
                                         const totalSnaps = weekInfo ? (isOffensiveChart ? weekInfo.summary.offensiveSnaps : weekInfo.summary.defensiveSnaps) : 0;
                                         
-                                        const percentage = totalSnaps > 0 ? ((context.parsed.y / totalSnaps) * 100).toFixed(1) : 0;
+                                        // Use actual snap count, not bar height (for missing games)
+                                        const actualSnaps = weekData ? weekData.snaps : 0;
+                                        const percentage = totalSnaps > 0 ? ((actualSnaps / totalSnaps) * 100).toFixed(1) : 0;
                                         const started = weekData && weekData.started ? ' *' : '';
-                                        return `Week ${week}: ${context.parsed.y} snaps (${percentage}%) • ${player.position}${started}`;
+                                        return `Week ${week}: ${actualSnaps} snaps (${percentage}%) - ${player.position}${started}`;
                                     }
                                     return 'Data not available';
                                 }
