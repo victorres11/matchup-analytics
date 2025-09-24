@@ -1536,7 +1536,18 @@
             
             // Get players for this section
             const side = section.includes('wr') || section.includes('te') || section.includes('rb') || section.includes('ol') || section.includes('qb') ? 'offense' : 'defense';
-            const positionGroup = section.replace(/^(off|def)-/, '');
+            
+            // Map section names to actual data structure keys
+            let positionGroup;
+            if (section === 'wr') positionGroup = 'wide_receivers';
+            else if (section === 'te') positionGroup = 'tight_ends';
+            else if (section === 'rb') positionGroup = 'running_backs';
+            else if (section === 'ol') positionGroup = 'offensive_line';
+            else if (section === 'qb') positionGroup = 'quarterbacks';
+            else if (section === 'dl') positionGroup = 'defensive_line';
+            else if (section === 'lb') positionGroup = 'linebackers';
+            else if (section === 'db') positionGroup = 'defensive_backs';
+            else positionGroup = section.replace(/^(off|def)-/, '');
             
             console.log('Looking for data in:', side, positionGroup);
             console.log('Available weeks:', teamData.weeks.map(w => w.week));
