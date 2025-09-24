@@ -964,12 +964,18 @@
                                     const firstContext = context[0];
                                     console.log('Title callback - firstContext.dataIndex:', firstContext.dataIndex);
                                     console.log('Title callback - firstContext.dataset:', firstContext.dataset);
+                                    console.log('Title callback - firstContext.dataset.players:', firstContext.dataset?.players);
+                                    console.log('Title callback - firstContext.dataset.players length:', firstContext.dataset?.players?.length);
                                     
                                     // Access player data from the first context item
                                     let player = null;
                                     if (firstContext.dataset && firstContext.dataset.players) {
                                         player = firstContext.dataset.players[firstContext.dataIndex];
                                         console.log('Title callback - player found:', player);
+                                        console.log('Title callback - player name:', player?.name);
+                                        console.log('Title callback - player jersey:', player?.jersey);
+                                    } else {
+                                        console.log('Title callback - dataset or players array not found');
                                     }
                                     
                                     if (player) {
