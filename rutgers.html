@@ -956,9 +956,15 @@
                                     console.log('Title callback - context.dataIndex:', context.dataIndex);
                                     console.log('Title callback - context.dataset:', context.dataset);
                                     
+                                    // Safe access to avoid errors
+                                    if (!context || !context.dataset) {
+                                        console.log('Title callback - context or dataset is undefined');
+                                        return 'Player #Unknown';
+                                    }
+                                    
                                     // Try different ways to access the player data
                                     let player = null;
-                                    if (context.dataset && context.dataset.players) {
+                                    if (context.dataset.players) {
                                         player = context.dataset.players[context.dataIndex];
                                         console.log('Title callback - player from dataset.players:', player);
                                     }
