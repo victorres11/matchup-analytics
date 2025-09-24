@@ -952,22 +952,40 @@
                             displayColors: true,
                             callbacks: {
                                 title: function(context) {
-                                    const player = allPlayers[context.dataIndex];
-                                    return `${player.name} #${player.jersey}`;
+                                    console.log('Title callback context:', context);
+                                    console.log('allPlayers available:', typeof allPlayers, allPlayers?.length);
+                                    console.log('context.dataIndex:', context.dataIndex);
+                                    
+                                    if (allPlayers && allPlayers[context.dataIndex]) {
+                                        const player = allPlayers[context.dataIndex];
+                                        console.log('Player found:', player);
+                                        return `${player.name} #${player.jersey}`;
+                                    } else {
+                                        console.log('Player not found, using fallback');
+                                        return 'Player #Unknown';
+                                    }
                                 },
                                 label: function(context) {
-                                    const player = allPlayers[context.dataIndex];
-                                    const week = context.dataset.label.split(' ')[1];
-                                    const weekData = player.weeks[parseInt(week)];
+                                    console.log('Label callback context:', context);
+                                    console.log('Dataset label:', context.dataset.label);
                                     
-                                    // Get total snaps for this specific week
-                                    const weekInfo = teamData.weeks.find(w => w.week === parseInt(week));
-                                    const isOffensiveChart = canvasId.includes('wr') || canvasId.includes('te') || canvasId.includes('rb') || canvasId.includes('ol') || canvasId.includes('qb');
-                                    const totalSnaps = weekInfo ? (isOffensiveChart ? weekInfo.summary.offensiveSnaps : weekInfo.summary.defensiveSnaps) : 0;
-                                    
-                                    const percentage = totalSnaps > 0 ? ((context.parsed.y / totalSnaps) * 100).toFixed(1) : 0;
-                                    const started = weekData && weekData.started ? ' *' : '';
-                                    return `Week ${week}: ${context.parsed.y} snaps (${percentage}%) • ${player.position}${started}`;
+                                    if (allPlayers && allPlayers[context.dataIndex]) {
+                                        const player = allPlayers[context.dataIndex];
+                                        const week = context.dataset.label.split(' ')[1];
+                                        const weekData = player.weeks[parseInt(week)];
+                                        
+                                        // Get total snaps for this specific week
+                                        const weekInfo = teamData.weeks.find(w => w.week === parseInt(week));
+                                        const isOffensiveChart = canvasId.includes('wr') || canvasId.includes('te') || canvasId.includes('rb') || canvasId.includes('ol') || canvasId.includes('qb');
+                                        const totalSnaps = weekInfo ? (isOffensiveChart ? weekInfo.summary.offensiveSnaps : weekInfo.summary.defensiveSnaps) : 0;
+                                        
+                                        const percentage = totalSnaps > 0 ? ((context.parsed.y / totalSnaps) * 100).toFixed(1) : 0;
+                                        const started = weekData && weekData.started ? ' *' : '';
+                                        return `Week ${week}: ${context.parsed.y} snaps (${percentage}%) • ${player.position}${started}`;
+                                    } else {
+                                        console.log('Player not found in label callback');
+                                        return 'Data not available';
+                                    }
                                 }
                             }
                         }
