@@ -1006,7 +1006,14 @@
             tableBody.innerHTML = '';
             
             // Get available weeks from team data
-            const availableWeeks = teamData.weeks.map(w => w.week).sort((a, b) => a - b);
+            const availableWeeks = teamData.weeks
+                .filter(week => {
+                    // Check if any position group has players
+                    return Object.values(week.offense || {}).some(group => group.length > 0) ||
+                           Object.values(week.defense || {}).some(group => group.length > 0);
+                })
+                .map(w => w.week)
+                .sort((a, b) => a - b);
             
             // Update table headers dynamically
             const thead = table.querySelector('thead tr');
@@ -1113,7 +1120,14 @@
             tableBody.innerHTML = '';
             
             // Get available weeks from team data
-            const availableWeeks = teamData.weeks.map(w => w.week).sort((a, b) => a - b);
+            const availableWeeks = teamData.weeks
+                .filter(week => {
+                    // Check if any position group has players
+                    return Object.values(week.offense || {}).some(group => group.length > 0) ||
+                           Object.values(week.defense || {}).some(group => group.length > 0);
+                })
+                .map(w => w.week)
+                .sort((a, b) => a - b);
             
             // Update table headers dynamically
             const thead = table.querySelector('thead tr');

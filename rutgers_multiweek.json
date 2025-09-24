@@ -182,6 +182,15 @@
       "defense": {
         "defensive_line": [
           {
+            "name": "Eric O'Neill",
+            "jersey": "D99",
+            "position": "DRE",
+            "snaps": 38,
+            "started": true,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
             "name": "Zaire Angoy",
             "jersey": "D55",
             "position": "DLT",
@@ -222,6 +231,15 @@
             "jersey": "D97",
             "position": "DLT",
             "snaps": 22,
+            "started": false,
+            "week": 1,
+            "opponent": "Ohio"
+          },
+          {
+            "name": "Bradley Weaver",
+            "jersey": "D94",
+            "position": "DLE",
+            "snaps": 31,
             "started": false,
             "week": 1,
             "opponent": "Ohio"
@@ -1158,6 +1176,33 @@
             "jersey": "D97",
             "position": "DLT",
             "snaps": 17,
+            "started": false,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Djibril Abdou Rahman",
+            "jersey": "D91",
+            "position": "DLE",
+            "snaps": 8,
+            "started": false,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Eric O'Neill",
+            "jersey": "D99",
+            "position": "DLE",
+            "snaps": 28,
+            "started": true,
+            "week": 2,
+            "opponent": "Miami OH"
+          },
+          {
+            "name": "Farell Gnago",
+            "jersey": "D90",
+            "position": "DRE",
+            "snaps": 4,
             "started": false,
             "week": 2,
             "opponent": "Miami OH"
@@ -2347,6 +2392,24 @@
       "defense": {
         "defensive_line": [
           {
+            "name": "Eric O'Neill",
+            "jersey": "D99",
+            "position": "DLE",
+            "snaps": 27,
+            "started": true,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Bradley Weaver",
+            "jersey": "D94",
+            "position": "DLE",
+            "snaps": 20,
+            "started": true,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
             "name": "Zaire Angoy",
             "jersey": "D55",
             "position": "DRT",
@@ -2360,6 +2423,15 @@
             "jersey": "D90",
             "position": "DLT",
             "snaps": 8,
+            "started": false,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Wydeek Collier",
+            "jersey": "D43",
+            "position": "DRE",
+            "snaps": 2,
             "started": false,
             "week": 3,
             "opponent": "Norfolk State"
@@ -2405,6 +2477,15 @@
             "jersey": "D88",
             "position": "NT",
             "snaps": 3,
+            "started": false,
+            "week": 3,
+            "opponent": "Norfolk State"
+          },
+          {
+            "name": "Djibril Abdou Rahman",
+            "jersey": "D91",
+            "position": "DRE",
+            "snaps": 13,
             "started": false,
             "week": 3,
             "opponent": "Norfolk State"
@@ -3729,10 +3810,37 @@
       "defense": {
         "defensive_line": [
           {
+            "name": "Eric O'Neill",
+            "jersey": "D99",
+            "position": "DLE",
+            "snaps": 34,
+            "started": true,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
             "name": "Henry Hughes Jr.",
             "jersey": "D95",
             "position": "DRT",
             "snaps": 1,
+            "started": false,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Wydeek Collier",
+            "jersey": "D43",
+            "position": "DRE",
+            "snaps": 1,
+            "started": false,
+            "week": 4,
+            "opponent": "Iowa"
+          },
+          {
+            "name": "Bradley Weaver",
+            "jersey": "D94",
+            "position": "DLE",
+            "snaps": 29,
             "started": false,
             "week": 4,
             "opponent": "Iowa"

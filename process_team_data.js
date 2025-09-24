@@ -26,7 +26,7 @@ function getPositionGroup(position) {
   if (pos.includes('CB') || pos.includes('SS') || pos.includes('FS') || pos === 'S') return 'defensive_backs';
   
   // Defensive Line
-  if (pos.includes('DRT') || pos.includes('DLT') || pos.includes('DE') || pos.includes('NT')) return 'defensive_line';
+  if (pos.includes('DRT') || pos.includes('DLT') || pos.includes('DLE') || pos.includes('DRE') || pos.includes('DE') || pos.includes('NT')) return 'defensive_line';
   
   // Offensive positions
   if (pos.includes('WR') || pos === 'LWR' || pos === 'RWR' || pos === 'SLWR' || pos === 'SRWR') return 'wide_receivers';

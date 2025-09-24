@@ -209,11 +209,29 @@
       "defense": {
         "defensive_line": [
           {
+            "name": "Anthony Smith",
+            "jersey": "D00",
+            "position": "DLE",
+            "snaps": 35,
+            "started": true,
+            "week": 1,
+            "opponent": "Buffalo"
+          },
+          {
             "name": "Jalen Logan-Redding",
             "jersey": "D97",
             "position": "DRT",
             "snaps": 31,
             "started": true,
+            "week": 1,
+            "opponent": "Buffalo"
+          },
+          {
+            "name": "Lucas Finnessy",
+            "jersey": "D46",
+            "position": "DLE",
+            "snaps": 9,
+            "started": false,
             "week": 1,
             "opponent": "Buffalo"
           },
@@ -1231,6 +1249,33 @@
             "opponent": "NWSTATE"
           },
           {
+            "name": "Adam Kissayi",
+            "jersey": "D98",
+            "position": "DRE",
+            "snaps": 15,
+            "started": false,
+            "week": 2,
+            "opponent": "NWSTATE"
+          },
+          {
+            "name": "Anthony Smith",
+            "jersey": "D00",
+            "position": "DRE",
+            "snaps": 10,
+            "started": true,
+            "week": 2,
+            "opponent": "NWSTATE"
+          },
+          {
+            "name": "Adam Kissayi",
+            "jersey": "D98",
+            "position": "DRE",
+            "snaps": 15,
+            "started": false,
+            "week": 2,
+            "opponent": "NWSTATE"
+          },
+          {
             "name": "Riley Sunram",
             "jersey": "D93",
             "position": "NT",
@@ -1263,6 +1308,15 @@
             "position": "DLT",
             "snaps": 9,
             "started": true,
+            "week": 2,
+            "opponent": "NWSTATE"
+          },
+          {
+            "name": "Lucas Finnessy",
+            "jersey": "D46",
+            "position": "DRE",
+            "snaps": 12,
+            "started": false,
             "week": 2,
             "opponent": "NWSTATE"
           }
@@ -2241,6 +2295,24 @@
             "jersey": "D16",
             "position": "DLT",
             "snaps": 42,
+            "started": false,
+            "week": 3,
+            "opponent": "Cal"
+          },
+          {
+            "name": "Anthony Smith",
+            "jersey": "D00",
+            "position": "DRE",
+            "snaps": 62,
+            "started": true,
+            "week": 3,
+            "opponent": "Cal"
+          },
+          {
+            "name": "Lucas Finnessy",
+            "jersey": "D46",
+            "position": "DRE",
+            "snaps": 6,
             "started": false,
             "week": 3,
             "opponent": "Cal"
