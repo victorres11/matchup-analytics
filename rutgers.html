@@ -1248,24 +1248,37 @@
                             displayColors: true,
                             callbacks: {
                                 title: function(context) {
-                                    const player = filteredPlayers[context[0].dataIndex];
-                                    let title = `${player.name} #${player.jersey}`;
+                                    console.log('Special teams title callback - context:', context);
+                                    console.log('Special teams title callback - context[0]:', context[0]);
                                     
-                                    // Add returner badges to title
-                                    if (player.returnerInfo) {
-                                        const badges = [];
-                                        if (player.returnerInfo.isPRReturner) {
-                                            badges.push('PR');
-                                        }
-                                        if (player.returnerInfo.isKRReturner) {
-                                            badges.push('KR');
-                                        }
-                                        if (badges.length > 0) {
-                                            title += ` [${badges.join(', ')}]`;
-                                        }
+                                    // Safe access to avoid errors
+                                    if (!context || !context[0]) {
+                                        console.log('Special teams title callback - context or context[0] is undefined');
+                                        return 'Player #Unknown';
                                     }
                                     
-                                    return title;
+                                    const player = filteredPlayers[context[0].dataIndex];
+                                    console.log('Special teams title callback - player found:', player);
+                                    
+                                    if (player) {
+                                        let title = `${player.name} #${player.jersey}`;
+                                        
+                                        // Add returner badges to title
+                                        if (player.returnerInfo) {
+                                            const badges = [];
+                                            if (player.returnerInfo.isPRReturner) {
+                                                badges.push('PR');
+                                            }
+                                            if (player.returnerInfo.isKRReturner) {
+                                                badges.push('KR');
+                                            }
+                                            if (badges.length > 0) {
+                                                title += ` [${badges.join(', ')}]`;
+                                            }
+                                        }
+                                        return title;
+                                    }
+                                    return 'Player #Unknown';
                                 },
                                 label: function(context) {
                                     const player = filteredPlayers[context.dataIndex];
