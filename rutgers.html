@@ -405,6 +405,107 @@
             background: rgba(204, 0, 0, 0.1);
         }
 
+        /* Aggregate Table Styles */
+        .aggregate-table-container {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .aggregate-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .aggregate-table th {
+            background: linear-gradient(135deg, #CC0000 0%, #8B0000 100%);
+            color: white;
+            padding: 15px 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .aggregate-table td {
+            padding: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: #333;
+            font-size: 0.9rem;
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .aggregate-table tr:hover {
+            background: rgba(204, 0, 0, 0.1);
+        }
+
+        .aggregate-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Position Group Styling */
+        .position-group-wr {
+            background: rgba(255, 107, 107, 0.1) !important;
+        }
+
+        .position-group-te {
+            background: rgba(78, 205, 196, 0.1) !important;
+        }
+
+        .position-group-rb {
+            background: rgba(69, 183, 209, 0.1) !important;
+        }
+
+        .position-group-ol {
+            background: rgba(150, 206, 180, 0.1) !important;
+        }
+
+        .position-group-dl {
+            background: rgba(255, 234, 167, 0.1) !important;
+        }
+
+        .position-group-lb {
+            background: rgba(221, 160, 221, 0.1) !important;
+        }
+
+        .position-group-db {
+            background: rgba(255, 182, 193, 0.1) !important;
+        }
+
+        .aggregate-table .jersey {
+            font-weight: 700;
+            color: #CC0000;
+            text-align: center;
+            width: 60px;
+        }
+
+        .aggregate-table .player-name {
+            font-weight: 600;
+            color: #CC0000;
+        }
+
+        .aggregate-table .position {
+            font-weight: 500;
+            color: #666;
+            text-align: center;
+        }
+
+        .aggregate-table .snap-count {
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .aggregate-table .total {
+            text-align: center;
+            font-weight: 700;
+            color: #CC0000;
+            background: rgba(204, 0, 0, 0.1);
+        }
+
         .summary-table td {
             padding: 12px;
             border-bottom: 1px solid #e5e7eb;
@@ -633,77 +734,21 @@
         <!-- Offense Tab -->
         <div class="tab-content active" id="offense">
             <div class="position-group">
-                <h3 class="position-title">Wide Receivers</h3>
-                
-                <!-- Chart/Data Tabs -->
-                <div class="view-tabs">
-                    <button class="view-tab active" data-view="chart" data-section="wr">Chart View</button>
-                    <button class="view-tab" data-view="table" data-section="wr">Data Table</button>
-                </div>
-                
-                <div class="chart-container">
-                    <div class="chart-wrapper" id="wr-chart-container">
-                        <canvas id="wr-chart" class="chart-canvas"></canvas>
-                    </div>
-                    <div class="data-table-wrapper" id="wr-table-container" style="display: none;">
-                        <div class="data-table-container">
-                            <table class="data-table" id="wr-data-table">
-                                <thead>
-                                    <tr>
-                                        <th>Player</th>
-                                        <th>Jersey</th>
-                                        <th>Position</th>
-                                        <th>Week 1</th>
-                                        <th>Week 2</th>
-                                        <th>Week 3</th>
-                                        <th>Week 4</th>
-                                        <th>Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="wr-table-body">
-                                    <!-- Data will be populated by JavaScript -->
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="player-details" id="wr-details"></div>
-                </div>
+        <h3 class="position-title">Wide Receivers</h3>
+        <div class="chart-container">
+            <div class="chart-wrapper">
+                <canvas id="wr-chart" class="chart-canvas"></canvas>
+            </div>
+            <div class="player-details" id="wr-details"></div>
+        </div>
             </div>
 
             <div class="position-group-row">
                 <div class="position-group half-width">
                     <h3 class="position-title">Tight Ends</h3>
-                    
-                    <!-- Chart/Data Tabs -->
-                    <div class="view-tabs">
-                        <button class="view-tab active" data-view="chart" data-section="te">Chart View</button>
-                        <button class="view-tab" data-view="table" data-section="te">Data Table</button>
-                    </div>
-                    
                     <div class="chart-container">
-                        <div class="chart-wrapper" id="te-chart-container">
+                        <div class="chart-wrapper">
                             <canvas id="te-chart" class="chart-canvas"></canvas>
-                        </div>
-                        <div class="data-table-wrapper" id="te-table-container" style="display: none;">
-                            <div class="data-table-container">
-                                <table class="data-table" id="te-data-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Player</th>
-                                            <th>Jersey</th>
-                                            <th>Position</th>
-                                            <th>Week 1</th>
-                                            <th>Week 2</th>
-                                            <th>Week 3</th>
-                                            <th>Week 4</th>
-                                            <th>Total</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="te-table-body">
-                                        <!-- Data will be populated by JavaScript -->
-                                    </tbody>
-                                </table>
-                            </div>
                         </div>
                         <div class="player-details" id="te-details"></div>
                     </div>
@@ -711,37 +756,9 @@
 
                 <div class="position-group half-width">
                     <h3 class="position-title">Running Backs</h3>
-                    
-                    <!-- Chart/Data Tabs -->
-                    <div class="view-tabs">
-                        <button class="view-tab active" data-view="chart" data-section="rb">Chart View</button>
-                        <button class="view-tab" data-view="table" data-section="rb">Data Table</button>
-                    </div>
-                    
                     <div class="chart-container">
-                        <div class="chart-wrapper" id="rb-chart-container">
+                        <div class="chart-wrapper">
                             <canvas id="rb-chart" class="chart-canvas"></canvas>
-                        </div>
-                        <div class="data-table-wrapper" id="rb-table-container" style="display: none;">
-                            <div class="data-table-container">
-                                <table class="data-table" id="rb-data-table">
-                                    <thead>
-                                        <tr>
-                                            <th>Player</th>
-                                            <th>Jersey</th>
-                                            <th>Position</th>
-                                            <th>Week 1</th>
-                                            <th>Week 2</th>
-                                            <th>Week 3</th>
-                                            <th>Week 4</th>
-                                            <th>Total</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="rb-table-body">
-                                        <!-- Data will be populated by JavaScript -->
-                                    </tbody>
-                                </table>
-                            </div>
                         </div>
                         <div class="player-details" id="rb-details"></div>
                     </div>
@@ -750,39 +767,35 @@
 
             <div class="position-group">
                 <h3 class="position-title">Offensive Line</h3>
-                
-                <!-- Chart/Data Tabs -->
-                <div class="view-tabs">
-                    <button class="view-tab active" data-view="chart" data-section="ol">Chart View</button>
-                    <button class="view-tab" data-view="table" data-section="ol">Data Table</button>
-                </div>
-                
                 <div class="chart-container">
-                    <div class="chart-wrapper" id="ol-chart-container">
+                    <div class="chart-wrapper">
                         <canvas id="ol-chart" class="chart-canvas"></canvas>
                     </div>
-                    <div class="data-table-wrapper" id="ol-table-container" style="display: none;">
-                        <div class="data-table-container">
-                            <table class="data-table" id="ol-data-table">
-                                <thead>
-                                    <tr>
-                                        <th>Player</th>
-                                        <th>Jersey</th>
-                                        <th>Position</th>
-                                        <th>Week 1</th>
-                                        <th>Week 2</th>
-                                        <th>Week 3</th>
-                                        <th>Week 4</th>
-                                        <th>Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="ol-table-body">
-                                    <!-- Data will be populated by JavaScript -->
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
                     <div class="player-details" id="ol-details"></div>
+                </div>
+            </div>
+            
+            <!-- Offense Aggregate Data Table -->
+            <div class="position-group">
+                <h3 class="position-title">Offense Snap Counts - All Positions</h3>
+                <div class="aggregate-table-container">
+                    <table class="aggregate-table" id="offense-aggregate-table">
+                        <thead>
+                            <tr>
+                                <th>Jersey</th>
+                                <th>Player</th>
+                                <th>Position</th>
+                                <th>Week 1</th>
+                                <th>Week 2</th>
+                                <th>Week 3</th>
+                                <th>Week 4</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="offense-aggregate-body">
+                            <!-- Data will be populated by JavaScript -->
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -791,37 +804,9 @@
         <div class="tab-content" id="defense">
             <div class="position-group">
                 <h3 class="position-title">Defensive Line</h3>
-                
-                <!-- Chart/Data Tabs -->
-                <div class="view-tabs">
-                    <button class="view-tab active" data-view="chart" data-section="dl">Chart View</button>
-                    <button class="view-tab" data-view="table" data-section="dl">Data Table</button>
-                </div>
-                
                 <div class="chart-container">
-                    <div class="chart-wrapper" id="dl-chart-container">
+                    <div class="chart-wrapper">
                         <canvas id="dl-chart" class="chart-canvas"></canvas>
-                    </div>
-                    <div class="data-table-wrapper" id="dl-table-container" style="display: none;">
-                        <div class="data-table-container">
-                            <table class="data-table" id="dl-data-table">
-                                <thead>
-                                    <tr>
-                                        <th>Player</th>
-                                        <th>Jersey</th>
-                                        <th>Position</th>
-                                        <th>Week 1</th>
-                                        <th>Week 2</th>
-                                        <th>Week 3</th>
-                                        <th>Week 4</th>
-                                        <th>Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="dl-table-body">
-                                    <!-- Data will be populated by JavaScript -->
-                                </tbody>
-                            </table>
-                        </div>
                     </div>
                     <div class="player-details" id="dl-details"></div>
                 </div>
@@ -829,37 +814,9 @@
 
             <div class="position-group">
                 <h3 class="position-title">Linebackers</h3>
-                
-                <!-- Chart/Data Tabs -->
-                <div class="view-tabs">
-                    <button class="view-tab active" data-view="chart" data-section="lb">Chart View</button>
-                    <button class="view-tab" data-view="table" data-section="lb">Data Table</button>
-                </div>
-                
                 <div class="chart-container">
-                    <div class="chart-wrapper" id="lb-chart-container">
+                    <div class="chart-wrapper">
                         <canvas id="lb-chart" class="chart-canvas"></canvas>
-                    </div>
-                    <div class="data-table-wrapper" id="lb-table-container" style="display: none;">
-                        <div class="data-table-container">
-                            <table class="data-table" id="lb-data-table">
-                                <thead>
-                                    <tr>
-                                        <th>Player</th>
-                                        <th>Jersey</th>
-                                        <th>Position</th>
-                                        <th>Week 1</th>
-                                        <th>Week 2</th>
-                                        <th>Week 3</th>
-                                        <th>Week 4</th>
-                                        <th>Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="lb-table-body">
-                                    <!-- Data will be populated by JavaScript -->
-                                </tbody>
-                            </table>
-                        </div>
                     </div>
                     <div class="player-details" id="lb-details"></div>
                 </div>
@@ -867,39 +824,35 @@
 
             <div class="position-group">
                 <h3 class="position-title">Defensive Backs</h3>
-                
-                <!-- Chart/Data Tabs -->
-                <div class="view-tabs">
-                    <button class="view-tab active" data-view="chart" data-section="db">Chart View</button>
-                    <button class="view-tab" data-view="table" data-section="db">Data Table</button>
-                </div>
-                
                 <div class="chart-container">
-                    <div class="chart-wrapper" id="db-chart-container">
+                    <div class="chart-wrapper">
                         <canvas id="db-chart" class="chart-canvas"></canvas>
                     </div>
-                    <div class="data-table-wrapper" id="db-table-container" style="display: none;">
-                        <div class="data-table-container">
-                            <table class="data-table" id="db-data-table">
-                                <thead>
-                                    <tr>
-                                        <th>Player</th>
-                                        <th>Jersey</th>
-                                        <th>Position</th>
-                                        <th>Week 1</th>
-                                        <th>Week 2</th>
-                                        <th>Week 3</th>
-                                        <th>Week 4</th>
-                                        <th>Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="db-table-body">
-                                    <!-- Data will be populated by JavaScript -->
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
                     <div class="player-details" id="db-details"></div>
+                </div>
+            </div>
+            
+            <!-- Defense Aggregate Data Table -->
+            <div class="position-group">
+                <h3 class="position-title">Defense Snap Counts - All Positions</h3>
+                <div class="aggregate-table-container">
+                    <table class="aggregate-table" id="defense-aggregate-table">
+                        <thead>
+                            <tr>
+                                <th>Jersey</th>
+                                <th>Player</th>
+                                <th>Position</th>
+                                <th>Week 1</th>
+                                <th>Week 2</th>
+                                <th>Week 3</th>
+                                <th>Week 4</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="defense-aggregate-body">
+                            <!-- Data will be populated by JavaScript -->
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -1082,6 +1035,7 @@
                 populateWeeklySummary();
                 initializeCharts();
                 setupEventListeners();
+                populateAggregateTables(); // Populate aggregate tables
             } catch (error) {
                 console.error('Error loading team data:', error);
             }
@@ -1685,32 +1639,190 @@
                 });
             });
 
-            // View tab switching (Chart/Data Table)
-            document.querySelectorAll('.view-tab').forEach(tab => {
-                tab.addEventListener('click', function() {
-                    const view = this.getAttribute('data-view');
-                    const section = this.getAttribute('data-section');
-                    
-                    // Update tab states
-                    document.querySelectorAll(`[data-section="${section}"]`).forEach(t => t.classList.remove('active'));
-                    this.classList.add('active');
-                    
-                    // Show/hide appropriate content
-                    const chartContainer = document.getElementById(`${section}-chart-container`);
-                    const tableContainer = document.getElementById(`${section}-table-container`);
-                    
-                    if (view === 'chart') {
-                        chartContainer.style.display = 'block';
-                        tableContainer.style.display = 'none';
-                    } else {
-                        chartContainer.style.display = 'none';
-                        tableContainer.style.display = 'block';
-                        
-                        // Populate data table if not already done
-                        populateDataTable(section);
+        // Populate aggregate tables on page load
+        function populateAggregateTables() {
+            if (!teamData) return;
+            
+            populateOffenseAggregateTable();
+            populateDefenseAggregateTable();
+        }
+        
+        function populateOffenseAggregateTable() {
+            const tableBody = document.getElementById('offense-aggregate-body');
+            if (!tableBody) return;
+            
+            tableBody.innerHTML = '';
+            
+            const allPlayers = [];
+            const playerMap = new Map();
+            
+            // Collect all offense players
+            const offenseGroups = ['wide_receivers', 'tight_ends', 'running_backs', 'offensive_line'];
+            
+            teamData.weeks.forEach(week => {
+                offenseGroups.forEach(group => {
+                    if (week.offense && week.offense[group]) {
+                        week.offense[group].forEach(player => {
+                            const key = `${player.name}_${player.jersey}`;
+                            if (!playerMap.has(key)) {
+                                playerMap.set(key, {
+                                    name: player.name,
+                                    jersey: player.jersey,
+                                    position: player.position,
+                                    positionGroup: group,
+                                    weeks: {}
+                                });
+                            }
+                            
+                            const weekData = playerMap.get(key);
+                            weekData.weeks[week.week] = {
+                                snaps: player.snaps,
+                                started: player.started
+                            };
+                        });
                     }
                 });
             });
+            
+            // Convert to array and sort by position group, then by total snaps
+            allPlayers.push(...playerMap.values());
+            allPlayers.sort((a, b) => {
+                // First sort by position group
+                const groupOrder = ['wide_receivers', 'tight_ends', 'running_backs', 'offensive_line'];
+                const aGroupIndex = groupOrder.indexOf(a.positionGroup);
+                const bGroupIndex = groupOrder.indexOf(b.positionGroup);
+                
+                if (aGroupIndex !== bGroupIndex) {
+                    return aGroupIndex - bGroupIndex;
+                }
+                
+                // Then sort by total snaps within group
+                const aTotal = Object.values(a.weeks).reduce((sum, week) => sum + week.snaps, 0);
+                const bTotal = Object.values(b.weeks).reduce((sum, week) => sum + week.snaps, 0);
+                return bTotal - aTotal;
+            });
+            
+            // Populate table rows
+            allPlayers.forEach(player => {
+                const row = document.createElement('tr');
+                
+                const week1Snaps = player.weeks[1]?.snaps || 0;
+                const week2Snaps = player.weeks[2]?.snaps || 0;
+                const week3Snaps = player.weeks[3]?.snaps || 0;
+                const week4Snaps = player.weeks[4]?.snaps || 0;
+                const totalSnaps = week1Snaps + week2Snaps + week3Snaps + week4Snaps;
+                
+                // Add position group class for styling
+                let groupClass = '';
+                if (player.positionGroup === 'wide_receivers') groupClass = 'position-group-wr';
+                else if (player.positionGroup === 'tight_ends') groupClass = 'position-group-te';
+                else if (player.positionGroup === 'running_backs') groupClass = 'position-group-rb';
+                else if (player.positionGroup === 'offensive_line') groupClass = 'position-group-ol';
+                
+                row.className = groupClass;
+                
+                row.innerHTML = `
+                    <td class="jersey">#${player.jersey}</td>
+                    <td class="player-name">${player.name}</td>
+                    <td class="position">${player.position}</td>
+                    <td class="snap-count">${week1Snaps}</td>
+                    <td class="snap-count">${week2Snaps}</td>
+                    <td class="snap-count">${week3Snaps}</td>
+                    <td class="snap-count">${week4Snaps}</td>
+                    <td class="total">${totalSnaps}</td>
+                `;
+                
+                tableBody.appendChild(row);
+            });
+        }
+        
+        function populateDefenseAggregateTable() {
+            const tableBody = document.getElementById('defense-aggregate-body');
+            if (!tableBody) return;
+            
+            tableBody.innerHTML = '';
+            
+            const allPlayers = [];
+            const playerMap = new Map();
+            
+            // Collect all defense players
+            const defenseGroups = ['defensive_line', 'linebackers', 'defensive_backs'];
+            
+            teamData.weeks.forEach(week => {
+                defenseGroups.forEach(group => {
+                    if (week.defense && week.defense[group]) {
+                        week.defense[group].forEach(player => {
+                            const key = `${player.name}_${player.jersey}`;
+                            if (!playerMap.has(key)) {
+                                playerMap.set(key, {
+                                    name: player.name,
+                                    jersey: player.jersey,
+                                    position: player.position,
+                                    positionGroup: group,
+                                    weeks: {}
+                                });
+                            }
+                            
+                            const weekData = playerMap.get(key);
+                            weekData.weeks[week.week] = {
+                                snaps: player.snaps,
+                                started: player.started
+                            };
+                        });
+                    }
+                });
+            });
+            
+            // Convert to array and sort by position group, then by total snaps
+            allPlayers.push(...playerMap.values());
+            allPlayers.sort((a, b) => {
+                // First sort by position group
+                const groupOrder = ['defensive_line', 'linebackers', 'defensive_backs'];
+                const aGroupIndex = groupOrder.indexOf(a.positionGroup);
+                const bGroupIndex = groupOrder.indexOf(b.positionGroup);
+                
+                if (aGroupIndex !== bGroupIndex) {
+                    return aGroupIndex - bGroupIndex;
+                }
+                
+                // Then sort by total snaps within group
+                const aTotal = Object.values(a.weeks).reduce((sum, week) => sum + week.snaps, 0);
+                const bTotal = Object.values(b.weeks).reduce((sum, week) => sum + week.snaps, 0);
+                return bTotal - aTotal;
+            });
+            
+            // Populate table rows
+            allPlayers.forEach(player => {
+                const row = document.createElement('tr');
+                
+                const week1Snaps = player.weeks[1]?.snaps || 0;
+                const week2Snaps = player.weeks[2]?.snaps || 0;
+                const week3Snaps = player.weeks[3]?.snaps || 0;
+                const week4Snaps = player.weeks[4]?.snaps || 0;
+                const totalSnaps = week1Snaps + week2Snaps + week3Snaps + week4Snaps;
+                
+                // Add position group class for styling
+                let groupClass = '';
+                if (player.positionGroup === 'defensive_line') groupClass = 'position-group-dl';
+                else if (player.positionGroup === 'linebackers') groupClass = 'position-group-lb';
+                else if (player.positionGroup === 'defensive_backs') groupClass = 'position-group-db';
+                
+                row.className = groupClass;
+                
+                row.innerHTML = `
+                    <td class="jersey">#${player.jersey}</td>
+                    <td class="player-name">${player.name}</td>
+                    <td class="position">${player.position}</td>
+                    <td class="snap-count">${week1Snaps}</td>
+                    <td class="snap-count">${week2Snaps}</td>
+                    <td class="snap-count">${week3Snaps}</td>
+                    <td class="snap-count">${week4Snaps}</td>
+                    <td class="total">${totalSnaps}</td>
+                `;
+                
+                tableBody.appendChild(row);
+            });
+        }
         }
 
         // Populate data table for a specific section
