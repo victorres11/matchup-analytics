@@ -975,7 +975,19 @@
                                     return 'Player #Unknown';
                                 },
                                 label: function(context) {
+                                    console.log('Label callback - full context:', context);
+                                    console.log('Label callback - context.dataIndex:', context.dataIndex);
+                                    console.log('Label callback - context.dataset:', context.dataset);
+                                    
+                                    // Safe access to avoid errors
+                                    if (!context || !context.dataset) {
+                                        console.log('Label callback - context or dataset is undefined');
+                                        return 'Data not available';
+                                    }
+                                    
                                     const player = context.dataset.players[context.dataIndex];
+                                    console.log('Label callback - player found:', player);
+                                    
                                     if (player) {
                                         const week = context.dataset.label.split(' ')[1];
                                         const weekData = player.weeks[parseInt(week)];
