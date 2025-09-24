@@ -307,6 +307,103 @@
             text-shadow: 1px 1px 0px white, -1px -1px 0px white, 1px -1px 0px white, -1px 1px 0px white;
         }
 
+        /* View Tabs Styles */
+        .view-tabs {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .view-tab {
+            background: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.7);
+            padding: 12px 24px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .view-tab:hover {
+            color: #CC0000;
+            background: rgba(204, 0, 0, 0.1);
+        }
+
+        .view-tab.active {
+            color: #CC0000;
+            border-bottom-color: #CC0000;
+            background: rgba(204, 0, 0, 0.1);
+        }
+
+        /* Data Table Styles */
+        .data-table-wrapper {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 10px;
+        }
+
+        .data-table-container {
+            overflow-x: auto;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .data-table th {
+            background: linear-gradient(135deg, #CC0000 0%, #8B0000 100%);
+            color: white;
+            padding: 15px 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.9rem;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .data-table td {
+            padding: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .data-table tr:hover {
+            background: rgba(204, 0, 0, 0.1);
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .data-table .player-name {
+            font-weight: 600;
+            color: #CC0000;
+        }
+
+        .data-table .jersey {
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .data-table .snap-count {
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .data-table .total {
+            text-align: center;
+            font-weight: 700;
+            color: #CC0000;
+            background: rgba(204, 0, 0, 0.1);
+        }
+
         .summary-table td {
             padding: 12px;
             border-bottom: 1px solid #e5e7eb;
@@ -536,9 +633,37 @@
         <div class="tab-content active" id="offense">
             <div class="position-group">
                 <h3 class="position-title">Wide Receivers</h3>
+                
+                <!-- Chart/Data Tabs -->
+                <div class="view-tabs">
+                    <button class="view-tab active" data-view="chart" data-section="wr">Chart View</button>
+                    <button class="view-tab" data-view="table" data-section="wr">Data Table</button>
+                </div>
+                
                 <div class="chart-container">
-                    <div class="chart-wrapper">
+                    <div class="chart-wrapper" id="wr-chart-container">
                         <canvas id="wr-chart" class="chart-canvas"></canvas>
+                    </div>
+                    <div class="data-table-wrapper" id="wr-table-container" style="display: none;">
+                        <div class="data-table-container">
+                            <table class="data-table" id="wr-data-table">
+                                <thead>
+                                    <tr>
+                                        <th>Player</th>
+                                        <th>Jersey</th>
+                                        <th>Position</th>
+                                        <th>Week 1</th>
+                                        <th>Week 2</th>
+                                        <th>Week 3</th>
+                                        <th>Week 4</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="wr-table-body">
+                                    <!-- Data will be populated by JavaScript -->
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <div class="player-details" id="wr-details"></div>
                 </div>
@@ -1362,6 +1487,105 @@
                     // Refresh the chart
                     createSpecialTeamsChart('st-chart', 'special_teams', 'special_teams');
                 });
+            });
+
+            // View tab switching (Chart/Data Table)
+            document.querySelectorAll('.view-tab').forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const view = this.getAttribute('data-view');
+                    const section = this.getAttribute('data-section');
+                    
+                    // Update tab states
+                    document.querySelectorAll(`[data-section="${section}"]`).forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    
+                    // Show/hide appropriate content
+                    const chartContainer = document.getElementById(`${section}-chart-container`);
+                    const tableContainer = document.getElementById(`${section}-table-container`);
+                    
+                    if (view === 'chart') {
+                        chartContainer.style.display = 'block';
+                        tableContainer.style.display = 'none';
+                    } else {
+                        chartContainer.style.display = 'none';
+                        tableContainer.style.display = 'block';
+                        
+                        // Populate data table if not already done
+                        populateDataTable(section);
+                    }
+                });
+            });
+        }
+
+        // Populate data table for a specific section
+        function populateDataTable(section) {
+            if (!teamData) return;
+            
+            const tableBody = document.getElementById(`${section}-table-body`);
+            if (!tableBody) return;
+            
+            // Clear existing content
+            tableBody.innerHTML = '';
+            
+            // Get players for this section
+            const side = section.includes('wr') || section.includes('te') || section.includes('rb') || section.includes('ol') || section.includes('qb') ? 'offense' : 'defense';
+            const positionGroup = section.replace(/^(off|def)-/, '');
+            
+            const allPlayers = [];
+            const playerMap = new Map();
+            
+            teamData.weeks.forEach(week => {
+                if (week[side] && week[side][positionGroup]) {
+                    week[side][positionGroup].forEach(player => {
+                        const key = `${player.name}_${player.jersey}`;
+                        if (!playerMap.has(key)) {
+                            playerMap.set(key, {
+                                name: player.name,
+                                jersey: player.jersey,
+                                position: player.position,
+                                weeks: {}
+                            });
+                        }
+                        
+                        const weekData = playerMap.get(key);
+                        weekData.weeks[week.week] = {
+                            snaps: player.snaps,
+                            started: player.started
+                        };
+                    });
+                }
+            });
+            
+            // Convert to array and sort by total snaps
+            allPlayers.push(...playerMap.values());
+            allPlayers.sort((a, b) => {
+                const aTotal = Object.values(a.weeks).reduce((sum, week) => sum + week.snaps, 0);
+                const bTotal = Object.values(b.weeks).reduce((sum, week) => sum + week.snaps, 0);
+                return bTotal - aTotal;
+            });
+            
+            // Populate table rows
+            allPlayers.forEach(player => {
+                const row = document.createElement('tr');
+                
+                const week1Snaps = player.weeks[1]?.snaps || 0;
+                const week2Snaps = player.weeks[2]?.snaps || 0;
+                const week3Snaps = player.weeks[3]?.snaps || 0;
+                const week4Snaps = player.weeks[4]?.snaps || 0;
+                const totalSnaps = week1Snaps + week2Snaps + week3Snaps + week4Snaps;
+                
+                row.innerHTML = `
+                    <td class="player-name">${player.name}</td>
+                    <td class="jersey">#${player.jersey}</td>
+                    <td>${player.position}</td>
+                    <td class="snap-count">${week1Snaps}</td>
+                    <td class="snap-count">${week2Snaps}</td>
+                    <td class="snap-count">${week3Snaps}</td>
+                    <td class="snap-count">${week4Snaps}</td>
+                    <td class="total">${totalSnaps}</td>
+                `;
+                
+                tableBody.appendChild(row);
             });
         }
 
