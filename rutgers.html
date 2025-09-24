@@ -952,50 +952,29 @@
                             displayColors: true,
                             callbacks: {
                                 title: function(context) {
-                                    console.log('Title callback - full context:', context);
-                                    console.log('Title callback - context[0]:', context[0]);
-                                    
                                     // Title callback receives an array, need to access first item
                                     if (!context || !context[0]) {
-                                        console.log('Title callback - context or context[0] is undefined');
                                         return 'Player #Unknown';
                                     }
                                     
                                     const firstContext = context[0];
-                                    console.log('Title callback - firstContext.dataIndex:', firstContext.dataIndex);
-                                    console.log('Title callback - firstContext.dataset:', firstContext.dataset);
-                                    console.log('Title callback - firstContext.dataset.players:', firstContext.dataset?.players);
-                                    console.log('Title callback - firstContext.dataset.players length:', firstContext.dataset?.players?.length);
                                     
                                     // Access player data from the first context item
-                                    let player = null;
                                     if (firstContext.dataset && firstContext.dataset.players) {
-                                        player = firstContext.dataset.players[firstContext.dataIndex];
-                                        console.log('Title callback - player found:', player);
-                                        console.log('Title callback - player name:', player?.name);
-                                        console.log('Title callback - player jersey:', player?.jersey);
-                                    } else {
-                                        console.log('Title callback - dataset or players array not found');
-                                    }
-                                    
-                                    if (player) {
-                                        return `${player.name} #${player.jersey}`;
+                                        const player = firstContext.dataset.players[firstContext.dataIndex];
+                                        if (player) {
+                                            return `${player.name} #${player.jersey}`;
+                                        }
                                     }
                                     return 'Player #Unknown';
                                 },
                                 label: function(context) {
-                                    console.log('Label callback - full context:', context);
-                                    console.log('Label callback - context.dataIndex:', context.dataIndex);
-                                    console.log('Label callback - context.dataset:', context.dataset);
-                                    
                                     // Safe access to avoid errors
                                     if (!context || !context.dataset) {
-                                        console.log('Label callback - context or dataset is undefined');
                                         return 'Data not available';
                                     }
                                     
                                     const player = context.dataset.players[context.dataIndex];
-                                    console.log('Label callback - player found:', player);
                                     
                                     if (player) {
                                         const week = context.dataset.label.split(' ')[1];
@@ -1257,17 +1236,12 @@
                             displayColors: true,
                             callbacks: {
                                 title: function(context) {
-                                    console.log('Special teams title callback - context:', context);
-                                    console.log('Special teams title callback - context[0]:', context[0]);
-                                    
                                     // Safe access to avoid errors
                                     if (!context || !context[0]) {
-                                        console.log('Special teams title callback - context or context[0] is undefined');
                                         return 'Player #Unknown';
                                     }
                                     
                                     const player = filteredPlayers[context[0].dataIndex];
-                                    console.log('Special teams title callback - player found:', player);
                                     
                                     if (player) {
                                         let title = `${player.name} #${player.jersey}`;

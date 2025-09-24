@@ -944,22 +944,44 @@
                             displayColors: true,
                             callbacks: {
                                 title: function(context) {
-                                    const player = allPlayers[context.dataIndex];
-                                    return `${player.name} #${player.jersey}`;
+                                    // Title callback receives an array, need to access first item
+                                    if (!context || !context[0]) {
+                                        return 'Player #Unknown';
+                                    }
+                                    
+                                    const firstContext = context[0];
+                                    
+                                    // Access player data from the first context item
+                                    if (firstContext.dataset && firstContext.dataset.players) {
+                                        const player = firstContext.dataset.players[firstContext.dataIndex];
+                                        if (player) {
+                                            return `${player.name} #${player.jersey}`;
+                                        }
+                                    }
+                                    return 'Player #Unknown';
                                 },
                                 label: function(context) {
-                                    const player = allPlayers[context.dataIndex];
-                                    const week = context.dataset.label.split(' ')[1];
-                                    const weekData = player.weeks[parseInt(week)];
+                                    // Safe access to avoid errors
+                                    if (!context || !context.dataset) {
+                                        return 'Data not available';
+                                    }
                                     
-                                    // Get total snaps for this specific week
-                                    const weekInfo = teamData.weeks.find(w => w.week === parseInt(week));
-                                    const isOffensiveChart = canvasId.includes('wr') || canvasId.includes('te') || canvasId.includes('rb') || canvasId.includes('ol') || canvasId.includes('qb');
-                                    const totalSnaps = weekInfo ? (isOffensiveChart ? weekInfo.summary.offensiveSnaps : weekInfo.summary.defensiveSnaps) : 0;
+                                    const player = context.dataset.players[context.dataIndex];
                                     
-                                    const percentage = totalSnaps > 0 ? ((context.parsed.y / totalSnaps) * 100).toFixed(1) : 0;
-                                    const started = weekData && weekData.started ? ' *' : '';
-                                    return `Week ${week}: ${context.parsed.y} snaps (${percentage}%) • ${player.position}${started}`;
+                                    if (player) {
+                                        const week = context.dataset.label.split(' ')[1];
+                                        const weekData = player.weeks[parseInt(week)];
+                                        
+                                        // Get total snaps for this specific week
+                                        const weekInfo = teamData.weeks.find(w => w.week === parseInt(week));
+                                        const isOffensiveChart = canvasId.includes('wr') || canvasId.includes('te') || canvasId.includes('rb') || canvasId.includes('ol') || canvasId.includes('qb');
+                                        const totalSnaps = weekInfo ? (isOffensiveChart ? weekInfo.summary.offensiveSnaps : weekInfo.summary.defensiveSnaps) : 0;
+                                        
+                                        const percentage = totalSnaps > 0 ? ((context.parsed.y / totalSnaps) * 100).toFixed(1) : 0;
+                                        const started = weekData && weekData.started ? ' *' : '';
+                                        return `Week ${week}: ${context.parsed.y} snaps (${percentage}%) • ${player.position}${started}`;
+                                    }
+                                    return 'Data not available';
                                 }
                             }
                         }
