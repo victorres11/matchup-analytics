@@ -1519,10 +1519,17 @@
 
         // Populate data table for a specific section
         function populateDataTable(section) {
-            if (!teamData) return;
+            console.log('Populating data table for section:', section);
+            if (!teamData) {
+                console.log('No team data available');
+                return;
+            }
             
             const tableBody = document.getElementById(`${section}-table-body`);
-            if (!tableBody) return;
+            if (!tableBody) {
+                console.log('Table body not found for section:', section);
+                return;
+            }
             
             // Clear existing content
             tableBody.innerHTML = '';
@@ -1531,11 +1538,16 @@
             const side = section.includes('wr') || section.includes('te') || section.includes('rb') || section.includes('ol') || section.includes('qb') ? 'offense' : 'defense';
             const positionGroup = section.replace(/^(off|def)-/, '');
             
+            console.log('Looking for data in:', side, positionGroup);
+            console.log('Available weeks:', teamData.weeks.map(w => w.week));
+            
             const allPlayers = [];
             const playerMap = new Map();
             
             teamData.weeks.forEach(week => {
+                console.log('Processing week:', week.week);
                 if (week[side] && week[side][positionGroup]) {
+                    console.log('Found data for week', week.week, ':', week[side][positionGroup].length, 'players');
                     week[side][positionGroup].forEach(player => {
                         const key = `${player.name}_${player.jersey}`;
                         if (!playerMap.has(key)) {
@@ -1553,8 +1565,12 @@
                             started: player.started
                         };
                     });
+                } else {
+                    console.log('No data found for week', week.week, 'in', side, positionGroup);
                 }
             });
+            
+            console.log('Total players found:', playerMap.size);
             
             // Convert to array and sort by total snaps
             allPlayers.push(...playerMap.values());
@@ -1563,6 +1579,8 @@
                 const bTotal = Object.values(b.weeks).reduce((sum, week) => sum + week.snaps, 0);
                 return bTotal - aTotal;
             });
+            
+            console.log('Players to display:', allPlayers.length);
             
             // Populate table rows
             allPlayers.forEach(player => {
@@ -1587,6 +1605,8 @@
                 
                 tableBody.appendChild(row);
             });
+            
+            console.log('Table populated with', allPlayers.length, 'rows');
         }
 
         // Initialize on page load
