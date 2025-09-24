@@ -952,7 +952,7 @@
                             displayColors: true,
                             callbacks: {
                                 title: function(context) {
-                                    const player = context.dataset.players[context[0].dataIndex];
+                                    const player = context.dataset.players[context.dataIndex];
                                     return `${player.name} #${player.jersey}`;
                                 },
                                 label: function(context) {
