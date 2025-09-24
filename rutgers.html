@@ -1383,7 +1383,7 @@
                     
                     // Check if player has 0 snaps this week but had ≥10 snaps last week
                     if (currentWeek && currentWeek.snaps === 0 && 
-                        previousWeek && previousWeek.snaps >= 10) {
+                        previousWeek && previousWeek.snaps >= 4) {
                         return 5; // Fixed height for missing game indicator
                     }
                     return 0;
