@@ -1,0 +1,4546 @@
+{
+  "team": "washington",
+  "weeks": [
+    {
+      "week": 1,
+      "offense": {
+        "running_backs": [
+          {
+            "name": "Jonah Coleman",
+            "jersey": "01",
+            "position": "HB",
+            "snaps": 52,
+            "started": true
+          },
+          {
+            "name": "Adam Mohammed",
+            "jersey": "24",
+            "position": "HB",
+            "snaps": 19,
+            "started": false
+          },
+          {
+            "name": "Jordan Washington",
+            "jersey": "04",
+            "position": "HB",
+            "snaps": 6,
+            "started": false
+          }
+        ],
+        "wide_receivers": [
+          {
+            "name": "Dezmen Roebuck",
+            "jersey": "81",
+            "position": "RWR",
+            "snaps": 30,
+            "started": false
+          },
+          {
+            "name": "Omari Evans",
+            "jersey": "05",
+            "position": "RWR",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Denzel Boston",
+            "jersey": "12",
+            "position": "LWR",
+            "snaps": 70,
+            "started": true
+          },
+          {
+            "name": "Rashid Williams",
+            "jersey": "03",
+            "position": "RWR",
+            "snaps": 44,
+            "started": true
+          },
+          {
+            "name": "Justice Williams",
+            "jersey": "16",
+            "position": "LWR",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Chris Lawson",
+            "jersey": "08",
+            "position": "RWR",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Kevin Green Jr.",
+            "jersey": "00",
+            "position": "RWR",
+            "snaps": 5,
+            "started": false
+          }
+        ],
+        "tight_ends": [
+          {
+            "name": "Decker DeGraaf",
+            "jersey": "86",
+            "position": "TE-R",
+            "snaps": 68,
+            "started": false
+          },
+          {
+            "name": "Quentin Moore",
+            "jersey": "88",
+            "position": "TE-R",
+            "snaps": 29,
+            "started": true
+          },
+          {
+            "name": "Kade Eldridge",
+            "jersey": "44",
+            "position": "TE-R",
+            "snaps": 10,
+            "started": true
+          },
+          {
+            "name": "Baron Naone",
+            "jersey": "85",
+            "position": "TE-L",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Drew Azzopardi",
+            "jersey": "74",
+            "position": "RT",
+            "snaps": 76,
+            "started": true
+          },
+          {
+            "name": "John Mills",
+            "jersey": "72",
+            "position": "LG",
+            "snaps": 53,
+            "started": true
+          },
+          {
+            "name": "Carver Willis",
+            "jersey": "50",
+            "position": "LT",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Landen Hatchett",
+            "jersey": "66",
+            "position": "C",
+            "snaps": 76,
+            "started": true
+          },
+          {
+            "name": "Maximus McCree",
+            "jersey": "77",
+            "position": "LT",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Geirean Hatchett",
+            "jersey": "56",
+            "position": "RG",
+            "snaps": 76,
+            "started": true
+          },
+          {
+            "name": "Champ Taulealea",
+            "jersey": "73",
+            "position": "RG",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Zachary Henning",
+            "jersey": "58",
+            "position": "C",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Soane Faasolo",
+            "jersey": "68",
+            "position": "C",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Paki Finau",
+            "jersey": "53",
+            "position": "LG",
+            "snaps": 23,
+            "started": false
+          }
+        ],
+        "quarterbacks": [
+          {
+            "name": "Demond Williams Jr.",
+            "jersey": "02",
+            "position": "QB",
+            "snaps": 76,
+            "started": true
+          },
+          {
+            "name": "Kai Horton",
+            "jersey": "15",
+            "position": "QB",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Raiden Vines-Bright",
+            "jersey": "07",
+            "position": "SLWR",
+            "snaps": 32,
+            "started": false
+          },
+          {
+            "name": "Audric Harris",
+            "jersey": "13",
+            "position": "SRWR",
+            "snaps": 15,
+            "started": false
+          }
+        ]
+      },
+      "defense": {
+        "defensive_line": [
+          {
+            "name": "Bryce Butler",
+            "jersey": "D92",
+            "position": "DRT",
+            "snaps": 21,
+            "started": false
+          },
+          {
+            "name": "Elinneus Davis",
+            "jersey": "D90",
+            "position": "NT",
+            "snaps": 23,
+            "started": true
+          },
+          {
+            "name": "Simote Pepa",
+            "jersey": "D77",
+            "position": "NT",
+            "snaps": 10,
+            "started": false
+          },
+          {
+            "name": "Logan Sagapolu",
+            "jersey": "D97",
+            "position": "RE",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Ta'ita'i Uiagalelei",
+            "jersey": "D11",
+            "position": "RE",
+            "snaps": 40,
+            "started": true
+          },
+          {
+            "name": "Anterio Thompson",
+            "jersey": "D54",
+            "position": "DRT",
+            "snaps": 45,
+            "started": true
+          },
+          {
+            "name": "Armon Parker",
+            "jersey": "D95",
+            "position": "DLT",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Omar Khan",
+            "jersey": "D98",
+            "position": "DRT",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "linebackers": [
+          {
+            "name": "Zach Durfee",
+            "jersey": "D05",
+            "position": "ROLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Jacob Manu",
+            "jersey": "D09",
+            "position": "RLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Deshawn Lynch",
+            "jersey": "D41",
+            "position": "ROLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Xe'ree Alexander",
+            "jersey": "D10",
+            "position": "WLB",
+            "snaps": 13,
+            "started": false
+          },
+          {
+            "name": "Anthony Ward",
+            "jersey": "D57",
+            "position": "MLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Deven Bryant",
+            "jersey": "D17",
+            "position": "WLB",
+            "snaps": 47,
+            "started": true
+          },
+          {
+            "name": "Jacob Lane",
+            "jersey": "D48",
+            "position": "LOLB",
+            "snaps": 45,
+            "started": true
+          },
+          {
+            "name": "Isaiah Ward",
+            "jersey": "D91",
+            "position": "LOLB",
+            "snaps": 24,
+            "started": false
+          },
+          {
+            "name": "Taariq Al-Uqdah",
+            "jersey": "D03",
+            "position": "MLB",
+            "snaps": 59,
+            "started": true
+          },
+          {
+            "name": "Milton Hopkins Jr.",
+            "jersey": "D14",
+            "position": "ROLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Griffin Miller",
+            "jersey": "D49",
+            "position": "LLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Devin Hyde",
+            "jersey": "D52",
+            "position": "ROLB",
+            "snaps": 10,
+            "started": false
+          },
+          {
+            "name": "Hayden Moore",
+            "jersey": "D44",
+            "position": "ROLB",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Alex McLaughlin",
+            "jersey": "D12",
+            "position": "SS",
+            "snaps": 62,
+            "started": true
+          },
+          {
+            "name": "Dylan Robinson",
+            "jersey": "D06",
+            "position": "LCB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Ephesians Prysock",
+            "jersey": "D07",
+            "position": "RCB",
+            "snaps": 52,
+            "started": true
+          },
+          {
+            "name": "Makell Esteen",
+            "jersey": "D24",
+            "position": "FS",
+            "snaps": 62,
+            "started": true
+          },
+          {
+            "name": "Rylon Dillard-Allen",
+            "jersey": "D18",
+            "position": "FS",
+            "snaps": 7,
+            "started": false
+          },
+          {
+            "name": "Leroy Bryant",
+            "jersey": "D00",
+            "position": "LCB",
+            "snaps": 12,
+            "started": false
+          },
+          {
+            "name": "Tacario Davis",
+            "jersey": "D08",
+            "position": "LCB",
+            "snaps": 60,
+            "started": true
+          },
+          {
+            "name": "D'Aryhian Clemons",
+            "jersey": "D28",
+            "position": "SCB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Tristan Warner",
+            "jersey": "D32",
+            "position": "SS",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Rahshawn Clark",
+            "jersey": "D02",
+            "position": "SCB",
+            "snaps": 35,
+            "started": false
+          },
+          {
+            "name": "Vincent Holmes",
+            "jersey": "D27",
+            "position": "SS",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Ramonz Adams Jr.",
+            "jersey": "D26",
+            "position": "RCB",
+            "snaps": 0,
+            "started": false
+          }
+        ]
+      },
+      "special_teams": {
+        "special_teams": [
+          {
+            "name": "Ryan Kean",
+            "jersey": "S33",
+            "position": "LS",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 2,
+            "fgblk": 0,
+            "fgk": 6
+          },
+          {
+            "name": "Anthony Ward",
+            "jersey": "D57",
+            "position": "ST",
+            "kret": 4,
+            "kcov": 7,
+            "pret": 3,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Deven Bryant",
+            "jersey": "D17",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 7,
+            "pret": 4,
+            "pcov": 0,
+            "fgblk": 3,
+            "fgk": 0
+          },
+          {
+            "name": "Vincent Holmes",
+            "jersey": "D27",
+            "position": "ST",
+            "kret": 4,
+            "kcov": 7,
+            "pret": 3,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Paki Finau",
+            "jersey": "53",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 6
+          },
+          {
+            "name": "Devin Hyde",
+            "jersey": "D52",
+            "position": "ST",
+            "kret": 4,
+            "kcov": 0,
+            "pret": 3,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Xe'ree Alexander",
+            "jersey": "D10",
+            "position": "ST",
+            "kret": 4,
+            "kcov": 7,
+            "pret": 3,
+            "pcov": 2,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Zachary Henning",
+            "jersey": "58",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Rylon Dillard-Allen",
+            "jersey": "D18",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 7,
+            "pret": 3,
+            "pcov": 2,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Soane Faasolo",
+            "jersey": "68",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 6
+          },
+          {
+            "name": "Dylan Robinson",
+            "jersey": "D06",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 7,
+            "pret": 0,
+            "pcov": 2,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Rahshawn Clark",
+            "jersey": "D02",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 0
+          },
+          {
+            "name": "Drew Azzopardi",
+            "jersey": "74",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 6
+          },
+          {
+            "name": "Leroy Bryant",
+            "jersey": "D00",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 7,
+            "pret": 3,
+            "pcov": 0,
+            "fgblk": 2,
+            "fgk": 0
+          },
+          {
+            "name": "Alex McLaughlin",
+            "jersey": "D12",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 7,
+            "pret": 1,
+            "pcov": 2,
+            "fgblk": 3,
+            "fgk": 0
+          },
+          {
+            "name": "Maximus McCree",
+            "jersey": "77",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 6
+          },
+          {
+            "name": "Decker DeGraaf",
+            "jersey": "86",
+            "position": "ST",
+            "kret": 4,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 2,
+            "fgblk": 0,
+            "fgk": 6
+          },
+          {
+            "name": "Hayden Moore",
+            "jersey": "D44",
+            "position": "ST",
+            "kret": 4,
+            "kcov": 0,
+            "pret": 3,
+            "pcov": 2,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Quentin Moore",
+            "jersey": "88",
+            "position": "ST",
+            "kret": 4,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 2,
+            "fgblk": 0,
+            "fgk": 6
+          },
+          {
+            "name": "John Mills",
+            "jersey": "72",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 6
+          },
+          {
+            "name": "Luke Dunne",
+            "jersey": "S45",
+            "position": "P",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 2,
+            "fgblk": 0,
+            "fgk": 6
+          },
+          {
+            "name": "Justice Williams",
+            "jersey": "16",
+            "position": "ST",
+            "kret": 4,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Makell Esteen",
+            "jersey": "D24",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 7,
+            "pret": 4,
+            "pcov": 2,
+            "fgblk": 3,
+            "fgk": 0
+          },
+          {
+            "name": "Ephesians Prysock",
+            "jersey": "D07",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 3,
+            "fgk": 0
+          },
+          {
+            "name": "Dezmen Roebuck",
+            "jersey": "81",
+            "position": "ST",
+            "kret": 4,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Ethan Moczulski",
+            "jersey": "S37",
+            "position": "K",
+            "kret": 0,
+            "kcov": 6,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Adam Mohammed",
+            "jersey": "24",
+            "position": "ST",
+            "kret": 4,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Paul Mencke Jr.",
+            "jersey": "D31",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Grady Gross",
+            "jersey": "S95",
+            "position": "K",
+            "kret": 0,
+            "kcov": 1,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 6
+          },
+          {
+            "name": "Denzel Boston",
+            "jersey": "12",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 3,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Isaiah Ward",
+            "jersey": "D91",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 0
+          },
+          {
+            "name": "Ta'ita'i Uiagalelei",
+            "jersey": "D11",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 2,
+            "fgk": 0
+          },
+          {
+            "name": "Taariq Al-Uqdah",
+            "jersey": "D03",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 3,
+            "fgk": 0
+          },
+          {
+            "name": "Jonah Coleman",
+            "jersey": "01",
+            "position": "ST",
+            "kret": 4,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 2,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Jacob Lane",
+            "jersey": "D48",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 3,
+            "fgk": 0
+          },
+          {
+            "name": "Armon Parker",
+            "jersey": "D95",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Zach Durfee",
+            "jersey": "D05",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 2,
+            "fgk": 0
+          },
+          {
+            "name": "Simote Pepa",
+            "jersey": "D77",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Bryce Butler",
+            "jersey": "D92",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 0
+          },
+          {
+            "name": "Anterio Thompson",
+            "jersey": "D54",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 2,
+            "fgk": 0
+          }
+        ]
+      }
+    },
+    {
+      "week": 2,
+      "offense": {
+        "running_backs": [
+          {
+            "name": "Jonah Coleman",
+            "jersey": "01",
+            "position": "HB",
+            "snaps": 53,
+            "started": true
+          },
+          {
+            "name": "Adam Mohammed",
+            "jersey": "24",
+            "position": "HB",
+            "snaps": 36,
+            "started": false
+          },
+          {
+            "name": "Jordan Washington",
+            "jersey": "04",
+            "position": "HB",
+            "snaps": 9,
+            "started": false
+          }
+        ],
+        "wide_receivers": [
+          {
+            "name": "Dezmen Roebuck",
+            "jersey": "81",
+            "position": "RWR",
+            "snaps": 60,
+            "started": false
+          },
+          {
+            "name": "Omari Evans",
+            "jersey": "05",
+            "position": "RWR",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Denzel Boston",
+            "jersey": "12",
+            "position": "LWR",
+            "snaps": 54,
+            "started": true
+          },
+          {
+            "name": "Rashid Williams",
+            "jersey": "03",
+            "position": "RWR",
+            "snaps": 2,
+            "started": true
+          },
+          {
+            "name": "Justice Williams",
+            "jersey": "16",
+            "position": "LWR",
+            "snaps": 13,
+            "started": false
+          },
+          {
+            "name": "Chris Lawson",
+            "jersey": "08",
+            "position": "RWR",
+            "snaps": 17,
+            "started": false
+          },
+          {
+            "name": "Kevin Green Jr.",
+            "jersey": "00",
+            "position": "RWR",
+            "snaps": 19,
+            "started": false
+          }
+        ],
+        "tight_ends": [
+          {
+            "name": "Decker DeGraaf",
+            "jersey": "86",
+            "position": "TE-R",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Quentin Moore",
+            "jersey": "88",
+            "position": "TE-R",
+            "snaps": 27,
+            "started": false
+          },
+          {
+            "name": "Kade Eldridge",
+            "jersey": "44",
+            "position": "TE-R",
+            "snaps": 25,
+            "started": false
+          },
+          {
+            "name": "Baron Naone",
+            "jersey": "85",
+            "position": "TE-L",
+            "snaps": 2,
+            "started": false
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Drew Azzopardi",
+            "jersey": "74",
+            "position": "RT",
+            "snaps": 65,
+            "started": true
+          },
+          {
+            "name": "John Mills",
+            "jersey": "72",
+            "position": "LG",
+            "snaps": 36,
+            "started": true
+          },
+          {
+            "name": "Carver Willis",
+            "jersey": "50",
+            "position": "LT",
+            "snaps": 65,
+            "started": true
+          },
+          {
+            "name": "Landen Hatchett",
+            "jersey": "66",
+            "position": "C",
+            "snaps": 65,
+            "started": true
+          },
+          {
+            "name": "Maximus McCree",
+            "jersey": "77",
+            "position": "LT",
+            "snaps": 13,
+            "started": false
+          },
+          {
+            "name": "Geirean Hatchett",
+            "jersey": "56",
+            "position": "RG",
+            "snaps": 65,
+            "started": true
+          },
+          {
+            "name": "Champ Taulealea",
+            "jersey": "73",
+            "position": "RG",
+            "snaps": 13,
+            "started": false
+          },
+          {
+            "name": "Zachary Henning",
+            "jersey": "58",
+            "position": "C",
+            "snaps": 13,
+            "started": false
+          },
+          {
+            "name": "Soane Faasolo",
+            "jersey": "68",
+            "position": "C",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Paki Finau",
+            "jersey": "53",
+            "position": "LG",
+            "snaps": 42,
+            "started": false
+          }
+        ],
+        "quarterbacks": [
+          {
+            "name": "Demond Williams Jr.",
+            "jersey": "02",
+            "position": "QB",
+            "snaps": 56,
+            "started": true
+          },
+          {
+            "name": "Kai Horton",
+            "jersey": "15",
+            "position": "QB",
+            "snaps": 22,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Raiden Vines-Bright",
+            "jersey": "07",
+            "position": "SLWR",
+            "snaps": 20,
+            "started": true
+          },
+          {
+            "name": "Audric Harris",
+            "jersey": "13",
+            "position": "SRWR",
+            "snaps": 17,
+            "started": false
+          }
+        ]
+      },
+      "defense": {
+        "defensive_line": [
+          {
+            "name": "Bryce Butler",
+            "jersey": "D92",
+            "position": "DRT",
+            "snaps": 24,
+            "started": true
+          },
+          {
+            "name": "Elinneus Davis",
+            "jersey": "D90",
+            "position": "NT",
+            "snaps": 25,
+            "started": false
+          },
+          {
+            "name": "Simote Pepa",
+            "jersey": "D77",
+            "position": "NT",
+            "snaps": 26,
+            "started": false
+          },
+          {
+            "name": "Logan Sagapolu",
+            "jersey": "D97",
+            "position": "RE",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Ta'ita'i Uiagalelei",
+            "jersey": "D11",
+            "position": "RE",
+            "snaps": 26,
+            "started": true
+          },
+          {
+            "name": "Anterio Thompson",
+            "jersey": "D54",
+            "position": "DRT",
+            "snaps": 25,
+            "started": false
+          },
+          {
+            "name": "Armon Parker",
+            "jersey": "D95",
+            "position": "DLT",
+            "snaps": 18,
+            "started": false
+          },
+          {
+            "name": "Omar Khan",
+            "jersey": "D98",
+            "position": "DRT",
+            "snaps": 4,
+            "started": false
+          }
+        ],
+        "linebackers": [
+          {
+            "name": "Zach Durfee",
+            "jersey": "D05",
+            "position": "ROLB",
+            "snaps": 28,
+            "started": true
+          },
+          {
+            "name": "Jacob Manu",
+            "jersey": "D09",
+            "position": "RLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Deshawn Lynch",
+            "jersey": "D41",
+            "position": "ROLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Xe'ree Alexander",
+            "jersey": "D10",
+            "position": "WLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Anthony Ward",
+            "jersey": "D57",
+            "position": "MLB",
+            "snaps": 12,
+            "started": false
+          },
+          {
+            "name": "Deven Bryant",
+            "jersey": "D17",
+            "position": "WLB",
+            "snaps": 32,
+            "started": true
+          },
+          {
+            "name": "Jacob Lane",
+            "jersey": "D48",
+            "position": "LOLB",
+            "snaps": 28,
+            "started": true
+          },
+          {
+            "name": "Isaiah Ward",
+            "jersey": "D91",
+            "position": "LOLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Taariq Al-Uqdah",
+            "jersey": "D03",
+            "position": "MLB",
+            "snaps": 41,
+            "started": true
+          },
+          {
+            "name": "Milton Hopkins Jr.",
+            "jersey": "D14",
+            "position": "ROLB",
+            "snaps": 3,
+            "started": false
+          },
+          {
+            "name": "Griffin Miller",
+            "jersey": "D49",
+            "position": "LLB",
+            "snaps": 2,
+            "started": false
+          },
+          {
+            "name": "Devin Hyde",
+            "jersey": "D52",
+            "position": "ROLB",
+            "snaps": 14,
+            "started": false
+          },
+          {
+            "name": "Hayden Moore",
+            "jersey": "D44",
+            "position": "ROLB",
+            "snaps": 11,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Alex McLaughlin",
+            "jersey": "D12",
+            "position": "SS",
+            "snaps": 41,
+            "started": true
+          },
+          {
+            "name": "Dylan Robinson",
+            "jersey": "D06",
+            "position": "LCB",
+            "snaps": 14,
+            "started": false
+          },
+          {
+            "name": "Ephesians Prysock",
+            "jersey": "D07",
+            "position": "RCB",
+            "snaps": 41,
+            "started": true
+          },
+          {
+            "name": "Makell Esteen",
+            "jersey": "D24",
+            "position": "FS",
+            "snaps": 42,
+            "started": true
+          },
+          {
+            "name": "Rylon Dillard-Allen",
+            "jersey": "D18",
+            "position": "FS",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Leroy Bryant",
+            "jersey": "D00",
+            "position": "LCB",
+            "snaps": 30,
+            "started": true
+          },
+          {
+            "name": "Tacario Davis",
+            "jersey": "D08",
+            "position": "LCB",
+            "snaps": 15,
+            "started": true
+          },
+          {
+            "name": "D'Aryhian Clemons",
+            "jersey": "D28",
+            "position": "SCB",
+            "snaps": 7,
+            "started": false
+          },
+          {
+            "name": "Tristan Warner",
+            "jersey": "D32",
+            "position": "SS",
+            "snaps": 3,
+            "started": false
+          },
+          {
+            "name": "Rahshawn Clark",
+            "jersey": "D02",
+            "position": "SCB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Vincent Holmes",
+            "jersey": "D27",
+            "position": "SS",
+            "snaps": 11,
+            "started": false
+          },
+          {
+            "name": "Ramonz Adams Jr.",
+            "jersey": "D26",
+            "position": "RCB",
+            "snaps": 0,
+            "started": false
+          }
+        ]
+      },
+      "special_teams": {
+        "special_teams": [
+          {
+            "name": "Ryan Kean",
+            "jersey": "S33",
+            "position": "LS",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 10
+          },
+          {
+            "name": "Anthony Ward",
+            "jersey": "D57",
+            "position": "ST",
+            "kret": 3,
+            "kcov": 11,
+            "pret": 6,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 0
+          },
+          {
+            "name": "Deven Bryant",
+            "jersey": "D17",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 11,
+            "pret": 6,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 0
+          },
+          {
+            "name": "Vincent Holmes",
+            "jersey": "D27",
+            "position": "ST",
+            "kret": 3,
+            "kcov": 11,
+            "pret": 6,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Paki Finau",
+            "jersey": "53",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 10
+          },
+          {
+            "name": "Devin Hyde",
+            "jersey": "D52",
+            "position": "ST",
+            "kret": 3,
+            "kcov": 11,
+            "pret": 6,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Xe'ree Alexander",
+            "jersey": "D10",
+            "position": "ST",
+            "kret": 3,
+            "kcov": 11,
+            "pret": 6,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 0
+          },
+          {
+            "name": "Zachary Henning",
+            "jersey": "58",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 10
+          },
+          {
+            "name": "Rylon Dillard-Allen",
+            "jersey": "D18",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 11,
+            "pret": 6,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Soane Faasolo",
+            "jersey": "68",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 10
+          },
+          {
+            "name": "Dylan Robinson",
+            "jersey": "D06",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 11,
+            "pret": 6,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Rahshawn Clark",
+            "jersey": "D02",
+            "position": "ST",
+            "kret": 2,
+            "kcov": 11,
+            "pret": 3,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 0
+          },
+          {
+            "name": "Drew Azzopardi",
+            "jersey": "74",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 10
+          },
+          {
+            "name": "Leroy Bryant",
+            "jersey": "D00",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 11,
+            "pret": 6,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Alex McLaughlin",
+            "jersey": "D12",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 11,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 2,
+            "fgk": 0
+          },
+          {
+            "name": "Maximus McCree",
+            "jersey": "77",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 10
+          },
+          {
+            "name": "Decker DeGraaf",
+            "jersey": "86",
+            "position": "ST",
+            "kret": 1,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 10
+          },
+          {
+            "name": "Hayden Moore",
+            "jersey": "D44",
+            "position": "ST",
+            "kret": 3,
+            "kcov": 0,
+            "pret": 6,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Quentin Moore",
+            "jersey": "88",
+            "position": "ST",
+            "kret": 3,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 10
+          },
+          {
+            "name": "John Mills",
+            "jersey": "72",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 10
+          },
+          {
+            "name": "Luke Dunne",
+            "jersey": "S45",
+            "position": "P",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 10
+          },
+          {
+            "name": "Justice Williams",
+            "jersey": "16",
+            "position": "ST",
+            "kret": 3,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Makell Esteen",
+            "jersey": "D24",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 6,
+            "pcov": 0,
+            "fgblk": 2,
+            "fgk": 0
+          },
+          {
+            "name": "Ephesians Prysock",
+            "jersey": "D07",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 2,
+            "fgk": 0
+          },
+          {
+            "name": "Dezmen Roebuck",
+            "jersey": "81",
+            "position": "ST",
+            "kret": 3,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Ethan Moczulski",
+            "jersey": "S37",
+            "position": "K",
+            "kret": 0,
+            "kcov": 5,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Adam Mohammed",
+            "jersey": "24",
+            "position": "ST",
+            "kret": 3,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Paul Mencke Jr.",
+            "jersey": "D31",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Grady Gross",
+            "jersey": "S95",
+            "position": "K",
+            "kret": 0,
+            "kcov": 6,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 10
+          },
+          {
+            "name": "Denzel Boston",
+            "jersey": "12",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 3,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Isaiah Ward",
+            "jersey": "D91",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Ta'ita'i Uiagalelei",
+            "jersey": "D11",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 2,
+            "fgk": 0
+          },
+          {
+            "name": "Taariq Al-Uqdah",
+            "jersey": "D03",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 2,
+            "fgk": 0
+          },
+          {
+            "name": "Jonah Coleman",
+            "jersey": "01",
+            "position": "ST",
+            "kret": 3,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Jacob Lane",
+            "jersey": "D48",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 0
+          },
+          {
+            "name": "Armon Parker",
+            "jersey": "D95",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 0
+          },
+          {
+            "name": "Zach Durfee",
+            "jersey": "D05",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 0
+          },
+          {
+            "name": "Simote Pepa",
+            "jersey": "D77",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 0
+          },
+          {
+            "name": "Bryce Butler",
+            "jersey": "D92",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 0
+          },
+          {
+            "name": "Anterio Thompson",
+            "jersey": "D54",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          }
+        ]
+      }
+    },
+    {
+      "week": 3,
+      "offense": {
+        "running_backs": [
+          {
+            "name": "Jonah Coleman",
+            "jersey": "01",
+            "position": "HB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Adam Mohammed",
+            "jersey": "24",
+            "position": "HB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Jordan Washington",
+            "jersey": "04",
+            "position": "HB",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "wide_receivers": [
+          {
+            "name": "Dezmen Roebuck",
+            "jersey": "81",
+            "position": "RWR",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Omari Evans",
+            "jersey": "05",
+            "position": "RWR",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Denzel Boston",
+            "jersey": "12",
+            "position": "LWR",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Rashid Williams",
+            "jersey": "03",
+            "position": "RWR",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Justice Williams",
+            "jersey": "16",
+            "position": "LWR",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Chris Lawson",
+            "jersey": "08",
+            "position": "RWR",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Kevin Green Jr.",
+            "jersey": "00",
+            "position": "RWR",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "tight_ends": [
+          {
+            "name": "Decker DeGraaf",
+            "jersey": "86",
+            "position": "TE-R",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Quentin Moore",
+            "jersey": "88",
+            "position": "TE-R",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Kade Eldridge",
+            "jersey": "44",
+            "position": "TE-R",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Baron Naone",
+            "jersey": "85",
+            "position": "TE-L",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Drew Azzopardi",
+            "jersey": "74",
+            "position": "RT",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "John Mills",
+            "jersey": "72",
+            "position": "LG",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Carver Willis",
+            "jersey": "50",
+            "position": "LT",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Landen Hatchett",
+            "jersey": "66",
+            "position": "C",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Maximus McCree",
+            "jersey": "77",
+            "position": "LT",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Geirean Hatchett",
+            "jersey": "56",
+            "position": "RG",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Champ Taulealea",
+            "jersey": "73",
+            "position": "RG",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Zachary Henning",
+            "jersey": "58",
+            "position": "C",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Soane Faasolo",
+            "jersey": "68",
+            "position": "C",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Paki Finau",
+            "jersey": "53",
+            "position": "LG",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "quarterbacks": [
+          {
+            "name": "Demond Williams Jr.",
+            "jersey": "02",
+            "position": "QB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Kai Horton",
+            "jersey": "15",
+            "position": "QB",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Raiden Vines-Bright",
+            "jersey": "07",
+            "position": "SLWR",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Audric Harris",
+            "jersey": "13",
+            "position": "SRWR",
+            "snaps": 0,
+            "started": false
+          }
+        ]
+      },
+      "defense": {
+        "defensive_line": [
+          {
+            "name": "Bryce Butler",
+            "jersey": "D92",
+            "position": "DRT",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Elinneus Davis",
+            "jersey": "D90",
+            "position": "NT",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Simote Pepa",
+            "jersey": "D77",
+            "position": "NT",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Logan Sagapolu",
+            "jersey": "D97",
+            "position": "RE",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Ta'ita'i Uiagalelei",
+            "jersey": "D11",
+            "position": "RE",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Anterio Thompson",
+            "jersey": "D54",
+            "position": "DRT",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Armon Parker",
+            "jersey": "D95",
+            "position": "DLT",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Omar Khan",
+            "jersey": "D98",
+            "position": "DRT",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "linebackers": [
+          {
+            "name": "Zach Durfee",
+            "jersey": "D05",
+            "position": "ROLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Jacob Manu",
+            "jersey": "D09",
+            "position": "RLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Deshawn Lynch",
+            "jersey": "D41",
+            "position": "ROLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Xe'ree Alexander",
+            "jersey": "D10",
+            "position": "WLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Anthony Ward",
+            "jersey": "D57",
+            "position": "MLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Deven Bryant",
+            "jersey": "D17",
+            "position": "WLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Jacob Lane",
+            "jersey": "D48",
+            "position": "LOLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Isaiah Ward",
+            "jersey": "D91",
+            "position": "LOLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Taariq Al-Uqdah",
+            "jersey": "D03",
+            "position": "MLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Milton Hopkins Jr.",
+            "jersey": "D14",
+            "position": "ROLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Griffin Miller",
+            "jersey": "D49",
+            "position": "LLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Devin Hyde",
+            "jersey": "D52",
+            "position": "ROLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Hayden Moore",
+            "jersey": "D44",
+            "position": "ROLB",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Alex McLaughlin",
+            "jersey": "D12",
+            "position": "SS",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Dylan Robinson",
+            "jersey": "D06",
+            "position": "LCB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Ephesians Prysock",
+            "jersey": "D07",
+            "position": "RCB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Makell Esteen",
+            "jersey": "D24",
+            "position": "FS",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Rylon Dillard-Allen",
+            "jersey": "D18",
+            "position": "FS",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Leroy Bryant",
+            "jersey": "D00",
+            "position": "LCB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Tacario Davis",
+            "jersey": "D08",
+            "position": "LCB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "D'Aryhian Clemons",
+            "jersey": "D28",
+            "position": "SCB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Tristan Warner",
+            "jersey": "D32",
+            "position": "SS",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Rahshawn Clark",
+            "jersey": "D02",
+            "position": "SCB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Vincent Holmes",
+            "jersey": "D27",
+            "position": "SS",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Ramonz Adams Jr.",
+            "jersey": "D26",
+            "position": "RCB",
+            "snaps": 0,
+            "started": false
+          }
+        ]
+      },
+      "special_teams": {
+        "special_teams": [
+          {
+            "name": "Ryan Kean",
+            "jersey": "S33",
+            "position": "LS",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Anthony Ward",
+            "jersey": "D57",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 5
+          },
+          {
+            "name": "Deven Bryant",
+            "jersey": "D17",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Vincent Holmes",
+            "jersey": "D27",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 5
+          },
+          {
+            "name": "Paki Finau",
+            "jersey": "53",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Devin Hyde",
+            "jersey": "D52",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 5
+          },
+          {
+            "name": "Xe'ree Alexander",
+            "jersey": "D10",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 5
+          },
+          {
+            "name": "Zachary Henning",
+            "jersey": "58",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Rylon Dillard-Allen",
+            "jersey": "D18",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Soane Faasolo",
+            "jersey": "68",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Dylan Robinson",
+            "jersey": "D06",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Rahshawn Clark",
+            "jersey": "D02",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Drew Azzopardi",
+            "jersey": "74",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Leroy Bryant",
+            "jersey": "D00",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Alex McLaughlin",
+            "jersey": "D12",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Maximus McCree",
+            "jersey": "77",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Decker DeGraaf",
+            "jersey": "86",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 5
+          },
+          {
+            "name": "Hayden Moore",
+            "jersey": "D44",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 5
+          },
+          {
+            "name": "Quentin Moore",
+            "jersey": "88",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 5
+          },
+          {
+            "name": "John Mills",
+            "jersey": "72",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Luke Dunne",
+            "jersey": "S45",
+            "position": "P",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Justice Williams",
+            "jersey": "16",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 5
+          },
+          {
+            "name": "Makell Esteen",
+            "jersey": "D24",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Ephesians Prysock",
+            "jersey": "D07",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Dezmen Roebuck",
+            "jersey": "81",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 5
+          },
+          {
+            "name": "Ethan Moczulski",
+            "jersey": "S37",
+            "position": "K",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Adam Mohammed",
+            "jersey": "24",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 5
+          },
+          {
+            "name": "Paul Mencke Jr.",
+            "jersey": "D31",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Grady Gross",
+            "jersey": "S95",
+            "position": "K",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Denzel Boston",
+            "jersey": "12",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Isaiah Ward",
+            "jersey": "D91",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Ta'ita'i Uiagalelei",
+            "jersey": "D11",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Taariq Al-Uqdah",
+            "jersey": "D03",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Jonah Coleman",
+            "jersey": "01",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 5
+          },
+          {
+            "name": "Jacob Lane",
+            "jersey": "D48",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Armon Parker",
+            "jersey": "D95",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Zach Durfee",
+            "jersey": "D05",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Simote Pepa",
+            "jersey": "D77",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Bryce Butler",
+            "jersey": "D92",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Anterio Thompson",
+            "jersey": "D54",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          }
+        ]
+      }
+    },
+    {
+      "week": 4,
+      "offense": {
+        "running_backs": [
+          {
+            "name": "Jonah Coleman",
+            "jersey": "01",
+            "position": "HB",
+            "snaps": 39,
+            "started": true
+          },
+          {
+            "name": "Adam Mohammed",
+            "jersey": "24",
+            "position": "HB",
+            "snaps": 14,
+            "started": false
+          },
+          {
+            "name": "Jordan Washington",
+            "jersey": "04",
+            "position": "HB",
+            "snaps": 3,
+            "started": false
+          }
+        ],
+        "wide_receivers": [
+          {
+            "name": "Dezmen Roebuck",
+            "jersey": "81",
+            "position": "RWR",
+            "snaps": 43,
+            "started": true
+          },
+          {
+            "name": "Omari Evans",
+            "jersey": "05",
+            "position": "RWR",
+            "snaps": 13,
+            "started": false
+          },
+          {
+            "name": "Denzel Boston",
+            "jersey": "12",
+            "position": "LWR",
+            "snaps": 47,
+            "started": true
+          },
+          {
+            "name": "Rashid Williams",
+            "jersey": "03",
+            "position": "RWR",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Justice Williams",
+            "jersey": "16",
+            "position": "LWR",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Chris Lawson",
+            "jersey": "08",
+            "position": "RWR",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Kevin Green Jr.",
+            "jersey": "00",
+            "position": "RWR",
+            "snaps": 2,
+            "started": false
+          }
+        ],
+        "tight_ends": [
+          {
+            "name": "Decker DeGraaf",
+            "jersey": "86",
+            "position": "TE-R",
+            "snaps": 47,
+            "started": true
+          },
+          {
+            "name": "Quentin Moore",
+            "jersey": "88",
+            "position": "TE-R",
+            "snaps": 15,
+            "started": false
+          },
+          {
+            "name": "Kade Eldridge",
+            "jersey": "44",
+            "position": "TE-R",
+            "snaps": 3,
+            "started": false
+          },
+          {
+            "name": "Baron Naone",
+            "jersey": "85",
+            "position": "TE-L",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Drew Azzopardi",
+            "jersey": "74",
+            "position": "RT",
+            "snaps": 53,
+            "started": true
+          },
+          {
+            "name": "John Mills",
+            "jersey": "72",
+            "position": "LG",
+            "snaps": 34,
+            "started": true
+          },
+          {
+            "name": "Carver Willis",
+            "jersey": "50",
+            "position": "LT",
+            "snaps": 53,
+            "started": true
+          },
+          {
+            "name": "Landen Hatchett",
+            "jersey": "66",
+            "position": "C",
+            "snaps": 53,
+            "started": true
+          },
+          {
+            "name": "Maximus McCree",
+            "jersey": "77",
+            "position": "LT",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Geirean Hatchett",
+            "jersey": "56",
+            "position": "RG",
+            "snaps": 53,
+            "started": true
+          },
+          {
+            "name": "Champ Taulealea",
+            "jersey": "73",
+            "position": "RG",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Zachary Henning",
+            "jersey": "58",
+            "position": "C",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Soane Faasolo",
+            "jersey": "68",
+            "position": "C",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Paki Finau",
+            "jersey": "53",
+            "position": "LG",
+            "snaps": 19,
+            "started": false
+          }
+        ],
+        "quarterbacks": [
+          {
+            "name": "Demond Williams Jr.",
+            "jersey": "02",
+            "position": "QB",
+            "snaps": 53,
+            "started": true
+          },
+          {
+            "name": "Kai Horton",
+            "jersey": "15",
+            "position": "QB",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Raiden Vines-Bright",
+            "jersey": "07",
+            "position": "SLWR",
+            "snaps": 29,
+            "started": true
+          },
+          {
+            "name": "Audric Harris",
+            "jersey": "13",
+            "position": "SRWR",
+            "snaps": 10,
+            "started": false
+          }
+        ]
+      },
+      "defense": {
+        "defensive_line": [
+          {
+            "name": "Bryce Butler",
+            "jersey": "D92",
+            "position": "DRT",
+            "snaps": 30,
+            "started": false
+          },
+          {
+            "name": "Elinneus Davis",
+            "jersey": "D90",
+            "position": "NT",
+            "snaps": 37,
+            "started": false
+          },
+          {
+            "name": "Simote Pepa",
+            "jersey": "D77",
+            "position": "NT",
+            "snaps": 12,
+            "started": false
+          },
+          {
+            "name": "Logan Sagapolu",
+            "jersey": "D97",
+            "position": "RE",
+            "snaps": 1,
+            "started": false
+          },
+          {
+            "name": "Ta'ita'i Uiagalelei",
+            "jersey": "D11",
+            "position": "RE",
+            "snaps": 42,
+            "started": true
+          },
+          {
+            "name": "Anterio Thompson",
+            "jersey": "D54",
+            "position": "DRT",
+            "snaps": 30,
+            "started": true
+          },
+          {
+            "name": "Armon Parker",
+            "jersey": "D95",
+            "position": "DLT",
+            "snaps": 9,
+            "started": false
+          },
+          {
+            "name": "Omar Khan",
+            "jersey": "D98",
+            "position": "DRT",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "linebackers": [
+          {
+            "name": "Zach Durfee",
+            "jersey": "D05",
+            "position": "ROLB",
+            "snaps": 47,
+            "started": true
+          },
+          {
+            "name": "Jacob Manu",
+            "jersey": "D09",
+            "position": "RLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Deshawn Lynch",
+            "jersey": "D41",
+            "position": "ROLB",
+            "snaps": 5,
+            "started": false
+          },
+          {
+            "name": "Xe'ree Alexander",
+            "jersey": "D10",
+            "position": "WLB",
+            "snaps": 19,
+            "started": false
+          },
+          {
+            "name": "Anthony Ward",
+            "jersey": "D57",
+            "position": "MLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Deven Bryant",
+            "jersey": "D17",
+            "position": "WLB",
+            "snaps": 52,
+            "started": true
+          },
+          {
+            "name": "Jacob Lane",
+            "jersey": "D48",
+            "position": "LOLB",
+            "snaps": 35,
+            "started": true
+          },
+          {
+            "name": "Isaiah Ward",
+            "jersey": "D91",
+            "position": "LOLB",
+            "snaps": 49,
+            "started": false
+          },
+          {
+            "name": "Taariq Al-Uqdah",
+            "jersey": "D03",
+            "position": "MLB",
+            "snaps": 52,
+            "started": true
+          },
+          {
+            "name": "Milton Hopkins Jr.",
+            "jersey": "D14",
+            "position": "ROLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Griffin Miller",
+            "jersey": "D49",
+            "position": "LLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Devin Hyde",
+            "jersey": "D52",
+            "position": "ROLB",
+            "snaps": 2,
+            "started": false
+          },
+          {
+            "name": "Hayden Moore",
+            "jersey": "D44",
+            "position": "ROLB",
+            "snaps": 2,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Alex McLaughlin",
+            "jersey": "D12",
+            "position": "SS",
+            "snaps": 68,
+            "started": true
+          },
+          {
+            "name": "Dylan Robinson",
+            "jersey": "D06",
+            "position": "LCB",
+            "snaps": 28,
+            "started": false
+          },
+          {
+            "name": "Ephesians Prysock",
+            "jersey": "D07",
+            "position": "RCB",
+            "snaps": 68,
+            "started": true
+          },
+          {
+            "name": "Makell Esteen",
+            "jersey": "D24",
+            "position": "FS",
+            "snaps": 57,
+            "started": true
+          },
+          {
+            "name": "Rylon Dillard-Allen",
+            "jersey": "D18",
+            "position": "FS",
+            "snaps": 15,
+            "started": false
+          },
+          {
+            "name": "Leroy Bryant",
+            "jersey": "D00",
+            "position": "LCB",
+            "snaps": 41,
+            "started": true
+          },
+          {
+            "name": "Tacario Davis",
+            "jersey": "D08",
+            "position": "LCB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "D'Aryhian Clemons",
+            "jersey": "D28",
+            "position": "SCB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Tristan Warner",
+            "jersey": "D32",
+            "position": "SS",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Rahshawn Clark",
+            "jersey": "D02",
+            "position": "SCB",
+            "snaps": 37,
+            "started": true
+          },
+          {
+            "name": "Vincent Holmes",
+            "jersey": "D27",
+            "position": "SS",
+            "snaps": 10,
+            "started": false
+          },
+          {
+            "name": "Ramonz Adams Jr.",
+            "jersey": "D26",
+            "position": "RCB",
+            "snaps": 0,
+            "started": false
+          }
+        ]
+      },
+      "special_teams": {
+        "special_teams": [
+          {
+            "name": "Ryan Kean",
+            "jersey": "S33",
+            "position": "LS",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 9,
+            "fgk": 0
+          },
+          {
+            "name": "Anthony Ward",
+            "jersey": "D57",
+            "position": "ST",
+            "kret": 10,
+            "kcov": 2,
+            "pret": 0,
+            "pcov": 1,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Deven Bryant",
+            "jersey": "D17",
+            "position": "ST",
+            "kret": 10,
+            "kcov": 2,
+            "pret": 0,
+            "pcov": 3,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Vincent Holmes",
+            "jersey": "D27",
+            "position": "ST",
+            "kret": 10,
+            "kcov": 2,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Paki Finau",
+            "jersey": "53",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 9,
+            "fgk": 0
+          },
+          {
+            "name": "Devin Hyde",
+            "jersey": "D52",
+            "position": "ST",
+            "kret": 10,
+            "kcov": 2,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Xe'ree Alexander",
+            "jersey": "D10",
+            "position": "ST",
+            "kret": 10,
+            "kcov": 2,
+            "pret": 0,
+            "pcov": 1,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Zachary Henning",
+            "jersey": "58",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 9,
+            "fgk": 0
+          },
+          {
+            "name": "Rylon Dillard-Allen",
+            "jersey": "D18",
+            "position": "ST",
+            "kret": 10,
+            "kcov": 2,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Soane Faasolo",
+            "jersey": "68",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 9,
+            "fgk": 0
+          },
+          {
+            "name": "Dylan Robinson",
+            "jersey": "D06",
+            "position": "ST",
+            "kret": 10,
+            "kcov": 2,
+            "pret": 0,
+            "pcov": 1,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Rahshawn Clark",
+            "jersey": "D02",
+            "position": "ST",
+            "kret": 9,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 3,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Drew Azzopardi",
+            "jersey": "74",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 1,
+            "fgblk": 9,
+            "fgk": 0
+          },
+          {
+            "name": "Leroy Bryant",
+            "jersey": "D00",
+            "position": "ST",
+            "kret": 10,
+            "kcov": 2,
+            "pret": 0,
+            "pcov": 3,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Alex McLaughlin",
+            "jersey": "D12",
+            "position": "ST",
+            "kret": 10,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 4,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Maximus McCree",
+            "jersey": "77",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 9,
+            "fgk": 0
+          },
+          {
+            "name": "Decker DeGraaf",
+            "jersey": "86",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 9,
+            "fgk": 0
+          },
+          {
+            "name": "Hayden Moore",
+            "jersey": "D44",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 2,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Quentin Moore",
+            "jersey": "88",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 9,
+            "fgk": 0
+          },
+          {
+            "name": "John Mills",
+            "jersey": "72",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 1,
+            "fgblk": 9,
+            "fgk": 0
+          },
+          {
+            "name": "Luke Dunne",
+            "jersey": "S45",
+            "position": "P",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 9,
+            "fgk": 0
+          },
+          {
+            "name": "Justice Williams",
+            "jersey": "16",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Makell Esteen",
+            "jersey": "D24",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 2,
+            "pret": 0,
+            "pcov": 4,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Ephesians Prysock",
+            "jersey": "D07",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 4,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Dezmen Roebuck",
+            "jersey": "81",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Ethan Moczulski",
+            "jersey": "S37",
+            "position": "K",
+            "kret": 10,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Adam Mohammed",
+            "jersey": "24",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Paul Mencke Jr.",
+            "jersey": "D31",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Grady Gross",
+            "jersey": "S95",
+            "position": "K",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 9,
+            "fgk": 0
+          },
+          {
+            "name": "Denzel Boston",
+            "jersey": "12",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 2,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Isaiah Ward",
+            "jersey": "D91",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 1,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Ta'ita'i Uiagalelei",
+            "jersey": "D11",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 1,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Taariq Al-Uqdah",
+            "jersey": "D03",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 3,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Jonah Coleman",
+            "jersey": "01",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Jacob Lane",
+            "jersey": "D48",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 2,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Armon Parker",
+            "jersey": "D95",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 1,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Zach Durfee",
+            "jersey": "D05",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 3,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Simote Pepa",
+            "jersey": "D77",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 2,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Bryce Butler",
+            "jersey": "D92",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 2,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Anterio Thompson",
+            "jersey": "D54",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 2,
+            "fgblk": 0,
+            "fgk": 0
+          }
+        ]
+      }
+    },
+    {
+      "week": 5,
+      "offense": {
+        "running_backs": [
+          {
+            "name": "Jonah Coleman",
+            "jersey": "01",
+            "position": "HB",
+            "snaps": 37,
+            "started": true
+          },
+          {
+            "name": "Adam Mohammed",
+            "jersey": "24",
+            "position": "HB",
+            "snaps": 17,
+            "started": false
+          },
+          {
+            "name": "Jordan Washington",
+            "jersey": "04",
+            "position": "HB",
+            "snaps": 1,
+            "started": false
+          }
+        ],
+        "wide_receivers": [
+          {
+            "name": "Dezmen Roebuck",
+            "jersey": "81",
+            "position": "RWR",
+            "snaps": 36,
+            "started": true
+          },
+          {
+            "name": "Omari Evans",
+            "jersey": "05",
+            "position": "RWR",
+            "snaps": 19,
+            "started": false
+          },
+          {
+            "name": "Denzel Boston",
+            "jersey": "12",
+            "position": "LWR",
+            "snaps": 52,
+            "started": true
+          },
+          {
+            "name": "Rashid Williams",
+            "jersey": "03",
+            "position": "RWR",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Justice Williams",
+            "jersey": "16",
+            "position": "LWR",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Chris Lawson",
+            "jersey": "08",
+            "position": "RWR",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Kevin Green Jr.",
+            "jersey": "00",
+            "position": "RWR",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "tight_ends": [
+          {
+            "name": "Decker DeGraaf",
+            "jersey": "86",
+            "position": "TE-R",
+            "snaps": 43,
+            "started": false
+          },
+          {
+            "name": "Quentin Moore",
+            "jersey": "88",
+            "position": "TE-R",
+            "snaps": 16,
+            "started": true
+          },
+          {
+            "name": "Kade Eldridge",
+            "jersey": "44",
+            "position": "TE-R",
+            "snaps": 3,
+            "started": false
+          },
+          {
+            "name": "Baron Naone",
+            "jersey": "85",
+            "position": "TE-L",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Drew Azzopardi",
+            "jersey": "74",
+            "position": "RT",
+            "snaps": 52,
+            "started": true
+          },
+          {
+            "name": "John Mills",
+            "jersey": "72",
+            "position": "LG",
+            "snaps": 52,
+            "started": true
+          },
+          {
+            "name": "Carver Willis",
+            "jersey": "50",
+            "position": "LT",
+            "snaps": 28,
+            "started": true
+          },
+          {
+            "name": "Landen Hatchett",
+            "jersey": "66",
+            "position": "C",
+            "snaps": 52,
+            "started": true
+          },
+          {
+            "name": "Maximus McCree",
+            "jersey": "77",
+            "position": "LT",
+            "snaps": 24,
+            "started": false
+          },
+          {
+            "name": "Geirean Hatchett",
+            "jersey": "56",
+            "position": "RG",
+            "snaps": 52,
+            "started": true
+          },
+          {
+            "name": "Champ Taulealea",
+            "jersey": "73",
+            "position": "RG",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Zachary Henning",
+            "jersey": "58",
+            "position": "C",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Soane Faasolo",
+            "jersey": "68",
+            "position": "C",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Paki Finau",
+            "jersey": "53",
+            "position": "LG",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "quarterbacks": [
+          {
+            "name": "Demond Williams Jr.",
+            "jersey": "02",
+            "position": "QB",
+            "snaps": 52,
+            "started": true
+          },
+          {
+            "name": "Kai Horton",
+            "jersey": "15",
+            "position": "QB",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Raiden Vines-Bright",
+            "jersey": "07",
+            "position": "SLWR",
+            "snaps": 36,
+            "started": true
+          },
+          {
+            "name": "Audric Harris",
+            "jersey": "13",
+            "position": "SRWR",
+            "snaps": 0,
+            "started": false
+          }
+        ]
+      },
+      "defense": {
+        "defensive_line": [
+          {
+            "name": "Bryce Butler",
+            "jersey": "D92",
+            "position": "DRT",
+            "snaps": 24,
+            "started": false
+          },
+          {
+            "name": "Elinneus Davis",
+            "jersey": "D90",
+            "position": "NT",
+            "snaps": 32,
+            "started": true
+          },
+          {
+            "name": "Simote Pepa",
+            "jersey": "D77",
+            "position": "NT",
+            "snaps": 3,
+            "started": false
+          },
+          {
+            "name": "Logan Sagapolu",
+            "jersey": "D97",
+            "position": "RE",
+            "snaps": 3,
+            "started": false
+          },
+          {
+            "name": "Ta'ita'i Uiagalelei",
+            "jersey": "D11",
+            "position": "RE",
+            "snaps": 34,
+            "started": true
+          },
+          {
+            "name": "Anterio Thompson",
+            "jersey": "D54",
+            "position": "DRT",
+            "snaps": 24,
+            "started": false
+          },
+          {
+            "name": "Armon Parker",
+            "jersey": "D95",
+            "position": "DLT",
+            "snaps": 6,
+            "started": false
+          },
+          {
+            "name": "Omar Khan",
+            "jersey": "D98",
+            "position": "DRT",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "linebackers": [
+          {
+            "name": "Zach Durfee",
+            "jersey": "D05",
+            "position": "ROLB",
+            "snaps": 10,
+            "started": true
+          },
+          {
+            "name": "Jacob Manu",
+            "jersey": "D09",
+            "position": "RLB",
+            "snaps": 29,
+            "started": true
+          },
+          {
+            "name": "Deshawn Lynch",
+            "jersey": "D41",
+            "position": "ROLB",
+            "snaps": 41,
+            "started": false
+          },
+          {
+            "name": "Xe'ree Alexander",
+            "jersey": "D10",
+            "position": "WLB",
+            "snaps": 31,
+            "started": false
+          },
+          {
+            "name": "Anthony Ward",
+            "jersey": "D57",
+            "position": "MLB",
+            "snaps": 2,
+            "started": false
+          },
+          {
+            "name": "Deven Bryant",
+            "jersey": "D17",
+            "position": "WLB",
+            "snaps": 64,
+            "started": true
+          },
+          {
+            "name": "Jacob Lane",
+            "jersey": "D48",
+            "position": "LOLB",
+            "snaps": 44,
+            "started": true
+          },
+          {
+            "name": "Isaiah Ward",
+            "jersey": "D91",
+            "position": "LOLB",
+            "snaps": 38,
+            "started": false
+          },
+          {
+            "name": "Taariq Al-Uqdah",
+            "jersey": "D03",
+            "position": "MLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Milton Hopkins Jr.",
+            "jersey": "D14",
+            "position": "ROLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Griffin Miller",
+            "jersey": "D49",
+            "position": "LLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Devin Hyde",
+            "jersey": "D52",
+            "position": "ROLB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Hayden Moore",
+            "jersey": "D44",
+            "position": "ROLB",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Alex McLaughlin",
+            "jersey": "D12",
+            "position": "SS",
+            "snaps": 64,
+            "started": true
+          },
+          {
+            "name": "Dylan Robinson",
+            "jersey": "D06",
+            "position": "LCB",
+            "snaps": 61,
+            "started": true
+          },
+          {
+            "name": "Ephesians Prysock",
+            "jersey": "D07",
+            "position": "RCB",
+            "snaps": 64,
+            "started": true
+          },
+          {
+            "name": "Makell Esteen",
+            "jersey": "D24",
+            "position": "FS",
+            "snaps": 64,
+            "started": true
+          },
+          {
+            "name": "Rylon Dillard-Allen",
+            "jersey": "D18",
+            "position": "FS",
+            "snaps": 43,
+            "started": false
+          },
+          {
+            "name": "Leroy Bryant",
+            "jersey": "D00",
+            "position": "LCB",
+            "snaps": 23,
+            "started": false
+          },
+          {
+            "name": "Tacario Davis",
+            "jersey": "D08",
+            "position": "LCB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "D'Aryhian Clemons",
+            "jersey": "D28",
+            "position": "SCB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Tristan Warner",
+            "jersey": "D32",
+            "position": "SS",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Rahshawn Clark",
+            "jersey": "D02",
+            "position": "SCB",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Vincent Holmes",
+            "jersey": "D27",
+            "position": "SS",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Ramonz Adams Jr.",
+            "jersey": "D26",
+            "position": "RCB",
+            "snaps": 0,
+            "started": false
+          }
+        ]
+      },
+      "special_teams": {
+        "special_teams": [
+          {
+            "name": "Ryan Kean",
+            "jersey": "S33",
+            "position": "LS",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Anthony Ward",
+            "jersey": "D57",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Deven Bryant",
+            "jersey": "D17",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Vincent Holmes",
+            "jersey": "D27",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Paki Finau",
+            "jersey": "53",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Devin Hyde",
+            "jersey": "D52",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Xe'ree Alexander",
+            "jersey": "D10",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Zachary Henning",
+            "jersey": "58",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Rylon Dillard-Allen",
+            "jersey": "D18",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Soane Faasolo",
+            "jersey": "68",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Dylan Robinson",
+            "jersey": "D06",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Rahshawn Clark",
+            "jersey": "D02",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Drew Azzopardi",
+            "jersey": "74",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Leroy Bryant",
+            "jersey": "D00",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Alex McLaughlin",
+            "jersey": "D12",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Maximus McCree",
+            "jersey": "77",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Decker DeGraaf",
+            "jersey": "86",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Hayden Moore",
+            "jersey": "D44",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Quentin Moore",
+            "jersey": "88",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "John Mills",
+            "jersey": "72",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Luke Dunne",
+            "jersey": "S45",
+            "position": "P",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Justice Williams",
+            "jersey": "16",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Makell Esteen",
+            "jersey": "D24",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Ephesians Prysock",
+            "jersey": "D07",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Dezmen Roebuck",
+            "jersey": "81",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Ethan Moczulski",
+            "jersey": "S37",
+            "position": "K",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Adam Mohammed",
+            "jersey": "24",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Paul Mencke Jr.",
+            "jersey": "D31",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Grady Gross",
+            "jersey": "S95",
+            "position": "K",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Denzel Boston",
+            "jersey": "12",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Isaiah Ward",
+            "jersey": "D91",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Ta'ita'i Uiagalelei",
+            "jersey": "D11",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Taariq Al-Uqdah",
+            "jersey": "D03",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Jonah Coleman",
+            "jersey": "01",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Jacob Lane",
+            "jersey": "D48",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Armon Parker",
+            "jersey": "D95",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Zach Durfee",
+            "jersey": "D05",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Simote Pepa",
+            "jersey": "D77",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Bryce Butler",
+            "jersey": "D92",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Anterio Thompson",
+            "jersey": "D54",
+            "position": "ST",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          }
+        ]
+      }
+    }
+  ],
+  "summary": [
+    {
+      "week": 1,
+      "opponent": "COLO STATE",
+      "date": "Sat Aug 30th",
+      "final_score_team": "38",
+      "final_score_opponent": "21",
+      "home_away": "Away",
+      "offense_snaps": 76,
+      "defense_snaps": 62,
+      "special_teams_snaps": 0
+    },
+    {
+      "week": 2,
+      "opponent": "UC DAVIS",
+      "date": "Sat Sep 6th",
+      "final_score_team": "70",
+      "final_score_opponent": "10",
+      "home_away": "Away",
+      "offense_snaps": 65,
+      "defense_snaps": 55,
+      "special_teams_snaps": 0
+    },
+    {
+      "week": 3,
+      "opponent": "BYE WEEK",
+      "date": "",
+      "final_score_team": "",
+      "final_score_opponent": "",
+      "home_away": "",
+      "offense_snaps": 0,
+      "defense_snaps": 0,
+      "special_teams_snaps": 0
+    },
+    {
+      "week": 4,
+      "opponent": "WASH STATE",
+      "date": "Sat Sep 20th",
+      "final_score_team": "59",
+      "final_score_opponent": "24",
+      "home_away": "Home",
+      "offense_snaps": 53,
+      "defense_snaps": 68,
+      "special_teams_snaps": 0
+    },
+    {
+      "week": 5,
+      "opponent": "OHIO STATE",
+      "date": "Sat Sep 27th",
+      "final_score_team": "6",
+      "final_score_opponent": "24",
+      "home_away": "Away",
+      "offense_snaps": 52,
+      "defense_snaps": 64,
+      "special_teams_snaps": 0
+    }
+  ],
+  "metadata": {
+    "weeks": 5,
+    "last_updated": "2025-09-29T02:37:47.477Z"
+  }
+}

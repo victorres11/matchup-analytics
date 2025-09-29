@@ -1,3091 +1,1568 @@
 {
-  "metadata": {
-    "team": "Minnesota",
-    "conference": "Big Ten",
-    "weeks": 4,
-    "source": "PFF Premium Stats"
-  },
-  "offense": {
-    "wide_receivers": [],
-    "tight_ends": [],
-    "quarterbacks": [],
-    "running_backs": [],
-    "offensive_line": []
-  },
-  "defense": {
-    "defensive_line": [],
-    "linebackers": [],
-    "defensive_backs": []
-  },
-  "special_teams": {
-    "special_teams": []
-  },
+  "team": "minnesota_new",
   "weeks": [
     {
       "week": 1,
       "offense": {
-        "wide_receivers": [
-          {
-            "name": "Javon Tracy",
-            "jersey": "11",
-            "position": "LWR",
-            "snaps": 37,
-            "started": false,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Koi Perich",
-            "jersey": "D03",
-            "position": "RWR",
-            "snaps": 7,
-            "started": false,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Le'Meke Brockington",
-            "jersey": "0",
-            "position": "RWR",
-            "snaps": 53,
-            "started": true,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Logan Loya",
-            "jersey": "17",
-            "position": "SLWR",
-            "snaps": 25,
-            "started": false,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Jalen Smith",
-            "jersey": "8",
-            "position": "RWR",
-            "snaps": 31,
-            "started": true,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Kenric Lanier II",
-            "jersey": "15",
-            "position": "LWR",
-            "snaps": 28,
-            "started": false,
-            "week": 1,
-            "opponent": "Buffalo"
-          }
-        ],
-        "tight_ends": [
-          {
-            "name": "Frank Bierman",
-            "jersey": "44",
-            "position": "TE-L",
-            "snaps": 17,
-            "started": true,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Jameson Geers",
-            "jersey": "86",
-            "position": "TE-L",
-            "snaps": 60,
-            "started": true,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Pierce Walsh",
-            "jersey": "19",
-            "position": "TE-L",
-            "snaps": 29,
-            "started": false,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Drew Biber",
-            "jersey": "87",
-            "position": "TE-R",
-            "snaps": 33,
-            "started": false,
-            "week": 1,
-            "opponent": "Buffalo"
-          }
-        ],
-        "quarterbacks": [
-          {
-            "name": "Drake Lindsey",
-            "jersey": "5",
-            "position": "QB",
-            "snaps": 80,
-            "started": true,
-            "week": 1,
-            "opponent": "Buffalo"
-          }
-        ],
-        "running_backs": [
-          {
-            "name": "Darius Taylor",
-            "jersey": "1",
-            "position": "HB",
-            "snaps": 63,
-            "started": true,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "A.J. Turner",
-            "jersey": "2",
-            "position": "HB",
-            "snaps": 7,
-            "started": false,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Cam Davis",
-            "jersey": "23",
-            "position": "HB",
-            "snaps": 10,
-            "started": false,
-            "week": 1,
-            "opponent": "Buffalo"
-          }
-        ],
-        "offensive_line": [
-          {
-            "name": "Dylan Ray",
-            "jersey": "73",
-            "position": "RT",
-            "snaps": 80,
-            "started": true,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Greg Johnson",
-            "jersey": "65",
-            "position": "LG",
-            "snaps": 80,
-            "started": true,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Ashton Beers",
-            "jersey": "78",
-            "position": "C",
-            "snaps": 80,
-            "started": true,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Nathan Roy",
-            "jersey": "50",
-            "position": "LT",
-            "snaps": 80,
-            "started": true,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Marcellus Marshall",
-            "jersey": "74",
-            "position": "RG",
-            "snaps": 80,
-            "started": true,
-            "week": 1,
-            "opponent": "Buffalo"
-          }
-        ]
+        "other": []
       },
       "defense": {
-        "defensive_line": [
-          {
-            "name": "Anthony Smith",
-            "jersey": "D00",
-            "position": "DLE",
-            "snaps": 35,
-            "started": true,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Jalen Logan-Redding",
-            "jersey": "D97",
-            "position": "DRT",
-            "snaps": 31,
-            "started": true,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Lucas Finnessy",
-            "jersey": "D46",
-            "position": "DLE",
-            "snaps": 9,
-            "started": false,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Nate Becker",
-            "jersey": "D89",
-            "position": "NT",
-            "snaps": 10,
-            "started": false,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Deven Eastern",
-            "jersey": "D91",
-            "position": "NT",
-            "snaps": 34,
-            "started": true,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Rushawn Lawrence",
-            "jersey": "D16",
-            "position": "DLT",
-            "snaps": 13,
-            "started": false,
-            "week": 1,
-            "opponent": "Buffalo"
-          }
-        ],
-        "linebackers": [
-          {
-            "name": "Maverick Baranowski",
-            "jersey": "D06",
-            "position": "MLB",
-            "snaps": 39,
-            "started": true,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Devon Williams",
-            "jersey": "D09",
-            "position": "MLB",
-            "snaps": 37,
-            "started": true,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Jaxon Howard",
-            "jersey": "D01",
-            "position": "ROLB",
-            "snaps": 24,
-            "started": true,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Joey Gerlach",
-            "jersey": "D19",
-            "position": "WLB",
-            "snaps": 4,
-            "started": false,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Emmanuel Karmo",
-            "jersey": "D02",
-            "position": "ROLB",
-            "snaps": 9,
-            "started": false,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Karter Menz",
-            "jersey": "D11",
-            "position": "LOLB",
-            "snaps": 11,
-            "started": false,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Matt Kingsbury",
-            "jersey": "D49",
-            "position": "WLB",
-            "snaps": 9,
-            "started": false,
-            "week": 1,
-            "opponent": "Buffalo"
-          }
-        ],
-        "defensive_backs": [
-          {
-            "name": "Garrison Monroe",
-            "jersey": "D23",
-            "position": "SS",
-            "snaps": 4,
-            "started": false,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Za'Quan Bryan",
-            "jersey": "D04",
-            "position": "RCB",
-            "snaps": 44,
-            "started": true,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Aidan Gousby",
-            "jersey": "D07",
-            "position": "SS",
-            "snaps": 40,
-            "started": true,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Koi Perich",
-            "jersey": "D03",
-            "position": "SS",
-            "snaps": 44,
-            "started": true,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "John Nestor",
-            "jersey": "D17",
-            "position": "LCB",
-            "snaps": 44,
-            "started": true,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Kerry Brown",
-            "jersey": "D14",
-            "position": "SS",
-            "snaps": 43,
-            "started": true,
-            "week": 1,
-            "opponent": "Buffalo"
-          }
-        ]
+        "other": []
       },
       "special_teams": {
-        "special_teams": [
+        "other": [
           {
             "name": "Mason Carrier",
             "jersey": "D48",
-            "position": "ST",
-            "totalSnaps": 18,
+            "position": "18",
             "kret": 3,
             "kcov": 6,
             "pret": 6,
             "pcov": 3,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 21
           },
           {
             "name": "Alan Soukup",
             "jersey": "S80",
-            "position": "LS",
-            "totalSnaps": 8,
+            "position": "8",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 3,
             "fgblk": 0,
-            "fgk": 5,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 11
           },
           {
             "name": "Za'Quan Bryan",
             "jersey": "D04",
-            "position": "ST",
-            "totalSnaps": 10,
+            "position": "10",
             "kret": 0,
             "kcov": 0,
             "pret": 7,
             "pcov": 0,
             "fgblk": 3,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 5
           },
           {
             "name": "Garrison Monroe",
             "jersey": "D23",
-            "position": "ST",
-            "totalSnaps": 16,
+            "position": "16",
             "kret": 3,
             "kcov": 6,
             "pret": 6,
             "pcov": 1,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 21
           },
           {
             "name": "Matt Kingsbury",
             "jersey": "D49",
-            "position": "ST",
-            "totalSnaps": 19,
+            "position": "19",
             "kret": 3,
             "kcov": 6,
             "pret": 7,
             "pcov": 3,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 21
           },
           {
             "name": "John Nestor",
             "jersey": "D17",
-            "position": "ST",
-            "totalSnaps": 10,
+            "position": "10",
             "kret": 0,
             "kcov": 0,
             "pret": 7,
             "pcov": 0,
             "fgblk": 3,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 5
           },
           {
             "name": "Joey Gerlach",
             "jersey": "D19",
-            "position": "ST",
-            "totalSnaps": 18,
+            "position": "18",
             "kret": 3,
             "kcov": 6,
             "pret": 6,
             "pcov": 3,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 20
           },
           {
             "name": "Jaxon Howard",
             "jersey": "D01",
-            "position": "ST",
-            "totalSnaps": 8,
+            "position": "8",
             "kret": 0,
             "kcov": 0,
             "pret": 7,
             "pcov": 0,
             "fgblk": 1,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 8
           },
           {
             "name": "Kerry Brown",
             "jersey": "D14",
-            "position": "ST",
-            "totalSnaps": 10,
+            "position": "10",
             "kret": 0,
             "kcov": 0,
             "pret": 7,
             "pcov": 0,
             "fgblk": 3,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 6
           },
           {
             "name": "Derik LeCaptain",
             "jersey": "D35",
-            "position": "ST",
-            "totalSnaps": 18,
+            "position": "18",
             "kret": 3,
             "kcov": 6,
             "pret": 6,
             "pcov": 3,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 20
           },
           {
             "name": "Emmanuel Karmo",
             "jersey": "D02",
-            "position": "ST",
-            "totalSnaps": 6,
+            "position": "6",
             "kret": 0,
             "kcov": 6,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 9
           },
           {
             "name": "Ashton Beers",
             "jersey": "78",
-            "position": "ST",
-            "totalSnaps": 5,
+            "position": "5",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 5,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 7
           },
           {
             "name": "Tre Berry",
             "jersey": "22",
-            "position": "ST",
-            "totalSnaps": 6,
+            "position": "6",
             "kret": 0,
             "kcov": 0,
             "pret": 6,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 11
           },
           {
             "name": "Greg Johnson",
             "jersey": "65",
-            "position": "ST",
-            "totalSnaps": 5,
+            "position": "5",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 5,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 7
           },
           {
             "name": "Marcellus Marshall",
             "jersey": "74",
-            "position": "ST",
-            "totalSnaps": 5,
+            "position": "5",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 5,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 8
           },
           {
             "name": "Jeff Roberson",
             "jersey": "D20",
-            "position": "ST",
-            "totalSnaps": 6,
+            "position": "6",
             "kret": 0,
             "kcov": 6,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 12
           },
           {
             "name": "Dylan Ray",
             "jersey": "73",
-            "position": "ST",
-            "totalSnaps": 5,
+            "position": "5",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 5,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 10
           },
           {
             "name": "Jameson Geers",
             "jersey": "86",
-            "position": "ST",
-            "totalSnaps": 11,
+            "position": "11",
             "kret": 3,
             "kcov": 0,
             "pret": 0,
             "pcov": 3,
             "fgblk": 0,
-            "fgk": 5,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 8
           },
           {
             "name": "Aidan Gousby",
             "jersey": "D07",
-            "position": "ST",
-            "totalSnaps": 10,
+            "position": "10",
             "kret": 0,
             "kcov": 6,
             "pret": 1,
             "pcov": 0,
             "fgblk": 3,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Tony Nelson",
-            "jersey": "59",
-            "position": "ST",
-            "totalSnaps": 5,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 5,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 0
           },
           {
             "name": "Aluma Nkele",
             "jersey": "70",
-            "position": "ST",
-            "totalSnaps": 5,
+            "position": "5",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 5,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Tom Weston",
-            "jersey": "S42",
-            "position": "P",
-            "totalSnaps": 8,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 3,
-            "fgblk": 0,
-            "fgk": 5,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 10
           },
           {
             "name": "Frank Bierman",
             "jersey": "44",
-            "position": "ST",
-            "totalSnaps": 8,
+            "position": "8",
             "kret": 3,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 5,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 8
           },
           {
             "name": "Anthony Smith",
             "jersey": "D00",
-            "position": "ST",
-            "totalSnaps": 4,
+            "position": "4",
             "kret": 0,
             "kcov": 0,
             "pret": 1,
             "pcov": 0,
             "fgblk": 3,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 0
           },
           {
             "name": "Jacob Simpson",
             "jersey": "88",
-            "position": "ST",
-            "totalSnaps": 3,
+            "position": "3",
             "kret": 3,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 1
           },
           {
             "name": "Koi Perich",
             "jersey": "D03",
-            "position": "ST",
-            "totalSnaps": 13,
+            "position": "13",
             "kret": 3,
             "kcov": 0,
             "pret": 7,
             "pcov": 0,
             "fgblk": 3,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
-          },
-          {
-            "name": "Brady Denaburg",
-            "jersey": "S92",
-            "position": "K",
-            "totalSnaps": 11,
-            "kret": 0,
-            "kcov": 6,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 5,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 7
           },
           {
             "name": "Maverick Baranowski",
             "jersey": "D06",
-            "position": "ST",
-            "totalSnaps": 7,
+            "position": "7",
             "kret": 0,
             "kcov": 0,
             "pret": 1,
             "pcov": 3,
             "fgblk": 3,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 0
           },
           {
             "name": "Jalen Logan-Redding",
             "jersey": "D97",
-            "position": "ST",
-            "totalSnaps": 3,
+            "position": "3",
             "kret": 0,
             "kcov": 0,
             "pret": 1,
             "pcov": 0,
             "fgblk": 2,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 0
           },
           {
             "name": "Karter Menz",
             "jersey": "D11",
-            "position": "ST",
-            "totalSnaps": 2,
+            "position": "2",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 2,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 0
           },
           {
             "name": "Drew Biber",
             "jersey": "87",
-            "position": "ST",
-            "totalSnaps": 3,
+            "position": "3",
             "kret": 3,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 4
           },
           {
             "name": "Rushawn Lawrence",
             "jersey": "D16",
-            "position": "ST",
-            "totalSnaps": 1,
+            "position": "1",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 1,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 1
           },
           {
             "name": "Deven Eastern",
             "jersey": "D91",
-            "position": "ST",
-            "totalSnaps": 4,
+            "position": "4",
             "kret": 0,
             "kcov": 0,
             "pret": 1,
             "pcov": 0,
             "fgblk": 3,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 0
           },
           {
             "name": "Logan Loya",
             "jersey": "17",
-            "position": "ST",
-            "totalSnaps": 2,
+            "position": "2",
             "kret": 0,
             "kcov": 0,
             "pret": 2,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 0
           },
           {
             "name": "Kenric Lanier II",
             "jersey": "15",
-            "position": "ST",
-            "totalSnaps": 2,
+            "position": "2",
             "kret": 0,
             "kcov": 0,
             "pret": 2,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 0
           },
           {
             "name": "Devon Williams",
             "jersey": "D09",
-            "position": "ST",
-            "totalSnaps": 6,
+            "position": "6",
             "kret": 0,
             "kcov": 0,
             "pret": 3,
             "pcov": 3,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 0
           },
           {
             "name": "Rhyland Kelly",
             "jersey": "D18",
-            "position": "ST",
-            "totalSnaps": 16,
+            "position": "16",
             "kret": 3,
             "kcov": 6,
             "pret": 6,
             "pcov": 1,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Buffalo"
+            "fgk": 14
+          },
+          {
+            "name": "Evan Redding",
+            "jersey": "D22",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 7
+          },
+          {
+            "name": "Nate Becker",
+            "jersey": "D89",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 12
+          },
+          {
+            "name": "Jai'Onte' McMillan",
+            "jersey": "D24",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 14
+          },
+          {
+            "name": "Jerome Williams",
+            "jersey": "55",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 3
+          },
+          {
+            "name": "Reese Tripp",
+            "jersey": "76",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 3
+          },
+          {
+            "name": "Harrison Brun",
+            "jersey": "D33",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 3
+          },
+          {
+            "name": "Pierce Walsh",
+            "jersey": "19",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 3
+          },
+          {
+            "name": "Brett Carroll",
+            "jersey": "56",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 2
+          },
+          {
+            "name": "Simon Seidl",
+            "jersey": "D27",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 2
+          },
+          {
+            "name": "Ethan Stendel",
+            "jersey": "D43",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 1
+          },
+          {
+            "name": "Naiim Parrish",
+            "jersey": "D21",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 1
+          },
+          {
+            "name": "Jaylen Bowden",
+            "jersey": "D05",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 1
+          },
+          {
+            "name": "Quentin Redding",
+            "jersey": "81",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 2
+          },
+          {
+            "name": "Tom Weston",
+            "jersey": "S42",
+            "position": "8",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 3,
+            "fgblk": 0,
+            "fgk": 11
+          },
+          {
+            "name": "Brady Denaburg",
+            "jersey": "S92",
+            "position": "11",
+            "kret": 0,
+            "kcov": 6,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 16
+          },
+          {
+            "name": "Daniel Jackson",
+            "jersey": "S36",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 5
           }
         ]
-      },
-      "summary": {
-        "opponent": "Buffalo",
-        "date": "Thu Aug 28th",
-        "finalScore": "23-10",
-        "homeAway": "Home",
-        "offensiveSnaps": 80,
-        "defensiveSnaps": 44,
-        "specialTeamsSnaps": 0
       }
     },
     {
       "week": 2,
       "offense": {
-        "wide_receivers": [
-          {
-            "name": "Javon Tracy",
-            "jersey": "11",
-            "position": "LWR",
-            "snaps": 17,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Koi Perich",
-            "jersey": "D03",
-            "position": "RWR",
-            "snaps": 4,
-            "started": true,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Kenric Lanier II",
-            "jersey": "15",
-            "position": "LWR",
-            "snaps": 39,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Donielle Hayes",
-            "jersey": "18",
-            "position": "LWR",
-            "snaps": 2,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Le'Meke Brockington",
-            "jersey": "0",
-            "position": "RWR",
-            "snaps": 19,
-            "started": true,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Jalen Smith",
-            "jersey": "8",
-            "position": "LWR",
-            "snaps": 15,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Malachi Coleman",
-            "jersey": "16",
-            "position": "RWR",
-            "snaps": 33,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Quentin Redding",
-            "jersey": "81",
-            "position": "SRWR",
-            "snaps": 6,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Logan Loya",
-            "jersey": "17",
-            "position": "SRWR",
-            "snaps": 14,
-            "started": true,
-            "week": 2,
-            "opponent": "NWSTATE"
-          }
-        ],
-        "tight_ends": [
-          {
-            "name": "Pierce Walsh",
-            "jersey": "19",
-            "position": "TE-R",
-            "snaps": 16,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Julian Johnson",
-            "jersey": "82",
-            "position": "TE-R",
-            "snaps": 28,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Jameson Geers",
-            "jersey": "86",
-            "position": "TE-R",
-            "snaps": 17,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Drew Biber",
-            "jersey": "87",
-            "position": "TE-R",
-            "snaps": 8,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Frank Bierman",
-            "jersey": "44",
-            "position": "TE-L",
-            "snaps": 8,
-            "started": true,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Jacob Simpson",
-            "jersey": "88",
-            "position": "TE-R",
-            "snaps": 29,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          }
-        ],
-        "quarterbacks": [
-          {
-            "name": "Drake Lindsey",
-            "jersey": "5",
-            "position": "QB",
-            "snaps": 26,
-            "started": true,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Max Shikenjanski",
-            "jersey": "6",
-            "position": "QB",
-            "snaps": 25,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          }
-        ],
-        "running_backs": [
-          {
-            "name": "A.J. Turner",
-            "jersey": "2",
-            "position": "HB",
-            "snaps": 10,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Fame Ijeboi",
-            "jersey": "7",
-            "position": "HB",
-            "snaps": 12,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Grant Washington",
-            "jersey": "21",
-            "position": "HB",
-            "snaps": 27,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Cam Davis",
-            "jersey": "23",
-            "position": "HB",
-            "snaps": 7,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Xavier Ford",
-            "jersey": "31",
-            "position": "HB",
-            "snaps": 4,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Darius Taylor",
-            "jersey": "1",
-            "position": "HB",
-            "snaps": 4,
-            "started": true,
-            "week": 2,
-            "opponent": "NWSTATE"
-          }
-        ],
-        "offensive_line": [
-          {
-            "name": "Nathan Roy",
-            "jersey": "50",
-            "position": "LT",
-            "snaps": 31,
-            "started": true,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Greg Johnson",
-            "jersey": "65",
-            "position": "LG",
-            "snaps": 26,
-            "started": true,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Brett Carroll",
-            "jersey": "56",
-            "position": "C",
-            "snaps": 38,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Kahlee Tafai",
-            "jersey": "71",
-            "position": "LT",
-            "snaps": 33,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Tony Nelson",
-            "jersey": "59",
-            "position": "LG",
-            "snaps": 38,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Ashton Beers",
-            "jersey": "78",
-            "position": "C",
-            "snaps": 26,
-            "started": true,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Jaden Ball",
-            "jersey": "58",
-            "position": "RG",
-            "snaps": 33,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Aluma Nkele",
-            "jersey": "70",
-            "position": "RT",
-            "snaps": 33,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Dylan Ray",
-            "jersey": "73",
-            "position": "RT",
-            "snaps": 31,
-            "started": true,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Marcellus Marshall",
-            "jersey": "74",
-            "position": "RG",
-            "snaps": 22,
-            "started": true,
-            "week": 2,
-            "opponent": "NWSTATE"
-          }
-        ]
+        "other": []
       },
       "defense": {
-        "defensive_line": [
-          {
-            "name": "Nate Becker",
-            "jersey": "D89",
-            "position": "NT",
-            "snaps": 13,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Jaylin Hicks",
-            "jersey": "D55",
-            "position": "DLT",
-            "snaps": 18,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Adam Kissayi",
-            "jersey": "D98",
-            "position": "DRE",
-            "snaps": 15,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Anthony Smith",
-            "jersey": "D00",
-            "position": "DRE",
-            "snaps": 10,
-            "started": true,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Adam Kissayi",
-            "jersey": "D98",
-            "position": "DRE",
-            "snaps": 15,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Riley Sunram",
-            "jersey": "D93",
-            "position": "NT",
-            "snaps": 15,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Deven Eastern",
-            "jersey": "D91",
-            "position": "NT",
-            "snaps": 5,
-            "started": true,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Rushawn Lawrence",
-            "jersey": "D16",
-            "position": "DLT",
-            "snaps": 14,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Jalen Logan-Redding",
-            "jersey": "D97",
-            "position": "DLT",
-            "snaps": 9,
-            "started": true,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Lucas Finnessy",
-            "jersey": "D46",
-            "position": "DRE",
-            "snaps": 12,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          }
-        ],
-        "linebackers": [
-          {
-            "name": "Maverick Baranowski",
-            "jersey": "D06",
-            "position": "MLB",
-            "snaps": 9,
-            "started": true,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Matt Kingsbury",
-            "jersey": "D49",
-            "position": "MLB",
-            "snaps": 22,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Emmanuel Karmo",
-            "jersey": "D02",
-            "position": "LOLB",
-            "snaps": 6,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Joey Gerlach",
-            "jersey": "D19",
-            "position": "ROLB",
-            "snaps": 17,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Jaxon Howard",
-            "jersey": "D01",
-            "position": "LOLB",
-            "snaps": 14,
-            "started": true,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Jeff Roberson",
-            "jersey": "D20",
-            "position": "MLB",
-            "snaps": 17,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Devon Williams",
-            "jersey": "D09",
-            "position": "MLB",
-            "snaps": 14,
-            "started": true,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Karter Menz",
-            "jersey": "D11",
-            "position": "ROLB",
-            "snaps": 12,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Mason Carrier",
-            "jersey": "D48",
-            "position": "MLB",
-            "snaps": 7,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          }
-        ],
-        "defensive_backs": [
-          {
-            "name": "John Nestor",
-            "jersey": "D17",
-            "position": "LCB",
-            "snaps": 19,
-            "started": true,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Garrison Monroe",
-            "jersey": "D23",
-            "position": "SS",
-            "snaps": 20,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Jaylen Bowden",
-            "jersey": "D05",
-            "position": "RCB",
-            "snaps": 15,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Koi Perich",
-            "jersey": "D03",
-            "position": "FS",
-            "snaps": 19,
-            "started": true,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Jai'Onte' McMillan",
-            "jersey": "D24",
-            "position": "SCB",
-            "snaps": 14,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Kerry Brown",
-            "jersey": "D14",
-            "position": "SS",
-            "snaps": 13,
-            "started": true,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Za'Quan Bryan",
-            "jersey": "D04",
-            "position": "RCB",
-            "snaps": 16,
-            "started": true,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Darius Green",
-            "jersey": "D12",
-            "position": "SS",
-            "snaps": 21,
-            "started": false,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Aidan Gousby",
-            "jersey": "D07",
-            "position": "FS",
-            "snaps": 14,
-            "started": true,
-            "week": 2,
-            "opponent": "NWSTATE"
-          }
-        ]
+        "other": []
       },
       "special_teams": {
-        "special_teams": [
+        "other": [
           {
             "name": "Mason Carrier",
             "jersey": "D48",
-            "position": "ST",
-            "totalSnaps": 21,
+            "position": "18",
             "kret": 1,
             "kcov": 11,
             "pret": 8,
             "pcov": 1,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Joey Gerlach",
-            "jersey": "D19",
-            "position": "ST",
-            "totalSnaps": 20,
-            "kret": 1,
-            "kcov": 11,
-            "pret": 7,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Emmanuel Karmo",
-            "jersey": "D02",
-            "position": "ST",
-            "totalSnaps": 9,
-            "kret": 0,
-            "kcov": 9,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Derik LeCaptain",
-            "jersey": "D35",
-            "position": "ST",
-            "totalSnaps": 20,
-            "kret": 1,
-            "kcov": 11,
-            "pret": 7,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Rhyland Kelly",
-            "jersey": "D18",
-            "position": "ST",
-            "totalSnaps": 14,
-            "kret": 1,
-            "kcov": 11,
-            "pret": 2,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Jeff Roberson",
-            "jersey": "D20",
-            "position": "ST",
-            "totalSnaps": 12,
-            "kret": 0,
-            "kcov": 11,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Matt Kingsbury",
-            "jersey": "D49",
-            "position": "ST",
-            "totalSnaps": 21,
-            "kret": 1,
-            "kcov": 11,
-            "pret": 8,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Tre Berry",
-            "jersey": "22",
-            "position": "ST",
-            "totalSnaps": 11,
-            "kret": 0,
-            "kcov": 11,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
+            "fgk": 14
           },
           {
             "name": "Alan Soukup",
             "jersey": "S80",
-            "position": "LS",
-            "totalSnaps": 11,
+            "position": "8",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 1,
             "fgblk": 0,
-            "fgk": 10,
-            "week": 2,
-            "opponent": "NWSTATE"
+            "fgk": 7
+          },
+          {
+            "name": "Za'Quan Bryan",
+            "jersey": "D04",
+            "position": "10",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 5,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 9
           },
           {
             "name": "Garrison Monroe",
             "jersey": "D23",
-            "position": "ST",
-            "totalSnaps": 21,
+            "position": "16",
             "kret": 1,
             "kcov": 11,
             "pret": 8,
             "pcov": 1,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
+            "fgk": 13
+          },
+          {
+            "name": "Matt Kingsbury",
+            "jersey": "D49",
+            "position": "19",
+            "kret": 1,
+            "kcov": 11,
+            "pret": 8,
+            "pcov": 1,
+            "fgblk": 0,
+            "fgk": 14
+          },
+          {
+            "name": "John Nestor",
+            "jersey": "D17",
+            "position": "10",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 5,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 9
+          },
+          {
+            "name": "Joey Gerlach",
+            "jersey": "D19",
+            "position": "18",
+            "kret": 1,
+            "kcov": 11,
+            "pret": 7,
+            "pcov": 1,
+            "fgblk": 0,
+            "fgk": 14
           },
           {
             "name": "Jaxon Howard",
             "jersey": "D01",
-            "position": "ST",
-            "totalSnaps": 8,
+            "position": "8",
             "kret": 0,
             "kcov": 0,
             "pret": 8,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
+            "fgk": 9
           },
           {
             "name": "Kerry Brown",
             "jersey": "D14",
-            "position": "ST",
-            "totalSnaps": 6,
+            "position": "10",
             "kret": 0,
             "kcov": 0,
             "pret": 6,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
+            "fgk": 1
           },
           {
-            "name": "Evan Redding",
-            "jersey": "D22",
-            "position": "ST",
-            "totalSnaps": 7,
+            "name": "Derik LeCaptain",
+            "jersey": "D35",
+            "position": "18",
+            "kret": 1,
+            "kcov": 11,
+            "pret": 7,
+            "pcov": 1,
+            "fgblk": 0,
+            "fgk": 19
+          },
+          {
+            "name": "Emmanuel Karmo",
+            "jersey": "D02",
+            "position": "6",
+            "kret": 0,
+            "kcov": 9,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 3
+          },
+          {
+            "name": "Ashton Beers",
+            "jersey": "78",
+            "position": "5",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 3
+          },
+          {
+            "name": "Tre Berry",
+            "jersey": "22",
+            "position": "6",
+            "kret": 0,
+            "kcov": 11,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Greg Johnson",
+            "jersey": "65",
+            "position": "5",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 3
+          },
+          {
+            "name": "Marcellus Marshall",
+            "jersey": "74",
+            "position": "5",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 3
+          },
+          {
+            "name": "Jeff Roberson",
+            "jersey": "D20",
+            "position": "6",
+            "kret": 0,
+            "kcov": 11,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 8
+          },
+          {
+            "name": "Dylan Ray",
+            "jersey": "73",
+            "position": "5",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 3
+          },
+          {
+            "name": "Jameson Geers",
+            "jersey": "86",
+            "position": "11",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 12
+          },
+          {
+            "name": "Aidan Gousby",
+            "jersey": "D07",
+            "position": "10",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 7
+          },
+          {
+            "name": "Aluma Nkele",
+            "jersey": "70",
+            "position": "5",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 3
+          },
+          {
+            "name": "Frank Bierman",
+            "jersey": "44",
+            "position": "8",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 8
+          },
+          {
+            "name": "Anthony Smith",
+            "jersey": "D00",
+            "position": "4",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 8
+          },
+          {
+            "name": "Jacob Simpson",
+            "jersey": "88",
+            "position": "3",
+            "kret": 1,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 5
+          },
+          {
+            "name": "Koi Perich",
+            "jersey": "D03",
+            "position": "13",
             "kret": 0,
             "kcov": 0,
             "pret": 7,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
+            "fgk": 15
           },
           {
-            "name": "Dylan Ray",
-            "jersey": "73",
-            "position": "ST",
-            "totalSnaps": 10,
+            "name": "Maverick Baranowski",
+            "jersey": "D06",
+            "position": "7",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 10,
-            "week": 2,
-            "opponent": "NWSTATE"
+            "fgk": 13
+          },
+          {
+            "name": "Jalen Logan-Redding",
+            "jersey": "D97",
+            "position": "3",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 2
+          },
+          {
+            "name": "Drew Biber",
+            "jersey": "87",
+            "position": "3",
+            "kret": 1,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 1,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Rushawn Lawrence",
+            "jersey": "D16",
+            "position": "1",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 1,
+            "fgblk": 0,
+            "fgk": 6
+          },
+          {
+            "name": "Deven Eastern",
+            "jersey": "D91",
+            "position": "4",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 6
+          },
+          {
+            "name": "Logan Loya",
+            "jersey": "17",
+            "position": "2",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 2
+          },
+          {
+            "name": "Kenric Lanier II",
+            "jersey": "15",
+            "position": "2",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 1
+          },
+          {
+            "name": "Devon Williams",
+            "jersey": "D09",
+            "position": "6",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 12
+          },
+          {
+            "name": "Rhyland Kelly",
+            "jersey": "D18",
+            "position": "16",
+            "kret": 1,
+            "kcov": 11,
+            "pret": 2,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 2
+          },
+          {
+            "name": "Evan Redding",
+            "jersey": "D22",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 7,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 4
           },
           {
             "name": "Nate Becker",
             "jersey": "D89",
-            "position": "ST",
-            "totalSnaps": 12,
+            "position": "0",
             "kret": 0,
             "kcov": 0,
             "pret": 1,
             "pcov": 1,
             "fgblk": 0,
-            "fgk": 10,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Ashton Beers",
-            "jersey": "78",
-            "position": "ST",
-            "totalSnaps": 7,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 7,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Greg Johnson",
-            "jersey": "65",
-            "position": "ST",
-            "totalSnaps": 7,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 7,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Marcellus Marshall",
-            "jersey": "74",
-            "position": "ST",
-            "totalSnaps": 8,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 8,
-            "week": 2,
-            "opponent": "NWSTATE"
+            "fgk": 5
           },
           {
             "name": "Jai'Onte' McMillan",
             "jersey": "D24",
-            "position": "ST",
-            "totalSnaps": 14,
+            "position": "0",
             "kret": 0,
             "kcov": 11,
             "pret": 3,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Aluma Nkele",
-            "jersey": "70",
-            "position": "ST",
-            "totalSnaps": 10,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 10,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Frank Bierman",
-            "jersey": "44",
-            "position": "ST",
-            "totalSnaps": 8,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 8,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Jameson Geers",
-            "jersey": "86",
-            "position": "ST",
-            "totalSnaps": 8,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 8,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Za'Quan Bryan",
-            "jersey": "D04",
-            "position": "ST",
-            "totalSnaps": 5,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 5,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
+            "fgk": 4
           },
           {
             "name": "Jerome Williams",
             "jersey": "55",
-            "position": "ST",
-            "totalSnaps": 3,
+            "position": "0",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 3,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Reese Tripp",
-            "jersey": "76",
-            "position": "ST",
-            "totalSnaps": 3,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 3,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "John Nestor",
-            "jersey": "D17",
-            "position": "ST",
-            "totalSnaps": 5,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 5,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Tom Weston",
-            "jersey": "S42",
-            "position": "P",
-            "totalSnaps": 11,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 10,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Brady Denaburg",
-            "jersey": "S92",
-            "position": "K",
-            "totalSnaps": 16,
-            "kret": 0,
-            "kcov": 8,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 8,
-            "week": 2,
-            "opponent": "NWSTATE"
+            "fgk": 0
           },
           {
             "name": "Harrison Brun",
             "jersey": "D33",
-            "position": "ST",
-            "totalSnaps": 3,
+            "position": "0",
             "kret": 1,
             "kcov": 2,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
+            "fgk": 0
           },
           {
             "name": "Pierce Walsh",
             "jersey": "19",
-            "position": "ST",
-            "totalSnaps": 3,
+            "position": "0",
             "kret": 1,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 2,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Drew Biber",
-            "jersey": "87",
-            "position": "ST",
-            "totalSnaps": 4,
-            "kret": 1,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 2,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Brett Carroll",
-            "jersey": "56",
-            "position": "ST",
-            "totalSnaps": 2,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 2,
-            "week": 2,
-            "opponent": "NWSTATE"
+            "fgk": 0
           },
           {
             "name": "Simon Seidl",
             "jersey": "D27",
-            "position": "ST",
-            "totalSnaps": 2,
+            "position": "0",
             "kret": 0,
             "kcov": 0,
             "pret": 1,
             "pcov": 1,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
+            "fgk": 5
           },
           {
             "name": "Ethan Stendel",
             "jersey": "D43",
-            "position": "ST",
-            "totalSnaps": 1,
+            "position": "0",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 1,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
+            "fgk": 0
+          },
+          {
+            "name": "Naiim Parrish",
+            "jersey": "D21",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 1,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Jaylen Bowden",
+            "jersey": "D05",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 1,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Quentin Redding",
+            "jersey": "81",
+            "position": "0",
+            "kret": 1,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Mike Gerald",
+            "jersey": "D13",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 2
+          },
+          {
+            "name": "Darius Green",
+            "jersey": "D12",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 1
+          },
+          {
+            "name": "Cam Davis",
+            "jersey": "23",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 5
+          },
+          {
+            "name": "Tom Weston",
+            "jersey": "S42",
+            "position": "8",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 1,
+            "fgblk": 0,
+            "fgk": 8
+          },
+          {
+            "name": "Brady Denaburg",
+            "jersey": "S92",
+            "position": "11",
+            "kret": 0,
+            "kcov": 8,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 6
           },
           {
             "name": "Daniel Jackson",
             "jersey": "S36",
-            "position": "K",
-            "totalSnaps": 5,
+            "position": "0",
             "kret": 0,
             "kcov": 3,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 2,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Naiim Parrish",
-            "jersey": "D21",
-            "position": "ST",
-            "totalSnaps": 1,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Koi Perich",
-            "jersey": "D03",
-            "position": "ST",
-            "totalSnaps": 7,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 7,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Jacob Simpson",
-            "jersey": "88",
-            "position": "ST",
-            "totalSnaps": 1,
-            "kret": 1,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Jaylen Bowden",
-            "jersey": "D05",
-            "position": "ST",
-            "totalSnaps": 1,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Quentin Redding",
-            "jersey": "81",
-            "position": "ST",
-            "totalSnaps": 2,
-            "kret": 1,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
-          },
-          {
-            "name": "Rushawn Lawrence",
-            "jersey": "D16",
-            "position": "ST",
-            "totalSnaps": 1,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "NWSTATE"
+            "fgk": 0
           }
         ]
-      },
-      "summary": {
-        "opponent": "NWSTATE",
-        "date": "Sat Sep 6th",
-        "finalScore": "66-0",
-        "homeAway": "Home",
-        "offensiveSnaps": 64,
-        "defensiveSnaps": 37,
-        "specialTeamsSnaps": 0
       }
     },
     {
       "week": 3,
       "offense": {
-        "wide_receivers": [
-          {
-            "name": "Le'Meke Brockington",
-            "jersey": "0",
-            "position": "RWR",
-            "snaps": 53,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Koi Perich",
-            "jersey": "D03",
-            "position": "LWR",
-            "snaps": 3,
-            "started": false,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Javon Tracy",
-            "jersey": "11",
-            "position": "RWR",
-            "snaps": 45,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Kenric Lanier II",
-            "jersey": "15",
-            "position": "RWR",
-            "snaps": 7,
-            "started": false,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Logan Loya",
-            "jersey": "17",
-            "position": "SLWR",
-            "snaps": 22,
-            "started": false,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Jalen Smith",
-            "jersey": "8",
-            "position": "LWR",
-            "snaps": 35,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          }
-        ],
-        "tight_ends": [
-          {
-            "name": "Jameson Geers",
-            "jersey": "86",
-            "position": "TE-R",
-            "snaps": 51,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Drew Biber",
-            "jersey": "87",
-            "position": "TE-L",
-            "snaps": 29,
-            "started": false,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Frank Bierman",
-            "jersey": "44",
-            "position": "TE-R",
-            "snaps": 18,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Pierce Walsh",
-            "jersey": "19",
-            "position": "TE-L",
-            "snaps": 26,
-            "started": false,
-            "week": 3,
-            "opponent": "Cal"
-          }
-        ],
-        "quarterbacks": [
-          {
-            "name": "Drake Lindsey",
-            "jersey": "5",
-            "position": "QB",
-            "snaps": 73,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          }
-        ],
-        "running_backs": [
-          {
-            "name": "Fame Ijeboi",
-            "jersey": "7",
-            "position": "HB",
-            "snaps": 26,
-            "started": false,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "A.J. Turner",
-            "jersey": "2",
-            "position": "HB",
-            "snaps": 5,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Cam Davis",
-            "jersey": "23",
-            "position": "HB",
-            "snaps": 43,
-            "started": false,
-            "week": 3,
-            "opponent": "Cal"
-          }
-        ],
-        "offensive_line": [
-          {
-            "name": "Dylan Ray",
-            "jersey": "73",
-            "position": "RT",
-            "snaps": 73,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Nathan Roy",
-            "jersey": "50",
-            "position": "LT",
-            "snaps": 71,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Ashton Beers",
-            "jersey": "78",
-            "position": "C",
-            "snaps": 73,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Kahlee Tafai",
-            "jersey": "71",
-            "position": "LT",
-            "snaps": 2,
-            "started": false,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Tony Nelson",
-            "jersey": "59",
-            "position": "LG",
-            "snaps": 2,
-            "started": false,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Greg Johnson",
-            "jersey": "65",
-            "position": "LG",
-            "snaps": 73,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Marcellus Marshall",
-            "jersey": "74",
-            "position": "RG",
-            "snaps": 73,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          }
-        ]
+        "other": []
       },
       "defense": {
-        "defensive_line": [
-          {
-            "name": "Nate Becker",
-            "jersey": "D89",
-            "position": "DLT",
-            "snaps": 16,
-            "started": false,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Rushawn Lawrence",
-            "jersey": "D16",
-            "position": "DLT",
-            "snaps": 42,
-            "started": false,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Anthony Smith",
-            "jersey": "D00",
-            "position": "DRE",
-            "snaps": 62,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Lucas Finnessy",
-            "jersey": "D46",
-            "position": "DRE",
-            "snaps": 6,
-            "started": false,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Deven Eastern",
-            "jersey": "D91",
-            "position": "NT",
-            "snaps": 40,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Jalen Logan-Redding",
-            "jersey": "D97",
-            "position": "DLT",
-            "snaps": 24,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          }
-        ],
-        "linebackers": [
-          {
-            "name": "Devon Williams",
-            "jersey": "D09",
-            "position": "MLB",
-            "snaps": 59,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Matt Kingsbury",
-            "jersey": "D49",
-            "position": "WLB",
-            "snaps": 23,
-            "started": false,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Emmanuel Karmo",
-            "jersey": "D02",
-            "position": "MLB",
-            "snaps": 17,
-            "started": false,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Karter Menz",
-            "jersey": "D11",
-            "position": "ROLB",
-            "snaps": 20,
-            "started": false,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Jeff Roberson",
-            "jersey": "D20",
-            "position": "MLB",
-            "snaps": 1,
-            "started": false,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Jaxon Howard",
-            "jersey": "D01",
-            "position": "LOLB",
-            "snaps": 42,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Joey Gerlach",
-            "jersey": "D19",
-            "position": "ROLB",
-            "snaps": 2,
-            "started": false,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Maverick Baranowski",
-            "jersey": "D06",
-            "position": "MLB",
-            "snaps": 55,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          }
-        ],
-        "defensive_backs": [
-          {
-            "name": "John Nestor",
-            "jersey": "D17",
-            "position": "LCB",
-            "snaps": 60,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Darius Green",
-            "jersey": "D12",
-            "position": "SCB",
-            "snaps": 28,
-            "started": false,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Za'Quan Bryan",
-            "jersey": "D04",
-            "position": "RCB",
-            "snaps": 55,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Garrison Monroe",
-            "jersey": "D23",
-            "position": "SS",
-            "snaps": 10,
-            "started": false,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Jai'Onte' McMillan",
-            "jersey": "D24",
-            "position": "SCB",
-            "snaps": 11,
-            "started": false,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Koi Perich",
-            "jersey": "D03",
-            "position": "SS",
-            "snaps": 67,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Aidan Gousby",
-            "jersey": "D07",
-            "position": "FS",
-            "snaps": 65,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Mike Gerald",
-            "jersey": "D13",
-            "position": "RCB",
-            "snaps": 17,
-            "started": false,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Kerry Brown",
-            "jersey": "D14",
-            "position": "SCB",
-            "snaps": 15,
-            "started": true,
-            "week": 3,
-            "opponent": "Cal"
-          }
-        ]
+        "other": []
       },
       "special_teams": {
-        "special_teams": [
-          {
-            "name": "Rushawn Lawrence",
-            "jersey": "D16",
-            "position": "ST",
-            "totalSnaps": 6,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 2,
-            "pcov": 0,
-            "fgblk": 4,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Anthony Smith",
-            "jersey": "D00",
-            "position": "ST",
-            "totalSnaps": 8,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 3,
-            "pcov": 0,
-            "fgblk": 5,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Matt Kingsbury",
-            "jersey": "D49",
-            "position": "ST",
-            "totalSnaps": 14,
-            "kret": 5,
-            "kcov": 3,
-            "pret": 2,
-            "pcov": 4,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
-          },
+        "other": [
           {
             "name": "Mason Carrier",
             "jersey": "D48",
-            "position": "ST",
-            "totalSnaps": 14,
+            "position": "18",
             "kret": 5,
             "kcov": 3,
             "pret": 2,
             "pcov": 4,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Maverick Baranowski",
-            "jersey": "D06",
-            "position": "ST",
-            "totalSnaps": 13,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 4,
-            "pcov": 4,
-            "fgblk": 5,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Frank Bierman",
-            "jersey": "44",
-            "position": "ST",
-            "totalSnaps": 8,
-            "kret": 5,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 3,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Jameson Geers",
-            "jersey": "86",
-            "position": "ST",
-            "totalSnaps": 12,
-            "kret": 5,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 4,
-            "fgblk": 3,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Derik LeCaptain",
-            "jersey": "D35",
-            "position": "ST",
-            "totalSnaps": 19,
-            "kret": 5,
-            "kcov": 3,
-            "pret": 2,
-            "pcov": 4,
-            "fgblk": 5,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Joey Gerlach",
-            "jersey": "D19",
-            "position": "ST",
-            "totalSnaps": 14,
-            "kret": 5,
-            "kcov": 3,
-            "pret": 2,
-            "pcov": 4,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Za'Quan Bryan",
-            "jersey": "D04",
-            "position": "ST",
-            "totalSnaps": 9,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 5,
-            "pcov": 0,
-            "fgblk": 4,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "John Nestor",
-            "jersey": "D17",
-            "position": "ST",
-            "totalSnaps": 9,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 4,
-            "pcov": 0,
-            "fgblk": 5,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
+            "fgk": 0
           },
           {
             "name": "Alan Soukup",
             "jersey": "S80",
-            "position": "LS",
-            "totalSnaps": 7,
+            "position": "8",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 4,
             "fgblk": 0,
-            "fgk": 3,
-            "week": 3,
-            "opponent": "Cal"
+            "fgk": 0
           },
           {
-            "name": "Evan Redding",
-            "jersey": "D22",
-            "position": "ST",
-            "totalSnaps": 4,
+            "name": "Za'Quan Bryan",
+            "jersey": "D04",
+            "position": "10",
             "kret": 0,
-            "kcov": 3,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Aidan Gousby",
-            "jersey": "D07",
-            "position": "ST",
-            "totalSnaps": 7,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 3,
-            "pcov": 0,
-            "fgblk": 4,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Jaxon Howard",
-            "jersey": "D01",
-            "position": "ST",
-            "totalSnaps": 9,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 4,
-            "pcov": 0,
-            "fgblk": 5,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Ashton Beers",
-            "jersey": "78",
-            "position": "ST",
-            "totalSnaps": 3,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 3,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Greg Johnson",
-            "jersey": "65",
-            "position": "ST",
-            "totalSnaps": 3,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 3,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Emmanuel Karmo",
-            "jersey": "D02",
-            "position": "ST",
-            "totalSnaps": 3,
-            "kret": 0,
-            "kcov": 3,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Jai'Onte' McMillan",
-            "jersey": "D24",
-            "position": "ST",
-            "totalSnaps": 4,
-            "kret": 0,
-            "kcov": 3,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Tom Weston",
-            "jersey": "S42",
-            "position": "P",
-            "totalSnaps": 8,
-            "kret": 0,
-            "kcov": 1,
-            "pret": 0,
-            "pcov": 4,
-            "fgblk": 0,
-            "fgk": 3,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Nate Becker",
-            "jersey": "D89",
-            "position": "ST",
-            "totalSnaps": 5,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 1,
-            "fgk": 3,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Marcellus Marshall",
-            "jersey": "74",
-            "position": "ST",
-            "totalSnaps": 3,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 3,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Jacob Simpson",
-            "jersey": "88",
-            "position": "ST",
-            "totalSnaps": 5,
-            "kret": 5,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Dylan Ray",
-            "jersey": "73",
-            "position": "ST",
-            "totalSnaps": 3,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 3,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Koi Perich",
-            "jersey": "D03",
-            "position": "ST",
-            "totalSnaps": 15,
-            "kret": 5,
             "kcov": 0,
             "pret": 5,
             "pcov": 0,
-            "fgblk": 5,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
+            "fgblk": 4,
+            "fgk": 0
           },
           {
             "name": "Garrison Monroe",
             "jersey": "D23",
-            "position": "ST",
-            "totalSnaps": 13,
+            "position": "16",
             "kret": 5,
             "kcov": 3,
             "pret": 2,
             "pcov": 3,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
+            "fgk": 0
           },
           {
-            "name": "Devon Williams",
-            "jersey": "D09",
-            "position": "ST",
-            "totalSnaps": 12,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 3,
-            "pcov": 4,
-            "fgblk": 5,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Aluma Nkele",
-            "jersey": "70",
-            "position": "ST",
-            "totalSnaps": 3,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 3,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Deven Eastern",
-            "jersey": "D91",
-            "position": "ST",
-            "totalSnaps": 6,
-            "kret": 0,
-            "kcov": 0,
+            "name": "Matt Kingsbury",
+            "jersey": "D49",
+            "position": "19",
+            "kret": 5,
+            "kcov": 3,
             "pret": 2,
-            "pcov": 0,
-            "fgblk": 4,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
+            "pcov": 4,
+            "fgblk": 0,
+            "fgk": 0
           },
           {
-            "name": "Jalen Logan-Redding",
-            "jersey": "D97",
-            "position": "ST",
-            "totalSnaps": 2,
+            "name": "John Nestor",
+            "jersey": "D17",
+            "position": "10",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 4,
+            "pcov": 0,
+            "fgblk": 5,
+            "fgk": 0
+          },
+          {
+            "name": "Joey Gerlach",
+            "jersey": "D19",
+            "position": "18",
+            "kret": 5,
+            "kcov": 3,
+            "pret": 2,
+            "pcov": 4,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Jaxon Howard",
+            "jersey": "D01",
+            "position": "8",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 4,
+            "pcov": 0,
+            "fgblk": 5,
+            "fgk": 0
+          },
+          {
+            "name": "Kerry Brown",
+            "jersey": "D14",
+            "position": "10",
             "kret": 0,
             "kcov": 0,
             "pret": 1,
             "pcov": 0,
-            "fgblk": 1,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Derik LeCaptain",
+            "jersey": "D35",
+            "position": "18",
+            "kret": 5,
+            "kcov": 3,
+            "pret": 2,
+            "pcov": 4,
+            "fgblk": 5,
+            "fgk": 0
+          },
+          {
+            "name": "Emmanuel Karmo",
+            "jersey": "D02",
+            "position": "6",
+            "kret": 0,
+            "kcov": 3,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
           },
           {
             "name": "Jeff Roberson",
             "jersey": "D20",
-            "position": "ST",
-            "totalSnaps": 8,
+            "position": "6",
             "kret": 5,
             "kcov": 3,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
+            "fgk": 0
           },
           {
-            "name": "Mike Gerald",
-            "jersey": "D13",
-            "position": "ST",
-            "totalSnaps": 2,
+            "name": "Jameson Geers",
+            "jersey": "86",
+            "position": "11",
+            "kret": 5,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 4,
+            "fgblk": 3,
+            "fgk": 0
+          },
+          {
+            "name": "Aidan Gousby",
+            "jersey": "D07",
+            "position": "10",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 3,
+            "pcov": 0,
+            "fgblk": 4,
+            "fgk": 0
+          },
+          {
+            "name": "Frank Bierman",
+            "jersey": "44",
+            "position": "8",
+            "kret": 5,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 3,
+            "fgk": 0
+          },
+          {
+            "name": "Anthony Smith",
+            "jersey": "D00",
+            "position": "4",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 3,
+            "pcov": 0,
+            "fgblk": 5,
+            "fgk": 0
+          },
+          {
+            "name": "Jacob Simpson",
+            "jersey": "88",
+            "position": "3",
+            "kret": 5,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Koi Perich",
+            "jersey": "D03",
+            "position": "13",
+            "kret": 5,
+            "kcov": 0,
+            "pret": 5,
+            "pcov": 0,
+            "fgblk": 5,
+            "fgk": 0
+          },
+          {
+            "name": "Maverick Baranowski",
+            "jersey": "D06",
+            "position": "7",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 4,
+            "pcov": 4,
+            "fgblk": 5,
+            "fgk": 0
+          },
+          {
+            "name": "Jalen Logan-Redding",
+            "jersey": "D97",
+            "position": "3",
             "kret": 0,
             "kcov": 0,
             "pret": 1,
             "pcov": 0,
             "fgblk": 1,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
+            "fgk": 0
           },
           {
-            "name": "Rhyland Kelly",
-            "jersey": "D18",
-            "position": "ST",
-            "totalSnaps": 2,
-            "kret": 0,
-            "kcov": 2,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Kenric Lanier II",
-            "jersey": "15",
-            "position": "ST",
-            "totalSnaps": 1,
+            "name": "Rushawn Lawrence",
+            "jersey": "D16",
+            "position": "1",
             "kret": 0,
             "kcov": 0,
-            "pret": 1,
+            "pret": 2,
             "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
+            "fgblk": 4,
+            "fgk": 0
           },
           {
-            "name": "Kerry Brown",
-            "jersey": "D14",
-            "position": "ST",
-            "totalSnaps": 1,
+            "name": "Deven Eastern",
+            "jersey": "D91",
+            "position": "4",
             "kret": 0,
             "kcov": 0,
-            "pret": 1,
+            "pret": 2,
             "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Brady Denaburg",
-            "jersey": "S92",
-            "position": "K",
-            "totalSnaps": 6,
-            "kret": 0,
-            "kcov": 3,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 3,
-            "week": 3,
-            "opponent": "Cal"
-          },
-          {
-            "name": "Darius Green",
-            "jersey": "D12",
-            "position": "ST",
-            "totalSnaps": 1,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
+            "fgblk": 4,
+            "fgk": 0
           },
           {
             "name": "Logan Loya",
             "jersey": "17",
-            "position": "ST",
-            "totalSnaps": 2,
+            "position": "2",
             "kret": 0,
             "kcov": 0,
             "pret": 1,
             "pcov": 1,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
+            "fgk": 0
           },
           {
-            "name": "Cam Davis",
-            "jersey": "23",
-            "position": "ST",
-            "totalSnaps": 5,
-            "kret": 5,
+            "name": "Kenric Lanier II",
+            "jersey": "15",
+            "position": "2",
+            "kret": 0,
             "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Devon Williams",
+            "jersey": "D09",
+            "position": "6",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 3,
+            "pcov": 4,
+            "fgblk": 5,
+            "fgk": 0
+          },
+          {
+            "name": "Rhyland Kelly",
+            "jersey": "D18",
+            "position": "16",
+            "kret": 0,
+            "kcov": 2,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
+            "fgk": 0
+          },
+          {
+            "name": "Evan Redding",
+            "jersey": "D22",
+            "position": "0",
+            "kret": 0,
+            "kcov": 3,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Nate Becker",
+            "jersey": "D89",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 0
+          },
+          {
+            "name": "Jai'Onte' McMillan",
+            "jersey": "D24",
+            "position": "0",
+            "kret": 0,
+            "kcov": 3,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
           },
           {
             "name": "Simon Seidl",
             "jersey": "D27",
-            "position": "ST",
-            "totalSnaps": 5,
+            "position": "0",
             "kret": 0,
             "kcov": 0,
             "pret": 2,
             "pcov": 3,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Cal"
+            "fgk": 0
+          },
+          {
+            "name": "Mike Gerald",
+            "jersey": "D13",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 0
+          },
+          {
+            "name": "Darius Green",
+            "jersey": "D12",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Cam Davis",
+            "jersey": "23",
+            "position": "0",
+            "kret": 5,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Tom Weston",
+            "jersey": "S42",
+            "position": "8",
+            "kret": 0,
+            "kcov": 1,
+            "pret": 0,
+            "pcov": 4,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Brady Denaburg",
+            "jersey": "S92",
+            "position": "11",
+            "kret": 0,
+            "kcov": 3,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
           }
         ]
-      },
-      "summary": {
-        "opponent": "Cal",
-        "date": "Sat Sep 13th",
-        "finalScore": "14-27",
-        "homeAway": "Home",
-        "offensiveSnaps": 73,
-        "defensiveSnaps": 67,
-        "specialTeamsSnaps": 0
       }
+    }
+  ],
+  "summary": [
+    {
+      "week": 1,
+      "opponent": "Minnesota",
+      "date": "Buffalo",
+      "final_score_team": "1",
+      "final_score_opponent": "Thu Aug 28th",
+      "home_away": "23",
+      "offense_snaps": 10,
+      "defense_snaps": 0,
+      "special_teams_snaps": 80
     },
     {
-      "week": 4,
-      "offense": {
-        "wide_receivers": [],
-        "tight_ends": [],
-        "quarterbacks": [],
-        "running_backs": [],
-        "offensive_line": []
-      },
-      "defense": {
-        "defensive_line": [],
-        "linebackers": [],
-        "defensive_backs": []
-      },
-      "special_teams": {
-        "special_teams": []
-      },
-      "summary": {}
+      "week": 2,
+      "opponent": "Minnesota",
+      "date": "NWSTATE",
+      "final_score_team": "2",
+      "final_score_opponent": "Sat Sep 6th",
+      "home_away": "66",
+      "offense_snaps": 0,
+      "defense_snaps": 0,
+      "special_teams_snaps": 64
+    },
+    {
+      "week": 3,
+      "opponent": "Minnesota",
+      "date": "Cal",
+      "final_score_team": "3",
+      "final_score_opponent": "Sat Sep 13th",
+      "home_away": "14",
+      "offense_snaps": 27,
+      "defense_snaps": 0,
+      "special_teams_snaps": 73
     }
-  ]
+  ],
+  "metadata": {
+    "weeks": 3,
+    "last_updated": "2025-09-28T23:58:02.510Z"
+  }
 }

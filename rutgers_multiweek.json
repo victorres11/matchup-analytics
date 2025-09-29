@@ -1,4680 +1,2483 @@
 {
-  "metadata": {
-    "team": "Rutgers",
-    "conference": "Big Ten",
-    "weeks": 4,
-    "source": "PFF Premium Stats"
-  },
-  "offense": {
-    "wide_receivers": [],
-    "tight_ends": [],
-    "quarterbacks": [],
-    "running_backs": [],
-    "offensive_line": []
-  },
-  "defense": {
-    "defensive_line": [],
-    "linebackers": [],
-    "defensive_backs": []
-  },
-  "special_teams": {
-    "special_teams": []
-  },
+  "team": "rutgers_new",
   "weeks": [
     {
       "week": 1,
       "offense": {
-        "wide_receivers": [
-          {
-            "name": "Ian Strong",
-            "jersey": "9",
-            "position": "LWR",
-            "snaps": 60,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "KJ Duff",
-            "jersey": "8",
-            "position": "RWR",
-            "snaps": 61,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "DT Sheffield",
-            "jersey": "0",
-            "position": "SRWR",
-            "snaps": 49,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Ben Black",
-            "jersey": "17",
-            "position": "RWR",
-            "snaps": 1,
-            "started": false,
-            "week": 1,
-            "opponent": "Ohio"
-          }
-        ],
-        "tight_ends": [
-          {
-            "name": "Kenny Fletcher Jr.",
-            "jersey": "12",
-            "position": "TER",
-            "snaps": 39,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Colin Weber",
-            "jersey": "18",
-            "position": "TEL",
-            "snaps": 40,
-            "started": false,
-            "week": 1,
-            "opponent": "Ohio"
-          }
-        ],
-        "quarterbacks": [
-          {
-            "name": "Athan Kaliakmanis",
-            "jersey": "16",
-            "position": "QB",
-            "snaps": 61,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          }
-        ],
-        "running_backs": [
-          {
-            "name": "Antwan Raymond",
-            "jersey": "3",
-            "position": "HB",
-            "snaps": 32,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "CJ Campbell Jr.",
-            "jersey": "5",
-            "position": "HB",
-            "snaps": 19,
-            "started": false,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Ja'shon Benjamin",
-            "jersey": "20",
-            "position": "HB",
-            "snaps": 10,
-            "started": false,
-            "week": 1,
-            "opponent": "Ohio"
-          }
-        ],
-        "offensive_line": [
-          {
-            "name": "Gus Zilinskas",
-            "jersey": "59",
-            "position": "C",
-            "snaps": 61,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Kwabena Asamoah",
-            "jersey": "69",
-            "position": "RG",
-            "snaps": 61,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Dantae Chin",
-            "jersey": "76",
-            "position": "LT",
-            "snaps": 54,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Taj White",
-            "jersey": "54",
-            "position": "RT",
-            "snaps": 61,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Bryan Felter",
-            "jersey": "65",
-            "position": "LG",
-            "snaps": 61,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Tyler Needham",
-            "jersey": "56",
-            "position": "LT",
-            "snaps": 7,
-            "started": false,
-            "week": 1,
-            "opponent": "Ohio"
-          }
-        ]
+        "other": []
       },
       "defense": {
-        "defensive_line": [
-          {
-            "name": "Eric O'Neill",
-            "jersey": "D99",
-            "position": "DRE",
-            "snaps": 38,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Zaire Angoy",
-            "jersey": "D55",
-            "position": "DLT",
-            "snaps": 32,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Darold DeNgohe",
-            "jersey": "D92",
-            "position": "NT",
-            "snaps": 8,
-            "started": false,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Keshon Griffin",
-            "jersey": "D96",
-            "position": "NT",
-            "snaps": 38,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Henry Hughes Jr.",
-            "jersey": "D95",
-            "position": "NT",
-            "snaps": 7,
-            "started": false,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Oliver Billotte",
-            "jersey": "D97",
-            "position": "DLT",
-            "snaps": 22,
-            "started": false,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Bradley Weaver",
-            "jersey": "D94",
-            "position": "DLE",
-            "snaps": 31,
-            "started": false,
-            "week": 1,
-            "opponent": "Ohio"
-          }
-        ],
-        "linebackers": [
-          {
-            "name": "Moses Walker",
-            "jersey": "D02",
-            "position": "WLB",
-            "snaps": 51,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Dariel Djabome",
-            "jersey": "D08",
-            "position": "MLB",
-            "snaps": 62,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Jordan Thompson",
-            "jersey": "D14",
-            "position": "LOLB",
-            "snaps": 32,
-            "started": false,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Jordan Walker",
-            "jersey": "D01",
-            "position": "ROLB",
-            "snaps": 40,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          }
-        ],
-        "defensive_backs": [
-          {
-            "name": "Jacobie Henderson",
-            "jersey": "D10",
-            "position": "LCB",
-            "snaps": 43,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Al-Shadee Salaam",
-            "jersey": "D21",
-            "position": "RCB",
-            "snaps": 41,
-            "started": false,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Chris Joines",
-            "jersey": "D20",
-            "position": "SS",
-            "snaps": 2,
-            "started": false,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Bo Mascoe",
-            "jersey": "D03",
-            "position": "LCB",
-            "snaps": 41,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Jett Elad",
-            "jersey": "D09",
-            "position": "SS",
-            "snaps": 62,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Cam Miller",
-            "jersey": "D07",
-            "position": "SCB",
-            "snaps": 62,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Kaj Sanders",
-            "jersey": "D05",
-            "position": "SS",
-            "snaps": 60,
-            "started": true,
-            "week": 1,
-            "opponent": "Ohio"
-          }
-        ]
+        "other": []
       },
       "special_teams": {
-        "special_teams": [
+        "other": [
           {
             "name": "Cam Miller",
             "jersey": "D07",
-            "position": "ST",
-            "totalSnaps": 8,
+            "position": "8",
             "kret": 0,
             "kcov": 0,
             "pret": 3,
             "pcov": 0,
             "fgblk": 5,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 5
           },
           {
             "name": "Jesse Ofurie",
             "jersey": "D16",
-            "position": "ST",
-            "totalSnaps": 9,
+            "position": "9",
             "kret": 0,
             "kcov": 7,
             "pret": 2,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 15
           },
           {
             "name": "Kaj Sanders",
             "jersey": "D05",
-            "position": "ST",
-            "totalSnaps": 7,
+            "position": "7",
             "kret": 0,
             "kcov": 0,
             "pret": 2,
             "pcov": 0,
             "fgblk": 5,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 6
           },
           {
             "name": "Dino Kaliakmanis",
             "jersey": "83",
-            "position": "ST",
-            "totalSnaps": 14,
+            "position": "14",
             "kret": 6,
             "kcov": 7,
             "pret": 0,
             "pcov": 1,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 16
           },
           {
             "name": "Sebastian Jusma",
             "jersey": "D29",
-            "position": "ST",
-            "totalSnaps": 7,
+            "position": "7",
             "kret": 0,
             "kcov": 7,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 8
           },
           {
             "name": "Chris Joines",
             "jersey": "D20",
-            "position": "ST",
-            "totalSnaps": 16,
+            "position": "16",
             "kret": 6,
             "kcov": 7,
             "pret": 2,
             "pcov": 1,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 16
           },
           {
             "name": "Zilan Williams",
             "jersey": "D15",
-            "position": "ST",
-            "totalSnaps": 13,
+            "position": "13",
             "kret": 6,
             "kcov": 7,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 12
           },
           {
             "name": "Austin Dean",
             "jersey": "D47",
-            "position": "ST",
-            "totalSnaps": 13,
+            "position": "13",
             "kret": 6,
             "kcov": 7,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 14
           },
           {
             "name": "Michael O'Connor",
             "jersey": "S99",
-            "position": "LS",
-            "totalSnaps": 7,
+            "position": "7",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 1,
             "fgblk": 0,
-            "fgk": 6,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 8
           },
           {
             "name": "Michael Robinson II",
             "jersey": "31",
-            "position": "ST",
-            "totalSnaps": 9,
+            "position": "9",
             "kret": 0,
             "kcov": 7,
             "pret": 2,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 15
           },
           {
             "name": "Terrence Salami",
             "jersey": "73",
-            "position": "ST",
-            "totalSnaps": 6,
+            "position": "6",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 6,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 7
           },
           {
             "name": "John Stone",
             "jersey": "71",
-            "position": "ST",
-            "totalSnaps": 6,
+            "position": "6",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 6,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 7
           },
           {
             "name": "Jordan Thompson",
             "jersey": "D14",
-            "position": "ST",
-            "totalSnaps": 9,
+            "position": "9",
             "kret": 0,
             "kcov": 0,
             "pret": 1,
             "pcov": 0,
             "fgblk": 2,
-            "fgk": 6,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 9
           },
           {
             "name": "Kwabena Asamoah",
             "jersey": "69",
-            "position": "ST",
-            "totalSnaps": 6,
+            "position": "6",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 6,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 7
           },
           {
             "name": "Jordan Walker",
             "jersey": "D01",
-            "position": "ST",
-            "totalSnaps": 12,
+            "position": "12",
             "kret": 0,
             "kcov": 0,
             "pret": 1,
             "pcov": 1,
             "fgblk": 4,
-            "fgk": 6,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 10
           },
           {
             "name": "Jett Elad",
             "jersey": "D09",
-            "position": "ST",
-            "totalSnaps": 7,
+            "position": "7",
             "kret": 0,
             "kcov": 0,
             "pret": 3,
             "pcov": 0,
             "fgblk": 4,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 5
           },
           {
             "name": "Keshon Griffin",
             "jersey": "D96",
-            "position": "ST",
-            "totalSnaps": 8,
+            "position": "8",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 2,
-            "fgk": 6,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 9
           },
           {
             "name": "Timmy Ward",
             "jersey": "D38",
-            "position": "ST",
-            "totalSnaps": 17,
+            "position": "17",
             "kret": 6,
             "kcov": 7,
             "pret": 2,
             "pcov": 1,
             "fgblk": 1,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 16
           },
           {
             "name": "Dantae Chin",
             "jersey": "76",
-            "position": "ST",
-            "totalSnaps": 6,
+            "position": "6",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 6,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 4
           },
           {
             "name": "Bryan Felter",
             "jersey": "65",
-            "position": "ST",
-            "totalSnaps": 6,
+            "position": "6",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 6,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 7
           },
           {
             "name": "Al-Shadee Salaam",
             "jersey": "D21",
-            "position": "ST",
-            "totalSnaps": 5,
+            "position": "5",
             "kret": 0,
             "kcov": 0,
             "pret": 1,
             "pcov": 0,
             "fgblk": 4,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 3
           },
           {
             "name": "Dariel Djabome",
             "jersey": "D08",
-            "position": "ST",
-            "totalSnaps": 7,
+            "position": "7",
             "kret": 0,
             "kcov": 0,
             "pret": 1,
             "pcov": 1,
             "fgblk": 5,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 5
           },
           {
             "name": "Bo Mascoe",
             "jersey": "D03",
-            "position": "ST",
-            "totalSnaps": 6,
+            "position": "6",
             "kret": 0,
             "kcov": 0,
             "pret": 2,
             "pcov": 0,
             "fgblk": 4,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Riley McCann",
-            "jersey": "S22",
-            "position": "K",
-            "totalSnaps": 6,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 6,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 6
           },
           {
             "name": "Eric O'Neill",
             "jersey": "D99",
-            "position": "ST",
-            "totalSnaps": 4,
+            "position": "4",
             "kret": 0,
             "kcov": 0,
             "pret": 1,
             "pcov": 0,
             "fgblk": 3,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 1
           },
           {
             "name": "Ben Black",
             "jersey": "17",
-            "position": "ST",
-            "totalSnaps": 9,
+            "position": "9",
             "kret": 6,
             "kcov": 0,
             "pret": 2,
             "pcov": 1,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 14
           },
           {
             "name": "Jacobie Henderson",
             "jersey": "D10",
-            "position": "ST",
-            "totalSnaps": 3,
+            "position": "3",
             "kret": 0,
             "kcov": 0,
             "pret": 1,
             "pcov": 0,
             "fgblk": 2,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 3
           },
           {
             "name": "Dylan Braithwaite",
             "jersey": "67",
-            "position": "ST",
-            "totalSnaps": 2,
+            "position": "2",
             "kret": 0,
             "kcov": 2,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 6
           },
           {
             "name": "Moses Walker",
             "jersey": "D02",
-            "position": "ST",
-            "totalSnaps": 7,
+            "position": "7",
             "kret": 0,
             "kcov": 0,
             "pret": 1,
             "pcov": 1,
             "fgblk": 5,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 4
           },
           {
             "name": "Bradley Weaver",
             "jersey": "D94",
-            "position": "ST",
-            "totalSnaps": 2,
+            "position": "2",
             "kret": 0,
             "kcov": 0,
             "pret": 1,
             "pcov": 0,
             "fgblk": 1,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 3
           },
           {
             "name": "Colin Weber",
             "jersey": "18",
-            "position": "ST",
-            "totalSnaps": 7,
+            "position": "7",
             "kret": 6,
             "kcov": 0,
             "pret": 0,
             "pcov": 1,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 5
           },
           {
             "name": "Jackson Gister",
             "jersey": "82",
-            "position": "ST",
-            "totalSnaps": 7,
+            "position": "7",
             "kret": 6,
             "kcov": 0,
             "pret": 0,
             "pcov": 1,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 5
           },
           {
             "name": "Noah Shaw",
             "jersey": "D34",
-            "position": "ST",
-            "totalSnaps": 1,
+            "position": "1",
             "kret": 0,
             "kcov": 1,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Jack Scullion",
-            "jersey": "S93",
-            "position": "K",
-            "totalSnaps": 7,
-            "kret": 0,
-            "kcov": 7,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Jakob Anderson",
-            "jersey": "S94",
-            "position": "P",
-            "totalSnaps": 1,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 0
           },
           {
             "name": "DT Sheffield",
             "jersey": "0",
-            "position": "ST",
-            "totalSnaps": 3,
+            "position": "3",
             "kret": 0,
             "kcov": 0,
             "pret": 3,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Ian Strong",
-            "jersey": "9",
-            "position": "ST",
-            "totalSnaps": 0,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
-          },
-          {
-            "name": "Jai Patel",
-            "jersey": "S44",
-            "position": "K",
-            "totalSnaps": 6,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 6,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 4
           },
           {
             "name": "Darold DeNgohe",
             "jersey": "D92",
-            "position": "ST",
-            "totalSnaps": 1,
+            "position": "1",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 1,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 1
           },
           {
             "name": "Ja'shon Benjamin",
             "jersey": "20",
-            "position": "ST",
-            "totalSnaps": 6,
+            "position": "6",
             "kret": 6,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 4
           },
           {
             "name": "Oliver Billotte",
             "jersey": "D97",
-            "position": "ST",
-            "totalSnaps": 1,
+            "position": "1",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 1,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 1
           },
           {
             "name": "Zaire Angoy",
             "jersey": "D55",
-            "position": "ST",
-            "totalSnaps": 4,
+            "position": "4",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 4,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 3
           },
           {
             "name": "Henry Hughes Jr.",
             "jersey": "D95",
-            "position": "ST",
-            "totalSnaps": 2,
+            "position": "2",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 2,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 1
           },
           {
             "name": "Sam Robinson",
             "jersey": "D04",
-            "position": "ST",
-            "totalSnaps": 12,
+            "position": "12",
             "kret": 6,
             "kcov": 6,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 2
           },
           {
             "name": "Isaiah Crumpler",
             "jersey": "D26",
-            "position": "ST",
-            "totalSnaps": 13,
+            "position": "13",
             "kret": 6,
             "kcov": 5,
             "pret": 2,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 1,
-            "opponent": "Ohio"
+            "fgk": 2
+          },
+          {
+            "name": "Tyler Needham",
+            "jersey": "56",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 3
+          },
+          {
+            "name": "John Insinga",
+            "jersey": "D33",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 1
+          },
+          {
+            "name": "Abram Wright",
+            "jersey": "D06",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 1
+          },
+          {
+            "name": "Riley McCann",
+            "jersey": "S22",
+            "position": "6",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 7
+          },
+          {
+            "name": "Jack Scullion",
+            "jersey": "S93",
+            "position": "7",
+            "kret": 0,
+            "kcov": 7,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 8
+          },
+          {
+            "name": "Jai Patel",
+            "jersey": "S44",
+            "position": "6",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 7
+          },
+          {
+            "name": "Jakob Anderson",
+            "jersey": "S94",
+            "position": "1",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 1,
+            "fgblk": 0,
+            "fgk": 1
           }
         ]
-      },
-      "summary": {
-        "opponent": "Ohio",
-        "date": "Thu Aug 28th",
-        "finalScore": "34-31",
-        "homeAway": "Home",
-        "offensiveSnaps": 61,
-        "defensiveSnaps": 62,
-        "specialTeamsSnaps": 0
       }
     },
     {
       "week": 2,
       "offense": {
-        "wide_receivers": [
-          {
-            "name": "Ian Strong",
-            "jersey": "9",
-            "position": "LWR",
-            "snaps": 75,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "KJ Duff",
-            "jersey": "8",
-            "position": "RWR",
-            "snaps": 78,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "DT Sheffield",
-            "jersey": "0",
-            "position": "SRWR",
-            "snaps": 74,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Ben Black",
-            "jersey": "17",
-            "position": "RWR",
-            "snaps": 10,
-            "started": false,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Dane Pardridge",
-            "jersey": "89",
-            "position": "SRWR",
-            "snaps": 2,
-            "started": false,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Dino Kaliakmanis",
-            "jersey": "83",
-            "position": "LWR",
-            "snaps": 3,
-            "started": false,
-            "week": 2,
-            "opponent": "Miami OH"
-          }
-        ],
-        "tight_ends": [
-          {
-            "name": "Kenny Fletcher Jr.",
-            "jersey": "12",
-            "position": "TER",
-            "snaps": 43,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Colin Weber",
-            "jersey": "18",
-            "position": "TEL",
-            "snaps": 43,
-            "started": false,
-            "week": 2,
-            "opponent": "Miami OH"
-          }
-        ],
-        "quarterbacks": [
-          {
-            "name": "Athan Kaliakmanis",
-            "jersey": "16",
-            "position": "QB",
-            "snaps": 82,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          }
-        ],
-        "running_backs": [
-          {
-            "name": "Antwan Raymond",
-            "jersey": "3",
-            "position": "HB",
-            "snaps": 34,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Ja'shon Benjamin",
-            "jersey": "20",
-            "position": "HB",
-            "snaps": 20,
-            "started": false,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "CJ Campbell Jr.",
-            "jersey": "5",
-            "position": "HB",
-            "snaps": 28,
-            "started": false,
-            "week": 2,
-            "opponent": "Miami OH"
-          }
-        ],
-        "offensive_line": [
-          {
-            "name": "Gus Zilinskas",
-            "jersey": "59",
-            "position": "C",
-            "snaps": 82,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Kwabena Asamoah",
-            "jersey": "69",
-            "position": "RG",
-            "snaps": 82,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Taj White",
-            "jersey": "54",
-            "position": "RT",
-            "snaps": 65,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Bryan Felter",
-            "jersey": "65",
-            "position": "LG",
-            "snaps": 82,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Tyler Needham",
-            "jersey": "56",
-            "position": "LT",
-            "snaps": 55,
-            "started": false,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Dantae Chin",
-            "jersey": "76",
-            "position": "LT",
-            "snaps": 44,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          }
-        ]
+        "other": []
       },
       "defense": {
-        "defensive_line": [
-          {
-            "name": "Oliver Billotte",
-            "jersey": "D97",
-            "position": "DLT",
-            "snaps": 17,
-            "started": false,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Djibril Abdou Rahman",
-            "jersey": "D91",
-            "position": "DLE",
-            "snaps": 8,
-            "started": false,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Eric O'Neill",
-            "jersey": "D99",
-            "position": "DLE",
-            "snaps": 28,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Farell Gnago",
-            "jersey": "D90",
-            "position": "DRE",
-            "snaps": 4,
-            "started": false,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Zaire Angoy",
-            "jersey": "D55",
-            "position": "DRT",
-            "snaps": 14,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Darold DeNgohe",
-            "jersey": "D92",
-            "position": "DLT",
-            "snaps": 9,
-            "started": false,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Keshon Griffin",
-            "jersey": "D96",
-            "position": "NT",
-            "snaps": 26,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Henry Hughes Jr.",
-            "jersey": "D95",
-            "position": "DRT",
-            "snaps": 7,
-            "started": false,
-            "week": 2,
-            "opponent": "Miami OH"
-          }
-        ],
-        "linebackers": [
-          {
-            "name": "Abram Wright",
-            "jersey": "D06",
-            "position": "WLB",
-            "snaps": 16,
-            "started": false,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Dariel Djabome",
-            "jersey": "D08",
-            "position": "MLB",
-            "snaps": 44,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Jordan Walker",
-            "jersey": "D01",
-            "position": "ROLB",
-            "snaps": 29,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Jordan Thompson",
-            "jersey": "D14",
-            "position": "ROLB",
-            "snaps": 23,
-            "started": false,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Austin Dean",
-            "jersey": "D47",
-            "position": "MLB",
-            "snaps": 5,
-            "started": false,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Zilan Williams",
-            "jersey": "D15",
-            "position": "LOLB",
-            "snaps": 4,
-            "started": false,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Sam Robinson",
-            "jersey": "D04",
-            "position": "WLB",
-            "snaps": 4,
-            "started": false,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Moses Walker",
-            "jersey": "D02",
-            "position": "WLB",
-            "snaps": 26,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          }
-        ],
-        "defensive_backs": [
-          {
-            "name": "Bo Mascoe",
-            "jersey": "D03",
-            "position": "LCB",
-            "snaps": 33,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Chris Joines",
-            "jersey": "D20",
-            "position": "SS",
-            "snaps": 4,
-            "started": false,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
+        "other": []
+      },
+      "special_teams": {
+        "other": [
           {
             "name": "Cam Miller",
             "jersey": "D07",
-            "position": "SCB",
-            "snaps": 42,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Sebastian Jusma",
-            "jersey": "D29",
-            "position": "SCB",
-            "snaps": 4,
-            "started": false,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Timmy Ward",
-            "jersey": "D38",
-            "position": "SS",
-            "snaps": 4,
-            "started": false,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Kevin Levy",
-            "jersey": "D24",
-            "position": "RCB",
-            "snaps": 4,
-            "started": false,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Kaj Sanders",
-            "jersey": "D05",
-            "position": "FS",
-            "snaps": 44,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Al-Shadee Salaam",
-            "jersey": "D21",
-            "position": "RCB",
-            "snaps": 22,
-            "started": false,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Jacobie Henderson",
-            "jersey": "D10",
-            "position": "RCB",
-            "snaps": 36,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Jett Elad",
-            "jersey": "D09",
-            "position": "FS",
-            "snaps": 44,
-            "started": true,
-            "week": 2,
-            "opponent": "Miami OH"
-          }
-        ]
-      },
-      "special_teams": {
-        "special_teams": [
-          {
-            "name": "Michael Robinson II",
-            "jersey": "31",
-            "position": "ST",
-            "totalSnaps": 15,
-            "kret": 4,
-            "kcov": 8,
-            "pret": 3,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Timmy Ward",
-            "jersey": "D38",
-            "position": "ST",
-            "totalSnaps": 16,
-            "kret": 4,
-            "kcov": 8,
-            "pret": 3,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Michael O'Connor",
-            "jersey": "S99",
-            "position": "LS",
-            "totalSnaps": 8,
+            "position": "8",
             "kret": 0,
             "kcov": 0,
-            "pret": 0,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 7,
-            "week": 2,
-            "opponent": "Miami OH"
+            "pret": 2,
+            "pcov": 0,
+            "fgblk": 3,
+            "fgk": 7
           },
           {
             "name": "Jesse Ofurie",
             "jersey": "D16",
-            "position": "ST",
-            "totalSnaps": 15,
+            "position": "9",
             "kret": 4,
             "kcov": 8,
             "pret": 3,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
+            "fgk": 17
           },
           {
-            "name": "Chris Joines",
-            "jersey": "D20",
-            "position": "ST",
-            "totalSnaps": 16,
+            "name": "Kaj Sanders",
+            "jersey": "D05",
+            "position": "7",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 3,
+            "pcov": 0,
+            "fgblk": 3,
+            "fgk": 5
+          },
+          {
+            "name": "Dino Kaliakmanis",
+            "jersey": "83",
+            "position": "14",
             "kret": 4,
             "kcov": 8,
             "pret": 3,
             "pcov": 1,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
+            "fgk": 16
+          },
+          {
+            "name": "Sebastian Jusma",
+            "jersey": "D29",
+            "position": "7",
+            "kret": 0,
+            "kcov": 8,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 10
+          },
+          {
+            "name": "Chris Joines",
+            "jersey": "D20",
+            "position": "16",
+            "kret": 4,
+            "kcov": 8,
+            "pret": 3,
+            "pcov": 1,
+            "fgblk": 0,
+            "fgk": 17
+          },
+          {
+            "name": "Zilan Williams",
+            "jersey": "D15",
+            "position": "13",
+            "kret": 4,
+            "kcov": 8,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 13
           },
           {
             "name": "Austin Dean",
             "jersey": "D47",
-            "position": "ST",
-            "totalSnaps": 14,
+            "position": "13",
             "kret": 4,
             "kcov": 8,
             "pret": 2,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
+            "fgk": 6
           },
           {
-            "name": "Sebastian Jusma",
-            "jersey": "D29",
-            "position": "ST",
-            "totalSnaps": 8,
+            "name": "Michael O'Connor",
+            "jersey": "S99",
+            "position": "7",
             "kret": 0,
-            "kcov": 8,
+            "kcov": 0,
             "pret": 0,
+            "pcov": 1,
+            "fgblk": 0,
+            "fgk": 8
+          },
+          {
+            "name": "Michael Robinson II",
+            "jersey": "31",
+            "position": "9",
+            "kret": 4,
+            "kcov": 8,
+            "pret": 3,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
+            "fgk": 13
           },
           {
             "name": "Terrence Salami",
             "jersey": "73",
-            "position": "ST",
-            "totalSnaps": 7,
+            "position": "6",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 7,
-            "week": 2,
-            "opponent": "Miami OH"
+            "fgk": 10
           },
           {
             "name": "John Stone",
             "jersey": "71",
-            "position": "ST",
-            "totalSnaps": 7,
+            "position": "6",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 7,
-            "week": 2,
-            "opponent": "Miami OH"
+            "fgk": 8
+          },
+          {
+            "name": "Jordan Thompson",
+            "jersey": "D14",
+            "position": "9",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 2,
+            "fgk": 8
           },
           {
             "name": "Kwabena Asamoah",
             "jersey": "69",
-            "position": "ST",
-            "totalSnaps": 7,
+            "position": "6",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 7,
-            "week": 2,
-            "opponent": "Miami OH"
+            "fgk": 8
+          },
+          {
+            "name": "Jordan Walker",
+            "jersey": "D01",
+            "position": "12",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 1,
+            "fgblk": 1,
+            "fgk": 2
+          },
+          {
+            "name": "Jett Elad",
+            "jersey": "D09",
+            "position": "7",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 2,
+            "pcov": 0,
+            "fgblk": 3,
+            "fgk": 7
+          },
+          {
+            "name": "Keshon Griffin",
+            "jersey": "D96",
+            "position": "8",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 2,
+            "fgk": 10
+          },
+          {
+            "name": "Timmy Ward",
+            "jersey": "D38",
+            "position": "17",
+            "kret": 4,
+            "kcov": 8,
+            "pret": 3,
+            "pcov": 1,
+            "fgblk": 0,
+            "fgk": 16
+          },
+          {
+            "name": "Bryan Felter",
+            "jersey": "65",
+            "position": "6",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 8
+          },
+          {
+            "name": "Al-Shadee Salaam",
+            "jersey": "D21",
+            "position": "5",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 2,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 3
+          },
+          {
+            "name": "Dariel Djabome",
+            "jersey": "D08",
+            "position": "7",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 1,
+            "fgblk": 3,
+            "fgk": 4
+          },
+          {
+            "name": "Bo Mascoe",
+            "jersey": "D03",
+            "position": "6",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 3,
+            "pcov": 0,
+            "fgblk": 3,
+            "fgk": 6
+          },
+          {
+            "name": "Eric O'Neill",
+            "jersey": "D99",
+            "position": "4",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 4
+          },
+          {
+            "name": "Ben Black",
+            "jersey": "17",
+            "position": "9",
+            "kret": 4,
+            "kcov": 8,
+            "pret": 1,
+            "pcov": 1,
+            "fgblk": 0,
+            "fgk": 15
+          },
+          {
+            "name": "Jacobie Henderson",
+            "jersey": "D10",
+            "position": "3",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 2,
+            "fgk": 4
           },
           {
             "name": "Dylan Braithwaite",
             "jersey": "67",
-            "position": "ST",
-            "totalSnaps": 6,
+            "position": "2",
             "kret": 0,
             "kcov": 6,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
+            "fgk": 12
           },
           {
-            "name": "Zilan Williams",
-            "jersey": "D15",
-            "position": "ST",
-            "totalSnaps": 12,
-            "kret": 4,
-            "kcov": 8,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Dino Kaliakmanis",
-            "jersey": "83",
-            "position": "ST",
-            "totalSnaps": 16,
-            "kret": 4,
-            "kcov": 8,
-            "pret": 3,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Jordan Walker",
-            "jersey": "D01",
-            "position": "ST",
-            "totalSnaps": 10,
+            "name": "Moses Walker",
+            "jersey": "D02",
+            "position": "7",
             "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 1,
-            "fgblk": 1,
-            "fgk": 7,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Jordan Thompson",
-            "jersey": "D14",
-            "position": "ST",
-            "totalSnaps": 9,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 2,
-            "fgk": 7,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Ben Black",
-            "jersey": "17",
-            "position": "ST",
-            "totalSnaps": 14,
-            "kret": 4,
-            "kcov": 8,
-            "pret": 1,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Bryan Felter",
-            "jersey": "65",
-            "position": "ST",
-            "totalSnaps": 7,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 7,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Kaj Sanders",
-            "jersey": "D05",
-            "position": "ST",
-            "totalSnaps": 6,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 3,
-            "pcov": 0,
-            "fgblk": 3,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Jett Elad",
-            "jersey": "D09",
-            "position": "ST",
-            "totalSnaps": 5,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 2,
-            "pcov": 0,
-            "fgblk": 3,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Dantae Chin",
-            "jersey": "76",
-            "position": "ST",
-            "totalSnaps": 4,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 4,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Keshon Griffin",
-            "jersey": "D96",
-            "position": "ST",
-            "totalSnaps": 9,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 2,
-            "fgk": 7,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Bo Mascoe",
-            "jersey": "D03",
-            "position": "ST",
-            "totalSnaps": 6,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 3,
-            "pcov": 0,
-            "fgblk": 3,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Cam Miller",
-            "jersey": "D07",
-            "position": "ST",
-            "totalSnaps": 5,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 2,
-            "pcov": 0,
-            "fgblk": 3,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Tyler Needham",
-            "jersey": "56",
-            "position": "ST",
-            "totalSnaps": 3,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 3,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Al-Shadee Salaam",
-            "jersey": "D21",
-            "position": "ST",
-            "totalSnaps": 3,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 2,
-            "pcov": 0,
-            "fgblk": 1,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Riley McCann",
-            "jersey": "S22",
-            "position": "K",
-            "totalSnaps": 7,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 7,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Sam Robinson",
-            "jersey": "D04",
-            "position": "ST",
-            "totalSnaps": 2,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 2,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Isaiah Crumpler",
-            "jersey": "D26",
-            "position": "ST",
-            "totalSnaps": 2,
-            "kret": 0,
-            "kcov": 2,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Dariel Djabome",
-            "jersey": "D08",
-            "position": "ST",
-            "totalSnaps": 5,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 1,
-            "fgblk": 3,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Jacobie Henderson",
-            "jersey": "D10",
-            "position": "ST",
-            "totalSnaps": 3,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 2,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Zaire Angoy",
-            "jersey": "D55",
-            "position": "ST",
-            "totalSnaps": 3,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 2,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Jackson Gister",
-            "jersey": "82",
-            "position": "ST",
-            "totalSnaps": 5,
-            "kret": 4,
             "kcov": 0,
             "pret": 0,
             "pcov": 1,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
+            "fgblk": 3,
+            "fgk": 3
           },
           {
             "name": "Bradley Weaver",
             "jersey": "D94",
-            "position": "ST",
-            "totalSnaps": 3,
+            "position": "2",
             "kret": 0,
             "kcov": 0,
             "pret": 1,
             "pcov": 0,
             "fgblk": 2,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
+            "fgk": 1
           },
           {
-            "name": "John Insinga",
-            "jersey": "D33",
-            "position": "ST",
-            "totalSnaps": 1,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Jack Scullion",
-            "jersey": "S93",
-            "position": "K",
-            "totalSnaps": 8,
-            "kret": 0,
-            "kcov": 8,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Jakob Anderson",
-            "jersey": "S94",
-            "position": "P",
-            "totalSnaps": 1,
-            "kret": 0,
+            "name": "Colin Weber",
+            "jersey": "18",
+            "position": "7",
+            "kret": 4,
             "kcov": 0,
             "pret": 0,
             "pcov": 1,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
+            "fgk": 3
+          },
+          {
+            "name": "Jackson Gister",
+            "jersey": "82",
+            "position": "7",
+            "kret": 4,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 1,
+            "fgblk": 0,
+            "fgk": 6
           },
           {
             "name": "DT Sheffield",
             "jersey": "0",
-            "position": "ST",
-            "totalSnaps": 4,
+            "position": "3",
             "kret": 0,
             "kcov": 0,
             "pret": 4,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
+            "fgk": 5
           },
           {
             "name": "Darold DeNgohe",
             "jersey": "D92",
-            "position": "ST",
-            "totalSnaps": 1,
+            "position": "1",
             "kret": 0,
             "kcov": 0,
             "pret": 1,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Abram Wright",
-            "jersey": "D06",
-            "position": "ST",
-            "totalSnaps": 1,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Jai Patel",
-            "jersey": "S44",
-            "position": "K",
-            "totalSnaps": 7,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 7,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Eric O'Neill",
-            "jersey": "D99",
-            "position": "ST",
-            "totalSnaps": 1,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 1,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
+            "fgk": 1
           },
           {
             "name": "Ja'shon Benjamin",
             "jersey": "20",
-            "position": "ST",
-            "totalSnaps": 4,
+            "position": "6",
             "kret": 4,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
+            "fgk": 3
           },
           {
             "name": "Oliver Billotte",
             "jersey": "D97",
-            "position": "ST",
-            "totalSnaps": 1,
+            "position": "1",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 1,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
+            "fgk": 3
+          },
+          {
+            "name": "Zaire Angoy",
+            "jersey": "D55",
+            "position": "4",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 2,
+            "fgk": 1
           },
           {
             "name": "Henry Hughes Jr.",
             "jersey": "D95",
-            "position": "ST",
-            "totalSnaps": 1,
+            "position": "2",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 1,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
+            "fgk": 0
           },
           {
-            "name": "Moses Walker",
-            "jersey": "D02",
-            "position": "ST",
-            "totalSnaps": 4,
+            "name": "Sam Robinson",
+            "jersey": "D04",
+            "position": "12",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 2,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 1
+          },
+          {
+            "name": "Isaiah Crumpler",
+            "jersey": "D26",
+            "position": "13",
+            "kret": 0,
+            "kcov": 2,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 3
+          },
+          {
+            "name": "John Insinga",
+            "jersey": "D33",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Abram Wright",
+            "jersey": "D06",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 1
+          },
+          {
+            "name": "Moshood Giwa",
+            "jersey": "74",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 10
+          },
+          {
+            "name": "Sage Clawges",
+            "jersey": "D27",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 8
+          },
+          {
+            "name": "Logan Blake",
+            "jersey": "11",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 10
+          },
+          {
+            "name": "Sammy El Hadidi",
+            "jersey": "S46",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 2
+          },
+          {
+            "name": "Ben Rothhaar",
+            "jersey": "24",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 2
+          },
+          {
+            "name": "Renick Dorilas",
+            "jersey": "D12",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 3
+          },
+          {
+            "name": "Emir Stinette",
+            "jersey": "61",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 2
+          },
+          {
+            "name": "Dane Pardridge",
+            "jersey": "89",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 4
+          },
+          {
+            "name": "Isaiah Deloatch",
+            "jersey": "D23",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 2
+          },
+          {
+            "name": "Sah'nye Degraffenreidt",
+            "jersey": "14",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 2
+          },
+          {
+            "name": "Justin Cesaire",
+            "jersey": "79",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 2
+          },
+          {
+            "name": "Kevin Levy",
+            "jersey": "D24",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 2
+          },
+          {
+            "name": "Latrell Noel",
+            "jersey": "D35",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 2
+          },
+          {
+            "name": "Michael Thomas III",
+            "jersey": "80",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 2
+          },
+          {
+            "name": "Wydeek Collier",
+            "jersey": "D43",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 1
+          },
+          {
+            "name": "Kamar Archie",
+            "jersey": "D36",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 1
+          },
+          {
+            "name": "DJ McClary",
+            "jersey": "D13",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 1
+          },
+          {
+            "name": "Jyon Simon",
+            "jersey": "D88",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 1
+          },
+          {
+            "name": "Farell Gnago",
+            "jersey": "D90",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 2
+          },
+          {
+            "name": "Raynor Andrews",
+            "jersey": "75",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 2
+          },
+          {
+            "name": "Zach Aamland",
+            "jersey": "70",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 2
+          },
+          {
+            "name": "Djibril Abdou Rahman",
+            "jersey": "D91",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 1
+          },
+          {
+            "name": "Riley McCann",
+            "jersey": "S22",
+            "position": "6",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 10
+          },
+          {
+            "name": "Jack Scullion",
+            "jersey": "S93",
+            "position": "7",
+            "kret": 0,
+            "kcov": 8,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 10
+          },
+          {
+            "name": "Jai Patel",
+            "jersey": "S44",
+            "position": "6",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 8
+          },
+          {
+            "name": "Dane Pizzaro",
+            "jersey": "S92",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 3
+          },
+          {
+            "name": "Jakob Anderson",
+            "jersey": "S94",
+            "position": "1",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 1,
-            "fgblk": 3,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
-          },
-          {
-            "name": "Colin Weber",
-            "jersey": "18",
-            "position": "ST",
-            "totalSnaps": 5,
-            "kret": 4,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 1,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 2,
-            "opponent": "Miami OH"
+            "fgk": 0
           }
         ]
-      },
-      "summary": {
-        "opponent": "Miami OH",
-        "date": "Sat Sep 6th",
-        "finalScore": "45-17",
-        "homeAway": "Home",
-        "offensiveSnaps": 82,
-        "defensiveSnaps": 48,
-        "specialTeamsSnaps": 0
       }
     },
     {
       "week": 3,
       "offense": {
-        "wide_receivers": [
-          {
-            "name": "KJ Duff",
-            "jersey": "8",
-            "position": "LWR",
-            "snaps": 62,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Michael Thomas III",
-            "jersey": "80",
-            "position": "LWR",
-            "snaps": 12,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Vernon Allen III",
-            "jersey": "13",
-            "position": "RWR",
-            "snaps": 8,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "DT Sheffield",
-            "jersey": "0",
-            "position": "SLWR",
-            "snaps": 56,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Ben Black",
-            "jersey": "17",
-            "position": "RWR",
-            "snaps": 62,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Dino Kaliakmanis",
-            "jersey": "83",
-            "position": "LWR",
-            "snaps": 12,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Trent Osborn",
-            "jersey": "25",
-            "position": "RWR",
-            "snaps": 3,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Dane Pardridge",
-            "jersey": "89",
-            "position": "SLWR",
-            "snaps": 4,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Dylan Braithwaite",
-            "jersey": "7",
-            "position": "SLWR",
-            "snaps": 20,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Sah'nye Degraffenreidt",
-            "jersey": "14",
-            "position": "LWR",
-            "snaps": 11,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          }
-        ],
-        "tight_ends": [
-          {
-            "name": "Jackson Gister",
-            "jersey": "82",
-            "position": "TE-L",
-            "snaps": 3,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Colin Weber",
-            "jersey": "18",
-            "position": "TE-L",
-            "snaps": 32,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Kenny Fletcher Jr.",
-            "jersey": "12",
-            "position": "TE-L",
-            "snaps": 35,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Logan Blake",
-            "jersey": "11",
-            "position": "TE-R",
-            "snaps": 18,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Mike Higgins",
-            "jersey": "88",
-            "position": "TE-L",
-            "snaps": 2,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          }
-        ],
-        "quarterbacks": [
-          {
-            "name": "Athan Kaliakmanis",
-            "jersey": "16",
-            "position": "QB",
-            "snaps": 62,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "AJ Surace",
-            "jersey": "10",
-            "position": "QB",
-            "snaps": 18,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Sean Ashenfelder",
-            "jersey": "6",
-            "position": "QB",
-            "snaps": 5,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          }
-        ],
-        "running_backs": [
-          {
-            "name": "Antwan Raymond",
-            "jersey": "3",
-            "position": "HB",
-            "snaps": 35,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Ja'shon Benjamin",
-            "jersey": "20",
-            "position": "HB",
-            "snaps": 26,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Terrell Mitchell",
-            "jersey": "26",
-            "position": "HB",
-            "snaps": 8,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Edd Guerrier",
-            "jersey": "23",
-            "position": "HB",
-            "snaps": 15,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "CJ Campbell Jr.",
-            "jersey": "5",
-            "position": "HB",
-            "snaps": 1,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          }
-        ],
-        "offensive_line": [
-          {
-            "name": "Moshood Giwa",
-            "jersey": "74",
-            "position": "LT",
-            "snaps": 23,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "John Stone",
-            "jersey": "71",
-            "position": "LG",
-            "snaps": 23,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Chris Vigna",
-            "jersey": "67",
-            "position": "RG",
-            "snaps": 23,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Terrence Salami",
-            "jersey": "73",
-            "position": "C",
-            "snaps": 23,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Tyler Needham",
-            "jersey": "56",
-            "position": "LT",
-            "snaps": 51,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Taj White",
-            "jersey": "54",
-            "position": "RT",
-            "snaps": 62,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Gus Zilinskas",
-            "jersey": "59",
-            "position": "C",
-            "snaps": 62,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Kwabena Asamoah",
-            "jersey": "69",
-            "position": "RG",
-            "snaps": 62,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Justin Cesaire",
-            "jersey": "79",
-            "position": "RT",
-            "snaps": 23,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Bryan Felter",
-            "jersey": "65",
-            "position": "LG",
-            "snaps": 62,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Kenny Jones",
-            "jersey": "77",
-            "position": "LT",
-            "snaps": 11,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          }
-        ]
+        "other": []
       },
       "defense": {
-        "defensive_line": [
-          {
-            "name": "Eric O'Neill",
-            "jersey": "D99",
-            "position": "DLE",
-            "snaps": 27,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Bradley Weaver",
-            "jersey": "D94",
-            "position": "DLE",
-            "snaps": 20,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Zaire Angoy",
-            "jersey": "D55",
-            "position": "DRT",
-            "snaps": 16,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Farell Gnago",
-            "jersey": "D90",
-            "position": "DLT",
-            "snaps": 8,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Wydeek Collier",
-            "jersey": "D43",
-            "position": "DRE",
-            "snaps": 2,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Oliver Billotte",
-            "jersey": "D97",
-            "position": "DLT",
-            "snaps": 18,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Darold DeNgohe",
-            "jersey": "D92",
-            "position": "NT",
-            "snaps": 15,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Henry Hughes Jr.",
-            "jersey": "D95",
-            "position": "DRT",
-            "snaps": 9,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Keshon Griffin",
-            "jersey": "D96",
-            "position": "NT",
-            "snaps": 21,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Jyon Simon",
-            "jersey": "D88",
-            "position": "NT",
-            "snaps": 3,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Djibril Abdou Rahman",
-            "jersey": "D91",
-            "position": "DRE",
-            "snaps": 13,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          }
-        ],
-        "linebackers": [
-          {
-            "name": "DJ McClary",
-            "jersey": "D13",
-            "position": "MLB",
-            "snaps": 4,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Sam Robinson",
-            "jersey": "D04",
-            "position": "WLB",
-            "snaps": 6,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Jordan Walker",
-            "jersey": "D01",
-            "position": "ROLB",
-            "snaps": 29,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Moses Walker",
-            "jersey": "D02",
-            "position": "WLB",
-            "snaps": 26,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Kamar Archie",
-            "jersey": "D36",
-            "position": "MLB",
-            "snaps": 3,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Zilan Williams",
-            "jersey": "D15",
-            "position": "WLB",
-            "snaps": 3,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "RJ Johnson Jr.",
-            "jersey": "D32",
-            "position": "LOLB",
-            "snaps": 7,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Jordan Thompson",
-            "jersey": "D14",
-            "position": "ROLB",
-            "snaps": 19,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Abram Wright",
-            "jersey": "D06",
-            "position": "WLB",
-            "snaps": 22,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Austin Dean",
-            "jersey": "D47",
-            "position": "WLB",
-            "snaps": 7,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Dariel Djabome",
-            "jersey": "D08",
-            "position": "WLB",
-            "snaps": 35,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          }
-        ],
-        "defensive_backs": [
-          {
-            "name": "Jett Elad",
-            "jersey": "D09",
-            "position": "SS",
-            "snaps": 42,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Jacobie Henderson",
-            "jersey": "D10",
-            "position": "RCB",
-            "snaps": 36,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Chris Joines",
-            "jersey": "D20",
-            "position": "SS",
-            "snaps": 22,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Jesse Ofurie",
-            "jersey": "D16",
-            "position": "FS",
-            "snaps": 7,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Bo Mascoe",
-            "jersey": "D03",
-            "position": "LCB",
-            "snaps": 23,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
+        "other": []
+      },
+      "special_teams": {
+        "other": [
           {
             "name": "Cam Miller",
             "jersey": "D07",
-            "position": "SCB",
-            "snaps": 42,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Al-Shadee Salaam",
-            "jersey": "D21",
-            "position": "RCB",
-            "snaps": 26,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Kevin Levy",
-            "jersey": "D24",
-            "position": "RCB",
-            "snaps": 9,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Sebastian Jusma",
-            "jersey": "D29",
-            "position": "SCB",
-            "snaps": 10,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Timmy Ward",
-            "jersey": "D38",
-            "position": "SS",
-            "snaps": 3,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Isaiah Crumpler",
-            "jersey": "D26",
-            "position": "SS",
-            "snaps": 3,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Renick Dorilas",
-            "jersey": "D12",
-            "position": "FS",
-            "snaps": 1,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Sage Clawges",
-            "jersey": "D27",
-            "position": "LCB",
-            "snaps": 7,
-            "started": false,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Kaj Sanders",
-            "jersey": "D05",
-            "position": "SS",
-            "snaps": 27,
-            "started": true,
-            "week": 3,
-            "opponent": "Norfolk State"
-          }
-        ]
-      },
-      "special_teams": {
-        "special_teams": [
-          {
-            "name": "Jett Elad",
-            "jersey": "D09",
-            "position": "ST",
-            "totalSnaps": 7,
+            "position": "8",
             "kret": 0,
             "kcov": 0,
             "pret": 5,
             "pcov": 0,
             "fgblk": 2,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
+            "fgk": 9
+          },
+          {
+            "name": "Jesse Ofurie",
+            "jersey": "D16",
+            "position": "9",
+            "kret": 3,
+            "kcov": 9,
+            "pret": 5,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 15
           },
           {
             "name": "Kaj Sanders",
             "jersey": "D05",
-            "position": "ST",
-            "totalSnaps": 5,
+            "position": "7",
             "kret": 0,
             "kcov": 0,
             "pret": 4,
             "pcov": 0,
             "fgblk": 1,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
+            "fgk": 9
+          },
+          {
+            "name": "Dino Kaliakmanis",
+            "jersey": "83",
+            "position": "14",
+            "kret": 3,
+            "kcov": 9,
+            "pret": 4,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 18
+          },
+          {
+            "name": "Sebastian Jusma",
+            "jersey": "D29",
+            "position": "7",
+            "kret": 0,
+            "kcov": 9,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Chris Joines",
+            "jersey": "D20",
+            "position": "16",
+            "kret": 3,
+            "kcov": 9,
+            "pret": 4,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 19
+          },
+          {
+            "name": "Zilan Williams",
+            "jersey": "D15",
+            "position": "13",
+            "kret": 3,
+            "kcov": 9,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 12
+          },
+          {
+            "name": "Austin Dean",
+            "jersey": "D47",
+            "position": "13",
+            "kret": 3,
+            "kcov": 2,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 8
+          },
+          {
+            "name": "Michael O'Connor",
+            "jersey": "S99",
+            "position": "7",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 9
+          },
+          {
+            "name": "Michael Robinson II",
+            "jersey": "31",
+            "position": "9",
+            "kret": 3,
+            "kcov": 9,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 13
+          },
+          {
+            "name": "Terrence Salami",
+            "jersey": "73",
+            "position": "6",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 6
+          },
+          {
+            "name": "John Stone",
+            "jersey": "71",
+            "position": "6",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 6
+          },
+          {
+            "name": "Jordan Thompson",
+            "jersey": "D14",
+            "position": "9",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 7
+          },
+          {
+            "name": "Kwabena Asamoah",
+            "jersey": "69",
+            "position": "6",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 6
+          },
+          {
+            "name": "Jordan Walker",
+            "jersey": "D01",
+            "position": "12",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 9
+          },
+          {
+            "name": "Jett Elad",
+            "jersey": "D09",
+            "position": "7",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 5,
+            "pcov": 0,
+            "fgblk": 2,
+            "fgk": 9
+          },
+          {
+            "name": "Keshon Griffin",
+            "jersey": "D96",
+            "position": "8",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 12
+          },
+          {
+            "name": "Timmy Ward",
+            "jersey": "D38",
+            "position": "17",
+            "kret": 3,
+            "kcov": 9,
+            "pret": 4,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 18
+          },
+          {
+            "name": "Bryan Felter",
+            "jersey": "65",
+            "position": "6",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 6
+          },
+          {
+            "name": "Al-Shadee Salaam",
+            "jersey": "D21",
+            "position": "5",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 3,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 2
+          },
+          {
+            "name": "Dariel Djabome",
+            "jersey": "D08",
+            "position": "7",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 2,
+            "pcov": 0,
+            "fgblk": 2,
+            "fgk": 10
+          },
+          {
+            "name": "Bo Mascoe",
+            "jersey": "D03",
+            "position": "6",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 4,
+            "pcov": 0,
+            "fgblk": 2,
+            "fgk": 9
+          },
+          {
+            "name": "Eric O'Neill",
+            "jersey": "D99",
+            "position": "4",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 2,
+            "pcov": 0,
+            "fgblk": 2,
+            "fgk": 4
+          },
+          {
+            "name": "Ben Black",
+            "jersey": "17",
+            "position": "9",
+            "kret": 3,
+            "kcov": 9,
+            "pret": 3,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 15
+          },
+          {
+            "name": "Jacobie Henderson",
+            "jersey": "D10",
+            "position": "3",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 2,
+            "pcov": 0,
+            "fgblk": 2,
+            "fgk": 7
+          },
+          {
+            "name": "Dylan Braithwaite",
+            "jersey": "67",
+            "position": "2",
+            "kret": 0,
+            "kcov": 9,
+            "pret": 3,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 7
+          },
+          {
+            "name": "Moses Walker",
+            "jersey": "D02",
+            "position": "7",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 2,
+            "fgk": 6
+          },
+          {
+            "name": "Bradley Weaver",
+            "jersey": "D94",
+            "position": "2",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 3
+          },
+          {
+            "name": "Colin Weber",
+            "jersey": "18",
+            "position": "7",
+            "kret": 3,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 6
+          },
+          {
+            "name": "Jackson Gister",
+            "jersey": "82",
+            "position": "7",
+            "kret": 3,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 10
+          },
+          {
+            "name": "DT Sheffield",
+            "jersey": "0",
+            "position": "3",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 5,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 3
+          },
+          {
+            "name": "Darold DeNgohe",
+            "jersey": "D92",
+            "position": "1",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 1
+          },
+          {
+            "name": "Ja'shon Benjamin",
+            "jersey": "20",
+            "position": "6",
+            "kret": 3,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Oliver Billotte",
+            "jersey": "D97",
+            "position": "1",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 2,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 1
+          },
+          {
+            "name": "Zaire Angoy",
+            "jersey": "D55",
+            "position": "4",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 6
+          },
+          {
+            "name": "Sam Robinson",
+            "jersey": "D04",
+            "position": "12",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 1
           },
           {
             "name": "Isaiah Crumpler",
             "jersey": "D26",
-            "position": "ST",
-            "totalSnaps": 3,
+            "position": "13",
             "kret": 0,
             "kcov": 3,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
+            "fgk": 5
           },
           {
-            "name": "Dylan Braithwaite",
-            "jersey": "67",
-            "position": "ST",
-            "totalSnaps": 12,
+            "name": "Abram Wright",
+            "jersey": "D06",
+            "position": "0",
             "kret": 0,
-            "kcov": 9,
-            "pret": 3,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Chris Joines",
-            "jersey": "D20",
-            "position": "ST",
-            "totalSnaps": 17,
-            "kret": 3,
-            "kcov": 9,
-            "pret": 4,
-            "pcov": 0,
-            "fgblk": 1,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Sebastian Jusma",
-            "jersey": "D29",
-            "position": "ST",
-            "totalSnaps": 10,
-            "kret": 0,
-            "kcov": 9,
+            "kcov": 0,
             "pret": 1,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Terrence Salami",
-            "jersey": "73",
-            "position": "ST",
-            "totalSnaps": 10,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 10,
-            "week": 3,
-            "opponent": "Norfolk State"
+            "fgk": 4
           },
           {
             "name": "Moshood Giwa",
             "jersey": "74",
-            "position": "ST",
-            "totalSnaps": 10,
+            "position": "0",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 10,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Timmy Ward",
-            "jersey": "D38",
-            "position": "ST",
-            "totalSnaps": 16,
-            "kret": 3,
-            "kcov": 9,
-            "pret": 4,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
+            "fgk": 6
           },
           {
             "name": "Sage Clawges",
             "jersey": "D27",
-            "position": "ST",
-            "totalSnaps": 8,
+            "position": "0",
             "kret": 0,
             "kcov": 8,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Cam Miller",
-            "jersey": "D07",
-            "position": "ST",
-            "totalSnaps": 7,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 5,
-            "pcov": 0,
-            "fgblk": 2,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "John Stone",
-            "jersey": "71",
-            "position": "ST",
-            "totalSnaps": 8,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 8,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Keshon Griffin",
-            "jersey": "D96",
-            "position": "ST",
-            "totalSnaps": 10,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 1,
-            "fgk": 8,
-            "week": 3,
-            "opponent": "Norfolk State"
+            "fgk": 5
           },
           {
             "name": "Logan Blake",
             "jersey": "11",
-            "position": "ST",
-            "totalSnaps": 10,
+            "position": "0",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 10,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Zilan Williams",
-            "jersey": "D15",
-            "position": "ST",
-            "totalSnaps": 13,
-            "kret": 3,
-            "kcov": 9,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Austin Dean",
-            "jersey": "D47",
-            "position": "ST",
-            "totalSnaps": 6,
-            "kret": 3,
-            "kcov": 2,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Bryan Felter",
-            "jersey": "65",
-            "position": "ST",
-            "totalSnaps": 8,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 8,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Bo Mascoe",
-            "jersey": "D03",
-            "position": "ST",
-            "totalSnaps": 6,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 4,
-            "pcov": 0,
-            "fgblk": 2,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Michael Robinson II",
-            "jersey": "31",
-            "position": "ST",
-            "totalSnaps": 13,
-            "kret": 3,
-            "kcov": 9,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Jordan Thompson",
-            "jersey": "D14",
-            "position": "ST",
-            "totalSnaps": 8,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 1,
-            "fgk": 7,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Jesse Ofurie",
-            "jersey": "D16",
-            "position": "ST",
-            "totalSnaps": 17,
-            "kret": 3,
-            "kcov": 9,
-            "pret": 5,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Eric O'Neill",
-            "jersey": "D99",
-            "position": "ST",
-            "totalSnaps": 4,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 2,
-            "pcov": 0,
-            "fgblk": 2,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Jacobie Henderson",
-            "jersey": "D10",
-            "position": "ST",
-            "totalSnaps": 4,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 2,
-            "pcov": 0,
-            "fgblk": 2,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Riley McCann",
-            "jersey": "S22",
-            "position": "K",
-            "totalSnaps": 10,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 10,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Oliver Billotte",
-            "jersey": "D97",
-            "position": "ST",
-            "totalSnaps": 3,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 2,
-            "pcov": 0,
-            "fgblk": 1,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Sammy El Hadidi",
-            "jersey": "S46",
-            "position": "LS",
-            "totalSnaps": 2,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 2,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Al-Shadee Salaam",
-            "jersey": "D21",
-            "position": "ST",
-            "totalSnaps": 3,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 3,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Dariel Djabome",
-            "jersey": "D08",
-            "position": "ST",
-            "totalSnaps": 4,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 2,
-            "pcov": 0,
-            "fgblk": 2,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
+            "fgk": 6
           },
           {
             "name": "Ben Rothhaar",
             "jersey": "24",
-            "position": "ST",
-            "totalSnaps": 2,
+            "position": "0",
             "kret": 0,
             "kcov": 2,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
+            "fgk": 2
           },
           {
             "name": "Renick Dorilas",
             "jersey": "D12",
-            "position": "ST",
-            "totalSnaps": 3,
+            "position": "0",
             "kret": 0,
             "kcov": 2,
             "pret": 1,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Emir Stinette",
-            "jersey": "61",
-            "position": "ST",
-            "totalSnaps": 2,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 2,
-            "week": 3,
-            "opponent": "Norfolk State"
+            "fgk": 0
           },
           {
             "name": "Dane Pardridge",
             "jersey": "89",
-            "position": "ST",
-            "totalSnaps": 4,
+            "position": "0",
             "kret": 0,
             "kcov": 2,
             "pret": 2,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
+            "fgk": 0
           },
           {
             "name": "Isaiah Deloatch",
             "jersey": "D23",
-            "position": "ST",
-            "totalSnaps": 2,
+            "position": "0",
             "kret": 0,
             "kcov": 2,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
+            "fgk": 0
           },
           {
             "name": "Sah'nye Degraffenreidt",
             "jersey": "14",
-            "position": "ST",
-            "totalSnaps": 2,
+            "position": "0",
             "kret": 0,
             "kcov": 2,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Jordan Walker",
-            "jersey": "D01",
-            "position": "ST",
-            "totalSnaps": 2,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 1,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Justin Cesaire",
-            "jersey": "79",
-            "position": "ST",
-            "totalSnaps": 2,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 2,
-            "week": 3,
-            "opponent": "Norfolk State"
+            "fgk": 0
           },
           {
             "name": "Kevin Levy",
             "jersey": "D24",
-            "position": "ST",
-            "totalSnaps": 2,
+            "position": "0",
             "kret": 0,
             "kcov": 2,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Moses Walker",
-            "jersey": "D02",
-            "position": "ST",
-            "totalSnaps": 3,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 2,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
+            "fgk": 0
           },
           {
             "name": "Latrell Noel",
             "jersey": "D35",
-            "position": "ST",
-            "totalSnaps": 2,
+            "position": "0",
             "kret": 0,
             "kcov": 2,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
+            "fgk": 0
           },
           {
             "name": "Michael Thomas III",
             "jersey": "80",
-            "position": "ST",
-            "totalSnaps": 2,
+            "position": "0",
             "kret": 0,
             "kcov": 2,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
+            "fgk": 0
+          },
+          {
+            "name": "Wydeek Collier",
+            "jersey": "D43",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Kamar Archie",
+            "jersey": "D36",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "DJ McClary",
+            "jersey": "D13",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Jyon Simon",
+            "jersey": "D88",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Farell Gnago",
+            "jersey": "D90",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 2,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Djibril Abdou Rahman",
+            "jersey": "D91",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Mike Higgins",
+            "jersey": "88",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 3
+          },
+          {
+            "name": "Kenny Fletcher Jr.",
+            "jersey": "12",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 1
+          },
+          {
+            "name": "KJ Duff",
+            "jersey": "8",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 7
+          },
+          {
+            "name": "Riley McCann",
+            "jersey": "S22",
+            "position": "6",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 6
           },
           {
             "name": "Jack Scullion",
             "jersey": "S93",
-            "position": "K",
-            "totalSnaps": 10,
+            "position": "7",
             "kret": 0,
             "kcov": 10,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
+            "fgk": 5
           },
           {
-            "name": "Wydeek Collier",
-            "jersey": "D43",
-            "position": "ST",
-            "totalSnaps": 1,
+            "name": "Jai Patel",
+            "jersey": "S44",
+            "position": "6",
             "kret": 0,
             "kcov": 0,
-            "pret": 1,
+            "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Kamar Archie",
-            "jersey": "D36",
-            "position": "ST",
-            "totalSnaps": 1,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "DJ McClary",
-            "jersey": "D13",
-            "position": "ST",
-            "totalSnaps": 1,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Jyon Simon",
-            "jersey": "D88",
-            "position": "ST",
-            "totalSnaps": 1,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Sam Robinson",
-            "jersey": "D04",
-            "position": "ST",
-            "totalSnaps": 1,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
+            "fgk": 6
           },
           {
             "name": "Dane Pizzaro",
             "jersey": "S92",
-            "position": "K",
-            "totalSnaps": 3,
+            "position": "0",
             "kret": 0,
             "kcov": 1,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 2,
-            "week": 3,
-            "opponent": "Norfolk State"
+            "fgk": 0
           },
           {
-            "name": "Farell Gnago",
-            "jersey": "D90",
-            "position": "ST",
-            "totalSnaps": 2,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 2,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Raynor Andrews",
-            "jersey": "75",
-            "position": "ST",
-            "totalSnaps": 2,
+            "name": "Jakob Anderson",
+            "jersey": "S94",
+            "position": "1",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 2,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Zach Aamland",
-            "jersey": "70",
-            "position": "ST",
-            "totalSnaps": 2,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 2,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Djibril Abdou Rahman",
-            "jersey": "D91",
-            "position": "ST",
-            "totalSnaps": 1,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "DT Sheffield",
-            "jersey": "0",
-            "position": "ST",
-            "totalSnaps": 5,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 5,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Abram Wright",
-            "jersey": "D06",
-            "position": "ST",
-            "totalSnaps": 1,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Ja'shon Benjamin",
-            "jersey": "20",
-            "position": "ST",
-            "totalSnaps": 3,
-            "kret": 3,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Jai Patel",
-            "jersey": "S44",
-            "position": "K",
-            "totalSnaps": 8,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 8,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Bradley Weaver",
-            "jersey": "D94",
-            "position": "ST",
-            "totalSnaps": 1,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Colin Weber",
-            "jersey": "18",
-            "position": "ST",
-            "totalSnaps": 3,
-            "kret": 3,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Darold DeNgohe",
-            "jersey": "D92",
-            "position": "ST",
-            "totalSnaps": 1,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 1,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Zaire Angoy",
-            "jersey": "D55",
-            "position": "ST",
-            "totalSnaps": 1,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 1,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Jackson Gister",
-            "jersey": "82",
-            "position": "ST",
-            "totalSnaps": 6,
-            "kret": 3,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 3,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Dino Kaliakmanis",
-            "jersey": "83",
-            "position": "ST",
-            "totalSnaps": 16,
-            "kret": 3,
-            "kcov": 9,
-            "pret": 4,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Ben Black",
-            "jersey": "17",
-            "position": "ST",
-            "totalSnaps": 15,
-            "kret": 3,
-            "kcov": 9,
-            "pret": 3,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Michael O'Connor",
-            "jersey": "S99",
-            "position": "LS",
-            "totalSnaps": 8,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 8,
-            "week": 3,
-            "opponent": "Norfolk State"
-          },
-          {
-            "name": "Kwabena Asamoah",
-            "jersey": "69",
-            "position": "ST",
-            "totalSnaps": 8,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 8,
-            "week": 3,
-            "opponent": "Norfolk State"
+            "fgk": 3
           }
         ]
-      },
-      "summary": {
-        "opponent": "Norfolk State",
-        "date": "Sat Sep 13th",
-        "finalScore": "60-10",
-        "homeAway": "Away",
-        "offensiveSnaps": 62,
-        "defensiveSnaps": 52,
-        "specialTeamsSnaps": 0
       }
     },
     {
       "week": 4,
       "offense": {
-        "wide_receivers": [
-          {
-            "name": "Ian Strong",
-            "jersey": "9",
-            "position": "LWR",
-            "snaps": 69,
-            "started": true,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "KJ Duff",
-            "jersey": "8",
-            "position": "LWR",
-            "snaps": 66,
-            "started": true,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "DT Sheffield",
-            "jersey": "0",
-            "position": "SLWR",
-            "snaps": 63,
-            "started": true,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Ben Black",
-            "jersey": "17",
-            "position": "RWR",
-            "snaps": 5,
-            "started": false,
-            "week": 4,
-            "opponent": "Iowa"
-          }
-        ],
-        "tight_ends": [
-          {
-            "name": "Kenny Fletcher Jr.",
-            "jersey": "12",
-            "position": "TE-L",
-            "snaps": 55,
-            "started": true,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Logan Blake",
-            "jersey": "11",
-            "position": "TE-R",
-            "snaps": 2,
-            "started": false,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Colin Weber",
-            "jersey": "18",
-            "position": "TE-L",
-            "snaps": 22,
-            "started": false,
-            "week": 4,
-            "opponent": "Iowa"
-          }
-        ],
-        "quarterbacks": [
-          {
-            "name": "Athan Kaliakmanis",
-            "jersey": "16",
-            "position": "QB",
-            "snaps": 72,
-            "started": true,
-            "week": 4,
-            "opponent": "Iowa"
-          }
-        ],
-        "running_backs": [
-          {
-            "name": "Antwan Raymond",
-            "jersey": "3",
-            "position": "HB",
-            "snaps": 63,
-            "started": true,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Ja'shon Benjamin",
-            "jersey": "20",
-            "position": "HB",
-            "snaps": 9,
-            "started": false,
-            "week": 4,
-            "opponent": "Iowa"
-          }
-        ],
-        "offensive_line": [
-          {
-            "name": "Bryan Felter",
-            "jersey": "65",
-            "position": "LG",
-            "snaps": 72,
-            "started": true,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Tyler Needham",
-            "jersey": "56",
-            "position": "LT",
-            "snaps": 71,
-            "started": true,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Kwabena Asamoah",
-            "jersey": "69",
-            "position": "RG",
-            "snaps": 72,
-            "started": true,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Moshood Giwa",
-            "jersey": "74",
-            "position": "LT",
-            "snaps": 1,
-            "started": false,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "John Stone",
-            "jersey": "71",
-            "position": "LG",
-            "snaps": 3,
-            "started": false,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Terrence Salami",
-            "jersey": "73",
-            "position": "C",
-            "snaps": 3,
-            "started": false,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Gus Zilinskas",
-            "jersey": "59",
-            "position": "C",
-            "snaps": 72,
-            "started": true,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Taj White",
-            "jersey": "54",
-            "position": "RT",
-            "snaps": 72,
-            "started": true,
-            "week": 4,
-            "opponent": "Iowa"
-          }
-        ]
+        "other": []
       },
       "defense": {
-        "defensive_line": [
-          {
-            "name": "Eric O'Neill",
-            "jersey": "D99",
-            "position": "DLE",
-            "snaps": 34,
-            "started": true,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Henry Hughes Jr.",
-            "jersey": "D95",
-            "position": "DRT",
-            "snaps": 1,
-            "started": false,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Wydeek Collier",
-            "jersey": "D43",
-            "position": "DRE",
-            "snaps": 1,
-            "started": false,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Bradley Weaver",
-            "jersey": "D94",
-            "position": "DLE",
-            "snaps": 29,
-            "started": false,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Darold DeNgohe",
-            "jersey": "D92",
-            "position": "NT",
-            "snaps": 17,
-            "started": false,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Zaire Angoy",
-            "jersey": "D55",
-            "position": "DRT",
-            "snaps": 40,
-            "started": true,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Oliver Billotte",
-            "jersey": "D97",
-            "position": "DLT",
-            "snaps": 15,
-            "started": false,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Keshon Griffin",
-            "jersey": "D96",
-            "position": "NT",
-            "snaps": 37,
-            "started": true,
-            "week": 4,
-            "opponent": "Iowa"
-          }
-        ],
-        "linebackers": [
-          {
-            "name": "Dariel Djabome",
-            "jersey": "D08",
-            "position": "MLB",
-            "snaps": 57,
-            "started": true,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Austin Dean",
-            "jersey": "D47",
-            "position": "WLB",
-            "snaps": 3,
-            "started": false,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Moses Walker",
-            "jersey": "D02",
-            "position": "WLB",
-            "snaps": 24,
-            "started": true,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Abram Wright",
-            "jersey": "D06",
-            "position": "WLB",
-            "snaps": 36,
-            "started": false,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Jordan Walker",
-            "jersey": "D01",
-            "position": "ROLB",
-            "snaps": 31,
-            "started": true,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Jordan Thompson",
-            "jersey": "D14",
-            "position": "ROLB",
-            "snaps": 31,
-            "started": false,
-            "week": 4,
-            "opponent": "Iowa"
-          }
-        ],
-        "defensive_backs": [
-          {
-            "name": "Kaj Sanders",
-            "jersey": "D05",
-            "position": "SS",
-            "snaps": 51,
-            "started": true,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Bo Mascoe",
-            "jersey": "D03",
-            "position": "LCB",
-            "snaps": 49,
-            "started": true,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Jett Elad",
-            "jersey": "D09",
-            "position": "SS",
-            "snaps": 58,
-            "started": true,
-            "week": 4,
-            "opponent": "Iowa"
-          },
+        "other": []
+      },
+      "special_teams": {
+        "other": [
           {
             "name": "Cam Miller",
             "jersey": "D07",
-            "position": "SCB",
-            "snaps": 55,
-            "started": true,
-            "week": 4,
-            "opponent": "Iowa"
+            "position": "8",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 2,
+            "pcov": 0,
+            "fgblk": 7,
+            "fgk": 0
           },
           {
-            "name": "Jacobie Henderson",
-            "jersey": "D10",
-            "position": "RCB",
-            "snaps": 53,
-            "started": true,
-            "week": 4,
-            "opponent": "Iowa"
+            "name": "Jesse Ofurie",
+            "jersey": "D16",
+            "position": "9",
+            "kret": 7,
+            "kcov": 5,
+            "pret": 3,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Kaj Sanders",
+            "jersey": "D05",
+            "position": "7",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 3,
+            "pcov": 0,
+            "fgblk": 6,
+            "fgk": 0
+          },
+          {
+            "name": "Dino Kaliakmanis",
+            "jersey": "83",
+            "position": "14",
+            "kret": 7,
+            "kcov": 5,
+            "pret": 3,
+            "pcov": 3,
+            "fgblk": 0,
+            "fgk": 0
           },
           {
             "name": "Chris Joines",
             "jersey": "D20",
-            "position": "SS",
-            "snaps": 9,
-            "started": false,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Al-Shadee Salaam",
-            "jersey": "D21",
-            "position": "RCB",
-            "snaps": 18,
-            "started": false,
-            "week": 4,
-            "opponent": "Iowa"
-          }
-        ]
-      },
-      "special_teams": {
-        "special_teams": [
-          {
-            "name": "Ben Black",
-            "jersey": "17",
-            "position": "ST",
-            "totalSnaps": 15,
+            "position": "16",
             "kret": 7,
             "kcov": 5,
-            "pret": 2,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
+            "pret": 3,
+            "pcov": 3,
+            "fgblk": 1,
+            "fgk": 0
           },
           {
             "name": "Zilan Williams",
             "jersey": "D15",
-            "position": "ST",
-            "totalSnaps": 12,
+            "position": "13",
             "kret": 7,
             "kcov": 5,
             "pret": 0,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Michael O'Connor",
-            "jersey": "S99",
-            "position": "LS",
-            "totalSnaps": 9,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 3,
-            "fgblk": 0,
-            "fgk": 6,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Terrence Salami",
-            "jersey": "73",
-            "position": "ST",
-            "totalSnaps": 6,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 6,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "John Stone",
-            "jersey": "71",
-            "position": "ST",
-            "totalSnaps": 6,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 6,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Sage Clawges",
-            "jersey": "D27",
-            "position": "ST",
-            "totalSnaps": 5,
-            "kret": 0,
-            "kcov": 5,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Isaiah Crumpler",
-            "jersey": "D26",
-            "position": "ST",
-            "totalSnaps": 5,
-            "kret": 0,
-            "kcov": 5,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Moshood Giwa",
-            "jersey": "74",
-            "position": "ST",
-            "totalSnaps": 6,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 6,
-            "week": 4,
-            "opponent": "Iowa"
+            "fgk": 0
           },
           {
             "name": "Austin Dean",
             "jersey": "D47",
-            "position": "ST",
-            "totalSnaps": 8,
+            "position": "13",
             "kret": 7,
             "kcov": 0,
             "pret": 1,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
+            "fgk": 0
+          },
+          {
+            "name": "Michael O'Connor",
+            "jersey": "S99",
+            "position": "7",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 3,
+            "fgblk": 0,
+            "fgk": 0
           },
           {
             "name": "Michael Robinson II",
             "jersey": "31",
-            "position": "ST",
-            "totalSnaps": 13,
+            "position": "9",
             "kret": 7,
             "kcov": 5,
             "pret": 1,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
+            "fgk": 0
           },
           {
             "name": "Jordan Thompson",
             "jersey": "D14",
-            "position": "ST",
-            "totalSnaps": 7,
+            "position": "9",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 1,
-            "fgk": 6,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Bo Mascoe",
-            "jersey": "D03",
-            "position": "ST",
-            "totalSnaps": 9,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 3,
-            "pcov": 0,
-            "fgblk": 6,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Logan Blake",
-            "jersey": "11",
-            "position": "ST",
-            "totalSnaps": 6,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 6,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Bryan Felter",
-            "jersey": "65",
-            "position": "ST",
-            "totalSnaps": 6,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 6,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Dylan Braithwaite",
-            "jersey": "67",
-            "position": "ST",
-            "totalSnaps": 7,
-            "kret": 0,
-            "kcov": 5,
-            "pret": 0,
-            "pcov": 2,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Dariel Djabome",
-            "jersey": "D08",
-            "position": "ST",
-            "totalSnaps": 10,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 3,
-            "fgblk": 7,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Riley McCann",
-            "jersey": "S22",
-            "position": "K",
-            "totalSnaps": 6,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 6,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Jett Elad",
-            "jersey": "D09",
-            "position": "ST",
-            "totalSnaps": 9,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 2,
-            "pcov": 0,
-            "fgblk": 7,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Keshon Griffin",
-            "jersey": "D96",
-            "position": "ST",
-            "totalSnaps": 12,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 6,
-            "fgk": 6,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Kaj Sanders",
-            "jersey": "D05",
-            "position": "ST",
-            "totalSnaps": 9,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 3,
-            "pcov": 0,
-            "fgblk": 6,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Jacobie Henderson",
-            "jersey": "D10",
-            "position": "ST",
-            "totalSnaps": 7,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 7,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Ben Rothhaar",
-            "jersey": "24",
-            "position": "ST",
-            "totalSnaps": 2,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 2,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Jackson Gister",
-            "jersey": "82",
-            "position": "ST",
-            "totalSnaps": 10,
-            "kret": 7,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 3,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Mike Higgins",
-            "jersey": "88",
-            "position": "ST",
-            "totalSnaps": 3,
-            "kret": 3,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Jack Scullion",
-            "jersey": "S93",
-            "position": "K",
-            "totalSnaps": 5,
-            "kret": 0,
-            "kcov": 5,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Sam Robinson",
-            "jersey": "D04",
-            "position": "ST",
-            "totalSnaps": 1,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Jakob Anderson",
-            "jersey": "S94",
-            "position": "P",
-            "totalSnaps": 3,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 3,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "DT Sheffield",
-            "jersey": "0",
-            "position": "ST",
-            "totalSnaps": 3,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 3,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Darold DeNgohe",
-            "jersey": "D92",
-            "position": "ST",
-            "totalSnaps": 1,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 1,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
+            "fgk": 0
           },
           {
             "name": "Jordan Walker",
             "jersey": "D01",
-            "position": "ST",
-            "totalSnaps": 9,
+            "position": "12",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 3,
             "fgblk": 6,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
+            "fgk": 0
           },
           {
-            "name": "Jai Patel",
-            "jersey": "S44",
-            "position": "K",
-            "totalSnaps": 6,
+            "name": "Jett Elad",
+            "jersey": "D09",
+            "position": "7",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 2,
+            "pcov": 0,
+            "fgblk": 7,
+            "fgk": 0
+          },
+          {
+            "name": "Keshon Griffin",
+            "jersey": "D96",
+            "position": "8",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
-            "fgblk": 0,
-            "fgk": 6,
-            "week": 4,
-            "opponent": "Iowa"
+            "fgblk": 6,
+            "fgk": 0
           },
           {
-            "name": "Kenny Fletcher Jr.",
-            "jersey": "12",
-            "position": "ST",
-            "totalSnaps": 1,
+            "name": "Timmy Ward",
+            "jersey": "D38",
+            "position": "17",
+            "kret": 7,
+            "kcov": 5,
+            "pret": 3,
+            "pcov": 3,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Al-Shadee Salaam",
+            "jersey": "D21",
+            "position": "5",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
+            "pcov": 0,
+            "fgblk": 1,
+            "fgk": 0
+          },
+          {
+            "name": "Dariel Djabome",
+            "jersey": "D08",
+            "position": "7",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
+            "pcov": 3,
+            "fgblk": 7,
+            "fgk": 0
+          },
+          {
+            "name": "Bo Mascoe",
+            "jersey": "D03",
+            "position": "6",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 3,
+            "pcov": 0,
+            "fgblk": 6,
+            "fgk": 0
           },
           {
             "name": "Eric O'Neill",
             "jersey": "D99",
-            "position": "ST",
-            "totalSnaps": 4,
+            "position": "4",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 4,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
+            "fgk": 0
+          },
+          {
+            "name": "Ben Black",
+            "jersey": "17",
+            "position": "9",
+            "kret": 7,
+            "kcov": 5,
+            "pret": 2,
+            "pcov": 1,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Jacobie Henderson",
+            "jersey": "D10",
+            "position": "3",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 7,
+            "fgk": 0
+          },
+          {
+            "name": "Dylan Braithwaite",
+            "jersey": "67",
+            "position": "2",
+            "kret": 0,
+            "kcov": 5,
+            "pret": 0,
+            "pcov": 2,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Moses Walker",
+            "jersey": "D02",
+            "position": "7",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 3,
+            "fgblk": 3,
+            "fgk": 0
           },
           {
             "name": "Bradley Weaver",
             "jersey": "D94",
-            "position": "ST",
-            "totalSnaps": 3,
+            "position": "2",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 3,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
+            "fgk": 0
           },
           {
             "name": "Colin Weber",
             "jersey": "18",
-            "position": "ST",
-            "totalSnaps": 6,
+            "position": "7",
             "kret": 4,
             "kcov": 0,
             "pret": 0,
             "pcov": 2,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
+            "fgk": 0
           },
           {
-            "name": "Al-Shadee Salaam",
-            "jersey": "D21",
-            "position": "ST",
-            "totalSnaps": 2,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 1,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Cam Miller",
-            "jersey": "D07",
-            "position": "ST",
-            "totalSnaps": 9,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 2,
-            "pcov": 0,
-            "fgblk": 7,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "KJ Duff",
-            "jersey": "8",
-            "position": "ST",
-            "totalSnaps": 7,
+            "name": "Jackson Gister",
+            "jersey": "82",
+            "position": "7",
             "kret": 7,
             "kcov": 0,
             "pret": 0,
-            "pcov": 0,
+            "pcov": 3,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
+            "fgk": 0
           },
           {
-            "name": "Abram Wright",
-            "jersey": "D06",
-            "position": "ST",
-            "totalSnaps": 4,
+            "name": "DT Sheffield",
+            "jersey": "0",
+            "position": "3",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 3,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Darold DeNgohe",
+            "jersey": "D92",
+            "position": "1",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
-            "fgblk": 4,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
+            "fgblk": 1,
+            "fgk": 0
           },
           {
             "name": "Oliver Billotte",
             "jersey": "D97",
-            "position": "ST",
-            "totalSnaps": 1,
+            "position": "1",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 1,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Moses Walker",
-            "jersey": "D02",
-            "position": "ST",
-            "totalSnaps": 6,
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 3,
-            "fgblk": 3,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
+            "fgk": 0
           },
           {
             "name": "Zaire Angoy",
             "jersey": "D55",
-            "position": "ST",
-            "totalSnaps": 6,
+            "position": "4",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
             "fgblk": 6,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
+            "fgk": 0
           },
           {
-            "name": "Chris Joines",
-            "jersey": "D20",
-            "position": "ST",
-            "totalSnaps": 19,
-            "kret": 7,
-            "kcov": 5,
-            "pret": 3,
-            "pcov": 3,
-            "fgblk": 1,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Timmy Ward",
-            "jersey": "D38",
-            "position": "ST",
-            "totalSnaps": 18,
-            "kret": 7,
-            "kcov": 5,
-            "pret": 3,
-            "pcov": 3,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Dino Kaliakmanis",
-            "jersey": "83",
-            "position": "ST",
-            "totalSnaps": 18,
-            "kret": 7,
-            "kcov": 5,
-            "pret": 3,
-            "pcov": 3,
-            "fgblk": 0,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
-          },
-          {
-            "name": "Jesse Ofurie",
-            "jersey": "D16",
-            "position": "ST",
-            "totalSnaps": 15,
-            "kret": 7,
-            "kcov": 5,
-            "pret": 3,
+            "name": "Sam Robinson",
+            "jersey": "D04",
+            "position": "12",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 1,
             "pcov": 0,
             "fgblk": 0,
-            "fgk": 0,
-            "week": 4,
-            "opponent": "Iowa"
+            "fgk": 0
           },
           {
-            "name": "Kwabena Asamoah",
-            "jersey": "69",
-            "position": "ST",
-            "totalSnaps": 6,
+            "name": "Isaiah Crumpler",
+            "jersey": "D26",
+            "position": "13",
+            "kret": 0,
+            "kcov": 5,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Abram Wright",
+            "jersey": "D06",
+            "position": "0",
             "kret": 0,
             "kcov": 0,
             "pret": 0,
             "pcov": 0,
+            "fgblk": 4,
+            "fgk": 0
+          },
+          {
+            "name": "Sage Clawges",
+            "jersey": "D27",
+            "position": "0",
+            "kret": 0,
+            "kcov": 5,
+            "pret": 0,
+            "pcov": 0,
             "fgblk": 0,
-            "fgk": 6,
-            "week": 4,
-            "opponent": "Iowa"
+            "fgk": 0
+          },
+          {
+            "name": "Ben Rothhaar",
+            "jersey": "24",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 2,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Mike Higgins",
+            "jersey": "88",
+            "position": "0",
+            "kret": 3,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Kenny Fletcher Jr.",
+            "jersey": "12",
+            "position": "0",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 1,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "KJ Duff",
+            "jersey": "8",
+            "position": "0",
+            "kret": 7,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Jack Scullion",
+            "jersey": "S93",
+            "position": "7",
+            "kret": 0,
+            "kcov": 5,
+            "pret": 0,
+            "pcov": 0,
+            "fgblk": 0,
+            "fgk": 0
+          },
+          {
+            "name": "Jakob Anderson",
+            "jersey": "S94",
+            "position": "1",
+            "kret": 0,
+            "kcov": 0,
+            "pret": 0,
+            "pcov": 3,
+            "fgblk": 0,
+            "fgk": 0
           }
         ]
-      },
-      "summary": {
-        "opponent": "Iowa",
-        "date": "Fri Sep 19th",
-        "finalScore": "28-38",
-        "homeAway": "Away",
-        "offensiveSnaps": 72,
-        "defensiveSnaps": 59,
-        "specialTeamsSnaps": null
       }
     }
-  ]
+  ],
+  "summary": [
+    {
+      "week": 1,
+      "opponent": "Rutgers",
+      "date": "Ohio",
+      "final_score_team": "1",
+      "final_score_opponent": "Thu Aug 28th",
+      "home_away": "34",
+      "offense_snaps": 31,
+      "defense_snaps": 0,
+      "special_teams_snaps": 61
+    },
+    {
+      "week": 2,
+      "opponent": "Rutgers",
+      "date": "Miami OH",
+      "final_score_team": "2",
+      "final_score_opponent": "Sat Sep 6th",
+      "home_away": "45",
+      "offense_snaps": 17,
+      "defense_snaps": 0,
+      "special_teams_snaps": 82
+    },
+    {
+      "week": 3,
+      "opponent": "Rutgers",
+      "date": "Norfolk State",
+      "final_score_team": "3",
+      "final_score_opponent": "Sat Sep 13th",
+      "home_away": "60",
+      "offense_snaps": 10,
+      "defense_snaps": 0,
+      "special_teams_snaps": 62
+    },
+    {
+      "week": 4,
+      "opponent": "Rutgers",
+      "date": "Iowa",
+      "final_score_team": "4",
+      "final_score_opponent": "Fri Sep 19th",
+      "home_away": "28",
+      "offense_snaps": 38,
+      "defense_snaps": 0,
+      "special_teams_snaps": 72
+    }
+  ],
+  "metadata": {
+    "weeks": 4,
+    "last_updated": "2025-09-28T23:58:02.513Z"
+  }
 }
