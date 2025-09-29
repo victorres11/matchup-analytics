@@ -3016,7 +3016,7 @@
       "final_score_team": "44",
       "final_score_opponent": "17",
       "home_away": "Away",
-      "offense_snaps": 64,
+      "offense_snaps": 81,
       "defense_snaps": 98,
       "special_teams_snaps": 0
     },
@@ -3027,7 +3027,7 @@
       "final_score_team": "69",
       "final_score_opponent": "0",
       "home_away": "Away",
-      "offense_snaps": 63,
+      "offense_snaps": 67,
       "defense_snaps": 71,
       "special_teams_snaps": 0
     },
@@ -3038,7 +3038,7 @@
       "final_score_team": "36",
       "final_score_opponent": "17",
       "home_away": "Away",
-      "offense_snaps": 51,
+      "offense_snaps": 72,
       "defense_snaps": 59,
       "special_teams_snaps": 0
     },
@@ -3056,6 +3056,6 @@
   ],
   "metadata": {
     "weeks": 4,
-    "last_updated": "2025-09-29T22:22:06.985Z"
+    "last_updated": "2025-09-29T22:32:46.627Z"
   }
 }
