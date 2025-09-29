@@ -628,7 +628,7 @@
             "jersey": "00",
             "position": "HB",
             "snaps": 40,
-            "started": false
+            "started": true
           },
           {
             "name": "DJ Samuels",
@@ -3056,6 +3056,6 @@
   ],
   "metadata": {
     "weeks": 4,
-    "last_updated": "2025-09-29T22:21:31.185Z"
+    "last_updated": "2025-09-29T22:22:06.985Z"
   }
 }
