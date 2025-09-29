@@ -16,7 +16,7 @@ function getPositionGroup(position) {
     // Offense
     if (pos.includes('WR') || pos.includes('RECEIVER')) return 'wide_receivers';
     if (pos.includes('TE') || pos.includes('TIGHT')) return 'tight_ends';
-    if (pos.includes('RB') || pos.includes('HB') || pos.includes('RUNNING') || pos.includes('BACK')) return 'running_backs';
+    if (pos.includes('RB') || pos.includes('HB') || pos.includes('FB') || pos.includes('RUNNING') || pos.includes('BACK')) return 'running_backs';
     if (pos.includes('OL') || pos.includes('TACKLE') || pos.includes('GUARD') || pos.includes('CENTER') || 
         pos.includes('LT') || pos.includes('RT') || pos.includes('LG') || pos.includes('RG') || pos.includes('C')) return 'offensive_line';
     if (pos.includes('QB') || pos.includes('QUARTERBACK')) return 'quarterbacks';
@@ -39,7 +39,7 @@ function processTeamData(teamName) {
     // Read offense data
     const offenseFile = path.join(teamDir, `${teamName}_offense_final.csv`);
     const defenseFile = path.join(teamDir, `${teamName}_defense_final.csv`);
-    const stFile = path.join(teamDir, `${teamName}_special_teams_final.csv`);
+    const stFile = path.join(teamDir, `${teamName}_special_teams_season.csv`);
     const summaryFile = path.join(teamDir, `${teamName}_summary_final.csv`);
     
     // For converted teams, use the original team name in file names
@@ -51,7 +51,7 @@ function processTeamData(teamName) {
     // Try different file naming conventions
     let actualOffenseFile = path.join(teamDir, `${actualTeamName}_offense_final.csv`);
     let actualDefenseFile = path.join(teamDir, `${actualTeamName}_defense_final.csv`);
-    let actualStFile = path.join(teamDir, `${actualTeamName}_special_teams_final.csv`);
+    let actualStFile = path.join(teamDir, `${actualTeamName}_special_teams_season.csv`);
     let actualSummaryFile = path.join(teamDir, `${actualTeamName}_summary_final.csv`);
     
     // If _final files don't exist, try without _final
@@ -60,6 +60,9 @@ function processTeamData(teamName) {
     }
     if (!fs.existsSync(actualDefenseFile)) {
         actualDefenseFile = path.join(teamDir, `${actualTeamName}_defense.csv`);
+    }
+    if (!fs.existsSync(actualStFile)) {
+        actualStFile = path.join(teamDir, `${actualTeamName}_special_teams_final.csv`);
     }
     if (!fs.existsSync(actualStFile)) {
         actualStFile = path.join(teamDir, `${actualTeamName}_special_teams.csv`);
@@ -168,7 +171,7 @@ function processTeamData(teamName) {
         }
     }
     
-    // Process special teams data
+    // Process special teams data (aggregate totals from season CSV)
     const specialTeamsData = {};
     if (fs.existsSync(actualStFile)) {
         const stContent = fs.readFileSync(actualStFile, 'utf8');
@@ -182,32 +185,26 @@ function processTeamData(teamName) {
             const player = {
                 name: values[0],
                 jersey: values[1],
-                position: values[3], // Position is in 4th column (index 3)
-                weeks: {}
+                position: values[2], // Position is in 3rd column (index 2)
+                totals: {
+                    kret: values[5] ? parseInt(values[5]) : 0, // Season_KRET
+                    kcov: values[6] ? parseInt(values[6]) : 0, // Season_KCOV
+                    pret: values[7] ? parseInt(values[7]) : 0, // Season_PRET
+                    pcov: values[8] ? parseInt(values[8]) : 0, // Season_PCOV
+                    fgblk: values[9] ? parseInt(values[9]) : 0, // Season_FGBLK
+                    fgk: values[10] ? parseInt(values[10]) : 0  // Season_FGK
+                },
+                returnerInfo: {
+                    kickReturns: values[11] ? parseInt(values[11]) : 0, // Season_KRETURNS
+                    kickReturnYards: values[12] ? parseInt(values[12]) : 0, // Season_KRETURN_YARDS
+                    kickReturnYPA: values[13] ? parseFloat(values[13]) : 0.0, // Season_KRETURN_YPA
+                    puntReturns: values[14] ? parseInt(values[14]) : 0, // Season_PRETURNS
+                    puntReturnYards: values[15] ? parseInt(values[15]) : 0, // Season_PRETURN_YARDS
+                    puntReturnYPA: values[16] ? parseFloat(values[16]) : 0.0, // Season_PRETURN_YPA
+                    isKRReturner: (values[11] ? parseInt(values[11]) : 0) > 0,
+                    isPRReturner: (values[14] ? parseInt(values[14]) : 0) > 0
+                }
             };
-            
-            // Parse week data (6 columns per week: KRET, KCOV, PRET, PCOV, FGBLK, FGK)
-            for (let w = 0; w < weeks.length; w++) {
-                const weekNum = weeks[w];
-                const baseIndex = 4 + (w * 6); // Week data starts at column 5 (index 4)
-                
-                const kret = values[baseIndex] ? parseInt(values[baseIndex]) : 0;
-                const kcov = values[baseIndex + 1] ? parseInt(values[baseIndex + 1]) : 0;
-                const pret = values[baseIndex + 2] ? parseInt(values[baseIndex + 2]) : 0;
-                const pcov = values[baseIndex + 3] ? parseInt(values[baseIndex + 3]) : 0;
-                const fgblk = values[baseIndex + 4] ? parseInt(values[baseIndex + 4]) : 0;
-                const fgk = values[baseIndex + 5] ? parseInt(values[baseIndex + 5]) : 0;
-                
-                // Always include the week data, even if 0 special teams activity
-                player.weeks[weekNum] = {
-                    kret: kret,
-                    kcov: kcov,
-                    pret: pret,
-                    pcov: pcov,
-                    fgblk: fgblk,
-                    fgk: fgk
-                };
-            }
             
             // For special teams, group all players under 'special_teams' regardless of their regular position
             const positionGroup = 'special_teams';
@@ -280,20 +277,19 @@ function processTeamData(teamName) {
                     }));
             });
             
-            // Populate special teams data for this week
-            Object.keys(specialTeamsData).forEach(positionGroup => {
-                weekData.special_teams[positionGroup] = specialTeamsData[positionGroup]
-                    .filter(player => player.weeks[weekNum])
-                    .map(player => ({
-                        name: player.name,
-                        jersey: player.jersey,
-                        position: player.position,
-                        ...player.weeks[weekNum]
-                    }));
-            });
-            
             return weekData;
         }),
+        // Special teams data as aggregate totals (not week-specific)
+        special_teams: Object.keys(specialTeamsData).reduce((acc, positionGroup) => {
+            acc[positionGroup] = specialTeamsData[positionGroup].map(player => ({
+                name: player.name,
+                jersey: player.jersey,
+                position: player.position,
+                ...player.totals,
+                returnerInfo: player.returnerInfo
+            }));
+            return acc;
+        }, {}),
         summary: summaryData,
         metadata: {
             weeks: weeks.length,

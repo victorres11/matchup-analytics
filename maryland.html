@@ -1015,7 +1015,7 @@
 
         // Populate aggregate tables on page load
 
-        // Create special teams chart
+        // Create special teams chart (aggregate totals)
         function createSpecialTeamsChart(canvasId, positionGroup, side) {
             const canvas = document.getElementById(canvasId);
             if (!canvas) {
@@ -1031,61 +1031,21 @@
                 return activeUnits;
             };
             
-            // Get all special teams players across all weeks
-            const allPlayers = [];
-            const playerMap = new Map();
-
-            teamData.weeks.forEach(week => {
-                if (week[side] && week[side][positionGroup]) {
-                    week[side][positionGroup].forEach(player => {
-                        const key = `${player.name}_${player.jersey}`;
-                        if (!playerMap.has(key)) {
-                            playerMap.set(key, {
-                                name: player.name,
-                                jersey: player.jersey,
-                                position: player.position,
-                                weeks: {}
-                            });
-                        }
-                        playerMap.get(key).weeks[week.week] = {
-                            kret: player.kret || 0,
-                            kcov: player.kcov || 0,
-                            pret: player.pret || 0,
-                            pcov: player.pcov || 0,
-                            fgblk: player.fgblk || 0,
-                            fgk: player.fgk || 0
-                        };
-                    });
-                }
-            });
-
-            // Convert to array and filter by active units
+            // Get special teams players from aggregate data
+            const allPlayers = teamData.special_teams[positionGroup] || [];
+            
+            // Returner info is now built into the player data from the CSV
+            
+            // Filter players who have activity in active units
             const activeUnits = getActiveUnits();
-            allPlayers.push(...Array.from(playerMap.values()));
-            
-            // Add returner data to players
-            allPlayers.forEach(player => {
-                const returnerInfo = returnerData ? returnerData.get(player.jersey) : null;
-                if (returnerInfo) {
-                    player.returnerInfo = returnerInfo;
-                }
-            });
-            
-            // Filter players who have snaps in active units
             const filteredPlayers = allPlayers.filter(player => {
-                return activeUnits.some(unit => {
-                    return Object.values(player.weeks).some(week => week[unit] > 0);
-                });
+                return activeUnits.some(unit => player[unit] > 0);
             });
             
-            // Sort by total snaps for the active units (most to least)
+            // Sort by total activity for the active units (most to least)
             filteredPlayers.sort((a, b) => {
-                const aTotal = activeUnits.reduce((sum, unit) => {
-                    return sum + Object.values(a.weeks).reduce((weekSum, week) => weekSum + week[unit], 0);
-                }, 0);
-                const bTotal = activeUnits.reduce((sum, unit) => {
-                    return sum + Object.values(b.weeks).reduce((weekSum, week) => weekSum + week[unit], 0);
-                }, 0);
+                const aTotal = activeUnits.reduce((sum, unit) => sum + (a[unit] || 0), 0);
+                const bTotal = activeUnits.reduce((sum, unit) => sum + (b[unit] || 0), 0);
                 return bTotal - aTotal;
             });
 
@@ -1145,9 +1105,7 @@
                 if (activeUnits.includes(unit.key)) {
                     datasets.push({
                         label: unit.label,
-                        data: filteredPlayers.map(player => {
-                            return Object.values(player.weeks).reduce((sum, week) => sum + week[unit.key], 0);
-                        }),
+                        data: filteredPlayers.map(player => player[unit.key] || 0),
                         backgroundColor: filteredPlayers.map(player => {
                             // Make returner bars stand out with different styling
                             if (player.returnerInfo) {
@@ -1159,22 +1117,48 @@
                             return unit.color;
                         }),
                         borderColor: filteredPlayers.map(player => {
-                            // Add distinctive border for returners
-                            if (player.returnerInfo) {
-                                if ((unit.key === 'pret' && player.returnerInfo.isPRReturner) || 
-                                    (unit.key === 'kret' && player.returnerInfo.isKRReturner)) {
-                                    return '#FFD700'; // Gold border for returners
-                                }
+                            // Check if player is a specialist (kicker, punter, long snapper)
+                            const isSpecialist = player.position && (
+                                player.position.includes('K') || 
+                                player.position.includes('P') || 
+                                player.position.includes('LS') ||
+                                player.position.includes('KICKER') ||
+                                player.position.includes('PUNTER') ||
+                                player.position.includes('LONG SNAPPER')
+                            );
+                            
+                            // Check if player is a returner for this specific unit
+                            const isReturner = player.returnerInfo && (
+                                (unit.key === 'pret' && player.returnerInfo.isPRReturner) || 
+                                (unit.key === 'kret' && player.returnerInfo.isKRReturner)
+                            );
+                            
+                            if (isReturner) {
+                                return '#00FF00'; // Bright green border for returners
+                            } else if (isSpecialist) {
+                                return '#FFFF00'; // Yellow border for specialists
                             }
                             return unit.color;
                         }),
                         borderWidth: filteredPlayers.map(player => {
-                            // Thicker border for returners
-                            if (player.returnerInfo) {
-                                if ((unit.key === 'pret' && player.returnerInfo.isPRReturner) || 
-                                    (unit.key === 'kret' && player.returnerInfo.isKRReturner)) {
-                                    return 3; // Thick gold border
-                                }
+                            // Check if player is a specialist
+                            const isSpecialist = player.position && (
+                                player.position.includes('K') || 
+                                player.position.includes('P') || 
+                                player.position.includes('LS') ||
+                                player.position.includes('KICKER') ||
+                                player.position.includes('PUNTER') ||
+                                player.position.includes('LONG SNAPPER')
+                            );
+                            
+                            // Check if player is a returner for this specific unit
+                            const isReturner = player.returnerInfo && (
+                                (unit.key === 'pret' && player.returnerInfo.isPRReturner) || 
+                                (unit.key === 'kret' && player.returnerInfo.isKRReturner)
+                            );
+                            
+                            if (isReturner || isSpecialist) {
+                                return 3; // Thick border for returners and specialists
                             }
                             return 1;
                         }),
@@ -1246,6 +1230,21 @@
                                     const unitSnaps = context.parsed.y;
                                     
                                     let label = `${context.dataset.label}: ${unitSnaps} snaps`;
+                                    
+                                    // Check if player is a specialist
+                                    const isSpecialist = player.position && (
+                                        player.position.includes('K') || 
+                                        player.position.includes('P') || 
+                                        player.position.includes('LS') ||
+                                        player.position.includes('KICKER') ||
+                                        player.position.includes('PUNTER') ||
+                                        player.position.includes('LONG SNAPPER')
+                                    );
+                                    
+                                    // Add specialist info
+                                    if (isSpecialist) {
+                                        label += `\n[SPECIALIST: ${player.position}]`;
+                                    }
                                     
                                     // Add return statistics if player is a returner for this unit
                                     if (player.returnerInfo) {
@@ -2016,7 +2015,7 @@
                     const pos = position.toUpperCase();
                     if (pos.includes('WR') || pos.includes('RECEIVER')) return 1; // WR first
                     if (pos.includes('TE') || pos.includes('TIGHT')) return 2; // TE second
-                    if (pos.includes('RB') || pos.includes('HB') || pos.includes('RUNNING') || pos.includes('BACK')) return 3; // RB third
+                    if (pos.includes('RB') || pos.includes('HB') || pos.includes('FB') || pos.includes('RUNNING') || pos.includes('BACK')) return 3; // RB third
                     if (pos.includes('OL') || pos.includes('TACKLE') || pos.includes('GUARD') || pos.includes('CENTER') || pos.includes('LT') || pos.includes('RT') || pos.includes('LG') || pos.includes('RG') || pos.includes('C')) return 4; // OL fourth
                     if (pos.includes('QB') || pos.includes('QUARTERBACK')) return 5; // QB last
                     return 6; // Other positions
