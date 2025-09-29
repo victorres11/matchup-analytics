@@ -969,49 +969,7 @@
         let returnerData = null;
         let currentWeek = 'all';
 
-        // Load returner data
-        async function loadReturnerData() {
-            try {
-                const response = await fetch('./team_data/washington/washington_special_teams_final.csv');
-                const csvText = await response.text();
-                const lines = csvText.split('\n');
-                const headers = lines[0].split(',');
-                
-                returnerData = new Map();
-                
-                for (let i = 1; i < lines.length; i++) {
-                    if (lines[i].trim()) {
-                        const values = lines[i].split(',');
-                        const jersey = values[0];
-                        const player = values[1];
-                        const puntReturns = parseInt(values[2]) || 0;
-                        const puntReturnYards = parseInt(values[3]) || 0;
-                        const puntReturnYPA = parseFloat(values[4]) || 0;
-                        const kickReturns = parseInt(values[5]) || 0;
-                        const kickReturnYards = parseInt(values[6]) || 0;
-                        const kickReturnYPA = parseFloat(values[7]) || 0;
-                        
-                        if (jersey && player) {
-                            returnerData.set(jersey, {
-                                name: player,
-                                jersey: jersey,
-                                puntReturns: puntReturns,
-                                puntReturnYards: puntReturnYards,
-                                puntReturnYPA: puntReturnYPA,
-                                kickReturns: kickReturns,
-                                kickReturnYards: kickReturnYards,
-                                kickReturnYPA: kickReturnYPA,
-                                isPRReturner: puntReturns > 0,
-                                isKRReturner: kickReturns > 0
-                            });
-                        }
-                    }
-                }
-            } catch (error) {
-                console.error('Error loading returner data:', error);
-                returnerData = new Map();
-            }
-        }
+        // Returner data is now included in the main JSON file, no separate loading needed
 
         // Populate aggregate tables on page load
 
@@ -1463,12 +1421,7 @@
                 }
                 teamData = await response.json();
 
-                // Load special teams data
-                const stResponse = await fetch('./team_data/washington/washington_special_teams_final.csv');
-                if (stResponse.ok) {
-                    const stCsv = await stResponse.text();
-                    // Process special teams CSV if needed
-                }
+                // Special teams data is now included in the main JSON file
 
                 // Initialize charts and tables
                 initializeCharts();
