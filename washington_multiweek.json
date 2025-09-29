@@ -3256,7 +3256,7 @@
       "final_score_team": "70",
       "final_score_opponent": "10",
       "home_away": "Away",
-      "offense_snaps": 65,
+      "offense_snaps": 78,
       "defense_snaps": 55,
       "special_teams_snaps": 0
     },
@@ -3289,13 +3289,13 @@
       "final_score_team": "6",
       "final_score_opponent": "24",
       "home_away": "Away",
-      "offense_snaps": 52,
+      "offense_snaps": 53,
       "defense_snaps": 64,
       "special_teams_snaps": 0
     }
   ],
   "metadata": {
     "weeks": 5,
-    "last_updated": "2025-09-29T21:46:25.780Z"
+    "last_updated": "2025-09-29T22:26:55.849Z"
   }
 }
