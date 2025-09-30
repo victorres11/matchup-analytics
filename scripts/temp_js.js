@@ -22,7 +22,7 @@
         async function loadReturnerData() {
             try {
                 console.log('Loading Rutgers returner data...');
-                const response = await fetch('./team_data/rutgers/rutgers_pr_kr_up_to_week_4.csv');
+                const response = await fetch('../data/csv/team_data/rutgers/rutgers_pr_kr_up_to_week_4.csv');
                 const csvText = await response.text();
                 console.log('CSV data loaded:', csvText);
                 const lines = csvText.split('\n');

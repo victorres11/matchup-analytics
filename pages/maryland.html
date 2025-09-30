@@ -1063,7 +1063,7 @@
         // Load returner data
         async function loadReturnerData() {
             try {
-                const response = await fetch('./team_data/maryland/maryland_special_teams.csv');
+                const response = await fetch('../data/csv/team_data/maryland/maryland_special_teams_season.csv');
                 const csvText = await response.text();
                 const lines = csvText.split('\n');
                 const headers = lines[0].split(',');
@@ -1550,7 +1550,7 @@
                 teamData = await response.json();
 
                 // Load special teams data
-                const stResponse = await fetch('./team_data/maryland/maryland_special_teams.csv');
+                const stResponse = await fetch('../data/csv/team_data/maryland/maryland_special_teams_season.csv');
                 if (stResponse.ok) {
                     const stCsv = await stResponse.text();
                     // Process special teams CSV if needed

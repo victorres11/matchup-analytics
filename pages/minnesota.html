@@ -1025,7 +1025,7 @@
         // Load returner data
         async function loadReturnerData() {
             try {
-                const response = await fetch('./team_data/minnesota/minn_st_returns.csv');
+                const response = await fetch('../data/csv/team_data/minnesota/minnesota_special_teams_final.csv');
                 const csvText = await response.text();
                 const lines = csvText.split('\n');
                 const headers = lines[0].split(',');
