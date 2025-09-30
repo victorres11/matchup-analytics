@@ -960,17 +960,34 @@
                     <div class="player-details" id="st-details"></div>
                 </div>
                 
-                <!-- Special Teams Statistics Table -->
+                <!-- Kicking Specialists Table -->
                 <div class="position-group">
-                    <h3 class="position-title">Special Teams Statistics</h3>
+                    <h3 class="position-title">Kicking Specialists</h3>
                     <div class="aggregate-table-container">
-                        <table class="aggregate-table" id="special-teams-aggregate-table">
+                        <table class="aggregate-table" id="kicking-specialists-table">
                             <thead>
                                 <tr>
                                     <th>Player</th>
                                     <th>Jersey</th>
                                     <th>Category</th>
                                     <th>Attempts</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <!-- Returners Table -->
+                <div class="position-group">
+                    <h3 class="position-title">Returners</h3>
+                    <div class="aggregate-table-container">
+                        <table class="aggregate-table" id="returners-table">
+                            <thead>
+                                <tr>
+                                    <th>Player</th>
+                                    <th>Jersey</th>
+                                    <th>Category</th>
                                     <th>Returns</th>
                                     <th>Yards</th>
                                     <th>YPA</th>
@@ -1461,7 +1478,8 @@
                 // Initialize charts and tables
                 initializeCharts();
                 populateAggregateTables();
-                populateSpecialTeamsAggregateTable();
+                populateKickingSpecialistsTable();
+                populateReturnersTable();
                 updateStats();
                 populateWeeklySummary();
                 setupEventListeners();
@@ -2199,58 +2217,92 @@
             });
         }
 
-        function populateSpecialTeamsAggregateTable() {
+        function populateKickingSpecialistsTable() {
             if (!teamData || !teamData.kicking_specialists) return;
 
-            const tableBody = document.getElementById('special-teams-aggregate-table').querySelector('tbody');
+            const tableBody = document.getElementById('kicking-specialists-table').querySelector('tbody');
             tableBody.innerHTML = '';
 
-            // Group by category
-            const groupedData = {};
-            teamData.kicking_specialists.forEach(specialist => {
-                if (!groupedData[specialist.category]) {
-                    groupedData[specialist.category] = [];
-                }
-                groupedData[specialist.category].push(specialist);
-            });
+            // Filter for kicking specialists only
+            const kickingSpecialists = teamData.kicking_specialists.filter(specialist => 
+                specialist.category === 'Punting' || 
+                specialist.category === 'Kickoffs' || 
+                specialist.category === 'Field_Goals'
+            );
 
-            // Sort categories for display
-            const categoryOrder = ['Punting', 'Kickoffs', 'Field_Goals', 'Kick_Returns', 'Punt_Returns'];
-            
-            categoryOrder.forEach(category => {
-                if (groupedData[category]) {
-                    // Sort by attempts (descending) within each category
-                    const sortedSpecialists = groupedData[category].sort((a, b) => b.attempts - a.attempts);
-                    
-                    sortedSpecialists.forEach(specialist => {
-                        const row = document.createElement('tr');
-                        
-                        // Add category group styling
-                        let groupClass = '';
-                        if (category === 'Punting' || category === 'Kickoffs' || category === 'Field_Goals') {
-                            groupClass = 'position-group-specialist';
-                        } else if (category === 'Kick_Returns') {
-                            groupClass = 'position-group-kick-returner';
-                        } else if (category === 'Punt_Returns') {
-                            groupClass = 'position-group-punt-returner';
-                        }
-                        
-                        row.className = groupClass;
-                        
-                        row.innerHTML = `
-                            <td class="player-name">${specialist.playerName}</td>
-                            <td class="jersey">#${specialist.jersey}</td>
-                            <td class="category">${category}</td>
-                            <td class="attempts">${specialist.attempts}</td>
-                            <td class="returns">${specialist.returns}</td>
-                            <td class="yards">${specialist.yards}</td>
-                            <td class="ypa">${specialist.ypa.toFixed(1)}</td>
-                            <td class="td">${specialist.td}</td>
-                        `;
-                        
-                        tableBody.appendChild(row);
-                    });
+            // Sort by category, then by attempts (descending)
+            const categoryOrder = ['Punting', 'Kickoffs', 'Field_Goals'];
+            const sortedSpecialists = kickingSpecialists.sort((a, b) => {
+                const categoryA = categoryOrder.indexOf(a.category);
+                const categoryB = categoryOrder.indexOf(b.category);
+                if (categoryA !== categoryB) {
+                    return categoryA - categoryB;
                 }
+                return b.attempts - a.attempts;
+            });
+            
+            sortedSpecialists.forEach(specialist => {
+                const row = document.createElement('tr');
+                row.className = 'position-group-specialist';
+                
+                row.innerHTML = `
+                    <td class="player-name">${specialist.playerName}</td>
+                    <td class="jersey">#${specialist.jersey}</td>
+                    <td class="category">${specialist.category}</td>
+                    <td class="attempts">${specialist.attempts}</td>
+                `;
+                
+                tableBody.appendChild(row);
+            });
+        }
+
+        function populateReturnersTable() {
+            if (!teamData || !teamData.kicking_specialists) return;
+
+            const tableBody = document.getElementById('returners-table').querySelector('tbody');
+            tableBody.innerHTML = '';
+
+            // Filter for returners only
+            const returners = teamData.kicking_specialists.filter(specialist => 
+                specialist.category === 'Kick_Returns' || 
+                specialist.category === 'Punt_Returns'
+            );
+
+            // Sort by category, then by returns (descending)
+            const categoryOrder = ['Kick_Returns', 'Punt_Returns'];
+            const sortedReturners = returners.sort((a, b) => {
+                const categoryA = categoryOrder.indexOf(a.category);
+                const categoryB = categoryOrder.indexOf(b.category);
+                if (categoryA !== categoryB) {
+                    return categoryA - categoryB;
+                }
+                return b.returns - a.returns;
+            });
+            
+            sortedReturners.forEach(returner => {
+                const row = document.createElement('tr');
+                
+                // Add category-specific styling
+                let groupClass = '';
+                if (returner.category === 'Kick_Returns') {
+                    groupClass = 'position-group-kick-returner';
+                } else if (returner.category === 'Punt_Returns') {
+                    groupClass = 'position-group-punt-returner';
+                }
+                
+                row.className = groupClass;
+                
+                row.innerHTML = `
+                    <td class="player-name">${returner.playerName}</td>
+                    <td class="jersey">#${returner.jersey}</td>
+                    <td class="category">${returner.category}</td>
+                    <td class="returns">${returner.returns}</td>
+                    <td class="yards">${returner.yards}</td>
+                    <td class="ypa">${returner.ypa.toFixed(1)}</td>
+                    <td class="td">${returner.td}</td>
+                `;
+                
+                tableBody.appendChild(row);
             });
         }
 
