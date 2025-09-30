@@ -40,6 +40,7 @@ function processTeamData(teamName) {
     const offenseFile = path.join(teamDir, `${teamName}_offense_final.csv`);
     const defenseFile = path.join(teamDir, `${teamName}_defense_final.csv`);
     const stFile = path.join(teamDir, `${teamName}_special_teams_season.csv`);
+    const kickingFile = path.join(teamDir, `${teamName}_kicking_specialists.csv`);
     const summaryFile = path.join(teamDir, `${teamName}_summary_final.csv`);
     
     // For converted teams, use the original team name in file names
@@ -52,6 +53,7 @@ function processTeamData(teamName) {
     let actualOffenseFile = path.join(teamDir, `${actualTeamName}_offense_final.csv`);
     let actualDefenseFile = path.join(teamDir, `${actualTeamName}_defense_final.csv`);
     let actualStFile = path.join(teamDir, `${actualTeamName}_special_teams_season.csv`);
+    let actualKickingFile = path.join(teamDir, `${actualTeamName}_kicking_specialists.csv`);
     let actualSummaryFile = path.join(teamDir, `${actualTeamName}_summary_final.csv`);
     
     // If _final files don't exist, try without _final
@@ -215,6 +217,32 @@ function processTeamData(teamName) {
         }
     }
     
+    // Process kicking specialists data
+    const kickingSpecialistsData = [];
+    if (fs.existsSync(actualKickingFile)) {
+        const kickingContent = fs.readFileSync(actualKickingFile, 'utf8');
+        const kickingLines = kickingContent.trim().split('\n');
+        
+        for (let i = 1; i < kickingLines.length; i++) {
+            const line = kickingLines[i].trim();
+            if (!line) continue;
+            
+            const values = line.split(',');
+            const specialist = {
+                category: values[0],
+                jersey: values[1],
+                playerName: values[2],
+                attempts: values[3] ? parseInt(values[3]) : 0,
+                returns: values[4] ? parseInt(values[4]) : 0,
+                yards: values[5] ? parseInt(values[5]) : 0,
+                ypa: values[6] ? parseFloat(values[6]) : 0.0,
+                td: values[7] ? parseInt(values[7]) : 0
+            };
+            
+            kickingSpecialistsData.push(specialist);
+        }
+    }
+    
     // Process summary data
     const summaryData = [];
     if (fs.existsSync(actualSummaryFile)) {
@@ -290,6 +318,8 @@ function processTeamData(teamName) {
             }));
             return acc;
         }, {}),
+        // Kicking specialists data
+        kicking_specialists: kickingSpecialistsData,
         summary: summaryData,
         metadata: {
             weeks: weeks.length,

@@ -3008,6 +3008,108 @@
       }
     ]
   },
+  "kicking_specialists": [
+    {
+      "category": "Punting",
+      "jersey": "S34",
+      "playerName": "Bryce McFerson",
+      "attempts": 22,
+      "returns": 0,
+      "yards": 0,
+      "ypa": 0,
+      "td": 0
+    },
+    {
+      "category": "Kickoffs",
+      "jersey": "S43",
+      "playerName": "Philip Noyes",
+      "attempts": 26,
+      "returns": 0,
+      "yards": 0,
+      "ypa": 0,
+      "td": 0
+    },
+    {
+      "category": "Field_Goals",
+      "jersey": "S36",
+      "playerName": "Sean O'Haire",
+      "attempts": 11,
+      "returns": 0,
+      "yards": 0,
+      "ypa": 0,
+      "td": 0
+    },
+    {
+      "category": "Kick_Returns",
+      "jersey": "01",
+      "playerName": "Jalil Farooq",
+      "attempts": 0,
+      "returns": 4,
+      "yards": 0,
+      "ypa": 0,
+      "td": 0
+    },
+    {
+      "category": "Kick_Returns",
+      "jersey": "D25",
+      "playerName": "Ricardo Cooper Jr.",
+      "attempts": 0,
+      "returns": 4,
+      "yards": 37,
+      "ypa": 18.5,
+      "td": 0
+    },
+    {
+      "category": "Kick_Returns",
+      "jersey": "20",
+      "playerName": "DJ Samuels",
+      "attempts": 0,
+      "returns": 1,
+      "yards": 0,
+      "ypa": 0,
+      "td": 0
+    },
+    {
+      "category": "Kick_Returns",
+      "jersey": "17",
+      "playerName": "Josiah McLaurin",
+      "attempts": 0,
+      "returns": 4,
+      "yards": 62,
+      "ypa": 15.5,
+      "td": 0
+    },
+    {
+      "category": "Punt_Returns",
+      "jersey": "01",
+      "playerName": "Jalil Farooq",
+      "attempts": 0,
+      "returns": 4,
+      "yards": 6,
+      "ypa": 1.5,
+      "td": 0
+    },
+    {
+      "category": "Punt_Returns",
+      "jersey": "D25",
+      "playerName": "Ricardo Cooper Jr.",
+      "attempts": 0,
+      "returns": 2,
+      "yards": 8,
+      "ypa": 4,
+      "td": 0
+    },
+    {
+      "category": "Punt_Returns",
+      "jersey": "17",
+      "playerName": "Josiah McLaurin",
+      "attempts": 0,
+      "returns": 5,
+      "yards": 28,
+      "ypa": 5.6,
+      "td": 0
+    }
+  ],
   "summary": [
     {
       "week": 1,
@@ -3056,6 +3158,6 @@
   ],
   "metadata": {
     "weeks": 4,
-    "last_updated": "2025-09-29T22:32:46.627Z"
+    "last_updated": "2025-09-30T01:26:06.175Z"
   }
 }

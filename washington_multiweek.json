@@ -3237,6 +3237,138 @@
       }
     ]
   },
+  "kicking_specialists": [
+    {
+      "category": "Punting",
+      "jersey": "S45",
+      "playerName": "Luke Dunne",
+      "attempts": 5,
+      "returns": 0,
+      "yards": 0,
+      "ypa": 0,
+      "td": 0
+    },
+    {
+      "category": "Kickoffs",
+      "jersey": "S37",
+      "playerName": "Ethan Moczulski",
+      "attempts": 24,
+      "returns": 0,
+      "yards": 0,
+      "ypa": 0,
+      "td": 0
+    },
+    {
+      "category": "Kickoffs",
+      "jersey": "S95",
+      "playerName": "Grady Gross",
+      "attempts": 7,
+      "returns": 0,
+      "yards": 0,
+      "ypa": 0,
+      "td": 0
+    },
+    {
+      "category": "Field_Goals",
+      "jersey": "S95",
+      "playerName": "Grady Gross",
+      "attempts": 4,
+      "returns": 0,
+      "yards": 0,
+      "ypa": 0,
+      "td": 0
+    },
+    {
+      "category": "Kick_Returns",
+      "jersey": "12",
+      "playerName": "Denzel Boston",
+      "attempts": 0,
+      "returns": 3,
+      "yards": 0,
+      "ypa": 0,
+      "td": 0
+    },
+    {
+      "category": "Kick_Returns",
+      "jersey": "24",
+      "playerName": "Adam Mohammed",
+      "attempts": 0,
+      "returns": 6,
+      "yards": 158,
+      "ypa": 26.3,
+      "td": 0
+    },
+    {
+      "category": "Kick_Returns",
+      "jersey": "D02",
+      "playerName": "Rahshawn Clark",
+      "attempts": 0,
+      "returns": 1,
+      "yards": 0,
+      "ypa": 0,
+      "td": 0
+    },
+    {
+      "category": "Kick_Returns",
+      "jersey": "81",
+      "playerName": "Dezmen Roebuck",
+      "attempts": 0,
+      "returns": 1,
+      "yards": 10,
+      "ypa": 10,
+      "td": 0
+    },
+    {
+      "category": "Kick_Returns",
+      "jersey": "01",
+      "playerName": "Jonah Coleman",
+      "attempts": 0,
+      "returns": 1,
+      "yards": 26,
+      "ypa": 26,
+      "td": 0
+    },
+    {
+      "category": "Kick_Returns",
+      "jersey": "86",
+      "playerName": "Decker DeGraaf",
+      "attempts": 0,
+      "returns": 1,
+      "yards": 10,
+      "ypa": 10,
+      "td": 0
+    },
+    {
+      "category": "Kick_Returns",
+      "jersey": "D10",
+      "playerName": "Xe'ree Alexander",
+      "attempts": 0,
+      "returns": 1,
+      "yards": 18,
+      "ypa": 18,
+      "td": 0
+    },
+    {
+      "category": "Punt_Returns",
+      "jersey": "12",
+      "playerName": "Denzel Boston",
+      "attempts": 0,
+      "returns": 3,
+      "yards": 89,
+      "ypa": 29.7,
+      "td": 1
+    },
+    {
+      "category": "Punt_Returns",
+      "jersey": "D02",
+      "playerName": "Rahshawn Clark",
+      "attempts": 0,
+      "returns": 1,
+      "yards": 17,
+      "ypa": 17,
+      "td": 0
+    }
+  ],
   "summary": [
     {
       "week": 1,
@@ -3296,6 +3428,6 @@
   ],
   "metadata": {
     "weeks": 5,
-    "last_updated": "2025-09-29T22:26:55.849Z"
+    "last_updated": "2025-09-30T01:26:06.170Z"
   }
 }

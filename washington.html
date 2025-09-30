@@ -639,6 +639,14 @@
         .position-group-db {
             background: rgba(255, 182, 193, 0.3) !important;
         }
+        
+        .position-group-specialist {
+            background: rgba(255, 255, 0, 0.2) !important;
+        }
+        
+        .position-group-returner {
+            background: rgba(0, 255, 0, 0.2) !important;
+        }
 
         .aggregate-table .jersey {
             font-weight: 700;
@@ -745,6 +753,7 @@
             <button class="tab active" data-tab="offense">OFFENSIVE</button>
             <button class="tab" data-tab="defense">DEFENSIVE</button>
             <button class="tab" data-tab="special-teams">SPECIAL TEAMS</button>
+            <button class="tab" data-tab="special-teams-aggregate">SPECIAL TEAMS STATS</button>
         </div>
 
         <!-- Offense Tab -->
@@ -946,6 +955,30 @@
             </div>
         </div>
 
+        <!-- Special Teams Aggregate Tab -->
+        <div class="tab-content" id="special-teams-aggregate">
+            <div class="position-group">
+                <h3 class="position-title">Special Teams Statistics</h3>
+                <div class="aggregate-table-container">
+                    <table class="aggregate-table" id="special-teams-aggregate-table">
+                        <thead>
+                            <tr>
+                                <th>Player</th>
+                                <th>Jersey</th>
+                                <th>Category</th>
+                                <th>Attempts</th>
+                                <th>Returns</th>
+                                <th>Yards</th>
+                                <th>YPA</th>
+                                <th>TD</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
         <!-- Footer -->
         <div class="footer">
             <p><strong>Data Sources:</strong> PFF Data</p>
@@ -995,7 +1028,8 @@
             // Get active filter units
             const activeUnits = getActiveUnits();
             
-            // Returner info is now built into the player data from the CSV
+            // Get kicking specialists data for highlighting
+            const kickingSpecialists = teamData.kicking_specialists || [];
             
             // Filter players who have activity in active units
             const filteredPlayers = allPlayers.filter(player => {
@@ -1077,47 +1111,41 @@
                             return unit.color;
                         }),
                         borderColor: filteredPlayers.map(player => {
-                            // Check if player is a specialist (kicker, punter, long snapper)
-                            const isSpecialist = player.position && (
-                                player.position.includes('K') || 
-                                player.position.includes('P') || 
-                                player.position.includes('LS') ||
-                                player.position.includes('KICKER') ||
-                                player.position.includes('PUNTER') ||
-                                player.position.includes('LONG SNAPPER')
+                            // Check if player is a specialist using kicking specialists data
+                            const specialist = kickingSpecialists.find(ks => 
+                                ks.jersey === player.jersey && 
+                                (ks.category === 'Punting' || ks.category === 'Kickoffs' || ks.category === 'Field_Goals')
                             );
                             
-                            // Check if player is a returner for this specific unit
-                            const isReturner = player.returnerInfo && (
-                                (unit.key === 'pret' && player.returnerInfo.isPRReturner) || 
-                                (unit.key === 'kret' && player.returnerInfo.isKRReturner)
+                            // Check if player is a returner using kicking specialists data
+                            const returner = kickingSpecialists.find(ks => 
+                                ks.jersey === player.jersey && 
+                                ((unit.key === 'pret' && ks.category === 'Punt_Returns') || 
+                                 (unit.key === 'kret' && ks.category === 'Kick_Returns'))
                             );
                             
-                            if (isReturner) {
+                            if (returner) {
                                 return '#00FF00'; // Bright green border for returners
-                            } else if (isSpecialist) {
+                            } else if (specialist) {
                                 return '#FFFF00'; // Yellow border for specialists
                             }
                             return unit.color;
                         }),
                         borderWidth: filteredPlayers.map(player => {
-                            // Check if player is a specialist
-                            const isSpecialist = player.position && (
-                                player.position.includes('K') || 
-                                player.position.includes('P') || 
-                                player.position.includes('LS') ||
-                                player.position.includes('KICKER') ||
-                                player.position.includes('PUNTER') ||
-                                player.position.includes('LONG SNAPPER')
+                            // Check if player is a specialist using kicking specialists data
+                            const specialist = kickingSpecialists.find(ks => 
+                                ks.jersey === player.jersey && 
+                                (ks.category === 'Punting' || ks.category === 'Kickoffs' || ks.category === 'Field_Goals')
                             );
                             
-                            // Check if player is a returner for this specific unit
-                            const isReturner = player.returnerInfo && (
-                                (unit.key === 'pret' && player.returnerInfo.isPRReturner) || 
-                                (unit.key === 'kret' && player.returnerInfo.isKRReturner)
+                            // Check if player is a returner using kicking specialists data
+                            const returner = kickingSpecialists.find(ks => 
+                                ks.jersey === player.jersey && 
+                                ((unit.key === 'pret' && ks.category === 'Punt_Returns') || 
+                                 (unit.key === 'kret' && ks.category === 'Kick_Returns'))
                             );
                             
-                            if (isReturner || isSpecialist) {
+                            if (returner || specialist) {
                                 return 3; // Thick border for returners and specialists
                             }
                             return 1;
@@ -1191,28 +1219,30 @@
                                     
                                     let label = `${context.dataset.label}: ${unitSnaps} snaps`;
                                     
-                                    // Check if player is a specialist
-                                    const isSpecialist = player.position && (
-                                        player.position.includes('K') || 
-                                        player.position.includes('P') || 
-                                        player.position.includes('LS') ||
-                                        player.position.includes('KICKER') ||
-                                        player.position.includes('PUNTER') ||
-                                        player.position.includes('LONG SNAPPER')
+                                    // Check if player is a specialist using kicking specialists data
+                                    const specialist = kickingSpecialists.find(ks => 
+                                        ks.jersey === player.jersey && 
+                                        (ks.category === 'Punting' || ks.category === 'Kickoffs' || ks.category === 'Field_Goals')
                                     );
                                     
                                     // Add specialist info
-                                    if (isSpecialist) {
-                                        label += `\n[SPECIALIST: ${player.position}]`;
+                                    if (specialist) {
+                                        label += `\n[SPECIALIST: ${specialist.category}]`;
                                     }
                                     
                                     // Add return statistics if player is a returner for this unit
-                                    if (player.returnerInfo) {
+                                    const returner = kickingSpecialists.find(ks => 
+                                        ks.jersey === player.jersey && 
+                                        ((context.dataset.label.toLowerCase().includes('punt return') && ks.category === 'Punt_Returns') || 
+                                         (context.dataset.label.toLowerCase().includes('kick return') && ks.category === 'Kick_Returns'))
+                                    );
+                                    
+                                    if (returner) {
                                         const unit = context.dataset.label.toLowerCase();
-                                        if (unit.includes('punt return') && player.returnerInfo.isPRReturner) {
-                                            label += `\nPunt Returns: ${player.returnerInfo.puntReturns} (${player.returnerInfo.puntReturnYards} yards, ${player.returnerInfo.puntReturnYPA} YPA)`;
-                                        } else if (unit.includes('kick return') && player.returnerInfo.isKRReturner) {
-                                            label += `\nKick Returns: ${player.returnerInfo.kickReturns} (${player.returnerInfo.kickReturnYards} yards, ${player.returnerInfo.kickReturnYPA} YPA)`;
+                                        if (unit.includes('punt return')) {
+                                            label += `\nPunt Returns: ${returner.returns} (${returner.yards} yards, ${returner.ypa} YPA)`;
+                                        } else if (unit.includes('kick return')) {
+                                            label += `\nKick Returns: ${returner.returns} (${returner.yards} yards, ${returner.ypa} YPA)`;
                                         }
                                     }
                                     
@@ -1426,6 +1456,7 @@
                 // Initialize charts and tables
                 initializeCharts();
                 populateAggregateTables();
+                populateSpecialTeamsAggregateTable();
                 updateStats();
                 populateWeeklySummary();
                 setupEventListeners();
@@ -2163,6 +2194,58 @@
             });
         }
 
+        function populateSpecialTeamsAggregateTable() {
+            if (!teamData || !teamData.kicking_specialists) return;
+
+            const tableBody = document.getElementById('special-teams-aggregate-table').querySelector('tbody');
+            tableBody.innerHTML = '';
+
+            // Group by category
+            const groupedData = {};
+            teamData.kicking_specialists.forEach(specialist => {
+                if (!groupedData[specialist.category]) {
+                    groupedData[specialist.category] = [];
+                }
+                groupedData[specialist.category].push(specialist);
+            });
+
+            // Sort categories for display
+            const categoryOrder = ['Punting', 'Kickoffs', 'Field_Goals', 'Kick_Returns', 'Punt_Returns'];
+            
+            categoryOrder.forEach(category => {
+                if (groupedData[category]) {
+                    // Sort by attempts (descending) within each category
+                    const sortedSpecialists = groupedData[category].sort((a, b) => b.attempts - a.attempts);
+                    
+                    sortedSpecialists.forEach(specialist => {
+                        const row = document.createElement('tr');
+                        
+                        // Add category group styling
+                        let groupClass = '';
+                        if (category === 'Punting' || category === 'Kickoffs' || category === 'Field_Goals') {
+                            groupClass = 'position-group-specialist';
+                        } else if (category === 'Kick_Returns' || category === 'Punt_Returns') {
+                            groupClass = 'position-group-returner';
+                        }
+                        
+                        row.className = groupClass;
+                        
+                        row.innerHTML = `
+                            <td class="player-name">${specialist.playerName}</td>
+                            <td class="jersey">#${specialist.jersey}</td>
+                            <td class="category">${category}</td>
+                            <td class="attempts">${specialist.attempts}</td>
+                            <td class="returns">${specialist.returns}</td>
+                            <td class="yards">${specialist.yards}</td>
+                            <td class="ypa">${specialist.ypa.toFixed(1)}</td>
+                            <td class="td">${specialist.td}</td>
+                        `;
+                        
+                        tableBody.appendChild(row);
+                    });
+                }
+            });
+        }
 
         // Initialize on page load
         document.addEventListener('DOMContentLoaded', loadTeamData);
