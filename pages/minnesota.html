@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minnesota Golden Gophers - Multi-Week Snap Count Analytics</title>
-    <link rel="icon" type="image/svg+xml" href="./Big_Ten_Conference_logo.svg">
+    <link rel="icon" type="image/svg+xml" href="../assets/logos/Big_Ten_Conference_logo.svg">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         * {
@@ -734,9 +734,9 @@
         <!-- Header -->
         <div class="header">
             <div class="logos">
-                <img src="./minnesota_logo.png" alt="Minnesota Golden Gophers" class="logo">
+                <img src="../assets/images/minnesota_logo.png" alt="Minnesota Golden Gophers" class="logo">
                 <div class="divider"></div>
-                <img src="./Big_Ten_Conference_logo.svg" alt="Big Ten Conference" class="logo">
+                <img src="../assets/logos/Big_Ten_Conference_logo.svg" alt="Big Ten Conference" class="logo">
             </div>
             <h1>Minnesota Golden Gophers</h1>
             <p class="subtitle">Multi-Week Snap Count Analytics Dashboard</p>
@@ -749,8 +749,8 @@
                 <h3>⚠️ This page is temporarily down due to recent updates</h3>
                 <p>We've made significant improvements to our analytics system. Please check out our more recent teams for the latest features:</p>
                 <div class="banner-links">
-                    <a href="./washington.html" class="banner-link">Washington Huskies</a>
-                    <a href="./maryland.html" class="banner-link">Maryland Terrapins</a>
+                <a href="washington.html" class="banner-link">Washington Huskies</a>
+                <a href="maryland.html" class="banner-link">Maryland Terrapins</a>
                 </div>
                 <p class="banner-contact">If you need this page updated, please contact <a href="mailto:victorres11@gmail.com">victorres11@gmail.com</a></p>
             </div>
@@ -1304,7 +1304,7 @@
         // Load team data
         async function loadTeamData() {
             try {
-                const response = await fetch('./minnesota_multiweek.json');
+                const response = await fetch('../data/json/minnesota_multiweek.json');
                 teamData = await response.json();
                 await loadReturnerData();
                 updateStats();

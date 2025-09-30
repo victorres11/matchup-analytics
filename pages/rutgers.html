@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rutgers Scarlet Knights - Multi-Week Snap Count Analytics</title>
-    <link rel="icon" type="image/svg+xml" href="./Big_Ten_Conference_logo.svg">
+    <link rel="icon" type="image/svg+xml" href="../assets/logos/Big_Ten_Conference_logo.svg">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         * {
@@ -735,9 +735,9 @@
         <!-- Header -->
         <div class="header">
             <div class="logos">
-                <img src="./rutgers_logo.png" alt="Rutgers Scarlet Knights" class="logo">
+                <img src="../assets/images/rutgers_logo.png" alt="Rutgers Scarlet Knights" class="logo">
                 <div class="divider"></div>
-                <img src="./Big_Ten_Conference_logo.svg" alt="Big Ten Conference" class="logo">
+                <img src="../assets/logos/Big_Ten_Conference_logo.svg" alt="Big Ten Conference" class="logo">
             </div>
             <h1>Rutgers Scarlet Knights</h1>
             <p class="subtitle">Multi-Week Snap Count Analytics Dashboard</p>
@@ -750,8 +750,8 @@
                 <h3>⚠️ This page is temporarily down due to recent updates</h3>
                 <p>We've made significant improvements to our analytics system. Please check out our more recent teams for the latest features:</p>
                 <div class="banner-links">
-                    <a href="./washington.html" class="banner-link">Washington Huskies</a>
-                    <a href="./maryland.html" class="banner-link">Maryland Terrapins</a>
+                <a href="washington.html" class="banner-link">Washington Huskies</a>
+                <a href="maryland.html" class="banner-link">Maryland Terrapins</a>
                 </div>
                 <p class="banner-contact">If you need this page updated, please contact <a href="mailto:victorres11@gmail.com">victorres11@gmail.com</a></p>
             </div>
@@ -1041,7 +1041,7 @@
         // Load returner data
         async function loadReturnerData() {
             try {
-                const response = await fetch('./team_data/rutgers/rutgers_pr_kr_up_to_week_4.csv');
+                const response = await fetch('../data/csv/team_data/rutgers/rutgers_pr_kr_up_to_week_4.csv');
                 const csvText = await response.text();
                 const lines = csvText.split('\n');
                 const headers = lines[0].split(',');
@@ -1270,7 +1270,7 @@
         // Load team data
         async function loadTeamData() {
             try {
-                const response = await fetch('./rutgers_multiweek.json');
+                const response = await fetch('../data/json/rutgers_multiweek.json');
                 teamData = await response.json();
                 await loadReturnerData();
                 updateStats();

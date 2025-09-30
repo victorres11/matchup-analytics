@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Washington Huskies - Multi-Week Snap Count Analytics</title>
-    <link rel="icon" type="image/svg+xml" href="./Big_Ten_Conference_logo.svg">
+    <title>Maryland Terrapins - Multi-Week Snap Count Analytics</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/logos/Big_Ten_Conference_logo.svg">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         * {
@@ -14,7 +14,7 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #4A90E2 0%, #7B68EE 100%);
+            background: linear-gradient(135deg, #E31B23 0%, #FFD700 100%);
             min-height: 100vh;
             color: #333;
         }
@@ -26,7 +26,7 @@
         }
 
         .header {
-            background: linear-gradient(135deg, rgba(74, 144, 226, 0.95) 0%, rgba(123, 104, 238, 0.95) 100%);
+            background: linear-gradient(135deg, rgba(227, 27, 35, 0.95) 0%, rgba(255, 215, 0, 0.95) 100%);
             backdrop-filter: blur(10px);
             border-radius: 20px;
             padding: 30px;
@@ -108,7 +108,7 @@
         }
 
         .stats-summary {
-            background: linear-gradient(135deg, rgba(74, 144, 226, 0.95) 0%, rgba(123, 104, 238, 0.95) 100%);
+            background: linear-gradient(135deg, rgba(227, 27, 35, 0.95) 0%, rgba(255, 215, 0, 0.95) 100%);
             border-radius: 15px;
             padding: 25px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
@@ -176,7 +176,7 @@
         }
 
         .tab.active {
-            background: linear-gradient(135deg, #4A90E2 0%, #7B68EE 100%);
+            background: linear-gradient(135deg, #E31B23 0%, #FFD700 100%);
             color: white;
             box-shadow: 0 5px 15px rgba(0,0,0,0.3);
         }
@@ -227,12 +227,12 @@
         }
 
         .position-title {
-            color: #2C5F8A;
+            color: #E31B23;
             font-size: 1.8em;
             font-weight: 700;
             margin-bottom: 20px;
             padding: 10px 15px;
-            border-bottom: 2px solid #4A90E2;
+            border-bottom: 2px solid #FFD700;
             text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
             background: rgba(255, 255, 255, 0.9);
             border-radius: 8px;
@@ -295,12 +295,12 @@
             background: #f8f9fa;
             padding: 15px;
             border-radius: 8px;
-            border-left: 4px solid #4A90E2;
+            border-left: 4px solid #E31B23;
         }
 
         .player-name {
             font-weight: 600;
-            color: #4A90E2;
+            color: #E31B23;
             margin-bottom: 5px;
         }
 
@@ -310,7 +310,7 @@
         }
 
         .weekly-summary {
-            background: linear-gradient(135deg, rgba(74, 144, 226, 0.95) 0%, rgba(123, 104, 238, 0.95) 100%);
+            background: linear-gradient(135deg, rgba(227, 27, 35, 0.95) 0%, rgba(255, 215, 0, 0.95) 100%);
             border-radius: 15px;
             padding: 25px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.3);
@@ -342,7 +342,7 @@
         }
 
         .summary-table th {
-            background: linear-gradient(135deg, #4A90E2 0%, #7B68EE 100%);
+            background: linear-gradient(135deg, #E31B23 0%, #FFD700 100%);
             color: white;
             padding: 15px 12px;
             text-align: left;
@@ -367,7 +367,7 @@
 
         .snap-count {
             font-weight: 600;
-            color: #4A90E2;
+            color: #E31B23;
         }
 
         /* Special Teams Filter Controls */
@@ -380,7 +380,7 @@
         }
 
         .unit-filters h4 {
-            color: #4A90E2;
+            color: #E31B23;
             margin-bottom: 15px;
             font-size: 1.1em;
         }
@@ -423,7 +423,7 @@
         }
 
         .filter-checkbox input[type="checkbox"]:checked + .checkmark {
-            border-color: #4A90E2;
+            border-color: #E31B23;
         }
 
         .filter-checkbox input[type="checkbox"]:checked + .checkmark::after {
@@ -445,7 +445,7 @@
         }
 
         .only-buttons h4 {
-            color: #4A90E2;
+            color: #E31B23;
             margin-bottom: 15px;
             font-size: 1.1em;
         }
@@ -481,7 +481,7 @@
         }
 
         .footer {
-            background: linear-gradient(135deg, rgba(74, 144, 226, 0.95) 0%, rgba(123, 104, 238, 0.95) 100%);
+            background: linear-gradient(135deg, rgba(227, 27, 35, 0.95) 0%, rgba(255, 215, 0, 0.95) 100%);
             backdrop-filter: blur(10px);
             border-radius: 15px;
             padding: 25px;
@@ -496,7 +496,7 @@
         }
 
         .footer a {
-            color: #7B68EE;
+            color: #FFD700;
             text-decoration: none;
         }
 
@@ -524,14 +524,14 @@
         }
 
         .view-tab:hover {
-            color: #4A90E2;
-            background: rgba(123, 0, 0, 0.1);
+            color: #E31B23;
+            background: rgba(227, 27, 35, 0.1);
         }
 
         .view-tab.active {
-            color: #4A90E2;
-            border-bottom-color: #4A90E2;
-            background: rgba(123, 0, 0, 0.1);
+            color: #E31B23;
+            border-bottom-color: #E31B23;
+            background: rgba(227, 27, 35, 0.1);
         }
 
         /* Data Table Styles */
@@ -555,7 +555,7 @@
         }
 
         .data-table th {
-            background: linear-gradient(135deg, #4A90E2 0%, #8B0000 100%);
+            background: linear-gradient(135deg, #E31B23 0%, #FFD700 100%);
             color: white;
             padding: 15px 12px;
             text-align: left;
@@ -582,7 +582,7 @@
 
         .data-table .player-name {
             font-weight: 600;
-            color: #4A90E2;
+            color: #E31B23;
         }
 
         .data-table .jersey {
@@ -598,8 +598,8 @@
         .data-table .total {
             text-align: center;
             font-weight: 700;
-            color: #4A90E2;
-            background: rgba(123, 0, 0, 0.1);
+            color: #E31B23;
+            background: rgba(227, 27, 35, 0.1);
         }
 
         /* Aggregate Table Styles */
@@ -619,7 +619,7 @@
         }
 
         .aggregate-table th {
-            background: linear-gradient(135deg, #4A90E2 0%, #8B0000 100%);
+            background: linear-gradient(135deg, #E31B23 0%, #FFD700 100%);
             color: white;
             padding: 15px 12px;
             text-align: left;
@@ -690,14 +690,14 @@
 
         .aggregate-table .jersey {
             font-weight: 700;
-            color: #4A90E2;
+            color: #E31B23;
             text-align: center;
             width: 60px;
         }
 
         .aggregate-table .player-name {
             font-weight: 600;
-            color: #4A90E2;
+            color: #E31B23;
         }
 
         .aggregate-table .position {
@@ -714,8 +714,8 @@
         .aggregate-table .total {
             text-align: center;
             font-weight: 700;
-            color: #4A90E2;
-            background: rgba(123, 0, 0, 0.1);
+            color: #E31B23;
+            background: rgba(227, 27, 35, 0.1);
         }
 
         .aggregate-table .zero-snap {
@@ -730,19 +730,19 @@
         <!-- Header -->
         <div class="header">
             <div class="logos">
-                <img src="./washington_logo.png" alt="Washington Huskies" class="logo">
+                <img src="../assets/images/maryland_logo.png" alt="Maryland Terrapins" class="logo">
                 <div class="divider"></div>
-                <img src="./Big_Ten_Conference_logo.svg" alt="Big Ten Conference" class="logo">
+                <img src="../assets/logos/Big_Ten_Conference_logo.svg" alt="Big Ten Conference" class="logo">
             </div>
-            <h1>Washington Huskies</h1>
+            <h1>Maryland Terrapins</h1>
             <p class="subtitle">Multi-Week Snap Count Analytics Dashboard</p>
             <p class="timestamp" id="last-updated">Updated at <span id="update-time"></span></p>
             
             <!-- Matchup Navigation -->
             <div class="matchup-nav">
-                <a href="./maryland.html" class="matchup-btn">
+                <a href="washington.html" class="matchup-btn">
                     <span class="matchup-icon">🏈</span>
-                    View Maryland Terrapins
+                    View Washington Huskies
                 </a>
             </div>
         </div>
@@ -773,7 +773,7 @@
         <!-- Weekly Summary Table -->
         <div class="weekly-summary">
             <h2>Weekly Snap Count Summary</h2>
-            <p style="color: #ffffff; background-color: rgba(74, 144, 226, 0.8); padding: 8px 12px; border-radius: 6px; font-size: 0.9em; margin-bottom: 15px; border: 1px solid rgba(255, 255, 255, 0.3);">
+            <p style="color: #ffffff; background-color: rgba(227, 27, 35, 0.8); padding: 8px 12px; border-radius: 6px; font-size: 0.9em; margin-bottom: 15px; border: 1px solid rgba(255, 255, 255, 0.3);">
                 <strong>Note:</strong> * indicates player started that week
             </p>
             <div class="summary-table-container">
@@ -1049,10 +1049,10 @@
     <script>
         // Color mapping for opposing teams
         const opposingTeamColors = {
-            'COLO STATE': { primary: '#1f4d2c', secondary: '#FFFFFF', accent: '#FFD700' },
-            'UC DAVIS': { primary: '#003DA5', secondary: '#FFD700', accent: '#FFFFFF' },
-            'WASH STATE': { primary: '#981E32', secondary: '#F5F5F5', accent: '#FFD700' },
-            'OHIO STATE': { primary: '#BB0000', secondary: '#FFFFFF', accent: '#FFD700' },
+            'FAU': { primary: '#003366', secondary: '#CC0000', accent: '#FFFFFF' },
+            'N ILLINOIS': { primary: '#FF6600', secondary: '#000000', accent: '#FFFFFF' },
+            'TOWSON': { primary: '#FFD700', secondary: '#000000', accent: '#FFFFFF' },
+            'WISCONSIN': { primary: '#C8102E', secondary: '#FFFFFF', accent: '#000000' },
             'BYE WEEK': { primary: '#CCCCCC', secondary: '#999999', accent: '#666666' }
         };
 
@@ -1060,11 +1060,53 @@
         let returnerData = null;
         let currentWeek = 'all';
 
-        // Returner data is now included in the main JSON file, no separate loading needed
+        // Load returner data
+        async function loadReturnerData() {
+            try {
+                const response = await fetch('./team_data/maryland/maryland_special_teams.csv');
+                const csvText = await response.text();
+                const lines = csvText.split('\n');
+                const headers = lines[0].split(',');
+                
+                returnerData = new Map();
+                
+                for (let i = 1; i < lines.length; i++) {
+                    if (lines[i].trim()) {
+                        const values = lines[i].split(',');
+                        const jersey = values[0];
+                        const player = values[1];
+                        const puntReturns = parseInt(values[2]) || 0;
+                        const puntReturnYards = parseInt(values[3]) || 0;
+                        const puntReturnYPA = parseFloat(values[4]) || 0;
+                        const kickReturns = parseInt(values[5]) || 0;
+                        const kickReturnYards = parseInt(values[6]) || 0;
+                        const kickReturnYPA = parseFloat(values[7]) || 0;
+                        
+                        if (jersey && player) {
+                            returnerData.set(jersey, {
+                                name: player,
+                                jersey: jersey,
+                                puntReturns: puntReturns,
+                                puntReturnYards: puntReturnYards,
+                                puntReturnYPA: puntReturnYPA,
+                                kickReturns: kickReturns,
+                                kickReturnYards: kickReturnYards,
+                                kickReturnYPA: kickReturnYPA,
+                                isPRReturner: puntReturns > 0,
+                                isKRReturner: kickReturns > 0
+                            });
+                        }
+                    }
+                }
+            } catch (error) {
+                console.error('Error loading returner data:', error);
+                returnerData = new Map();
+            }
+        }
 
         // Populate aggregate tables on page load
 
-        // Create special teams chart
+        // Create special teams chart (aggregate totals)
         function createSpecialTeamsChart(canvasId, positionGroup, side) {
             const canvas = document.getElementById(canvasId);
             if (!canvas) {
@@ -1083,13 +1125,11 @@
             // Get special teams players from aggregate data
             const allPlayers = teamData.special_teams[positionGroup] || [];
             
-            // Get active filter units
-            const activeUnits = getActiveUnits();
-            
             // Get kicking specialists data for highlighting
             const kickingSpecialists = teamData.kicking_specialists || [];
             
             // Filter players who have activity in active units
+            const activeUnits = getActiveUnits();
             const filteredPlayers = allPlayers.filter(player => {
                 return activeUnits.some(unit => player[unit] > 0);
             });
@@ -1246,7 +1286,7 @@
                             backgroundColor: 'rgba(0,0,0,0.8)',
                             titleColor: 'white',
                             bodyColor: 'white',
-                            borderColor: '#4A90E2',
+                            borderColor: '#E31B23',
                             borderWidth: 1,
                             cornerRadius: 8,
                             displayColors: true,
@@ -1503,13 +1543,18 @@
         async function loadTeamData() {
             try {
                 // Load main team data
-                const response = await fetch('./washington_multiweek.json');
+                const response = await fetch('../data/json/maryland_multiweek.json');
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
                 teamData = await response.json();
 
-                // Special teams data is now included in the main JSON file
+                // Load special teams data
+                const stResponse = await fetch('./team_data/maryland/maryland_special_teams.csv');
+                if (stResponse.ok) {
+                    const stCsv = await stResponse.text();
+                    // Process special teams CSV if needed
+                }
 
                 // Initialize charts and tables
                 initializeCharts();
@@ -1659,10 +1704,10 @@
             // Create datasets for each week
             const datasets = [];
             const opposingTeamColors = {
-                'COLO STATE': { primary: '#1f4d2c', secondary: '#FFFFFF', accent: '#FFD700' },
-                'UC DAVIS': { primary: '#003DA5', secondary: '#FFD700', accent: '#FFFFFF' },
-                'WASH STATE': { primary: '#981E32', secondary: '#F5F5F5', accent: '#FFD700' },
-                'OHIO STATE': { primary: '#BB0000', secondary: '#FFFFFF', accent: '#FFD700' },
+                'FAU': { primary: '#003366', secondary: '#CC0000', accent: '#FFFFFF' },
+                'N ILLINOIS': { primary: '#FF6600', secondary: '#000000', accent: '#FFFFFF' },
+                'TOWSON': { primary: '#FFD700', secondary: '#000000', accent: '#FFFFFF' },
+                'WISCONSIN': { primary: '#C8102E', secondary: '#FFFFFF', accent: '#000000' },
                 'BYE WEEK': { primary: '#CCCCCC', secondary: '#999999', accent: '#666666' }
             };
 
