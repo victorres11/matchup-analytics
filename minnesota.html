@@ -455,6 +455,70 @@
             color: #FFD700;
             text-decoration: none;
         }
+        
+        /* Outdated Banner */
+        .outdated-banner {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ff8e8e 100%);
+            border: 2px solid #ff4757;
+            border-radius: 15px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+            text-align: center;
+        }
+        
+        .banner-content h3 {
+            color: white;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .banner-content p {
+            color: white;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .banner-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .banner-link {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .banner-link:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .banner-contact {
+            font-size: 0.9em;
+            margin-top: 15px;
+        }
+        
+        .banner-contact a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .banner-contact a:hover {
+            text-decoration: underline;
+        }
 
         .footer a:hover {
             text-decoration: underline;
@@ -677,6 +741,19 @@
             <h1>Minnesota Golden Gophers</h1>
             <p class="subtitle">Multi-Week Snap Count Analytics Dashboard</p>
             <p class="timestamp" id="last-updated">Updated at <span id="update-time"></span></p>
+        </div>
+        
+        <!-- Outdated Banner -->
+        <div class="outdated-banner">
+            <div class="banner-content">
+                <h3>⚠️ This page is temporarily down due to recent updates</h3>
+                <p>We've made significant improvements to our analytics system. Please check out our more recent teams for the latest features:</p>
+                <div class="banner-links">
+                    <a href="./washington.html" class="banner-link">Washington Huskies</a>
+                    <a href="./maryland.html" class="banner-link">Maryland Terrapins</a>
+                </div>
+                <p class="banner-contact">If you need this page updated, please contact <a href="mailto:victorres11@gmail.com">victorres11@gmail.com</a></p>
+            </div>
         </div>
 
         <!-- Stats Summary -->
