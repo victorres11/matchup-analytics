@@ -647,6 +647,14 @@
         .position-group-returner {
             background: rgba(0, 255, 0, 0.2) !important;
         }
+        
+        .position-group-kick-returner {
+            background: rgba(255, 107, 107, 0.2) !important;
+        }
+        
+        .position-group-punt-returner {
+            background: rgba(155, 89, 182, 0.2) !important;
+        }
 
         .aggregate-table .jersey {
             font-weight: 700;
@@ -2221,8 +2229,10 @@
                         let groupClass = '';
                         if (category === 'Punting' || category === 'Kickoffs' || category === 'Field_Goals') {
                             groupClass = 'position-group-specialist';
-                        } else if (category === 'Kick_Returns' || category === 'Punt_Returns') {
-                            groupClass = 'position-group-returner';
+                        } else if (category === 'Kick_Returns') {
+                            groupClass = 'position-group-kick-returner';
+                        } else if (category === 'Punt_Returns') {
+                            groupClass = 'position-group-punt-returner';
                         }
                         
                         row.className = groupClass;
