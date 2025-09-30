@@ -74,6 +74,38 @@
             font-size: 0.9rem;
             margin-top: 10px;
         }
+        
+        /* Matchup Navigation */
+        .matchup-nav {
+            margin-top: 20px;
+        }
+        
+        .matchup-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        
+        .matchup-btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            border-color: rgba(255, 255, 255, 0.5);
+        }
+        
+        .matchup-icon {
+            font-size: 1.2em;
+        }
 
         .stats-summary {
             background: linear-gradient(135deg, rgba(74, 144, 226, 0.95) 0%, rgba(123, 104, 238, 0.95) 100%);
@@ -705,6 +737,14 @@
             <h1>Washington Huskies</h1>
             <p class="subtitle">Multi-Week Snap Count Analytics Dashboard</p>
             <p class="timestamp" id="last-updated">Updated at <span id="update-time"></span></p>
+            
+            <!-- Matchup Navigation -->
+            <div class="matchup-nav">
+                <a href="./maryland.html" class="matchup-btn">
+                    <span class="matchup-icon">🏈</span>
+                    View Maryland Terrapins
+                </a>
+            </div>
         </div>
 
         <!-- Stats Summary -->
