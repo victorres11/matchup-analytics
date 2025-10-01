@@ -1498,6 +1498,8 @@
             const checkedYears = Array.from(document.querySelectorAll('.year-filter-item input[type="checkbox"]:checked'))
                 .map(cb => cb.getAttribute('data-year'));
             
+            console.log('Applying year filters:', checkedYears);
+            
             // Apply filters to all charts
             filterChartByYear('wr-chart', checkedYears);
             filterChartByYear('te-chart', checkedYears);
@@ -1511,11 +1513,16 @@
 
         function filterChartByYear(canvasId, allowedYears) {
             const canvas = document.getElementById(canvasId);
-            if (!canvas || !window[canvasId + 'Chart']) return;
+            if (!canvas || !window[canvasId + 'Chart']) {
+                console.log(`Chart not found: ${canvasId}`);
+                return;
+            }
 
             const chart = window[canvasId + 'Chart'];
             const datasets = chart.data.datasets;
             const allPlayers = chart.allPlayers || [];
+            
+            console.log(`Filtering ${canvasId}:`, { allowedYears, allPlayersCount: allPlayers.length });
             
             datasets.forEach(dataset => {
                 dataset.data.forEach((value, index) => {
@@ -1523,6 +1530,8 @@
                     if (player) {
                         const playerYear = player.year || 'Unknown';
                         const isAllowed = allowedYears.includes(playerYear);
+                        
+                        console.log(`Player ${player.name}: ${playerYear}, allowed: ${isAllowed}`);
                         
                         // Update opacity based on filter
                         if (isAllowed) {
@@ -1555,7 +1564,9 @@
 
             // Year filter checkboxes
             document.querySelectorAll('.year-filter-item input[type="checkbox"]').forEach(checkbox => {
+                console.log('Setting up year filter for:', checkbox.id);
                 checkbox.addEventListener('change', function() {
+                    console.log('Year filter changed:', this.id, this.checked);
                     applyYearFilters();
                 });
             });
