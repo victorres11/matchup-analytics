@@ -159,6 +159,13 @@
         ],
         "wide_receivers": [
           {
+            "name": "Jalil Farooq",
+            "jersey": "01",
+            "position": "SLWR",
+            "snaps": 49,
+            "started": true
+          },
+          {
             "name": "Octavian Smith Jr.",
             "jersey": "05",
             "position": "RWR",
@@ -216,13 +223,6 @@
           }
         ],
         "defensive_backs": [
-          {
-            "name": "Jalil Farooq",
-            "jersey": "01",
-            "position": "SLWR",
-            "snaps": 49,
-            "started": true
-          }
         ],
         "tight_ends": [
           {
@@ -668,6 +668,13 @@
         ],
         "wide_receivers": [
           {
+            "name": "Jalil Farooq",
+            "jersey": "01",
+            "position": "SLWR",
+            "snaps": 34,
+            "started": true
+          },
+          {
             "name": "Octavian Smith Jr.",
             "jersey": "05",
             "position": "RWR",
@@ -725,13 +732,6 @@
           }
         ],
         "defensive_backs": [
-          {
-            "name": "Jalil Farooq",
-            "jersey": "01",
-            "position": "SLWR",
-            "snaps": 34,
-            "started": true
-          }
         ],
         "tight_ends": [
           {
@@ -1177,6 +1177,13 @@
         ],
         "wide_receivers": [
           {
+            "name": "Jalil Farooq",
+            "jersey": "01",
+            "position": "SLWR",
+            "snaps": 36,
+            "started": true
+          },
+          {
             "name": "Octavian Smith Jr.",
             "jersey": "05",
             "position": "RWR",
@@ -1234,13 +1241,6 @@
           }
         ],
         "defensive_backs": [
-          {
-            "name": "Jalil Farooq",
-            "jersey": "01",
-            "position": "SLWR",
-            "snaps": 36,
-            "started": true
-          }
         ],
         "tight_ends": [
           {
@@ -1686,6 +1686,13 @@
         ],
         "wide_receivers": [
           {
+            "name": "Jalil Farooq",
+            "jersey": "01",
+            "position": "SLWR",
+            "snaps": 39,
+            "started": true
+          },
+          {
             "name": "Octavian Smith Jr.",
             "jersey": "05",
             "position": "RWR",
@@ -1743,13 +1750,6 @@
           }
         ],
         "defensive_backs": [
-          {
-            "name": "Jalil Farooq",
-            "jersey": "01",
-            "position": "SLWR",
-            "snaps": 39,
-            "started": true
-          }
         ],
         "tight_ends": [
           {
