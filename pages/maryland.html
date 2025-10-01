@@ -1947,7 +1947,7 @@
             });
 
             // Create the chart
-            window[canvasId + 'Chart'] = new Chart(canvas, {
+            const chart = new Chart(canvas, {
                 type: 'bar',
                 data: {
                     labels: allPlayers.map(player => {
@@ -1956,8 +1956,6 @@
                     }),
                     datasets: datasets
                 },
-                // Store player data for filtering
-                allPlayers: allPlayers,
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
@@ -2093,6 +2091,10 @@
                     }
                 }
             });
+            
+            // Store chart and player data for filtering
+            window[canvasId + 'Chart'] = chart;
+            chart.allPlayers = allPlayers;
         }
 
         // Create diagonal pattern for missing games
