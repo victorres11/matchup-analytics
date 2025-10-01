@@ -723,6 +723,71 @@
             color: #dc2626;
             background: rgba(220, 38, 38, 0.1);
         }
+
+        /* Year Filter Styles */
+        .year-filters {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 1px solid #FFD700;
+        }
+
+        .year-filters h4 {
+            color: #E31B23;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+        .year-filter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+        }
+
+        .year-filter-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .year-filter-item input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            accent-color: #E31B23;
+        }
+
+        .year-filter-item label {
+            font-size: 0.9em;
+            color: #333;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .year-filter-item label:hover {
+            color: #E31B23;
+        }
+
+        /* Player year styling */
+        .player-year {
+            font-size: 0.8em;
+            color: #666;
+            font-weight: 500;
+            margin-left: 5px;
+        }
+
+        /* Filtered out players */
+        .player-filtered {
+            opacity: 0.3;
+            transition: opacity 0.3s ease;
+        }
+
+        .player-focused {
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
     </style>
 </head>
 <body>
@@ -793,6 +858,49 @@
                         <!-- Data will be populated by JavaScript -->
                     </tbody>
                 </table>
+            </div>
+        </div>
+
+        <!-- Year Filters -->
+        <div class="year-filters">
+            <h4>🎓 Filter by Year</h4>
+            <div class="year-filter-grid">
+                <div class="year-filter-item">
+                    <input type="checkbox" id="filter-freshman" data-year="Freshman" checked>
+                    <label for="filter-freshman">Freshman</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="filter-rs-freshman" data-year="RS Freshman" checked>
+                    <label for="filter-rs-freshman">RS Freshman</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="filter-sophomore" data-year="Sophomore" checked>
+                    <label for="filter-sophomore">Sophomore</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="filter-rs-sophomore" data-year="RS Sophomore" checked>
+                    <label for="filter-rs-sophomore">RS Sophomore</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="filter-junior" data-year="Junior" checked>
+                    <label for="filter-junior">Junior</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="filter-rs-junior" data-year="RS Junior" checked>
+                    <label for="filter-rs-junior">RS Junior</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="filter-senior" data-year="Senior" checked>
+                    <label for="filter-senior">Senior</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="filter-rs-senior" data-year="RS Senior" checked>
+                    <label for="filter-rs-senior">RS Senior</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="filter-graduate" data-year="Graduate" checked>
+                    <label for="filter-graduate">Graduate</label>
+                </div>
             </div>
         </div>
 
@@ -1385,6 +1493,49 @@
 
         }
 
+        // Year filtering functions
+        function applyYearFilters() {
+            const checkedYears = Array.from(document.querySelectorAll('.year-filter-item input[type="checkbox"]:checked'))
+                .map(cb => cb.getAttribute('data-year'));
+            
+            // Apply filters to all charts
+            filterChartByYear('wr-chart', checkedYears);
+            filterChartByYear('te-chart', checkedYears);
+            filterChartByYear('rb-chart', checkedYears);
+            filterChartByYear('ol-chart', checkedYears);
+            filterChartByYear('qb-chart', checkedYears);
+            filterChartByYear('dl-chart', checkedYears);
+            filterChartByYear('lb-chart', checkedYears);
+            filterChartByYear('db-chart', checkedYears);
+        }
+
+        function filterChartByYear(canvasId, allowedYears) {
+            const canvas = document.getElementById(canvasId);
+            if (!canvas || !window[canvasId + 'Chart']) return;
+
+            const chart = window[canvasId + 'Chart'];
+            const datasets = chart.data.datasets;
+            
+            datasets.forEach(dataset => {
+                if (dataset.players) {
+                    dataset.data.forEach((value, index) => {
+                        const player = dataset.players[index];
+                        const playerYear = player.year || 'Unknown';
+                        const isAllowed = allowedYears.includes(playerYear);
+                        
+                        // Update opacity based on filter
+                        if (isAllowed) {
+                            dataset.backgroundColor[index] = dataset.backgroundColor[index].replace(/,\s*[\d.]+\)/, ', 1)');
+                        } else {
+                            dataset.backgroundColor[index] = dataset.backgroundColor[index].replace(/,\s*[\d.]+\)/, ', 0.3)');
+                        }
+                    });
+                }
+            });
+            
+            chart.update();
+        }
+
         // Setup event listeners
         function setupEventListeners() {
             // Tab switching
@@ -1398,6 +1549,13 @@
                     
                     this.classList.add('active');
                     document.getElementById(targetTab).classList.add('active');
+                });
+            });
+
+            // Year filter checkboxes
+            document.querySelectorAll('.year-filter-item input[type="checkbox"]').forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    applyYearFilters();
                 });
             });
 
@@ -1676,13 +1834,14 @@
                     week[side][positionGroup].forEach(player => {
                         const key = `${player.name}-${player.jersey}`;
                         if (!playerMap.has(key)) {
-                            playerMap.set(key, {
-                                name: player.name,
-                                jersey: player.jersey,
-                                position: player.position,
-                                opponent: player.opponent || 'Unknown',
-                                weeks: {}
-                            });
+                        playerMap.set(key, {
+                            name: player.name,
+                            jersey: player.jersey,
+                            position: player.position,
+                            year: player.year || 'Unknown',
+                            opponent: player.opponent || 'Unknown',
+                            weeks: {}
+                        });
                         }
                         playerMap.get(key).weeks[week.week] = {
                             snaps: player.snaps,
@@ -1779,7 +1938,10 @@
             window[canvasId + 'Chart'] = new Chart(canvas, {
                 type: 'bar',
                 data: {
-                    labels: allPlayers.map(player => `${player.name} #${player.jersey}`),
+                    labels: allPlayers.map(player => {
+                        const yearDisplay = player.year && player.year !== 'Unknown' ? ` (${player.year})` : '';
+                        return `${player.name} #${player.jersey}${yearDisplay}`;
+                    }),
                     datasets: datasets
                 },
                 options: {

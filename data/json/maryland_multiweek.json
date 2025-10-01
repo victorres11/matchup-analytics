@@ -163,28 +163,32 @@
             "jersey": "01",
             "position": "SLWR",
             "snaps": 49,
-            "started": true
+            "started": true,
+            "year": "RS Senior"
           },
           {
             "name": "Octavian Smith Jr.",
             "jersey": "05",
             "position": "RWR",
             "snaps": 51,
-            "started": true
+            "started": true,
+            "year": "Junior"
           },
           {
             "name": "Kaleb Webb",
             "jersey": "84",
             "position": "LWR",
             "snaps": 15,
-            "started": true
+            "started": true,
+            "year": "RS Sophomore"
           },
           {
             "name": "Shaleak Knotts",
             "jersey": "04",
             "position": "RWR",
             "snaps": 40,
-            "started": false
+            "started": false,
+            "year": "Freshman"
           },
           {
             "name": "Jordan Scott",
@@ -672,7 +676,8 @@
             "jersey": "01",
             "position": "SLWR",
             "snaps": 34,
-            "started": true
+            "started": true,
+            "year": "RS Senior"
           },
           {
             "name": "Octavian Smith Jr.",
