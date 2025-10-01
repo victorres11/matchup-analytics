@@ -11,7 +11,7 @@
             "position": "QB",
             "snaps": 60,
             "started": true,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Khristian Martin",
@@ -19,7 +19,7 @@
             "position": "QB",
             "snaps": 17,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Justyn Martin",
@@ -27,7 +27,7 @@
             "position": "QB",
             "snaps": 4,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           }
         ],
         "offensive_line": [
@@ -37,7 +37,7 @@
             "position": "RT",
             "snaps": 67,
             "started": true,
-            "year": "Senior"
+            "year": "Sr."
           },
           {
             "name": "Rahtrel Perry",
@@ -45,7 +45,7 @@
             "position": "LT",
             "snaps": 52,
             "started": true,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Michael Hershey",
@@ -53,7 +53,7 @@
             "position": "C",
             "snaps": 64,
             "started": true,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Isaiah Wright",
@@ -61,7 +61,7 @@
             "position": "LG",
             "snaps": 68,
             "started": true,
-            "year": "RS Senior"
+            "year": "R-Sr."
           },
           {
             "name": "Amory Hills",
@@ -69,7 +69,7 @@
             "position": "LG",
             "snaps": 13,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Ryan Howerton",
@@ -77,7 +77,7 @@
             "position": "RG",
             "snaps": 17,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Aliou Bah",
@@ -85,7 +85,7 @@
             "position": "RG",
             "snaps": 0,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Trevor Szymanski",
@@ -93,7 +93,7 @@
             "position": "LT",
             "snaps": 0,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Davon Watkins",
@@ -101,7 +101,7 @@
             "position": "LT",
             "snaps": 0,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Jaylen Gilchrist",
@@ -109,7 +109,7 @@
             "position": "LT",
             "snaps": 18,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Carlos Moore",
@@ -117,7 +117,7 @@
             "position": "RT",
             "snaps": 11,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           }
         ],
         "running_backs": [
@@ -127,7 +127,7 @@
             "position": "HB",
             "snaps": 34,
             "started": true,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "DeJuan Williams",
@@ -135,7 +135,7 @@
             "position": "HB",
             "snaps": 30,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "DJ Samuels",
@@ -143,7 +143,7 @@
             "position": "FB",
             "snaps": 3,
             "started": false,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Iverson Howard",
@@ -151,7 +151,7 @@
             "position": "HB",
             "snaps": 15,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Eli Mason",
@@ -159,7 +159,7 @@
             "position": "HB",
             "snaps": 2,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Josiah McLaurin",
@@ -167,7 +167,7 @@
             "position": "HB",
             "snaps": 13,
             "started": false,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Logan Bennett",
@@ -175,7 +175,7 @@
             "position": "HB",
             "snaps": 0,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           }
         ],
         "wide_receivers": [
@@ -185,7 +185,7 @@
             "position": "SLWR",
             "snaps": 49,
             "started": true,
-            "year": "Senior"
+            "year": "Sr."
           },
           {
             "name": "Octavian Smith Jr.",
@@ -193,7 +193,7 @@
             "position": "RWR",
             "snaps": 51,
             "started": true,
-            "year": "Senior"
+            "year": "Sr."
           },
           {
             "name": "Kaleb Webb",
@@ -201,7 +201,7 @@
             "position": "LWR",
             "snaps": 15,
             "started": true,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Shaleak Knotts",
@@ -209,7 +209,7 @@
             "position": "RWR",
             "snaps": 40,
             "started": false,
-            "year": "Senior"
+            "year": "Sr."
           },
           {
             "name": "Jordan Scott",
@@ -217,7 +217,7 @@
             "position": "RWR",
             "snaps": 0,
             "started": false,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Sean Williams",
@@ -225,7 +225,7 @@
             "position": "LWR",
             "snaps": 0,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Ryan Manning",
@@ -233,7 +233,7 @@
             "position": "RWR",
             "snaps": 0,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Zymear Smith",
@@ -241,7 +241,7 @@
             "position": "LWR",
             "snaps": 0,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Roman Jensen",
@@ -249,7 +249,7 @@
             "position": "LWR",
             "snaps": 0,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           }
         ],
         "defensive_backs": [],
@@ -260,7 +260,7 @@
             "position": "TER",
             "snaps": 44,
             "started": true,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "AJ Szymanski",
@@ -268,7 +268,7 @@
             "position": "TER",
             "snaps": 15,
             "started": true,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Thomas McCluskey",
@@ -276,7 +276,7 @@
             "position": "TEL",
             "snaps": 4,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "J.T. Taggart",
@@ -291,7 +291,7 @@
             "position": "TER",
             "snaps": 0,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           }
         ]
       },
@@ -303,7 +303,7 @@
             "position": "MLB",
             "snaps": 69,
             "started": true,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Sidney Stewart",
@@ -311,7 +311,7 @@
             "position": "ROLB",
             "snaps": 51,
             "started": true,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Michael Harris",
@@ -319,7 +319,7 @@
             "position": "MLB",
             "snaps": 5,
             "started": false,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Keyshawn Flowers",
@@ -327,7 +327,7 @@
             "position": "MLB",
             "snaps": 29,
             "started": false,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Carlton Smith",
@@ -335,7 +335,7 @@
             "position": "MLB",
             "snaps": 55,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Zahir Mathis",
@@ -343,7 +343,7 @@
             "position": "ROLB",
             "snaps": 39,
             "started": true,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Darius Grimes",
@@ -351,7 +351,7 @@
             "position": "LOLB",
             "snaps": 9,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "DD Holmes",
@@ -359,7 +359,7 @@
             "position": "ROLB",
             "snaps": 37,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Nahsir Taylor",
@@ -374,7 +374,7 @@
             "position": "MLB",
             "snaps": 0,
             "started": false,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Neeo Avery",
@@ -382,7 +382,7 @@
             "position": "LOLB",
             "snaps": 0,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           }
         ],
         "defensive_backs": [
@@ -392,7 +392,7 @@
             "position": "RCB",
             "snaps": 26,
             "started": false,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Ricardo Cooper Jr.",
@@ -400,7 +400,7 @@
             "position": "RCB",
             "snaps": 9,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Dontay Joyner",
@@ -408,7 +408,7 @@
             "position": "LCB",
             "snaps": 63,
             "started": true,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Jalen Huskey",
@@ -416,7 +416,7 @@
             "position": "FS",
             "snaps": 51,
             "started": true,
-            "year": "Senior"
+            "year": "Sr."
           },
           {
             "name": "Jamare Glasker",
@@ -424,7 +424,7 @@
             "position": "LCB",
             "snaps": 57,
             "started": true,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Kevyn Humes",
@@ -432,7 +432,7 @@
             "position": "SCB",
             "snaps": 65,
             "started": true,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Jayden Shipps",
@@ -440,7 +440,7 @@
             "position": "SCB",
             "snaps": 34,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Gavin Edwards",
@@ -448,7 +448,7 @@
             "position": "FS",
             "snaps": 42,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Lavain Scruggs",
@@ -456,7 +456,7 @@
             "position": "FS",
             "snaps": 49,
             "started": true,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Messiah Delhomme",
@@ -464,7 +464,7 @@
             "position": "FS",
             "snaps": 50,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Shamar McIntosh",
@@ -472,7 +472,7 @@
             "position": "FS",
             "snaps": 4,
             "started": false,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Braydon Lee",
@@ -480,7 +480,7 @@
             "position": "RCB",
             "snaps": 32,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Lloyd Irvin III",
@@ -488,7 +488,7 @@
             "position": "LCB",
             "snaps": 4,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Mekhai White",
@@ -496,7 +496,7 @@
             "position": "LCB",
             "snaps": 0,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           }
         ],
         "defensive_line": [
@@ -506,7 +506,7 @@
             "position": "DLT",
             "snaps": 20,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Eyan Thomas",
@@ -514,7 +514,7 @@
             "position": "DLT",
             "snaps": 33,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Cam Rice",
@@ -522,7 +522,7 @@
             "position": "DLT",
             "snaps": 50,
             "started": false,
-            "year": "Graduate"
+            "year": "Gr."
           },
           {
             "name": "Daniel Owens",
@@ -530,7 +530,7 @@
             "position": "DLT",
             "snaps": 23,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "EJ Moore Jr.",
@@ -545,7 +545,7 @@
             "position": "DRT",
             "snaps": 0,
             "started": false,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Sedrick Smith",
@@ -553,7 +553,7 @@
             "position": "NT",
             "snaps": 0,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Bryce Jenkins",
@@ -561,7 +561,7 @@
             "position": "DRT",
             "snaps": 0,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Alex Moore",
@@ -569,7 +569,7 @@
             "position": "DRT",
             "snaps": 0,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           }
         ]
       },
@@ -585,7 +585,7 @@
             "position": "QB",
             "snaps": 63,
             "started": true,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Khristian Martin",
@@ -593,7 +593,7 @@
             "position": "QB",
             "snaps": 4,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Justyn Martin",
@@ -601,7 +601,7 @@
             "position": "QB",
             "snaps": 0,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           }
         ],
         "offensive_line": [
@@ -611,7 +611,7 @@
             "position": "RT",
             "snaps": 63,
             "started": true,
-            "year": "Senior"
+            "year": "Sr."
           },
           {
             "name": "Rahtrel Perry",
@@ -619,7 +619,7 @@
             "position": "LT",
             "snaps": 63,
             "started": true,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Michael Hershey",
@@ -627,7 +627,7 @@
             "position": "C",
             "snaps": 63,
             "started": true,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Isaiah Wright",
@@ -635,7 +635,7 @@
             "position": "LG",
             "snaps": 60,
             "started": true,
-            "year": "RS Senior"
+            "year": "R-Sr."
           },
           {
             "name": "Amory Hills",
@@ -643,7 +643,7 @@
             "position": "LG",
             "snaps": 7,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Ryan Howerton",
@@ -651,7 +651,7 @@
             "position": "RG",
             "snaps": 10,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Aliou Bah",
@@ -659,7 +659,7 @@
             "position": "RG",
             "snaps": 57,
             "started": true,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Trevor Szymanski",
@@ -667,7 +667,7 @@
             "position": "LT",
             "snaps": 8,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Davon Watkins",
@@ -675,7 +675,7 @@
             "position": "LT",
             "snaps": 4,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Jaylen Gilchrist",
@@ -683,7 +683,7 @@
             "position": "LT",
             "snaps": 0,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Carlos Moore",
@@ -691,7 +691,7 @@
             "position": "RT",
             "snaps": 0,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           }
         ],
         "running_backs": [
@@ -701,7 +701,7 @@
             "position": "HB",
             "snaps": 22,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "DeJuan Williams",
@@ -709,7 +709,7 @@
             "position": "HB",
             "snaps": 40,
             "started": true,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "DJ Samuels",
@@ -717,7 +717,7 @@
             "position": "FB",
             "snaps": 8,
             "started": false,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Iverson Howard",
@@ -725,7 +725,7 @@
             "position": "HB",
             "snaps": 57,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Eli Mason",
@@ -733,7 +733,7 @@
             "position": "HB",
             "snaps": 0,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Josiah McLaurin",
@@ -741,7 +741,7 @@
             "position": "HB",
             "snaps": 0,
             "started": false,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Logan Bennett",
@@ -749,7 +749,7 @@
             "position": "HB",
             "snaps": 40,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           }
         ],
         "wide_receivers": [
@@ -759,7 +759,7 @@
             "position": "SLWR",
             "snaps": 34,
             "started": true,
-            "year": "Senior"
+            "year": "Sr."
           },
           {
             "name": "Octavian Smith Jr.",
@@ -767,7 +767,7 @@
             "position": "RWR",
             "snaps": 52,
             "started": true,
-            "year": "Senior"
+            "year": "Sr."
           },
           {
             "name": "Kaleb Webb",
@@ -775,7 +775,7 @@
             "position": "LWR",
             "snaps": 28,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Shaleak Knotts",
@@ -783,7 +783,7 @@
             "position": "RWR",
             "snaps": 40,
             "started": true,
-            "year": "Senior"
+            "year": "Sr."
           },
           {
             "name": "Jordan Scott",
@@ -791,7 +791,7 @@
             "position": "RWR",
             "snaps": 62,
             "started": false,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Sean Williams",
@@ -799,7 +799,7 @@
             "position": "LWR",
             "snaps": 1,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Ryan Manning",
@@ -807,7 +807,7 @@
             "position": "RWR",
             "snaps": 3,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Zymear Smith",
@@ -815,7 +815,7 @@
             "position": "LWR",
             "snaps": 0,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Roman Jensen",
@@ -823,7 +823,7 @@
             "position": "LWR",
             "snaps": 0,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           }
         ],
         "defensive_backs": [],
@@ -834,7 +834,7 @@
             "position": "TER",
             "snaps": 56,
             "started": true,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "AJ Szymanski",
@@ -842,7 +842,7 @@
             "position": "TER",
             "snaps": 29,
             "started": false,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Thomas McCluskey",
@@ -850,7 +850,7 @@
             "position": "TEL",
             "snaps": 4,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "J.T. Taggart",
@@ -865,7 +865,7 @@
             "position": "TER",
             "snaps": 0,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           }
         ]
       },
@@ -877,7 +877,7 @@
             "position": "MLB",
             "snaps": 70,
             "started": true,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Sidney Stewart",
@@ -885,7 +885,7 @@
             "position": "ROLB",
             "snaps": 57,
             "started": true,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Michael Harris",
@@ -893,7 +893,7 @@
             "position": "MLB",
             "snaps": 0,
             "started": false,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Keyshawn Flowers",
@@ -901,7 +901,7 @@
             "position": "MLB",
             "snaps": 54,
             "started": true,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Carlton Smith",
@@ -909,7 +909,7 @@
             "position": "MLB",
             "snaps": 0,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Zahir Mathis",
@@ -917,7 +917,7 @@
             "position": "ROLB",
             "snaps": 48,
             "started": true,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Darius Grimes",
@@ -925,7 +925,7 @@
             "position": "LOLB",
             "snaps": 1,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "DD Holmes",
@@ -933,7 +933,7 @@
             "position": "ROLB",
             "snaps": 9,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Nahsir Taylor",
@@ -948,7 +948,7 @@
             "position": "MLB",
             "snaps": 54,
             "started": true,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Neeo Avery",
@@ -956,7 +956,7 @@
             "position": "LOLB",
             "snaps": 0,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           }
         ],
         "defensive_backs": [
@@ -966,7 +966,7 @@
             "position": "RCB",
             "snaps": 32,
             "started": false,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Ricardo Cooper Jr.",
@@ -974,7 +974,7 @@
             "position": "RCB",
             "snaps": 65,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Dontay Joyner",
@@ -982,7 +982,7 @@
             "position": "LCB",
             "snaps": 32,
             "started": true,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Jalen Huskey",
@@ -990,7 +990,7 @@
             "position": "FS",
             "snaps": 57,
             "started": true,
-            "year": "Senior"
+            "year": "Sr."
           },
           {
             "name": "Jamare Glasker",
@@ -998,7 +998,7 @@
             "position": "LCB",
             "snaps": 32,
             "started": true,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Kevyn Humes",
@@ -1006,7 +1006,7 @@
             "position": "SCB",
             "snaps": 43,
             "started": true,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Jayden Shipps",
@@ -1014,7 +1014,7 @@
             "position": "SCB",
             "snaps": 5,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Gavin Edwards",
@@ -1022,7 +1022,7 @@
             "position": "FS",
             "snaps": 13,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Lavain Scruggs",
@@ -1030,7 +1030,7 @@
             "position": "FS",
             "snaps": 45,
             "started": true,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Messiah Delhomme",
@@ -1038,7 +1038,7 @@
             "position": "FS",
             "snaps": 21,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Shamar McIntosh",
@@ -1046,7 +1046,7 @@
             "position": "FS",
             "snaps": 0,
             "started": false,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Braydon Lee",
@@ -1054,7 +1054,7 @@
             "position": "RCB",
             "snaps": 18,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Lloyd Irvin III",
@@ -1062,7 +1062,7 @@
             "position": "LCB",
             "snaps": 0,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Mekhai White",
@@ -1070,7 +1070,7 @@
             "position": "LCB",
             "snaps": 1,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           }
         ],
         "defensive_line": [
@@ -1080,7 +1080,7 @@
             "position": "DLT",
             "snaps": 0,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Eyan Thomas",
@@ -1088,7 +1088,7 @@
             "position": "DLT",
             "snaps": 35,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Cam Rice",
@@ -1096,7 +1096,7 @@
             "position": "DLT",
             "snaps": 27,
             "started": true,
-            "year": "Graduate"
+            "year": "Gr."
           },
           {
             "name": "Daniel Owens",
@@ -1104,7 +1104,7 @@
             "position": "DLT",
             "snaps": 12,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "EJ Moore Jr.",
@@ -1119,7 +1119,7 @@
             "position": "DRT",
             "snaps": 34,
             "started": true,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Sedrick Smith",
@@ -1127,7 +1127,7 @@
             "position": "NT",
             "snaps": 8,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Bryce Jenkins",
@@ -1135,7 +1135,7 @@
             "position": "DRT",
             "snaps": 0,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Alex Moore",
@@ -1143,7 +1143,7 @@
             "position": "DRT",
             "snaps": 0,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           }
         ]
       },
@@ -1159,7 +1159,7 @@
             "position": "QB",
             "snaps": 51,
             "started": true,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Khristian Martin",
@@ -1167,7 +1167,7 @@
             "position": "QB",
             "snaps": 18,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Justyn Martin",
@@ -1175,7 +1175,7 @@
             "position": "QB",
             "snaps": 0,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           }
         ],
         "offensive_line": [
@@ -1185,7 +1185,7 @@
             "position": "RT",
             "snaps": 44,
             "started": true,
-            "year": "Senior"
+            "year": "Sr."
           },
           {
             "name": "Rahtrel Perry",
@@ -1193,7 +1193,7 @@
             "position": "LT",
             "snaps": 51,
             "started": true,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Michael Hershey",
@@ -1201,7 +1201,7 @@
             "position": "C",
             "snaps": 51,
             "started": true,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Isaiah Wright",
@@ -1209,7 +1209,7 @@
             "position": "LG",
             "snaps": 52,
             "started": true,
-            "year": "RS Senior"
+            "year": "R-Sr."
           },
           {
             "name": "Amory Hills",
@@ -1217,7 +1217,7 @@
             "position": "LG",
             "snaps": 34,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Ryan Howerton",
@@ -1225,7 +1225,7 @@
             "position": "RG",
             "snaps": 39,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Aliou Bah",
@@ -1233,7 +1233,7 @@
             "position": "RG",
             "snaps": 33,
             "started": true,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Trevor Szymanski",
@@ -1241,7 +1241,7 @@
             "position": "LT",
             "snaps": 23,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Davon Watkins",
@@ -1249,7 +1249,7 @@
             "position": "LT",
             "snaps": 21,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Jaylen Gilchrist",
@@ -1257,7 +1257,7 @@
             "position": "LT",
             "snaps": 0,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Carlos Moore",
@@ -1265,7 +1265,7 @@
             "position": "RT",
             "snaps": 0,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           }
         ],
         "running_backs": [
@@ -1275,7 +1275,7 @@
             "position": "HB",
             "snaps": 21,
             "started": true,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "DeJuan Williams",
@@ -1283,7 +1283,7 @@
             "position": "HB",
             "snaps": 22,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "DJ Samuels",
@@ -1291,7 +1291,7 @@
             "position": "FB",
             "snaps": 9,
             "started": false,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Iverson Howard",
@@ -1299,7 +1299,7 @@
             "position": "HB",
             "snaps": 28,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Eli Mason",
@@ -1307,7 +1307,7 @@
             "position": "HB",
             "snaps": 0,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Josiah McLaurin",
@@ -1315,7 +1315,7 @@
             "position": "HB",
             "snaps": 0,
             "started": false,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Logan Bennett",
@@ -1323,7 +1323,7 @@
             "position": "HB",
             "snaps": 0,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           }
         ],
         "wide_receivers": [
@@ -1333,7 +1333,7 @@
             "position": "SLWR",
             "snaps": 36,
             "started": true,
-            "year": "Senior"
+            "year": "Sr."
           },
           {
             "name": "Octavian Smith Jr.",
@@ -1341,7 +1341,7 @@
             "position": "RWR",
             "snaps": 39,
             "started": true,
-            "year": "Senior"
+            "year": "Sr."
           },
           {
             "name": "Kaleb Webb",
@@ -1349,7 +1349,7 @@
             "position": "LWR",
             "snaps": 17,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Shaleak Knotts",
@@ -1357,7 +1357,7 @@
             "position": "RWR",
             "snaps": 40,
             "started": true,
-            "year": "Senior"
+            "year": "Sr."
           },
           {
             "name": "Jordan Scott",
@@ -1365,7 +1365,7 @@
             "position": "RWR",
             "snaps": 12,
             "started": false,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Sean Williams",
@@ -1373,7 +1373,7 @@
             "position": "LWR",
             "snaps": 7,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Ryan Manning",
@@ -1381,7 +1381,7 @@
             "position": "RWR",
             "snaps": 20,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Zymear Smith",
@@ -1389,7 +1389,7 @@
             "position": "LWR",
             "snaps": 11,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Roman Jensen",
@@ -1397,7 +1397,7 @@
             "position": "LWR",
             "snaps": 45,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           }
         ],
         "defensive_backs": [],
@@ -1408,7 +1408,7 @@
             "position": "TER",
             "snaps": 40,
             "started": true,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "AJ Szymanski",
@@ -1416,7 +1416,7 @@
             "position": "TER",
             "snaps": 23,
             "started": false,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Thomas McCluskey",
@@ -1424,7 +1424,7 @@
             "position": "TEL",
             "snaps": 0,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "J.T. Taggart",
@@ -1439,7 +1439,7 @@
             "position": "TER",
             "snaps": 0,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           }
         ]
       },
@@ -1451,7 +1451,7 @@
             "position": "MLB",
             "snaps": 21,
             "started": true,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Sidney Stewart",
@@ -1459,7 +1459,7 @@
             "position": "ROLB",
             "snaps": 35,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Michael Harris",
@@ -1467,7 +1467,7 @@
             "position": "MLB",
             "snaps": 11,
             "started": false,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Keyshawn Flowers",
@@ -1475,7 +1475,7 @@
             "position": "MLB",
             "snaps": 35,
             "started": false,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Carlton Smith",
@@ -1483,7 +1483,7 @@
             "position": "MLB",
             "snaps": 35,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Zahir Mathis",
@@ -1491,7 +1491,7 @@
             "position": "ROLB",
             "snaps": 36,
             "started": true,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Darius Grimes",
@@ -1499,7 +1499,7 @@
             "position": "LOLB",
             "snaps": 0,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "DD Holmes",
@@ -1507,7 +1507,7 @@
             "position": "ROLB",
             "snaps": 22,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Nahsir Taylor",
@@ -1522,7 +1522,7 @@
             "position": "MLB",
             "snaps": 17,
             "started": false,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Neeo Avery",
@@ -1530,7 +1530,7 @@
             "position": "LOLB",
             "snaps": 11,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           }
         ],
         "defensive_backs": [
@@ -1540,7 +1540,7 @@
             "position": "RCB",
             "snaps": 27,
             "started": false,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Ricardo Cooper Jr.",
@@ -1548,7 +1548,7 @@
             "position": "RCB",
             "snaps": 0,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Dontay Joyner",
@@ -1556,7 +1556,7 @@
             "position": "LCB",
             "snaps": 33,
             "started": true,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Jalen Huskey",
@@ -1564,7 +1564,7 @@
             "position": "FS",
             "snaps": 28,
             "started": true,
-            "year": "Senior"
+            "year": "Sr."
           },
           {
             "name": "Jamare Glasker",
@@ -1572,7 +1572,7 @@
             "position": "LCB",
             "snaps": 0,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Kevyn Humes",
@@ -1580,7 +1580,7 @@
             "position": "SCB",
             "snaps": 30,
             "started": false,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Jayden Shipps",
@@ -1588,7 +1588,7 @@
             "position": "SCB",
             "snaps": 0,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Gavin Edwards",
@@ -1596,7 +1596,7 @@
             "position": "FS",
             "snaps": 37,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Lavain Scruggs",
@@ -1604,7 +1604,7 @@
             "position": "FS",
             "snaps": 37,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Messiah Delhomme",
@@ -1612,7 +1612,7 @@
             "position": "FS",
             "snaps": 33,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Shamar McIntosh",
@@ -1620,7 +1620,7 @@
             "position": "FS",
             "snaps": 0,
             "started": false,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Braydon Lee",
@@ -1628,7 +1628,7 @@
             "position": "RCB",
             "snaps": 0,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Lloyd Irvin III",
@@ -1636,7 +1636,7 @@
             "position": "LCB",
             "snaps": 0,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Mekhai White",
@@ -1644,7 +1644,7 @@
             "position": "LCB",
             "snaps": 1,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           }
         ],
         "defensive_line": [
@@ -1654,7 +1654,7 @@
             "position": "DLT",
             "snaps": 0,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Eyan Thomas",
@@ -1662,7 +1662,7 @@
             "position": "DLT",
             "snaps": 17,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Cam Rice",
@@ -1670,7 +1670,7 @@
             "position": "DLT",
             "snaps": 24,
             "started": true,
-            "year": "Graduate"
+            "year": "Gr."
           },
           {
             "name": "Daniel Owens",
@@ -1678,7 +1678,7 @@
             "position": "DLT",
             "snaps": 17,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "EJ Moore Jr.",
@@ -1693,7 +1693,7 @@
             "position": "DRT",
             "snaps": 24,
             "started": true,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Sedrick Smith",
@@ -1701,7 +1701,7 @@
             "position": "NT",
             "snaps": 7,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Bryce Jenkins",
@@ -1709,7 +1709,7 @@
             "position": "DRT",
             "snaps": 19,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Alex Moore",
@@ -1717,7 +1717,7 @@
             "position": "DRT",
             "snaps": 5,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           }
         ]
       },
@@ -1733,7 +1733,7 @@
             "position": "QB",
             "snaps": 57,
             "started": true,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Khristian Martin",
@@ -1741,7 +1741,7 @@
             "position": "QB",
             "snaps": 0,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Justyn Martin",
@@ -1749,7 +1749,7 @@
             "position": "QB",
             "snaps": 0,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           }
         ],
         "offensive_line": [
@@ -1759,7 +1759,7 @@
             "position": "RT",
             "snaps": 57,
             "started": true,
-            "year": "Senior"
+            "year": "Sr."
           },
           {
             "name": "Rahtrel Perry",
@@ -1767,7 +1767,7 @@
             "position": "LT",
             "snaps": 57,
             "started": true,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Michael Hershey",
@@ -1775,7 +1775,7 @@
             "position": "C",
             "snaps": 57,
             "started": true,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Isaiah Wright",
@@ -1783,7 +1783,7 @@
             "position": "LG",
             "snaps": 52,
             "started": true,
-            "year": "RS Senior"
+            "year": "R-Sr."
           },
           {
             "name": "Amory Hills",
@@ -1791,7 +1791,7 @@
             "position": "LG",
             "snaps": 5,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Ryan Howerton",
@@ -1799,7 +1799,7 @@
             "position": "RG",
             "snaps": 0,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Aliou Bah",
@@ -1807,7 +1807,7 @@
             "position": "RG",
             "snaps": 57,
             "started": true,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Trevor Szymanski",
@@ -1815,7 +1815,7 @@
             "position": "LT",
             "snaps": 1,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Davon Watkins",
@@ -1823,7 +1823,7 @@
             "position": "LT",
             "snaps": 0,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Jaylen Gilchrist",
@@ -1831,7 +1831,7 @@
             "position": "LT",
             "snaps": 0,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Carlos Moore",
@@ -1839,7 +1839,7 @@
             "position": "RT",
             "snaps": 0,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           }
         ],
         "running_backs": [
@@ -1849,7 +1849,7 @@
             "position": "HB",
             "snaps": 21,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "DeJuan Williams",
@@ -1857,7 +1857,7 @@
             "position": "HB",
             "snaps": 36,
             "started": true,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "DJ Samuels",
@@ -1865,7 +1865,7 @@
             "position": "FB",
             "snaps": 1,
             "started": false,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Iverson Howard",
@@ -1873,7 +1873,7 @@
             "position": "HB",
             "snaps": 0,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Eli Mason",
@@ -1881,7 +1881,7 @@
             "position": "HB",
             "snaps": 0,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Josiah McLaurin",
@@ -1889,7 +1889,7 @@
             "position": "HB",
             "snaps": 0,
             "started": false,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Logan Bennett",
@@ -1897,7 +1897,7 @@
             "position": "HB",
             "snaps": 0,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           }
         ],
         "wide_receivers": [
@@ -1907,7 +1907,7 @@
             "position": "SLWR",
             "snaps": 39,
             "started": true,
-            "year": "Senior"
+            "year": "Sr."
           },
           {
             "name": "Octavian Smith Jr.",
@@ -1915,7 +1915,7 @@
             "position": "RWR",
             "snaps": 53,
             "started": true,
-            "year": "Senior"
+            "year": "Sr."
           },
           {
             "name": "Kaleb Webb",
@@ -1923,7 +1923,7 @@
             "position": "LWR",
             "snaps": 16,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Shaleak Knotts",
@@ -1931,7 +1931,7 @@
             "position": "RWR",
             "snaps": 42,
             "started": true,
-            "year": "Senior"
+            "year": "Sr."
           },
           {
             "name": "Jordan Scott",
@@ -1939,7 +1939,7 @@
             "position": "RWR",
             "snaps": 0,
             "started": false,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Sean Williams",
@@ -1947,7 +1947,7 @@
             "position": "LWR",
             "snaps": 0,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Ryan Manning",
@@ -1955,7 +1955,7 @@
             "position": "RWR",
             "snaps": 0,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Zymear Smith",
@@ -1963,7 +1963,7 @@
             "position": "LWR",
             "snaps": 0,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Roman Jensen",
@@ -1971,7 +1971,7 @@
             "position": "LWR",
             "snaps": 0,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           }
         ],
         "defensive_backs": [],
@@ -1982,7 +1982,7 @@
             "position": "TER",
             "snaps": 49,
             "started": true,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "AJ Szymanski",
@@ -1990,7 +1990,7 @@
             "position": "TER",
             "snaps": 18,
             "started": true,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Thomas McCluskey",
@@ -1998,7 +1998,7 @@
             "position": "TEL",
             "snaps": 0,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "J.T. Taggart",
@@ -2013,7 +2013,7 @@
             "position": "TER",
             "snaps": 9,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           }
         ]
       },
@@ -2025,7 +2025,7 @@
             "position": "MLB",
             "snaps": 59,
             "started": true,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Sidney Stewart",
@@ -2033,7 +2033,7 @@
             "position": "ROLB",
             "snaps": 52,
             "started": true,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Michael Harris",
@@ -2041,7 +2041,7 @@
             "position": "MLB",
             "snaps": 13,
             "started": false,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Keyshawn Flowers",
@@ -2049,7 +2049,7 @@
             "position": "MLB",
             "snaps": 40,
             "started": true,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Carlton Smith",
@@ -2057,7 +2057,7 @@
             "position": "MLB",
             "snaps": 32,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Zahir Mathis",
@@ -2065,7 +2065,7 @@
             "position": "ROLB",
             "snaps": 52,
             "started": true,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Darius Grimes",
@@ -2073,7 +2073,7 @@
             "position": "LOLB",
             "snaps": 0,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "DD Holmes",
@@ -2081,7 +2081,7 @@
             "position": "ROLB",
             "snaps": 27,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Nahsir Taylor",
@@ -2096,7 +2096,7 @@
             "position": "MLB",
             "snaps": 0,
             "started": false,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Neeo Avery",
@@ -2104,7 +2104,7 @@
             "position": "LOLB",
             "snaps": 18,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           }
         ],
         "defensive_backs": [
@@ -2114,7 +2114,7 @@
             "position": "RCB",
             "snaps": 19,
             "started": false,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Ricardo Cooper Jr.",
@@ -2122,7 +2122,7 @@
             "position": "RCB",
             "snaps": 0,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Dontay Joyner",
@@ -2130,7 +2130,7 @@
             "position": "LCB",
             "snaps": 54,
             "started": true,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Jalen Huskey",
@@ -2138,7 +2138,7 @@
             "position": "FS",
             "snaps": 56,
             "started": true,
-            "year": "Senior"
+            "year": "Sr."
           },
           {
             "name": "Jamare Glasker",
@@ -2146,7 +2146,7 @@
             "position": "LCB",
             "snaps": 0,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Kevyn Humes",
@@ -2154,7 +2154,7 @@
             "position": "SCB",
             "snaps": 54,
             "started": true,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Jayden Shipps",
@@ -2162,7 +2162,7 @@
             "position": "SCB",
             "snaps": 7,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Gavin Edwards",
@@ -2170,7 +2170,7 @@
             "position": "FS",
             "snaps": 10,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Lavain Scruggs",
@@ -2178,7 +2178,7 @@
             "position": "FS",
             "snaps": 45,
             "started": true,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "Messiah Delhomme",
@@ -2186,7 +2186,7 @@
             "position": "FS",
             "snaps": 40,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Shamar McIntosh",
@@ -2194,7 +2194,7 @@
             "position": "FS",
             "snaps": 0,
             "started": false,
-            "year": "Sophomore"
+            "year": "So."
           },
           {
             "name": "Braydon Lee",
@@ -2202,7 +2202,7 @@
             "position": "RCB",
             "snaps": 19,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Lloyd Irvin III",
@@ -2210,7 +2210,7 @@
             "position": "LCB",
             "snaps": 0,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           },
           {
             "name": "Mekhai White",
@@ -2218,7 +2218,7 @@
             "position": "LCB",
             "snaps": 0,
             "started": false,
-            "year": "RS Freshman"
+            "year": "R-Fr."
           }
         ],
         "defensive_line": [
@@ -2228,7 +2228,7 @@
             "position": "DLT",
             "snaps": 9,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Eyan Thomas",
@@ -2236,7 +2236,7 @@
             "position": "DLT",
             "snaps": 32,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Cam Rice",
@@ -2244,7 +2244,7 @@
             "position": "DLT",
             "snaps": 43,
             "started": true,
-            "year": "Graduate"
+            "year": "Gr."
           },
           {
             "name": "Daniel Owens",
@@ -2252,7 +2252,7 @@
             "position": "DLT",
             "snaps": 20,
             "started": false,
-            "year": "RS Junior"
+            "year": "R-Jr."
           },
           {
             "name": "EJ Moore Jr.",
@@ -2267,7 +2267,7 @@
             "position": "DRT",
             "snaps": 43,
             "started": true,
-            "year": "Junior"
+            "year": "Jr."
           },
           {
             "name": "Sedrick Smith",
@@ -2275,7 +2275,7 @@
             "position": "NT",
             "snaps": 9,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           },
           {
             "name": "Bryce Jenkins",
@@ -2283,7 +2283,7 @@
             "position": "DRT",
             "snaps": 20,
             "started": false,
-            "year": "Freshman"
+            "year": "Fr."
           },
           {
             "name": "Alex Moore",
@@ -2291,7 +2291,7 @@
             "position": "DRT",
             "snaps": 0,
             "started": false,
-            "year": "RS Sophomore"
+            "year": "R-So."
           }
         ]
       },
@@ -2320,7 +2320,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Sophomore"
+        "year": "R-So."
       },
       {
         "name": "Zahir Mathis",
@@ -2342,7 +2342,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "Freshman"
+        "year": "Fr."
       },
       {
         "name": "Ethan Gough",
@@ -2364,7 +2364,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Senior"
+        "year": "R-Sr."
       },
       {
         "name": "Ryan Howerton",
@@ -2386,7 +2386,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Freshman"
+        "year": "R-Fr."
       },
       {
         "name": "Aliou Bah",
@@ -2408,7 +2408,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Junior"
+        "year": "R-Jr."
       },
       {
         "name": "Jaylen Gilchrist",
@@ -2430,7 +2430,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "Freshman"
+        "year": "Fr."
       },
       {
         "name": "Alan Herron",
@@ -2452,7 +2452,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "Senior"
+        "year": "Sr."
       },
       {
         "name": "Sidney Stewart",
@@ -2474,7 +2474,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "Freshman"
+        "year": "Fr."
       },
       {
         "name": "Braydon Lee",
@@ -2496,7 +2496,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Freshman"
+        "year": "R-Fr."
       },
       {
         "name": "DD Holmes",
@@ -2518,7 +2518,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Freshman"
+        "year": "R-Fr."
       },
       {
         "name": "Trevor Szymanski",
@@ -2540,7 +2540,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Freshman"
+        "year": "R-Fr."
       },
       {
         "name": "Rahtrel Perry",
@@ -2562,7 +2562,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Junior"
+        "year": "R-Jr."
       },
       {
         "name": "Mekhai White",
@@ -2584,7 +2584,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Freshman"
+        "year": "R-Fr."
       },
       {
         "name": "Jamare Glasker",
@@ -2606,7 +2606,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Junior"
+        "year": "R-Jr."
       },
       {
         "name": "Thomas McCluskey",
@@ -2628,7 +2628,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Sophomore"
+        "year": "R-So."
       },
       {
         "name": "Darius Grimes",
@@ -2650,7 +2650,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Sophomore"
+        "year": "R-So."
       },
       {
         "name": "Shaleak Knotts",
@@ -2672,7 +2672,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "Senior"
+        "year": "Sr."
       },
       {
         "name": "Nolan Ray",
@@ -2694,7 +2694,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Sophomore"
+        "year": "R-So."
       },
       {
         "name": "J.T. Taggart",
@@ -2737,7 +2737,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "Sophomore"
+        "year": "So."
       },
       {
         "name": "Trey Reddick",
@@ -2759,7 +2759,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "Sophomore"
+        "year": "So."
       },
       {
         "name": "Philip Noyes",
@@ -2781,7 +2781,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Freshman"
+        "year": "R-Fr."
       },
       {
         "name": "Sean O'Haire",
@@ -2803,7 +2803,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Freshman"
+        "year": "R-Fr."
       },
       {
         "name": "Logan Bennett",
@@ -2825,7 +2825,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Freshman"
+        "year": "R-Fr."
       },
       {
         "name": "Gavin Edwards",
@@ -2847,7 +2847,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Sophomore"
+        "year": "R-So."
       },
       {
         "name": "Kaleb Webb",
@@ -2869,7 +2869,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Junior"
+        "year": "R-Jr."
       },
       {
         "name": "Cam Rice",
@@ -2891,7 +2891,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "Graduate"
+        "year": "Gr."
       },
       {
         "name": "EJ Moore Jr.",
@@ -2934,7 +2934,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Sophomore"
+        "year": "R-So."
       },
       {
         "name": "Octavian Smith Jr.",
@@ -2956,7 +2956,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "Senior"
+        "year": "Sr."
       },
       {
         "name": "Leon Haughton Jr.",
@@ -2978,7 +2978,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Junior"
+        "year": "R-Jr."
       },
       {
         "name": "Lavain Scruggs",
@@ -3000,7 +3000,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Junior"
+        "year": "R-Jr."
       },
       {
         "name": "Jalen Huskey",
@@ -3022,7 +3022,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "Senior"
+        "year": "Sr."
       },
       {
         "name": "Daniel Owens",
@@ -3044,7 +3044,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Junior"
+        "year": "R-Jr."
       },
       {
         "name": "Carlton Smith",
@@ -3066,7 +3066,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "Freshman"
+        "year": "Fr."
       },
       {
         "name": "Eli Mason",
@@ -3088,7 +3088,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Junior"
+        "year": "R-Jr."
       },
       {
         "name": "DJ Samuels",
@@ -3110,7 +3110,7 @@
           "isKRReturner": true,
           "isPRReturner": false
         },
-        "year": "Junior"
+        "year": "Jr."
       },
       {
         "name": "AJ Szymanski",
@@ -3132,7 +3132,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "Junior"
+        "year": "Jr."
       },
       {
         "name": "Ricardo Cooper Jr.",
@@ -3154,7 +3154,7 @@
           "isKRReturner": true,
           "isPRReturner": true
         },
-        "year": "RS Sophomore"
+        "year": "R-So."
       },
       {
         "name": "Messiah Delhomme",
@@ -3176,7 +3176,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "Freshman"
+        "year": "Fr."
       },
       {
         "name": "Michael Harris",
@@ -3198,7 +3198,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "Junior"
+        "year": "Jr."
       },
       {
         "name": "Bryce McFerson",
@@ -3220,7 +3220,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "RS Junior"
+        "year": "R-Jr."
       },
       {
         "name": "Daniel Wingate",
@@ -3242,7 +3242,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "Junior"
+        "year": "Jr."
       },
       {
         "name": "Dontay Joyner",
@@ -3264,7 +3264,7 @@
           "isKRReturner": false,
           "isPRReturner": false
         },
-        "year": "Junior"
+        "year": "Jr."
       },
       {
         "name": "Jalil Farooq",
@@ -3286,7 +3286,7 @@
           "isKRReturner": true,
           "isPRReturner": true
         },
-        "year": "Senior"
+        "year": "Sr."
       },
       {
         "name": "Josiah McLaurin",
@@ -3308,7 +3308,7 @@
           "isKRReturner": true,
           "isPRReturner": true
         },
-        "year": "Sophomore"
+        "year": "So."
       }
     ]
   },

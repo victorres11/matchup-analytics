@@ -866,40 +866,40 @@
             <h4>🎓 Filter by Year</h4>
             <div class="year-filter-grid">
                 <div class="year-filter-item">
-                    <input type="checkbox" id="filter-freshman" data-year="Freshman" checked>
-                    <label for="filter-freshman">Freshman</label>
+                    <input type="checkbox" id="filter-freshman" data-year="Fr." checked>
+                    <label for="filter-freshman">Fr.</label>
                 </div>
                 <div class="year-filter-item">
-                    <input type="checkbox" id="filter-rs-freshman" data-year="RS Freshman" checked>
-                    <label for="filter-rs-freshman">RS Freshman</label>
+                    <input type="checkbox" id="filter-rs-freshman" data-year="R-Fr." checked>
+                    <label for="filter-rs-freshman">R-Fr.</label>
                 </div>
                 <div class="year-filter-item">
-                    <input type="checkbox" id="filter-sophomore" data-year="Sophomore" checked>
-                    <label for="filter-sophomore">Sophomore</label>
+                    <input type="checkbox" id="filter-sophomore" data-year="So." checked>
+                    <label for="filter-sophomore">So.</label>
                 </div>
                 <div class="year-filter-item">
-                    <input type="checkbox" id="filter-rs-sophomore" data-year="RS Sophomore" checked>
-                    <label for="filter-rs-sophomore">RS Sophomore</label>
+                    <input type="checkbox" id="filter-rs-sophomore" data-year="R-So." checked>
+                    <label for="filter-rs-sophomore">R-So.</label>
                 </div>
                 <div class="year-filter-item">
-                    <input type="checkbox" id="filter-junior" data-year="Junior" checked>
-                    <label for="filter-junior">Junior</label>
+                    <input type="checkbox" id="filter-junior" data-year="Jr." checked>
+                    <label for="filter-junior">Jr.</label>
                 </div>
                 <div class="year-filter-item">
-                    <input type="checkbox" id="filter-rs-junior" data-year="RS Junior" checked>
-                    <label for="filter-rs-junior">RS Junior</label>
+                    <input type="checkbox" id="filter-rs-junior" data-year="R-Jr." checked>
+                    <label for="filter-rs-junior">R-Jr.</label>
                 </div>
                 <div class="year-filter-item">
-                    <input type="checkbox" id="filter-senior" data-year="Senior" checked>
-                    <label for="filter-senior">Senior</label>
+                    <input type="checkbox" id="filter-senior" data-year="Sr." checked>
+                    <label for="filter-senior">Sr.</label>
                 </div>
                 <div class="year-filter-item">
-                    <input type="checkbox" id="filter-rs-senior" data-year="RS Senior" checked>
-                    <label for="filter-rs-senior">RS Senior</label>
+                    <input type="checkbox" id="filter-rs-senior" data-year="R-Sr." checked>
+                    <label for="filter-rs-senior">R-Sr.</label>
                 </div>
                 <div class="year-filter-item">
-                    <input type="checkbox" id="filter-graduate" data-year="Graduate" checked>
-                    <label for="filter-graduate">Graduate</label>
+                    <input type="checkbox" id="filter-graduate" data-year="Gr." checked>
+                    <label for="filter-graduate">Gr.</label>
                 </div>
             </div>
         </div>
@@ -1515,11 +1515,12 @@
 
             const chart = window[canvasId + 'Chart'];
             const datasets = chart.data.datasets;
+            const allPlayers = chart.allPlayers || [];
             
             datasets.forEach(dataset => {
-                if (dataset.players) {
-                    dataset.data.forEach((value, index) => {
-                        const player = dataset.players[index];
+                dataset.data.forEach((value, index) => {
+                    const player = allPlayers[index];
+                    if (player) {
                         const playerYear = player.year || 'Unknown';
                         const isAllowed = allowedYears.includes(playerYear);
                         
@@ -1529,8 +1530,8 @@
                         } else {
                             dataset.backgroundColor[index] = dataset.backgroundColor[index].replace(/,\s*[\d.]+\)/, ', 0.3)');
                         }
-                    });
-                }
+                    }
+                });
             });
             
             chart.update();
@@ -1944,6 +1945,8 @@
                     }),
                     datasets: datasets
                 },
+                // Store player data for filtering
+                allPlayers: allPlayers,
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,

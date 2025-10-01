@@ -11,16 +11,16 @@ const gameData = JSON.parse(fs.readFileSync(gameDataPath, 'utf8'));
 
 // Class mapping from roster format to our format
 const classMapping = {
-    'Fr.': 'Freshman',
-    'R-Fr.': 'RS Freshman', 
-    'So.': 'Sophomore',
-    'R-So.': 'RS Sophomore',
-    'Jr.': 'Junior',
-    'R-Jr.': 'RS Junior',
-    'Sr.': 'Senior',
-    'R-Sr.': 'RS Senior',
-    'Gr.': 'Graduate',
-    'RB': 'Graduate' // Handle special case
+    'Fr.': 'Fr.',
+    'R-Fr.': 'R-Fr.', 
+    'So.': 'So.',
+    'R-So.': 'R-So.',
+    'Jr.': 'Jr.',
+    'R-Jr.': 'R-Jr.',
+    'Sr.': 'Sr.',
+    'R-Sr.': 'R-Sr.',
+    'Gr.': 'Gr.',
+    'RB': 'Gr.' // Handle special case
 };
 
 // Convert roster number to game data format
