@@ -1323,20 +1323,24 @@
 
             let totalOffensiveSnaps = 0;
             let totalDefensiveSnaps = 0;
-            let weekCount = 0;
+            let activeWeekCount = 0; // Count only non-bye weeks
 
             teamData.weeks.forEach(week => {
                 if (week.summary && week.summary.offensiveSnaps !== undefined && week.summary.defensiveSnaps !== undefined) {
-                    totalOffensiveSnaps += week.summary.offensiveSnaps;
-                    totalDefensiveSnaps += week.summary.defensiveSnaps;
-                    weekCount++;
+                    // Skip bye weeks (weeks with 0 snaps or "BYE WEEK" opponent)
+                    if ((week.summary.offensiveSnaps > 0 || week.summary.defensiveSnaps > 0) && 
+                        week.summary.opponent !== "BYE WEEK") {
+                        totalOffensiveSnaps += week.summary.offensiveSnaps;
+                        totalDefensiveSnaps += week.summary.defensiveSnaps;
+                        activeWeekCount++;
+                    }
                 }
             });
 
             document.getElementById('total-offensive-snaps').textContent = totalOffensiveSnaps;
             document.getElementById('total-defensive-snaps').textContent = totalDefensiveSnaps;
-            document.getElementById('avg-offensive-snaps').textContent = Math.round(totalOffensiveSnaps / weekCount);
-            document.getElementById('avg-defensive-snaps').textContent = Math.round(totalDefensiveSnaps / weekCount);
+            document.getElementById('avg-offensive-snaps').textContent = activeWeekCount > 0 ? Math.round(totalOffensiveSnaps / activeWeekCount) : 0;
+            document.getElementById('avg-defensive-snaps').textContent = activeWeekCount > 0 ? Math.round(totalDefensiveSnaps / activeWeekCount) : 0;
 
             // Update timestamp
             document.getElementById('update-time').textContent = new Date().toLocaleString();
