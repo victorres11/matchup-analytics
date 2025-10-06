@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 // Load the roster data
-const rosterPath = path.join(__dirname, '../data/csv/team_data/maryland/maryland_detailed_roster.json');
+const rosterPath = path.join(__dirname, '../data/csv/team_data/maryland-v2/maryland_detailed_roster.json');
 const rosterData = JSON.parse(fs.readFileSync(rosterPath, 'utf8'));
 
 // Load the game data
