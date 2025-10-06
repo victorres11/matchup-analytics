@@ -526,6 +526,14 @@
             <h1>Nebraska Cornhuskers</h1>
             <p class="subtitle">Multi-Week Snap Count Analytics Dashboard</p>
             <p class="timestamp" id="last-updated">Updated at <span id="update-time"></span></p>
+            
+            <!-- Matchup Link -->
+            <div style="text-align: center; margin: 20px 0;">
+                <a href="maryland.html" class="matchup-btn">
+                    <span class="matchup-icon">🏈</span>
+                    View Maryland Terrapins
+                </a>
+            </div>
         </div>
 
         <!-- Stats Summary -->
@@ -592,6 +600,32 @@
                     <input type="checkbox" id="filter-graduate" data-year="Gr." checked>
                     <label for="filter-graduate">Gr.</label>
                 </div>
+            </div>
+        </div>
+
+        <!-- Weekly Summary Table -->
+        <div class="weekly-summary">
+            <h2>Weekly Snap Count Summary</h2>
+            <p style="color: #ffffff; background-color: rgba(211, 47, 47, 0.8); padding: 8px 12px; border-radius: 6px; font-size: 0.9em; margin-bottom: 15px; border: 1px solid rgba(255, 255, 255, 0.3);">
+                <strong>Note:</strong> * indicates player started that week
+            </p>
+            <div class="summary-table-container">
+                <table class="summary-table">
+                    <thead>
+                        <tr>
+                            <th>Week</th>
+                            <th>Opponent</th>
+                            <th>Date</th>
+                            <th>Final Score</th>
+                            <th>Home/Away</th>
+                            <th>Offensive Snaps</th>
+                            <th>Defensive Snaps</th>
+                        </tr>
+                    </thead>
+                    <tbody id="weekly-summary-data">
+                        <!-- Data will be populated by JavaScript -->
+                    </tbody>
+                </table>
             </div>
         </div>
 
@@ -740,39 +774,6 @@
             </div>
         </div>
 
-        <!-- Weekly Summary Table -->
-        <div class="weekly-summary">
-            <h2>Weekly Snap Count Summary</h2>
-            <p style="color: #ffffff; background-color: rgba(211, 47, 47, 0.8); padding: 8px 12px; border-radius: 6px; font-size: 0.9em; margin-bottom: 15px; border: 1px solid rgba(255, 255, 255, 0.3);">
-                <strong>Note:</strong> * indicates player started that week
-            </p>
-            <div class="summary-table-container">
-                <table class="summary-table">
-                    <thead>
-                        <tr>
-                            <th>Week</th>
-                            <th>Opponent</th>
-                            <th>Date</th>
-                            <th>Final Score</th>
-                            <th>Home/Away</th>
-                            <th>Offensive Snaps</th>
-                            <th>Defensive Snaps</th>
-                        </tr>
-                    </thead>
-                    <tbody id="weekly-summary-data">
-                        <!-- Data will be populated by JavaScript -->
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
-        <!-- Matchup Link -->
-        <div style="text-align: center; margin: 30px 0;">
-            <a href="maryland.html" class="matchup-btn">
-                <span class="matchup-icon">🏈</span>
-                View Maryland Terrapins
-            </a>
-        </div>
 
         <!-- Footer -->
         <div class="footer">
