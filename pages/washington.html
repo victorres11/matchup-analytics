@@ -74,6 +74,52 @@
             font-size: 0.9rem;
             margin-top: 10px;
         }
+
+        /* Year Filters */
+        .year-filters {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid #7B68EE;
+        }
+
+        .year-filters h4 {
+            color: #7B68EE;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+        .year-filter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+        }
+
+        .year-filter-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .year-filter-item input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            accent-color: #7B68EE;
+        }
+
+        .year-filter-item label {
+            font-size: 0.9em;
+            color: #333;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .year-filter-item label:hover {
+            color: #7B68EE;
+        }
         
         /* Matchup Navigation */
         .matchup-nav {
@@ -740,10 +786,49 @@
             
             <!-- Matchup Navigation -->
             <div class="matchup-nav">
-                <a href="maryland.html" class="matchup-btn">
-                    <span class="matchup-icon">🏈</span>
-                    View Maryland Terrapins
+                <a href="nebraska.html" class="matchup-btn">
+                    <span class="matchup-icon">🌽</span>
+                    View Nebraska Cornhuskers
                 </a>
+            </div>
+        </div>
+
+        <!-- Year Filters -->
+        <div class="year-filters">
+            <h4>Filter by Player Year</h4>
+            <div class="year-filter-grid">
+                <div class="year-filter-item">
+                    <input type="checkbox" id="year-fr" data-year="Fr." checked>
+                    <label for="year-fr">Fr.</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="year-r-fr" data-year="R-Fr." checked>
+                    <label for="year-r-fr">R-Fr.</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="year-so" data-year="So." checked>
+                    <label for="year-so">So.</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="year-r-so" data-year="R-So." checked>
+                    <label for="year-r-so">R-So.</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="year-jr" data-year="Jr." checked>
+                    <label for="year-jr">Jr.</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="year-r-jr" data-year="R-Jr." checked>
+                    <label for="year-r-jr">R-Jr.</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="year-sr" data-year="Sr." checked>
+                    <label for="year-sr">Sr.</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="year-r-sr" data-year="R-Sr." checked>
+                    <label for="year-r-sr">R-Sr.</label>
+                </div>
             </div>
         </div>
 
@@ -1049,10 +1134,10 @@
     <script>
         // Color mapping for opposing teams
         const opposingTeamColors = {
-            'COLO STATE': { primary: '#1f4d2c', secondary: '#FFFFFF', accent: '#FFD700' },
-            'UC DAVIS': { primary: '#003DA5', secondary: '#FFD700', accent: '#FFFFFF' },
-            'WASH STATE': { primary: '#981E32', secondary: '#F5F5F5', accent: '#FFD700' },
-            'OHIO STATE': { primary: '#BB0000', secondary: '#FFFFFF', accent: '#FFD700' },
+            'COLO STATE': { primary: '#8B5CF6', secondary: '#A78BFA', accent: '#C4B5FD' },
+            'UC DAVIS': { primary: '#7C3AED', secondary: '#8B5CF6', accent: '#A78BFA' },
+            'WASH STATE': { primary: '#6D28D9', secondary: '#7C3AED', accent: '#8B5CF6' },
+            'OHIO STATE': { primary: '#5B21B6', secondary: '#6D28D9', accent: '#7C3AED' },
             'BYE WEEK': { primary: '#CCCCCC', secondary: '#999999', accent: '#666666' }
         };
 
@@ -1345,6 +1430,54 @@
 
         }
 
+        // Year filtering functions
+        function applyYearFilters() {
+            // Apply year filters to all charts
+            const charts = ['offense-chart', 'defense-chart'];
+            charts.forEach(chartId => {
+                const chart = window[chartId];
+                if (chart) {
+                    filterChartByYear(chart, chartId);
+                }
+            });
+        }
+
+        function filterChartByYear(chart, canvasId) {
+            if (!chart || !chart.allPlayers) return;
+
+            const selectedYears = Array.from(document.querySelectorAll('.year-filter-item input[type="checkbox"]:checked'))
+                .map(cb => cb.dataset.year);
+
+            const hasSelectedYears = selectedYears.length > 0;
+
+            chart.data.datasets.forEach((dataset, datasetIndex) => {
+                dataset.backgroundColor = dataset.backgroundColor.map((color, index) => {
+                    const player = chart.allPlayers[index];
+                    if (!player) return color;
+
+                    const playerYear = player.year || '';
+                    const isAllowed = !hasSelectedYears || selectedYears.includes(playerYear);
+
+                    if (typeof color === 'string') {
+                        if (color.startsWith('#')) {
+                            // Convert hex to rgba
+                            const hex = color.replace('#', '');
+                            const r = parseInt(hex.substr(0, 2), 16);
+                            const g = parseInt(hex.substr(2, 2), 16);
+                            const b = parseInt(hex.substr(4, 2), 16);
+                            return `rgba(${r}, ${g}, ${b}, ${isAllowed ? 1 : 0.3})`;
+                        } else if (color.startsWith('rgba')) {
+                            // Update existing rgba
+                            return color.replace(/[\d.]+\)$/, `${isAllowed ? 1 : 0.3})`);
+                        }
+                    }
+                    return color;
+                });
+            });
+
+            chart.update('none');
+        }
+
         // Setup event listeners
         function setupEventListeners() {
             // Tab switching
@@ -1386,6 +1519,13 @@
                     
                     // Refresh the chart
                     createSpecialTeamsChart('st-chart', 'special_teams', 'special_teams');
+                });
+            });
+
+            // Year filter checkboxes
+            document.querySelectorAll('.year-filter-item input[type="checkbox"]').forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    applyYearFilters();
                 });
             });
         }
@@ -1519,6 +1659,7 @@
                 updateStats();
                 populateWeeklySummary();
                 setupEventListeners();
+                applyYearFilters();
 
             } catch (error) {
                 console.error('Error loading team data:', error);
@@ -1662,10 +1803,10 @@
             // Create datasets for each week
             const datasets = [];
             const opposingTeamColors = {
-                'COLO STATE': { primary: '#1f4d2c', secondary: '#FFFFFF', accent: '#FFD700' },
-                'UC DAVIS': { primary: '#003DA5', secondary: '#FFD700', accent: '#FFFFFF' },
-                'WASH STATE': { primary: '#981E32', secondary: '#F5F5F5', accent: '#FFD700' },
-                'OHIO STATE': { primary: '#BB0000', secondary: '#FFFFFF', accent: '#FFD700' },
+                'COLO STATE': { primary: '#8B5CF6', secondary: '#A78BFA', accent: '#C4B5FD' },
+                'UC DAVIS': { primary: '#7C3AED', secondary: '#8B5CF6', accent: '#A78BFA' },
+                'WASH STATE': { primary: '#6D28D9', secondary: '#7C3AED', accent: '#8B5CF6' },
+                'OHIO STATE': { primary: '#5B21B6', secondary: '#6D28D9', accent: '#7C3AED' },
                 'BYE WEEK': { primary: '#CCCCCC', secondary: '#999999', accent: '#666666' }
             };
 
@@ -1872,6 +2013,10 @@
                     }
                 }
             });
+
+            // Store allPlayers data for year filtering
+            const chart = window[canvasId + 'Chart'];
+            chart.allPlayers = allPlayers;
         }
 
         // Create diagonal pattern for missing games

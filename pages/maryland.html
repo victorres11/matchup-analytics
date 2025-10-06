@@ -842,9 +842,9 @@
             
             <!-- Matchup Navigation -->
             <div class="matchup-nav">
-                <a href="washington.html" class="matchup-btn">
-                    <span class="matchup-icon">🏈</span>
-                    View Washington Huskies
+                <a href="nebraska.html" class="matchup-btn">
+                    <span class="matchup-icon">🌽</span>
+                    View Nebraska Cornhuskers
                 </a>
             </div>
         </div>
@@ -1210,6 +1210,7 @@
             'N ILLINOIS': { primary: '#FF6600', secondary: '#000000', accent: '#FFFFFF' },
             'TOWSON': { primary: '#FFD700', secondary: '#000000', accent: '#FFFFFF' },
             'WISCONSIN': { primary: '#C8102E', secondary: '#FFFFFF', accent: '#000000' },
+            'WASHINGTON': { primary: '#7B68EE', secondary: '#8B5CF6', accent: '#A78BFA' },
             'BYE WEEK': { primary: '#CCCCCC', secondary: '#999999', accent: '#666666' }
         };
 
@@ -1272,35 +1273,78 @@
 
             const ctx = canvas.getContext('2d');
             
-            // Get active filter units
+            // Get special teams data
+            const specialTeamsData = teamData.special_teams || {};
+            const kickingSpecialists = teamData.kicking_specialists || [];
+            
+            // Collect all players who have special teams activity
+            const allPlayers = [];
+            Object.keys(specialTeamsData).forEach(category => {
+                specialTeamsData[category].forEach(player => {
+                    const existingPlayer = allPlayers.find(p => p.jersey === player.jersey);
+                    if (existingPlayer) {
+                        existingPlayer[category] = player.attempts || 0;
+                    } else {
+                        const newPlayer = {
+                            jersey: player.jersey,
+                            playerName: player.playerName,
+                            [category]: player.attempts || 0
+                        };
+                        allPlayers.push(newPlayer);
+                    }
+                });
+            });
+
+            // Add returners data from kicking_specialists
+            kickingSpecialists.forEach(specialist => {
+                if (specialist.category === 'Kick_Returns' || specialist.category === 'Punt_Returns') {
+                    const existingPlayer = allPlayers.find(p => p.jersey === specialist.jersey);
+                    if (existingPlayer) {
+                        existingPlayer[specialist.category] = specialist.returns || 0;
+                        existingPlayer[specialist.category + '_yards'] = specialist.yards || 0;
+                    } else {
+                        const newPlayer = {
+                            jersey: specialist.jersey,
+                            playerName: specialist.playerName,
+                            [specialist.category]: specialist.returns || 0,
+                            [specialist.category + '_yards']: specialist.yards || 0
+                        };
+                        allPlayers.push(newPlayer);
+                    }
+                }
+            });
+            
+            // Get active units from checkboxes
             const getActiveUnits = () => {
                 const checkboxes = document.querySelectorAll('.unit-filters input[type="checkbox"]:checked');
                 const activeUnits = Array.from(checkboxes).map(cb => cb.dataset.unit);
                 return activeUnits;
             };
             
-            // Get special teams players from aggregate data
-            const allPlayers = teamData.special_teams[positionGroup] || [];
-            
-            // Get kicking specialists data for highlighting
-            const kickingSpecialists = teamData.kicking_specialists || [];
-            
             // Filter players who have activity in active units
             const activeUnits = getActiveUnits();
             const filteredPlayers = allPlayers.filter(player => {
-                return activeUnits.some(unit => player[unit] > 0);
+                // Only show players who have activity in the currently selected units
+                return activeUnits.some(unit => {
+                    // Check both the unit and its yards equivalent
+                    return (player[unit] > 0) || (player[unit + '_yards'] > 0);
+                });
             });
             
             // Sort by total activity for the active units (most to least)
             filteredPlayers.sort((a, b) => {
-                const aTotal = activeUnits.reduce((sum, unit) => sum + (a[unit] || 0), 0);
-                const bTotal = activeUnits.reduce((sum, unit) => sum + (b[unit] || 0), 0);
+                const aTotal = activeUnits.reduce((sum, unit) => {
+                    return sum + (a[unit] || 0) + (a[unit + '_yards'] || 0);
+                }, 0);
+                const bTotal = activeUnits.reduce((sum, unit) => {
+                    return sum + (b[unit] || 0) + (b[unit + '_yards'] || 0);
+                }, 0);
                 return bTotal - aTotal;
             });
 
             // Prepare data for Chart.js
             const labels = filteredPlayers.map(player => {
-                const nameParts = player.name.split(' ');
+                const nameParts = player.playerName.split(' ');
                 let lastName = nameParts[nameParts.length - 1];
                 
                 // Handle name suffixes
@@ -1342,71 +1386,47 @@
             // Create datasets for each special teams unit (only active ones)
             const datasets = [];
             const unitConfigs = [
-                { key: 'kret', label: 'Kick Return', color: '#FF6B6B' },
-                { key: 'kcov', label: 'Kick Coverage', color: '#4ECDC4' },
-                { key: 'pret', label: 'Punt Return', color: '#9B59B6' },
-                { key: 'pcov', label: 'Punt Coverage', color: '#96CEB4' },
-                { key: 'fgblk', label: 'Field Goal Block', color: '#FFEAA7' },
-                { key: 'fgk', label: 'Field Goal Kick', color: '#DDA0DD' }
+                { key: 'Kick_Returns', label: 'Kick Return', color: '#FF6B6B' },
+                { key: 'Kick_Returns_yards', label: 'Kick Return Yards', color: '#FF8E8E' },
+                { key: 'Kick_Coverage', label: 'Kick Coverage', color: '#4ECDC4' },
+                { key: 'Punt_Returns', label: 'Punt Return', color: '#45B7D1' },
+                { key: 'Punt_Returns_yards', label: 'Punt Return Yards', color: '#6BC5D1' },
+                { key: 'Punt_Coverage', label: 'Punt Coverage', color: '#96CEB4' },
+                { key: 'Field_Goal_Block', label: 'Field Goal Block', color: '#FFEAA7' },
+                { key: 'Field_Goals', label: 'Field Goals', color: '#DDA0DD' }
             ];
 
-            unitConfigs.forEach(unit => {
-                if (activeUnits.includes(unit.key)) {
-                    datasets.push({
-                        label: unit.label,
-                        data: filteredPlayers.map(player => player[unit.key] || 0),
-                        backgroundColor: filteredPlayers.map(player => {
-                            // Make returner bars stand out with different styling
-                            if (player.returnerInfo) {
-                                if ((unit.key === 'pret' && player.returnerInfo.isPRReturner) || 
-                                    (unit.key === 'kret' && player.returnerInfo.isKRReturner)) {
-                                    return unit.color; // Keep original color but we'll add border
+            unitConfigs.forEach(config => {
+                // Only show datasets for active units
+                const isActiveUnit = activeUnits.includes(config.key) || 
+                                   (config.key.endsWith('_yards') && 
+                                    activeUnits.includes(config.key.replace('_yards', '')));
+                
+                if (isActiveUnit) {
+                    const unitData = filteredPlayers.map(player => player[config.key] || 0);
+                    const hasData = unitData.some(value => value > 0);
+                    
+                    if (hasData) {
+                        datasets.push({
+                            label: config.label,
+                            data: unitData,
+                            backgroundColor: unitData.map(value => 
+                                value > 0 ? config.color : 'rgba(200, 200, 200, 0.3)'
+                            ),
+                            borderColor: config.color,
+                            borderWidth: unitData.map(value => {
+                                if (value > 0) {
+                                    // Check if this player is a returner or specialist
+                                    const player = filteredPlayers[unitData.indexOf(value)];
+                                    if (player.returnerInfo && (player.returnerInfo.isPRReturner || player.returnerInfo.isKRReturner)) {
+                                        return 3; // Thick border for returners and specialists
+                                    }
                                 }
-                            }
-                            return unit.color;
-                        }),
-                        borderColor: filteredPlayers.map(player => {
-                            // Check if player is a specialist using kicking specialists data
-                            const specialist = kickingSpecialists.find(ks => 
-                                ks.jersey === player.jersey && 
-                                (ks.category === 'Punting' || ks.category === 'Kickoffs' || ks.category === 'Field_Goals')
-                            );
-                            
-                            // Check if player is a returner using kicking specialists data
-                            const returner = kickingSpecialists.find(ks => 
-                                ks.jersey === player.jersey && 
-                                ((unit.key === 'pret' && ks.category === 'Punt_Returns') || 
-                                 (unit.key === 'kret' && ks.category === 'Kick_Returns'))
-                            );
-                            
-                            if (returner) {
-                                return '#00FF00'; // Bright green border for returners
-                            } else if (specialist) {
-                                return '#FFFF00'; // Yellow border for specialists
-                            }
-                            return unit.color;
-                        }),
-                        borderWidth: filteredPlayers.map(player => {
-                            // Check if player is a specialist using kicking specialists data
-                            const specialist = kickingSpecialists.find(ks => 
-                                ks.jersey === player.jersey && 
-                                (ks.category === 'Punting' || ks.category === 'Kickoffs' || ks.category === 'Field_Goals')
-                            );
-                            
-                            // Check if player is a returner using kicking specialists data
-                            const returner = kickingSpecialists.find(ks => 
-                                ks.jersey === player.jersey && 
-                                ((unit.key === 'pret' && ks.category === 'Punt_Returns') || 
-                                 (unit.key === 'kret' && ks.category === 'Kick_Returns'))
-                            );
-                            
-                            if (returner || specialist) {
-                                return 3; // Thick border for returners and specialists
-                            }
-                            return 1;
-                        }),
-                        borderRadius: 4
-                    });
+                                return 1;
+                            }),
+                            borderRadius: 4
+                        });
+                    }
                 }
             });
 
@@ -1425,6 +1445,24 @@
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
+                    indexAxis: 'y', // Horizontal bars to fit more players
+                    scales: {
+                        x: {
+                            stacked: true,
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Special Teams Activity'
+                            }
+                        },
+                        y: {
+                            stacked: true,
+                            ticks: {
+                                maxRotation: 0,
+                                minRotation: 0
+                            }
+                        }
+                    },
                     plugins: {
                         title: {
                             display: false
@@ -1433,10 +1471,8 @@
                             display: true,
                             position: 'top',
                             labels: {
-                                color: '#333',
-                                font: {
-                                    size: 12
-                                }
+                                boxWidth: 12,
+                                padding: 10
                             }
                         },
                         tooltip: {
@@ -1502,33 +1538,6 @@
                                     }
                                     
                                     return label;
-                                }
-                            }
-                        }
-                    },
-                    scales: {
-                        x: {
-                            stacked: true,
-                            grid: {
-                                display: false
-                            },
-                            ticks: {
-                                color: '#666',
-                                font: {
-                                    size: 11
-                                }
-                            }
-                        },
-                        y: {
-                            stacked: true,
-                            beginAtZero: true,
-                            grid: {
-                                color: 'rgba(0,0,0,0.1)'
-                            },
-                            ticks: {
-                                color: '#666',
-                                font: {
-                                    size: 11
                                 }
                             }
                         }
@@ -1837,13 +1846,6 @@
                 }
                 teamData = await response.json();
 
-                // Load special teams data
-                const stResponse = await fetch('../data/csv/team_data/maryland/maryland_special_teams_season.csv');
-                if (stResponse.ok) {
-                    const stCsv = await stResponse.text();
-                    // Process special teams CSV if needed
-                }
-
                 // Initialize charts and tables
                 initializeCharts();
                 populateAggregateTables();
@@ -2000,6 +2002,7 @@
                 'N ILLINOIS': { primary: '#FF6600', secondary: '#000000', accent: '#FFFFFF' },
                 'TOWSON': { primary: '#FFD700', secondary: '#000000', accent: '#FFFFFF' },
                 'WISCONSIN': { primary: '#C8102E', secondary: '#FFFFFF', accent: '#000000' },
+                'WASHINGTON': { primary: '#7B68EE', secondary: '#8B5CF6', accent: '#A78BFA' },
                 'BYE WEEK': { primary: '#CCCCCC', secondary: '#999999', accent: '#666666' }
             };
 
