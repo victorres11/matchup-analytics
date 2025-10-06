@@ -485,6 +485,55 @@
             color: #d32f2f;
         }
 
+        /* Position Group Styling - Alternating Background Colors */
+        .position-group-wr {
+            background: rgba(255, 107, 107, 0.3) !important;
+        }
+
+        .position-group-te {
+            background: rgba(78, 205, 196, 0.2) !important;
+        }
+
+        .position-group-rb {
+            background: rgba(69, 183, 209, 0.3) !important;
+        }
+
+        .position-group-ol {
+            background: rgba(150, 206, 180, 0.2) !important;
+        }
+
+        .position-group-qb {
+            background: rgba(255, 193, 7, 0.3) !important;
+        }
+
+        .position-group-dl {
+            background: rgba(255, 234, 167, 0.3) !important;
+        }
+
+        .position-group-lb {
+            background: rgba(221, 160, 221, 0.2) !important;
+        }
+
+        .position-group-db {
+            background: rgba(255, 182, 193, 0.3) !important;
+        }
+        
+        .position-group-specialist {
+            background: rgba(255, 255, 0, 0.2) !important;
+        }
+        
+        .position-group-returner {
+            background: rgba(0, 255, 0, 0.2) !important;
+        }
+        
+        .position-group-kick-returner {
+            background: rgba(255, 107, 107, 0.2) !important;
+        }
+        
+        .position-group-punt-returner {
+            background: rgba(155, 89, 182, 0.2) !important;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .container {
@@ -1174,13 +1223,13 @@
 
         function getPositionGroupFromPosition(position) {
             const pos = position.toUpperCase();
-            if (pos.includes('QB')) return 'qb';
-            if (pos.includes('HB') || pos.includes('RB') || pos.includes('FB')) return 'rb';
-            if (pos.includes('WR') || pos.includes('SLWR') || pos.includes('SRWR')) return 'wr';
-            if (pos.includes('TE') || pos.includes('TEL') || pos.includes('TER')) return 'te';
-            if (pos.includes('C') || pos.includes('G') || pos.includes('T') || pos.includes('LG') || pos.includes('RG') || pos.includes('LT') || pos.includes('RT')) return 'ol';
-            if (pos.includes('DL') || pos.includes('DT') || pos.includes('DE') || pos.includes('NT') || pos.includes('DRT') || pos.includes('DLT') || pos.includes('DRE') || pos.includes('DLE')) return 'dl';
-            if (pos.includes('LB') || pos.includes('MLB') || pos.includes('WLB') || pos.includes('ROLB') || pos.includes('LOLB')) return 'lb';
+            if (pos.includes('QB') || pos.includes('QUARTERBACK')) return 'qb';
+            if (pos.includes('HB') || pos.includes('RB') || pos.includes('FB') || pos.includes('RUNNING') || pos.includes('BACK')) return 'rb';
+            if (pos.includes('WR') || pos.includes('SLWR') || pos.includes('SRWR') || pos.includes('RECEIVER')) return 'wr';
+            if (pos.includes('TE') || pos.includes('TEL') || pos.includes('TER') || pos.includes('TIGHT')) return 'te';
+            if (pos.includes('C') || pos.includes('G') || pos.includes('T') || pos.includes('LG') || pos.includes('RG') || pos.includes('LT') || pos.includes('RT') || pos.includes('OL') || pos.includes('TACKLE') || pos.includes('GUARD') || pos.includes('CENTER')) return 'ol';
+            if (pos.includes('DL') || pos.includes('DT') || pos.includes('DE') || pos.includes('NT') || pos.includes('DRT') || pos.includes('DLT') || pos.includes('DRE') || pos.includes('DLE') || pos.includes('RE') || pos.includes('LE')) return 'dl';
+            if (pos.includes('LB') || pos.includes('MLB') || pos.includes('WLB') || pos.includes('ROLB') || pos.includes('LOLB') || pos.includes('LINEBACKER')) return 'lb';
             if (pos.includes('DB') || pos.includes('CB') || pos.includes('S') || pos.includes('FS') || pos.includes('SS') || pos.includes('LCB') || pos.includes('RCB') || pos.includes('SCB')) return 'db';
             return 'unknown';
         }
