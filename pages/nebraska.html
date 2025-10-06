@@ -679,8 +679,8 @@
                 <div class="sort-controls">
                     <button class="sort-btn active" id="sort-offense-snaps" onclick="sortAggregateTable('offense', 'snaps')">Sort by Total Snaps</button>
                     <button class="sort-btn" id="sort-offense-jersey" onclick="sortAggregateTable('offense', 'jersey')">Sort by Jersey #</button>
-                    <button class="sort-btn" id="sort-offense-position" onclick="sortAggregateTable('offense', 'position')">Sort by Position</button>
-                    <span class="sort-info" id="sort-offense-info">Default: Total snaps (high to low)</span>
+                    <button class="sort-btn" id="sort-offense-position" onclick="sortAggregateTable('offense', 'position')">Sort by Position Group</button>
+                    <span class="sort-info" id="sort-offense-info">Default: Position group, high to low snaps</span>
                 </div>
                 <div class="aggregate-table-container">
                     <table class="aggregate-table" id="offense-aggregate-table">
@@ -734,8 +734,8 @@
                 <div class="sort-controls">
                     <button class="sort-btn active" id="sort-defense-snaps" onclick="sortAggregateTable('defense', 'snaps')">Sort by Total Snaps</button>
                     <button class="sort-btn" id="sort-defense-jersey" onclick="sortAggregateTable('defense', 'jersey')">Sort by Jersey #</button>
-                    <button class="sort-btn" id="sort-defense-position" onclick="sortAggregateTable('defense', 'position')">Sort by Position</button>
-                    <span class="sort-info" id="sort-defense-info">Default: Total snaps (high to low)</span>
+                    <button class="sort-btn" id="sort-defense-position" onclick="sortAggregateTable('defense', 'position')">Sort by Position Group</button>
+                    <span class="sort-info" id="sort-defense-info">Default: Position group, high to low snaps</span>
                 </div>
                 <div class="aggregate-table-container">
                     <table class="aggregate-table" id="defense-aggregate-table">
@@ -931,7 +931,7 @@
                     sortText = 'Jersey number (low to high)';
                     break;
                 case 'position':
-                    sortText = 'Position group (alphabetical)';
+                    sortText = 'Position group, high to low snaps';
                     break;
             }
             sortInfo.textContent = sortText;
@@ -947,7 +947,10 @@
                     case 'jersey':
                         return aData.jerseyNum - bData.jerseyNum;
                     case 'position':
-                        return aData.position.localeCompare(bData.position);
+                        // Sort by position group first, then by snaps within group
+                        const groupComparison = aData.positionGroup.localeCompare(bData.positionGroup);
+                        if (groupComparison !== 0) return groupComparison;
+                        return bData.totalSnaps - aData.totalSnaps;
                     default:
                         return 0;
                 }
@@ -974,6 +977,7 @@
                 jersey: jersey,
                 jerseyNum: jerseyNum,
                 position: position,
+                positionGroup: getPositionGroupFromPosition(position),
                 totalSnaps: totalSnaps
             };
         }
@@ -1030,7 +1034,7 @@
                 });
             });
             
-            // Convert to array and sort by total snaps
+            // Convert to array and sort by position group, then by total snaps
             const players = Array.from(playerMap.values()).map(player => {
                 const totalSnaps = availableWeeks.reduce((sum, week) => {
                     return sum + (player.weeks[week.week] || 0);
@@ -1038,16 +1042,23 @@
                 
                 return {
                     ...player,
-                    totalSnaps: totalSnaps
+                    totalSnaps: totalSnaps,
+                    positionGroup: getPositionGroupFromPosition(player.position)
                 };
-            }).sort((a, b) => b.totalSnaps - a.totalSnaps);
+            }).sort((a, b) => {
+                // First sort by position group
+                const groupComparison = a.positionGroup.localeCompare(b.positionGroup);
+                if (groupComparison !== 0) return groupComparison;
+                // Then by total snaps (high to low)
+                return b.totalSnaps - a.totalSnaps;
+            });
             
             // Populate table rows
             players.forEach(player => {
                 const row = document.createElement('tr');
                 
                 // Add position group styling
-                const positionGroup = getPositionGroupFromPosition(player.position);
+                const positionGroup = player.positionGroup;
                 row.className = `position-group-${positionGroup}`;
                 
                 const weekCells = availableWeeks.map(week => {
@@ -1114,7 +1125,7 @@
                 });
             });
             
-            // Convert to array and sort by total snaps
+            // Convert to array and sort by position group, then by total snaps
             const players = Array.from(playerMap.values()).map(player => {
                 const totalSnaps = availableWeeks.reduce((sum, week) => {
                     return sum + (player.weeks[week.week] || 0);
@@ -1122,16 +1133,23 @@
                 
                 return {
                     ...player,
-                    totalSnaps: totalSnaps
+                    totalSnaps: totalSnaps,
+                    positionGroup: getPositionGroupFromPosition(player.position)
                 };
-            }).sort((a, b) => b.totalSnaps - a.totalSnaps);
+            }).sort((a, b) => {
+                // First sort by position group
+                const groupComparison = a.positionGroup.localeCompare(b.positionGroup);
+                if (groupComparison !== 0) return groupComparison;
+                // Then by total snaps (high to low)
+                return b.totalSnaps - a.totalSnaps;
+            });
             
             // Populate table rows
             players.forEach(player => {
                 const row = document.createElement('tr');
                 
                 // Add position group styling
-                const positionGroup = getPositionGroupFromPosition(player.position);
+                const positionGroup = player.positionGroup;
                 row.className = `position-group-${positionGroup}`;
                 
                 const weekCells = availableWeeks.map(week => {
