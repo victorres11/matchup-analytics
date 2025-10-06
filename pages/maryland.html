@@ -724,6 +724,43 @@
             background: rgba(220, 38, 38, 0.1);
         }
 
+        /* Sorting controls */
+        .sort-controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+
+        .sort-btn {
+            background: linear-gradient(135deg, #E31B23, #B71C1C);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(227, 27, 35, 0.3);
+        }
+
+        .sort-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(227, 27, 35, 0.4);
+        }
+
+        .sort-btn.active {
+            background: linear-gradient(135deg, #B71C1C, #8B0000);
+            box-shadow: 0 2px 8px rgba(183, 28, 28, 0.5);
+        }
+
+        .sort-info {
+            color: #666;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+
         /* Year Filter Styles */
         .year-filters {
             background: rgba(255, 255, 255, 0.95);
@@ -968,6 +1005,12 @@
             <!-- Offense Aggregate Data Table -->
             <div class="position-group">
                 <h3 class="position-title">Offense Snap Counts - All Positions</h3>
+                <div class="sort-controls">
+                    <button class="sort-btn active" id="sort-offense-snaps" onclick="sortAggregateTable('offense', 'snaps')">Sort by Total Snaps</button>
+                    <button class="sort-btn" id="sort-offense-jersey" onclick="sortAggregateTable('offense', 'jersey')">Sort by Jersey #</button>
+                    <button class="sort-btn" id="sort-offense-position" onclick="sortAggregateTable('offense', 'position')">Sort by Position</button>
+                    <span class="sort-info" id="sort-offense-info">Default: Total snaps (high to low)</span>
+                </div>
                 <div class="aggregate-table-container">
                     <table class="aggregate-table" id="offense-aggregate-table">
                         <thead>
@@ -1022,6 +1065,12 @@
             <!-- Defense Aggregate Data Table -->
             <div class="position-group">
                 <h3 class="position-title">Defense Snap Counts - All Positions</h3>
+                <div class="sort-controls">
+                    <button class="sort-btn active" id="sort-defense-snaps" onclick="sortAggregateTable('defense', 'snaps')">Sort by Total Snaps</button>
+                    <button class="sort-btn" id="sort-defense-jersey" onclick="sortAggregateTable('defense', 'jersey')">Sort by Jersey #</button>
+                    <button class="sort-btn" id="sort-defense-position" onclick="sortAggregateTable('defense', 'position')">Sort by Position</button>
+                    <span class="sort-info" id="sort-defense-info">Default: Total snaps (high to low)</span>
+                </div>
                 <div class="aggregate-table-container">
                     <table class="aggregate-table" id="defense-aggregate-table">
                         <thead>
@@ -1544,6 +1593,75 @@
             });
             
             chart.update();
+        }
+
+        // Sorting functions for aggregate tables
+        function sortAggregateTable(side, sortBy) {
+            const tableBody = document.getElementById(`${side}-aggregate-body`);
+            const rows = Array.from(tableBody.querySelectorAll('tr'));
+            
+            // Update button states
+            document.querySelectorAll(`#sort-${side}-snaps, #sort-${side}-jersey, #sort-${side}-position`).forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById(`sort-${side}-${sortBy}`).classList.add('active');
+            
+            // Update sort info
+            const sortInfo = document.getElementById(`sort-${side}-info`);
+            let sortText = '';
+            switch(sortBy) {
+                case 'snaps':
+                    sortText = 'Total snaps (high to low)';
+                    break;
+                case 'jersey':
+                    sortText = 'Jersey number (low to high)';
+                    break;
+                case 'position':
+                    sortText = 'Position group (alphabetical)';
+                    break;
+            }
+            sortInfo.textContent = sortText;
+            
+            // Sort rows
+            rows.sort((a, b) => {
+                const aData = getRowData(a);
+                const bData = getRowData(b);
+                
+                switch(sortBy) {
+                    case 'snaps':
+                        return bData.totalSnaps - aData.totalSnaps;
+                    case 'jersey':
+                        return aData.jerseyNum - bData.jerseyNum;
+                    case 'position':
+                        return aData.position.localeCompare(bData.position);
+                    default:
+                        return 0;
+                }
+            });
+            
+            // Re-append sorted rows
+            rows.forEach(row => tableBody.appendChild(row));
+        }
+        
+        function getRowData(row) {
+            const cells = row.querySelectorAll('td');
+            const jersey = cells[0].textContent.trim();
+            const position = cells[2].textContent.trim();
+            const totalSnaps = parseInt(cells[cells.length - 1].textContent.trim()) || 0;
+            
+            // Extract jersey number (handle D01, S01, etc.)
+            let jerseyNum = 0;
+            const jerseyMatch = jersey.match(/(\d+)/);
+            if (jerseyMatch) {
+                jerseyNum = parseInt(jerseyMatch[1]);
+            }
+            
+            return {
+                jersey: jersey,
+                jerseyNum: jerseyNum,
+                position: position,
+                totalSnaps: totalSnaps
+            };
         }
 
         // Setup event listeners

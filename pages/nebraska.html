@@ -276,6 +276,113 @@
             background: rgba(220, 38, 38, 0.1);
         }
 
+        /* Sorting controls */
+        .sort-controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            align-items: center;
+        }
+
+        .sort-btn {
+            background: linear-gradient(135deg, #d32f2f, #b71c1c);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(211, 47, 47, 0.3);
+        }
+
+        .sort-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(211, 47, 47, 0.4);
+        }
+
+        .sort-btn.active {
+            background: linear-gradient(135deg, #b71c1c, #8B0000);
+            box-shadow: 0 2px 8px rgba(183, 28, 28, 0.5);
+        }
+
+        .sort-info {
+            color: #666;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+
+        /* Aggregate Table Styles */
+        .aggregate-table-container {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .aggregate-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .aggregate-table th {
+            background: linear-gradient(135deg, #d32f2f 0%, #ffffff 100%);
+            color: white;
+            padding: 15px 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .aggregate-table td {
+            padding: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        .aggregate-table tr:hover {
+            background: rgba(211, 47, 47, 0.1);
+        }
+
+        .aggregate-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .aggregate-table .jersey {
+            font-weight: 700;
+            color: #d32f2f;
+            text-align: center;
+            width: 60px;
+        }
+
+        .aggregate-table .player-name {
+            font-weight: 600;
+            color: #d32f2f;
+        }
+
+        .aggregate-table .position {
+            font-weight: 500;
+            color: #666;
+            text-align: center;
+        }
+
+        .aggregate-table .snap-count {
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .aggregate-table .total {
+            text-align: center;
+            font-weight: 700;
+            color: #d32f2f;
+            background: rgba(211, 47, 47, 0.1);
+        }
+
         .footer {
             text-align: center;
             margin-top: 40px;
@@ -405,6 +512,7 @@
             <button class="tab active" data-tab="offense">OFFENSIVE</button>
             <button class="tab" data-tab="defense">DEFENSIVE</button>
             <button class="tab" data-tab="special-teams">SPECIAL TEAMS</button>
+            <button class="tab" data-tab="aggregate">AGGREGATE</button>
         </div>
 
         <!-- Offense Tab -->
@@ -479,6 +587,71 @@
             </div>
         </div>
 
+        <!-- Aggregate Tab -->
+        <div class="tab-content" id="aggregate">
+            <!-- Offense Aggregate Data Table -->
+            <div class="position-group">
+                <h3 class="position-title">Offense Snap Counts - All Positions</h3>
+                <div class="sort-controls">
+                    <button class="sort-btn active" id="sort-offense-snaps" onclick="sortAggregateTable('offense', 'snaps')">Sort by Total Snaps</button>
+                    <button class="sort-btn" id="sort-offense-jersey" onclick="sortAggregateTable('offense', 'jersey')">Sort by Jersey #</button>
+                    <button class="sort-btn" id="sort-offense-position" onclick="sortAggregateTable('offense', 'position')">Sort by Position</button>
+                    <span class="sort-info" id="sort-offense-info">Default: Total snaps (high to low)</span>
+                </div>
+                <div class="aggregate-table-container">
+                    <table class="aggregate-table" id="offense-aggregate-table">
+                        <thead>
+                            <tr>
+                                <th>Jersey</th>
+                                <th>Player</th>
+                                <th>Position</th>
+                                <th>Week 1</th>
+                                <th>Week 2</th>
+                                <th>Week 3</th>
+                                <th>Week 4</th>
+                                <th>Week 5</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="offense-aggregate-body">
+                            <!-- Data will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Defense Aggregate Data Table -->
+            <div class="position-group">
+                <h3 class="position-title">Defense Snap Counts - All Positions</h3>
+                <div class="sort-controls">
+                    <button class="sort-btn active" id="sort-defense-snaps" onclick="sortAggregateTable('defense', 'snaps')">Sort by Total Snaps</button>
+                    <button class="sort-btn" id="sort-defense-jersey" onclick="sortAggregateTable('defense', 'jersey')">Sort by Jersey #</button>
+                    <button class="sort-btn" id="sort-defense-position" onclick="sortAggregateTable('defense', 'position')">Sort by Position</button>
+                    <span class="sort-info" id="sort-defense-info">Default: Total snaps (high to low)</span>
+                </div>
+                <div class="aggregate-table-container">
+                    <table class="aggregate-table" id="defense-aggregate-table">
+                        <thead>
+                            <tr>
+                                <th>Jersey</th>
+                                <th>Player</th>
+                                <th>Position</th>
+                                <th>Week 1</th>
+                                <th>Week 2</th>
+                                <th>Week 3</th>
+                                <th>Week 4</th>
+                                <th>Week 5</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="defense-aggregate-body">
+                            <!-- Data will be populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
         <!-- Matchup Link -->
         <div style="text-align: center; margin: 30px 0;">
             <a href="maryland.html" class="matchup-btn">
@@ -520,9 +693,12 @@
                 // Update stats
                 updateStats();
                 
+                // Populate aggregate tables
+                populateAggregateTables();
+                
                 // Setup event listeners
                 setupEventListeners();
-                
+
             } catch (error) {
                 console.error('Error loading team data:', error);
             }
@@ -603,6 +779,264 @@
             });
             
             chart.update();
+        }
+
+        // Sorting functions for aggregate tables
+        function sortAggregateTable(side, sortBy) {
+            const tableBody = document.getElementById(`${side}-aggregate-body`);
+            const rows = Array.from(tableBody.querySelectorAll('tr'));
+            
+            // Update button states
+            document.querySelectorAll(`#sort-${side}-snaps, #sort-${side}-jersey, #sort-${side}-position`).forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.getElementById(`sort-${side}-${sortBy}`).classList.add('active');
+            
+            // Update sort info
+            const sortInfo = document.getElementById(`sort-${side}-info`);
+            let sortText = '';
+            switch(sortBy) {
+                case 'snaps':
+                    sortText = 'Total snaps (high to low)';
+                    break;
+                case 'jersey':
+                    sortText = 'Jersey number (low to high)';
+                    break;
+                case 'position':
+                    sortText = 'Position group (alphabetical)';
+                    break;
+            }
+            sortInfo.textContent = sortText;
+            
+            // Sort rows
+            rows.sort((a, b) => {
+                const aData = getRowData(a);
+                const bData = getRowData(b);
+                
+                switch(sortBy) {
+                    case 'snaps':
+                        return bData.totalSnaps - aData.totalSnaps;
+                    case 'jersey':
+                        return aData.jerseyNum - bData.jerseyNum;
+                    case 'position':
+                        return aData.position.localeCompare(bData.position);
+                    default:
+                        return 0;
+                }
+            });
+            
+            // Re-append sorted rows
+            rows.forEach(row => tableBody.appendChild(row));
+        }
+        
+        function getRowData(row) {
+            const cells = row.querySelectorAll('td');
+            const jersey = cells[0].textContent.trim();
+            const position = cells[2].textContent.trim();
+            const totalSnaps = parseInt(cells[cells.length - 1].textContent.trim()) || 0;
+            
+            // Extract jersey number (handle D01, S01, etc.)
+            let jerseyNum = 0;
+            const jerseyMatch = jersey.match(/(\d+)/);
+            if (jerseyMatch) {
+                jerseyNum = parseInt(jerseyMatch[1]);
+            }
+            
+            return {
+                jersey: jersey,
+                jerseyNum: jerseyNum,
+                position: position,
+                totalSnaps: totalSnaps
+            };
+        }
+
+        // Populate aggregate tables
+        function populateAggregateTables() {
+            if (!teamData) return;
+
+            populateOffenseAggregateTable();
+            populateDefenseAggregateTable();
+        }
+
+        function populateOffenseAggregateTable() {
+            if (!teamData) return;
+
+            const tableBody = document.getElementById('offense-aggregate-body');
+            
+            // Clear existing content
+            tableBody.innerHTML = '';
+            
+            // Get available weeks (excluding BYE weeks)
+            const availableWeeks = teamData.weeks.filter(week => 
+                week.offense && Object.keys(week.offense).length > 0
+            );
+            
+            // Create header row with week columns
+            const headerRow = document.querySelector('#offense-aggregate-table thead tr');
+            headerRow.innerHTML = `
+                <th>Jersey</th>
+                <th>Player</th>
+                <th>Position</th>
+                ${availableWeeks.map(week => `<th>Week ${week.week}</th>`).join('')}
+                <th>Total</th>
+            `;
+            
+            // Collect all players from all weeks
+            const playerMap = new Map();
+            
+            availableWeeks.forEach(week => {
+                Object.keys(week.offense).forEach(positionGroup => {
+                    week.offense[positionGroup].forEach(player => {
+                        const key = `${player.name}-${player.jersey}`;
+                        if (!playerMap.has(key)) {
+                            playerMap.set(key, {
+                                name: player.name,
+                                jersey: player.jersey,
+                                position: player.position,
+                                year: player.year || 'Unknown',
+                                weeks: {}
+                            });
+                        }
+                        playerMap.get(key).weeks[week.week] = player.snaps;
+                    });
+                });
+            });
+            
+            // Convert to array and sort by total snaps
+            const players = Array.from(playerMap.values()).map(player => {
+                const totalSnaps = availableWeeks.reduce((sum, week) => {
+                    return sum + (player.weeks[week.week] || 0);
+                }, 0);
+                
+                return {
+                    ...player,
+                    totalSnaps: totalSnaps
+                };
+            }).sort((a, b) => b.totalSnaps - a.totalSnaps);
+            
+            // Populate table rows
+            players.forEach(player => {
+                const row = document.createElement('tr');
+                
+                // Add position group styling
+                const positionGroup = getPositionGroupFromPosition(player.position);
+                row.className = `position-group-${positionGroup}`;
+                
+                const weekCells = availableWeeks.map(week => {
+                    const snaps = player.weeks[week.week] || 0;
+                    const cellClass = snaps === 0 ? 'zero-snap' : 'snap-count';
+                    return `<td class="${cellClass}">${snaps}</td>`;
+                }).join('');
+                
+                const yearDisplay = player.year && player.year !== 'Unknown' ? ` (${player.year})` : '';
+                
+                row.innerHTML = `
+                    <td class="jersey">${player.jersey}</td>
+                    <td class="player-name">${player.name}${yearDisplay}</td>
+                    <td class="position">${player.position}</td>
+                    ${weekCells}
+                    <td class="total">${player.totalSnaps}</td>
+                `;
+                
+                tableBody.appendChild(row);
+            });
+        }
+
+        function populateDefenseAggregateTable() {
+            if (!teamData) return;
+
+            const tableBody = document.getElementById('defense-aggregate-body');
+            
+            // Clear existing content
+            tableBody.innerHTML = '';
+            
+            // Get available weeks (excluding BYE weeks)
+            const availableWeeks = teamData.weeks.filter(week => 
+                week.defense && Object.keys(week.defense).length > 0
+            );
+            
+            // Create header row with week columns
+            const headerRow = document.querySelector('#defense-aggregate-table thead tr');
+            headerRow.innerHTML = `
+                <th>Jersey</th>
+                <th>Player</th>
+                <th>Position</th>
+                ${availableWeeks.map(week => `<th>Week ${week.week}</th>`).join('')}
+                <th>Total</th>
+            `;
+            
+            // Collect all players from all weeks
+            const playerMap = new Map();
+            
+            availableWeeks.forEach(week => {
+                Object.keys(week.defense).forEach(positionGroup => {
+                    week.defense[positionGroup].forEach(player => {
+                        const key = `${player.name}-${player.jersey}`;
+                        if (!playerMap.has(key)) {
+                            playerMap.set(key, {
+                                name: player.name,
+                                jersey: player.jersey,
+                                position: player.position,
+                                year: player.year || 'Unknown',
+                                weeks: {}
+                            });
+                        }
+                        playerMap.get(key).weeks[week.week] = player.snaps;
+                    });
+                });
+            });
+            
+            // Convert to array and sort by total snaps
+            const players = Array.from(playerMap.values()).map(player => {
+                const totalSnaps = availableWeeks.reduce((sum, week) => {
+                    return sum + (player.weeks[week.week] || 0);
+                }, 0);
+                
+                return {
+                    ...player,
+                    totalSnaps: totalSnaps
+                };
+            }).sort((a, b) => b.totalSnaps - a.totalSnaps);
+            
+            // Populate table rows
+            players.forEach(player => {
+                const row = document.createElement('tr');
+                
+                // Add position group styling
+                const positionGroup = getPositionGroupFromPosition(player.position);
+                row.className = `position-group-${positionGroup}`;
+                
+                const weekCells = availableWeeks.map(week => {
+                    const snaps = player.weeks[week.week] || 0;
+                    const cellClass = snaps === 0 ? 'zero-snap' : 'snap-count';
+                    return `<td class="${cellClass}">${snaps}</td>`;
+                }).join('');
+                
+                const yearDisplay = player.year && player.year !== 'Unknown' ? ` (${player.year})` : '';
+                
+                row.innerHTML = `
+                    <td class="jersey">${player.jersey}</td>
+                    <td class="player-name">${player.name}${yearDisplay}</td>
+                    <td class="position">${player.position}</td>
+                    ${weekCells}
+                    <td class="total">${player.totalSnaps}</td>
+                `;
+                
+                tableBody.appendChild(row);
+            });
+        }
+
+        function getPositionGroupFromPosition(position) {
+            const pos = position.toUpperCase();
+            if (pos.includes('QB')) return 'qb';
+            if (pos.includes('HB') || pos.includes('RB') || pos.includes('FB')) return 'rb';
+            if (pos.includes('WR') || pos.includes('SLWR') || pos.includes('SRWR')) return 'wr';
+            if (pos.includes('TE') || pos.includes('TEL') || pos.includes('TER')) return 'te';
+            if (pos.includes('C') || pos.includes('G') || pos.includes('T') || pos.includes('LG') || pos.includes('RG') || pos.includes('LT') || pos.includes('RT')) return 'ol';
+            if (pos.includes('DL') || pos.includes('DT') || pos.includes('DE') || pos.includes('NT') || pos.includes('DRT') || pos.includes('DLT') || pos.includes('DRE') || pos.includes('DLE')) return 'dl';
+            if (pos.includes('LB') || pos.includes('MLB') || pos.includes('WLB') || pos.includes('ROLB') || pos.includes('LOLB')) return 'lb';
+            if (pos.includes('DB') || pos.includes('CB') || pos.includes('S') || pos.includes('FS') || pos.includes('SS') || pos.includes('LCB') || pos.includes('RCB') || pos.includes('SCB')) return 'db';
+            return 'unknown';
         }
 
         // Setup event listeners
