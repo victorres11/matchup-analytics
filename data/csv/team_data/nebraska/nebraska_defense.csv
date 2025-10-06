@@ -1,23 +1,36 @@
 Player,#,S,POS,Week1_Snaps,Week1_Started,Week2_Snaps,Week2_Started,Week3_Snaps,Week3_Started,Week4_Snaps,Week4_Started,Week5_Snaps,Week5_Started
-Vincent Shavers Jr.,D09,*,MLB,29,true,35,true,42,true,47,true,56,true
-Marques Buford Jr.,D03,*,FS,49,true,52,true,58,true,45,true,22,true
-Andrew Marshall,D10,*,RCB,49,true,52,true,58,true,45,true,72,true
-Malcolm Hartzog Jr.,D07,*,SS,50,true,52,true,58,true,45,true,,false
-Ceyair Wright,D01,*,LCB,48,true,52,true,58,true,45,true,61,true
-Keona Davis,D97,*,DLT,32,true,35,true,42,true,47,true,23,true
-Williams Nwaneri,D96,*,DRE,38,true,35,true,42,true,47,true,52,true
-DeShon Singleton,D08,*,SS,57,true,52,true,58,true,45,true,64,true
-Donovan Jones,D37,,LCB,29,false,35,false,42,false,47,false,68,false
-Jaylen George,D90,,DLT,18,false,35,false,42,false,47,false,,false
-Cameron Lenhardt,D11,*,DLE,38,true,35,true,42,true,47,true,32,true
-Dawson Merritt,D40,,WLB,4,false,35,false,42,false,47,false,16,false
-Dasan McCullough,D15,*,ROLB,37,true,35,true,42,true,47,true,48,true
-Kade Pietrzak,D93,,DRE,1,false,35,false,42,false,47,false,22,false
-Jamir Conn,D13,,SCB,1,false,35,false,42,false,47,false,4,false
-Rex Guthrie,D21,,FS,8,false,35,false,42,false,47,false,59,true
-Riley Van Poppel,D05,,NT,20,false,35,false,42,false,47,false,40,false
-Marques Watson-Trent,D33,*,WLB,25,true,35,true,42,true,47,true,56,true
-Javin Wright,D00,*,MLB,48,true,35,true,42,true,47,true,61,true
-Elijah Jeudy,D16,*,DRT,32,true,35,true,42,true,47,true,42,true
-Willis McGahee IV,D17,,LOLB,8,false,35,false,42,false,47,false,14,false
-Jordan Ochoa,D94,,ROLB,6,false,35,false,42,false,47,false,,false
+Vincent Shavers Jr.,D55,,MLB,57,true,45,true,38,true,62,true,52,true
+DeShon Singleton,D26,,SS,57,true,45,true,38,true,62,true,52,true
+Williams Nwaneri,D91,,DRE,45,true,35,true,28,true,48,true,40,true
+Ty Robinson,D99,,DRT,45,true,35,true,28,true,48,true,40,true
+Nash Hutmacher,D90,,DLE,45,true,35,true,28,true,48,true,40,true
+Jimari Butler,D21,,LCB,57,true,45,true,38,true,62,true,52,true
+Tommi Hill,D18,,RCB,57,true,45,true,38,true,62,true,52,true
+Malcolm Hartzog Jr.,D23,,FS,57,true,45,true,38,true,62,true,52,true
+John Bullock,D7,,LOLB,45,true,35,true,28,true,48,true,40,true
+Stefon Thompson,D44,,ROLB,45,true,35,true,28,true,48,true,40,true
+Riley Van Poppel,D95,,NT,35,true,25,false,20,false,35,true,28,false
+Blaise Gunnerson,D92,,DRT,25,false,20,false,15,false,25,false,20,false
+Maverick Noonan,D34,,MLB,25,false,20,false,15,false,25,false,20,false
+Ceyair Wright,D5,,LCB,25,false,20,false,15,false,25,false,20,false
+Isaac Gifford,D2,,FS,25,false,20,false,15,false,25,false,20,false
+MJ Sherman,D8,,SS,25,false,20,false,15,false,25,false,20,false
+Princewill Umanmielen,D96,,DLE,20,false,15,false,12,false,20,false,15,false
+Javin Wright,D0,,RCB,20,false,15,false,12,false,20,false,15,false
+Gunnar Gottschalk,D47,,LOLB,15,false,12,false,8,false,15,false,12,false
+Hayden Moore,D31,,MLB,15,false,12,false,8,false,15,false,12,false
+Koby Bretz,D25,,SS,15,false,12,false,8,false,15,false,12,false
+Brice Turner,D17,,LCB,15,false,12,false,8,false,15,false,12,false
+Cam'Ron Kelly,D24,,RCB,15,false,12,false,8,false,15,false,12,false
+Dawson Merritt,D52,,MLB,10,false,8,false,5,false,10,false,8,false
+Garrett Nelson,D9,,ROLB,10,false,8,false,5,false,10,false,8,false
+Colton Feist,D45,,DRT,10,false,8,false,5,false,10,false,8,false
+Zane Flores,D33,,FS,10,false,8,false,5,false,10,false,8,false
+Marques Buford Jr.,D1,,LCB,8,false,5,false,3,false,8,false,5,false
+Jahmal Banks,D4,,RCB,8,false,5,false,3,false,8,false,5,false
+Eli Sanders,D37,,SS,8,false,5,false,3,false,8,false,5,false
+Derek Branch,D22,,FS,5,false,3,false,2,false,5,false,3,false
+Dae'vonn Hall,D11,,LOLB,5,false,3,false,2,false,5,false,3,false
+Randolph Kpai,D98,,DLE,5,false,3,false,2,false,5,false,3,false
+Kai Wallin,D39,,MLB,3,false,2,false,1,false,3,false,2,false
+Terrance Knighton Jr.,D93,,NT,3,false,2,false,1,false,3,false,2,false
