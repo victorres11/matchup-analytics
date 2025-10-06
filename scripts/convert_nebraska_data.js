@@ -5,6 +5,7 @@ const path = require('path');
 const offenseData = fs.readFileSync(path.join(__dirname, '../data/csv/team_data/nebraska/nebraska_offense.csv'), 'utf8');
 const defenseData = fs.readFileSync(path.join(__dirname, '../data/csv/team_data/nebraska/nebraska_defense.csv'), 'utf8');
 const specialTeamsData = fs.readFileSync(path.join(__dirname, '../data/csv/team_data/nebraska/nebraska_kicking_specialists.csv'), 'utf8');
+const specialTeamsSeasonData = fs.readFileSync(path.join(__dirname, '../data/csv/team_data/nebraska/nebraska_special_teams_season.csv'), 'utf8');
 const summaryData = fs.readFileSync(path.join(__dirname, '../data/csv/team_data/nebraska/nebraska_summary.csv'), 'utf8');
 
 // Parse CSV data
@@ -116,6 +117,45 @@ function convertSpecialTeamsData(csvData) {
     return specialTeams;
 }
 
+// Convert special teams season data to kicking_specialists format
+function convertSpecialTeamsSeasonData(csvData) {
+    const data = parseCSV(csvData);
+    const kickingSpecialists = [];
+    
+    data.forEach(player => {
+        const playerName = player.Player;
+        const jersey = player['#'].replace('D', '').replace('S', '');
+        
+        // Process each category that has a value > 0
+        const categories = [
+            { key: 'KRET', name: 'Kick_Returns' },
+            { key: 'KCOV', name: 'Kick_Coverage' },
+            { key: 'PRET', name: 'Punt_Returns' },
+            { key: 'PCOV', name: 'Punt_Coverage' },
+            { key: 'FGBLK', name: 'Field_Goal_Block' },
+            { key: 'FGK', name: 'Field_Goals' }
+        ];
+        
+        categories.forEach(category => {
+            const value = parseInt(player[category.key]) || 0;
+            if (value > 0) {
+                kickingSpecialists.push({
+                    playerName: playerName,
+                    jersey: jersey,
+                    category: category.name,
+                    attempts: value,
+                    returns: category.key.includes('RET') ? value : 0,
+                    yards: 0, // Not available in this data
+                    ypa: 0,   // Not available in this data
+                    td: 0     // Not available in this data
+                });
+            }
+        });
+    });
+    
+    return kickingSpecialists;
+}
+
 // Convert summary data
 function convertSummaryData(csvData) {
     return csvData.map(row => ({
@@ -135,12 +175,14 @@ function convertSummaryData(csvData) {
 const offenseCSV = parseCSV(offenseData);
 const defenseCSV = parseCSV(defenseData);
 const specialTeamsCSV = parseCSV(specialTeamsData);
+const specialTeamsSeasonCSV = parseCSV(specialTeamsSeasonData);
 const summaryCSV = parseCSV(summaryData);
 
 // Convert to JSON structure
 const offenseWeeks = convertPlayerData(offenseCSV, 'offense');
 const defenseWeeks = convertPlayerData(defenseCSV, 'defense');
 const specialTeams = convertSpecialTeamsData(specialTeamsCSV);
+const kickingSpecialists = convertSpecialTeamsSeasonData(specialTeamsSeasonData);
 const summary = convertSummaryData(summaryCSV);
 
 // Combine weeks data
@@ -159,7 +201,8 @@ const nebraskaData = {
     team: "nebraska",
     weeks: weeks,
     summary: summary,
-    special_teams: specialTeams
+    special_teams: specialTeams,
+    kicking_specialists: kickingSpecialists
 };
 
 // Write to JSON file
@@ -171,3 +214,4 @@ console.log(`Output: ${outputPath}`);
 console.log(`Weeks: ${weeks.length}`);
 console.log(`Summary entries: ${summary.length}`);
 console.log(`Special teams categories: ${Object.keys(specialTeams).length}`);
+console.log(`Kicking specialists entries: ${kickingSpecialists.length}`);
