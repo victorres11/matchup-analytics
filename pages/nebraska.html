@@ -524,16 +524,43 @@
             background: rgba(255, 193, 7, 0.3) !important;
         }
 
-        .position-group-dl {
-            background: rgba(255, 234, 167, 0.3) !important;
+        .aggregate-table .position-group-dl {
+            background: rgba(255, 234, 167, 0.8) !important;
+            border-left: 6px solid #FFD700 !important;
+            border-top: 2px solid #FFD700 !important;
+            border-bottom: 2px solid #FFD700 !important;
         }
 
-        .position-group-lb {
-            background: rgba(221, 160, 221, 0.2) !important;
+        .aggregate-table .position-group-lb {
+            background: rgba(221, 160, 221, 0.7) !important;
+            border-left: 6px solid #DDA0DD !important;
+            border-top: 2px solid #DDA0DD !important;
+            border-bottom: 2px solid #DDA0DD !important;
         }
 
-        .position-group-db {
-            background: rgba(255, 182, 193, 0.3) !important;
+        .aggregate-table .position-group-db {
+            background: rgba(255, 182, 193, 0.8) !important;
+            border-left: 6px solid #FFB6C1 !important;
+            border-top: 2px solid #FFB6C1 !important;
+            border-bottom: 2px solid #FFB6C1 !important;
+        }
+        
+        .aggregate-table .position-group-unknown {
+            background: rgba(255, 0, 0, 0.3) !important;
+            border-left: 6px solid #FF0000 !important;
+            border-top: 2px solid #FF0000 !important;
+            border-bottom: 2px solid #FF0000 !important;
+        }
+        
+        .position-group-separator {
+            height: 8px;
+        }
+        
+        .separator-cell {
+            background: #ddd !important;
+            border: none !important;
+            height: 8px;
+            padding: 0 !important;
         }
         
         .position-group-specialist {
@@ -1083,8 +1110,10 @@
                 // Setup event listeners
                 setupEventListeners();
                 
-                // Apply initial year filters (all dimmed by default)
-                applyYearFilters();
+                // Apply initial year filters after a delay to ensure charts are ready
+                setTimeout(() => {
+                    applyYearFilters();
+                }, 500);
 
             } catch (error) {
                 console.error('Error loading team data:', error);
@@ -1171,7 +1200,8 @@
                     const player = allPlayers[index];
                     if (player) {
                         const playerYear = player.year || 'Unknown';
-                        const isAllowed = hasSelectedYears && allowedYears.includes(playerYear);
+                        // Handle "Unknown" years - show them when any years are selected
+                        const isAllowed = hasSelectedYears && (allowedYears.includes(playerYear) || playerYear === 'Unknown');
                         // console.log(`Player ${player.name}: ${playerYear}, allowed: ${isAllowed}`);
                         
                         // Get the original color for this player
@@ -1399,6 +1429,7 @@
 
         function populateDefenseAggregateTable() {
             if (!teamData) return;
+            console.log('populateDefenseAggregateTable called');
 
             const tableBody = document.getElementById('defense-aggregate-body');
             
@@ -1450,15 +1481,28 @@
                     return sum + (player.weeks[week.week]?.snaps || 0);
                 }, 0);
                 
+                const positionGroup = getPositionGroupFromPosition(player.position);
+                
                 return {
                     ...player,
                     totalSnaps: totalSnaps,
-                    positionGroup: getPositionGroupFromPosition(player.position)
+                    positionGroup: positionGroup
                 };
             }).sort((a, b) => {
-                // First sort by position group
-                const groupComparison = a.positionGroup.localeCompare(b.positionGroup);
-                if (groupComparison !== 0) return groupComparison;
+                // First sort by position group in logical order
+                const positionGroupOrder = ['dl', 'lb', 'db', 'unknown'];
+                const aGroupIndex = positionGroupOrder.indexOf(a.positionGroup);
+                const bGroupIndex = positionGroupOrder.indexOf(b.positionGroup);
+                
+                // If both groups are in the order array, use that order
+                if (aGroupIndex !== -1 && bGroupIndex !== -1) {
+                    if (aGroupIndex !== bGroupIndex) return aGroupIndex - bGroupIndex;
+                } else {
+                    // Fallback to alphabetical if not in predefined order
+                    const groupComparison = a.positionGroup.localeCompare(b.positionGroup);
+                    if (groupComparison !== 0) return groupComparison;
+                }
+                
                 // Then by total snaps (high to low)
                 return b.totalSnaps - a.totalSnaps;
             });
@@ -1495,14 +1539,31 @@
 
         function getPositionGroupFromPosition(position) {
             const pos = position.toUpperCase();
-            if (pos.includes('QB') || pos.includes('QUARTERBACK')) return 'qb';
-            if (pos.includes('HB') || pos.includes('RB') || pos.includes('FB') || pos.includes('RUNNING') || pos.includes('BACK')) return 'rb';
-            if (pos.includes('WR') || pos.includes('SLWR') || pos.includes('SRWR') || pos.includes('RECEIVER')) return 'wr';
-            if (pos.includes('TE') || pos.includes('TEL') || pos.includes('TER') || pos.includes('TIGHT')) return 'te';
-            if (pos.includes('C') || pos.includes('G') || pos.includes('T') || pos.includes('LG') || pos.includes('RG') || pos.includes('LT') || pos.includes('RT') || pos.includes('OL') || pos.includes('TACKLE') || pos.includes('GUARD') || pos.includes('CENTER')) return 'ol';
-            if (pos.includes('DL') || pos.includes('DT') || pos.includes('DE') || pos.includes('NT') || pos.includes('DRT') || pos.includes('DLT') || pos.includes('DRE') || pos.includes('DLE') || pos.includes('RE') || pos.includes('LE')) return 'dl';
-            if (pos.includes('LB') || pos.includes('MLB') || pos.includes('WLB') || pos.includes('ROLB') || pos.includes('LOLB') || pos.includes('LINEBACKER')) return 'lb';
-            if (pos.includes('DB') || pos.includes('CB') || pos.includes('S') || pos.includes('FS') || pos.includes('SS') || pos.includes('LCB') || pos.includes('RCB') || pos.includes('SCB')) return 'db';
+            
+            // Position group mappings - using exact matches to avoid conflicts
+            const positionGroups = {
+                // Offense
+                qb: ['QB'],
+                rb: ['HB', 'RB', 'FB'],
+                wr: ['WR', 'SLWR', 'SRWR', 'LWR', 'RWR'],
+                te: ['TE', 'TEL', 'TER'],
+                ol: ['C', 'LG', 'RG', 'LT', 'RT', 'T', 'G'],
+                
+                // Defense
+                dl: ['DRT', 'DLT', 'DRE', 'DLE', 'NT', 'DT', 'DE'],
+                lb: ['LOLB', 'ROLB', 'MLB', 'WLB', 'LB'],
+                db: ['SCB', 'RCB', 'LCB', 'SS', 'FS', 'S', 'CB', 'DB']
+            };
+            
+            // Find the position group
+            for (const [group, positions] of Object.entries(positionGroups)) {
+                if (positions.includes(pos)) {
+                    console.log(`Position ${pos} -> ${group.toUpperCase()}`);
+                    return group;
+                }
+            }
+            
+            console.log(`Position ${pos} -> UNKNOWN`);
             return 'unknown';
         }
 

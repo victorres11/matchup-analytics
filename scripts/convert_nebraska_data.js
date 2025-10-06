@@ -8,6 +8,23 @@ const specialTeamsData = fs.readFileSync(path.join(__dirname, '../data/csv/team_
 const specialTeamsSeasonData = fs.readFileSync(path.join(__dirname, '../data/csv/team_data/nebraska/nebraska_special_teams_season.csv'), 'utf8');
 const summaryData = fs.readFileSync(path.join(__dirname, '../data/csv/team_data/nebraska/nebraska_summary.csv'), 'utf8');
 
+// Read roster data
+const rosterData = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/csv/team_data/nebraska/nebraska_number_roster.json'), 'utf8'));
+
+// Function to get player year from roster
+function getPlayerYear(playerName, jerseyNumber) {
+    // Handle defensive players with D prefix (e.g., D08 -> 8)
+    let cleanJerseyNumber = jerseyNumber;
+    if (jerseyNumber.startsWith('D')) {
+        cleanJerseyNumber = jerseyNumber.substring(1);
+    }
+    
+    const player = rosterData.roster.find(p => 
+        p.name === playerName && p.number === parseInt(cleanJerseyNumber)
+    );
+    return player ? player.class : 'Unknown';
+}
+
 // Parse CSV data
 function parseCSV(csvText) {
     const lines = csvText.trim().split('\n');
@@ -39,10 +56,10 @@ function getPositionGroup(position) {
     if (pos.includes('TE') || pos.includes('TEL') || pos.includes('TER')) return 'tight_ends';
     if (pos.includes('C') || pos.includes('G') || pos.includes('T') || pos.includes('LG') || pos.includes('RG') || pos.includes('LT') || pos.includes('RT')) return 'offensive_line';
     
-    // Defense
-    if (pos.includes('DL') || pos.includes('DT') || pos.includes('DE') || pos.includes('NT') || pos.includes('DRT') || pos.includes('DLE') || pos.includes('DRE') || pos.includes('DLT')) return 'defensive_line';
-    if (pos.includes('LB') || pos.includes('MLB') || pos.includes('WLB') || pos.includes('ROLB') || pos.includes('LOLB')) return 'linebackers';
-    if (pos.includes('CB') || pos.includes('S') || pos.includes('FS') || pos.includes('SS') || pos.includes('RCB') || pos.includes('LCB') || pos.includes('SCB')) return 'defensive_backs';
+    // Defense - Updated with specific position mappings
+    if (pos.includes('DL') || pos.includes('DT') || pos.includes('DE') || pos.includes('NT') || pos === 'DRT' || pos === 'DLT' || pos.includes('DLE') || pos.includes('DRE')) return 'defensive_line';
+    if (pos.includes('LB') || pos.includes('MLB') || pos.includes('WLB') || pos === 'ROLB' || pos === 'LOLB') return 'linebackers';
+    if (pos.includes('CB') || pos.includes('S') || pos.includes('FS') || pos.includes('SS') || pos === 'RCB' || pos === 'LCB' || pos === 'SCB') return 'defensive_backs';
     
     return 'other';
 }
@@ -77,6 +94,7 @@ function convertPlayerData(csvData, side) {
                     name: player.Player,
                     jersey: player['#'],
                     position: position,
+                    year: getPlayerYear(player.Player, player['#']),
                     snaps: snaps,
                     started: started
                 });
