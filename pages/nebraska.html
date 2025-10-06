@@ -426,6 +426,65 @@
             font-style: italic;
         }
 
+        /* Weekly Summary Styles */
+        .weekly-summary {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .weekly-summary h2 {
+            color: #d32f2f;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .summary-table-container {
+            overflow-x: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .summary-table th {
+            background: linear-gradient(135deg, #d32f2f 0%, #ffffff 100%);
+            color: white;
+            padding: 15px 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .summary-table td {
+            padding: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            color: #333;
+            font-size: 0.9rem;
+        }
+
+        .summary-table tr:hover {
+            background: rgba(211, 47, 47, 0.1);
+        }
+
+        .summary-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .summary-table .snap-count {
+            text-align: center;
+            font-weight: 600;
+            color: #d32f2f;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .container {
@@ -681,6 +740,32 @@
             </div>
         </div>
 
+        <!-- Weekly Summary Table -->
+        <div class="weekly-summary">
+            <h2>Weekly Snap Count Summary</h2>
+            <p style="color: #ffffff; background-color: rgba(211, 47, 47, 0.8); padding: 8px 12px; border-radius: 6px; font-size: 0.9em; margin-bottom: 15px; border: 1px solid rgba(255, 255, 255, 0.3);">
+                <strong>Note:</strong> * indicates player started that week
+            </p>
+            <div class="summary-table-container">
+                <table class="summary-table">
+                    <thead>
+                        <tr>
+                            <th>Week</th>
+                            <th>Opponent</th>
+                            <th>Date</th>
+                            <th>Final Score</th>
+                            <th>Home/Away</th>
+                            <th>Offensive Snaps</th>
+                            <th>Defensive Snaps</th>
+                        </tr>
+                    </thead>
+                    <tbody id="weekly-summary-data">
+                        <!-- Data will be populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
         <!-- Matchup Link -->
         <div style="text-align: center; margin: 30px 0;">
             <a href="maryland.html" class="matchup-btn">
@@ -723,6 +808,9 @@
                 
                 // Populate aggregate tables
                 populateAggregateTables();
+                
+                // Populate weekly summary
+                populateWeeklySummary();
                 
                 // Setup event listeners
                 setupEventListeners();
@@ -1079,6 +1167,30 @@
             if (pos.includes('LB') || pos.includes('MLB') || pos.includes('WLB') || pos.includes('ROLB') || pos.includes('LOLB')) return 'lb';
             if (pos.includes('DB') || pos.includes('CB') || pos.includes('S') || pos.includes('FS') || pos.includes('SS') || pos.includes('LCB') || pos.includes('RCB') || pos.includes('SCB')) return 'db';
             return 'unknown';
+        }
+
+        // Populate weekly summary table
+        function populateWeeklySummary() {
+            if (!teamData) return;
+
+            const tbody = document.getElementById('weekly-summary-data');
+            tbody.innerHTML = '';
+
+            if (teamData.summary) {
+                teamData.summary.forEach(summary => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>Week ${summary.week}</td>
+                        <td>${summary.opponent}</td>
+                        <td>${summary.date}</td>
+                        <td>${summary.final_score_team} - ${summary.final_score_opponent}</td>
+                        <td>${summary.home_away}</td>
+                        <td class="snap-count">${summary.offense_snaps}</td>
+                        <td class="snap-count">${summary.defense_snaps}</td>
+                    `;
+                    tbody.appendChild(row);
+                });
+            }
         }
 
         // Setup event listeners
