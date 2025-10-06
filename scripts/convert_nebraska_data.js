@@ -117,8 +117,46 @@ function convertSpecialTeamsData(csvData) {
     return specialTeams;
 }
 
-// Convert special teams season data to kicking_specialists format
+// Convert special teams season data for bar chart
 function convertSpecialTeamsSeasonData(csvData) {
+    const data = parseCSV(csvData);
+    const specialTeams = {};
+    
+    data.forEach(player => {
+        const playerName = player.Player;
+        const jersey = player['#'].replace('D', '').replace('S', '');
+        
+        // Process each category that has a value > 0
+        const categories = [
+            { key: 'KRET', name: 'Kick_Returns' },
+            { key: 'KCOV', name: 'Kick_Coverage' },
+            { key: 'PRET', name: 'Punt_Returns' },
+            { key: 'PCOV', name: 'Punt_Coverage' },
+            { key: 'FGBLK', name: 'Field_Goal_Block' },
+            { key: 'FGK', name: 'Field_Goals' }
+        ];
+        
+        categories.forEach(category => {
+            const value = parseInt(player[category.key]) || 0;
+            if (value > 0) {
+                if (!specialTeams[category.name]) {
+                    specialTeams[category.name] = [];
+                }
+                
+                specialTeams[category.name].push({
+                    jersey: jersey,
+                    playerName: playerName,
+                    attempts: value
+                });
+            }
+        });
+    });
+    
+    return specialTeams;
+}
+
+// Convert special teams season data to kicking_specialists format
+function convertSpecialTeamsSeasonToKickingSpecialists(csvData) {
     const data = parseCSV(csvData);
     const kickingSpecialists = [];
     
@@ -156,6 +194,29 @@ function convertSpecialTeamsSeasonData(csvData) {
     return kickingSpecialists;
 }
 
+// Convert kicking specialists data properly
+function convertKickingSpecialistsData(csvData) {
+    const data = parseCSV(csvData);
+    const kickingSpecialists = [];
+    
+    data.forEach(row => {
+        if (row.Player_Name && row.Category) {
+            kickingSpecialists.push({
+                playerName: row.Player_Name,
+                jersey: row.Jersey.replace('S', ''),
+                category: row.Category,
+                attempts: parseInt(row.Attempts) || 0,
+                returns: parseInt(row.Returns) || 0,
+                yards: parseInt(row.Yards) || 0,
+                ypa: parseFloat(row.YPA) || 0,
+                td: parseInt(row.TDs) || 0
+            });
+        }
+    });
+    
+    return kickingSpecialists;
+}
+
 // Convert summary data
 function convertSummaryData(csvData) {
     return csvData.map(row => ({
@@ -181,8 +242,8 @@ const summaryCSV = parseCSV(summaryData);
 // Convert to JSON structure
 const offenseWeeks = convertPlayerData(offenseCSV, 'offense');
 const defenseWeeks = convertPlayerData(defenseCSV, 'defense');
-const specialTeams = convertSpecialTeamsData(specialTeamsCSV);
-const kickingSpecialists = convertSpecialTeamsSeasonData(specialTeamsSeasonData);
+const specialTeams = convertSpecialTeamsSeasonData(specialTeamsSeasonData);
+const kickingSpecialists = convertKickingSpecialistsData(specialTeamsData);
 const summary = convertSummaryData(summaryCSV);
 
 // Combine weeks data

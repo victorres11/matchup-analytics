@@ -1,119 +1,272 @@
 # Weekly Matchup Analytics
 
-A web application for analyzing weekly sports matchups, featuring Big Ten Conference analytics with client-side routing for different matchups.
+A comprehensive web application for analyzing college football snap count analytics, featuring multi-week data visualization, interactive charts, and team-specific analytics pages.
 
-## Features
+## 🚀 Quick Start
 
-- Interactive matchup analysis
-- Big Ten Conference statistics
-- Modern, responsive web interface
-- Real-time data visualization
-- **Client-side routing for matchup URLs** (e.g., `/weekly-matchups/penn-state-week-2`)
+### Prerequisites
+- Node.js (v14 or higher)
+- Python 3 (for local server)
+- Git
 
-## URL Structure
-
-The application supports URLs in the format:
-```
-/weekly-matchups/{team}-{week}
+### 1. Clone and Setup
+```bash
+git clone https://github.com/victorres11/weekly-matchup-analytics.git
+cd weekly-matchup-analytics
 ```
 
-### Examples:
-- `/weekly-matchups/penn-state-week-2` - Penn State Week 2 matchup
-- `/weekly-matchups/michigan-week-1` - Michigan Week 1 matchup
-- `/weekly-matchups/ohio-state-week-3` - Ohio State Week 3 matchup
-
-## Deployment
-
-This project is deployed to GitHub Pages using **branch deployment**:
-
-1. **Configure GitHub Pages** in your repository settings:
-   - Go to Settings → Pages
-   - Source: Select "Deploy from a branch"
-   - Branch: Select "main"
-   - Folder: Select "/ (root)" (since all files are now in the root directory)
-   - Click "Save"
-
-2. **Automatic deployment**: Every time you push to the main branch, GitHub Pages automatically deploys your site
-
-3. **Site URL**: Your site will be available at: https://victorres11.github.io/matchup-analytics/
-
-## Local Development
-
-To run this project locally:
-
-1. Clone the repository
-2. Navigate to the project directory
-3. Open `index.html` in your web browser
-4. Test routing by navigating to `weekly-matchups/penn-state-week-2.html`
-
-## Routing System
-
-The application uses a client-side routing system that works with GitHub Pages:
-
-### How It Works:
-1. **404.html**: Catches all routes and redirects to the main app
-2. **Routing Helper**: JavaScript utility for handling matchup routes
-3. **URL Parsing**: Automatically extracts team and week information from URLs
-
-### Using the Router in Your App:
-
-```javascript
-// Listen for route changes
-window.addEventListener('matchupRouteChange', function(event) {
-    const { team, week, route } = event.detail;
-    console.log(`Navigated to: ${team} Week ${week}`);
-    // Update your app UI here
-});
-
-// Get current matchup info
-const current = window.matchupRouter.getCurrentMatchup();
-if (current) {
-    console.log(`Current: ${current.team} Week ${current.week}`);
-}
-
-// Navigate programmatically
-window.matchupRouter.navigateToMatchup('penn-state', 'week-2');
+### 2. Install Dependencies
+```bash
+# No npm dependencies required - uses CDN for libraries
+# Just ensure you have Node.js for data processing scripts
 ```
 
-## Technologies
+### 3. Run Local Server
+```bash
+# Start local development server
+python3 -m http.server 8000
 
-- HTML5
-- CSS3
-- JavaScript (ES6+)
-- SVG graphics for logos and icons
-- Client-side routing for SPA functionality
+# Or if you have Python 2
+python -m SimpleHTTPServer 8000
 
-## Repository Structure
+# Access at: http://localhost:8000
+```
+
+## 📁 Project Structure
 
 ```
 weekly-matchup-analytics/
-├── assets/                          # CSS and JavaScript bundles
-├── weekly-matchups/                 # Individual matchup pages
-│   ├── penn-state-week-2.html      # Penn State Week 2
-│   └── michigan-week-1.html        # Michigan Week 1
-├── index.html                       # Main HTML file
-├── 404.html                         # 404 handler for routing
-├── demo-routes.html                 # Routing demonstration page
-├── routing-helper.js                # Routing utility
-├── favicon.ico                      # Site favicon
-├── *.svg                           # Logo and icon files
-├── .github/workflows/               # GitHub Actions workflows
-└── README.md                        # This file
+├── index.html                          # Main landing page
+├── pages/                              # Team analytics pages
+│   ├── maryland.html                   # Maryland Terrapins
+│   ├── nebraska.html                   # Nebraska Cornhuskers
+│   ├── minnesota.html                  # Minnesota Golden Gophers
+│   ├── rutgers.html                    # Rutgers Scarlet Knights
+│   ├── washington.html                 # Washington Huskies
+│   ├── penn-state.html                 # Penn State Nittany Lions
+│   └── fiu.html                        # FIU Panthers
+├── data/                               # Data files
+│   ├── json/                           # Processed JSON data
+│   │   ├── maryland_multiweek.json
+│   │   ├── nebraska_multiweek.json
+│   │   └── ...
+│   └── csv/                            # Raw CSV data
+│       └── team_data/
+│           ├── maryland/
+│           ├── nebraska/
+│           └── ...
+├── assets/                             # Static assets
+│   ├── images/                         # Team logos
+│   └── logos/                          # Conference logos
+├── scripts/                            # Data processing scripts
+│   ├── convert_nebraska_data.js        # Nebraska data converter
+│   ├── add_year_data.js                # Year data enricher
+│   └── ...
+└── README.md
 ```
 
-## Testing the Routing
+## 🏈 Features
 
-1. **Demo Page**: Visit `/demo-routes.html` to see the routing system in action
-2. **Direct URLs**: Navigate directly to `/weekly-matchups/penn-state-week-2`
-3. **Programmatic Navigation**: Use the router API in your JavaScript code
+### Team Analytics Pages
+- **Multi-week snap count visualization** with interactive charts
+- **Position group analysis** (Offense, Defense, Special Teams)
+- **Aggregate data tables** with sorting capabilities
+- **Year filtering** for player classification (Fr., So., Jr., Sr., etc.)
+- **Special teams unit filtering** with "Only" buttons
+- **Weekly snap count summaries**
+- **Player details** on chart interaction
 
-## Contributing
+### Data Visualization
+- **Stacked bar charts** for snap counts by week
+- **Horizontal bar charts** for special teams units
+- **Color-coded position groups**
+- **Interactive tooltips** with player information
+- **Responsive design** for mobile and desktop
+
+### Data Processing
+- **CSV to JSON conversion** scripts
+- **Player data enrichment** with year information
+- **Special teams data integration**
+- **Automatic data validation**
+
+## 🔧 Adding New Teams
+
+### 1. Prepare Data Files
+Create CSV files in `data/csv/team_data/{team_name}/`:
+- `{team}_offense.csv` - Offensive snap counts
+- `{team}_defense.csv` - Defensive snap counts  
+- `{team}_special_teams_season.csv` - Special teams data
+- `{team}_kicking_specialists.csv` - Kicking/returning data
+- `{team}_summary.csv` - Game summaries
+
+### 2. Create Conversion Script
+```bash
+# Copy and modify existing script
+cp scripts/convert_nebraska_data.js scripts/convert_{team}_data.js
+
+# Edit the script for your team's data structure
+# Update file paths and team name
+```
+
+### 3. Run Data Conversion
+```bash
+node scripts/convert_{team}_data.js
+```
+
+### 4. Create Team Page
+```bash
+# Copy existing team page as template
+cp pages/maryland.html pages/{team}.html
+
+# Update team-specific content:
+# - Team name and colors
+# - Logo paths
+# - Data file paths
+# - Navigation links
+```
+
+### 5. Update Main Page
+Add team link to `index.html`:
+```html
+<a href="./pages/{team}.html" class="team-link">
+    🏈 {Team Name}
+</a>
+```
+
+## 📊 Data Format Requirements
+
+### Offense/Defense CSV Format
+```csv
+Week,Player,Jersey,Position,Snaps
+1,John Doe,15,QB,45
+1,Jane Smith,23,RB,32
+```
+
+### Special Teams Season CSV Format
+```csv
+Player,#,POS,Games,TOT,KRET,KCOV,PRET,PCOV,FGBLK,FGK
+John Doe,15,QB,5,25,0,0,0,0,0,0
+Jane Smith,23,RB,5,15,5,10,0,0,0,0
+```
+
+### Kicking Specialists CSV Format
+```csv
+Category,Jersey,Player_Name,Attempts,Returns,Yards,YPA,TDs
+Punting,S83,Archie Wilson,12,,,,
+Kick_Returns,02,Jacory Barney Jr.,3,3,23,7.7,0
+```
+
+## 🎨 Customization
+
+### Team Colors
+Update CSS variables in team page:
+```css
+:root {
+    --primary-color: #E31B23;    /* Team primary color */
+    --secondary-color: #FFFFFF;  /* Team secondary color */
+    --accent-color: #000000;     /* Team accent color */
+}
+```
+
+### Team Logo
+1. Add logo to `assets/images/`
+2. Update logo path in team page:
+```html
+<img src="../assets/images/{team}_logo.png" alt="{Team Name}" class="team-logo">
+```
+
+## 🚀 Deployment
+
+### GitHub Pages
+1. Push to `main` branch
+2. Enable GitHub Pages in repository settings
+3. Source: Deploy from branch `main`
+4. Site will be available at: `https://{username}.github.io/weekly-matchup-analytics/`
+
+### Custom Domain
+1. Add `CNAME` file with your domain
+2. Configure DNS settings
+3. Update GitHub Pages settings
+
+## 🛠️ Development
+
+### Local Development Server
+```bash
+# Python 3
+python3 -m http.server 8000
+
+# Python 2
+python -m SimpleHTTPServer 8000
+
+# Node.js (if you prefer)
+npx http-server -p 8000
+```
+
+### Data Processing
+```bash
+# Convert Nebraska data
+node scripts/convert_nebraska_data.js
+
+# Add year data to Maryland
+node scripts/add_year_data.js
+```
+
+### Testing
+1. Open `http://localhost:8000` in browser
+2. Navigate to team pages
+3. Test filtering and chart interactions
+4. Verify data accuracy
+
+## 📝 Troubleshooting
+
+### Common Issues
+
+**Charts not displaying:**
+- Check browser console for JavaScript errors
+- Verify data files are accessible
+- Ensure Chart.js is loading from CDN
+
+**Data not loading:**
+- Check file paths in team pages
+- Verify JSON files are valid
+- Run data conversion scripts
+
+**Styling issues:**
+- Clear browser cache
+- Check CSS file paths
+- Verify responsive design breakpoints
+
+**Special teams filtering not working:**
+- Check unit names match between HTML and JavaScript
+- Verify data structure in JSON files
+- Test filter button event listeners
+
+## 🤝 Contributing
 
 1. Fork the repository
-2. Create a feature branch
+2. Create a feature branch: `git checkout -b feature/new-team`
 3. Make your changes
-4. Submit a pull request
+4. Test thoroughly
+5. Submit a pull request
 
-## License
+## 📄 License
 
 This project is open source and available under the MIT License.
+
+## 🏆 Teams Supported
+
+- ✅ Maryland Terrapins
+- ✅ Nebraska Cornhuskers  
+- ✅ Minnesota Golden Gophers
+- ✅ Rutgers Scarlet Knights
+- ✅ Washington Huskies
+- ✅ Penn State Nittany Lions
+- ✅ FIU Panthers
+
+## 📞 Support
+
+For questions or issues:
+1. Check this README
+2. Review existing team implementations
+3. Open an issue on GitHub
+4. Contact the development team

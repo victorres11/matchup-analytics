@@ -228,6 +228,24 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
         }
 
+        /* Special teams chart - responsive scaling */
+        #st-chart-container {
+            height: 500px !important;
+            overflow-x: auto;
+            overflow-y: hidden;
+            margin-bottom: 100px; /* Much more space below chart */
+        }
+
+        #st-chart-container .chart-canvas {
+            height: 500px !important;
+            max-width: 100%;
+        }
+
+        /* Add extra spacing after special teams chart */
+        .position-group:has(#st-chart-container) {
+            margin-bottom: 120px; /* Much more space after chart */
+        }
+
         .matchup-btn {
             display: inline-flex;
             align-items: center;
@@ -534,6 +552,110 @@
             background: rgba(155, 89, 182, 0.2) !important;
         }
 
+        /* Special Teams Unit Filters */
+        .unit-filters {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .unit-filters h4 {
+            color: #E31B23;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .filter-checkboxes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 12px;
+        }
+
+        .filter-checkbox {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            font-size: 0.9em;
+            color: #333;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .filter-checkbox:hover {
+            background: rgba(255, 255, 255, 0.9);
+            transform: translateY(-1px);
+        }
+
+        .filter-checkbox input[type="checkbox"] {
+            display: none;
+        }
+
+        .checkmark {
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .filter-checkbox input[type="checkbox"]:checked + .checkmark::after {
+            content: '✓';
+            color: white;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .only-btn {
+            background: linear-gradient(135deg, #E31B23, #C8102E);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9em;
+            margin: 2px;
+            transition: all 0.3s ease;
+        }
+
+        .only-btn:hover {
+            background: linear-gradient(135deg, #C8102E, #A00D1F);
+            transform: translateY(-1px);
+        }
+
+        /* Player Details Section */
+        .player-details {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: none;
+        }
+
+        .player-details.active {
+            display: block;
+            animation: slideDown 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .container {
@@ -560,6 +682,15 @@
             .chart-container {
                 height: 300px;
             }
+
+            /* Special teams chart - mobile responsive */
+            #st-chart-container {
+                height: 400px !important;
+            }
+
+            #st-chart-container .chart-canvas {
+                height: 400px !important;
+            }
         }
     </style>
 </head>
@@ -568,7 +699,7 @@
         <!-- Header -->
         <div class="header">
             <div class="logos">
-                <img src="../assets/images/nebraska_cornhuskers_logo.png" alt="Nebraska Cornhuskers" class="logo">
+                <img src="../assets/images/nebraska_cornhuskers_logo.jpg" alt="Nebraska Cornhuskers" class="logo">
                 <div class="divider"></div>
                 <img src="../assets/logos/Big_Ten_Conference_logo.svg" alt="Big Ten Conference" class="logo">
             </div>
@@ -808,14 +939,65 @@
         <!-- Special Teams Tab -->
         <div class="tab-content" id="special-teams">
             <div class="position-group">
-                <h3 class="position-title">Special Teams Specialists</h3>
+                <h3 class="position-title">Special Teams Units</h3>
+                
+                <!-- Unit Filter Controls -->
+                <div class="unit-filters">
+                    <h4>Filter by Special Teams Unit:</h4>
+                    <div class="filter-checkboxes">
+                        <label class="filter-checkbox">
+                            <input type="checkbox" data-unit="Kick_Returns" checked>
+                            <span class="checkmark" style="background-color: #FF6B6B;"></span>
+                            Kick Return
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" data-unit="Kick_Coverage" checked>
+                            <span class="checkmark" style="background-color: #4ECDC4;"></span>
+                            Kick Coverage
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" data-unit="Punt_Returns" checked>
+                            <span class="checkmark" style="background-color: #45B7D1;"></span>
+                            Punt Return
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" data-unit="Punt_Coverage" checked>
+                            <span class="checkmark" style="background-color: #96CEB4;"></span>
+                            Punt Coverage
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" data-unit="Field_Goal_Block" checked>
+                            <span class="checkmark" style="background-color: #FFEAA7;"></span>
+                            Field Goal Block
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" data-unit="Field_Goals" checked>
+                            <span class="checkmark" style="background-color: #DDA0DD;"></span>
+                            Field Goals
+                        </label>
+                    </div>
+                    
+                    <!-- Only buttons for quick filtering -->
+                    <div style="margin-top: 15px;">
+                        <button class="only-btn" data-unit="Kick_Returns">Only Kick Return</button>
+                        <button class="only-btn" data-unit="Kick_Coverage">Only Kick Coverage</button>
+                        <button class="only-btn" data-unit="Punt_Returns">Only Punt Return</button>
+                        <button class="only-btn" data-unit="Punt_Coverage">Only Punt Coverage</button>
+                        <button class="only-btn" data-unit="Field_Goal_Block">Only Field Goal Block</button>
+                        <button class="only-btn" data-unit="Field_Goals">Only Field Goals</button>
+                    </div>
+                </div>
+                
                 <div class="chart-container">
-                    <canvas id="st-chart"></canvas>
+                    <div class="chart-wrapper" id="st-chart-container">
+                        <canvas id="st-chart" class="chart-canvas"></canvas>
+                    </div>
+                    <div class="player-details" id="st-details"></div>
                 </div>
             </div>
             
             <!-- Kicking Specialists Table -->
-            <div class="position-group">
+            <div class="position-group" style="margin-top: 80px; padding-top: 20px;">
                 <h3 class="position-title">Kicking Specialists</h3>
                 <div class="aggregate-table-container">
                     <table class="aggregate-table" id="kicking-specialists-table">
@@ -900,6 +1082,9 @@
                 
                 // Setup event listeners
                 setupEventListeners();
+                
+                // Apply initial year filters (all dimmed by default)
+                applyYearFilters();
 
             } catch (error) {
                 console.error('Error loading team data:', error);
@@ -949,7 +1134,7 @@
             const checkedYears = Array.from(document.querySelectorAll('.year-filter-item input[type="checkbox"]:checked'))
                 .map(cb => cb.getAttribute('data-year'));
             
-            console.log('Applying year filters:', checkedYears);
+            // console.log('Applying year filters:', checkedYears);
             
             // Apply filters to all charts
             filterChartByYear('wr-chart', checkedYears);
@@ -973,28 +1158,66 @@
             const datasets = chart.data.datasets;
             const allPlayers = chart.allPlayers || [];
             
-            console.log(`Filtering ${canvasId}:`, { allowedYears, allPlayersCount: allPlayers.length });
+            // console.log(`Filtering ${canvasId}:`, { allowedYears, allPlayersCount: allPlayers.length });
+            
+            // If no years are selected, dim all players
+            const hasSelectedYears = allowedYears.length > 0;
             
             datasets.forEach(dataset => {
+                // Create new background colors array
+                const newBackgroundColors = [];
+                
                 dataset.data.forEach((value, index) => {
                     const player = allPlayers[index];
                     if (player) {
                         const playerYear = player.year || 'Unknown';
-                        const isAllowed = allowedYears.includes(playerYear);
+                        const isAllowed = hasSelectedYears && allowedYears.includes(playerYear);
+                        // console.log(`Player ${player.name}: ${playerYear}, allowed: ${isAllowed}`);
                         
-                        console.log(`Player ${player.name}: ${playerYear}, allowed: ${isAllowed}`);
+                        // Get the original color for this player
+                        const originalColor = dataset.originalBackgroundColors ? dataset.originalBackgroundColors[index] : dataset.backgroundColor[index];
                         
-                        // Update opacity based on filter
-                        if (isAllowed) {
-                            dataset.backgroundColor[index] = dataset.backgroundColor[index].replace(/,\s*[\d.]+\)/, ', 1)');
+                        // Create new color with appropriate opacity
+                        if (typeof originalColor === 'string') {
+                            let newColor;
+                            if (originalColor.startsWith('#')) {
+                                // Convert hex to rgba
+                                const hex = originalColor.replace('#', '');
+                                const r = parseInt(hex.substr(0, 2), 16);
+                                const g = parseInt(hex.substr(2, 2), 16);
+                                const b = parseInt(hex.substr(4, 2), 16);
+                                const alpha = isAllowed ? 1 : 0.3;
+                                newColor = `rgba(${r}, ${g}, ${b}, ${alpha})`;
+                            } else if (originalColor.startsWith('rgba')) {
+                                // Update existing rgba color
+                                newColor = originalColor.replace(/,\s*[\d.]+\)/, `, ${isAllowed ? 1 : 0.3})`);
+                            } else {
+                                // Fallback for other string colors
+                                newColor = originalColor;
+                            }
+                            newBackgroundColors[index] = newColor;
+                            // console.log(`Color change: ${originalColor} -> ${newColor}`);
                         } else {
-                            dataset.backgroundColor[index] = dataset.backgroundColor[index].replace(/,\s*[\d.]+\)/, ', 0.3)');
+                            // For Canvas patterns, we can't modify them, so keep original
+                            newBackgroundColors[index] = originalColor;
+                            // console.log(`Non-string color: ${originalColor}, allowed: ${isAllowed}`);
                         }
+                    } else {
+                        // Fallback for players without year data
+                        newBackgroundColors[index] = dataset.backgroundColor[index];
                     }
                 });
+                
+                // Store original colors if not already stored
+                if (!dataset.originalBackgroundColors) {
+                    dataset.originalBackgroundColors = [...dataset.backgroundColor];
+                }
+                
+                // Update the background colors
+                dataset.backgroundColor = newBackgroundColors;
             });
             
-            chart.update();
+            chart.update('none'); // Disable animation for immediate update
         }
 
         // Sorting functions for aggregate tables
@@ -1117,7 +1340,10 @@
                                 weeks: {}
                             });
                         }
-                        playerMap.get(key).weeks[week.week] = player.snaps;
+                        playerMap.get(key).weeks[week.week] = {
+                            snaps: player.snaps,
+                            started: player.started
+                        };
                     });
                 });
             });
@@ -1125,7 +1351,7 @@
             // Convert to array and sort by position group, then by total snaps
             const players = Array.from(playerMap.values()).map(player => {
                 const totalSnaps = availableWeeks.reduce((sum, week) => {
-                    return sum + (player.weeks[week.week] || 0);
+                    return sum + (player.weeks[week.week]?.snaps || 0);
                 }, 0);
                 
                 return {
@@ -1150,9 +1376,11 @@
                 row.className = `position-group-${positionGroup}`;
                 
                 const weekCells = availableWeeks.map(week => {
-                    const snaps = player.weeks[week.week] || 0;
+                    const weekData = player.weeks[week.week];
+                    const snaps = weekData?.snaps || 0;
+                    const started = weekData && weekData.started ? ' *' : '';
                     const cellClass = snaps === 0 ? 'zero-snap' : 'snap-count';
-                    return `<td class="${cellClass}">${snaps}</td>`;
+                    return `<td class="${cellClass}">${snaps}${started}</td>`;
                 }).join('');
                 
                 const yearDisplay = player.year && player.year !== 'Unknown' ? ` (${player.year})` : '';
@@ -1208,7 +1436,10 @@
                                 weeks: {}
                             });
                         }
-                        playerMap.get(key).weeks[week.week] = player.snaps;
+                        playerMap.get(key).weeks[week.week] = {
+                            snaps: player.snaps,
+                            started: player.started
+                        };
                     });
                 });
             });
@@ -1216,7 +1447,7 @@
             // Convert to array and sort by position group, then by total snaps
             const players = Array.from(playerMap.values()).map(player => {
                 const totalSnaps = availableWeeks.reduce((sum, week) => {
-                    return sum + (player.weeks[week.week] || 0);
+                    return sum + (player.weeks[week.week]?.snaps || 0);
                 }, 0);
                 
                 return {
@@ -1241,9 +1472,11 @@
                 row.className = `position-group-${positionGroup}`;
                 
                 const weekCells = availableWeeks.map(week => {
-                    const snaps = player.weeks[week.week] || 0;
+                    const weekData = player.weeks[week.week];
+                    const snaps = weekData?.snaps || 0;
+                    const started = weekData && weekData.started ? ' *' : '';
                     const cellClass = snaps === 0 ? 'zero-snap' : 'snap-count';
-                    return `<td class="${cellClass}">${snaps}</td>`;
+                    return `<td class="${cellClass}">${snaps}${started}</td>`;
                 }).join('');
                 
                 const yearDisplay = player.year && player.year !== 'Unknown' ? ` (${player.year})` : '';
@@ -1406,10 +1639,36 @@
 
             // Year filter checkboxes
             document.querySelectorAll('.year-filter-item input[type="checkbox"]').forEach(checkbox => {
-                console.log('Setting up year filter for:', checkbox.id);
                 checkbox.addEventListener('change', function() {
-                    console.log('Year filter changed:', this.id, this.checked);
                     applyYearFilters();
+                });
+            });
+
+            // Special teams filter checkboxes
+            document.querySelectorAll('.unit-filters input[type="checkbox"]').forEach(checkbox => {
+                checkbox.addEventListener('change', function() {
+                    createSpecialTeamsChart('st-chart', 'special_teams', 'special_teams');
+                });
+            });
+
+            // Special teams Only buttons
+            document.querySelectorAll('.only-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const targetUnit = this.dataset.unit;
+                    
+                    // Uncheck all checkboxes first
+                    document.querySelectorAll('.unit-filters input[type="checkbox"]').forEach(checkbox => {
+                        checkbox.checked = false;
+                    });
+                    
+                    // Check only the target unit checkbox
+                    const targetCheckbox = document.querySelector(`input[data-unit="${targetUnit}"]`);
+                    if (targetCheckbox) {
+                        targetCheckbox.checked = true;
+                    }
+                    
+                    // Refresh the chart
+                    createSpecialTeamsChart('st-chart', 'special_teams', 'special_teams');
                 });
             });
         }
@@ -1478,7 +1737,7 @@
                 'Cincinnati': { primary: '#C8102E', secondary: '#000000', accent: '#FFFFFF' },
                 'Akron': { primary: '#041E42', secondary: '#FFD700', accent: '#FFFFFF' },
                 'Houston Christian': { primary: '#8B0000', secondary: '#FFFFFF', accent: '#000000' },
-                'Michigan': { primary: '#00274C', secondary: '#FFCB05', accent: '#FFFFFF' },
+                'Michigan': { primary: '#1E3A8A', secondary: '#FFCB05', accent: '#FFFFFF' }, // Changed to a brighter blue
                 'Michigan State': { primary: '#18453B', secondary: '#FFFFFF', accent: '#000000' },
                 'BYE WEEK': { primary: '#CCCCCC', secondary: '#999999', accent: '#666666' }
             };
@@ -1519,6 +1778,9 @@
                         // Special pattern for Washington State, solid colors for others
                         if (opponent === 'WASH STATE') {
                             return createWashStatePattern();
+                        } else if (opponent === 'Michigan') {
+                            // Use diagonal stripe pattern for Michigan to distinguish from Akron
+                            return createDiagonalPattern(colors.primary);
                         } else {
                             // Normal solid color - use primary for others
                             return colors.primary;
@@ -1526,8 +1788,10 @@
                     }
                 });
 
-                // Use pattern for WASH STATE legend, solid color for others
-                const baseColor = opponent === 'WASH STATE' ? createWashStatePattern() : colors.primary;
+                // Use pattern for WASH STATE and Michigan legend, solid color for others
+                const baseColor = (opponent === 'WASH STATE') ? createWashStatePattern() : 
+                                 (opponent === 'Michigan') ? createDiagonalPattern(colors.primary) : 
+                                 colors.primary;
 
                 datasets.push({
                     label: isByeWeek ? 'BYE WEEK' : `Week ${weekNum} vs ${opponent}`,
@@ -1658,7 +1922,8 @@
                                             
                                             if (weekData && weekData.snaps > 0) {
                                                 const percentage = totalSnaps > 0 ? ((weekData.snaps / totalSnaps) * 100).toFixed(1) : 0;
-                                                tooltipContent += `<div style="margin: 2px 0;"><span style="display: inline-block; width: 12px; height: 12px; background-color: ${weekColor}; border-radius: 2px; margin-right: 6px; vertical-align: middle;"></span>Week ${weekNum} vs ${opponent}: ${weekData.snaps} snaps (${percentage}%)</div>`;
+                                                const started = weekData.started ? ' *' : '';
+                                                tooltipContent += `<div style="margin: 2px 0;"><span style="display: inline-block; width: 12px; height: 12px; background-color: ${weekColor}; border-radius: 2px; margin-right: 6px; vertical-align: middle;"></span>Week ${weekNum} vs ${opponent}: ${weekData.snaps} snaps (${percentage}%)${started}</div>`;
                                             } else {
                                                 tooltipContent += `<div style="margin: 2px 0;"><span style="display: inline-block; width: 12px; height: 12px; background-color: ${weekColor}; border-radius: 2px; margin-right: 6px; vertical-align: middle;"></span>Week ${weekNum} vs ${opponent}: 0 snaps</div>`;
                                             }
@@ -1701,6 +1966,7 @@
             
             // Get special teams data
             const specialTeamsData = teamData.special_teams || {};
+            const kickingSpecialists = teamData.kicking_specialists || [];
             
             // Collect all players who have special teams activity
             const allPlayers = [];
@@ -1719,17 +1985,51 @@
                     }
                 });
             });
+
+            // Add returners data from kicking_specialists
+            kickingSpecialists.forEach(specialist => {
+                if (specialist.category === 'Kick_Returns' || specialist.category === 'Punt_Returns') {
+                    const existingPlayer = allPlayers.find(p => p.jersey === specialist.jersey);
+                    if (existingPlayer) {
+                        existingPlayer[specialist.category] = specialist.returns || 0;
+                        existingPlayer[specialist.category + '_yards'] = specialist.yards || 0;
+                    } else {
+                        const newPlayer = {
+                            jersey: specialist.jersey,
+                            playerName: specialist.playerName,
+                            [specialist.category]: specialist.returns || 0,
+                            [specialist.category + '_yards']: specialist.yards || 0
+                        };
+                        allPlayers.push(newPlayer);
+                    }
+                }
+            });
+            
+            // Get active units from checkboxes
+            const getActiveUnits = () => {
+                const checkboxes = document.querySelectorAll('.unit-filters input[type="checkbox"]:checked');
+                const activeUnits = Array.from(checkboxes).map(cb => cb.dataset.unit);
+                return activeUnits;
+            };
             
             // Filter players who have activity in active units
-            const activeUnits = ['Punting', 'Kickoffs', 'Field_Goals', 'Kick_Returns', 'Punt_Returns'];
+            const activeUnits = getActiveUnits();
             const filteredPlayers = allPlayers.filter(player => {
-                return activeUnits.some(unit => player[unit] > 0);
+                // Only show players who have activity in the currently selected units
+                return activeUnits.some(unit => {
+                    // Check both the unit and its yards equivalent
+                    return (player[unit] > 0) || (player[unit + '_yards'] > 0);
+                });
             });
             
             // Sort by total activity for the active units (most to least)
             filteredPlayers.sort((a, b) => {
-                const aTotal = activeUnits.reduce((sum, unit) => sum + (a[unit] || 0), 0);
-                const bTotal = activeUnits.reduce((sum, unit) => sum + (b[unit] || 0), 0);
+                const aTotal = activeUnits.reduce((sum, unit) => {
+                    return sum + (a[unit] || 0) + (a[unit + '_yards'] || 0);
+                }, 0);
+                const bTotal = activeUnits.reduce((sum, unit) => {
+                    return sum + (b[unit] || 0) + (b[unit + '_yards'] || 0);
+                }, 0);
                 return bTotal - aTotal;
             });
 
@@ -1774,36 +2074,46 @@
             const datasets = [];
             const unitConfigs = [
                 { key: 'Kick_Returns', label: 'Kick Return', color: '#FF6B6B' },
-                { key: 'Punt_Returns', label: 'Punt Return', color: '#4ECDC4' },
-                { key: 'Punting', label: 'Punting', color: '#45B7D1' },
-                { key: 'Kickoffs', label: 'Kickoffs', color: '#96CEB4' },
-                { key: 'Field_Goals', label: 'Field Goals', color: '#FFEAA7' }
+                { key: 'Kick_Returns_yards', label: 'Kick Return Yards', color: '#FF8E8E' },
+                { key: 'Kick_Coverage', label: 'Kick Coverage', color: '#4ECDC4' },
+                { key: 'Punt_Returns', label: 'Punt Return', color: '#45B7D1' },
+                { key: 'Punt_Returns_yards', label: 'Punt Return Yards', color: '#6BC5D1' },
+                { key: 'Punt_Coverage', label: 'Punt Coverage', color: '#96CEB4' },
+                { key: 'Field_Goal_Block', label: 'Field Goal Block', color: '#FFEAA7' },
+                { key: 'Field_Goals', label: 'Field Goals', color: '#DDA0DD' }
             ];
 
             unitConfigs.forEach(config => {
-                const unitData = filteredPlayers.map(player => player[config.key] || 0);
-                const hasData = unitData.some(value => value > 0);
+                // Only show datasets for active units
+                const isActiveUnit = activeUnits.includes(config.key) || 
+                                   (config.key.endsWith('_yards') && 
+                                    activeUnits.includes(config.key.replace('_yards', '')));
                 
-                if (hasData) {
-                    datasets.push({
-                        label: config.label,
-                        data: unitData,
-                        backgroundColor: unitData.map(value => 
-                            value > 0 ? config.color : 'rgba(200, 200, 200, 0.3)'
-                        ),
-                        borderColor: config.color,
-                        borderWidth: unitData.map(value => {
-                            if (value > 0) {
-                                // Check if this player is a returner or specialist
-                                const player = filteredPlayers[unitData.indexOf(value)];
-                                if (player.returnerInfo && (player.returnerInfo.isPRReturner || player.returnerInfo.isKRReturner)) {
-                                    return 3; // Thick border for returners and specialists
+                if (isActiveUnit) {
+                    const unitData = filteredPlayers.map(player => player[config.key] || 0);
+                    const hasData = unitData.some(value => value > 0);
+                    
+                    if (hasData) {
+                        datasets.push({
+                            label: config.label,
+                            data: unitData,
+                            backgroundColor: unitData.map(value => 
+                                value > 0 ? config.color : 'rgba(200, 200, 200, 0.3)'
+                            ),
+                            borderColor: config.color,
+                            borderWidth: unitData.map(value => {
+                                if (value > 0) {
+                                    // Check if this player is a returner or specialist
+                                    const player = filteredPlayers[unitData.indexOf(value)];
+                                    if (player.returnerInfo && (player.returnerInfo.isPRReturner || player.returnerInfo.isKRReturner)) {
+                                        return 3; // Thick border for returners and specialists
+                                    }
                                 }
-                            }
-                            return 1;
-                        }),
-                        borderRadius: 4
-                    });
+                                return 1;
+                            }),
+                            borderRadius: 4
+                        });
+                    }
                 }
             });
 
@@ -1822,27 +2132,32 @@
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
+                    indexAxis: 'y', // Horizontal bars to fit more players
                     scales: {
                         x: {
-                            stacked: true,
-                            ticks: {
-                                maxRotation: 45,
-                                minRotation: 45
-                            }
-                        },
-                        y: {
                             stacked: true,
                             beginAtZero: true,
                             title: {
                                 display: true,
                                 text: 'Special Teams Activity'
                             }
+                        },
+                        y: {
+                            stacked: true,
+                            ticks: {
+                                maxRotation: 0,
+                                minRotation: 0
+                            }
                         }
                     },
                     plugins: {
                         legend: {
                             display: true,
-                            position: 'top'
+                            position: 'top',
+                            labels: {
+                                boxWidth: 12,
+                                padding: 10
+                            }
                         },
                         tooltip: {
                             enabled: true,
