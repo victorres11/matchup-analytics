@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nebraska Cornhuskers - Multi-Week Snap Count Analytics</title>
+    <link rel="icon" type="image/svg+xml" href="../assets/logos/Big_Ten_Conference_logo.svg">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 25%, #ffffff 25%, #ffffff 75%, #d32f2f 75%, #d32f2f 100%);
+            background-size: 100% 100%;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: linear-gradient(135deg, #d32f2f, #b71c1c);
+            border-radius: 12px;
+            color: white;
+            box-shadow: 0 4px 15px rgba(211, 47, 47, 0.3);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .logo {
+            height: 80px;
+            margin: 10px;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: linear-gradient(135deg, #ffffff, #f5f5f5);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-left: 4px solid #d32f2f;
+        }
+
+        .stat-card h3 {
+            color: #d32f2f;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        .stat-card .value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .year-filters {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid #d32f2f;
+        }
+
+        .year-filters h4 {
+            color: #d32f2f;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+            font-weight: 600;
+        }
+
+        .year-filter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+        }
+
+        .year-filter-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .year-filter-item input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            accent-color: #d32f2f;
+        }
+
+        .year-filter-item label {
+            font-size: 0.9em;
+            color: #333;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .year-filter-item label:hover {
+            color: #d32f2f;
+        }
+
+        .tabs {
+            display: flex;
+            background: linear-gradient(135deg, #d32f2f, #b71c1c);
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(211, 47, 47, 0.3);
+        }
+
+        .tab {
+            flex: 1;
+            padding: 15px 20px;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .tab:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .tab.active {
+            background: rgba(255, 255, 255, 0.2);
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .tab-content {
+            display: none;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .position-group {
+            margin-bottom: 40px;
+        }
+
+        .position-title {
+            color: #d32f2f;
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding: 10px 15px;
+            border-bottom: 2px solid #d32f2f;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            display: inline-block;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 400px;
+            margin-bottom: 30px;
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .matchup-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #d32f2f, #b71c1c);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(211, 47, 47, 0.3);
+            margin: 20px 0;
+        }
+
+        .matchup-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(211, 47, 47, 0.4);
+        }
+
+        .matchup-icon {
+            font-size: 1.2em;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .data-table th {
+            background: linear-gradient(135deg, #d32f2f, #b71c1c);
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .data-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .data-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .data-table tr:hover {
+            background: #e3f2fd;
+        }
+
+        .snap-count {
+            font-weight: 600;
+            color: #d32f2f;
+        }
+
+        .total {
+            font-weight: 700;
+            color: #b71c1c;
+            background: rgba(211, 47, 47, 0.1);
+        }
+
+        .zero-snap {
+            font-weight: 700;
+            color: #dc2626;
+            background: rgba(220, 38, 38, 0.1);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+            border-radius: 10px;
+            color: #666;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(211, 47, 47, 0.3);
+            color: #d32f2f;
+            font-style: italic;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+
+            .tabs {
+                flex-direction: column;
+            }
+
+            .tab {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            }
+
+            .chart-container {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="../assets/logos/Big_Ten_Conference_logo.svg" alt="Big Ten Conference" class="logo">
+            <h1>Nebraska Cornhuskers</h1>
+            <p>Multi-Week Snap Count Analytics</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Nebraska_Cornhuskers_logo.svg/200px-Nebraska_Cornhuskers_logo.svg.png" alt="Nebraska Cornhuskers" class="logo">
+        </div>
+
+        <!-- Stats Summary -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Offensive Snaps</h3>
+                <div class="value" id="total-offensive-snaps">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>Total Defensive Snaps</h3>
+                <div class="value" id="total-defensive-snaps">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>Avg Offensive Snaps</h3>
+                <div class="value" id="avg-offensive-snaps">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>Avg Defensive Snaps</h3>
+                <div class="value" id="avg-defensive-snaps">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>Last Updated</h3>
+                <div class="value" id="update-time" style="font-size: 0.8em;">Loading...</div>
+            </div>
+        </div>
+
+        <!-- Year Filters -->
+        <div class="year-filters">
+            <h4>🎓 Filter by Year</h4>
+            <div class="year-filter-grid">
+                <div class="year-filter-item">
+                    <input type="checkbox" id="filter-freshman" data-year="Fr." checked>
+                    <label for="filter-freshman">Fr.</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="filter-rs-freshman" data-year="R-Fr." checked>
+                    <label for="filter-rs-freshman">R-Fr.</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="filter-sophomore" data-year="So." checked>
+                    <label for="filter-sophomore">So.</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="filter-rs-sophomore" data-year="R-So." checked>
+                    <label for="filter-rs-sophomore">R-So.</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="filter-junior" data-year="Jr." checked>
+                    <label for="filter-junior">Jr.</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="filter-rs-junior" data-year="R-Jr." checked>
+                    <label for="filter-rs-junior">R-Jr.</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="filter-senior" data-year="Sr." checked>
+                    <label for="filter-senior">Sr.</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="filter-rs-senior" data-year="R-Sr." checked>
+                    <label for="filter-rs-senior">R-Sr.</label>
+                </div>
+                <div class="year-filter-item">
+                    <input type="checkbox" id="filter-graduate" data-year="Gr." checked>
+                    <label for="filter-graduate">Gr.</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab active" data-tab="offense">OFFENSIVE</button>
+            <button class="tab" data-tab="defense">DEFENSIVE</button>
+            <button class="tab" data-tab="special-teams">SPECIAL TEAMS</button>
+        </div>
+
+        <!-- Offense Tab -->
+        <div class="tab-content active" id="offense">
+            <div class="position-group">
+                <h3 class="position-title">Wide Receivers</h3>
+                <div class="chart-container">
+                    <canvas id="wr-chart"></canvas>
+                </div>
+            </div>
+
+            <div class="position-group">
+                <h3 class="position-title">Tight Ends</h3>
+                <div class="chart-container">
+                    <canvas id="te-chart"></canvas>
+                </div>
+            </div>
+
+            <div class="position-group">
+                <h3 class="position-title">Running Backs</h3>
+                <div class="chart-container">
+                    <canvas id="rb-chart"></canvas>
+                </div>
+            </div>
+
+            <div class="position-group">
+                <h3 class="position-title">Offensive Line</h3>
+                <div class="chart-container">
+                    <canvas id="ol-chart"></canvas>
+                </div>
+            </div>
+
+            <div class="position-group">
+                <h3 class="position-title">Quarterbacks</h3>
+                <div class="chart-container">
+                    <canvas id="qb-chart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Defense Tab -->
+        <div class="tab-content" id="defense">
+            <div class="position-group">
+                <h3 class="position-title">Defensive Line</h3>
+                <div class="chart-container">
+                    <canvas id="dl-chart"></canvas>
+                </div>
+            </div>
+
+            <div class="position-group">
+                <h3 class="position-title">Linebackers</h3>
+                <div class="chart-container">
+                    <canvas id="lb-chart"></canvas>
+                </div>
+            </div>
+
+            <div class="position-group">
+                <h3 class="position-title">Defensive Backs</h3>
+                <div class="chart-container">
+                    <canvas id="db-chart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Teams Tab -->
+        <div class="tab-content" id="special-teams">
+            <div class="position-group">
+                <h3 class="position-title">Special Teams Specialists</h3>
+                <div class="chart-container">
+                    <canvas id="st-chart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Matchup Link -->
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="maryland.html" class="matchup-btn">
+                <span class="matchup-icon">🏈</span>
+                View Maryland Terrapins
+            </a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Nebraska Cornhuskers Multi-Week Snap Count Analytics</p>
+            <p>Data updated automatically | Big Ten Conference</p>
+            <div class="footer-bottom">
+                <p>Built with ❤️ for Nebraska Football Analytics</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let teamData = null;
+
+        // Load team data
+        async function loadTeamData() {
+            try {
+                const response = await fetch('../data/json/nebraska_multiweek.json');
+                teamData = await response.json();
+                
+                // Create all charts
+                createStackedChart('wr-chart', 'wide_receivers', 'offense');
+                createStackedChart('te-chart', 'tight_ends', 'offense');
+                createStackedChart('rb-chart', 'running_backs', 'offense');
+                createStackedChart('ol-chart', 'offensive_line', 'offense');
+                createStackedChart('qb-chart', 'quarterbacks', 'offense');
+                createStackedChart('dl-chart', 'defensive_line', 'defense');
+                createStackedChart('lb-chart', 'linebackers', 'defense');
+                createStackedChart('db-chart', 'defensive_backs', 'defense');
+                createSpecialTeamsChart('st-chart', 'special_teams', 'special_teams');
+                
+                // Update stats
+                updateStats();
+                
+                // Setup event listeners
+                setupEventListeners();
+                
+            } catch (error) {
+                console.error('Error loading team data:', error);
+            }
+        }
+
+        // Update stats
+        function updateStats() {
+            if (!teamData) return;
+            let totalOffensiveSnaps = 0;
+            let totalDefensiveSnaps = 0;
+            let activeWeekCount = 0;
+            if (teamData.summary) {
+                teamData.summary.forEach(summary => {
+                    if (summary.offense_snaps !== undefined && summary.defense_snaps !== undefined &&
+                        (summary.offense_snaps > 0 || summary.defense_snaps > 0) &&
+                        summary.opponent !== "BYE WEEK") {
+                        totalOffensiveSnaps += summary.offense_snaps;
+                        totalDefensiveSnaps += summary.defense_snaps;
+                        activeWeekCount++;
+                    }
+                });
+            }
+            document.getElementById('total-offensive-snaps').textContent = totalOffensiveSnaps;
+            document.getElementById('total-defensive-snaps').textContent = totalDefensiveSnaps;
+            document.getElementById('avg-offensive-snaps').textContent = activeWeekCount > 0 ? Math.round(totalOffensiveSnaps / activeWeekCount) : 0;
+            document.getElementById('avg-defensive-snaps').textContent = activeWeekCount > 0 ? Math.round(totalDefensiveSnaps / activeWeekCount) : 0;
+            document.getElementById('update-time').textContent = new Date().toLocaleString();
+        }
+
+        // Year filtering functions
+        function applyYearFilters() {
+            const checkedYears = Array.from(document.querySelectorAll('.year-filter-item input[type="checkbox"]:checked'))
+                .map(cb => cb.getAttribute('data-year'));
+            
+            console.log('Applying year filters:', checkedYears);
+            
+            // Apply filters to all charts
+            filterChartByYear('wr-chart', checkedYears);
+            filterChartByYear('te-chart', checkedYears);
+            filterChartByYear('rb-chart', checkedYears);
+            filterChartByYear('ol-chart', checkedYears);
+            filterChartByYear('qb-chart', checkedYears);
+            filterChartByYear('dl-chart', checkedYears);
+            filterChartByYear('lb-chart', checkedYears);
+            filterChartByYear('db-chart', checkedYears);
+        }
+
+        function filterChartByYear(canvasId, allowedYears) {
+            const canvas = document.getElementById(canvasId);
+            if (!canvas || !window[canvasId + 'Chart']) {
+                console.log(`Chart not found: ${canvasId}`);
+                return;
+            }
+
+            const chart = window[canvasId + 'Chart'];
+            const datasets = chart.data.datasets;
+            const allPlayers = chart.allPlayers || [];
+            
+            console.log(`Filtering ${canvasId}:`, { allowedYears, allPlayersCount: allPlayers.length });
+            
+            datasets.forEach(dataset => {
+                dataset.data.forEach((value, index) => {
+                    const player = allPlayers[index];
+                    if (player) {
+                        const playerYear = player.year || 'Unknown';
+                        const isAllowed = allowedYears.includes(playerYear);
+                        
+                        console.log(`Player ${player.name}: ${playerYear}, allowed: ${isAllowed}`);
+                        
+                        // Update opacity based on filter
+                        if (isAllowed) {
+                            dataset.backgroundColor[index] = dataset.backgroundColor[index].replace(/,\s*[\d.]+\)/, ', 1)');
+                        } else {
+                            dataset.backgroundColor[index] = dataset.backgroundColor[index].replace(/,\s*[\d.]+\)/, ', 0.3)');
+                        }
+                    }
+                });
+            });
+            
+            chart.update();
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            // Tab switching
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const targetTab = this.getAttribute('data-tab');
+                    
+                    // Update tab states
+                    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+                    document.querySelectorAll('.tab-content').forEach(tc => tc.classList.remove('active'));
+                    
+                    this.classList.add('active');
+                    document.getElementById(targetTab).classList.add('active');
+                });
+            });
+
+            // Year filter checkboxes
+            document.querySelectorAll('.year-filter-item input[type="checkbox"]').forEach(checkbox => {
+                console.log('Setting up year filter for:', checkbox.id);
+                checkbox.addEventListener('change', function() {
+                    console.log('Year filter changed:', this.id, this.checked);
+                    applyYearFilters();
+                });
+            });
+        }
+
+        // Create stacked bar chart
+        function createStackedChart(canvasId, positionGroup, side) {
+            const canvas = document.getElementById(canvasId);
+            if (!canvas) {
+                console.error(`Canvas not found: ${canvasId}`);
+                return;
+            }
+
+            // Clear existing chart
+            if (window[canvasId + 'Chart']) {
+                window[canvasId + 'Chart'].destroy();
+            }
+
+            if (!teamData || !teamData.weeks) {
+                return;
+            }
+
+            // Get all weeks dynamically
+            const weekOrder = teamData.weeks.map(w => w.week).sort((a, b) => a - b);
+
+            // Collect all players for this position group
+            const allPlayers = [];
+            const playerMap = new Map();
+
+            teamData.weeks.forEach(week => {
+                if (week[side] && week[side][positionGroup] && week[side][positionGroup].length > 0) {
+                    week[side][positionGroup].forEach(player => {
+                        const key = `${player.name}-${player.jersey}`;
+                        if (!playerMap.has(key)) {
+                            playerMap.set(key, {
+                                name: player.name,
+                                jersey: player.jersey,
+                                position: player.position,
+                                year: player.year || 'Unknown',
+                                opponent: player.opponent || 'Unknown',
+                                weeks: {}
+                            });
+                        }
+                        playerMap.get(key).weeks[week.week] = {
+                            snaps: player.snaps,
+                            started: player.started
+                        };
+                    });
+                }
+            });
+
+            // Convert to array and sort by total snaps
+            allPlayers.push(...playerMap.values());
+            
+            if (allPlayers.length === 0) {
+                return;
+            }
+            allPlayers.sort((a, b) => {
+                const aTotal = Object.values(a.weeks).reduce((sum, week) => sum + week.snaps, 0);
+                const bTotal = Object.values(b.weeks).reduce((sum, week) => sum + week.snaps, 0);
+                return bTotal - aTotal;
+            });
+
+            // Create datasets for each week
+            const datasets = [];
+            const opposingTeamColors = {
+                'Cincinnati': { primary: '#C8102E', secondary: '#000000', accent: '#FFFFFF' },
+                'Akron': { primary: '#041E42', secondary: '#FFD700', accent: '#FFFFFF' },
+                'Houston Christian': { primary: '#8B0000', secondary: '#FFFFFF', accent: '#000000' },
+                'Michigan': { primary: '#00274C', secondary: '#FFCB05', accent: '#FFFFFF' },
+                'Michigan State': { primary: '#18453B', secondary: '#FFFFFF', accent: '#000000' },
+                'BYE WEEK': { primary: '#CCCCCC', secondary: '#999999', accent: '#666666' }
+            };
+
+            weekOrder.forEach(weekNum => {
+                const weekInfo = teamData.weeks.find(w => w.week === weekNum);
+                const summaryInfo = teamData.summary ? teamData.summary.find(s => s.week === weekNum) : null;
+                const opponent = summaryInfo ? summaryInfo.opponent : 'Unknown';
+                const isByeWeek = opponent === 'BYE WEEK' || opponent === 'BYE';
+                const colors = isByeWeek ? { primary: '#CCCCCC', secondary: '#999999', accent: '#666666' } :
+                               (opposingTeamColors[opponent] || { primary: '#666666', secondary: '#999999', accent: '#CCCCCC' });
+
+                const weekData = allPlayers.map(player => {
+                    const currentWeek = player.weeks[weekNum];
+                    const previousWeek = player.weeks[weekNum - 1];
+                    
+                    // Check if this is a missing game
+                    if (previousWeek && previousWeek.snaps >= 4 && 
+                        (!currentWeek || currentWeek.snaps === 0)) {
+                        // Return 5 for visual representation of missing game
+                        return 5;
+                    } else {
+                        // Return actual snap count
+                        return currentWeek ? currentWeek.snaps : 0;
+                    }
+                });
+
+                const backgroundColors = allPlayers.map(player => {
+                    const currentWeek = player.weeks[weekNum];
+                    const previousWeek = player.weeks[weekNum - 1];
+                    
+                    // Check if this is a missing game (only for individual players, not BYE weeks)
+                    if (!isByeWeek && previousWeek && previousWeek.snaps >= 4 && 
+                        (!currentWeek || currentWeek.snaps === 0)) {
+                        // Use diagonal stripe pattern for missing games
+                        return createDiagonalPattern(colors.secondary);
+                    } else {
+                        // Special pattern for Washington State, solid colors for others
+                        if (opponent === 'WASH STATE') {
+                            return createWashStatePattern();
+                        } else {
+                            // Normal solid color - use primary for others
+                            return colors.primary;
+                        }
+                    }
+                });
+
+                // Use pattern for WASH STATE legend, solid color for others
+                const baseColor = opponent === 'WASH STATE' ? createWashStatePattern() : colors.primary;
+
+                datasets.push({
+                    label: isByeWeek ? 'BYE WEEK' : `Week ${weekNum} vs ${opponent}`,
+                    data: weekData,
+                    backgroundColor: backgroundColors,
+                    borderColor: baseColor,
+                    borderWidth: 1,
+                    borderRadius: 4,
+                    players: allPlayers,
+                    // Store the base color for legend use
+                    baseColor: baseColor
+                });
+            });
+
+            // Create the chart
+            const chart = new Chart(canvas, {
+                type: 'bar',
+                data: {
+                    labels: allPlayers.map(player => {
+                        const yearDisplay = player.year && player.year !== 'Unknown' ? ` (${player.year})` : '';
+                        return `${player.name} #${player.jersey}${yearDisplay}`;
+                    }),
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            stacked: true,
+                            ticks: {
+                                maxRotation: 45,
+                                minRotation: 45
+                            }
+                        },
+                        y: {
+                            stacked: true,
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Snap Count'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                generateLabels: function(chart) {
+                                    const original = Chart.defaults.plugins.legend.labels.generateLabels;
+                                    const labels = original.call(this, chart);
+                                    
+                                    // Override the color with the baseColor from each dataset
+                                    labels.forEach((label, index) => {
+                                        if (chart.data.datasets[index] && chart.data.datasets[index].baseColor) {
+                                            label.fillStyle = chart.data.datasets[index].baseColor;
+                                        }
+                                    });
+                                    
+                                    return labels;
+                                }
+                            }
+                        },
+                        tooltip: {
+                            enabled: false,
+                            external: function(context) {
+                                // Tooltip Element
+                                let tooltipEl = document.getElementById('chartjs-tooltip');
+
+                                // Create element on first render
+                                if (!tooltipEl) {
+                                    tooltipEl = document.createElement('div');
+                                    tooltipEl.id = 'chartjs-tooltip';
+                                    tooltipEl.style.background = 'rgba(0, 0, 0, 0.8)';
+                                    tooltipEl.style.borderRadius = '3px';
+                                    tooltipEl.style.color = 'white';
+                                    tooltipEl.style.opacity = '1';
+                                    tooltipEl.style.pointerEvents = 'none';
+                                    tooltipEl.style.position = 'absolute';
+                                    tooltipEl.style.transform = 'translate(-50%, 0)';
+                                    tooltipEl.style.transition = 'all .1s ease';
+                                    tooltipEl.style.zIndex = '1000';
+                                    tooltipEl.style.font = '14px Arial';
+                                    tooltipEl.style.padding = '10px';
+                                    tooltipEl.style.maxWidth = '300px';
+                                    tooltipEl.style.wordWrap = 'break-word';
+                                    document.body.appendChild(tooltipEl);
+                                }
+
+                                // Hide if no tooltip
+                                const tooltipModel = context.tooltip;
+                                if (tooltipModel.opacity === 0) {
+                                    tooltipEl.style.opacity = '0';
+                                    return;
+                                }
+
+                                // Set caret Position
+                                tooltipEl.classList.remove('above', 'below', 'no-transform');
+                                if (tooltipModel.yAlign) {
+                                    tooltipEl.classList.add(tooltipModel.yAlign);
+                                } else {
+                                    tooltipEl.classList.add('no-transform');
+                                }
+
+                                function getBody(bodyItem) {
+                                    return bodyItem.lines;
+                                }
+
+                                // Set Text
+                                if (tooltipModel.body) {
+                                    const player = tooltipModel.dataPoints[0].dataset.players[tooltipModel.dataPoints[0].dataIndex];
+                                    
+                                    if (player) {
+                                        const isOffensiveChart = canvasId.includes('wr') || canvasId.includes('te') || canvasId.includes('rb') || canvasId.includes('ol') || canvasId.includes('qb');
+                                        
+                                        let tooltipContent = `<div style="font-weight: bold; margin-bottom: 8px;">${player.name} #${player.jersey} - ${player.position}</div>`;
+                                        
+                                        weekOrder.forEach(weekNum => {
+                                            const weekData = player.weeks[weekNum];
+                                            const summaryInfo = teamData.summary ? teamData.summary.find(s => s.week === weekNum) : null;
+                                            const totalSnaps = summaryInfo ? (isOffensiveChart ? summaryInfo.offense_snaps : summaryInfo.defense_snaps) : 0;
+                                            const opponent = summaryInfo ? summaryInfo.opponent : 'Unknown';
+                                            
+                                            // Get team color for this week
+                                            const weekColors = opposingTeamColors[opponent] || { primary: '#666666', secondary: '#999999', accent: '#CCCCCC' };
+                                            const weekColor = weekColors.primary;
+                                            
+                                            if (weekData && weekData.snaps > 0) {
+                                                const percentage = totalSnaps > 0 ? ((weekData.snaps / totalSnaps) * 100).toFixed(1) : 0;
+                                                tooltipContent += `<div style="margin: 2px 0;"><span style="display: inline-block; width: 12px; height: 12px; background-color: ${weekColor}; border-radius: 2px; margin-right: 6px; vertical-align: middle;"></span>Week ${weekNum} vs ${opponent}: ${weekData.snaps} snaps (${percentage}%)</div>`;
+                                            } else {
+                                                tooltipContent += `<div style="margin: 2px 0;"><span style="display: inline-block; width: 12px; height: 12px; background-color: ${weekColor}; border-radius: 2px; margin-right: 6px; vertical-align: middle;"></span>Week ${weekNum} vs ${opponent}: 0 snaps</div>`;
+                                            }
+                                        });
+                                        
+                                        tooltipEl.innerHTML = tooltipContent;
+                                    } else {
+                                        tooltipEl.innerHTML = 'Data not available';
+                                    }
+                                }
+
+                                const position = context.chart.canvas.getBoundingClientRect();
+
+                                // Display, position, and set styles for font
+                                tooltipEl.style.opacity = '1';
+                                tooltipEl.style.left = position.left + window.pageXOffset + tooltipModel.caretX + 'px';
+                                tooltipEl.style.top = position.top + window.pageYOffset + tooltipModel.caretY + 'px';
+                                tooltipEl.style.font = tooltipModel.options.bodyFont.string;
+                                tooltipEl.style.padding = tooltipModel.options.padding + 'px ' + tooltipModel.options.padding + 'px';
+                                tooltipEl.style.pointerEvents = 'none';
+                            }
+                        }
+                    }
+                }
+            });
+            
+            // Store chart and player data for filtering
+            window[canvasId + 'Chart'] = chart;
+            chart.allPlayers = allPlayers;
+        }
+
+        // Create special teams chart
+        function createSpecialTeamsChart(canvasId, positionGroup, side) {
+            const canvas = document.getElementById(canvasId);
+            if (!canvas) {
+                return;
+            }
+
+            const ctx = canvas.getContext('2d');
+            
+            // Get special teams data
+            const specialTeamsData = teamData.special_teams || {};
+            
+            // Collect all players who have special teams activity
+            const allPlayers = [];
+            Object.keys(specialTeamsData).forEach(category => {
+                specialTeamsData[category].forEach(player => {
+                    const existingPlayer = allPlayers.find(p => p.jersey === player.jersey);
+                    if (existingPlayer) {
+                        existingPlayer[category] = player.attempts || 0;
+                    } else {
+                        const newPlayer = {
+                            jersey: player.jersey,
+                            playerName: player.playerName,
+                            [category]: player.attempts || 0
+                        };
+                        allPlayers.push(newPlayer);
+                    }
+                });
+            });
+            
+            // Filter players who have activity in active units
+            const activeUnits = ['Punting', 'Kickoffs', 'Field_Goals', 'Kick_Returns', 'Punt_Returns'];
+            const filteredPlayers = allPlayers.filter(player => {
+                return activeUnits.some(unit => player[unit] > 0);
+            });
+            
+            // Sort by total activity for the active units (most to least)
+            filteredPlayers.sort((a, b) => {
+                const aTotal = activeUnits.reduce((sum, unit) => sum + (a[unit] || 0), 0);
+                const bTotal = activeUnits.reduce((sum, unit) => sum + (b[unit] || 0), 0);
+                return bTotal - aTotal;
+            });
+
+            // Prepare data for Chart.js
+            const labels = filteredPlayers.map(player => {
+                const nameParts = player.playerName.split(' ');
+                let lastName = nameParts[nameParts.length - 1];
+                
+                // Handle name suffixes
+                if (lastName === 'Jr.' && nameParts.length > 1) {
+                    lastName = nameParts[nameParts.length - 2] + ' Jr.';
+                } else if (lastName === 'JR' && nameParts.length > 1) {
+                    lastName = nameParts[nameParts.length - 2] + ' JR';
+                } else if (lastName === 'II' && nameParts.length > 1) {
+                    lastName = nameParts[nameParts.length - 2] + ' II';
+                } else if (lastName === 'III' && nameParts.length > 1) {
+                    lastName = nameParts[nameParts.length - 2] + ' III';
+                } else if (lastName === 'Sr.' && nameParts.length > 1) {
+                    lastName = nameParts[nameParts.length - 2] + ' Sr.';
+                } else if (lastName === 'SR' && nameParts.length > 1) {
+                    lastName = nameParts[nameParts.length - 2] + ' SR';
+                } else if (lastName === 'I' && nameParts.length > 1) {
+                    lastName = nameParts[nameParts.length - 2] + ' I';
+                }
+                
+                let label = `${lastName} #${player.jersey}`;
+                
+                // Add returner badges based on active units
+                if (player.returnerInfo) {
+                    const badges = [];
+                    if (player.returnerInfo.isPRReturner) badges.push('PR');
+                    if (player.returnerInfo.isKRReturner) badges.push('KR');
+                    if (badges.length > 0) {
+                        label += ` [${badges.join(', ')}]`;
+                    }
+                }
+                
+                return label;
+            });
+
+            // Create datasets for each special teams unit (only active ones)
+            const datasets = [];
+            const unitConfigs = [
+                { key: 'Kick_Returns', label: 'Kick Return', color: '#FF6B6B' },
+                { key: 'Punt_Returns', label: 'Punt Return', color: '#4ECDC4' },
+                { key: 'Punting', label: 'Punting', color: '#45B7D1' },
+                { key: 'Kickoffs', label: 'Kickoffs', color: '#96CEB4' },
+                { key: 'Field_Goals', label: 'Field Goals', color: '#FFEAA7' }
+            ];
+
+            unitConfigs.forEach(config => {
+                const unitData = filteredPlayers.map(player => player[config.key] || 0);
+                const hasData = unitData.some(value => value > 0);
+                
+                if (hasData) {
+                    datasets.push({
+                        label: config.label,
+                        data: unitData,
+                        backgroundColor: unitData.map(value => 
+                            value > 0 ? config.color : 'rgba(200, 200, 200, 0.3)'
+                        ),
+                        borderColor: config.color,
+                        borderWidth: unitData.map(value => {
+                            if (value > 0) {
+                                // Check if this player is a returner or specialist
+                                const player = filteredPlayers[unitData.indexOf(value)];
+                                if (player.returnerInfo && (player.returnerInfo.isPRReturner || player.returnerInfo.isKRReturner)) {
+                                    return 3; // Thick border for returners and specialists
+                                }
+                            }
+                            return 1;
+                        }),
+                        borderRadius: 4
+                    });
+                }
+            });
+
+            // Destroy existing chart if it exists
+            if (window.stChart) {
+                window.stChart.destroy();
+            }
+
+            // Create Chart.js chart
+            window.stChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: datasets
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            stacked: true,
+                            ticks: {
+                                maxRotation: 45,
+                                minRotation: 45
+                            }
+                        },
+                        y: {
+                            stacked: true,
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Special Teams Activity'
+                            }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top'
+                        },
+                        tooltip: {
+                            enabled: true,
+                            mode: 'index',
+                            intersect: false
+                        }
+                    },
+                    interaction: {
+                        intersect: false,
+                        mode: 'index'
+                    }
+                }
+            });
+        }
+
+        // Create diagonal pattern for missing games
+        function createDiagonalPattern(color) {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = 10;
+            canvas.height = 10;
+            
+            ctx.fillStyle = color;
+            ctx.fillRect(0, 0, 10, 10);
+            
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.3)';
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(0, 0);
+            ctx.lineTo(10, 10);
+            ctx.stroke();
+            
+            return ctx.createPattern(canvas, 'repeat');
+        }
+
+        // Create Washington State pattern
+        function createWashStatePattern() {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = 10;
+            canvas.height = 10;
+            
+            // Crimson background
+            ctx.fillStyle = '#C8102E';
+            ctx.fillRect(0, 0, 10, 10);
+            
+            // White diagonal stripes
+            ctx.strokeStyle = '#FFFFFF';
+            ctx.lineWidth = 1;
+            for (let i = -5; i < 15; i += 3) {
+                ctx.beginPath();
+                ctx.moveTo(i, 0);
+                ctx.lineTo(i + 5, 10);
+                ctx.stroke();
+            }
+            
+            return ctx.createPattern(canvas, 'repeat');
+        }
+
+        // Load data when page loads
+        document.addEventListener('DOMContentLoaded', loadTeamData);
+    </script>
+</body>
+</html>

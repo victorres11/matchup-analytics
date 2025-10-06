@@ -1,0 +1,1703 @@
+{
+  "team": "nebraska",
+  "weeks": [
+    {
+      "week": 1,
+      "offense": {
+        "quarterbacks": [
+          {
+            "name": "Dylan Raiola",
+            "jersey": "15",
+            "position": "QB",
+            "snaps": 78,
+            "started": true
+          }
+        ],
+        "tight_ends": [
+          {
+            "name": "Heinrich Haarberg",
+            "jersey": "10",
+            "position": "TEL",
+            "snaps": 27,
+            "started": true
+          },
+          {
+            "name": "Luke Lindenmeyer",
+            "jersey": "44",
+            "position": "TEL",
+            "snaps": 64,
+            "started": true
+          },
+          {
+            "name": "Carter Nelson",
+            "jersey": "29",
+            "position": "TER",
+            "snaps": 5,
+            "started": false
+          }
+        ],
+        "wide_receivers": [
+          {
+            "name": "Dane Key",
+            "jersey": "06",
+            "position": "RWR",
+            "snaps": 64,
+            "started": true
+          },
+          {
+            "name": "Cortez Mills Jr.",
+            "jersey": "19",
+            "position": "RWR",
+            "snaps": 7,
+            "started": false
+          },
+          {
+            "name": "Nyziah Hunter",
+            "jersey": "13",
+            "position": "LWR",
+            "snaps": 63,
+            "started": true
+          },
+          {
+            "name": "Jacory Barney Jr.",
+            "jersey": "02",
+            "position": "SLWR",
+            "snaps": 48,
+            "started": true
+          },
+          {
+            "name": "Quinn Clark",
+            "jersey": "18",
+            "position": "LWR",
+            "snaps": 11,
+            "started": false
+          },
+          {
+            "name": "Isaiah Mozee",
+            "jersey": "22",
+            "position": "SRWR",
+            "snaps": 3,
+            "started": false
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Justin Evans",
+            "jersey": "51",
+            "position": "C",
+            "snaps": 78,
+            "started": true
+          },
+          {
+            "name": "Rocco Spindler",
+            "jersey": "50",
+            "position": "RG",
+            "snaps": 78,
+            "started": true
+          },
+          {
+            "name": "Elijah Pritchett",
+            "jersey": "57",
+            "position": "LT",
+            "snaps": 33,
+            "started": true
+          },
+          {
+            "name": "Teddy Prochazka",
+            "jersey": "65",
+            "position": "RT",
+            "snaps": 78,
+            "started": true
+          },
+          {
+            "name": "Gunnar Gottula",
+            "jersey": "77",
+            "position": "LT",
+            "snaps": 23,
+            "started": true
+          },
+          {
+            "name": "Henry Lutovsky",
+            "jersey": "59",
+            "position": "LG",
+            "snaps": 78,
+            "started": true
+          },
+          {
+            "name": "Turner Corcoran",
+            "jersey": "69",
+            "position": "LT",
+            "snaps": 26,
+            "started": false
+          }
+        ],
+        "running_backs": [
+          {
+            "name": "Emmett Johnson",
+            "jersey": "21",
+            "position": "HB",
+            "snaps": 69,
+            "started": true
+          },
+          {
+            "name": "Mekhi Nelson",
+            "jersey": "35",
+            "position": "HB",
+            "snaps": 8,
+            "started": false
+          }
+        ]
+      },
+      "defense": {
+        "linebackers": [
+          {
+            "name": "Vincent Shavers Jr.",
+            "jersey": "D09",
+            "position": "MLB",
+            "snaps": 29,
+            "started": true
+          },
+          {
+            "name": "Dawson Merritt",
+            "jersey": "D40",
+            "position": "WLB",
+            "snaps": 4,
+            "started": false
+          },
+          {
+            "name": "Dasan McCullough",
+            "jersey": "D15",
+            "position": "ROLB",
+            "snaps": 37,
+            "started": true
+          },
+          {
+            "name": "Marques Watson-Trent",
+            "jersey": "D33",
+            "position": "WLB",
+            "snaps": 25,
+            "started": true
+          },
+          {
+            "name": "Javin Wright",
+            "jersey": "D00",
+            "position": "MLB",
+            "snaps": 48,
+            "started": true
+          },
+          {
+            "name": "Willis McGahee IV",
+            "jersey": "D17",
+            "position": "LOLB",
+            "snaps": 8,
+            "started": false
+          },
+          {
+            "name": "Jordan Ochoa",
+            "jersey": "D94",
+            "position": "ROLB",
+            "snaps": 6,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Marques Buford Jr.",
+            "jersey": "D03",
+            "position": "FS",
+            "snaps": 49,
+            "started": true
+          },
+          {
+            "name": "Malcolm Hartzog Jr.",
+            "jersey": "D07",
+            "position": "SS",
+            "snaps": 50,
+            "started": true
+          },
+          {
+            "name": "DeShon Singleton",
+            "jersey": "D08",
+            "position": "SS",
+            "snaps": 57,
+            "started": true
+          },
+          {
+            "name": "Rex Guthrie",
+            "jersey": "D21",
+            "position": "FS",
+            "snaps": 8,
+            "started": false
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Andrew Marshall",
+            "jersey": "D10",
+            "position": "RCB",
+            "snaps": 49,
+            "started": true
+          },
+          {
+            "name": "Ceyair Wright",
+            "jersey": "D01",
+            "position": "LCB",
+            "snaps": 48,
+            "started": true
+          },
+          {
+            "name": "Keona Davis",
+            "jersey": "D97",
+            "position": "DLT",
+            "snaps": 32,
+            "started": true
+          },
+          {
+            "name": "Donovan Jones",
+            "jersey": "D37",
+            "position": "LCB",
+            "snaps": 29,
+            "started": false
+          },
+          {
+            "name": "Jaylen George",
+            "jersey": "D90",
+            "position": "DLT",
+            "snaps": 18,
+            "started": false
+          },
+          {
+            "name": "Jamir Conn",
+            "jersey": "D13",
+            "position": "SCB",
+            "snaps": 1,
+            "started": false
+          },
+          {
+            "name": "Riley Van Poppel",
+            "jersey": "D05",
+            "position": "NT",
+            "snaps": 20,
+            "started": false
+          },
+          {
+            "name": "Elijah Jeudy",
+            "jersey": "D16",
+            "position": "DRT",
+            "snaps": 32,
+            "started": true
+          }
+        ],
+        "defensive_line": [
+          {
+            "name": "Williams Nwaneri",
+            "jersey": "D96",
+            "position": "DRE",
+            "snaps": 38,
+            "started": true
+          },
+          {
+            "name": "Cameron Lenhardt",
+            "jersey": "D11",
+            "position": "DLE",
+            "snaps": 38,
+            "started": true
+          },
+          {
+            "name": "Kade Pietrzak",
+            "jersey": "D93",
+            "position": "DRE",
+            "snaps": 1,
+            "started": false
+          }
+        ]
+      }
+    },
+    {
+      "week": 2,
+      "offense": {
+        "quarterbacks": [
+          {
+            "name": "Dylan Raiola",
+            "jersey": "15",
+            "position": "QB",
+            "snaps": 54,
+            "started": true
+          }
+        ],
+        "tight_ends": [
+          {
+            "name": "Heinrich Haarberg",
+            "jersey": "10",
+            "position": "TEL",
+            "snaps": 14,
+            "started": false
+          },
+          {
+            "name": "Luke Lindenmeyer",
+            "jersey": "44",
+            "position": "TEL",
+            "snaps": 51,
+            "started": true
+          },
+          {
+            "name": "Carter Nelson",
+            "jersey": "29",
+            "position": "TER",
+            "snaps": 14,
+            "started": false
+          }
+        ],
+        "wide_receivers": [
+          {
+            "name": "Dane Key",
+            "jersey": "06",
+            "position": "RWR",
+            "snaps": 45,
+            "started": true
+          },
+          {
+            "name": "Cortez Mills Jr.",
+            "jersey": "19",
+            "position": "RWR",
+            "snaps": 17,
+            "started": false
+          },
+          {
+            "name": "Nyziah Hunter",
+            "jersey": "13",
+            "position": "LWR",
+            "snaps": 43,
+            "started": true
+          },
+          {
+            "name": "Jacory Barney Jr.",
+            "jersey": "02",
+            "position": "SLWR",
+            "snaps": 30,
+            "started": true
+          },
+          {
+            "name": "Quinn Clark",
+            "jersey": "18",
+            "position": "LWR",
+            "snaps": 10,
+            "started": false
+          },
+          {
+            "name": "Isaiah Mozee",
+            "jersey": "22",
+            "position": "SRWR",
+            "snaps": 12,
+            "started": false
+          },
+          {
+            "name": "Keelan Smith",
+            "jersey": "85",
+            "position": "LWR",
+            "snaps": 8,
+            "started": false
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Justin Evans",
+            "jersey": "51",
+            "position": "C",
+            "snaps": 54,
+            "started": true
+          },
+          {
+            "name": "Rocco Spindler",
+            "jersey": "50",
+            "position": "RG",
+            "snaps": 54,
+            "started": true
+          },
+          {
+            "name": "Elijah Pritchett",
+            "jersey": "57",
+            "position": "LT",
+            "snaps": 14,
+            "started": false
+          },
+          {
+            "name": "Teddy Prochazka",
+            "jersey": "65",
+            "position": "RT",
+            "snaps": 54,
+            "started": true
+          },
+          {
+            "name": "Gunnar Gottula",
+            "jersey": "77",
+            "position": "LT",
+            "snaps": 38,
+            "started": true
+          },
+          {
+            "name": "Henry Lutovsky",
+            "jersey": "59",
+            "position": "LG",
+            "snaps": 54,
+            "started": true
+          },
+          {
+            "name": "Turner Corcoran",
+            "jersey": "69",
+            "position": "LT",
+            "snaps": 23,
+            "started": false
+          }
+        ],
+        "running_backs": [
+          {
+            "name": "Emmett Johnson",
+            "jersey": "21",
+            "position": "HB",
+            "snaps": 37,
+            "started": true
+          },
+          {
+            "name": "Mekhi Nelson",
+            "jersey": "35",
+            "position": "HB",
+            "snaps": 22,
+            "started": true
+          }
+        ]
+      },
+      "defense": {
+        "linebackers": [
+          {
+            "name": "Vincent Shavers Jr.",
+            "jersey": "D09",
+            "position": "MLB",
+            "snaps": 35,
+            "started": true
+          },
+          {
+            "name": "Dawson Merritt",
+            "jersey": "D40",
+            "position": "WLB",
+            "snaps": 35,
+            "started": false
+          },
+          {
+            "name": "Dasan McCullough",
+            "jersey": "D15",
+            "position": "ROLB",
+            "snaps": 35,
+            "started": true
+          },
+          {
+            "name": "Marques Watson-Trent",
+            "jersey": "D33",
+            "position": "WLB",
+            "snaps": 35,
+            "started": true
+          },
+          {
+            "name": "Javin Wright",
+            "jersey": "D00",
+            "position": "MLB",
+            "snaps": 35,
+            "started": true
+          },
+          {
+            "name": "Willis McGahee IV",
+            "jersey": "D17",
+            "position": "LOLB",
+            "snaps": 35,
+            "started": false
+          },
+          {
+            "name": "Jordan Ochoa",
+            "jersey": "D94",
+            "position": "ROLB",
+            "snaps": 35,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Marques Buford Jr.",
+            "jersey": "D03",
+            "position": "FS",
+            "snaps": 52,
+            "started": true
+          },
+          {
+            "name": "Malcolm Hartzog Jr.",
+            "jersey": "D07",
+            "position": "SS",
+            "snaps": 52,
+            "started": true
+          },
+          {
+            "name": "DeShon Singleton",
+            "jersey": "D08",
+            "position": "SS",
+            "snaps": 52,
+            "started": true
+          },
+          {
+            "name": "Rex Guthrie",
+            "jersey": "D21",
+            "position": "FS",
+            "snaps": 35,
+            "started": false
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Andrew Marshall",
+            "jersey": "D10",
+            "position": "RCB",
+            "snaps": 52,
+            "started": true
+          },
+          {
+            "name": "Ceyair Wright",
+            "jersey": "D01",
+            "position": "LCB",
+            "snaps": 52,
+            "started": true
+          },
+          {
+            "name": "Keona Davis",
+            "jersey": "D97",
+            "position": "DLT",
+            "snaps": 35,
+            "started": true
+          },
+          {
+            "name": "Donovan Jones",
+            "jersey": "D37",
+            "position": "LCB",
+            "snaps": 35,
+            "started": false
+          },
+          {
+            "name": "Jaylen George",
+            "jersey": "D90",
+            "position": "DLT",
+            "snaps": 35,
+            "started": false
+          },
+          {
+            "name": "Jamir Conn",
+            "jersey": "D13",
+            "position": "SCB",
+            "snaps": 35,
+            "started": false
+          },
+          {
+            "name": "Riley Van Poppel",
+            "jersey": "D05",
+            "position": "NT",
+            "snaps": 35,
+            "started": false
+          },
+          {
+            "name": "Elijah Jeudy",
+            "jersey": "D16",
+            "position": "DRT",
+            "snaps": 35,
+            "started": true
+          }
+        ],
+        "defensive_line": [
+          {
+            "name": "Williams Nwaneri",
+            "jersey": "D96",
+            "position": "DRE",
+            "snaps": 35,
+            "started": true
+          },
+          {
+            "name": "Cameron Lenhardt",
+            "jersey": "D11",
+            "position": "DLE",
+            "snaps": 35,
+            "started": true
+          },
+          {
+            "name": "Kade Pietrzak",
+            "jersey": "D93",
+            "position": "DRE",
+            "snaps": 35,
+            "started": false
+          }
+        ]
+      }
+    },
+    {
+      "week": 3,
+      "offense": {
+        "quarterbacks": [
+          {
+            "name": "Dylan Raiola",
+            "jersey": "15",
+            "position": "QB",
+            "snaps": 40,
+            "started": true
+          }
+        ],
+        "tight_ends": [
+          {
+            "name": "Heinrich Haarberg",
+            "jersey": "10",
+            "position": "TEL",
+            "snaps": 20,
+            "started": false
+          },
+          {
+            "name": "Luke Lindenmeyer",
+            "jersey": "44",
+            "position": "TEL",
+            "snaps": 19,
+            "started": false
+          }
+        ],
+        "wide_receivers": [
+          {
+            "name": "Dane Key",
+            "jersey": "06",
+            "position": "RWR",
+            "snaps": 22,
+            "started": true
+          },
+          {
+            "name": "Cortez Mills Jr.",
+            "jersey": "19",
+            "position": "RWR",
+            "snaps": 30,
+            "started": false
+          },
+          {
+            "name": "Nyziah Hunter",
+            "jersey": "13",
+            "position": "LWR",
+            "snaps": 31,
+            "started": false
+          },
+          {
+            "name": "Jacory Barney Jr.",
+            "jersey": "02",
+            "position": "SLWR",
+            "snaps": 18,
+            "started": true
+          },
+          {
+            "name": "Quinn Clark",
+            "jersey": "18",
+            "position": "LWR",
+            "snaps": 31,
+            "started": false
+          },
+          {
+            "name": "Isaiah Mozee",
+            "jersey": "22",
+            "position": "SRWR",
+            "snaps": 16,
+            "started": false
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Justin Evans",
+            "jersey": "51",
+            "position": "C",
+            "snaps": 40,
+            "started": true
+          },
+          {
+            "name": "Rocco Spindler",
+            "jersey": "50",
+            "position": "RG",
+            "snaps": 40,
+            "started": true
+          },
+          {
+            "name": "Elijah Pritchett",
+            "jersey": "57",
+            "position": "LT",
+            "snaps": 16,
+            "started": false
+          },
+          {
+            "name": "Teddy Prochazka",
+            "jersey": "65",
+            "position": "RT",
+            "snaps": 40,
+            "started": true
+          },
+          {
+            "name": "Gunnar Gottula",
+            "jersey": "77",
+            "position": "LT",
+            "snaps": 34,
+            "started": true
+          },
+          {
+            "name": "Henry Lutovsky",
+            "jersey": "59",
+            "position": "LG",
+            "snaps": 40,
+            "started": true
+          },
+          {
+            "name": "Turner Corcoran",
+            "jersey": "69",
+            "position": "LT",
+            "snaps": 40,
+            "started": false
+          }
+        ],
+        "running_backs": [
+          {
+            "name": "Emmett Johnson",
+            "jersey": "21",
+            "position": "HB",
+            "snaps": 36,
+            "started": true
+          },
+          {
+            "name": "Mekhi Nelson",
+            "jersey": "35",
+            "position": "HB",
+            "snaps": 21,
+            "started": false
+          }
+        ]
+      },
+      "defense": {
+        "linebackers": [
+          {
+            "name": "Vincent Shavers Jr.",
+            "jersey": "D09",
+            "position": "MLB",
+            "snaps": 42,
+            "started": true
+          },
+          {
+            "name": "Dawson Merritt",
+            "jersey": "D40",
+            "position": "WLB",
+            "snaps": 42,
+            "started": false
+          },
+          {
+            "name": "Dasan McCullough",
+            "jersey": "D15",
+            "position": "ROLB",
+            "snaps": 42,
+            "started": true
+          },
+          {
+            "name": "Marques Watson-Trent",
+            "jersey": "D33",
+            "position": "WLB",
+            "snaps": 42,
+            "started": true
+          },
+          {
+            "name": "Javin Wright",
+            "jersey": "D00",
+            "position": "MLB",
+            "snaps": 42,
+            "started": true
+          },
+          {
+            "name": "Willis McGahee IV",
+            "jersey": "D17",
+            "position": "LOLB",
+            "snaps": 42,
+            "started": false
+          },
+          {
+            "name": "Jordan Ochoa",
+            "jersey": "D94",
+            "position": "ROLB",
+            "snaps": 42,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Marques Buford Jr.",
+            "jersey": "D03",
+            "position": "FS",
+            "snaps": 58,
+            "started": true
+          },
+          {
+            "name": "Malcolm Hartzog Jr.",
+            "jersey": "D07",
+            "position": "SS",
+            "snaps": 58,
+            "started": true
+          },
+          {
+            "name": "DeShon Singleton",
+            "jersey": "D08",
+            "position": "SS",
+            "snaps": 58,
+            "started": true
+          },
+          {
+            "name": "Rex Guthrie",
+            "jersey": "D21",
+            "position": "FS",
+            "snaps": 42,
+            "started": false
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Andrew Marshall",
+            "jersey": "D10",
+            "position": "RCB",
+            "snaps": 58,
+            "started": true
+          },
+          {
+            "name": "Ceyair Wright",
+            "jersey": "D01",
+            "position": "LCB",
+            "snaps": 58,
+            "started": true
+          },
+          {
+            "name": "Keona Davis",
+            "jersey": "D97",
+            "position": "DLT",
+            "snaps": 42,
+            "started": true
+          },
+          {
+            "name": "Donovan Jones",
+            "jersey": "D37",
+            "position": "LCB",
+            "snaps": 42,
+            "started": false
+          },
+          {
+            "name": "Jaylen George",
+            "jersey": "D90",
+            "position": "DLT",
+            "snaps": 42,
+            "started": false
+          },
+          {
+            "name": "Jamir Conn",
+            "jersey": "D13",
+            "position": "SCB",
+            "snaps": 42,
+            "started": false
+          },
+          {
+            "name": "Riley Van Poppel",
+            "jersey": "D05",
+            "position": "NT",
+            "snaps": 42,
+            "started": false
+          },
+          {
+            "name": "Elijah Jeudy",
+            "jersey": "D16",
+            "position": "DRT",
+            "snaps": 42,
+            "started": true
+          }
+        ],
+        "defensive_line": [
+          {
+            "name": "Williams Nwaneri",
+            "jersey": "D96",
+            "position": "DRE",
+            "snaps": 42,
+            "started": true
+          },
+          {
+            "name": "Cameron Lenhardt",
+            "jersey": "D11",
+            "position": "DLE",
+            "snaps": 42,
+            "started": true
+          },
+          {
+            "name": "Kade Pietrzak",
+            "jersey": "D93",
+            "position": "DRE",
+            "snaps": 42,
+            "started": false
+          }
+        ]
+      }
+    },
+    {
+      "week": 4,
+      "offense": {
+        "quarterbacks": [
+          {
+            "name": "Dylan Raiola",
+            "jersey": "15",
+            "position": "QB",
+            "snaps": 24,
+            "started": true
+          }
+        ],
+        "tight_ends": [
+          {
+            "name": "Heinrich Haarberg",
+            "jersey": "10",
+            "position": "TEL",
+            "snaps": 5,
+            "started": false
+          },
+          {
+            "name": "Luke Lindenmeyer",
+            "jersey": "44",
+            "position": "TEL",
+            "snaps": 68,
+            "started": true
+          }
+        ],
+        "wide_receivers": [
+          {
+            "name": "Dane Key",
+            "jersey": "06",
+            "position": "RWR",
+            "snaps": 67,
+            "started": true
+          },
+          {
+            "name": "Cortez Mills Jr.",
+            "jersey": "19",
+            "position": "RWR",
+            "snaps": 8,
+            "started": false
+          },
+          {
+            "name": "Nyziah Hunter",
+            "jersey": "13",
+            "position": "LWR",
+            "snaps": 66,
+            "started": true
+          },
+          {
+            "name": "Jacory Barney Jr.",
+            "jersey": "02",
+            "position": "SLWR",
+            "snaps": 47,
+            "started": true
+          },
+          {
+            "name": "Quinn Clark",
+            "jersey": "18",
+            "position": "LWR",
+            "snaps": 8,
+            "started": false
+          },
+          {
+            "name": "Isaiah Mozee",
+            "jersey": "22",
+            "position": "SRWR",
+            "snaps": 11,
+            "started": false
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Justin Evans",
+            "jersey": "51",
+            "position": "C",
+            "snaps": 75,
+            "started": true
+          },
+          {
+            "name": "Rocco Spindler",
+            "jersey": "50",
+            "position": "RG",
+            "snaps": 75,
+            "started": true
+          },
+          {
+            "name": "Elijah Pritchett",
+            "jersey": "57",
+            "position": "LT",
+            "snaps": 6,
+            "started": false
+          },
+          {
+            "name": "Teddy Prochazka",
+            "jersey": "65",
+            "position": "RT",
+            "snaps": 75,
+            "started": true
+          },
+          {
+            "name": "Gunnar Gottula",
+            "jersey": "77",
+            "position": "LT",
+            "snaps": 69,
+            "started": true
+          },
+          {
+            "name": "Henry Lutovsky",
+            "jersey": "59",
+            "position": "LG",
+            "snaps": 75,
+            "started": true
+          },
+          {
+            "name": "Turner Corcoran",
+            "jersey": "69",
+            "position": "LT",
+            "snaps": 5,
+            "started": false
+          }
+        ],
+        "running_backs": [
+          {
+            "name": "Emmett Johnson",
+            "jersey": "21",
+            "position": "HB",
+            "snaps": 66,
+            "started": true
+          },
+          {
+            "name": "Mekhi Nelson",
+            "jersey": "35",
+            "position": "HB",
+            "snaps": 9,
+            "started": false
+          }
+        ]
+      },
+      "defense": {
+        "linebackers": [
+          {
+            "name": "Vincent Shavers Jr.",
+            "jersey": "D09",
+            "position": "MLB",
+            "snaps": 47,
+            "started": true
+          },
+          {
+            "name": "Dawson Merritt",
+            "jersey": "D40",
+            "position": "WLB",
+            "snaps": 47,
+            "started": false
+          },
+          {
+            "name": "Dasan McCullough",
+            "jersey": "D15",
+            "position": "ROLB",
+            "snaps": 47,
+            "started": true
+          },
+          {
+            "name": "Marques Watson-Trent",
+            "jersey": "D33",
+            "position": "WLB",
+            "snaps": 47,
+            "started": true
+          },
+          {
+            "name": "Javin Wright",
+            "jersey": "D00",
+            "position": "MLB",
+            "snaps": 47,
+            "started": true
+          },
+          {
+            "name": "Willis McGahee IV",
+            "jersey": "D17",
+            "position": "LOLB",
+            "snaps": 47,
+            "started": false
+          },
+          {
+            "name": "Jordan Ochoa",
+            "jersey": "D94",
+            "position": "ROLB",
+            "snaps": 47,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Marques Buford Jr.",
+            "jersey": "D03",
+            "position": "FS",
+            "snaps": 45,
+            "started": true
+          },
+          {
+            "name": "Malcolm Hartzog Jr.",
+            "jersey": "D07",
+            "position": "SS",
+            "snaps": 45,
+            "started": true
+          },
+          {
+            "name": "DeShon Singleton",
+            "jersey": "D08",
+            "position": "SS",
+            "snaps": 45,
+            "started": true
+          },
+          {
+            "name": "Rex Guthrie",
+            "jersey": "D21",
+            "position": "FS",
+            "snaps": 47,
+            "started": false
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Andrew Marshall",
+            "jersey": "D10",
+            "position": "RCB",
+            "snaps": 45,
+            "started": true
+          },
+          {
+            "name": "Ceyair Wright",
+            "jersey": "D01",
+            "position": "LCB",
+            "snaps": 45,
+            "started": true
+          },
+          {
+            "name": "Keona Davis",
+            "jersey": "D97",
+            "position": "DLT",
+            "snaps": 47,
+            "started": true
+          },
+          {
+            "name": "Donovan Jones",
+            "jersey": "D37",
+            "position": "LCB",
+            "snaps": 47,
+            "started": false
+          },
+          {
+            "name": "Jaylen George",
+            "jersey": "D90",
+            "position": "DLT",
+            "snaps": 47,
+            "started": false
+          },
+          {
+            "name": "Jamir Conn",
+            "jersey": "D13",
+            "position": "SCB",
+            "snaps": 47,
+            "started": false
+          },
+          {
+            "name": "Riley Van Poppel",
+            "jersey": "D05",
+            "position": "NT",
+            "snaps": 47,
+            "started": false
+          },
+          {
+            "name": "Elijah Jeudy",
+            "jersey": "D16",
+            "position": "DRT",
+            "snaps": 47,
+            "started": true
+          }
+        ],
+        "defensive_line": [
+          {
+            "name": "Williams Nwaneri",
+            "jersey": "D96",
+            "position": "DRE",
+            "snaps": 47,
+            "started": true
+          },
+          {
+            "name": "Cameron Lenhardt",
+            "jersey": "D11",
+            "position": "DLE",
+            "snaps": 47,
+            "started": true
+          },
+          {
+            "name": "Kade Pietrzak",
+            "jersey": "D93",
+            "position": "DRE",
+            "snaps": 47,
+            "started": false
+          }
+        ]
+      }
+    },
+    {
+      "week": 5,
+      "offense": {
+        "quarterbacks": [
+          {
+            "name": "Dylan Raiola",
+            "jersey": "15",
+            "position": "QB",
+            "snaps": 55,
+            "started": true
+          }
+        ],
+        "tight_ends": [
+          {
+            "name": "Heinrich Haarberg",
+            "jersey": "10",
+            "position": "TEL",
+            "snaps": 18,
+            "started": false
+          },
+          {
+            "name": "Luke Lindenmeyer",
+            "jersey": "44",
+            "position": "TEL",
+            "snaps": 59,
+            "started": true
+          },
+          {
+            "name": "Carter Nelson",
+            "jersey": "29",
+            "position": "TER",
+            "snaps": 1,
+            "started": false
+          }
+        ],
+        "wide_receivers": [
+          {
+            "name": "Dane Key",
+            "jersey": "06",
+            "position": "RWR",
+            "snaps": 37,
+            "started": true
+          },
+          {
+            "name": "Cortez Mills Jr.",
+            "jersey": "19",
+            "position": "RWR",
+            "snaps": 13,
+            "started": false
+          },
+          {
+            "name": "Nyziah Hunter",
+            "jersey": "13",
+            "position": "LWR",
+            "snaps": 40,
+            "started": true
+          },
+          {
+            "name": "Jacory Barney Jr.",
+            "jersey": "02",
+            "position": "SLWR",
+            "snaps": 40,
+            "started": true
+          },
+          {
+            "name": "Quinn Clark",
+            "jersey": "18",
+            "position": "LWR",
+            "snaps": 2,
+            "started": false
+          },
+          {
+            "name": "Isaiah Mozee",
+            "jersey": "22",
+            "position": "SRWR",
+            "snaps": 9,
+            "started": false
+          },
+          {
+            "name": "Keelan Smith",
+            "jersey": "85",
+            "position": "LWR",
+            "snaps": 1,
+            "started": false
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Justin Evans",
+            "jersey": "51",
+            "position": "C",
+            "snaps": 55,
+            "started": true
+          },
+          {
+            "name": "Rocco Spindler",
+            "jersey": "50",
+            "position": "RG",
+            "snaps": 55,
+            "started": true
+          },
+          {
+            "name": "Elijah Pritchett",
+            "jersey": "57",
+            "position": "LT",
+            "snaps": 55,
+            "started": true
+          },
+          {
+            "name": "Teddy Prochazka",
+            "jersey": "65",
+            "position": "RT",
+            "snaps": 55,
+            "started": true
+          },
+          {
+            "name": "Gunnar Gottula",
+            "jersey": "77",
+            "position": "LT",
+            "snaps": 55,
+            "started": true
+          },
+          {
+            "name": "Henry Lutovsky",
+            "jersey": "59",
+            "position": "LG",
+            "snaps": 55,
+            "started": true
+          },
+          {
+            "name": "Turner Corcoran",
+            "jersey": "69",
+            "position": "LT",
+            "snaps": 55,
+            "started": true
+          }
+        ],
+        "running_backs": [
+          {
+            "name": "Emmett Johnson",
+            "jersey": "21",
+            "position": "HB",
+            "snaps": 49,
+            "started": true
+          },
+          {
+            "name": "Mekhi Nelson",
+            "jersey": "35",
+            "position": "HB",
+            "snaps": 2,
+            "started": false
+          }
+        ]
+      },
+      "defense": {
+        "linebackers": [
+          {
+            "name": "Vincent Shavers Jr.",
+            "jersey": "D09",
+            "position": "MLB",
+            "snaps": 56,
+            "started": true
+          },
+          {
+            "name": "Dawson Merritt",
+            "jersey": "D40",
+            "position": "WLB",
+            "snaps": 16,
+            "started": false
+          },
+          {
+            "name": "Dasan McCullough",
+            "jersey": "D15",
+            "position": "ROLB",
+            "snaps": 48,
+            "started": true
+          },
+          {
+            "name": "Marques Watson-Trent",
+            "jersey": "D33",
+            "position": "WLB",
+            "snaps": 56,
+            "started": true
+          },
+          {
+            "name": "Javin Wright",
+            "jersey": "D00",
+            "position": "MLB",
+            "snaps": 61,
+            "started": true
+          },
+          {
+            "name": "Willis McGahee IV",
+            "jersey": "D17",
+            "position": "LOLB",
+            "snaps": 14,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Marques Buford Jr.",
+            "jersey": "D03",
+            "position": "FS",
+            "snaps": 22,
+            "started": true
+          },
+          {
+            "name": "DeShon Singleton",
+            "jersey": "D08",
+            "position": "SS",
+            "snaps": 64,
+            "started": true
+          },
+          {
+            "name": "Rex Guthrie",
+            "jersey": "D21",
+            "position": "FS",
+            "snaps": 59,
+            "started": true
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Andrew Marshall",
+            "jersey": "D10",
+            "position": "RCB",
+            "snaps": 72,
+            "started": true
+          },
+          {
+            "name": "Ceyair Wright",
+            "jersey": "D01",
+            "position": "LCB",
+            "snaps": 61,
+            "started": true
+          },
+          {
+            "name": "Keona Davis",
+            "jersey": "D97",
+            "position": "DLT",
+            "snaps": 23,
+            "started": true
+          },
+          {
+            "name": "Donovan Jones",
+            "jersey": "D37",
+            "position": "LCB",
+            "snaps": 68,
+            "started": false
+          },
+          {
+            "name": "Jamir Conn",
+            "jersey": "D13",
+            "position": "SCB",
+            "snaps": 4,
+            "started": false
+          },
+          {
+            "name": "Riley Van Poppel",
+            "jersey": "D05",
+            "position": "NT",
+            "snaps": 40,
+            "started": false
+          },
+          {
+            "name": "Elijah Jeudy",
+            "jersey": "D16",
+            "position": "DRT",
+            "snaps": 42,
+            "started": true
+          }
+        ],
+        "defensive_line": [
+          {
+            "name": "Williams Nwaneri",
+            "jersey": "D96",
+            "position": "DRE",
+            "snaps": 52,
+            "started": true
+          },
+          {
+            "name": "Cameron Lenhardt",
+            "jersey": "D11",
+            "position": "DLE",
+            "snaps": 32,
+            "started": true
+          },
+          {
+            "name": "Kade Pietrzak",
+            "jersey": "D93",
+            "position": "DRE",
+            "snaps": 22,
+            "started": false
+          }
+        ]
+      }
+    }
+  ],
+  "summary": [
+    {
+      "week": 1,
+      "opponent": "Cincinnati",
+      "date": "Sat Aug 30th",
+      "final_score_team": "20",
+      "final_score_opponent": "17",
+      "home_away": "Home",
+      "offense_snaps": 78,
+      "defense_snaps": 57,
+      "special_teams_snaps": 0
+    },
+    {
+      "week": 2,
+      "opponent": "Akron",
+      "date": "Sat Sep 6th",
+      "final_score_team": "40",
+      "final_score_opponent": "7",
+      "home_away": "Away",
+      "offense_snaps": 73,
+      "defense_snaps": 43,
+      "special_teams_snaps": 0
+    },
+    {
+      "week": 3,
+      "opponent": "Houston Christian",
+      "date": "Sat Sep 13th",
+      "final_score_team": "49",
+      "final_score_opponent": "14",
+      "home_away": "Home",
+      "offense_snaps": 75,
+      "defense_snaps": 51,
+      "special_teams_snaps": 0
+    },
+    {
+      "week": 4,
+      "opponent": "Michigan",
+      "date": "Sat Sep 20th",
+      "final_score_team": "10",
+      "final_score_opponent": "27",
+      "home_away": "Away",
+      "offense_snaps": 75,
+      "defense_snaps": 51,
+      "special_teams_snaps": 0
+    },
+    {
+      "week": 5,
+      "opponent": "Michigan State",
+      "date": "Sat Oct 4th",
+      "final_score_team": "38",
+      "final_score_opponent": "27",
+      "home_away": "Away",
+      "offense_snaps": 55,
+      "defense_snaps": 72,
+      "special_teams_snaps": 0
+    }
+  ],
+  "special_teams": {
+    "Punting": [
+      {
+        "jersey": "S83",
+        "playerName": "Archie Wilson",
+        "attempts": 12,
+        "returns": 0,
+        "yards": 0,
+        "ypa": 0,
+        "tds": 0
+      }
+    ],
+    "Kickoffs": [
+      {
+        "jersey": "S91",
+        "playerName": "Kyle Cunanan",
+        "attempts": 18,
+        "returns": 0,
+        "yards": 0,
+        "ypa": 0,
+        "tds": 0
+      },
+      {
+        "jersey": "S90",
+        "playerName": "John Hohl",
+        "attempts": 18,
+        "returns": 0,
+        "yards": 0,
+        "ypa": 0,
+        "tds": 0
+      },
+      {
+        "jersey": "S30",
+        "playerName": "Tristan Alvano",
+        "attempts": 2,
+        "returns": 0,
+        "yards": 0,
+        "ypa": 0,
+        "tds": 0
+      }
+    ],
+    "Field_Goals": [
+      {
+        "jersey": "S91",
+        "playerName": "Kyle Cunanan",
+        "attempts": 9,
+        "returns": 0,
+        "yards": 0,
+        "ypa": 0,
+        "tds": 0
+      }
+    ],
+    "Kick_Returns": [
+      {
+        "jersey": "02",
+        "playerName": "Jacory Barney Jr.",
+        "attempts": 3,
+        "returns": 3,
+        "yards": 23,
+        "ypa": 7.7,
+        "tds": 0
+      },
+      {
+        "jersey": "22",
+        "playerName": "Isaiah Mozee",
+        "attempts": 1,
+        "returns": 1,
+        "yards": 23,
+        "ypa": 23,
+        "tds": 0
+      },
+      {
+        "jersey": "32",
+        "playerName": "Kenneth Williams",
+        "attempts": 5,
+        "returns": 5,
+        "yards": 105,
+        "ypa": 21,
+        "tds": 0
+      }
+    ],
+    "Punt_Returns": [
+      {
+        "jersey": "02",
+        "playerName": "Jacory Barney Jr.",
+        "attempts": 9,
+        "returns": 9,
+        "yards": 111,
+        "ypa": 12.3,
+        "tds": 0
+      },
+      {
+        "jersey": "22",
+        "playerName": "Isaiah Mozee",
+        "attempts": 2,
+        "returns": 2,
+        "yards": 43,
+        "ypa": 21.5,
+        "tds": 0
+      }
+    ]
+  }
+}
