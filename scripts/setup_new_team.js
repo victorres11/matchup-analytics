@@ -13,6 +13,9 @@ function setupNewTeam(teamName, teamConfig) {
     // 1. Add team configuration
     teamConfigs[teamName] = teamConfig;
     
+    // 1.5. Save team configuration to file
+    saveTeamConfig(teamName, teamConfig);
+    
     // 2. Create data directory structure
     const dataDir = path.join(__dirname, `../data/csv/team_data/${teamName}`);
     if (!fs.existsSync(dataDir)) {
@@ -83,6 +86,39 @@ function createBasicCSVTemplate(templateType) {
         'summary.csv': 'Week,Opponent,Date,Final_Score_Team,Final_Score_Opponent,Home_Away,Offense_Snaps,Defense_Snaps\n1,Example Team,MM/DD/YYYY,0,0,Home,0,0'
     };
     return templates[templateType] || '';
+}
+
+function saveTeamConfig(teamName, teamConfig) {
+    const configPath = path.join(__dirname, 'team_config.js');
+    let configContent = fs.readFileSync(configPath, 'utf8');
+    
+    // Create the new team configuration string
+    const newTeamConfig = `    ${teamName}: {
+        name: "${teamConfig.name}",
+        shortName: "${teamConfig.shortName}",
+        primaryColor: "${teamConfig.primaryColor}",
+        secondaryColor: "${teamConfig.secondaryColor}", 
+        logoPath: "${teamConfig.logoPath}",
+        matchupTeam: "${teamConfig.matchupTeam}",
+        matchupText: "${teamConfig.matchupText}",
+        dataFiles: {
+            offense: "${teamConfig.dataFiles.offense}",
+            defense: "${teamConfig.dataFiles.defense}", 
+            kicking: "${teamConfig.dataFiles.kicking}",
+            specialTeams: "${teamConfig.dataFiles.specialTeams}",
+            summary: "${teamConfig.dataFiles.summary}",
+            roster: "${teamConfig.dataFiles.roster}"
+        }
+    },`;
+    
+    // Insert before the template section
+    configContent = configContent.replace(
+        '    // Template for new teams',
+        `${newTeamConfig}\n    // Template for new teams`
+    );
+    
+    fs.writeFileSync(configPath, configContent);
+    console.log(`  ✓ Updated team configuration for ${teamConfig.name}`);
 }
 
 function updateMainIndex(teamName, config) {
