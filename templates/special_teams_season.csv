@@ -1,2 +1,2 @@
-Player,Unit,Attempts
-Example Player,Kickoff,0
+Player,#,POS,Games,TOT,KRET,KCOV,PRET,PCOV,FGBLK,FGK
+Example Player,D01,CB,1,5,2,3,0,0,0,0

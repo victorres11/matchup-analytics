@@ -195,7 +195,7 @@ function convertTeamData(teamName) {
         const offenseWeeks = convertPlayerData(offenseCSV, 'offense', teamName, rosterData);
         const defenseWeeks = convertPlayerData(defenseCSV, 'defense', teamName, rosterData);
         const summary = convertSummaryData(summaryCSV);
-        const { specialTeams, kickingSpecialists } = convertSpecialTeamsData(specialTeamsSeasonCSV);
+        const { specialTeams, kickingSpecialists } = convertSpecialTeamsData(specialTeamsCSV);
 
         // Combine weeks data
         const weeks = [];

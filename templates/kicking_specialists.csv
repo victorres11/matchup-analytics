@@ -1,2 +1,4 @@
-Player,Unit,Attempts
-Example Player,Kickoff,0
+Category,Jersey,Player_Name,Attempts,Returns,Yards,YPA,TDs
+Kickoffs,S91,Example Kicker,5,,,,
+Punting,S83,Example Punter,3,,,,
+Field_Goals,S91,Example Kicker,2,,,,
