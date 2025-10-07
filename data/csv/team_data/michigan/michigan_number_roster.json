@@ -1,0 +1,12 @@
+{
+  "roster": [
+    {
+      "number": 1,
+      "name": "Example Player",
+      "class": "Fr.",
+      "height": "6-0",
+      "weight": 200,
+      "hometown": "Example, ST"
+    }
+  ]
+}
