@@ -2,22 +2,6 @@ const fs = require('fs');
 const path = require('path');
 const teamConfigs = require('./team_config');
 
-// Function to get player year from roster
-function getPlayerYear(playerName, jerseyNumber, rosterData) {
-    if (!rosterData) return 'Unknown';
-    
-    // Handle defensive players with D prefix (e.g., D08 -> 8)
-    let cleanJerseyNumber = jerseyNumber;
-    if (jerseyNumber.startsWith('D')) {
-        cleanJerseyNumber = jerseyNumber.substring(1);
-    }
-    
-    const player = rosterData.roster.find(p => 
-        p.name === playerName && p.number === parseInt(cleanJerseyNumber)
-    );
-    return player ? player.class : 'Unknown';
-}
-
 // Parse CSV data
 function parseCSV(csvText) {
     const lines = csvText.trim().split('\n');
@@ -42,65 +26,118 @@ function parseCSV(csvText) {
 function getPositionGroup(position) {
     const pos = position.toUpperCase();
     
-    // Offense
-    if (pos === 'QB') return 'quarterbacks';
-    if (pos.includes('HB') || pos.includes('RB')) return 'running_backs';
-    if (pos.includes('WR') || pos.includes('SLWR') || pos.includes('SRWR')) return 'wide_receivers';
-    if (pos.includes('TE') || pos.includes('TEL') || pos.includes('TER')) return 'tight_ends';
-    if (pos.includes('C') || pos.includes('G') || pos.includes('T') || pos.includes('LG') || pos.includes('RG') || pos.includes('LT') || pos.includes('RT')) return 'offensive_line';
+    // Position group mappings
+    const positionGroups = {
+        // Offense
+        qb: ['QB'],
+        rb: ['HB', 'RB', 'FB'],
+        wr: ['WR', 'SLWR', 'SRWR', 'LWR', 'RWR'],
+        te: ['TE', 'TEL', 'TER'],
+        ol: ['C', 'LG', 'RG', 'LT', 'RT', 'T', 'G'],
+        
+        // Defense
+        dl: ['DRT', 'DLT', 'DRE', 'DLE', 'NT', 'DT', 'DE'],
+        lb: ['LOLB', 'ROLB', 'MLB', 'WLB', 'LB'],
+        db: ['SCB', 'RCB', 'LCB', 'SS', 'FS', 'S', 'CB', 'DB']
+    };
     
-    // Defense - Updated with specific position mappings
-    if (pos.includes('DL') || pos.includes('DT') || pos.includes('DE') || pos.includes('NT') || pos === 'DRT' || pos === 'DLT' || pos.includes('DLE') || pos.includes('DRE')) return 'defensive_line';
-    if (pos.includes('LB') || pos.includes('MLB') || pos.includes('WLB') || pos === 'ROLB' || pos === 'LOLB') return 'linebackers';
-    if (pos.includes('CB') || pos.includes('S') || pos.includes('FS') || pos.includes('SS') || pos === 'RCB' || pos === 'LCB' || pos === 'SCB') return 'defensive_backs';
+    // Find the position group
+    for (const [group, positions] of Object.entries(positionGroups)) {
+        if (positions.includes(pos)) {
+            return group;
+        }
+    }
     
-    return 'other';
+    return 'unknown';
 }
 
-// Convert player data
+// Function to get player year from roster
+function getPlayerYear(playerName, jerseyNumber, rosterData) {
+    if (!rosterData) return 'Unknown';
+    
+    // Handle defensive players with D prefix (e.g., D08 -> 8)
+    let cleanJerseyNumber = jerseyNumber;
+    if (jerseyNumber.startsWith('D')) {
+        cleanJerseyNumber = jerseyNumber.substring(1);
+    }
+    
+    const player = rosterData.roster.find(p => 
+        p.name === playerName && p.number === parseInt(cleanJerseyNumber)
+    );
+    return player ? player.class : 'Unknown';
+}
+
+// Convert player data (offense/defense)
 function convertPlayerData(csvData, side, teamName, rosterData) {
     const weeks = [];
-    const weekNumbers = [1, 2, 3, 4, 5];
+    
+    // Get week columns dynamically
+    const weekColumns = Object.keys(csvData[0] || {}).filter(key => 
+        key.includes('Week') && (key.includes('_Snaps') || key.includes('_Started'))
+    );
+    
+    const weekNumbers = [...new Set(weekColumns.map(col => 
+        col.match(/Week(\d+)/)?.[1]
+    ).filter(Boolean))].map(Number).sort((a, b) => a - b);
     
     weekNumbers.forEach(weekNum => {
         const weekData = {
-            week: weekNum,
-            [side]: {}
+            offense: {},
+            defense: {}
         };
         
-        // Group players by position
-        const positionGroups = {};
+        const positionGroups = {
+            quarterbacks: [],
+            running_backs: [],
+            wide_receivers: [],
+            tight_ends: [],
+            offensive_line: [],
+            defensive_line: [],
+            linebackers: [],
+            defensive_backs: []
+        };
         
         csvData.forEach(player => {
+            const snaps = parseInt(player[`Week${weekNum}_Snaps`]) || 0;
+            const started = player[`Week${weekNum}_Started`] === 'true' || player[`Week${weekNum}_Started`] === 'TRUE';
             const position = player.POS;
             const positionGroup = getPositionGroup(position);
             
-            if (!positionGroups[positionGroup]) {
-                positionGroups[positionGroup] = [];
-            }
+            const playerData = {
+                name: player.Player,
+                jersey: player['#'],
+                position: position,
+                year: getPlayerYear(player.Player, player['#'], rosterData),
+                snaps: snaps,
+                started: started
+            };
             
-            const snaps = parseInt(player[`Week${weekNum}_Snaps`]) || 0;
-            const started = player[`Week${weekNum}_Started`] === 'true';
-            
-            if (snaps > 0 || started) {
-                positionGroups[positionGroup].push({
-                    name: player.Player,
-                    jersey: player['#'],
-                    position: position,
-                    year: getPlayerYear(player.Player, player['#'], rosterData),
-                    snaps: snaps,
-                    started: started
-                });
+            // Categorize by side and position group
+            if (side === 'offense') {
+                const groupMap = {
+                    qb: 'quarterbacks',
+                    rb: 'running_backs',
+                    wr: 'wide_receivers',
+                    te: 'tight_ends',
+                    ol: 'offensive_line'
+                };
+                const groupName = groupMap[positionGroup] || 'unknown';
+                if (!positionGroups[groupName]) positionGroups[groupName] = [];
+                positionGroups[groupName].push(playerData);
+            } else {
+                const groupMap = {
+                    dl: 'defensive_line',
+                    lb: 'linebackers',
+                    db: 'defensive_backs'
+                };
+                const groupName = groupMap[positionGroup] || 'unknown';
+                if (!positionGroups[groupName]) positionGroups[groupName] = [];
+                positionGroups[groupName].push(playerData);
             }
         });
         
-        // Add position groups to week data
-        Object.keys(positionGroups).forEach(group => {
-            if (positionGroups[group].length > 0) {
-                weekData[side][group] = positionGroups[group];
-            }
-        });
-        
+        weekData[side] = positionGroups;
+        weekData.week = weekNum; // Store the week number
         weeks.push(weekData);
     });
     
@@ -110,12 +147,12 @@ function convertPlayerData(csvData, side, teamName, rosterData) {
 // Convert summary data
 function convertSummaryData(csvData) {
     return csvData.map(row => ({
-        week: parseInt(row.Week),
-        opponent: row.Opponent,
-        date: row.Date,
+        week: parseInt(row.Week) || 0,
+        opponent: row.Opponent || '',
+        date: row.Date || '',
         final_score_team: parseInt(row.Final_Score_Team) || 0,
         final_score_opponent: parseInt(row.Final_Score_Opponent) || 0,
-        home_away: row.Home_Away,
+        home_away: row.Home_Away || '',
         offense_snaps: parseInt(row.Offense_Snaps) || 0,
         defense_snaps: parseInt(row.Defense_Snaps) || 0
     }));
@@ -126,33 +163,127 @@ function convertSpecialTeamsData(csvData) {
     const specialTeams = {};
     const kickingSpecialists = [];
     
+    // Column mappings for complex special teams format
+    const columnMappings = {
+        'KRET': 'Kick_Returns',
+        'KCOV': 'Kick_Coverage',
+        'PRET': 'Punt_Returns',
+        'PCOV': 'Punt_Coverage',
+        'FGBLK': 'Field_Goal_Block',
+        'FGK': 'Field_Goals'
+    };
+    
     csvData.forEach(row => {
         const playerName = row.Player;
-        const unit = row.Unit;
+        const jersey = row['#'] || row.jersey || '';
+        
+        // Process each special teams activity column
+        Object.keys(columnMappings).forEach(column => {
+            const attempts = parseInt(row[column]) || 0;
+            const category = columnMappings[column];
+            
+            if (attempts > 0) {
+                // Initialize category if it doesn't exist
+                if (!specialTeams[category]) {
+                    specialTeams[category] = [];
+                }
+                
+                // Add player to special teams category
+                specialTeams[category].push({
+                    jersey: jersey,
+                    playerName: playerName,
+                    attempts: attempts
+                });
+                
+                // Add to kicking specialists for return activities
+                if (column === 'KRET' || column === 'PRET') {
+                    kickingSpecialists.push({
+                        jersey: jersey,
+                        playerName: playerName,
+                        category: category,
+                        returns: attempts,
+                        yards: 0 // Yards data not available in this format
+                    });
+                }
+            }
+        });
+    });
+    
+    return { specialTeams, kickingSpecialists };
+}
+
+// Convert simple kicking specialists data (for aggregate tables)
+function convertKickingSpecialistsData(csvData) {
+    const kickingSpecialists = [];
+    
+    csvData.forEach(row => {
+        const category = row.Category;
+        const jersey = row.Jersey;
+        const playerName = row.Player_Name;
         const attempts = parseInt(row.Attempts) || 0;
+        const returns = parseInt(row.Returns) || 0;
+        const yards = parseInt(row.Yards) || 0;
+        const ypa = parseFloat(row.YPA) || 0;
+        const tds = parseInt(row.TDs) || 0;
         
-        if (!specialTeams[unit]) {
-            specialTeams[unit] = [];
-        }
-        
-        if (attempts > 0) {
-            specialTeams[unit].push({
-                playerName: playerName,
-                attempts: attempts
-            });
-        }
-        
-        // Add to kicking specialists if they have attempts
-        if (attempts > 0) {
+        if (attempts > 0 || returns > 0) {
             kickingSpecialists.push({
+                category: category,
+                jersey: jersey,
                 playerName: playerName,
-                unit: unit,
-                attempts: attempts
+                attempts: attempts,
+                returns: returns,
+                yards: yards,
+                ypa: ypa,
+                td: tds
             });
         }
     });
     
-    return { specialTeams, kickingSpecialists };
+    return kickingSpecialists;
+}
+
+// Calculate total snaps from player data
+function calculateTotalSnaps(summary, offenseWeeks, defenseWeeks) {
+    return summary.map(summaryWeek => {
+        // If summary already has non-zero snaps, use those
+        if (summaryWeek.offense_snaps > 0 || summaryWeek.defense_snaps > 0) {
+            return summaryWeek;
+        }
+        
+        // Calculate from player data
+        const offenseWeek = offenseWeeks.find(w => w.week === summaryWeek.week);
+        const defenseWeek = defenseWeeks.find(w => w.week === summaryWeek.week);
+        
+        let totalOffenseSnaps = 0;
+        let totalDefenseSnaps = 0;
+        
+        if (offenseWeek && offenseWeek.offense) {
+            Object.values(offenseWeek.offense).forEach(positionGroup => {
+                if (Array.isArray(positionGroup)) {
+                    positionGroup.forEach(player => {
+                        totalOffenseSnaps += player.snaps || 0;
+                    });
+                }
+            });
+        }
+        
+        if (defenseWeek && defenseWeek.defense) {
+            Object.values(defenseWeek.defense).forEach(positionGroup => {
+                if (Array.isArray(positionGroup)) {
+                    positionGroup.forEach(player => {
+                        totalDefenseSnaps += player.snaps || 0;
+                    });
+                }
+            });
+        }
+        
+        return {
+            ...summaryWeek,
+            offense_snaps: totalOffenseSnaps,
+            defense_snaps: totalDefenseSnaps
+        };
+    });
 }
 
 // Main conversion function
@@ -195,26 +326,38 @@ function convertTeamData(teamName) {
         const offenseWeeks = convertPlayerData(offenseCSV, 'offense', teamName, rosterData);
         const defenseWeeks = convertPlayerData(defenseCSV, 'defense', teamName, rosterData);
         const summary = convertSummaryData(summaryCSV);
-        const { specialTeams, kickingSpecialists } = convertSpecialTeamsData(specialTeamsCSV);
+        const { specialTeams, kickingSpecialists: complexKickingSpecialists } = convertSpecialTeamsData(specialTeamsSeasonCSV);
+        const simpleKickingSpecialists = convertKickingSpecialistsData(specialTeamsCSV);
+        
+        // Calculate total snaps from player data if summary has zeros
+        const calculatedSummary = calculateTotalSnaps(summary, offenseWeeks, defenseWeeks);
 
-        // Combine weeks data
+        // Combine weeks data - only create weeks that exist in summary
         const weeks = [];
-        for (let i = 0; i < 5; i++) {
+        const existingWeeks = new Set(calculatedSummary.map(s => s.week));
+        
+        // Only create weeks that exist in summary data
+        Array.from(existingWeeks).sort((a, b) => a - b).forEach(weekNum => {
+            // Find the correct week data by matching week numbers
+            const offenseWeekData = offenseWeeks.find(w => w.week === weekNum);
+            const defenseWeekData = defenseWeeks.find(w => w.week === weekNum);
+            
             const weekData = {
-                week: i + 1,
-                offense: offenseWeeks[i].offense,
-                defense: defenseWeeks[i].defense
+                week: weekNum,
+                offense: offenseWeekData?.offense || {},
+                defense: defenseWeekData?.defense || {}
             };
             weeks.push(weekData);
-        }
+        });
 
         // Create final data structure
         const teamData = {
             team: teamName,
             weeks: weeks,
-            summary: summary,
+            summary: calculatedSummary,
             special_teams: specialTeams,
-            kicking_specialists: kickingSpecialists
+            kicking_specialists: simpleKickingSpecialists, // Use simple format for aggregate tables
+            complex_kicking_specialists: complexKickingSpecialists // Keep complex data for charts
         };
 
         // Write to JSON file
@@ -226,10 +369,11 @@ function convertTeamData(teamName) {
         console.log(`Weeks: ${weeks.length}`);
         console.log(`Summary entries: ${summary.length}`);
         console.log(`Special teams categories: ${Object.keys(specialTeams).length}`);
-        console.log(`Kicking specialists entries: ${kickingSpecialists.length}`);
+        console.log(`Simple kicking specialists entries: ${simpleKickingSpecialists.length}`);
+        console.log(`Complex kicking specialists entries: ${complexKickingSpecialists.length}`);
         
     } catch (error) {
-        console.error(`Error converting ${config.name} data:`, error.message);
+        console.error(`Error converting data for ${teamName}:`, error.message);
         throw error;
     }
 }
@@ -237,12 +381,19 @@ function convertTeamData(teamName) {
 // Command line usage
 if (require.main === module) {
     const teamName = process.argv[2];
+    
     if (!teamName) {
         console.error('Usage: node convert_team_data.js <team_name>');
-        console.error('Available teams:', Object.keys(teamConfigs).filter(t => t !== 'template'));
+        console.error('Example: node convert_team_data.js nebraska');
         process.exit(1);
     }
-    convertTeamData(teamName);
+    
+    try {
+        convertTeamData(teamName);
+    } catch (error) {
+        console.error('Conversion failed:', error.message);
+        process.exit(1);
+    }
 }
 
 module.exports = { convertTeamData };

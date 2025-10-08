@@ -244,6 +244,34 @@ Week,Opponent,Date,Final_Score_Team,Final_Score_Opponent,Home_Away,Offense_Snaps
 - `Offense_Snaps`: Total offensive snaps for the game
 - `Defense_Snaps`: Total defensive snaps for the game
 
+### 🚫 **BYE Week Handling**
+**Important**: The system now automatically handles BYE weeks properly:
+
+- **✅ DO**: Skip BYE weeks in your CSV files
+  - If Week 5 is a BYE, go from Week 4 to Week 6
+  - Don't include Week 5 rows in summary.csv
+  - Don't include Week5_Snaps/Week5_Started columns in player CSV files
+
+- **❌ DON'T**: Include BYE week data
+  - Don't add rows with "Bye Week" as opponent
+  - Don't add columns for BYE weeks in player data
+
+- **🎯 Example**: Purdue's schedule (Week 5 is BYE)
+  ```
+  Week,Opponent,Date,Final_Score_Team,Final_Score_Opponent,Home_Away,Offense_Snaps,Defense_Snaps
+  1,BALLST,Sat Aug 30,31,0,Home,60,53
+  2,SOUILL,Sat Sep 06,34,17,Home,79,60
+  3,USCTRO,Sat Sep 13,17,33,Home,71,70
+  4,NOTRED,Sat Sep 20,30,56,Away,71,64
+  6,ILLINO,Sat Oct 04,27,43,Home,77,65
+  ```
+
+- **🔧 The conversion script automatically**:
+  - Detects which weeks exist in your data
+  - Only processes weeks that have actual games
+  - Skips missing weeks (BYE weeks)
+  - Creates charts and tables for actual games only
+
 ---
 
 ### **6. Roster JSON Format**
@@ -309,6 +337,28 @@ Week,Opponent,Date,Final_Score_Team,Final_Score_Opponent,Home_Away,Offense_Snaps
 - `SCB`, `LCB`, `RCB`: Slot/Left/Right Cornerback
 - `SS`, `FS`: Strong/Free Safety
 - `S`, `CB`, `DB`: Generic Safety/Cornerback/Defensive Back
+
+---
+
+## 📋 Aggregate Table Organization
+
+The system automatically organizes players in the aggregate tables in this specific order:
+
+### **Offense Aggregate Table Order:**
+1. **Wide Receivers** (WR, SLWR, SRWR, LWR, RWR)
+2. **Tight Ends** (TE, TEL, TER)
+3. **Running Backs** (HB, RB, FB)
+4. **Offensive Line** (C, LG, RG, LT, RT, T, G)
+5. **Quarterbacks** (QB)
+6. **All Others** (defensive players taking offensive snaps, specialists, etc.)
+
+### **Defense Aggregate Table Order:**
+1. **Defensive Line** (DRT, DLT, DRE, DLE, NT, DT, DE)
+2. **Linebackers** (LOLB, ROLB, MLB, WLB, LB)
+3. **Defensive Backs** (SCB, RCB, LCB, SS, FS, S, CB, DB)
+4. **Any Others** (specialists, etc.)
+
+**Note**: Within each position group, players are sorted by total snaps (highest to lowest).
 
 ---
 
@@ -385,3 +435,23 @@ node scripts/convert_team_data.js your-team
 # 5. Test the page
 # Open: http://localhost:8001/pages/your-team.html
 ```
+
+## Missing Game Indicators
+
+The analytics system includes a visual indicator for players who miss games due to injury or other reasons:
+
+### How It Works
+- **Trigger**: When a player has 10% or more of team snaps in the previous week but gets 0 snaps in the current week
+- **Visual**: A small bar (5 snaps height) with diagonal stripe pattern appears in the chart
+- **Purpose**: Helps identify injured or absent players visually
+
+### Example Scenario
+- Player has 15 snaps out of 60 total team snaps (25%) in Week 2
+- Player gets 0 snaps in Week 3
+- Result: Small diagonal-patterned bar appears in Week 3 chart
+
+### Technical Details
+- Uses `createDiagonalPattern()` function to generate the visual pattern
+- Calculates 10% threshold dynamically based on team's total snaps for each week
+- Applied to both offense and defense position-specific charts
+- Does not appear for BYE weeks

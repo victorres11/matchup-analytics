@@ -39,14 +39,19 @@ function setupNewTeam(teamName, teamConfig) {
         const templatePath = path.join(__dirname, `../templates/${template}`);
         const outputPath = path.join(dataDir, `${teamName}_${template}`);
         
-        if (fs.existsSync(templatePath)) {
-            fs.copyFileSync(templatePath, outputPath);
-            console.log(`  ✓ Created: ${outputPath}`);
+        // Only create template if file doesn't already exist
+        if (!fs.existsSync(outputPath)) {
+            if (fs.existsSync(templatePath)) {
+                fs.copyFileSync(templatePath, outputPath);
+                console.log(`  ✓ Created: ${outputPath}`);
+            } else {
+                // Create basic template
+                const basicTemplate = createBasicCSVTemplate(template);
+                fs.writeFileSync(outputPath, basicTemplate);
+                console.log(`  ✓ Created basic template: ${outputPath}`);
+            }
         } else {
-            // Create basic template
-            const basicTemplate = createBasicCSVTemplate(template);
-            fs.writeFileSync(outputPath, basicTemplate);
-            console.log(`  ✓ Created basic template: ${outputPath}`);
+            console.log(`  ⚠ Skipped (file exists): ${outputPath}`);
         }
     });
     
@@ -57,8 +62,12 @@ function setupNewTeam(teamName, teamConfig) {
         ]
     };
     const rosterPath = path.join(dataDir, `${teamName}_number_roster.json`);
-    fs.writeFileSync(rosterPath, JSON.stringify(rosterTemplate, null, 2));
-    console.log(`  ✓ Created roster template: ${rosterPath}`);
+    if (!fs.existsSync(rosterPath)) {
+        fs.writeFileSync(rosterPath, JSON.stringify(rosterTemplate, null, 2));
+        console.log(`  ✓ Created roster template: ${rosterPath}`);
+    } else {
+        console.log(`  ⚠ Skipped (file exists): ${rosterPath}`);
+    }
     
     // 5. Generate team page
     console.log(`📄 Generating team page...`);
@@ -79,11 +88,11 @@ function setupNewTeam(teamName, teamConfig) {
 
 function createBasicCSVTemplate(templateType) {
     const templates = {
-        'offense.csv': 'Player,#,S,POS,Week1_Snaps,Week1_Started,Week2_Snaps,Week2_Started,Week3_Snaps,Week3_Started,Week4_Snaps,Week4_Started,Week5_Snaps,Week5_Started\nExample Player,1,*,QB,0,false,0,false,0,false,0,false,0,false',
-        'defense.csv': 'Player,#,S,POS,Week1_Snaps,Week1_Started,Week2_Snaps,Week2_Started,Week3_Snaps,Week3_Started,Week4_Snaps,Week4_Started,Week5_Snaps,Week5_Started\nExample Player,D01,*,SS,0,FALSE,0,FALSE,0,FALSE,0,FALSE,0,FALSE',
-        'kicking_specialists.csv': 'Player,Unit,Attempts\nExample Player,Kickoff,0',
-        'special_teams_season.csv': 'Player,Unit,Attempts\nExample Player,Kickoff,0',
-        'summary.csv': 'Week,Opponent,Date,Final_Score_Team,Final_Score_Opponent,Home_Away,Offense_Snaps,Defense_Snaps\n1,Example Team,MM/DD/YYYY,0,0,Home,0,0'
+        'offense.csv': 'Player,#,S,POS,Week1_Snaps,Week1_Started,Week2_Snaps,Week2_Started,Week3_Snaps,Week3_Started,Week4_Snaps,Week4_Started,Week6_Snaps,Week6_Started\nExample Player,1,*,QB,0,false,0,false,0,false,0,false,0,false',
+        'defense.csv': 'Player,#,S,POS,Week1_Snaps,Week1_Started,Week2_Snaps,Week2_Started,Week3_Snaps,Week3_Started,Week4_Snaps,Week4_Started,Week6_Snaps,Week6_Started\nExample Player,D01,*,SS,0,FALSE,0,FALSE,0,FALSE,0,FALSE,0,FALSE',
+        'kicking_specialists.csv': 'Category,Jersey,Player_Name,Attempts,Returns,Yards,YPA,TDs\nKickoffs,S91,Example Kicker,5,,,,\nPunting,S83,Example Punter,3,,,,\nField_Goals,S91,Example Kicker,2,,,,',
+        'special_teams_season.csv': 'Player,#,POS,Games,TOT,KRET,KCOV,PRET,PCOV,FGBLK,FGK\nExample Player,D01,CB,1,5,2,3,0,0,0,0',
+        'summary.csv': 'Week,Opponent,Date,Final_Score_Team,Final_Score_Opponent,Home_Away,Offense_Snaps,Defense_Snaps\n1,Example Team,MM/DD/YYYY,0,0,Home,0,0\n2,Another Team,MM/DD/YYYY,0,0,Away,0,0\n3,Third Team,MM/DD/YYYY,0,0,Home,0,0\n4,Fourth Team,MM/DD/YYYY,0,0,Away,0,0\n6,Sixth Team,MM/DD/YYYY,0,0,Home,0,0'
     };
     return templates[templateType] || '';
 }

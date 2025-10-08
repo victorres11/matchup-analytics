@@ -16,6 +16,11 @@ node scripts/setup_new_team.js michigan "#00274C" "#FFCB05" "ohio-state"
 - Add team logo as `assets/images/michigan_logo.png`
 - Add roster data as `data/csv/team_data/michigan/michigan_number_roster.json` (optional)
 
+**📝 Important**: 
+- The templates now include BYE week examples (Week 5 skipped, Week 6 included). This is normal for college football schedules!
+- New teams use a dedicated template with proper position ordering (WR, TE, RB, OL, QB)
+- Production teams (Nebraska, Maryland) remain unchanged and stable
+
 ### **3. Process Data**
 ```bash
 node scripts/convert_team_data.js michigan

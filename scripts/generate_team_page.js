@@ -10,20 +10,19 @@ function generateTeamPage(teamName) {
 
     console.log(`Generating page for ${config.name}...`);
 
-    // Read Nebraska template
-    const templatePath = path.join(__dirname, '../pages/nebraska.html');
+    // Read team template
+    const templatePath = path.join(__dirname, '../templates/team_page_template.html');
     const template = fs.readFileSync(templatePath, 'utf8');
     
     // Replace placeholders
     const pageContent = template
-        .replace(/Nebraska Cornhuskers/g, config.name)
-        .replace(/nebraska/g, config.shortName)
-        .replace(/#d32f2f/g, config.primaryColor)
-        .replace(/#ffffff/g, config.secondaryColor)
-        .replace(/nebraska_cornhuskers_logo\.jpg/g, config.logoPath)
-        .replace(/washington\.html/g, `${config.matchupTeam}.html`)
-        .replace(/View Washington/g, config.matchupText)
-        .replace(/nebraska_multiweek\.json/g, `${config.shortName}_multiweek.json`);
+        .replace(/{TEAM_NAME}/g, config.name)
+        .replace(/{team_name}/g, config.shortName)
+        .replace(/{primary_color}/g, config.primaryColor)
+        .replace(/{secondary_color}/g, config.secondaryColor)
+        .replace(/{logo_path}/g, config.logoPath)
+        .replace(/{matchup_team}/g, config.matchupTeam)
+        .replace(/{matchup_text}/g, config.matchupText);
     
     // Write page
     const outputPath = path.join(__dirname, `../pages/${teamName}.html`);

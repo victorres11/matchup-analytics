@@ -51,6 +51,74 @@ const teamConfigs = {
             roster: "washington_number_roster.json"
         }
     },
+    purdue: {
+        name: "Purdue",
+        shortName: "purdue",
+        primaryColor: "#CEB888",
+        secondaryColor: "#000000", 
+        logoPath: "purdue_logo.png",
+        matchupTeam: "nebraska",
+        matchupText: "View Nebraska",
+        dataFiles: {
+            offense: "purdue_offense.csv",
+            defense: "purdue_defense.csv", 
+            kicking: "purdue_kicking_specialists.csv",
+            specialTeams: "purdue_special_teams_season.csv",
+            summary: "purdue_summary.csv",
+            roster: "purdue_number_roster.json"
+        }
+    },
+    purdue: {
+        name: "Purdue",
+        shortName: "purdue",
+        primaryColor: "#CEB888",
+        secondaryColor: "#000000", 
+        logoPath: "purdue_logo.webp",
+        matchupTeam: "northwestern",
+        matchupText: "View Northwestern",
+        dataFiles: {
+            offense: "purdue_offense.csv",
+            defense: "purdue_defense.csv", 
+            kicking: "purdue_kicking_specialists.csv",
+            specialTeams: "purdue_special_teams_season.csv",
+            summary: "purdue_summary.csv",
+            roster: "purdue_number_roster.json"
+        }
+    },
+    "test-team": {
+        name: "Test-team",
+        shortName: "test-team",
+        primaryColor: "#FF0000",
+        secondaryColor: "#FFFFFF", 
+        logoPath: "test-team_logo.png",
+        matchupTeam: "nebraska",
+        matchupText: "View Nebraska",
+        dataFiles: {
+            offense: "test-team_offense.csv",
+            defense: "test-team_defense.csv", 
+            kicking: "test-team_kicking_specialists.csv",
+            specialTeams: "test-team_special_teams_season.csv",
+            summary: "test-team_summary.csv",
+            roster: "test-team_number_roster.json"
+        }
+    },
+    northwestern: {
+        name: "Northwestern",
+        shortName: "northwestern",
+        primaryColor: "#4E2A84",
+        secondaryColor: "#FFFFFF", 
+        logoPath: "northwestern_logo.png",
+        matchupTeam: "purdue",
+        matchupText: "View Purdue",
+        dataFiles: {
+            offense: "northwestern_offense.csv",
+            defense: "northwestern_defense.csv", 
+            kicking: "northwestern_kicking_specialists.csv",
+            specialTeams: "northwestern_special_teams_season.csv",
+            summary: "northwestern_summary.csv",
+            roster: "northwestern_number_roster.json"
+        }
+    },
     // Template for new teams
     template: {
         name: "{Team Name}",
