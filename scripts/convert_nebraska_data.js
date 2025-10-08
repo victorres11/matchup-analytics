@@ -49,17 +49,17 @@ function parseCSV(csvText) {
 function getPositionGroup(position) {
     const pos = position.toUpperCase();
     
+    // Defense - Check defensive positions FIRST to avoid conflicts
+    if (pos.includes('CB') || pos.includes('S') || pos.includes('FS') || pos.includes('SS') || pos === 'RCB' || pos === 'LCB' || pos === 'SCB') return 'defensive_backs';
+    if (pos.includes('DL') || pos.includes('DT') || pos.includes('DE') || pos.includes('NT') || pos === 'DRT' || pos === 'DLT' || pos.includes('DLE') || pos.includes('DRE')) return 'defensive_line';
+    if (pos.includes('LB') || pos.includes('MLB') || pos.includes('WLB') || pos === 'ROLB' || pos === 'LOLB') return 'linebackers';
+    
     // Offense
     if (pos === 'QB') return 'quarterbacks';
     if (pos.includes('HB') || pos.includes('RB')) return 'running_backs';
     if (pos.includes('WR') || pos.includes('SLWR') || pos.includes('SRWR')) return 'wide_receivers';
     if (pos.includes('TE') || pos.includes('TEL') || pos.includes('TER')) return 'tight_ends';
     if (pos.includes('C') || pos.includes('G') || pos.includes('T') || pos.includes('LG') || pos.includes('RG') || pos.includes('LT') || pos.includes('RT')) return 'offensive_line';
-    
-    // Defense - Updated with specific position mappings
-    if (pos.includes('DL') || pos.includes('DT') || pos.includes('DE') || pos.includes('NT') || pos === 'DRT' || pos === 'DLT' || pos.includes('DLE') || pos.includes('DRE')) return 'defensive_line';
-    if (pos.includes('LB') || pos.includes('MLB') || pos.includes('WLB') || pos === 'ROLB' || pos === 'LOLB') return 'linebackers';
-    if (pos.includes('CB') || pos.includes('S') || pos.includes('FS') || pos.includes('SS') || pos === 'RCB' || pos === 'LCB' || pos === 'SCB') return 'defensive_backs';
     
     return 'other';
 }
