@@ -1,6 +1,13 @@
-Week,Opponent,Date,Final_Score_Team,Final_Score_Opponent,Home_Away,Offense_Snaps,Defense_Snaps,Special_Teams_Snaps
-1,Cincinnati,Thu Aug 30th,20,17,Home,78,57,0
-2,Akron,Sat Sep 6th,40,7,Away,73,63,0
-3,Houston Christian,Sat Sep 13th,49,14,Home,70,54,0
-4,Michigan,Sat Sep 20th,10,27,Away,75,56,0
-5,Michigan State,Sat Oct 4th,38,27,Away,56,72,0
+Week,Opponent,Date,Final_Score_Team,Final_Score_Opponent,Home_Away,Offense_Snaps,Defense_Snaps
+1,CINCIN,Fri Aug 29,20,17,Away,0,0
+2,AKRONZ,Sat Sep 06,68,0,Home,0,0
+3,HOUSCH,Sat Sep 13,59,7,Home,0,0
+4,MICHIG,Sat Sep 20,27,30,Home,0,0
+6,MSTATE,Sat Oct 04,38,27,Home,0,0
+7,MARYLA,Sat Oct 11,0,0,Away,0,0
+8,MINNES,Sat Oct 18,0,0,Away,0,0
+9,NORTHW,Sat Oct 25,0,0,Home,0,0
+10,USCTRO,Sat Nov 01,0,0,Home,0,0
+11,UCLABR,Sat Nov 08,0,0,Away,0,0
+13,PENNST,Sat Nov 22,0,0,Away,0,0
+14,IOWAHA,Fri Nov 28,0,0,Home,0,0

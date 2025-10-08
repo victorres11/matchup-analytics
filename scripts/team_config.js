@@ -9,8 +9,8 @@ const teamConfigs = {
         matchupTeam: "washington",
         matchupText: "View Washington",
         dataFiles: {
-            offense: "nebraska_offense_corrected.csv",
-            defense: "nebraska_2025_defense_corrected.csv", 
+            offense: "nebraska_offense.csv",
+            defense: "nebraska_defense.csv", 
             kicking: "nebraska_kicking_specialists.csv",
             specialTeams: "nebraska_special_teams_season.csv",
             summary: "nebraska_summary.csv",

@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 
 // Read CSV files
-const offenseData = fs.readFileSync(path.join(__dirname, '../data/csv/team_data/nebraska/nebraska_offense_corrected.csv'), 'utf8');
-const defenseData = fs.readFileSync(path.join(__dirname, '../data/csv/team_data/nebraska/nebraska_2025_defense_corrected.csv'), 'utf8');
+const offenseData = fs.readFileSync(path.join(__dirname, '../data/csv/team_data/nebraska/nebraska_offense.csv'), 'utf8');
+const defenseData = fs.readFileSync(path.join(__dirname, '../data/csv/team_data/nebraska/nebraska_defense.csv'), 'utf8');
 const specialTeamsData = fs.readFileSync(path.join(__dirname, '../data/csv/team_data/nebraska/nebraska_kicking_specialists.csv'), 'utf8');
 const specialTeamsSeasonData = fs.readFileSync(path.join(__dirname, '../data/csv/team_data/nebraska/nebraska_special_teams_season.csv'), 'utf8');
 const summaryData = fs.readFileSync(path.join(__dirname, '../data/csv/team_data/nebraska/nebraska_summary.csv'), 'utf8');

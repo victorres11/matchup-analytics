@@ -1,11 +1,11 @@
 Category,Jersey,Player_Name,Attempts,Returns,Yards,YPA,TDs
-Punting,S83,Archie Wilson,12,,,,
+Field_Goals,S91,Kyle Cunanan,8,,,,
+Kickoffs,S30,Tristan Alvano,2,,,,
 Kickoffs,S91,Kyle Cunanan,18,,,,
 Kickoffs,S90,John Hohl,18,,,,
-Kickoffs,S30,Tristan Alvano,2,,,,
-Field_Goals,S91,Kyle Cunanan,9,,,,
-Kick_Returns,02,Jacory Barney Jr.,3,3,23,7.7,0
-Kick_Returns,22,Isaiah Mozee,1,1,23,23.0,0
+Punting,S83,Archie Wilson,12,,,,
+Kick_Returns,06,Dane Key,1,1,0,0.0,0
+Punt_Returns,02,Jacory Barney Jr.,13,13,192,14.8,0
 Kick_Returns,32,Kenneth Williams,5,5,105,21.0,0
-Punt_Returns,02,Jacory Barney Jr.,9,9,111,12.3,0
+Kick_Returns,22,Isaiah Mozee,1,1,23,23.0,0
 Punt_Returns,22,Isaiah Mozee,2,2,43,21.5,0
