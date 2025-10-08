@@ -67,7 +67,15 @@ function getPositionGroup(position) {
 // Convert player data
 function convertPlayerData(csvData, side) {
     const weeks = [];
-    const weekNumbers = [1, 2, 3, 4, 5];
+    
+    // Get week columns dynamically from CSV headers
+    const weekColumns = Object.keys(csvData[0] || {}).filter(key => 
+        key.includes('Week') && (key.includes('_Snaps') || key.includes('_Started'))
+    );
+    
+    const weekNumbers = [...new Set(weekColumns.map(col => 
+        col.match(/Week(\d+)/)?.[1]
+    ).filter(Boolean))].map(Number).sort((a, b) => a - b);
     
     weekNumbers.forEach(weekNum => {
         const weekData = {
@@ -266,14 +274,15 @@ const summary = convertSummaryData(summaryCSV);
 
 // Combine weeks data
 const weeks = [];
-for (let i = 0; i < 5; i++) {
+offenseWeeks.forEach((offenseWeek, index) => {
+    const defenseWeek = defenseWeeks[index];
     const weekData = {
-        week: i + 1,
-        offense: offenseWeeks[i].offense,
-        defense: defenseWeeks[i].defense
+        week: offenseWeek.week,
+        offense: offenseWeek.offense,
+        defense: defenseWeek.defense
     };
     weeks.push(weekData);
-}
+});
 
 // Create final JSON structure
 const nebraskaData = {
