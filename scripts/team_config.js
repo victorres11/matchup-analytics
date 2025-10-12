@@ -56,23 +56,6 @@ const teamConfigs = {
         shortName: "purdue",
         primaryColor: "#CEB888",
         secondaryColor: "#000000", 
-        logoPath: "purdue_logo.png",
-        matchupTeam: "nebraska",
-        matchupText: "View Nebraska",
-        dataFiles: {
-            offense: "purdue_offense.csv",
-            defense: "purdue_defense.csv", 
-            kicking: "purdue_kicking_specialists.csv",
-            specialTeams: "purdue_special_teams_season.csv",
-            summary: "purdue_summary.csv",
-            roster: "purdue_number_roster.json"
-        }
-    },
-    purdue: {
-        name: "Purdue",
-        shortName: "purdue",
-        primaryColor: "#CEB888",
-        secondaryColor: "#000000", 
         logoPath: "purdue_logo.webp",
         matchupTeam: "northwestern",
         matchupText: "View Northwestern",
@@ -83,6 +66,23 @@ const teamConfigs = {
             specialTeams: "purdue_special_teams_season.csv",
             summary: "purdue_summary.csv",
             roster: "purdue_number_roster.json"
+        }
+    },
+    rutgers: {
+        name: "Rutgers Scarlet Knights",
+        shortName: "rutgers",
+        primaryColor: "#CC0000",
+        secondaryColor: "#FFFFFF", 
+        logoPath: "rutgers_logo.png",
+        matchupTeam: "oregon",
+        matchupText: "View Oregon",
+        dataFiles: {
+            offense: "rutgers_offense.csv",
+            defense: "rutgers_defense.csv", 
+            kicking: "rutgers_kicking_specialists.csv",
+            specialTeams: "rutgers_special_teams_season.csv",
+            summary: "rutgers_summary.csv",
+            roster: "rutgers_roster.json"
         }
     },
     "test-team": {

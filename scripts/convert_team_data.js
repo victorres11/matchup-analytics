@@ -30,7 +30,7 @@ function getPositionGroup(position) {
     const positionGroups = {
         // Offense
         qb: ['QB'],
-        rb: ['HB', 'RB', 'FB'],
+        hb: ['HB', 'RB', 'FB'],
         wr: ['WR', 'SLWR', 'SRWR', 'LWR', 'RWR'],
         te: ['TE', 'TEL', 'TER'],
         ol: ['C', 'LG', 'RG', 'LT', 'RT', 'T', 'G'],
@@ -116,7 +116,7 @@ function convertPlayerData(csvData, side, teamName, rosterData) {
             if (side === 'offense') {
                 const groupMap = {
                     qb: 'quarterbacks',
-                    rb: 'running_backs',
+                    hb: 'running_backs',
                     wr: 'wide_receivers',
                     te: 'tight_ends',
                     ol: 'offensive_line'
