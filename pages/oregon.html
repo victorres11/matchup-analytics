@@ -1393,8 +1393,8 @@
                     positionGroup: getPositionGroupFromPosition(player.position)
                 };
             }).sort((a, b) => {
-                // First sort by position group in logical order
-                const positionGroupOrder = ['wr', 'te', 'rb', 'ol', 'qb'];
+                // First sort by position group in logical order: WR, TE, HB, OL, QB, then others
+                const positionGroupOrder = ['wr', 'te', 'hb', 'ol', 'qb'];
                 const aGroupIndex = positionGroupOrder.indexOf(a.positionGroup);
                 const bGroupIndex = positionGroupOrder.indexOf(b.positionGroup);
                 
