@@ -36,7 +36,7 @@ function getPositionGroup(position) {
         ol: ['C', 'LG', 'RG', 'LT', 'RT', 'T', 'G'],
         
         // Defense
-        dl: ['DRT', 'DLT', 'DRE', 'DLE', 'NT', 'DT', 'DE'],
+        dl: ['DRT', 'DLT', 'DRE', 'DLE', 'NT', 'DT', 'DE', 'DI', 'ED'],
         lb: ['LOLB', 'ROLB', 'MLB', 'WLB', 'LB'],
         db: ['SCB', 'RCB', 'LCB', 'SS', 'FS', 'S', 'CB', 'DB']
     };

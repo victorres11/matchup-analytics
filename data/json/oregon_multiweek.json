@@ -442,7 +442,120 @@
         "wide_receivers": [],
         "tight_ends": [],
         "offensive_line": [],
-        "defensive_line": [],
+        "defensive_line": [
+          {
+            "name": "Bear Alexander",
+            "jersey": "D01",
+            "position": "DI",
+            "year": "R-Jr.",
+            "snaps": 21,
+            "started": false
+          },
+          {
+            "name": "Teitum Tuioti",
+            "jersey": "D44",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 32,
+            "started": false
+          },
+          {
+            "name": "Matayo Uiagalelei",
+            "jersey": "D10",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 36,
+            "started": false
+          },
+          {
+            "name": "Terrance Green",
+            "jersey": "D99",
+            "position": "DI",
+            "year": "R-So.",
+            "snaps": 22,
+            "started": false
+          },
+          {
+            "name": "Ashton Porter",
+            "jersey": "D29",
+            "position": "ED",
+            "year": "R-So.",
+            "snaps": 20,
+            "started": false
+          },
+          {
+            "name": "Blake Purchase",
+            "jersey": "D09",
+            "position": "ED",
+            "year": "R-So.",
+            "snaps": 25,
+            "started": false
+          },
+          {
+            "name": "A'Mauri Washington",
+            "jersey": "D52",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 32,
+            "started": false
+          },
+          {
+            "name": "Aydin Breland",
+            "jersey": "D42",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 7,
+            "started": false
+          },
+          {
+            "name": "Tionne Gray",
+            "jersey": "D50",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 26,
+            "started": false
+          },
+          {
+            "name": "Elijah Rushing",
+            "jersey": "D47",
+            "position": "ED",
+            "year": "R-Fr.",
+            "snaps": 19,
+            "started": false
+          },
+          {
+            "name": "Nasir Wyatt",
+            "jersey": "D32",
+            "position": "ED",
+            "year": "Fr.",
+            "snaps": 3,
+            "started": false
+          },
+          {
+            "name": "Matthew Johnson",
+            "jersey": "D55",
+            "position": "DI",
+            "year": "Fr.",
+            "snaps": 7,
+            "started": false
+          },
+          {
+            "name": "Xadavien Sims",
+            "jersey": "D88",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Jericho Johnson",
+            "jersey": "D77",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
         "linebackers": [
           {
             "name": "Devon Jackson",
@@ -627,120 +740,6 @@
             "jersey": "D05",
             "position": "CB",
             "year": "R-Sr.",
-            "snaps": 0,
-            "started": false
-          }
-        ],
-        "unknown": [
-          {
-            "name": "Bear Alexander",
-            "jersey": "D01",
-            "position": "DI",
-            "year": "R-Jr.",
-            "snaps": 21,
-            "started": false
-          },
-          {
-            "name": "Teitum Tuioti",
-            "jersey": "D44",
-            "position": "ED",
-            "year": "Jr.",
-            "snaps": 32,
-            "started": false
-          },
-          {
-            "name": "Matayo Uiagalelei",
-            "jersey": "D10",
-            "position": "ED",
-            "year": "Jr.",
-            "snaps": 36,
-            "started": false
-          },
-          {
-            "name": "Terrance Green",
-            "jersey": "D99",
-            "position": "DI",
-            "year": "R-So.",
-            "snaps": 22,
-            "started": false
-          },
-          {
-            "name": "Ashton Porter",
-            "jersey": "D29",
-            "position": "ED",
-            "year": "R-So.",
-            "snaps": 20,
-            "started": false
-          },
-          {
-            "name": "Blake Purchase",
-            "jersey": "D09",
-            "position": "ED",
-            "year": "R-So.",
-            "snaps": 25,
-            "started": false
-          },
-          {
-            "name": "A'Mauri Washington",
-            "jersey": "D52",
-            "position": "DI",
-            "year": "Jr.",
-            "snaps": 32,
-            "started": false
-          },
-          {
-            "name": "Aydin Breland",
-            "jersey": "D42",
-            "position": "DI",
-            "year": "R-Fr.",
-            "snaps": 7,
-            "started": false
-          },
-          {
-            "name": "Tionne Gray",
-            "jersey": "D50",
-            "position": "DI",
-            "year": "R-Fr.",
-            "snaps": 26,
-            "started": false
-          },
-          {
-            "name": "Elijah Rushing",
-            "jersey": "D47",
-            "position": "ED",
-            "year": "R-Fr.",
-            "snaps": 19,
-            "started": false
-          },
-          {
-            "name": "Nasir Wyatt",
-            "jersey": "D32",
-            "position": "ED",
-            "year": "Fr.",
-            "snaps": 3,
-            "started": false
-          },
-          {
-            "name": "Matthew Johnson",
-            "jersey": "D55",
-            "position": "DI",
-            "year": "Fr.",
-            "snaps": 7,
-            "started": false
-          },
-          {
-            "name": "Xadavien Sims",
-            "jersey": "D88",
-            "position": "DI",
-            "year": "R-Fr.",
-            "snaps": 0,
-            "started": false
-          },
-          {
-            "name": "Jericho Johnson",
-            "jersey": "D77",
-            "position": "DI",
-            "year": "R-Fr.",
             "snaps": 0,
             "started": false
           }
@@ -1188,7 +1187,120 @@
         "wide_receivers": [],
         "tight_ends": [],
         "offensive_line": [],
-        "defensive_line": [],
+        "defensive_line": [
+          {
+            "name": "Bear Alexander",
+            "jersey": "D01",
+            "position": "DI",
+            "year": "R-Jr.",
+            "snaps": 25,
+            "started": false
+          },
+          {
+            "name": "Teitum Tuioti",
+            "jersey": "D44",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 31,
+            "started": false
+          },
+          {
+            "name": "Matayo Uiagalelei",
+            "jersey": "D10",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 29,
+            "started": false
+          },
+          {
+            "name": "Terrance Green",
+            "jersey": "D99",
+            "position": "DI",
+            "year": "R-So.",
+            "snaps": 18,
+            "started": false
+          },
+          {
+            "name": "Ashton Porter",
+            "jersey": "D29",
+            "position": "ED",
+            "year": "R-So.",
+            "snaps": 25,
+            "started": false
+          },
+          {
+            "name": "Blake Purchase",
+            "jersey": "D09",
+            "position": "ED",
+            "year": "R-So.",
+            "snaps": 18,
+            "started": false
+          },
+          {
+            "name": "A'Mauri Washington",
+            "jersey": "D52",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 32,
+            "started": false
+          },
+          {
+            "name": "Aydin Breland",
+            "jersey": "D42",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 8,
+            "started": false
+          },
+          {
+            "name": "Tionne Gray",
+            "jersey": "D50",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 18,
+            "started": false
+          },
+          {
+            "name": "Elijah Rushing",
+            "jersey": "D47",
+            "position": "ED",
+            "year": "R-Fr.",
+            "snaps": 21,
+            "started": false
+          },
+          {
+            "name": "Nasir Wyatt",
+            "jersey": "D32",
+            "position": "ED",
+            "year": "Fr.",
+            "snaps": 3,
+            "started": false
+          },
+          {
+            "name": "Matthew Johnson",
+            "jersey": "D55",
+            "position": "DI",
+            "year": "Fr.",
+            "snaps": 13,
+            "started": false
+          },
+          {
+            "name": "Xadavien Sims",
+            "jersey": "D88",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 8,
+            "started": false
+          },
+          {
+            "name": "Jericho Johnson",
+            "jersey": "D77",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
         "linebackers": [
           {
             "name": "Devon Jackson",
@@ -1373,120 +1485,6 @@
             "jersey": "D05",
             "position": "CB",
             "year": "R-Sr.",
-            "snaps": 0,
-            "started": false
-          }
-        ],
-        "unknown": [
-          {
-            "name": "Bear Alexander",
-            "jersey": "D01",
-            "position": "DI",
-            "year": "R-Jr.",
-            "snaps": 25,
-            "started": false
-          },
-          {
-            "name": "Teitum Tuioti",
-            "jersey": "D44",
-            "position": "ED",
-            "year": "Jr.",
-            "snaps": 31,
-            "started": false
-          },
-          {
-            "name": "Matayo Uiagalelei",
-            "jersey": "D10",
-            "position": "ED",
-            "year": "Jr.",
-            "snaps": 29,
-            "started": false
-          },
-          {
-            "name": "Terrance Green",
-            "jersey": "D99",
-            "position": "DI",
-            "year": "R-So.",
-            "snaps": 18,
-            "started": false
-          },
-          {
-            "name": "Ashton Porter",
-            "jersey": "D29",
-            "position": "ED",
-            "year": "R-So.",
-            "snaps": 25,
-            "started": false
-          },
-          {
-            "name": "Blake Purchase",
-            "jersey": "D09",
-            "position": "ED",
-            "year": "R-So.",
-            "snaps": 18,
-            "started": false
-          },
-          {
-            "name": "A'Mauri Washington",
-            "jersey": "D52",
-            "position": "DI",
-            "year": "Jr.",
-            "snaps": 32,
-            "started": false
-          },
-          {
-            "name": "Aydin Breland",
-            "jersey": "D42",
-            "position": "DI",
-            "year": "R-Fr.",
-            "snaps": 8,
-            "started": false
-          },
-          {
-            "name": "Tionne Gray",
-            "jersey": "D50",
-            "position": "DI",
-            "year": "R-Fr.",
-            "snaps": 18,
-            "started": false
-          },
-          {
-            "name": "Elijah Rushing",
-            "jersey": "D47",
-            "position": "ED",
-            "year": "R-Fr.",
-            "snaps": 21,
-            "started": false
-          },
-          {
-            "name": "Nasir Wyatt",
-            "jersey": "D32",
-            "position": "ED",
-            "year": "Fr.",
-            "snaps": 3,
-            "started": false
-          },
-          {
-            "name": "Matthew Johnson",
-            "jersey": "D55",
-            "position": "DI",
-            "year": "Fr.",
-            "snaps": 13,
-            "started": false
-          },
-          {
-            "name": "Xadavien Sims",
-            "jersey": "D88",
-            "position": "DI",
-            "year": "R-Fr.",
-            "snaps": 8,
-            "started": false
-          },
-          {
-            "name": "Jericho Johnson",
-            "jersey": "D77",
-            "position": "DI",
-            "year": "R-Fr.",
             "snaps": 0,
             "started": false
           }
@@ -1934,7 +1932,120 @@
         "wide_receivers": [],
         "tight_ends": [],
         "offensive_line": [],
-        "defensive_line": [],
+        "defensive_line": [
+          {
+            "name": "Bear Alexander",
+            "jersey": "D01",
+            "position": "DI",
+            "year": "R-Jr.",
+            "snaps": 28,
+            "started": false
+          },
+          {
+            "name": "Teitum Tuioti",
+            "jersey": "D44",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 38,
+            "started": false
+          },
+          {
+            "name": "Matayo Uiagalelei",
+            "jersey": "D10",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 38,
+            "started": false
+          },
+          {
+            "name": "Terrance Green",
+            "jersey": "D99",
+            "position": "DI",
+            "year": "R-So.",
+            "snaps": 22,
+            "started": false
+          },
+          {
+            "name": "Ashton Porter",
+            "jersey": "D29",
+            "position": "ED",
+            "year": "R-So.",
+            "snaps": 20,
+            "started": false
+          },
+          {
+            "name": "Blake Purchase",
+            "jersey": "D09",
+            "position": "ED",
+            "year": "R-So.",
+            "snaps": 32,
+            "started": false
+          },
+          {
+            "name": "A'Mauri Washington",
+            "jersey": "D52",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 33,
+            "started": false
+          },
+          {
+            "name": "Aydin Breland",
+            "jersey": "D42",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 10,
+            "started": false
+          },
+          {
+            "name": "Tionne Gray",
+            "jersey": "D50",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 20,
+            "started": false
+          },
+          {
+            "name": "Elijah Rushing",
+            "jersey": "D47",
+            "position": "ED",
+            "year": "R-Fr.",
+            "snaps": 11,
+            "started": false
+          },
+          {
+            "name": "Nasir Wyatt",
+            "jersey": "D32",
+            "position": "ED",
+            "year": "Fr.",
+            "snaps": 1,
+            "started": false
+          },
+          {
+            "name": "Matthew Johnson",
+            "jersey": "D55",
+            "position": "DI",
+            "year": "Fr.",
+            "snaps": 5,
+            "started": false
+          },
+          {
+            "name": "Xadavien Sims",
+            "jersey": "D88",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Jericho Johnson",
+            "jersey": "D77",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
         "linebackers": [
           {
             "name": "Devon Jackson",
@@ -2120,120 +2231,6 @@
             "position": "CB",
             "year": "R-Sr.",
             "snaps": 22,
-            "started": false
-          }
-        ],
-        "unknown": [
-          {
-            "name": "Bear Alexander",
-            "jersey": "D01",
-            "position": "DI",
-            "year": "R-Jr.",
-            "snaps": 28,
-            "started": false
-          },
-          {
-            "name": "Teitum Tuioti",
-            "jersey": "D44",
-            "position": "ED",
-            "year": "Jr.",
-            "snaps": 38,
-            "started": false
-          },
-          {
-            "name": "Matayo Uiagalelei",
-            "jersey": "D10",
-            "position": "ED",
-            "year": "Jr.",
-            "snaps": 38,
-            "started": false
-          },
-          {
-            "name": "Terrance Green",
-            "jersey": "D99",
-            "position": "DI",
-            "year": "R-So.",
-            "snaps": 22,
-            "started": false
-          },
-          {
-            "name": "Ashton Porter",
-            "jersey": "D29",
-            "position": "ED",
-            "year": "R-So.",
-            "snaps": 20,
-            "started": false
-          },
-          {
-            "name": "Blake Purchase",
-            "jersey": "D09",
-            "position": "ED",
-            "year": "R-So.",
-            "snaps": 32,
-            "started": false
-          },
-          {
-            "name": "A'Mauri Washington",
-            "jersey": "D52",
-            "position": "DI",
-            "year": "Jr.",
-            "snaps": 33,
-            "started": false
-          },
-          {
-            "name": "Aydin Breland",
-            "jersey": "D42",
-            "position": "DI",
-            "year": "R-Fr.",
-            "snaps": 10,
-            "started": false
-          },
-          {
-            "name": "Tionne Gray",
-            "jersey": "D50",
-            "position": "DI",
-            "year": "R-Fr.",
-            "snaps": 20,
-            "started": false
-          },
-          {
-            "name": "Elijah Rushing",
-            "jersey": "D47",
-            "position": "ED",
-            "year": "R-Fr.",
-            "snaps": 11,
-            "started": false
-          },
-          {
-            "name": "Nasir Wyatt",
-            "jersey": "D32",
-            "position": "ED",
-            "year": "Fr.",
-            "snaps": 1,
-            "started": false
-          },
-          {
-            "name": "Matthew Johnson",
-            "jersey": "D55",
-            "position": "DI",
-            "year": "Fr.",
-            "snaps": 5,
-            "started": false
-          },
-          {
-            "name": "Xadavien Sims",
-            "jersey": "D88",
-            "position": "DI",
-            "year": "R-Fr.",
-            "snaps": 0,
-            "started": false
-          },
-          {
-            "name": "Jericho Johnson",
-            "jersey": "D77",
-            "position": "DI",
-            "year": "R-Fr.",
-            "snaps": 0,
             "started": false
           }
         ]
@@ -2680,7 +2677,120 @@
         "wide_receivers": [],
         "tight_ends": [],
         "offensive_line": [],
-        "defensive_line": [],
+        "defensive_line": [
+          {
+            "name": "Bear Alexander",
+            "jersey": "D01",
+            "position": "DI",
+            "year": "R-Jr.",
+            "snaps": 21,
+            "started": false
+          },
+          {
+            "name": "Teitum Tuioti",
+            "jersey": "D44",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 32,
+            "started": false
+          },
+          {
+            "name": "Matayo Uiagalelei",
+            "jersey": "D10",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 34,
+            "started": false
+          },
+          {
+            "name": "Terrance Green",
+            "jersey": "D99",
+            "position": "DI",
+            "year": "R-So.",
+            "snaps": 17,
+            "started": false
+          },
+          {
+            "name": "Ashton Porter",
+            "jersey": "D29",
+            "position": "ED",
+            "year": "R-So.",
+            "snaps": 17,
+            "started": false
+          },
+          {
+            "name": "Blake Purchase",
+            "jersey": "D09",
+            "position": "ED",
+            "year": "R-So.",
+            "snaps": 23,
+            "started": false
+          },
+          {
+            "name": "A'Mauri Washington",
+            "jersey": "D52",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 32,
+            "started": false
+          },
+          {
+            "name": "Aydin Breland",
+            "jersey": "D42",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 7,
+            "started": false
+          },
+          {
+            "name": "Tionne Gray",
+            "jersey": "D50",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 16,
+            "started": false
+          },
+          {
+            "name": "Elijah Rushing",
+            "jersey": "D47",
+            "position": "ED",
+            "year": "R-Fr.",
+            "snaps": 5,
+            "started": false
+          },
+          {
+            "name": "Nasir Wyatt",
+            "jersey": "D32",
+            "position": "ED",
+            "year": "Fr.",
+            "snaps": 3,
+            "started": false
+          },
+          {
+            "name": "Matthew Johnson",
+            "jersey": "D55",
+            "position": "DI",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Xadavien Sims",
+            "jersey": "D88",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Jericho Johnson",
+            "jersey": "D77",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 6,
+            "started": false
+          }
+        ],
         "linebackers": [
           {
             "name": "Devon Jackson",
@@ -2866,120 +2976,6 @@
             "position": "CB",
             "year": "R-Sr.",
             "snaps": 20,
-            "started": false
-          }
-        ],
-        "unknown": [
-          {
-            "name": "Bear Alexander",
-            "jersey": "D01",
-            "position": "DI",
-            "year": "R-Jr.",
-            "snaps": 21,
-            "started": false
-          },
-          {
-            "name": "Teitum Tuioti",
-            "jersey": "D44",
-            "position": "ED",
-            "year": "Jr.",
-            "snaps": 32,
-            "started": false
-          },
-          {
-            "name": "Matayo Uiagalelei",
-            "jersey": "D10",
-            "position": "ED",
-            "year": "Jr.",
-            "snaps": 34,
-            "started": false
-          },
-          {
-            "name": "Terrance Green",
-            "jersey": "D99",
-            "position": "DI",
-            "year": "R-So.",
-            "snaps": 17,
-            "started": false
-          },
-          {
-            "name": "Ashton Porter",
-            "jersey": "D29",
-            "position": "ED",
-            "year": "R-So.",
-            "snaps": 17,
-            "started": false
-          },
-          {
-            "name": "Blake Purchase",
-            "jersey": "D09",
-            "position": "ED",
-            "year": "R-So.",
-            "snaps": 23,
-            "started": false
-          },
-          {
-            "name": "A'Mauri Washington",
-            "jersey": "D52",
-            "position": "DI",
-            "year": "Jr.",
-            "snaps": 32,
-            "started": false
-          },
-          {
-            "name": "Aydin Breland",
-            "jersey": "D42",
-            "position": "DI",
-            "year": "R-Fr.",
-            "snaps": 7,
-            "started": false
-          },
-          {
-            "name": "Tionne Gray",
-            "jersey": "D50",
-            "position": "DI",
-            "year": "R-Fr.",
-            "snaps": 16,
-            "started": false
-          },
-          {
-            "name": "Elijah Rushing",
-            "jersey": "D47",
-            "position": "ED",
-            "year": "R-Fr.",
-            "snaps": 5,
-            "started": false
-          },
-          {
-            "name": "Nasir Wyatt",
-            "jersey": "D32",
-            "position": "ED",
-            "year": "Fr.",
-            "snaps": 3,
-            "started": false
-          },
-          {
-            "name": "Matthew Johnson",
-            "jersey": "D55",
-            "position": "DI",
-            "year": "Fr.",
-            "snaps": 0,
-            "started": false
-          },
-          {
-            "name": "Xadavien Sims",
-            "jersey": "D88",
-            "position": "DI",
-            "year": "R-Fr.",
-            "snaps": 0,
-            "started": false
-          },
-          {
-            "name": "Jericho Johnson",
-            "jersey": "D77",
-            "position": "DI",
-            "year": "R-Fr.",
-            "snaps": 6,
             "started": false
           }
         ]
@@ -3426,7 +3422,120 @@
         "wide_receivers": [],
         "tight_ends": [],
         "offensive_line": [],
-        "defensive_line": [],
+        "defensive_line": [
+          {
+            "name": "Bear Alexander",
+            "jersey": "D01",
+            "position": "DI",
+            "year": "R-Jr.",
+            "snaps": 33,
+            "started": false
+          },
+          {
+            "name": "Teitum Tuioti",
+            "jersey": "D44",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 57,
+            "started": false
+          },
+          {
+            "name": "Matayo Uiagalelei",
+            "jersey": "D10",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 60,
+            "started": false
+          },
+          {
+            "name": "Terrance Green",
+            "jersey": "D99",
+            "position": "DI",
+            "year": "R-So.",
+            "snaps": 13,
+            "started": false
+          },
+          {
+            "name": "Ashton Porter",
+            "jersey": "D29",
+            "position": "ED",
+            "year": "R-So.",
+            "snaps": 7,
+            "started": false
+          },
+          {
+            "name": "Blake Purchase",
+            "jersey": "D09",
+            "position": "ED",
+            "year": "R-So.",
+            "snaps": 26,
+            "started": false
+          },
+          {
+            "name": "A'Mauri Washington",
+            "jersey": "D52",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 53,
+            "started": false
+          },
+          {
+            "name": "Aydin Breland",
+            "jersey": "D42",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 12,
+            "started": false
+          },
+          {
+            "name": "Tionne Gray",
+            "jersey": "D50",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 11,
+            "started": false
+          },
+          {
+            "name": "Elijah Rushing",
+            "jersey": "D47",
+            "position": "ED",
+            "year": "R-Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Nasir Wyatt",
+            "jersey": "D32",
+            "position": "ED",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Matthew Johnson",
+            "jersey": "D55",
+            "position": "DI",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Xadavien Sims",
+            "jersey": "D88",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Jericho Johnson",
+            "jersey": "D77",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
         "linebackers": [
           {
             "name": "Devon Jackson",
@@ -3612,120 +3721,6 @@
             "position": "CB",
             "year": "R-Sr.",
             "snaps": 32,
-            "started": false
-          }
-        ],
-        "unknown": [
-          {
-            "name": "Bear Alexander",
-            "jersey": "D01",
-            "position": "DI",
-            "year": "R-Jr.",
-            "snaps": 33,
-            "started": false
-          },
-          {
-            "name": "Teitum Tuioti",
-            "jersey": "D44",
-            "position": "ED",
-            "year": "Jr.",
-            "snaps": 57,
-            "started": false
-          },
-          {
-            "name": "Matayo Uiagalelei",
-            "jersey": "D10",
-            "position": "ED",
-            "year": "Jr.",
-            "snaps": 60,
-            "started": false
-          },
-          {
-            "name": "Terrance Green",
-            "jersey": "D99",
-            "position": "DI",
-            "year": "R-So.",
-            "snaps": 13,
-            "started": false
-          },
-          {
-            "name": "Ashton Porter",
-            "jersey": "D29",
-            "position": "ED",
-            "year": "R-So.",
-            "snaps": 7,
-            "started": false
-          },
-          {
-            "name": "Blake Purchase",
-            "jersey": "D09",
-            "position": "ED",
-            "year": "R-So.",
-            "snaps": 26,
-            "started": false
-          },
-          {
-            "name": "A'Mauri Washington",
-            "jersey": "D52",
-            "position": "DI",
-            "year": "Jr.",
-            "snaps": 53,
-            "started": false
-          },
-          {
-            "name": "Aydin Breland",
-            "jersey": "D42",
-            "position": "DI",
-            "year": "R-Fr.",
-            "snaps": 12,
-            "started": false
-          },
-          {
-            "name": "Tionne Gray",
-            "jersey": "D50",
-            "position": "DI",
-            "year": "R-Fr.",
-            "snaps": 11,
-            "started": false
-          },
-          {
-            "name": "Elijah Rushing",
-            "jersey": "D47",
-            "position": "ED",
-            "year": "R-Fr.",
-            "snaps": 0,
-            "started": false
-          },
-          {
-            "name": "Nasir Wyatt",
-            "jersey": "D32",
-            "position": "ED",
-            "year": "Fr.",
-            "snaps": 0,
-            "started": false
-          },
-          {
-            "name": "Matthew Johnson",
-            "jersey": "D55",
-            "position": "DI",
-            "year": "Fr.",
-            "snaps": 0,
-            "started": false
-          },
-          {
-            "name": "Xadavien Sims",
-            "jersey": "D88",
-            "position": "DI",
-            "year": "R-Fr.",
-            "snaps": 0,
-            "started": false
-          },
-          {
-            "name": "Jericho Johnson",
-            "jersey": "D77",
-            "position": "DI",
-            "year": "R-Fr.",
-            "snaps": 0,
             "started": false
           }
         ]
@@ -4172,7 +4167,120 @@
         "wide_receivers": [],
         "tight_ends": [],
         "offensive_line": [],
-        "defensive_line": [],
+        "defensive_line": [
+          {
+            "name": "Bear Alexander",
+            "jersey": "D01",
+            "position": "DI",
+            "year": "R-Jr.",
+            "snaps": 50,
+            "started": false
+          },
+          {
+            "name": "Teitum Tuioti",
+            "jersey": "D44",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 65,
+            "started": false
+          },
+          {
+            "name": "Matayo Uiagalelei",
+            "jersey": "D10",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 68,
+            "started": false
+          },
+          {
+            "name": "Terrance Green",
+            "jersey": "D99",
+            "position": "DI",
+            "year": "R-So.",
+            "snaps": 12,
+            "started": false
+          },
+          {
+            "name": "Ashton Porter",
+            "jersey": "D29",
+            "position": "ED",
+            "year": "R-So.",
+            "snaps": 3,
+            "started": false
+          },
+          {
+            "name": "Blake Purchase",
+            "jersey": "D09",
+            "position": "ED",
+            "year": "R-So.",
+            "snaps": 24,
+            "started": false
+          },
+          {
+            "name": "A'Mauri Washington",
+            "jersey": "D52",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 67,
+            "started": false
+          },
+          {
+            "name": "Aydin Breland",
+            "jersey": "D42",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 2,
+            "started": false
+          },
+          {
+            "name": "Tionne Gray",
+            "jersey": "D50",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 7,
+            "started": false
+          },
+          {
+            "name": "Elijah Rushing",
+            "jersey": "D47",
+            "position": "ED",
+            "year": "R-Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Nasir Wyatt",
+            "jersey": "D32",
+            "position": "ED",
+            "year": "Fr.",
+            "snaps": 2,
+            "started": false
+          },
+          {
+            "name": "Matthew Johnson",
+            "jersey": "D55",
+            "position": "DI",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Xadavien Sims",
+            "jersey": "D88",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Jericho Johnson",
+            "jersey": "D77",
+            "position": "DI",
+            "year": "R-Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
         "linebackers": [
           {
             "name": "Devon Jackson",
@@ -4358,120 +4466,6 @@
             "position": "CB",
             "year": "R-Sr.",
             "snaps": 45,
-            "started": false
-          }
-        ],
-        "unknown": [
-          {
-            "name": "Bear Alexander",
-            "jersey": "D01",
-            "position": "DI",
-            "year": "R-Jr.",
-            "snaps": 50,
-            "started": false
-          },
-          {
-            "name": "Teitum Tuioti",
-            "jersey": "D44",
-            "position": "ED",
-            "year": "Jr.",
-            "snaps": 65,
-            "started": false
-          },
-          {
-            "name": "Matayo Uiagalelei",
-            "jersey": "D10",
-            "position": "ED",
-            "year": "Jr.",
-            "snaps": 68,
-            "started": false
-          },
-          {
-            "name": "Terrance Green",
-            "jersey": "D99",
-            "position": "DI",
-            "year": "R-So.",
-            "snaps": 12,
-            "started": false
-          },
-          {
-            "name": "Ashton Porter",
-            "jersey": "D29",
-            "position": "ED",
-            "year": "R-So.",
-            "snaps": 3,
-            "started": false
-          },
-          {
-            "name": "Blake Purchase",
-            "jersey": "D09",
-            "position": "ED",
-            "year": "R-So.",
-            "snaps": 24,
-            "started": false
-          },
-          {
-            "name": "A'Mauri Washington",
-            "jersey": "D52",
-            "position": "DI",
-            "year": "Jr.",
-            "snaps": 67,
-            "started": false
-          },
-          {
-            "name": "Aydin Breland",
-            "jersey": "D42",
-            "position": "DI",
-            "year": "R-Fr.",
-            "snaps": 2,
-            "started": false
-          },
-          {
-            "name": "Tionne Gray",
-            "jersey": "D50",
-            "position": "DI",
-            "year": "R-Fr.",
-            "snaps": 7,
-            "started": false
-          },
-          {
-            "name": "Elijah Rushing",
-            "jersey": "D47",
-            "position": "ED",
-            "year": "R-Fr.",
-            "snaps": 0,
-            "started": false
-          },
-          {
-            "name": "Nasir Wyatt",
-            "jersey": "D32",
-            "position": "ED",
-            "year": "Fr.",
-            "snaps": 2,
-            "started": false
-          },
-          {
-            "name": "Matthew Johnson",
-            "jersey": "D55",
-            "position": "DI",
-            "year": "Fr.",
-            "snaps": 0,
-            "started": false
-          },
-          {
-            "name": "Xadavien Sims",
-            "jersey": "D88",
-            "position": "DI",
-            "year": "R-Fr.",
-            "snaps": 0,
-            "started": false
-          },
-          {
-            "name": "Jericho Johnson",
-            "jersey": "D77",
-            "position": "DI",
-            "year": "R-Fr.",
-            "snaps": 0,
             "started": false
           }
         ]
