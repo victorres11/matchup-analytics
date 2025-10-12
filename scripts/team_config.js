@@ -125,8 +125,8 @@ const teamConfigs = {
         primaryColor: "#154733",
         secondaryColor: "#FEE11A", 
         logoPath: "oregon_logo.png",
-        matchupTeam: "washington",
-        matchupText: "View Washington",
+        matchupTeam: "rutgers",
+        matchupText: "View Rutgers",
         dataFiles: {
             offense: "oregon_offense.csv",
             defense: "oregon_defense.csv", 
