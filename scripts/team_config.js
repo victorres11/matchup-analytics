@@ -119,6 +119,23 @@ const teamConfigs = {
             roster: "northwestern_number_roster.json"
         }
     },
+    oregon: {
+        name: "Oregon Ducks",
+        shortName: "oregon",
+        primaryColor: "#154733",
+        secondaryColor: "#FEE11A", 
+        logoPath: "oregon_logo.png",
+        matchupTeam: "washington",
+        matchupText: "View Washington",
+        dataFiles: {
+            offense: "oregon_offense.csv",
+            defense: "oregon_defense.csv", 
+            kicking: "oregon_kicking_specialists.csv",
+            specialTeams: "oregon_special_teams_season.csv",
+            summary: "oregon_summary.csv",
+            roster: "oregon_roster.json"
+        }
+    },
     // Template for new teams
     template: {
         name: "{Team Name}",
