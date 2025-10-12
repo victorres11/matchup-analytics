@@ -1400,17 +1400,9 @@
                 
                 // If both groups are in the main 5 groups, use that order
                 if (aGroupIndex !== -1 && bGroupIndex !== -1) {
-                    return aGroupIndex - bGroupIndex;
-                }
-                // If only one is in the main 5 groups, that one comes first
-                else if (aGroupIndex !== -1 && bGroupIndex === -1) {
-                    return -1; // a comes first
-                }
-                else if (aGroupIndex === -1 && bGroupIndex !== -1) {
-                    return 1; // b comes first
-                }
-                // If neither is in the main 5 groups, sort alphabetically
-                else {
+                    if (aGroupIndex !== bGroupIndex) return aGroupIndex - bGroupIndex;
+                } else {
+                    // Fallback to alphabetical if not in predefined order
                     const groupComparison = a.positionGroup.localeCompare(b.positionGroup);
                     if (groupComparison !== 0) return groupComparison;
                 }
