@@ -737,28 +737,28 @@
             
             <!-- Matchup Link -->
             <div style="text-align: center; margin: 20px 0;">
-                <a href="oregon.html" class="matchup-btn">
+                <a href="purdue.html" class="matchup-btn">
                     <span class="matchup-icon">🏈</span>
-                    View Oregon
+                    View Purdue
                 </a>
             </div>
         </div>
 
         <!-- Stats Summary -->
-            <div class="stats-grid">
-                <div class="stat-card">
+        <div class="stats-grid">
+            <div class="stat-card">
                 <h3>Total Offensive Snaps</h3>
                 <div class="value" id="total-offensive-snaps">0</div>
-                </div>
-                <div class="stat-card">
+            </div>
+            <div class="stat-card">
                 <h3>Total Defensive Snaps</h3>
                 <div class="value" id="total-defensive-snaps">0</div>
-                </div>
-                <div class="stat-card">
+            </div>
+            <div class="stat-card">
                 <h3>Avg Offensive Snaps</h3>
                 <div class="value" id="avg-offensive-snaps">0</div>
-                </div>
-                <div class="stat-card">
+            </div>
+            <div class="stat-card">
                 <h3>Avg Defensive Snaps</h3>
                 <div class="value" id="avg-defensive-snaps">0</div>
             </div>
@@ -843,22 +843,22 @@
         <!-- Offense Tab -->
         <div class="tab-content active" id="offense">
             <div class="position-group">
-        <h3 class="position-title">Wide Receivers</h3>
-        <div class="chart-container">
+                <h3 class="position-title">Wide Receivers</h3>
+                <div class="chart-container">
                     <canvas id="wr-chart"></canvas>
-        </div>
+                </div>
             </div>
 
             <div class="position-group">
-                    <h3 class="position-title">Tight Ends</h3>
-                    <div class="chart-container">
+                <h3 class="position-title">Tight Ends</h3>
+                <div class="chart-container">
                     <canvas id="te-chart"></canvas>
-                    </div>
                 </div>
+            </div>
 
             <div class="position-group">
-                    <h3 class="position-title">Running Backs</h3>
-                    <div class="chart-container">
+                <h3 class="position-title">Running Backs</h3>
+                <div class="chart-container">
                     <canvas id="rb-chart"></canvas>
                 </div>
             </div>
@@ -867,7 +867,7 @@
                 <h3 class="position-title">Offensive Line</h3>
                 <div class="chart-container">
                     <canvas id="ol-chart"></canvas>
-                    </div>
+                </div>
             </div>
 
             <div class="position-group">
@@ -1039,8 +1039,8 @@
                         </thead>
                         <tbody></tbody>
                     </table>
+                </div>
             </div>
-        </div>
             
             <!-- Returners Table -->
             <div class="position-group">
@@ -1327,11 +1327,11 @@
         // Populate aggregate tables
         function populateAggregateTables() {
             if (!teamData) return;
-            
+
             populateOffenseAggregateTable();
             populateDefenseAggregateTable();
         }
-        
+
         function populateOffenseAggregateTable() {
             if (!teamData) return;
 
@@ -1362,20 +1362,20 @@
                 Object.keys(week.offense).forEach(positionGroup => {
                     week.offense[positionGroup].forEach(player => {
                         const key = `${player.name}-${player.jersey}`;
-                            if (!playerMap.has(key)) {
-                                playerMap.set(key, {
-                                    name: player.name,
-                                    jersey: player.jersey,
-                                    position: player.position,
+                        if (!playerMap.has(key)) {
+                            playerMap.set(key, {
+                                name: player.name,
+                                jersey: player.jersey,
+                                position: player.position,
                                 year: player.year || 'Unknown',
-                                    weeks: {}
-                                });
-                            }
+                                weeks: {}
+                            });
+                        }
                         playerMap.get(key).weeks[week.week] = {
-                                snaps: player.snaps,
-                                started: player.started
-                            };
-                        });
+                            snaps: player.snaps,
+                            started: player.started
+                        };
+                    });
                 });
             });
             
@@ -1446,7 +1446,7 @@
                 tableBody.appendChild(row);
             });
         }
-        
+
         function populateDefenseAggregateTable() {
             if (!teamData) return;
             console.log('populateDefenseAggregateTable called');
@@ -1478,20 +1478,20 @@
                 Object.keys(week.defense).forEach(positionGroup => {
                     week.defense[positionGroup].forEach(player => {
                         const key = `${player.name}-${player.jersey}`;
-                            if (!playerMap.has(key)) {
-                                playerMap.set(key, {
-                                    name: player.name,
-                                    jersey: player.jersey,
-                                    position: player.position,
+                        if (!playerMap.has(key)) {
+                            playerMap.set(key, {
+                                name: player.name,
+                                jersey: player.jersey,
+                                position: player.position,
                                 year: player.year || 'Unknown',
-                                    weeks: {}
-                                });
-                            }
+                                weeks: {}
+                            });
+                        }
                         playerMap.get(key).weeks[week.week] = {
-                                snaps: player.snaps,
-                                started: player.started
-                            };
-                        });
+                            snaps: player.snaps,
+                            started: player.started
+                        };
+                    });
                 });
             });
             
@@ -1596,8 +1596,8 @@
 
             if (teamData.summary) {
                 teamData.summary.forEach(summary => {
-                const row = document.createElement('tr');
-                row.innerHTML = `
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
                         <td>Week ${summary.week}</td>
                         <td>${summary.opponent}</td>
                         <td>${summary.date}</td>
@@ -1605,9 +1605,9 @@
                         <td>${summary.home_away}</td>
                         <td class="snap-count">${summary.offense_snaps}</td>
                         <td class="snap-count">${summary.defense_snaps}</td>
-                `;
-                tbody.appendChild(row);
-            });
+                    `;
+                    tbody.appendChild(row);
+                });
             }
         }
 
@@ -1819,15 +1819,14 @@
             // Create datasets for each week
             const datasets = [];
             const opposingTeamColors = {
-                'OHIOBO': { primary: '#FF6600', secondary: '#FFFFFF', accent: '#000000' }, // Ohio Bobcats
-                'MIAMIO': { primary: '#C8102E', secondary: '#FFFFFF', accent: '#000000' }, // Miami (OH) RedHawks
-                'NORFOL': { primary: '#0066CC', secondary: '#FFFFFF', accent: '#000000' }, // Norfolk State Spartans
-                'IOWAHA': { primary: '#000000', secondary: '#FFD700', accent: '#FFFFFF' }, // Iowa Hawkeyes
-                'MINNES': { primary: '#7A0019', secondary: '#FFCC02', accent: '#FFFFFF' }, // Minnesota Golden Gophers
-                'UWHUSK': { primary: '#4B2E83', secondary: '#B7A57A', accent: '#FFFFFF' }, // Washington Huskies
+                'BALLST': { primary: '#CC0000', secondary: '#FFFFFF', accent: '#000000' }, // Ball State Cardinals
+                'SOUILL': { primary: '#FFD700', secondary: '#000000', accent: '#FFFFFF' }, // Southern Illinois Salukis
+                'USCTRO': { primary: '#800080', secondary: '#FFD700', accent: '#FFFFFF' }, // USC Trojans
+                'NOTRED': { primary: '#0C2340', secondary: '#C99700', accent: '#FFFFFF' }, // Notre Dame Fighting Irish
+                'ILLINO': { primary: '#FF5F00', secondary: '#FFFFFF', accent: '#000000' }, // Illinois Fighting Illini
                 'BYE WEEK': { primary: '#CCCCCC', secondary: '#999999', accent: '#666666' }
             };
-            
+
             weekOrder.forEach(weekNum => {
                 const weekInfo = teamData.weeks.find(w => w.week === weekNum);
                 const summaryInfo = teamData.summary ? teamData.summary.find(s => s.week === weekNum) : null;
@@ -1857,7 +1856,7 @@
                         return 5;
                     } else {
                         // Return actual snap count
-                    return currentWeek ? currentWeek.snaps : 0;
+                        return currentWeek ? currentWeek.snaps : 0;
                     }
                 });
 
@@ -1931,12 +1930,12 @@
                         y: {
                             stacked: true,
                             beginAtZero: true,
-                        title: {
+                            title: {
                                 display: true,
                                 text: 'Snap Count'
                             }
                         }
-                        },
+                    },
                     plugins: {
                         legend: {
                             display: true,
@@ -2078,7 +2077,7 @@
                         existingPlayer[category] = player.attempts || 0;
                     } else {
                         const newPlayer = {
-                                jersey: player.jersey,
+                            jersey: player.jersey,
                             playerName: player.playerName,
                             [category]: player.attempts || 0
                         };
@@ -2196,7 +2195,7 @@
                     const hasData = unitData.some(value => value > 0);
                     
                     if (hasData) {
-                    datasets.push({
+                        datasets.push({
                             label: config.label,
                             data: unitData,
                             backgroundColor: unitData.map(value => 
@@ -2209,12 +2208,12 @@
                                     const player = filteredPlayers[unitData.indexOf(value)];
                                     if (player.returnerInfo && (player.returnerInfo.isPRReturner || player.returnerInfo.isKRReturner)) {
                                         return 3; // Thick border for returners and specialists
+                                    }
                                 }
-                            }
-                            return 1;
-                        }),
-                        borderRadius: 4
-                    });
+                                return 1;
+                            }),
+                            borderRadius: 4
+                        });
                     }
                 }
             });

@@ -57,8 +57,8 @@ const teamConfigs = {
         primaryColor: "#CEB888",
         secondaryColor: "#000000", 
         logoPath: "purdue_logo.webp",
-        matchupTeam: "northwestern",
-        matchupText: "View Northwestern",
+        matchupTeam: "rutgers",
+        matchupText: "View Rutgers",
         dataFiles: {
             offense: "purdue_offense.csv",
             defense: "purdue_defense.csv", 
@@ -74,8 +74,8 @@ const teamConfigs = {
         primaryColor: "#CC0000",
         secondaryColor: "#FFFFFF", 
         logoPath: "rutgers_logo.png",
-        matchupTeam: "oregon",
-        matchupText: "View Oregon",
+        matchupTeam: "purdue",
+        matchupText: "View Purdue",
         dataFiles: {
             offense: "rutgers_offense.csv",
             defense: "rutgers_defense.csv", 

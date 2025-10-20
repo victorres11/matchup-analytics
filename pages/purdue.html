@@ -15,7 +15,7 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #CEB888 0%, #b71c1c 25%, #000000 25%, #000000 75%, #CEB888 75%, #CEB888 100%);
+            background: linear-gradient(135deg, #CEB888 0%, #000000 25%, #000000 25%, #000000 75%, #CEB888 75%, #CEB888 100%);
             background-size: 100% 100%;
             min-height: 100vh;
             color: #333;
@@ -36,7 +36,7 @@
             text-align: center;
             margin-bottom: 30px;
             padding: 20px;
-            background: linear-gradient(135deg, #CEB888, #b71c1c);
+            background: linear-gradient(135deg, #CEB888, #000000);
             border-radius: 12px;
             color: white;
             box-shadow: 0 4px 15px rgba(211, 47, 47, 0.3);
@@ -737,9 +737,9 @@
             
             <!-- Matchup Link -->
             <div style="text-align: center; margin: 20px 0;">
-                <a href="northwestern.html" class="matchup-btn">
+                <a href="rutgers.html" class="matchup-btn">
                     <span class="matchup-icon">🏈</span>
-                    View Northwestern Wildcats
+                    View Rutgers
                 </a>
             </div>
         </div>
@@ -1392,7 +1392,7 @@
                 };
             }).sort((a, b) => {
                 // First sort by position group in logical order
-                const positionGroupOrder = ['wr', 'te', 'rb', 'ol', 'qb'];
+                const positionGroupOrder = ['wr', 'te', 'hb', 'ol', 'qb'];
                 const aGroupIndex = positionGroupOrder.indexOf(a.positionGroup);
                 const bGroupIndex = positionGroupOrder.indexOf(b.positionGroup);
                 
@@ -1564,13 +1564,13 @@
             const positionGroups = {
                 // Offense
                 qb: ['QB'],
-                rb: ['HB', 'RB', 'FB'],
+                hb: ['HB', 'RB', 'FB'],
                 wr: ['WR', 'SLWR', 'SRWR', 'LWR', 'RWR'],
                 te: ['TE', 'TEL', 'TER'],
                 ol: ['C', 'LG', 'RG', 'LT', 'RT', 'T', 'G'],
                 
                 // Defense
-                dl: ['DRT', 'DLT', 'DRE', 'DLE', 'NT', 'DT', 'DE'],
+                dl: ['DRT', 'DLT', 'DRE', 'DLE', 'NT', 'DT', 'DE', 'DI', 'ED'],
                 lb: ['LOLB', 'ROLB', 'MLB', 'WLB', 'LB'],
                 db: ['SCB', 'RCB', 'LCB', 'SS', 'FS', 'S', 'CB', 'DB']
             };
@@ -1821,11 +1821,9 @@
             const opposingTeamColors = {
                 'BALLST': { primary: '#CC0000', secondary: '#FFFFFF', accent: '#000000' }, // Ball State Cardinals
                 'SOUILL': { primary: '#FFD700', secondary: '#000000', accent: '#FFFFFF' }, // Southern Illinois Salukis
-                'USCTRO': { primary: '#FFD700', secondary: '#800080', accent: '#FFFFFF' }, // USC Trojans - Gold primary
+                'USCTRO': { primary: '#800080', secondary: '#FFD700', accent: '#FFFFFF' }, // USC Trojans
                 'NOTRED': { primary: '#0C2340', secondary: '#C99700', accent: '#FFFFFF' }, // Notre Dame Fighting Irish
                 'ILLINO': { primary: '#FF5F00', secondary: '#FFFFFF', accent: '#000000' }, // Illinois Fighting Illini
-                'MINNES': { primary: '#7A0019', secondary: '#FFCC02', accent: '#FFFFFF' }, // Minnesota Golden Gophers
-                'NORTHW': { primary: '#4E2A84', secondary: '#FFFFFF', accent: '#000000' }, // Northwestern Wildcats - Purple
                 'BYE WEEK': { primary: '#CCCCCC', secondary: '#999999', accent: '#666666' }
             };
 
@@ -1877,15 +1875,12 @@
                         // Use diagonal stripe pattern for missing games
                         return createDiagonalPattern(colors.secondary);
                     } else {
-                        // Special patterns for specific opponents
+                        // Special pattern for Washington State, solid colors for others
                         if (opponent === 'WASH STATE') {
                             return createWashStatePattern();
                         } else if (opponent === 'Michigan') {
                             // Use diagonal stripe pattern for Michigan to distinguish from Akron
                             return createDiagonalPattern(colors.primary);
-                        } else if (opponent === 'USCTRO') {
-                            // Use USC pattern with gold and maroon stripes
-                            return createUSCPattern();
                         } else {
                             // Normal solid color - use primary for others
                             return colors.primary;
@@ -1893,10 +1888,9 @@
                     }
                 });
 
-                // Use pattern for specific opponents, solid color for others
+                // Use pattern for WASH STATE and Michigan legend, solid color for others
                 const baseColor = (opponent === 'WASH STATE') ? createWashStatePattern() : 
                                  (opponent === 'Michigan') ? createDiagonalPattern(colors.primary) : 
-                                 (opponent === 'USCTRO') ? createUSCPattern() :
                                  colors.primary;
 
                 datasets.push({
@@ -2281,29 +2275,6 @@
         }
 
         // Create diagonal pattern for missing games
-        function createUSCPattern() {
-            const canvas = document.createElement('canvas');
-            const ctx = canvas.getContext('2d');
-            canvas.width = 12;
-            canvas.height = 12;
-            
-            // Gold background
-            ctx.fillStyle = '#FFD700';
-            ctx.fillRect(0, 0, 12, 12);
-            
-            // Maroon diagonal stripes
-            ctx.strokeStyle = '#800000';
-            ctx.lineWidth = 2;
-            ctx.beginPath();
-            for (let i = -12; i <= 12; i += 4) {
-                ctx.moveTo(i, 0);
-                ctx.lineTo(i + 12, 12);
-            }
-            ctx.stroke();
-            
-            return ctx.createPattern(canvas, 'repeat');
-        }
-
         function createDiagonalPattern(color) {
             const canvas = document.createElement('canvas');
             const ctx = canvas.getContext('2d');
