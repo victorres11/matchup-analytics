@@ -1877,12 +1877,15 @@
                         // Use diagonal stripe pattern for missing games
                         return createDiagonalPattern(colors.secondary);
                     } else {
-                        // Special pattern for Washington State, solid colors for others
+                        // Special patterns for specific opponents
                         if (opponent === 'WASH STATE') {
                             return createWashStatePattern();
                         } else if (opponent === 'Michigan') {
                             // Use diagonal stripe pattern for Michigan to distinguish from Akron
                             return createDiagonalPattern(colors.primary);
+                        } else if (opponent === 'USCTRO') {
+                            // Use USC pattern with gold and maroon stripes
+                            return createUSCPattern();
                         } else {
                             // Normal solid color - use primary for others
                             return colors.primary;
@@ -1890,9 +1893,10 @@
                     }
                 });
 
-                // Use pattern for WASH STATE and Michigan legend, solid color for others
+                // Use pattern for specific opponents, solid color for others
                 const baseColor = (opponent === 'WASH STATE') ? createWashStatePattern() : 
                                  (opponent === 'Michigan') ? createDiagonalPattern(colors.primary) : 
+                                 (opponent === 'USCTRO') ? createUSCPattern() :
                                  colors.primary;
 
                 datasets.push({
@@ -2277,6 +2281,29 @@
         }
 
         // Create diagonal pattern for missing games
+        function createUSCPattern() {
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = 12;
+            canvas.height = 12;
+            
+            // Gold background
+            ctx.fillStyle = '#FFD700';
+            ctx.fillRect(0, 0, 12, 12);
+            
+            // Maroon diagonal stripes
+            ctx.strokeStyle = '#800000';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            for (let i = -12; i <= 12; i += 4) {
+                ctx.moveTo(i, 0);
+                ctx.lineTo(i + 12, 12);
+            }
+            ctx.stroke();
+            
+            return ctx.createPattern(canvas, 'repeat');
+        }
+
         function createDiagonalPattern(color) {
             const canvas = document.createElement('canvas');
             const ctx = canvas.getContext('2d');
