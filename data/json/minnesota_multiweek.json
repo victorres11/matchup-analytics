@@ -1,565 +1,571 @@
 {
-  "team": "minnesota_new",
+  "team": "minnesota",
   "weeks": [
     {
       "week": 1,
       "offense": {
-        "other": []
-      },
-      "defense": {
-        "other": []
-      },
-      "special_teams": {
-        "other": [
+        "quarterbacks": [
           {
-            "name": "Mason Carrier",
-            "jersey": "D48",
-            "position": "18",
-            "kret": 3,
-            "kcov": 6,
-            "pret": 6,
-            "pcov": 3,
-            "fgblk": 0,
-            "fgk": 21
+            "name": "Drake Lindsey",
+            "jersey": "05",
+            "position": "QB",
+            "year": "Fr.",
+            "snaps": 80,
+            "started": false
           },
           {
-            "name": "Alan Soukup",
-            "jersey": "S80",
-            "position": "8",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 3,
-            "fgblk": 0,
-            "fgk": 11
+            "name": "Max Shikenjanski",
+            "jersey": "06",
+            "position": "QB",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
           },
           {
-            "name": "Za'Quan Bryan",
-            "jersey": "D04",
-            "position": "10",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 7,
-            "pcov": 0,
-            "fgblk": 3,
-            "fgk": 5
+            "name": "Dylan Wittke",
+            "jersey": "14",
+            "position": "QB",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "running_backs": [
+          {
+            "name": "Cam Davis",
+            "jersey": "23",
+            "position": "HB",
+            "year": "Jr.",
+            "snaps": 10,
+            "started": false
           },
           {
-            "name": "Garrison Monroe",
-            "jersey": "D23",
-            "position": "16",
-            "kret": 3,
-            "kcov": 6,
-            "pret": 6,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 21
+            "name": "A.J. Turner",
+            "jersey": "02",
+            "position": "HB",
+            "year": "Jr.",
+            "snaps": 7,
+            "started": false
           },
           {
-            "name": "Matt Kingsbury",
-            "jersey": "D49",
-            "position": "19",
-            "kret": 3,
-            "kcov": 6,
-            "pret": 7,
-            "pcov": 3,
-            "fgblk": 0,
-            "fgk": 21
+            "name": "Darius Taylor",
+            "jersey": "01",
+            "position": "HB",
+            "year": "So.",
+            "snaps": 63,
+            "started": false
           },
           {
-            "name": "John Nestor",
-            "jersey": "D17",
-            "position": "10",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 7,
-            "pcov": 0,
-            "fgblk": 3,
-            "fgk": 5
+            "name": "Fame Ijeboi",
+            "jersey": "07",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
           },
           {
-            "name": "Joey Gerlach",
-            "jersey": "D19",
-            "position": "18",
-            "kret": 3,
-            "kcov": 6,
-            "pret": 6,
-            "pcov": 3,
-            "fgblk": 0,
-            "fgk": 20
+            "name": "Xavier Ford",
+            "jersey": "31",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
           },
           {
-            "name": "Jaxon Howard",
-            "jersey": "D01",
-            "position": "8",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 7,
-            "pcov": 0,
-            "fgblk": 1,
-            "fgk": 8
-          },
-          {
-            "name": "Kerry Brown",
-            "jersey": "D14",
-            "position": "10",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 7,
-            "pcov": 0,
-            "fgblk": 3,
-            "fgk": 6
-          },
-          {
-            "name": "Derik LeCaptain",
-            "jersey": "D35",
-            "position": "18",
-            "kret": 3,
-            "kcov": 6,
-            "pret": 6,
-            "pcov": 3,
-            "fgblk": 0,
-            "fgk": 20
-          },
-          {
-            "name": "Emmanuel Karmo",
-            "jersey": "D02",
-            "position": "6",
-            "kret": 0,
-            "kcov": 6,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 9
-          },
-          {
-            "name": "Ashton Beers",
-            "jersey": "78",
-            "position": "5",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 7
-          },
-          {
-            "name": "Tre Berry",
-            "jersey": "22",
-            "position": "6",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 6,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 11
-          },
-          {
-            "name": "Greg Johnson",
-            "jersey": "65",
-            "position": "5",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 7
-          },
-          {
-            "name": "Marcellus Marshall",
-            "jersey": "74",
-            "position": "5",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 8
-          },
-          {
-            "name": "Jeff Roberson",
-            "jersey": "D20",
-            "position": "6",
-            "kret": 0,
-            "kcov": 6,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 12
-          },
-          {
-            "name": "Dylan Ray",
-            "jersey": "73",
-            "position": "5",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 10
-          },
-          {
-            "name": "Jameson Geers",
-            "jersey": "86",
-            "position": "11",
-            "kret": 3,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 3,
-            "fgblk": 0,
-            "fgk": 8
-          },
-          {
-            "name": "Aidan Gousby",
-            "jersey": "D07",
-            "position": "10",
-            "kret": 0,
-            "kcov": 6,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 3,
-            "fgk": 0
-          },
-          {
-            "name": "Aluma Nkele",
-            "jersey": "70",
-            "position": "5",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 10
-          },
-          {
-            "name": "Frank Bierman",
-            "jersey": "44",
-            "position": "8",
-            "kret": 3,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 8
-          },
-          {
-            "name": "Anthony Smith",
-            "jersey": "D00",
-            "position": "4",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 3,
-            "fgk": 0
-          },
-          {
-            "name": "Jacob Simpson",
-            "jersey": "88",
-            "position": "3",
-            "kret": 3,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 1
-          },
-          {
-            "name": "Koi Perich",
-            "jersey": "D03",
-            "position": "13",
-            "kret": 3,
-            "kcov": 0,
-            "pret": 7,
-            "pcov": 0,
-            "fgblk": 3,
-            "fgk": 7
-          },
-          {
-            "name": "Maverick Baranowski",
-            "jersey": "D06",
-            "position": "7",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 3,
-            "fgblk": 3,
-            "fgk": 0
-          },
-          {
-            "name": "Jalen Logan-Redding",
-            "jersey": "D97",
-            "position": "3",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 2,
-            "fgk": 0
-          },
-          {
-            "name": "Karter Menz",
-            "jersey": "D11",
-            "position": "2",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 2,
-            "fgk": 0
-          },
-          {
-            "name": "Drew Biber",
-            "jersey": "87",
-            "position": "3",
-            "kret": 3,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 4
-          },
-          {
-            "name": "Rushawn Lawrence",
-            "jersey": "D16",
-            "position": "1",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 1,
-            "fgk": 1
-          },
-          {
-            "name": "Deven Eastern",
-            "jersey": "D91",
-            "position": "4",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 3,
-            "fgk": 0
-          },
+            "name": "Grant Washington",
+            "jersey": "21",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "wide_receivers": [
           {
             "name": "Logan Loya",
             "jersey": "17",
-            "position": "2",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 2,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 25,
+            "started": false
+          },
+          {
+            "name": "Le'Meke Brockington",
+            "jersey": "00",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 53,
+            "started": false
+          },
+          {
+            "name": "Javon Tracy",
+            "jersey": "11",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 37,
+            "started": false
           },
           {
             "name": "Kenric Lanier II",
             "jersey": "15",
-            "position": "2",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 2,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0
+            "position": "WR",
+            "year": "So.",
+            "snaps": 28,
+            "started": false
           },
           {
-            "name": "Devon Williams",
-            "jersey": "D09",
-            "position": "6",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 3,
-            "pcov": 3,
-            "fgblk": 0,
-            "fgk": 0
-          },
-          {
-            "name": "Rhyland Kelly",
-            "jersey": "D18",
-            "position": "16",
-            "kret": 3,
-            "kcov": 6,
-            "pret": 6,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 14
-          },
-          {
-            "name": "Evan Redding",
-            "jersey": "D22",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 7
-          },
-          {
-            "name": "Nate Becker",
-            "jersey": "D89",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 12
-          },
-          {
-            "name": "Jai'Onte' McMillan",
-            "jersey": "D24",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 14
-          },
-          {
-            "name": "Jerome Williams",
-            "jersey": "55",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 3
-          },
-          {
-            "name": "Reese Tripp",
-            "jersey": "76",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 3
-          },
-          {
-            "name": "Harrison Brun",
-            "jersey": "D33",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 3
-          },
-          {
-            "name": "Pierce Walsh",
-            "jersey": "19",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 3
-          },
-          {
-            "name": "Brett Carroll",
-            "jersey": "56",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 2
-          },
-          {
-            "name": "Simon Seidl",
-            "jersey": "D27",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 2
-          },
-          {
-            "name": "Ethan Stendel",
-            "jersey": "D43",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 1
-          },
-          {
-            "name": "Naiim Parrish",
-            "jersey": "D21",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 1
-          },
-          {
-            "name": "Jaylen Bowden",
-            "jersey": "D05",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 1
+            "name": "Jalen Smith",
+            "jersey": "08",
+            "position": "WR",
+            "year": "Fr.",
+            "snaps": 31,
+            "started": false
           },
           {
             "name": "Quentin Redding",
             "jersey": "81",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 2
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
           },
           {
-            "name": "Tom Weston",
-            "jersey": "S42",
-            "position": "8",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 3,
-            "fgblk": 0,
-            "fgk": 11
+            "name": "Malachi Coleman",
+            "jersey": "16",
+            "position": "WR",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
           },
           {
-            "name": "Brady Denaburg",
-            "jersey": "S92",
-            "position": "11",
-            "kret": 0,
-            "kcov": 6,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 16
+            "name": "Donielle Hayes",
+            "jersey": "18",
+            "position": "WR",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "tight_ends": [
+          {
+            "name": "Jameson Geers",
+            "jersey": "86",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 60,
+            "started": false
           },
           {
-            "name": "Daniel Jackson",
-            "jersey": "S36",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 5
+            "name": "Drew Biber",
+            "jersey": "87",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 33,
+            "started": false
+          },
+          {
+            "name": "Frank Bierman",
+            "jersey": "44",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 17,
+            "started": false
+          },
+          {
+            "name": "Pierce Walsh",
+            "jersey": "19",
+            "position": "TE",
+            "year": "So.",
+            "snaps": 29,
+            "started": false
+          },
+          {
+            "name": "Sam Peters",
+            "jersey": "83",
+            "position": "TE",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Julian Johnson",
+            "jersey": "82",
+            "position": "TE",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Jacob Simpson",
+            "jersey": "88",
+            "position": "TE",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Marcellus Marshall",
+            "jersey": "74",
+            "position": "G",
+            "year": "Jr.",
+            "snaps": 80,
+            "started": false
+          },
+          {
+            "name": "Dylan Ray",
+            "jersey": "73",
+            "position": "T",
+            "year": "Jr.",
+            "snaps": 80,
+            "started": false
+          },
+          {
+            "name": "Ashton Beers",
+            "jersey": "78",
+            "position": "C",
+            "year": "Jr.",
+            "snaps": 80,
+            "started": false
+          },
+          {
+            "name": "Greg Johnson",
+            "jersey": "65",
+            "position": "G",
+            "year": "So.",
+            "snaps": 80,
+            "started": false
+          },
+          {
+            "name": "Nathan Roy",
+            "jersey": "50",
+            "position": "T",
+            "year": "Fr.",
+            "snaps": 80,
+            "started": false
+          },
+          {
+            "name": "Aluma Nkele",
+            "jersey": "70",
+            "position": "T",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Tony Nelson",
+            "jersey": "59",
+            "position": "G",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Kahlee Tafai",
+            "jersey": "71",
+            "position": "T",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Jaden Ball",
+            "jersey": "58",
+            "position": "G",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Brett Carroll",
+            "jersey": "56",
+            "position": "C",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "defensive_line": [],
+        "linebackers": [],
+        "defensive_backs": [],
+        "unknown": [
+          {
+            "name": "Koi Perich",
+            "jersey": "D03",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 7,
+            "started": false
+          }
+        ]
+      },
+      "defense": {
+        "quarterbacks": [],
+        "running_backs": [],
+        "wide_receivers": [],
+        "tight_ends": [],
+        "offensive_line": [],
+        "defensive_line": [
+          {
+            "name": "Rushawn Lawrence",
+            "jersey": "D16",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 13,
+            "started": false
+          },
+          {
+            "name": "Lucas Finnessy",
+            "jersey": "D46",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 9,
+            "started": false
+          },
+          {
+            "name": "Jalen Logan-Redding",
+            "jersey": "D97",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 31,
+            "started": false
+          },
+          {
+            "name": "Nate Becker",
+            "jersey": "D89",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 10,
+            "started": false
+          },
+          {
+            "name": "Deven Eastern",
+            "jersey": "D91",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 34,
+            "started": false
+          },
+          {
+            "name": "Anthony Smith",
+            "jersey": "D00",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 35,
+            "started": false
+          },
+          {
+            "name": "Jaxon Howard",
+            "jersey": "D01",
+            "position": "ED",
+            "year": "So.",
+            "snaps": 24,
+            "started": false
+          },
+          {
+            "name": "Karter Menz",
+            "jersey": "D11",
+            "position": "ED",
+            "year": "So.",
+            "snaps": 11,
+            "started": false
+          },
+          {
+            "name": "Jaylin Hicks",
+            "jersey": "D55",
+            "position": "DI",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Adam Kissayi",
+            "jersey": "D98",
+            "position": "ED",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Riley Sunram",
+            "jersey": "D93",
+            "position": "DI",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "linebackers": [
+          {
+            "name": "Devon Williams",
+            "jersey": "D09",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 37,
+            "started": false
+          },
+          {
+            "name": "Maverick Baranowski",
+            "jersey": "D06",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 39,
+            "started": false
+          },
+          {
+            "name": "Joey Gerlach",
+            "jersey": "D19",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 4,
+            "started": false
+          },
+          {
+            "name": "Matt Kingsbury",
+            "jersey": "D49",
+            "position": "LB",
+            "year": "So.",
+            "snaps": 9,
+            "started": false
+          },
+          {
+            "name": "Emmanuel Karmo",
+            "jersey": "D02",
+            "position": "LB",
+            "year": "Fr.",
+            "snaps": 9,
+            "started": false
+          },
+          {
+            "name": "Jeff Roberson",
+            "jersey": "D20",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Mason Carrier",
+            "jersey": "D48",
+            "position": "LB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Aidan Gousby",
+            "jersey": "D07",
+            "position": "S",
+            "year": "Jr.",
+            "snaps": 40,
+            "started": false
+          },
+          {
+            "name": "John Nestor",
+            "jersey": "D17",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 44,
+            "started": false
+          },
+          {
+            "name": "Kerry Brown",
+            "jersey": "D14",
+            "position": "S",
+            "year": "So.",
+            "snaps": 43,
+            "started": false
+          },
+          {
+            "name": "Za'Quan Bryan",
+            "jersey": "D04",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 44,
+            "started": false
+          },
+          {
+            "name": "Garrison Monroe",
+            "jersey": "D23",
+            "position": "S",
+            "year": "So.",
+            "snaps": 4,
+            "started": false
+          },
+          {
+            "name": "Koi Perich",
+            "jersey": "D03",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 44,
+            "started": false
+          },
+          {
+            "name": "Jai'Onte' McMillan",
+            "jersey": "D24",
+            "position": "CB",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Darius Green",
+            "jersey": "D12",
+            "position": "S",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Jaylen Bowden",
+            "jersey": "D05",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Simon Seidl",
+            "jersey": "D27",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Naiim Parrish",
+            "jersey": "D21",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Zack Harden",
+            "jersey": "D26",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Mike Gerald",
+            "jersey": "D13",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Zahir Rainer",
+            "jersey": "D25",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
           }
         ]
       }
@@ -567,562 +573,568 @@
     {
       "week": 2,
       "offense": {
-        "other": []
-      },
-      "defense": {
-        "other": []
-      },
-      "special_teams": {
-        "other": [
+        "quarterbacks": [
           {
-            "name": "Mason Carrier",
-            "jersey": "D48",
-            "position": "18",
-            "kret": 1,
-            "kcov": 11,
-            "pret": 8,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 14
+            "name": "Drake Lindsey",
+            "jersey": "05",
+            "position": "QB",
+            "year": "Fr.",
+            "snaps": 26,
+            "started": false
           },
           {
-            "name": "Alan Soukup",
-            "jersey": "S80",
-            "position": "8",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 7
+            "name": "Max Shikenjanski",
+            "jersey": "06",
+            "position": "QB",
+            "year": "So.",
+            "snaps": 25,
+            "started": false
           },
           {
-            "name": "Za'Quan Bryan",
-            "jersey": "D04",
-            "position": "10",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 5,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 9
+            "name": "Dylan Wittke",
+            "jersey": "14",
+            "position": "QB",
+            "year": "So.",
+            "snaps": 13,
+            "started": false
+          }
+        ],
+        "running_backs": [
+          {
+            "name": "Cam Davis",
+            "jersey": "23",
+            "position": "HB",
+            "year": "Jr.",
+            "snaps": 7,
+            "started": false
           },
           {
-            "name": "Garrison Monroe",
-            "jersey": "D23",
-            "position": "16",
-            "kret": 1,
-            "kcov": 11,
-            "pret": 8,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 13
+            "name": "A.J. Turner",
+            "jersey": "02",
+            "position": "HB",
+            "year": "Jr.",
+            "snaps": 10,
+            "started": false
           },
           {
-            "name": "Matt Kingsbury",
-            "jersey": "D49",
-            "position": "19",
-            "kret": 1,
-            "kcov": 11,
-            "pret": 8,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 14
+            "name": "Darius Taylor",
+            "jersey": "01",
+            "position": "HB",
+            "year": "So.",
+            "snaps": 4,
+            "started": false
           },
           {
-            "name": "John Nestor",
-            "jersey": "D17",
-            "position": "10",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 5,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 9
+            "name": "Fame Ijeboi",
+            "jersey": "07",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 12,
+            "started": false
           },
           {
-            "name": "Joey Gerlach",
-            "jersey": "D19",
-            "position": "18",
-            "kret": 1,
-            "kcov": 11,
-            "pret": 7,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 14
+            "name": "Xavier Ford",
+            "jersey": "31",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 4,
+            "started": false
           },
           {
-            "name": "Jaxon Howard",
-            "jersey": "D01",
-            "position": "8",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 8,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 9
-          },
-          {
-            "name": "Kerry Brown",
-            "jersey": "D14",
-            "position": "10",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 6,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 1
-          },
-          {
-            "name": "Derik LeCaptain",
-            "jersey": "D35",
-            "position": "18",
-            "kret": 1,
-            "kcov": 11,
-            "pret": 7,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 19
-          },
-          {
-            "name": "Emmanuel Karmo",
-            "jersey": "D02",
-            "position": "6",
-            "kret": 0,
-            "kcov": 9,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 3
-          },
-          {
-            "name": "Ashton Beers",
-            "jersey": "78",
-            "position": "5",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 3
-          },
-          {
-            "name": "Tre Berry",
-            "jersey": "22",
-            "position": "6",
-            "kret": 0,
-            "kcov": 11,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0
-          },
-          {
-            "name": "Greg Johnson",
-            "jersey": "65",
-            "position": "5",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 3
-          },
-          {
-            "name": "Marcellus Marshall",
-            "jersey": "74",
-            "position": "5",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 3
-          },
-          {
-            "name": "Jeff Roberson",
-            "jersey": "D20",
-            "position": "6",
-            "kret": 0,
-            "kcov": 11,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 8
-          },
-          {
-            "name": "Dylan Ray",
-            "jersey": "73",
-            "position": "5",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 3
-          },
-          {
-            "name": "Jameson Geers",
-            "jersey": "86",
-            "position": "11",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 12
-          },
-          {
-            "name": "Aidan Gousby",
-            "jersey": "D07",
-            "position": "10",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 7
-          },
-          {
-            "name": "Aluma Nkele",
-            "jersey": "70",
-            "position": "5",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 3
-          },
-          {
-            "name": "Frank Bierman",
-            "jersey": "44",
-            "position": "8",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 8
-          },
-          {
-            "name": "Anthony Smith",
-            "jersey": "D00",
-            "position": "4",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 8
-          },
-          {
-            "name": "Jacob Simpson",
-            "jersey": "88",
-            "position": "3",
-            "kret": 1,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 5
-          },
-          {
-            "name": "Koi Perich",
-            "jersey": "D03",
-            "position": "13",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 7,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 15
-          },
-          {
-            "name": "Maverick Baranowski",
-            "jersey": "D06",
-            "position": "7",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 13
-          },
-          {
-            "name": "Jalen Logan-Redding",
-            "jersey": "D97",
-            "position": "3",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 2
-          },
-          {
-            "name": "Drew Biber",
-            "jersey": "87",
-            "position": "3",
-            "kret": 1,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 0
-          },
-          {
-            "name": "Rushawn Lawrence",
-            "jersey": "D16",
-            "position": "1",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 6
-          },
-          {
-            "name": "Deven Eastern",
-            "jersey": "D91",
-            "position": "4",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 6
-          },
+            "name": "Grant Washington",
+            "jersey": "21",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 27,
+            "started": false
+          }
+        ],
+        "wide_receivers": [
           {
             "name": "Logan Loya",
             "jersey": "17",
-            "position": "2",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 2
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 14,
+            "started": false
+          },
+          {
+            "name": "Le'Meke Brockington",
+            "jersey": "00",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 19,
+            "started": false
+          },
+          {
+            "name": "Javon Tracy",
+            "jersey": "11",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 17,
+            "started": false
           },
           {
             "name": "Kenric Lanier II",
             "jersey": "15",
-            "position": "2",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 1
+            "position": "WR",
+            "year": "So.",
+            "snaps": 39,
+            "started": false
           },
           {
-            "name": "Devon Williams",
-            "jersey": "D09",
-            "position": "6",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 12
-          },
-          {
-            "name": "Rhyland Kelly",
-            "jersey": "D18",
-            "position": "16",
-            "kret": 1,
-            "kcov": 11,
-            "pret": 2,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 2
-          },
-          {
-            "name": "Evan Redding",
-            "jersey": "D22",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 7,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 4
-          },
-          {
-            "name": "Nate Becker",
-            "jersey": "D89",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 5
-          },
-          {
-            "name": "Jai'Onte' McMillan",
-            "jersey": "D24",
-            "position": "0",
-            "kret": 0,
-            "kcov": 11,
-            "pret": 3,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 4
-          },
-          {
-            "name": "Jerome Williams",
-            "jersey": "55",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 3,
-            "fgk": 0
-          },
-          {
-            "name": "Harrison Brun",
-            "jersey": "D33",
-            "position": "0",
-            "kret": 1,
-            "kcov": 2,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0
-          },
-          {
-            "name": "Pierce Walsh",
-            "jersey": "19",
-            "position": "0",
-            "kret": 1,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 2,
-            "fgk": 0
-          },
-          {
-            "name": "Simon Seidl",
-            "jersey": "D27",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 5
-          },
-          {
-            "name": "Ethan Stendel",
-            "jersey": "D43",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 0
-          },
-          {
-            "name": "Naiim Parrish",
-            "jersey": "D21",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 0
-          },
-          {
-            "name": "Jaylen Bowden",
-            "jersey": "D05",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 0
+            "name": "Jalen Smith",
+            "jersey": "08",
+            "position": "WR",
+            "year": "Fr.",
+            "snaps": 15,
+            "started": false
           },
           {
             "name": "Quentin Redding",
             "jersey": "81",
-            "position": "0",
-            "kret": 1,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 6,
+            "started": false
           },
           {
-            "name": "Mike Gerald",
-            "jersey": "D13",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 2
+            "name": "Malachi Coleman",
+            "jersey": "16",
+            "position": "WR",
+            "year": "So.",
+            "snaps": 33,
+            "started": false
+          },
+          {
+            "name": "Donielle Hayes",
+            "jersey": "18",
+            "position": "WR",
+            "year": "So.",
+            "snaps": 2,
+            "started": false
+          }
+        ],
+        "tight_ends": [
+          {
+            "name": "Jameson Geers",
+            "jersey": "86",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 17,
+            "started": false
+          },
+          {
+            "name": "Drew Biber",
+            "jersey": "87",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 8,
+            "started": false
+          },
+          {
+            "name": "Frank Bierman",
+            "jersey": "44",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 8,
+            "started": false
+          },
+          {
+            "name": "Pierce Walsh",
+            "jersey": "19",
+            "position": "TE",
+            "year": "So.",
+            "snaps": 16,
+            "started": false
+          },
+          {
+            "name": "Sam Peters",
+            "jersey": "83",
+            "position": "TE",
+            "year": "So.",
+            "snaps": 1,
+            "started": false
+          },
+          {
+            "name": "Julian Johnson",
+            "jersey": "82",
+            "position": "TE",
+            "year": "Fr.",
+            "snaps": 28,
+            "started": false
+          },
+          {
+            "name": "Jacob Simpson",
+            "jersey": "88",
+            "position": "TE",
+            "year": "Fr.",
+            "snaps": 29,
+            "started": false
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Marcellus Marshall",
+            "jersey": "74",
+            "position": "G",
+            "year": "Jr.",
+            "snaps": 31,
+            "started": false
+          },
+          {
+            "name": "Dylan Ray",
+            "jersey": "73",
+            "position": "T",
+            "year": "Jr.",
+            "snaps": 31,
+            "started": false
+          },
+          {
+            "name": "Ashton Beers",
+            "jersey": "78",
+            "position": "C",
+            "year": "Jr.",
+            "snaps": 26,
+            "started": false
+          },
+          {
+            "name": "Greg Johnson",
+            "jersey": "65",
+            "position": "G",
+            "year": "So.",
+            "snaps": 26,
+            "started": false
+          },
+          {
+            "name": "Nathan Roy",
+            "jersey": "50",
+            "position": "T",
+            "year": "Fr.",
+            "snaps": 31,
+            "started": false
+          },
+          {
+            "name": "Aluma Nkele",
+            "jersey": "70",
+            "position": "T",
+            "year": "Jr.",
+            "snaps": 33,
+            "started": false
+          },
+          {
+            "name": "Tony Nelson",
+            "jersey": "59",
+            "position": "G",
+            "year": "Jr.",
+            "snaps": 38,
+            "started": false
+          },
+          {
+            "name": "Kahlee Tafai",
+            "jersey": "71",
+            "position": "T",
+            "year": "So.",
+            "snaps": 33,
+            "started": false
+          },
+          {
+            "name": "Jaden Ball",
+            "jersey": "58",
+            "position": "G",
+            "year": "Fr.",
+            "snaps": 33,
+            "started": false
+          },
+          {
+            "name": "Brett Carroll",
+            "jersey": "56",
+            "position": "C",
+            "year": "Fr.",
+            "snaps": 38,
+            "started": false
+          }
+        ],
+        "defensive_line": [],
+        "linebackers": [],
+        "defensive_backs": [],
+        "unknown": [
+          {
+            "name": "Koi Perich",
+            "jersey": "D03",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 4,
+            "started": false
+          }
+        ]
+      },
+      "defense": {
+        "quarterbacks": [],
+        "running_backs": [],
+        "wide_receivers": [],
+        "tight_ends": [],
+        "offensive_line": [],
+        "defensive_line": [
+          {
+            "name": "Rushawn Lawrence",
+            "jersey": "D16",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 14,
+            "started": false
+          },
+          {
+            "name": "Lucas Finnessy",
+            "jersey": "D46",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 12,
+            "started": false
+          },
+          {
+            "name": "Jalen Logan-Redding",
+            "jersey": "D97",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 9,
+            "started": false
+          },
+          {
+            "name": "Nate Becker",
+            "jersey": "D89",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 13,
+            "started": false
+          },
+          {
+            "name": "Deven Eastern",
+            "jersey": "D91",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 5,
+            "started": false
+          },
+          {
+            "name": "Anthony Smith",
+            "jersey": "D00",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 10,
+            "started": false
+          },
+          {
+            "name": "Jaxon Howard",
+            "jersey": "D01",
+            "position": "ED",
+            "year": "So.",
+            "snaps": 14,
+            "started": false
+          },
+          {
+            "name": "Karter Menz",
+            "jersey": "D11",
+            "position": "ED",
+            "year": "So.",
+            "snaps": 12,
+            "started": false
+          },
+          {
+            "name": "Jaylin Hicks",
+            "jersey": "D55",
+            "position": "DI",
+            "year": "Fr.",
+            "snaps": 18,
+            "started": false
+          },
+          {
+            "name": "Adam Kissayi",
+            "jersey": "D98",
+            "position": "ED",
+            "year": "Fr.",
+            "snaps": 15,
+            "started": false
+          },
+          {
+            "name": "Riley Sunram",
+            "jersey": "D93",
+            "position": "DI",
+            "year": "Fr.",
+            "snaps": 15,
+            "started": false
+          }
+        ],
+        "linebackers": [
+          {
+            "name": "Devon Williams",
+            "jersey": "D09",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 14,
+            "started": false
+          },
+          {
+            "name": "Maverick Baranowski",
+            "jersey": "D06",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 9,
+            "started": false
+          },
+          {
+            "name": "Joey Gerlach",
+            "jersey": "D19",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 17,
+            "started": false
+          },
+          {
+            "name": "Matt Kingsbury",
+            "jersey": "D49",
+            "position": "LB",
+            "year": "So.",
+            "snaps": 22,
+            "started": false
+          },
+          {
+            "name": "Emmanuel Karmo",
+            "jersey": "D02",
+            "position": "LB",
+            "year": "Fr.",
+            "snaps": 6,
+            "started": false
+          },
+          {
+            "name": "Jeff Roberson",
+            "jersey": "D20",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 17,
+            "started": false
+          },
+          {
+            "name": "Mason Carrier",
+            "jersey": "D48",
+            "position": "LB",
+            "year": "Fr.",
+            "snaps": 7,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Aidan Gousby",
+            "jersey": "D07",
+            "position": "S",
+            "year": "Jr.",
+            "snaps": 14,
+            "started": false
+          },
+          {
+            "name": "John Nestor",
+            "jersey": "D17",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 19,
+            "started": false
+          },
+          {
+            "name": "Kerry Brown",
+            "jersey": "D14",
+            "position": "S",
+            "year": "So.",
+            "snaps": 13,
+            "started": false
+          },
+          {
+            "name": "Za'Quan Bryan",
+            "jersey": "D04",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 16,
+            "started": false
+          },
+          {
+            "name": "Garrison Monroe",
+            "jersey": "D23",
+            "position": "S",
+            "year": "So.",
+            "snaps": 20,
+            "started": false
+          },
+          {
+            "name": "Koi Perich",
+            "jersey": "D03",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 19,
+            "started": false
+          },
+          {
+            "name": "Jai'Onte' McMillan",
+            "jersey": "D24",
+            "position": "CB",
+            "year": "Jr.",
+            "snaps": 14,
+            "started": false
           },
           {
             "name": "Darius Green",
             "jersey": "D12",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 1
+            "position": "S",
+            "year": "Jr.",
+            "snaps": 21,
+            "started": false
           },
           {
-            "name": "Cam Davis",
-            "jersey": "23",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 5
+            "name": "Jaylen Bowden",
+            "jersey": "D05",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 15,
+            "started": false
           },
           {
-            "name": "Tom Weston",
-            "jersey": "S42",
-            "position": "8",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 8
+            "name": "Simon Seidl",
+            "jersey": "D27",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 3,
+            "started": false
           },
           {
-            "name": "Brady Denaburg",
-            "jersey": "S92",
-            "position": "11",
-            "kret": 0,
-            "kcov": 8,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 6
+            "name": "Naiim Parrish",
+            "jersey": "D21",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 21,
+            "started": false
           },
           {
-            "name": "Daniel Jackson",
-            "jersey": "S36",
-            "position": "0",
-            "kret": 0,
-            "kcov": 3,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0
+            "name": "Zack Harden",
+            "jersey": "D26",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 3,
+            "started": false
+          },
+          {
+            "name": "Mike Gerald",
+            "jersey": "D13",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Zahir Rainer",
+            "jersey": "D25",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
           }
         ]
       }
@@ -1130,397 +1142,3413 @@
     {
       "week": 3,
       "offense": {
-        "other": []
-      },
-      "defense": {
-        "other": []
-      },
-      "special_teams": {
-        "other": [
+        "quarterbacks": [
           {
-            "name": "Mason Carrier",
-            "jersey": "D48",
-            "position": "18",
-            "kret": 5,
-            "kcov": 3,
-            "pret": 2,
-            "pcov": 4,
-            "fgblk": 0,
-            "fgk": 0
+            "name": "Drake Lindsey",
+            "jersey": "05",
+            "position": "QB",
+            "year": "Fr.",
+            "snaps": 73,
+            "started": false
           },
           {
-            "name": "Alan Soukup",
-            "jersey": "S80",
-            "position": "8",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 4,
-            "fgblk": 0,
-            "fgk": 0
+            "name": "Max Shikenjanski",
+            "jersey": "06",
+            "position": "QB",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
           },
           {
-            "name": "Za'Quan Bryan",
-            "jersey": "D04",
-            "position": "10",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 5,
-            "pcov": 0,
-            "fgblk": 4,
-            "fgk": 0
+            "name": "Dylan Wittke",
+            "jersey": "14",
+            "position": "QB",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "running_backs": [
+          {
+            "name": "Cam Davis",
+            "jersey": "23",
+            "position": "HB",
+            "year": "Jr.",
+            "snaps": 43,
+            "started": false
           },
           {
-            "name": "Garrison Monroe",
-            "jersey": "D23",
-            "position": "16",
-            "kret": 5,
-            "kcov": 3,
-            "pret": 2,
-            "pcov": 3,
-            "fgblk": 0,
-            "fgk": 0
+            "name": "A.J. Turner",
+            "jersey": "02",
+            "position": "HB",
+            "year": "Jr.",
+            "snaps": 5,
+            "started": false
           },
           {
-            "name": "Matt Kingsbury",
-            "jersey": "D49",
-            "position": "19",
-            "kret": 5,
-            "kcov": 3,
-            "pret": 2,
-            "pcov": 4,
-            "fgblk": 0,
-            "fgk": 0
+            "name": "Darius Taylor",
+            "jersey": "01",
+            "position": "HB",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
           },
           {
-            "name": "John Nestor",
-            "jersey": "D17",
-            "position": "10",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 4,
-            "pcov": 0,
-            "fgblk": 5,
-            "fgk": 0
+            "name": "Fame Ijeboi",
+            "jersey": "07",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 26,
+            "started": false
           },
           {
-            "name": "Joey Gerlach",
-            "jersey": "D19",
-            "position": "18",
-            "kret": 5,
-            "kcov": 3,
-            "pret": 2,
-            "pcov": 4,
-            "fgblk": 0,
-            "fgk": 0
+            "name": "Xavier Ford",
+            "jersey": "31",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
           },
           {
-            "name": "Jaxon Howard",
-            "jersey": "D01",
-            "position": "8",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 4,
-            "pcov": 0,
-            "fgblk": 5,
-            "fgk": 0
-          },
-          {
-            "name": "Kerry Brown",
-            "jersey": "D14",
-            "position": "10",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0
-          },
-          {
-            "name": "Derik LeCaptain",
-            "jersey": "D35",
-            "position": "18",
-            "kret": 5,
-            "kcov": 3,
-            "pret": 2,
-            "pcov": 4,
-            "fgblk": 5,
-            "fgk": 0
-          },
-          {
-            "name": "Emmanuel Karmo",
-            "jersey": "D02",
-            "position": "6",
-            "kret": 0,
-            "kcov": 3,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0
-          },
-          {
-            "name": "Jeff Roberson",
-            "jersey": "D20",
-            "position": "6",
-            "kret": 5,
-            "kcov": 3,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0
-          },
-          {
-            "name": "Jameson Geers",
-            "jersey": "86",
-            "position": "11",
-            "kret": 5,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 4,
-            "fgblk": 3,
-            "fgk": 0
-          },
-          {
-            "name": "Aidan Gousby",
-            "jersey": "D07",
-            "position": "10",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 3,
-            "pcov": 0,
-            "fgblk": 4,
-            "fgk": 0
-          },
-          {
-            "name": "Frank Bierman",
-            "jersey": "44",
-            "position": "8",
-            "kret": 5,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 3,
-            "fgk": 0
-          },
-          {
-            "name": "Anthony Smith",
-            "jersey": "D00",
-            "position": "4",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 3,
-            "pcov": 0,
-            "fgblk": 5,
-            "fgk": 0
-          },
-          {
-            "name": "Jacob Simpson",
-            "jersey": "88",
-            "position": "3",
-            "kret": 5,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0
-          },
-          {
-            "name": "Koi Perich",
-            "jersey": "D03",
-            "position": "13",
-            "kret": 5,
-            "kcov": 0,
-            "pret": 5,
-            "pcov": 0,
-            "fgblk": 5,
-            "fgk": 0
-          },
-          {
-            "name": "Maverick Baranowski",
-            "jersey": "D06",
-            "position": "7",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 4,
-            "pcov": 4,
-            "fgblk": 5,
-            "fgk": 0
-          },
-          {
-            "name": "Jalen Logan-Redding",
-            "jersey": "D97",
-            "position": "3",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 1,
-            "fgk": 0
-          },
-          {
-            "name": "Rushawn Lawrence",
-            "jersey": "D16",
-            "position": "1",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 2,
-            "pcov": 0,
-            "fgblk": 4,
-            "fgk": 0
-          },
-          {
-            "name": "Deven Eastern",
-            "jersey": "D91",
-            "position": "4",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 2,
-            "pcov": 0,
-            "fgblk": 4,
-            "fgk": 0
-          },
+            "name": "Grant Washington",
+            "jersey": "21",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "wide_receivers": [
           {
             "name": "Logan Loya",
             "jersey": "17",
-            "position": "2",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 1,
-            "fgblk": 0,
-            "fgk": 0
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 22,
+            "started": false
+          },
+          {
+            "name": "Le'Meke Brockington",
+            "jersey": "00",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 53,
+            "started": false
+          },
+          {
+            "name": "Javon Tracy",
+            "jersey": "11",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 45,
+            "started": false
           },
           {
             "name": "Kenric Lanier II",
             "jersey": "15",
-            "position": "2",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0
+            "position": "WR",
+            "year": "So.",
+            "snaps": 7,
+            "started": false
           },
           {
-            "name": "Devon Williams",
-            "jersey": "D09",
-            "position": "6",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 3,
-            "pcov": 4,
-            "fgblk": 5,
-            "fgk": 0
+            "name": "Jalen Smith",
+            "jersey": "08",
+            "position": "WR",
+            "year": "Fr.",
+            "snaps": 35,
+            "started": false
           },
           {
-            "name": "Rhyland Kelly",
-            "jersey": "D18",
-            "position": "16",
-            "kret": 0,
-            "kcov": 2,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0
+            "name": "Quentin Redding",
+            "jersey": "81",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
           },
           {
-            "name": "Evan Redding",
-            "jersey": "D22",
-            "position": "0",
-            "kret": 0,
-            "kcov": 3,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0
+            "name": "Malachi Coleman",
+            "jersey": "16",
+            "position": "WR",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Donielle Hayes",
+            "jersey": "18",
+            "position": "WR",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "tight_ends": [
+          {
+            "name": "Jameson Geers",
+            "jersey": "86",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 51,
+            "started": false
+          },
+          {
+            "name": "Drew Biber",
+            "jersey": "87",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 29,
+            "started": false
+          },
+          {
+            "name": "Frank Bierman",
+            "jersey": "44",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 18,
+            "started": false
+          },
+          {
+            "name": "Pierce Walsh",
+            "jersey": "19",
+            "position": "TE",
+            "year": "So.",
+            "snaps": 26,
+            "started": false
+          },
+          {
+            "name": "Sam Peters",
+            "jersey": "83",
+            "position": "TE",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Julian Johnson",
+            "jersey": "82",
+            "position": "TE",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Jacob Simpson",
+            "jersey": "88",
+            "position": "TE",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Marcellus Marshall",
+            "jersey": "74",
+            "position": "G",
+            "year": "Jr.",
+            "snaps": 73,
+            "started": false
+          },
+          {
+            "name": "Dylan Ray",
+            "jersey": "73",
+            "position": "T",
+            "year": "Jr.",
+            "snaps": 73,
+            "started": false
+          },
+          {
+            "name": "Ashton Beers",
+            "jersey": "78",
+            "position": "C",
+            "year": "Jr.",
+            "snaps": 73,
+            "started": false
+          },
+          {
+            "name": "Greg Johnson",
+            "jersey": "65",
+            "position": "G",
+            "year": "So.",
+            "snaps": 73,
+            "started": false
+          },
+          {
+            "name": "Nathan Roy",
+            "jersey": "50",
+            "position": "T",
+            "year": "Fr.",
+            "snaps": 71,
+            "started": false
+          },
+          {
+            "name": "Aluma Nkele",
+            "jersey": "70",
+            "position": "T",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Tony Nelson",
+            "jersey": "59",
+            "position": "G",
+            "year": "Jr.",
+            "snaps": 2,
+            "started": false
+          },
+          {
+            "name": "Kahlee Tafai",
+            "jersey": "71",
+            "position": "T",
+            "year": "So.",
+            "snaps": 2,
+            "started": false
+          },
+          {
+            "name": "Jaden Ball",
+            "jersey": "58",
+            "position": "G",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Brett Carroll",
+            "jersey": "56",
+            "position": "C",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "defensive_line": [],
+        "linebackers": [],
+        "defensive_backs": [],
+        "unknown": [
+          {
+            "name": "Koi Perich",
+            "jersey": "D03",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 3,
+            "started": false
+          }
+        ]
+      },
+      "defense": {
+        "quarterbacks": [],
+        "running_backs": [],
+        "wide_receivers": [],
+        "tight_ends": [],
+        "offensive_line": [],
+        "defensive_line": [
+          {
+            "name": "Rushawn Lawrence",
+            "jersey": "D16",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 42,
+            "started": false
+          },
+          {
+            "name": "Lucas Finnessy",
+            "jersey": "D46",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 6,
+            "started": false
+          },
+          {
+            "name": "Jalen Logan-Redding",
+            "jersey": "D97",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 24,
+            "started": false
           },
           {
             "name": "Nate Becker",
             "jersey": "D89",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 1,
-            "fgk": 0
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 16,
+            "started": false
+          },
+          {
+            "name": "Deven Eastern",
+            "jersey": "D91",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 40,
+            "started": false
+          },
+          {
+            "name": "Anthony Smith",
+            "jersey": "D00",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 62,
+            "started": false
+          },
+          {
+            "name": "Jaxon Howard",
+            "jersey": "D01",
+            "position": "ED",
+            "year": "So.",
+            "snaps": 42,
+            "started": false
+          },
+          {
+            "name": "Karter Menz",
+            "jersey": "D11",
+            "position": "ED",
+            "year": "So.",
+            "snaps": 20,
+            "started": false
+          },
+          {
+            "name": "Jaylin Hicks",
+            "jersey": "D55",
+            "position": "DI",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Adam Kissayi",
+            "jersey": "D98",
+            "position": "ED",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Riley Sunram",
+            "jersey": "D93",
+            "position": "DI",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "linebackers": [
+          {
+            "name": "Devon Williams",
+            "jersey": "D09",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 59,
+            "started": false
+          },
+          {
+            "name": "Maverick Baranowski",
+            "jersey": "D06",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 55,
+            "started": false
+          },
+          {
+            "name": "Joey Gerlach",
+            "jersey": "D19",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 2,
+            "started": false
+          },
+          {
+            "name": "Matt Kingsbury",
+            "jersey": "D49",
+            "position": "LB",
+            "year": "So.",
+            "snaps": 23,
+            "started": false
+          },
+          {
+            "name": "Emmanuel Karmo",
+            "jersey": "D02",
+            "position": "LB",
+            "year": "Fr.",
+            "snaps": 17,
+            "started": false
+          },
+          {
+            "name": "Jeff Roberson",
+            "jersey": "D20",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 1,
+            "started": false
+          },
+          {
+            "name": "Mason Carrier",
+            "jersey": "D48",
+            "position": "LB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Aidan Gousby",
+            "jersey": "D07",
+            "position": "S",
+            "year": "Jr.",
+            "snaps": 65,
+            "started": false
+          },
+          {
+            "name": "John Nestor",
+            "jersey": "D17",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 60,
+            "started": false
+          },
+          {
+            "name": "Kerry Brown",
+            "jersey": "D14",
+            "position": "S",
+            "year": "So.",
+            "snaps": 15,
+            "started": false
+          },
+          {
+            "name": "Za'Quan Bryan",
+            "jersey": "D04",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 55,
+            "started": false
+          },
+          {
+            "name": "Garrison Monroe",
+            "jersey": "D23",
+            "position": "S",
+            "year": "So.",
+            "snaps": 10,
+            "started": false
+          },
+          {
+            "name": "Koi Perich",
+            "jersey": "D03",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 67,
+            "started": false
           },
           {
             "name": "Jai'Onte' McMillan",
             "jersey": "D24",
-            "position": "0",
-            "kret": 0,
-            "kcov": 3,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0
-          },
-          {
-            "name": "Simon Seidl",
-            "jersey": "D27",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 2,
-            "pcov": 3,
-            "fgblk": 0,
-            "fgk": 0
-          },
-          {
-            "name": "Mike Gerald",
-            "jersey": "D13",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 1,
-            "fgk": 0
+            "position": "CB",
+            "year": "Jr.",
+            "snaps": 11,
+            "started": false
           },
           {
             "name": "Darius Green",
             "jersey": "D12",
-            "position": "0",
-            "kret": 0,
-            "kcov": 0,
-            "pret": 1,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0
+            "position": "S",
+            "year": "Jr.",
+            "snaps": 28,
+            "started": false
           },
+          {
+            "name": "Jaylen Bowden",
+            "jersey": "D05",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Simon Seidl",
+            "jersey": "D27",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Naiim Parrish",
+            "jersey": "D21",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Zack Harden",
+            "jersey": "D26",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Mike Gerald",
+            "jersey": "D13",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 17,
+            "started": false
+          },
+          {
+            "name": "Zahir Rainer",
+            "jersey": "D25",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ]
+      }
+    },
+    {
+      "week": 5,
+      "offense": {
+        "quarterbacks": [
+          {
+            "name": "Drake Lindsey",
+            "jersey": "05",
+            "position": "QB",
+            "year": "Fr.",
+            "snaps": 61,
+            "started": false
+          },
+          {
+            "name": "Max Shikenjanski",
+            "jersey": "06",
+            "position": "QB",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Dylan Wittke",
+            "jersey": "14",
+            "position": "QB",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "running_backs": [
           {
             "name": "Cam Davis",
             "jersey": "23",
-            "position": "0",
-            "kret": 5,
-            "kcov": 0,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0
+            "position": "HB",
+            "year": "Jr.",
+            "snaps": 29,
+            "started": false
           },
           {
-            "name": "Tom Weston",
-            "jersey": "S42",
-            "position": "8",
-            "kret": 0,
-            "kcov": 1,
-            "pret": 0,
-            "pcov": 4,
-            "fgblk": 0,
-            "fgk": 0
+            "name": "A.J. Turner",
+            "jersey": "02",
+            "position": "HB",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
           },
           {
-            "name": "Brady Denaburg",
-            "jersey": "S92",
-            "position": "11",
-            "kret": 0,
-            "kcov": 3,
-            "pret": 0,
-            "pcov": 0,
-            "fgblk": 0,
-            "fgk": 0
+            "name": "Darius Taylor",
+            "jersey": "01",
+            "position": "HB",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Fame Ijeboi",
+            "jersey": "07",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 32,
+            "started": false
+          },
+          {
+            "name": "Xavier Ford",
+            "jersey": "31",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Grant Washington",
+            "jersey": "21",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "wide_receivers": [
+          {
+            "name": "Logan Loya",
+            "jersey": "17",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 20,
+            "started": false
+          },
+          {
+            "name": "Le'Meke Brockington",
+            "jersey": "00",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 44,
+            "started": false
+          },
+          {
+            "name": "Javon Tracy",
+            "jersey": "11",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 39,
+            "started": false
+          },
+          {
+            "name": "Kenric Lanier II",
+            "jersey": "15",
+            "position": "WR",
+            "year": "So.",
+            "snaps": 19,
+            "started": false
+          },
+          {
+            "name": "Jalen Smith",
+            "jersey": "08",
+            "position": "WR",
+            "year": "Fr.",
+            "snaps": 26,
+            "started": false
+          },
+          {
+            "name": "Quentin Redding",
+            "jersey": "81",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Malachi Coleman",
+            "jersey": "16",
+            "position": "WR",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Donielle Hayes",
+            "jersey": "18",
+            "position": "WR",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "tight_ends": [
+          {
+            "name": "Jameson Geers",
+            "jersey": "86",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 33,
+            "started": false
+          },
+          {
+            "name": "Drew Biber",
+            "jersey": "87",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 30,
+            "started": false
+          },
+          {
+            "name": "Frank Bierman",
+            "jersey": "44",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 15,
+            "started": false
+          },
+          {
+            "name": "Pierce Walsh",
+            "jersey": "19",
+            "position": "TE",
+            "year": "So.",
+            "snaps": 17,
+            "started": false
+          },
+          {
+            "name": "Sam Peters",
+            "jersey": "83",
+            "position": "TE",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Julian Johnson",
+            "jersey": "82",
+            "position": "TE",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Jacob Simpson",
+            "jersey": "88",
+            "position": "TE",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Marcellus Marshall",
+            "jersey": "74",
+            "position": "G",
+            "year": "Jr.",
+            "snaps": 61,
+            "started": false
+          },
+          {
+            "name": "Dylan Ray",
+            "jersey": "73",
+            "position": "T",
+            "year": "Jr.",
+            "snaps": 61,
+            "started": false
+          },
+          {
+            "name": "Ashton Beers",
+            "jersey": "78",
+            "position": "C",
+            "year": "Jr.",
+            "snaps": 61,
+            "started": false
+          },
+          {
+            "name": "Greg Johnson",
+            "jersey": "65",
+            "position": "G",
+            "year": "So.",
+            "snaps": 61,
+            "started": false
+          },
+          {
+            "name": "Nathan Roy",
+            "jersey": "50",
+            "position": "T",
+            "year": "Fr.",
+            "snaps": 60,
+            "started": false
+          },
+          {
+            "name": "Aluma Nkele",
+            "jersey": "70",
+            "position": "T",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Tony Nelson",
+            "jersey": "59",
+            "position": "G",
+            "year": "Jr.",
+            "snaps": 1,
+            "started": false
+          },
+          {
+            "name": "Kahlee Tafai",
+            "jersey": "71",
+            "position": "T",
+            "year": "So.",
+            "snaps": 1,
+            "started": false
+          },
+          {
+            "name": "Jaden Ball",
+            "jersey": "58",
+            "position": "G",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Brett Carroll",
+            "jersey": "56",
+            "position": "C",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "defensive_line": [],
+        "linebackers": [],
+        "defensive_backs": [],
+        "unknown": [
+          {
+            "name": "Koi Perich",
+            "jersey": "D03",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ]
+      },
+      "defense": {
+        "quarterbacks": [],
+        "running_backs": [],
+        "wide_receivers": [],
+        "tight_ends": [],
+        "offensive_line": [],
+        "defensive_line": [
+          {
+            "name": "Rushawn Lawrence",
+            "jersey": "D16",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 37,
+            "started": false
+          },
+          {
+            "name": "Lucas Finnessy",
+            "jersey": "D46",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 11,
+            "started": false
+          },
+          {
+            "name": "Jalen Logan-Redding",
+            "jersey": "D97",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 29,
+            "started": false
+          },
+          {
+            "name": "Nate Becker",
+            "jersey": "D89",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 20,
+            "started": false
+          },
+          {
+            "name": "Deven Eastern",
+            "jersey": "D91",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 49,
+            "started": false
+          },
+          {
+            "name": "Anthony Smith",
+            "jersey": "D00",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 65,
+            "started": false
+          },
+          {
+            "name": "Jaxon Howard",
+            "jersey": "D01",
+            "position": "ED",
+            "year": "So.",
+            "snaps": 45,
+            "started": false
+          },
+          {
+            "name": "Karter Menz",
+            "jersey": "D11",
+            "position": "ED",
+            "year": "So.",
+            "snaps": 27,
+            "started": false
+          },
+          {
+            "name": "Jaylin Hicks",
+            "jersey": "D55",
+            "position": "DI",
+            "year": "Fr.",
+            "snaps": 11,
+            "started": false
+          },
+          {
+            "name": "Adam Kissayi",
+            "jersey": "D98",
+            "position": "ED",
+            "year": "Fr.",
+            "snaps": 1,
+            "started": false
+          },
+          {
+            "name": "Riley Sunram",
+            "jersey": "D93",
+            "position": "DI",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "linebackers": [
+          {
+            "name": "Devon Williams",
+            "jersey": "D09",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 73,
+            "started": false
+          },
+          {
+            "name": "Maverick Baranowski",
+            "jersey": "D06",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 65,
+            "started": false
+          },
+          {
+            "name": "Joey Gerlach",
+            "jersey": "D19",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 6,
+            "started": false
+          },
+          {
+            "name": "Matt Kingsbury",
+            "jersey": "D49",
+            "position": "LB",
+            "year": "So.",
+            "snaps": 4,
+            "started": false
+          },
+          {
+            "name": "Emmanuel Karmo",
+            "jersey": "D02",
+            "position": "LB",
+            "year": "Fr.",
+            "snaps": 13,
+            "started": false
+          },
+          {
+            "name": "Jeff Roberson",
+            "jersey": "D20",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 3,
+            "started": false
+          },
+          {
+            "name": "Mason Carrier",
+            "jersey": "D48",
+            "position": "LB",
+            "year": "Fr.",
+            "snaps": 1,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Aidan Gousby",
+            "jersey": "D07",
+            "position": "S",
+            "year": "Jr.",
+            "snaps": 52,
+            "started": false
+          },
+          {
+            "name": "John Nestor",
+            "jersey": "D17",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 76,
+            "started": false
+          },
+          {
+            "name": "Kerry Brown",
+            "jersey": "D14",
+            "position": "S",
+            "year": "So.",
+            "snaps": 65,
+            "started": false
+          },
+          {
+            "name": "Za'Quan Bryan",
+            "jersey": "D04",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 41,
+            "started": false
+          },
+          {
+            "name": "Garrison Monroe",
+            "jersey": "D23",
+            "position": "S",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Koi Perich",
+            "jersey": "D03",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 77,
+            "started": false
+          },
+          {
+            "name": "Jai'Onte' McMillan",
+            "jersey": "D24",
+            "position": "CB",
+            "year": "Jr.",
+            "snaps": 11,
+            "started": false
+          },
+          {
+            "name": "Darius Green",
+            "jersey": "D12",
+            "position": "S",
+            "year": "Jr.",
+            "snaps": 28,
+            "started": false
+          },
+          {
+            "name": "Jaylen Bowden",
+            "jersey": "D05",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Simon Seidl",
+            "jersey": "D27",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Naiim Parrish",
+            "jersey": "D21",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Zack Harden",
+            "jersey": "D26",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Mike Gerald",
+            "jersey": "D13",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 37,
+            "started": false
+          },
+          {
+            "name": "Zahir Rainer",
+            "jersey": "D25",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ]
+      }
+    },
+    {
+      "week": 6,
+      "offense": {
+        "quarterbacks": [
+          {
+            "name": "Drake Lindsey",
+            "jersey": "05",
+            "position": "QB",
+            "year": "Fr.",
+            "snaps": 51,
+            "started": false
+          },
+          {
+            "name": "Max Shikenjanski",
+            "jersey": "06",
+            "position": "QB",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Dylan Wittke",
+            "jersey": "14",
+            "position": "QB",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "running_backs": [
+          {
+            "name": "Cam Davis",
+            "jersey": "23",
+            "position": "HB",
+            "year": "Jr.",
+            "snaps": 11,
+            "started": false
+          },
+          {
+            "name": "A.J. Turner",
+            "jersey": "02",
+            "position": "HB",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Darius Taylor",
+            "jersey": "01",
+            "position": "HB",
+            "year": "So.",
+            "snaps": 15,
+            "started": false
+          },
+          {
+            "name": "Fame Ijeboi",
+            "jersey": "07",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 22,
+            "started": false
+          },
+          {
+            "name": "Xavier Ford",
+            "jersey": "31",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Grant Washington",
+            "jersey": "21",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "wide_receivers": [
+          {
+            "name": "Logan Loya",
+            "jersey": "17",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 11,
+            "started": false
+          },
+          {
+            "name": "Le'Meke Brockington",
+            "jersey": "00",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 41,
+            "started": false
+          },
+          {
+            "name": "Javon Tracy",
+            "jersey": "11",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 28,
+            "started": false
+          },
+          {
+            "name": "Kenric Lanier II",
+            "jersey": "15",
+            "position": "WR",
+            "year": "So.",
+            "snaps": 12,
+            "started": false
+          },
+          {
+            "name": "Jalen Smith",
+            "jersey": "08",
+            "position": "WR",
+            "year": "Fr.",
+            "snaps": 32,
+            "started": false
+          },
+          {
+            "name": "Quentin Redding",
+            "jersey": "81",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Malachi Coleman",
+            "jersey": "16",
+            "position": "WR",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Donielle Hayes",
+            "jersey": "18",
+            "position": "WR",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "tight_ends": [
+          {
+            "name": "Jameson Geers",
+            "jersey": "86",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 34,
+            "started": false
+          },
+          {
+            "name": "Drew Biber",
+            "jersey": "87",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 19,
+            "started": false
+          },
+          {
+            "name": "Frank Bierman",
+            "jersey": "44",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 11,
+            "started": false
+          },
+          {
+            "name": "Pierce Walsh",
+            "jersey": "19",
+            "position": "TE",
+            "year": "So.",
+            "snaps": 19,
+            "started": false
+          },
+          {
+            "name": "Sam Peters",
+            "jersey": "83",
+            "position": "TE",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Julian Johnson",
+            "jersey": "82",
+            "position": "TE",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Jacob Simpson",
+            "jersey": "88",
+            "position": "TE",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Marcellus Marshall",
+            "jersey": "74",
+            "position": "G",
+            "year": "Jr.",
+            "snaps": 51,
+            "started": false
+          },
+          {
+            "name": "Dylan Ray",
+            "jersey": "73",
+            "position": "T",
+            "year": "Jr.",
+            "snaps": 34,
+            "started": false
+          },
+          {
+            "name": "Ashton Beers",
+            "jersey": "78",
+            "position": "C",
+            "year": "Jr.",
+            "snaps": 51,
+            "started": false
+          },
+          {
+            "name": "Greg Johnson",
+            "jersey": "65",
+            "position": "G",
+            "year": "So.",
+            "snaps": 51,
+            "started": false
+          },
+          {
+            "name": "Nathan Roy",
+            "jersey": "50",
+            "position": "T",
+            "year": "Fr.",
+            "snaps": 51,
+            "started": false
+          },
+          {
+            "name": "Aluma Nkele",
+            "jersey": "70",
+            "position": "T",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Tony Nelson",
+            "jersey": "59",
+            "position": "G",
+            "year": "Jr.",
+            "snaps": 17,
+            "started": false
+          },
+          {
+            "name": "Kahlee Tafai",
+            "jersey": "71",
+            "position": "T",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Jaden Ball",
+            "jersey": "58",
+            "position": "G",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Brett Carroll",
+            "jersey": "56",
+            "position": "C",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "defensive_line": [],
+        "linebackers": [],
+        "defensive_backs": [],
+        "unknown": [
+          {
+            "name": "Koi Perich",
+            "jersey": "D03",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ]
+      },
+      "defense": {
+        "quarterbacks": [],
+        "running_backs": [],
+        "wide_receivers": [],
+        "tight_ends": [],
+        "offensive_line": [],
+        "defensive_line": [
+          {
+            "name": "Rushawn Lawrence",
+            "jersey": "D16",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 27,
+            "started": false
+          },
+          {
+            "name": "Lucas Finnessy",
+            "jersey": "D46",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 19,
+            "started": false
+          },
+          {
+            "name": "Jalen Logan-Redding",
+            "jersey": "D97",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 17,
+            "started": false
+          },
+          {
+            "name": "Nate Becker",
+            "jersey": "D89",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 24,
+            "started": false
+          },
+          {
+            "name": "Deven Eastern",
+            "jersey": "D91",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 33,
+            "started": false
+          },
+          {
+            "name": "Anthony Smith",
+            "jersey": "D00",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 37,
+            "started": false
+          },
+          {
+            "name": "Jaxon Howard",
+            "jersey": "D01",
+            "position": "ED",
+            "year": "So.",
+            "snaps": 32,
+            "started": false
+          },
+          {
+            "name": "Karter Menz",
+            "jersey": "D11",
+            "position": "ED",
+            "year": "So.",
+            "snaps": 27,
+            "started": false
+          },
+          {
+            "name": "Jaylin Hicks",
+            "jersey": "D55",
+            "position": "DI",
+            "year": "Fr.",
+            "snaps": 13,
+            "started": false
+          },
+          {
+            "name": "Adam Kissayi",
+            "jersey": "D98",
+            "position": "ED",
+            "year": "Fr.",
+            "snaps": 5,
+            "started": false
+          },
+          {
+            "name": "Riley Sunram",
+            "jersey": "D93",
+            "position": "DI",
+            "year": "Fr.",
+            "snaps": 1,
+            "started": false
+          }
+        ],
+        "linebackers": [
+          {
+            "name": "Devon Williams",
+            "jersey": "D09",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 54,
+            "started": false
+          },
+          {
+            "name": "Maverick Baranowski",
+            "jersey": "D06",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 40,
+            "started": false
+          },
+          {
+            "name": "Joey Gerlach",
+            "jersey": "D19",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 11,
+            "started": false
+          },
+          {
+            "name": "Matt Kingsbury",
+            "jersey": "D49",
+            "position": "LB",
+            "year": "So.",
+            "snaps": 29,
+            "started": false
+          },
+          {
+            "name": "Emmanuel Karmo",
+            "jersey": "D02",
+            "position": "LB",
+            "year": "Fr.",
+            "snaps": 6,
+            "started": false
+          },
+          {
+            "name": "Jeff Roberson",
+            "jersey": "D20",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 17,
+            "started": false
+          },
+          {
+            "name": "Mason Carrier",
+            "jersey": "D48",
+            "position": "LB",
+            "year": "Fr.",
+            "snaps": 1,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Aidan Gousby",
+            "jersey": "D07",
+            "position": "S",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "John Nestor",
+            "jersey": "D17",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 55,
+            "started": false
+          },
+          {
+            "name": "Kerry Brown",
+            "jersey": "D14",
+            "position": "S",
+            "year": "So.",
+            "snaps": 56,
+            "started": false
+          },
+          {
+            "name": "Za'Quan Bryan",
+            "jersey": "D04",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 50,
+            "started": false
+          },
+          {
+            "name": "Garrison Monroe",
+            "jersey": "D23",
+            "position": "S",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Koi Perich",
+            "jersey": "D03",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 58,
+            "started": false
+          },
+          {
+            "name": "Jai'Onte' McMillan",
+            "jersey": "D24",
+            "position": "CB",
+            "year": "Jr.",
+            "snaps": 4,
+            "started": false
+          },
+          {
+            "name": "Darius Green",
+            "jersey": "D12",
+            "position": "S",
+            "year": "Jr.",
+            "snaps": 23,
+            "started": false
+          },
+          {
+            "name": "Jaylen Bowden",
+            "jersey": "D05",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 1,
+            "started": false
+          },
+          {
+            "name": "Simon Seidl",
+            "jersey": "D27",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Naiim Parrish",
+            "jersey": "D21",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 1,
+            "started": false
+          },
+          {
+            "name": "Zack Harden",
+            "jersey": "D26",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 1,
+            "started": false
+          },
+          {
+            "name": "Mike Gerald",
+            "jersey": "D13",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 5,
+            "started": false
+          },
+          {
+            "name": "Zahir Rainer",
+            "jersey": "D25",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 2,
+            "started": false
+          }
+        ]
+      }
+    },
+    {
+      "week": 7,
+      "offense": {
+        "quarterbacks": [
+          {
+            "name": "Drake Lindsey",
+            "jersey": "05",
+            "position": "QB",
+            "year": "Fr.",
+            "snaps": 66,
+            "started": false
+          },
+          {
+            "name": "Max Shikenjanski",
+            "jersey": "06",
+            "position": "QB",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Dylan Wittke",
+            "jersey": "14",
+            "position": "QB",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "running_backs": [
+          {
+            "name": "Cam Davis",
+            "jersey": "23",
+            "position": "HB",
+            "year": "Jr.",
+            "snaps": 2,
+            "started": false
+          },
+          {
+            "name": "A.J. Turner",
+            "jersey": "02",
+            "position": "HB",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Darius Taylor",
+            "jersey": "01",
+            "position": "HB",
+            "year": "So.",
+            "snaps": 56,
+            "started": false
+          },
+          {
+            "name": "Fame Ijeboi",
+            "jersey": "07",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 8,
+            "started": false
+          },
+          {
+            "name": "Xavier Ford",
+            "jersey": "31",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Grant Washington",
+            "jersey": "21",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "wide_receivers": [
+          {
+            "name": "Logan Loya",
+            "jersey": "17",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 12,
+            "started": false
+          },
+          {
+            "name": "Le'Meke Brockington",
+            "jersey": "00",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 44,
+            "started": false
+          },
+          {
+            "name": "Javon Tracy",
+            "jersey": "11",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 55,
+            "started": false
+          },
+          {
+            "name": "Kenric Lanier II",
+            "jersey": "15",
+            "position": "WR",
+            "year": "So.",
+            "snaps": 7,
+            "started": false
+          },
+          {
+            "name": "Jalen Smith",
+            "jersey": "08",
+            "position": "WR",
+            "year": "Fr.",
+            "snaps": 30,
+            "started": false
+          },
+          {
+            "name": "Quentin Redding",
+            "jersey": "81",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Malachi Coleman",
+            "jersey": "16",
+            "position": "WR",
+            "year": "So.",
+            "snaps": 4,
+            "started": false
+          },
+          {
+            "name": "Donielle Hayes",
+            "jersey": "18",
+            "position": "WR",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "tight_ends": [
+          {
+            "name": "Jameson Geers",
+            "jersey": "86",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 43,
+            "started": false
+          },
+          {
+            "name": "Drew Biber",
+            "jersey": "87",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 38,
+            "started": false
+          },
+          {
+            "name": "Frank Bierman",
+            "jersey": "44",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 13,
+            "started": false
+          },
+          {
+            "name": "Pierce Walsh",
+            "jersey": "19",
+            "position": "TE",
+            "year": "So.",
+            "snaps": 18,
+            "started": false
+          },
+          {
+            "name": "Sam Peters",
+            "jersey": "83",
+            "position": "TE",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Julian Johnson",
+            "jersey": "82",
+            "position": "TE",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Jacob Simpson",
+            "jersey": "88",
+            "position": "TE",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Marcellus Marshall",
+            "jersey": "74",
+            "position": "G",
+            "year": "Jr.",
+            "snaps": 66,
+            "started": false
+          },
+          {
+            "name": "Dylan Ray",
+            "jersey": "73",
+            "position": "T",
+            "year": "Jr.",
+            "snaps": 66,
+            "started": false
+          },
+          {
+            "name": "Ashton Beers",
+            "jersey": "78",
+            "position": "C",
+            "year": "Jr.",
+            "snaps": 66,
+            "started": false
+          },
+          {
+            "name": "Greg Johnson",
+            "jersey": "65",
+            "position": "G",
+            "year": "So.",
+            "snaps": 66,
+            "started": false
+          },
+          {
+            "name": "Nathan Roy",
+            "jersey": "50",
+            "position": "T",
+            "year": "Fr.",
+            "snaps": 66,
+            "started": false
+          },
+          {
+            "name": "Aluma Nkele",
+            "jersey": "70",
+            "position": "T",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Tony Nelson",
+            "jersey": "59",
+            "position": "G",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Kahlee Tafai",
+            "jersey": "71",
+            "position": "T",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Jaden Ball",
+            "jersey": "58",
+            "position": "G",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Brett Carroll",
+            "jersey": "56",
+            "position": "C",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "defensive_line": [],
+        "linebackers": [],
+        "defensive_backs": [],
+        "unknown": [
+          {
+            "name": "Koi Perich",
+            "jersey": "D03",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ]
+      },
+      "defense": {
+        "quarterbacks": [],
+        "running_backs": [],
+        "wide_receivers": [],
+        "tight_ends": [],
+        "offensive_line": [],
+        "defensive_line": [
+          {
+            "name": "Rushawn Lawrence",
+            "jersey": "D16",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 27,
+            "started": false
+          },
+          {
+            "name": "Lucas Finnessy",
+            "jersey": "D46",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 12,
+            "started": false
+          },
+          {
+            "name": "Jalen Logan-Redding",
+            "jersey": "D97",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 44,
+            "started": false
+          },
+          {
+            "name": "Nate Becker",
+            "jersey": "D89",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 22,
+            "started": false
+          },
+          {
+            "name": "Deven Eastern",
+            "jersey": "D91",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 58,
+            "started": false
+          },
+          {
+            "name": "Anthony Smith",
+            "jersey": "D00",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 73,
+            "started": false
+          },
+          {
+            "name": "Jaxon Howard",
+            "jersey": "D01",
+            "position": "ED",
+            "year": "So.",
+            "snaps": 47,
+            "started": false
+          },
+          {
+            "name": "Karter Menz",
+            "jersey": "D11",
+            "position": "ED",
+            "year": "So.",
+            "snaps": 39,
+            "started": false
+          },
+          {
+            "name": "Jaylin Hicks",
+            "jersey": "D55",
+            "position": "DI",
+            "year": "Fr.",
+            "snaps": 5,
+            "started": false
+          },
+          {
+            "name": "Adam Kissayi",
+            "jersey": "D98",
+            "position": "ED",
+            "year": "Fr.",
+            "snaps": 3,
+            "started": false
+          },
+          {
+            "name": "Riley Sunram",
+            "jersey": "D93",
+            "position": "DI",
+            "year": "Fr.",
+            "snaps": 8,
+            "started": false
+          }
+        ],
+        "linebackers": [
+          {
+            "name": "Devon Williams",
+            "jersey": "D09",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 84,
+            "started": false
+          },
+          {
+            "name": "Maverick Baranowski",
+            "jersey": "D06",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 69,
+            "started": false
+          },
+          {
+            "name": "Joey Gerlach",
+            "jersey": "D19",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 6,
+            "started": false
+          },
+          {
+            "name": "Matt Kingsbury",
+            "jersey": "D49",
+            "position": "LB",
+            "year": "So.",
+            "snaps": 13,
+            "started": false
+          },
+          {
+            "name": "Emmanuel Karmo",
+            "jersey": "D02",
+            "position": "LB",
+            "year": "Fr.",
+            "snaps": 11,
+            "started": false
+          },
+          {
+            "name": "Jeff Roberson",
+            "jersey": "D20",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 1,
+            "started": false
+          },
+          {
+            "name": "Mason Carrier",
+            "jersey": "D48",
+            "position": "LB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Aidan Gousby",
+            "jersey": "D07",
+            "position": "S",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "John Nestor",
+            "jersey": "D17",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 81,
+            "started": false
+          },
+          {
+            "name": "Kerry Brown",
+            "jersey": "D14",
+            "position": "S",
+            "year": "So.",
+            "snaps": 88,
+            "started": false
+          },
+          {
+            "name": "Za'Quan Bryan",
+            "jersey": "D04",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 64,
+            "started": false
+          },
+          {
+            "name": "Garrison Monroe",
+            "jersey": "D23",
+            "position": "S",
+            "year": "So.",
+            "snaps": 15,
+            "started": false
+          },
+          {
+            "name": "Koi Perich",
+            "jersey": "D03",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 88,
+            "started": false
+          },
+          {
+            "name": "Jai'Onte' McMillan",
+            "jersey": "D24",
+            "position": "CB",
+            "year": "Jr.",
+            "snaps": 48,
+            "started": false
+          },
+          {
+            "name": "Darius Green",
+            "jersey": "D12",
+            "position": "S",
+            "year": "Jr.",
+            "snaps": 62,
+            "started": false
+          },
+          {
+            "name": "Jaylen Bowden",
+            "jersey": "D05",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Simon Seidl",
+            "jersey": "D27",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Naiim Parrish",
+            "jersey": "D21",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Zack Harden",
+            "jersey": "D26",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Mike Gerald",
+            "jersey": "D13",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Zahir Rainer",
+            "jersey": "D25",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ]
+      }
+    },
+    {
+      "week": 8,
+      "offense": {
+        "quarterbacks": [
+          {
+            "name": "Drake Lindsey",
+            "jersey": "05",
+            "position": "QB",
+            "year": "Fr.",
+            "snaps": 59,
+            "started": false
+          },
+          {
+            "name": "Max Shikenjanski",
+            "jersey": "06",
+            "position": "QB",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Dylan Wittke",
+            "jersey": "14",
+            "position": "QB",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "running_backs": [
+          {
+            "name": "Cam Davis",
+            "jersey": "23",
+            "position": "HB",
+            "year": "Jr.",
+            "snaps": 2,
+            "started": false
+          },
+          {
+            "name": "A.J. Turner",
+            "jersey": "02",
+            "position": "HB",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Darius Taylor",
+            "jersey": "01",
+            "position": "HB",
+            "year": "So.",
+            "snaps": 47,
+            "started": false
+          },
+          {
+            "name": "Fame Ijeboi",
+            "jersey": "07",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 11,
+            "started": false
+          },
+          {
+            "name": "Xavier Ford",
+            "jersey": "31",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Grant Washington",
+            "jersey": "21",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "wide_receivers": [
+          {
+            "name": "Logan Loya",
+            "jersey": "17",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 9,
+            "started": false
+          },
+          {
+            "name": "Le'Meke Brockington",
+            "jersey": "00",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 55,
+            "started": false
+          },
+          {
+            "name": "Javon Tracy",
+            "jersey": "11",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 36,
+            "started": false
+          },
+          {
+            "name": "Kenric Lanier II",
+            "jersey": "15",
+            "position": "WR",
+            "year": "So.",
+            "snaps": 17,
+            "started": false
+          },
+          {
+            "name": "Jalen Smith",
+            "jersey": "08",
+            "position": "WR",
+            "year": "Fr.",
+            "snaps": 16,
+            "started": false
+          },
+          {
+            "name": "Quentin Redding",
+            "jersey": "81",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Malachi Coleman",
+            "jersey": "16",
+            "position": "WR",
+            "year": "So.",
+            "snaps": 18,
+            "started": false
+          },
+          {
+            "name": "Donielle Hayes",
+            "jersey": "18",
+            "position": "WR",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "tight_ends": [
+          {
+            "name": "Jameson Geers",
+            "jersey": "86",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 38,
+            "started": false
+          },
+          {
+            "name": "Drew Biber",
+            "jersey": "87",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 21,
+            "started": false
+          },
+          {
+            "name": "Frank Bierman",
+            "jersey": "44",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 18,
+            "started": false
+          },
+          {
+            "name": "Pierce Walsh",
+            "jersey": "19",
+            "position": "TE",
+            "year": "So.",
+            "snaps": 7,
+            "started": false
+          },
+          {
+            "name": "Sam Peters",
+            "jersey": "83",
+            "position": "TE",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Julian Johnson",
+            "jersey": "82",
+            "position": "TE",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Jacob Simpson",
+            "jersey": "88",
+            "position": "TE",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Marcellus Marshall",
+            "jersey": "74",
+            "position": "G",
+            "year": "Jr.",
+            "snaps": 59,
+            "started": false
+          },
+          {
+            "name": "Dylan Ray",
+            "jersey": "73",
+            "position": "T",
+            "year": "Jr.",
+            "snaps": 59,
+            "started": false
+          },
+          {
+            "name": "Ashton Beers",
+            "jersey": "78",
+            "position": "C",
+            "year": "Jr.",
+            "snaps": 59,
+            "started": false
+          },
+          {
+            "name": "Greg Johnson",
+            "jersey": "65",
+            "position": "G",
+            "year": "So.",
+            "snaps": 59,
+            "started": false
+          },
+          {
+            "name": "Nathan Roy",
+            "jersey": "50",
+            "position": "T",
+            "year": "Fr.",
+            "snaps": 59,
+            "started": false
+          },
+          {
+            "name": "Aluma Nkele",
+            "jersey": "70",
+            "position": "T",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Tony Nelson",
+            "jersey": "59",
+            "position": "G",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Kahlee Tafai",
+            "jersey": "71",
+            "position": "T",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Jaden Ball",
+            "jersey": "58",
+            "position": "G",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Brett Carroll",
+            "jersey": "56",
+            "position": "C",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "defensive_line": [],
+        "linebackers": [],
+        "defensive_backs": [],
+        "unknown": [
+          {
+            "name": "Koi Perich",
+            "jersey": "D03",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ]
+      },
+      "defense": {
+        "quarterbacks": [],
+        "running_backs": [],
+        "wide_receivers": [],
+        "tight_ends": [],
+        "offensive_line": [],
+        "defensive_line": [
+          {
+            "name": "Rushawn Lawrence",
+            "jersey": "D16",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 25,
+            "started": false
+          },
+          {
+            "name": "Lucas Finnessy",
+            "jersey": "D46",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 6,
+            "started": false
+          },
+          {
+            "name": "Jalen Logan-Redding",
+            "jersey": "D97",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 20,
+            "started": false
+          },
+          {
+            "name": "Nate Becker",
+            "jersey": "D89",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 7,
+            "started": false
+          },
+          {
+            "name": "Deven Eastern",
+            "jersey": "D91",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 30,
+            "started": false
+          },
+          {
+            "name": "Anthony Smith",
+            "jersey": "D00",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 48,
+            "started": false
+          },
+          {
+            "name": "Jaxon Howard",
+            "jersey": "D01",
+            "position": "ED",
+            "year": "So.",
+            "snaps": 24,
+            "started": false
+          },
+          {
+            "name": "Karter Menz",
+            "jersey": "D11",
+            "position": "ED",
+            "year": "So.",
+            "snaps": 33,
+            "started": false
+          },
+          {
+            "name": "Jaylin Hicks",
+            "jersey": "D55",
+            "position": "DI",
+            "year": "Fr.",
+            "snaps": 7,
+            "started": false
+          },
+          {
+            "name": "Adam Kissayi",
+            "jersey": "D98",
+            "position": "ED",
+            "year": "Fr.",
+            "snaps": 1,
+            "started": false
+          },
+          {
+            "name": "Riley Sunram",
+            "jersey": "D93",
+            "position": "DI",
+            "year": "Fr.",
+            "snaps": 5,
+            "started": false
+          }
+        ],
+        "linebackers": [
+          {
+            "name": "Devon Williams",
+            "jersey": "D09",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 54,
+            "started": false
+          },
+          {
+            "name": "Maverick Baranowski",
+            "jersey": "D06",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 41,
+            "started": false
+          },
+          {
+            "name": "Joey Gerlach",
+            "jersey": "D19",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 6,
+            "started": false
+          },
+          {
+            "name": "Matt Kingsbury",
+            "jersey": "D49",
+            "position": "LB",
+            "year": "So.",
+            "snaps": 5,
+            "started": false
+          },
+          {
+            "name": "Emmanuel Karmo",
+            "jersey": "D02",
+            "position": "LB",
+            "year": "Fr.",
+            "snaps": 14,
+            "started": false
+          },
+          {
+            "name": "Jeff Roberson",
+            "jersey": "D20",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Mason Carrier",
+            "jersey": "D48",
+            "position": "LB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Aidan Gousby",
+            "jersey": "D07",
+            "position": "S",
+            "year": "Jr.",
+            "snaps": 31,
+            "started": false
+          },
+          {
+            "name": "John Nestor",
+            "jersey": "D17",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Kerry Brown",
+            "jersey": "D14",
+            "position": "S",
+            "year": "So.",
+            "snaps": 53,
+            "started": false
+          },
+          {
+            "name": "Za'Quan Bryan",
+            "jersey": "D04",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 54,
+            "started": false
+          },
+          {
+            "name": "Garrison Monroe",
+            "jersey": "D23",
+            "position": "S",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Koi Perich",
+            "jersey": "D03",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 55,
+            "started": false
+          },
+          {
+            "name": "Jai'Onte' McMillan",
+            "jersey": "D24",
+            "position": "CB",
+            "year": "Jr.",
+            "snaps": 51,
+            "started": false
+          },
+          {
+            "name": "Darius Green",
+            "jersey": "D12",
+            "position": "S",
+            "year": "Jr.",
+            "snaps": 30,
+            "started": false
+          },
+          {
+            "name": "Jaylen Bowden",
+            "jersey": "D05",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 5,
+            "started": false
+          },
+          {
+            "name": "Simon Seidl",
+            "jersey": "D27",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Naiim Parrish",
+            "jersey": "D21",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Zack Harden",
+            "jersey": "D26",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Mike Gerald",
+            "jersey": "D13",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Zahir Rainer",
+            "jersey": "D25",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ]
+      }
+    },
+    {
+      "week": 9,
+      "offense": {
+        "quarterbacks": [
+          {
+            "name": "Drake Lindsey",
+            "jersey": "05",
+            "position": "QB",
+            "year": "Fr.",
+            "snaps": 53,
+            "started": false
+          },
+          {
+            "name": "Max Shikenjanski",
+            "jersey": "06",
+            "position": "QB",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Dylan Wittke",
+            "jersey": "14",
+            "position": "QB",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "running_backs": [
+          {
+            "name": "Cam Davis",
+            "jersey": "23",
+            "position": "HB",
+            "year": "Jr.",
+            "snaps": 11,
+            "started": false
+          },
+          {
+            "name": "A.J. Turner",
+            "jersey": "02",
+            "position": "HB",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Darius Taylor",
+            "jersey": "01",
+            "position": "HB",
+            "year": "So.",
+            "snaps": 3,
+            "started": false
+          },
+          {
+            "name": "Fame Ijeboi",
+            "jersey": "07",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 30,
+            "started": false
+          },
+          {
+            "name": "Xavier Ford",
+            "jersey": "31",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 8,
+            "started": false
+          },
+          {
+            "name": "Grant Washington",
+            "jersey": "21",
+            "position": "HB",
+            "year": "Fr.",
+            "snaps": 1,
+            "started": false
+          }
+        ],
+        "wide_receivers": [
+          {
+            "name": "Logan Loya",
+            "jersey": "17",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Le'Meke Brockington",
+            "jersey": "00",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 41,
+            "started": false
+          },
+          {
+            "name": "Javon Tracy",
+            "jersey": "11",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 47,
+            "started": false
+          },
+          {
+            "name": "Kenric Lanier II",
+            "jersey": "15",
+            "position": "WR",
+            "year": "So.",
+            "snaps": 9,
+            "started": false
+          },
+          {
+            "name": "Jalen Smith",
+            "jersey": "08",
+            "position": "WR",
+            "year": "Fr.",
+            "snaps": 6,
+            "started": false
+          },
+          {
+            "name": "Quentin Redding",
+            "jersey": "81",
+            "position": "WR",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Malachi Coleman",
+            "jersey": "16",
+            "position": "WR",
+            "year": "So.",
+            "snaps": 34,
+            "started": false
+          },
+          {
+            "name": "Donielle Hayes",
+            "jersey": "18",
+            "position": "WR",
+            "year": "So.",
+            "snaps": 3,
+            "started": false
+          }
+        ],
+        "tight_ends": [
+          {
+            "name": "Jameson Geers",
+            "jersey": "86",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 21,
+            "started": false
+          },
+          {
+            "name": "Drew Biber",
+            "jersey": "87",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 22,
+            "started": false
+          },
+          {
+            "name": "Frank Bierman",
+            "jersey": "44",
+            "position": "TE",
+            "year": "Jr.",
+            "snaps": 12,
+            "started": false
+          },
+          {
+            "name": "Pierce Walsh",
+            "jersey": "19",
+            "position": "TE",
+            "year": "So.",
+            "snaps": 16,
+            "started": false
+          },
+          {
+            "name": "Sam Peters",
+            "jersey": "83",
+            "position": "TE",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Julian Johnson",
+            "jersey": "82",
+            "position": "TE",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Jacob Simpson",
+            "jersey": "88",
+            "position": "TE",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "offensive_line": [
+          {
+            "name": "Marcellus Marshall",
+            "jersey": "74",
+            "position": "G",
+            "year": "Jr.",
+            "snaps": 53,
+            "started": false
+          },
+          {
+            "name": "Dylan Ray",
+            "jersey": "73",
+            "position": "T",
+            "year": "Jr.",
+            "snaps": 53,
+            "started": false
+          },
+          {
+            "name": "Ashton Beers",
+            "jersey": "78",
+            "position": "C",
+            "year": "Jr.",
+            "snaps": 53,
+            "started": false
+          },
+          {
+            "name": "Greg Johnson",
+            "jersey": "65",
+            "position": "G",
+            "year": "So.",
+            "snaps": 53,
+            "started": false
+          },
+          {
+            "name": "Nathan Roy",
+            "jersey": "50",
+            "position": "T",
+            "year": "Fr.",
+            "snaps": 53,
+            "started": false
+          },
+          {
+            "name": "Aluma Nkele",
+            "jersey": "70",
+            "position": "T",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Tony Nelson",
+            "jersey": "59",
+            "position": "G",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Kahlee Tafai",
+            "jersey": "71",
+            "position": "T",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Jaden Ball",
+            "jersey": "58",
+            "position": "G",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Brett Carroll",
+            "jersey": "56",
+            "position": "C",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "defensive_line": [],
+        "linebackers": [],
+        "defensive_backs": [],
+        "unknown": [
+          {
+            "name": "Koi Perich",
+            "jersey": "D03",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ]
+      },
+      "defense": {
+        "quarterbacks": [],
+        "running_backs": [],
+        "wide_receivers": [],
+        "tight_ends": [],
+        "offensive_line": [],
+        "defensive_line": [
+          {
+            "name": "Rushawn Lawrence",
+            "jersey": "D16",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 25,
+            "started": false
+          },
+          {
+            "name": "Lucas Finnessy",
+            "jersey": "D46",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 9,
+            "started": false
+          },
+          {
+            "name": "Jalen Logan-Redding",
+            "jersey": "D97",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 14,
+            "started": false
+          },
+          {
+            "name": "Nate Becker",
+            "jersey": "D89",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 14,
+            "started": false
+          },
+          {
+            "name": "Deven Eastern",
+            "jersey": "D91",
+            "position": "DI",
+            "year": "Jr.",
+            "snaps": 34,
+            "started": false
+          },
+          {
+            "name": "Anthony Smith",
+            "jersey": "D00",
+            "position": "ED",
+            "year": "Jr.",
+            "snaps": 47,
+            "started": false
+          },
+          {
+            "name": "Jaxon Howard",
+            "jersey": "D01",
+            "position": "ED",
+            "year": "So.",
+            "snaps": 25,
+            "started": false
+          },
+          {
+            "name": "Karter Menz",
+            "jersey": "D11",
+            "position": "ED",
+            "year": "So.",
+            "snaps": 32,
+            "started": false
+          },
+          {
+            "name": "Jaylin Hicks",
+            "jersey": "D55",
+            "position": "DI",
+            "year": "Fr.",
+            "snaps": 16,
+            "started": false
+          },
+          {
+            "name": "Adam Kissayi",
+            "jersey": "D98",
+            "position": "ED",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Riley Sunram",
+            "jersey": "D93",
+            "position": "DI",
+            "year": "Fr.",
+            "snaps": 6,
+            "started": false
+          }
+        ],
+        "linebackers": [
+          {
+            "name": "Devon Williams",
+            "jersey": "D09",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 56,
+            "started": false
+          },
+          {
+            "name": "Maverick Baranowski",
+            "jersey": "D06",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 53,
+            "started": false
+          },
+          {
+            "name": "Joey Gerlach",
+            "jersey": "D19",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 9,
+            "started": false
+          },
+          {
+            "name": "Matt Kingsbury",
+            "jersey": "D49",
+            "position": "LB",
+            "year": "So.",
+            "snaps": 24,
+            "started": false
+          },
+          {
+            "name": "Emmanuel Karmo",
+            "jersey": "D02",
+            "position": "LB",
+            "year": "Fr.",
+            "snaps": 3,
+            "started": false
+          },
+          {
+            "name": "Jeff Roberson",
+            "jersey": "D20",
+            "position": "LB",
+            "year": "Jr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Mason Carrier",
+            "jersey": "D48",
+            "position": "LB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          }
+        ],
+        "defensive_backs": [
+          {
+            "name": "Aidan Gousby",
+            "jersey": "D07",
+            "position": "S",
+            "year": "Jr.",
+            "snaps": 5,
+            "started": false
+          },
+          {
+            "name": "John Nestor",
+            "jersey": "D17",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 40,
+            "started": false
+          },
+          {
+            "name": "Kerry Brown",
+            "jersey": "D14",
+            "position": "S",
+            "year": "So.",
+            "snaps": 54,
+            "started": false
+          },
+          {
+            "name": "Za'Quan Bryan",
+            "jersey": "D04",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 46,
+            "started": false
+          },
+          {
+            "name": "Garrison Monroe",
+            "jersey": "D23",
+            "position": "S",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Koi Perich",
+            "jersey": "D03",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 51,
+            "started": false
+          },
+          {
+            "name": "Jai'Onte' McMillan",
+            "jersey": "D24",
+            "position": "CB",
+            "year": "Jr.",
+            "snaps": 26,
+            "started": false
+          },
+          {
+            "name": "Darius Green",
+            "jersey": "D12",
+            "position": "S",
+            "year": "Jr.",
+            "snaps": 27,
+            "started": false
+          },
+          {
+            "name": "Jaylen Bowden",
+            "jersey": "D05",
+            "position": "CB",
+            "year": "So.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Simon Seidl",
+            "jersey": "D27",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Naiim Parrish",
+            "jersey": "D21",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Zack Harden",
+            "jersey": "D26",
+            "position": "S",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Mike Gerald",
+            "jersey": "D13",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
+          },
+          {
+            "name": "Zahir Rainer",
+            "jersey": "D25",
+            "position": "CB",
+            "year": "Fr.",
+            "snaps": 0,
+            "started": false
           }
         ]
       }
@@ -1529,40 +4557,1228 @@
   "summary": [
     {
       "week": 1,
-      "opponent": "Minnesota",
-      "date": "Buffalo",
-      "final_score_team": "1",
-      "final_score_opponent": "Thu Aug 28th",
-      "home_away": "23",
-      "offense_snaps": 10,
-      "defense_snaps": 0,
-      "special_teams_snaps": 80
+      "opponent": "BUFFBU",
+      "date": "Fri Aug 29",
+      "final_score_team": 23,
+      "final_score_opponent": 10,
+      "home_away": "Home",
+      "offense_snaps": 80,
+      "defense_snaps": 44
     },
     {
       "week": 2,
-      "opponent": "Minnesota",
-      "date": "NWSTATE",
-      "final_score_team": "2",
-      "final_score_opponent": "Sat Sep 6th",
-      "home_away": "66",
-      "offense_snaps": 0,
-      "defense_snaps": 0,
-      "special_teams_snaps": 64
+      "opponent": "NWSTAT",
+      "date": "Sat Sep 06",
+      "final_score_team": 66,
+      "final_score_opponent": 0,
+      "home_away": "Home",
+      "offense_snaps": 64,
+      "defense_snaps": 37
     },
     {
       "week": 3,
-      "opponent": "Minnesota",
-      "date": "Cal",
-      "final_score_team": "3",
-      "final_score_opponent": "Sat Sep 13th",
-      "home_away": "14",
-      "offense_snaps": 27,
-      "defense_snaps": 0,
-      "special_teams_snaps": 73
+      "opponent": "CALIFO",
+      "date": "Sun Sep 14",
+      "final_score_team": 14,
+      "final_score_opponent": 27,
+      "home_away": "Away",
+      "offense_snaps": 73,
+      "defense_snaps": 67
+    },
+    {
+      "week": 5,
+      "opponent": "RUTGER",
+      "date": "Sat Sep 27",
+      "final_score_team": 31,
+      "final_score_opponent": 28,
+      "home_away": "Home",
+      "offense_snaps": 61,
+      "defense_snaps": 77
+    },
+    {
+      "week": 6,
+      "opponent": "OHIOST",
+      "date": "Sat Oct 04",
+      "final_score_team": 3,
+      "final_score_opponent": 42,
+      "home_away": "Away",
+      "offense_snaps": 51,
+      "defense_snaps": 59
+    },
+    {
+      "week": 7,
+      "opponent": "PURBOI",
+      "date": "Sat Oct 11",
+      "final_score_team": 27,
+      "final_score_opponent": 20,
+      "home_away": "Home",
+      "offense_snaps": 66,
+      "defense_snaps": 88
+    },
+    {
+      "week": 8,
+      "opponent": "NEBRAS",
+      "date": "Sat Oct 18",
+      "final_score_team": 24,
+      "final_score_opponent": 6,
+      "home_away": "Home",
+      "offense_snaps": 59,
+      "defense_snaps": 55
+    },
+    {
+      "week": 9,
+      "opponent": "IOWAHA",
+      "date": "Sat Oct 25",
+      "final_score_team": 3,
+      "final_score_opponent": 41,
+      "home_away": "Away",
+      "offense_snaps": 53,
+      "defense_snaps": 56
     }
   ],
-  "metadata": {
-    "weeks": 3,
-    "last_updated": "2025-09-28T23:58:02.510Z"
-  }
+  "special_teams": {
+    "Kick_Returns": [
+      {
+        "jersey": "23",
+        "playerName": "Cam Davis",
+        "attempts": 8
+      },
+      {
+        "jersey": "D35",
+        "playerName": "Derik LeCaptain",
+        "attempts": 29
+      },
+      {
+        "jersey": "D20",
+        "playerName": "Jeff Roberson",
+        "attempts": 5
+      },
+      {
+        "jersey": "81",
+        "playerName": "Quentin Redding",
+        "attempts": 1
+      },
+      {
+        "jersey": "86",
+        "playerName": "Jameson Geers",
+        "attempts": 28
+      },
+      {
+        "jersey": "87",
+        "playerName": "Drew Biber",
+        "attempts": 21
+      },
+      {
+        "jersey": "44",
+        "playerName": "Frank Bierman",
+        "attempts": 28
+      },
+      {
+        "jersey": "D18",
+        "playerName": "Rhyland Kelly",
+        "attempts": 24
+      },
+      {
+        "jersey": "D19",
+        "playerName": "Joey Gerlach",
+        "attempts": 29
+      },
+      {
+        "jersey": "D49",
+        "playerName": "Matt Kingsbury",
+        "attempts": 29
+      },
+      {
+        "jersey": "D23",
+        "playerName": "Garrison Monroe",
+        "attempts": 9
+      },
+      {
+        "jersey": "19",
+        "playerName": "Pierce Walsh",
+        "attempts": 1
+      },
+      {
+        "jersey": "88",
+        "playerName": "Jacob Simpson",
+        "attempts": 29
+      },
+      {
+        "jersey": "D33",
+        "playerName": "Harrison Brun",
+        "attempts": 1
+      },
+      {
+        "jersey": "D48",
+        "playerName": "Mason Carrier",
+        "attempts": 29
+      },
+      {
+        "jersey": "D03",
+        "playerName": "Koi Perich",
+        "attempts": 28
+      },
+      {
+        "jersey": "D43",
+        "playerName": "Ethan Stendel",
+        "attempts": 20
+      }
+    ],
+    "Field_Goals": [
+      {
+        "jersey": "70",
+        "playerName": "Aluma Nkele",
+        "attempts": 35
+      },
+      {
+        "jersey": "74",
+        "playerName": "Marcellus Marshall",
+        "attempts": 33
+      },
+      {
+        "jersey": "86",
+        "playerName": "Jameson Geers",
+        "attempts": 33
+      },
+      {
+        "jersey": "D89",
+        "playerName": "Nate Becker",
+        "attempts": 30
+      },
+      {
+        "jersey": "87",
+        "playerName": "Drew Biber",
+        "attempts": 2
+      },
+      {
+        "jersey": "73",
+        "playerName": "Dylan Ray",
+        "attempts": 35
+      },
+      {
+        "jersey": "59",
+        "playerName": "Tony Nelson",
+        "attempts": 5
+      },
+      {
+        "jersey": "44",
+        "playerName": "Frank Bierman",
+        "attempts": 33
+      },
+      {
+        "jersey": "78",
+        "playerName": "Ashton Beers",
+        "attempts": 32
+      },
+      {
+        "jersey": "S92",
+        "playerName": "Brady Denaburg",
+        "attempts": 33
+      },
+      {
+        "jersey": "65",
+        "playerName": "Greg Johnson",
+        "attempts": 32
+      },
+      {
+        "jersey": "76",
+        "playerName": "Reese Tripp",
+        "attempts": 3
+      },
+      {
+        "jersey": "19",
+        "playerName": "Pierce Walsh",
+        "attempts": 2
+      },
+      {
+        "jersey": "55",
+        "playerName": "Jerome Williams",
+        "attempts": 3
+      },
+      {
+        "jersey": "56",
+        "playerName": "Brett Carroll",
+        "attempts": 2
+      },
+      {
+        "jersey": "S80",
+        "playerName": "Alan Soukup",
+        "attempts": 35
+      },
+      {
+        "jersey": "S36",
+        "playerName": "Daniel Jackson",
+        "attempts": 2
+      },
+      {
+        "jersey": "S42",
+        "playerName": "Tom Weston",
+        "attempts": 35
+      }
+    ],
+    "Kick_Coverage": [
+      {
+        "jersey": "D35",
+        "playerName": "Derik LeCaptain",
+        "attempts": 38
+      },
+      {
+        "jersey": "D20",
+        "playerName": "Jeff Roberson",
+        "attempts": 33
+      },
+      {
+        "jersey": "D24",
+        "playerName": "Jai'Onte' McMillan",
+        "attempts": 27
+      },
+      {
+        "jersey": "D18",
+        "playerName": "Rhyland Kelly",
+        "attempts": 32
+      },
+      {
+        "jersey": "D22",
+        "playerName": "Evan Redding",
+        "attempts": 21
+      },
+      {
+        "jersey": "D19",
+        "playerName": "Joey Gerlach",
+        "attempts": 27
+      },
+      {
+        "jersey": "D07",
+        "playerName": "Aidan Gousby",
+        "attempts": 6
+      },
+      {
+        "jersey": "S92",
+        "playerName": "Brady Denaburg",
+        "attempts": 35
+      },
+      {
+        "jersey": "D49",
+        "playerName": "Matt Kingsbury",
+        "attempts": 38
+      },
+      {
+        "jersey": "D23",
+        "playerName": "Garrison Monroe",
+        "attempts": 20
+      },
+      {
+        "jersey": "D33",
+        "playerName": "Harrison Brun",
+        "attempts": 2
+      },
+      {
+        "jersey": "D48",
+        "playerName": "Mason Carrier",
+        "attempts": 38
+      },
+      {
+        "jersey": "D27",
+        "playerName": "Simon Seidl",
+        "attempts": 10
+      },
+      {
+        "jersey": "D02",
+        "playerName": "Emmanuel Karmo",
+        "attempts": 31
+      },
+      {
+        "jersey": "S36",
+        "playerName": "Daniel Jackson",
+        "attempts": 3
+      },
+      {
+        "jersey": "D53",
+        "playerName": "Nate Cleveland",
+        "attempts": 10
+      },
+      {
+        "jersey": "D43",
+        "playerName": "Ethan Stendel",
+        "attempts": 18
+      },
+      {
+        "jersey": "D26",
+        "playerName": "Zack Harden",
+        "attempts": 11
+      },
+      {
+        "jersey": "22",
+        "playerName": "Tre Berry",
+        "attempts": 17
+      },
+      {
+        "jersey": "S42",
+        "playerName": "Tom Weston",
+        "attempts": 1
+      }
+    ],
+    "Punt_Returns": [
+      {
+        "jersey": "D35",
+        "playerName": "Derik LeCaptain",
+        "attempts": 27
+      },
+      {
+        "jersey": "D16",
+        "playerName": "Rushawn Lawrence",
+        "attempts": 3
+      },
+      {
+        "jersey": "D20",
+        "playerName": "Jeff Roberson",
+        "attempts": 2
+      },
+      {
+        "jersey": "D24",
+        "playerName": "Jai'Onte' McMillan",
+        "attempts": 8
+      },
+      {
+        "jersey": "D46",
+        "playerName": "Lucas Finnessy",
+        "attempts": 8
+      },
+      {
+        "jersey": "D97",
+        "playerName": "Jalen Logan-Redding",
+        "attempts": 4
+      },
+      {
+        "jersey": "17",
+        "playerName": "Logan Loya",
+        "attempts": 3
+      },
+      {
+        "jersey": "81",
+        "playerName": "Quentin Redding",
+        "attempts": 2
+      },
+      {
+        "jersey": "D12",
+        "playerName": "Darius Green",
+        "attempts": 2
+      },
+      {
+        "jersey": "D09",
+        "playerName": "Devon Williams",
+        "attempts": 5
+      },
+      {
+        "jersey": "D89",
+        "playerName": "Nate Becker",
+        "attempts": 3
+      },
+      {
+        "jersey": "D91",
+        "playerName": "Deven Eastern",
+        "attempts": 4
+      },
+      {
+        "jersey": "D06",
+        "playerName": "Maverick Baranowski",
+        "attempts": 6
+      },
+      {
+        "jersey": "D00",
+        "playerName": "Anthony Smith",
+        "attempts": 5
+      },
+      {
+        "jersey": "D18",
+        "playerName": "Rhyland Kelly",
+        "attempts": 12
+      },
+      {
+        "jersey": "D22",
+        "playerName": "Evan Redding",
+        "attempts": 10
+      },
+      {
+        "jersey": "D19",
+        "playerName": "Joey Gerlach",
+        "attempts": 27
+      },
+      {
+        "jersey": "D07",
+        "playerName": "Aidan Gousby",
+        "attempts": 5
+      },
+      {
+        "jersey": "D17",
+        "playerName": "John Nestor",
+        "attempts": 25
+      },
+      {
+        "jersey": "D01",
+        "playerName": "Jaxon Howard",
+        "attempts": 23
+      },
+      {
+        "jersey": "D14",
+        "playerName": "Kerry Brown",
+        "attempts": 21
+      },
+      {
+        "jersey": "D04",
+        "playerName": "Za'Quan Bryan",
+        "attempts": 31
+      },
+      {
+        "jersey": "D49",
+        "playerName": "Matt Kingsbury",
+        "attempts": 29
+      },
+      {
+        "jersey": "D23",
+        "playerName": "Garrison Monroe",
+        "attempts": 16
+      },
+      {
+        "jersey": "D05",
+        "playerName": "Jaylen Bowden",
+        "attempts": 2
+      },
+      {
+        "jersey": "D13",
+        "playerName": "Mike Gerald",
+        "attempts": 1
+      },
+      {
+        "jersey": "D48",
+        "playerName": "Mason Carrier",
+        "attempts": 28
+      },
+      {
+        "jersey": "D03",
+        "playerName": "Koi Perich",
+        "attempts": 32
+      },
+      {
+        "jersey": "D27",
+        "playerName": "Simon Seidl",
+        "attempts": 11
+      },
+      {
+        "jersey": "D21",
+        "playerName": "Naiim Parrish",
+        "attempts": 1
+      },
+      {
+        "jersey": "D02",
+        "playerName": "Emmanuel Karmo",
+        "attempts": 3
+      },
+      {
+        "jersey": "D53",
+        "playerName": "Nate Cleveland",
+        "attempts": 4
+      },
+      {
+        "jersey": "D43",
+        "playerName": "Ethan Stendel",
+        "attempts": 8
+      },
+      {
+        "jersey": "D26",
+        "playerName": "Zack Harden",
+        "attempts": 3
+      }
+    ],
+    "Punt_Coverage": [
+      {
+        "jersey": "D35",
+        "playerName": "Derik LeCaptain",
+        "attempts": 31
+      },
+      {
+        "jersey": "D24",
+        "playerName": "Jai'Onte' McMillan",
+        "attempts": 2
+      },
+      {
+        "jersey": "17",
+        "playerName": "Logan Loya",
+        "attempts": 4
+      },
+      {
+        "jersey": "81",
+        "playerName": "Quentin Redding",
+        "attempts": 2
+      },
+      {
+        "jersey": "86",
+        "playerName": "Jameson Geers",
+        "attempts": 30
+      },
+      {
+        "jersey": "D09",
+        "playerName": "Devon Williams",
+        "attempts": 30
+      },
+      {
+        "jersey": "D89",
+        "playerName": "Nate Becker",
+        "attempts": 1
+      },
+      {
+        "jersey": "87",
+        "playerName": "Drew Biber",
+        "attempts": 2
+      },
+      {
+        "jersey": "D06",
+        "playerName": "Maverick Baranowski",
+        "attempts": 11
+      },
+      {
+        "jersey": "D18",
+        "playerName": "Rhyland Kelly",
+        "attempts": 1
+      },
+      {
+        "jersey": "D19",
+        "playerName": "Joey Gerlach",
+        "attempts": 31
+      },
+      {
+        "jersey": "D17",
+        "playerName": "John Nestor",
+        "attempts": 1
+      },
+      {
+        "jersey": "D49",
+        "playerName": "Matt Kingsbury",
+        "attempts": 31
+      },
+      {
+        "jersey": "15",
+        "playerName": "Kenric Lanier II",
+        "attempts": 3
+      },
+      {
+        "jersey": "D23",
+        "playerName": "Garrison Monroe",
+        "attempts": 5
+      },
+      {
+        "jersey": "D48",
+        "playerName": "Mason Carrier",
+        "attempts": 31
+      },
+      {
+        "jersey": "D27",
+        "playerName": "Simon Seidl",
+        "attempts": 25
+      },
+      {
+        "jersey": "S80",
+        "playerName": "Alan Soukup",
+        "attempts": 31
+      },
+      {
+        "jersey": "D53",
+        "playerName": "Nate Cleveland",
+        "attempts": 3
+      },
+      {
+        "jersey": "D43",
+        "playerName": "Ethan Stendel",
+        "attempts": 20
+      },
+      {
+        "jersey": "D26",
+        "playerName": "Zack Harden",
+        "attempts": 15
+      },
+      {
+        "jersey": "S42",
+        "playerName": "Tom Weston",
+        "attempts": 31
+      }
+    ],
+    "Field_Goal_Block": [
+      {
+        "jersey": "D35",
+        "playerName": "Derik LeCaptain",
+        "attempts": 25
+      },
+      {
+        "jersey": "D16",
+        "playerName": "Rushawn Lawrence",
+        "attempts": 22
+      },
+      {
+        "jersey": "D24",
+        "playerName": "Jai'Onte' McMillan",
+        "attempts": 3
+      },
+      {
+        "jersey": "D46",
+        "playerName": "Lucas Finnessy",
+        "attempts": 1
+      },
+      {
+        "jersey": "D97",
+        "playerName": "Jalen Logan-Redding",
+        "attempts": 6
+      },
+      {
+        "jersey": "D09",
+        "playerName": "Devon Williams",
+        "attempts": 28
+      },
+      {
+        "jersey": "D89",
+        "playerName": "Nate Becker",
+        "attempts": 7
+      },
+      {
+        "jersey": "D91",
+        "playerName": "Deven Eastern",
+        "attempts": 21
+      },
+      {
+        "jersey": "D06",
+        "playerName": "Maverick Baranowski",
+        "attempts": 23
+      },
+      {
+        "jersey": "D00",
+        "playerName": "Anthony Smith",
+        "attempts": 26
+      },
+      {
+        "jersey": "D19",
+        "playerName": "Joey Gerlach",
+        "attempts": 4
+      },
+      {
+        "jersey": "D07",
+        "playerName": "Aidan Gousby",
+        "attempts": 8
+      },
+      {
+        "jersey": "D17",
+        "playerName": "John Nestor",
+        "attempts": 25
+      },
+      {
+        "jersey": "D01",
+        "playerName": "Jaxon Howard",
+        "attempts": 20
+      },
+      {
+        "jersey": "D14",
+        "playerName": "Kerry Brown",
+        "attempts": 21
+      },
+      {
+        "jersey": "D04",
+        "playerName": "Za'Quan Bryan",
+        "attempts": 25
+      },
+      {
+        "jersey": "D49",
+        "playerName": "Matt Kingsbury",
+        "attempts": 1
+      },
+      {
+        "jersey": "D11",
+        "playerName": "Karter Menz",
+        "attempts": 9
+      },
+      {
+        "jersey": "D13",
+        "playerName": "Mike Gerald",
+        "attempts": 3
+      },
+      {
+        "jersey": "D98",
+        "playerName": "Adam Kissayi",
+        "attempts": 1
+      },
+      {
+        "jersey": "D03",
+        "playerName": "Koi Perich",
+        "attempts": 28
+      }
+    ]
+  },
+  "kicking_specialists": [
+    {
+      "category": "Field_Goals",
+      "jersey": "S92",
+      "playerName": "Brady Denaburg",
+      "attempts": 12,
+      "returns": 0,
+      "yards": 0,
+      "ypa": 0,
+      "td": 0
+    },
+    {
+      "category": "Kickoffs",
+      "jersey": "S92",
+      "playerName": "Brady Denaburg",
+      "attempts": 37,
+      "returns": 0,
+      "yards": 0,
+      "ypa": 0,
+      "td": 0
+    },
+    {
+      "category": "Kickoffs",
+      "jersey": "S36",
+      "playerName": "Daniel Jackson",
+      "attempts": 3,
+      "returns": 0,
+      "yards": 0,
+      "ypa": 0,
+      "td": 0
+    },
+    {
+      "category": "Punting",
+      "jersey": "S42",
+      "playerName": "Tom Weston",
+      "attempts": 38,
+      "returns": 0,
+      "yards": 0,
+      "ypa": 0,
+      "td": 0
+    },
+    {
+      "category": "Kick_Returns",
+      "jersey": "23",
+      "playerName": "Cam Davis",
+      "attempts": 1,
+      "returns": 1,
+      "yards": 17,
+      "ypa": 17,
+      "td": 0
+    },
+    {
+      "category": "Kick_Returns",
+      "jersey": "D35",
+      "playerName": "Derik LeCaptain",
+      "attempts": 2,
+      "returns": 2,
+      "yards": 20,
+      "ypa": 10,
+      "td": 0
+    },
+    {
+      "category": "Punt_Returns",
+      "jersey": "17",
+      "playerName": "Logan Loya",
+      "attempts": 1,
+      "returns": 1,
+      "yards": 0,
+      "ypa": 0,
+      "td": 0
+    },
+    {
+      "category": "Punt_Returns",
+      "jersey": "81",
+      "playerName": "Quentin Redding",
+      "attempts": 1,
+      "returns": 1,
+      "yards": 2,
+      "ypa": 2,
+      "td": 0
+    },
+    {
+      "category": "Kick_Returns",
+      "jersey": "86",
+      "playerName": "Jameson Geers",
+      "attempts": 1,
+      "returns": 1,
+      "yards": 8,
+      "ypa": 8,
+      "td": 0
+    },
+    {
+      "category": "Kick_Returns",
+      "jersey": "D03",
+      "playerName": "Koi Perich",
+      "attempts": 8,
+      "returns": 8,
+      "yards": 171,
+      "ypa": 21.4,
+      "td": 0
+    },
+    {
+      "category": "Punt_Returns",
+      "jersey": "D03",
+      "playerName": "Koi Perich",
+      "attempts": 12,
+      "returns": 12,
+      "yards": 82,
+      "ypa": 6.8,
+      "td": 0
+    }
+  ],
+  "complex_kicking_specialists": [
+    {
+      "jersey": "23",
+      "playerName": "Cam Davis",
+      "category": "Kick_Returns",
+      "returns": 8,
+      "yards": 0
+    },
+    {
+      "jersey": "D35",
+      "playerName": "Derik LeCaptain",
+      "category": "Kick_Returns",
+      "returns": 29,
+      "yards": 0
+    },
+    {
+      "jersey": "D35",
+      "playerName": "Derik LeCaptain",
+      "category": "Punt_Returns",
+      "returns": 27,
+      "yards": 0
+    },
+    {
+      "jersey": "D16",
+      "playerName": "Rushawn Lawrence",
+      "category": "Punt_Returns",
+      "returns": 3,
+      "yards": 0
+    },
+    {
+      "jersey": "D20",
+      "playerName": "Jeff Roberson",
+      "category": "Kick_Returns",
+      "returns": 5,
+      "yards": 0
+    },
+    {
+      "jersey": "D20",
+      "playerName": "Jeff Roberson",
+      "category": "Punt_Returns",
+      "returns": 2,
+      "yards": 0
+    },
+    {
+      "jersey": "D24",
+      "playerName": "Jai'Onte' McMillan",
+      "category": "Punt_Returns",
+      "returns": 8,
+      "yards": 0
+    },
+    {
+      "jersey": "D46",
+      "playerName": "Lucas Finnessy",
+      "category": "Punt_Returns",
+      "returns": 8,
+      "yards": 0
+    },
+    {
+      "jersey": "D97",
+      "playerName": "Jalen Logan-Redding",
+      "category": "Punt_Returns",
+      "returns": 4,
+      "yards": 0
+    },
+    {
+      "jersey": "17",
+      "playerName": "Logan Loya",
+      "category": "Punt_Returns",
+      "returns": 3,
+      "yards": 0
+    },
+    {
+      "jersey": "81",
+      "playerName": "Quentin Redding",
+      "category": "Kick_Returns",
+      "returns": 1,
+      "yards": 0
+    },
+    {
+      "jersey": "81",
+      "playerName": "Quentin Redding",
+      "category": "Punt_Returns",
+      "returns": 2,
+      "yards": 0
+    },
+    {
+      "jersey": "86",
+      "playerName": "Jameson Geers",
+      "category": "Kick_Returns",
+      "returns": 28,
+      "yards": 0
+    },
+    {
+      "jersey": "D12",
+      "playerName": "Darius Green",
+      "category": "Punt_Returns",
+      "returns": 2,
+      "yards": 0
+    },
+    {
+      "jersey": "D09",
+      "playerName": "Devon Williams",
+      "category": "Punt_Returns",
+      "returns": 5,
+      "yards": 0
+    },
+    {
+      "jersey": "D89",
+      "playerName": "Nate Becker",
+      "category": "Punt_Returns",
+      "returns": 3,
+      "yards": 0
+    },
+    {
+      "jersey": "D91",
+      "playerName": "Deven Eastern",
+      "category": "Punt_Returns",
+      "returns": 4,
+      "yards": 0
+    },
+    {
+      "jersey": "87",
+      "playerName": "Drew Biber",
+      "category": "Kick_Returns",
+      "returns": 21,
+      "yards": 0
+    },
+    {
+      "jersey": "D06",
+      "playerName": "Maverick Baranowski",
+      "category": "Punt_Returns",
+      "returns": 6,
+      "yards": 0
+    },
+    {
+      "jersey": "D00",
+      "playerName": "Anthony Smith",
+      "category": "Punt_Returns",
+      "returns": 5,
+      "yards": 0
+    },
+    {
+      "jersey": "44",
+      "playerName": "Frank Bierman",
+      "category": "Kick_Returns",
+      "returns": 28,
+      "yards": 0
+    },
+    {
+      "jersey": "D18",
+      "playerName": "Rhyland Kelly",
+      "category": "Kick_Returns",
+      "returns": 24,
+      "yards": 0
+    },
+    {
+      "jersey": "D18",
+      "playerName": "Rhyland Kelly",
+      "category": "Punt_Returns",
+      "returns": 12,
+      "yards": 0
+    },
+    {
+      "jersey": "D22",
+      "playerName": "Evan Redding",
+      "category": "Punt_Returns",
+      "returns": 10,
+      "yards": 0
+    },
+    {
+      "jersey": "D19",
+      "playerName": "Joey Gerlach",
+      "category": "Kick_Returns",
+      "returns": 29,
+      "yards": 0
+    },
+    {
+      "jersey": "D19",
+      "playerName": "Joey Gerlach",
+      "category": "Punt_Returns",
+      "returns": 27,
+      "yards": 0
+    },
+    {
+      "jersey": "D07",
+      "playerName": "Aidan Gousby",
+      "category": "Punt_Returns",
+      "returns": 5,
+      "yards": 0
+    },
+    {
+      "jersey": "D17",
+      "playerName": "John Nestor",
+      "category": "Punt_Returns",
+      "returns": 25,
+      "yards": 0
+    },
+    {
+      "jersey": "D01",
+      "playerName": "Jaxon Howard",
+      "category": "Punt_Returns",
+      "returns": 23,
+      "yards": 0
+    },
+    {
+      "jersey": "D14",
+      "playerName": "Kerry Brown",
+      "category": "Punt_Returns",
+      "returns": 21,
+      "yards": 0
+    },
+    {
+      "jersey": "D04",
+      "playerName": "Za'Quan Bryan",
+      "category": "Punt_Returns",
+      "returns": 31,
+      "yards": 0
+    },
+    {
+      "jersey": "D49",
+      "playerName": "Matt Kingsbury",
+      "category": "Kick_Returns",
+      "returns": 29,
+      "yards": 0
+    },
+    {
+      "jersey": "D49",
+      "playerName": "Matt Kingsbury",
+      "category": "Punt_Returns",
+      "returns": 29,
+      "yards": 0
+    },
+    {
+      "jersey": "D23",
+      "playerName": "Garrison Monroe",
+      "category": "Kick_Returns",
+      "returns": 9,
+      "yards": 0
+    },
+    {
+      "jersey": "D23",
+      "playerName": "Garrison Monroe",
+      "category": "Punt_Returns",
+      "returns": 16,
+      "yards": 0
+    },
+    {
+      "jersey": "19",
+      "playerName": "Pierce Walsh",
+      "category": "Kick_Returns",
+      "returns": 1,
+      "yards": 0
+    },
+    {
+      "jersey": "D05",
+      "playerName": "Jaylen Bowden",
+      "category": "Punt_Returns",
+      "returns": 2,
+      "yards": 0
+    },
+    {
+      "jersey": "D13",
+      "playerName": "Mike Gerald",
+      "category": "Punt_Returns",
+      "returns": 1,
+      "yards": 0
+    },
+    {
+      "jersey": "88",
+      "playerName": "Jacob Simpson",
+      "category": "Kick_Returns",
+      "returns": 29,
+      "yards": 0
+    },
+    {
+      "jersey": "D33",
+      "playerName": "Harrison Brun",
+      "category": "Kick_Returns",
+      "returns": 1,
+      "yards": 0
+    },
+    {
+      "jersey": "D48",
+      "playerName": "Mason Carrier",
+      "category": "Kick_Returns",
+      "returns": 29,
+      "yards": 0
+    },
+    {
+      "jersey": "D48",
+      "playerName": "Mason Carrier",
+      "category": "Punt_Returns",
+      "returns": 28,
+      "yards": 0
+    },
+    {
+      "jersey": "D03",
+      "playerName": "Koi Perich",
+      "category": "Kick_Returns",
+      "returns": 28,
+      "yards": 0
+    },
+    {
+      "jersey": "D03",
+      "playerName": "Koi Perich",
+      "category": "Punt_Returns",
+      "returns": 32,
+      "yards": 0
+    },
+    {
+      "jersey": "D27",
+      "playerName": "Simon Seidl",
+      "category": "Punt_Returns",
+      "returns": 11,
+      "yards": 0
+    },
+    {
+      "jersey": "D21",
+      "playerName": "Naiim Parrish",
+      "category": "Punt_Returns",
+      "returns": 1,
+      "yards": 0
+    },
+    {
+      "jersey": "D02",
+      "playerName": "Emmanuel Karmo",
+      "category": "Punt_Returns",
+      "returns": 3,
+      "yards": 0
+    },
+    {
+      "jersey": "D53",
+      "playerName": "Nate Cleveland",
+      "category": "Punt_Returns",
+      "returns": 4,
+      "yards": 0
+    },
+    {
+      "jersey": "D43",
+      "playerName": "Ethan Stendel",
+      "category": "Kick_Returns",
+      "returns": 20,
+      "yards": 0
+    },
+    {
+      "jersey": "D43",
+      "playerName": "Ethan Stendel",
+      "category": "Punt_Returns",
+      "returns": 8,
+      "yards": 0
+    },
+    {
+      "jersey": "D26",
+      "playerName": "Zack Harden",
+      "category": "Punt_Returns",
+      "returns": 3,
+      "yards": 0
+    }
+  ]
 }

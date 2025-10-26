@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minnesota Golden Gophers - Multi-Week Snap Count Analytics</title>
+    <title>Michigan State Spartans - Multi-Week Snap Count Analytics</title>
     <link rel="icon" type="image/svg+xml" href="../assets/logos/Big_Ten_Conference_logo.svg">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
@@ -15,7 +15,7 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #7A0019 0%, #FFB81C 25%, #000000 25%, #000000 75%, #7A0019 75%, #7A0019 100%);
+            background: linear-gradient(135deg, #18453B 0%, #FFFFFF 25%, #000000 25%, #000000 75%, #18453B 75%, #18453B 100%);
             background-size: 100% 100%;
             min-height: 100vh;
             color: #333;
@@ -36,7 +36,7 @@
             text-align: center;
             margin-bottom: 30px;
             padding: 20px;
-            background: linear-gradient(135deg, #7A0019, #FFB81C);
+            background: linear-gradient(135deg, #18453B, #FFFFFF);
             border-radius: 12px;
             color: white;
             box-shadow: 0 4px 15px rgba(211, 47, 47, 0.3);
@@ -727,19 +727,19 @@
         <!-- Header -->
         <div class="header">
             <div class="logos">
-                <img src="../assets/images/minnesota_logo.png" alt="Minnesota Golden Gophers" class="logo">
+                <img src="../assets/images/michigan_state_logo.png" alt="Michigan State Spartans" class="logo">
                 <div class="divider"></div>
                 <img src="../assets/logos/Big_Ten_Conference_logo.svg" alt="Big Ten Conference" class="logo">
             </div>
-            <h1>Minnesota Golden Gophers</h1>
+            <h1>Michigan State Spartans</h1>
             <p class="subtitle">Multi-Week Snap Count Analytics Dashboard</p>
             <p class="timestamp" id="last-updated">Updated at <span id="update-time"></span></p>
             
             <!-- Matchup Link -->
             <div style="text-align: center; margin: 20px 0;">
-                <a href="michigan_state.html" class="matchup-btn">
+                <a href="minnesota.html" class="matchup-btn">
                     <span class="matchup-icon">🏈</span>
-                    View Michigan State
+                    View Minnesota
                 </a>
             </div>
         </div>
@@ -1081,7 +1081,7 @@
         // Load team data
         async function loadTeamData() {
             try {
-                const response = await fetch('../data/json/minnesota_multiweek.json');
+                const response = await fetch('../data/json/michigan_state_multiweek.json');
                 teamData = await response.json();
                 
                 // Create all charts
@@ -1819,14 +1819,14 @@
             // Create datasets for each week
             const datasets = [];
             const opposingTeamColors = {
-                'BUFFBU': { primary: '#003366', secondary: '#FFFFFF', accent: '#FFD700' }, // Buffalo Bulls
-                'NWSTAT': { primary: '#4B0082', secondary: '#FFD700', accent: '#FFFFFF' }, // Northwestern State Demons
-                'CALIFO': { primary: '#003262', secondary: '#FDB515', accent: '#C4820E' }, // California Golden Bears
-                'RUTGER': { primary: '#CC0000', secondary: '#FFFFFF', accent: '#000000' }, // Rutgers Scarlet Knights
-                'OHIOST': { primary: '#BB0000', secondary: '#FFFFFF', accent: '#000000' }, // Ohio State Buckeyes
-                'PURBOI': { primary: '#CEB888', secondary: '#000000', accent: '#FFFFFF' }, // Purdue Boilermakers
+                'WESTMI': { primary: '#C41E3A', secondary: '#FFFFFF', accent: '#000000' }, // Western Michigan Broncos
+                'BCEAGL': { primary: '#8B0000', secondary: '#FFD700', accent: '#FFFFFF' }, // Boston College Eagles
+                'YOUNGS': { primary: '#FFD700', secondary: '#000000', accent: '#FFFFFF' }, // Youngstown State Penguins
+                'USCTRO': { primary: '#990000', secondary: '#FFD700', accent: '#FFFFFF' }, // USC Trojans (corrected from purple)
                 'NEBRAS': { primary: '#D32F2F', secondary: '#FFFFFF', accent: '#000000' }, // Nebraska Cornhuskers
-                'IOWAHA': { primary: '#000000', secondary: '#FFD700', accent: '#FFFFFF' }, // Iowa Hawkeyes
+                'UCLABR': { primary: '#2774AE', secondary: '#FFD100', accent: '#FFFFFF' }, // UCLA Bruins
+                'INDHOO': { primary: '#990000', secondary: '#FFFFFF', accent: '#000000' }, // Indiana Hoosiers
+                'MICHIG': { primary: '#00274C', secondary: '#FFCB05', accent: '#FFFFFF' }, // Michigan Wolverines
                 'BYE WEEK': { primary: '#CCCCCC', secondary: '#999999', accent: '#666666' }
             };
 

@@ -136,6 +136,40 @@ const teamConfigs = {
             roster: "oregon_roster.json"
         }
     },
+    michigan_state: {
+        name: "Michigan State Spartans",
+        shortName: "michigan_state",
+        primaryColor: "#18453B",
+        secondaryColor: "#FFFFFF", 
+        logoPath: "michigan_state_logo.png",
+        matchupTeam: "minnesota",
+        matchupText: "View Minnesota",
+        dataFiles: {
+            offense: "michigan_state_offense.csv",
+            defense: "michigan_state_defense.csv", 
+            kicking: "michigan_state_kicking_specialists.csv",
+            specialTeams: "michigan_state_special_teams_season.csv",
+            summary: "michigan_state_summary.csv",
+            roster: "michigan_state_number_roster.json"
+        }
+    },
+    minnesota: {
+        name: "Minnesota Golden Gophers",
+        shortName: "minnesota",
+        primaryColor: "#7A0019",
+        secondaryColor: "#FFB81C", 
+        logoPath: "minnesota_logo.png",
+        matchupTeam: "michigan_state",
+        matchupText: "View Michigan State",
+        dataFiles: {
+            offense: "minnesota_golden_gophers_offense.csv",
+            defense: "minnesota_golden_gophers_defense.csv", 
+            kicking: "minnesota_golden_gophers_kicking_specialists.csv",
+            specialTeams: "minnesota_golden_gophers_special_teams_season.csv",
+            summary: "minnesota_golden_gophers_summary.csv",
+            roster: "minnesota_golden_gophers_number_roster.json"
+        }
+    },
     // Template for new teams
     template: {
         name: "{Team Name}",
